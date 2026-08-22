@@ -47,6 +47,22 @@
 
   document.body.classList.add('bhagavatam-rebuild-page');
 
+  const introScope = rebuildRoot.querySelector(':scope > div > div') || rebuildRoot;
+  Array.from(introScope.children).forEach((element) => {
+    const text = (element.textContent || '').trim();
+    if (text.startsWith('Each entry presents the original Bhāgavata verse')) {
+      element.remove();
+      return;
+    }
+    if (
+      element.tagName === 'DIV' &&
+      text.startsWith('Textual basis') &&
+      text.includes('Śrīdhara’s text is checked primarily')
+    ) {
+      element.remove();
+    }
+  });
+
   if (!document.querySelector('link[data-bhagavatam-rebuild-styles]')) {
     const verseStyles = document.createElement('link');
     verseStyles.rel = 'stylesheet';
