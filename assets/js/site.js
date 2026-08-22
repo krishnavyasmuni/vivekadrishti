@@ -41,4 +41,12 @@
       summary.textContent = details.open ? openLabel : closedLabel;
     });
   });
+
+  if (document.querySelector('.empyrean-bhagavatam-rebuild')) {
+    document.body.classList.add('bhagavatam-rebuild-page');
+    const verseStyles = document.createElement('link');
+    verseStyles.rel = 'stylesheet';
+    verseStyles.href = '/vivekadrishti/assets/css/bhagavatam-rebuild-all-verses.css';
+    document.head.appendChild(verseStyles);
+  }
 })();
