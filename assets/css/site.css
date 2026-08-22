@@ -861,3 +861,98 @@ body {
     font-size:19px!important
   }
 }
+
+/* Third legacy markup variant used in the later Chapter 5 blocks. */
+.article-body .empyrean-bhagavatam-rebuild-part .sb-dev {
+  max-width:840px!important;
+  margin:0 auto 14px!important;
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
+  font-size:21px!important;
+  font-weight:400!important;
+  line-height:1.48!important;
+  text-align:center!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part .sb-iast {
+  max-width:840px!important;
+  margin:0 auto 14px!important;
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
+  font-size:14px!important;
+  font-style:italic!important;
+  font-weight:400!important;
+  line-height:1.55!important;
+  text-align:center!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part details {
+  display:block!important;
+  max-width:840px!important;
+  margin:0 auto 8px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  overflow:visible!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part details>summary {
+  display:block!important;
+  width:max-content!important;
+  cursor:pointer!important;
+  list-style:none!important;
+  margin:0!important;
+  padding:5px 13px!important;
+  border:1px solid #9bc5c7!important;
+  border-radius:999px!important;
+  color:#2f7f82!important;
+  background:transparent!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
+  font-size:14px!important;
+  line-height:1.15!important;
+  font-weight:600!important;
+  text-align:left!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part details>summary::-webkit-details-marker {
+  display:none!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part .sb-meaning,
+.article-body .empyrean-bhagavatam-rebuild-part .sb-bhasya-text,
+.article-body .empyrean-bhagavatam-rebuild-part details>div,
+.article-body .empyrean-bhagavatam-rebuild-part details>p {
+  max-width:840px!important;
+  margin:8px 0 12px!important;
+  padding:0!important;
+  color:#3c362e!important;
+  background:transparent!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
+  font-size:13px!important;
+  font-weight:400!important;
+  line-height:1.55!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part .sb-commentary {
+  max-width:840px!important;
+  margin:0 auto 26px!important;
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.45!important
+}
+
+.article-body .empyrean-bhagavatam-rebuild-part .sb-commentary-label {
+  color:#2f7f82!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
+  font-size:17px!important;
+  font-weight:700!important
+}
+
+@media(max-width:780px) {
+  .article-body .empyrean-bhagavatam-rebuild-part .sb-dev {
+    font-size:19px!important
+  }
+}
