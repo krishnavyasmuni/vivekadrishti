@@ -4,7 +4,7 @@ import html,re,sys
 
 ROOT=Path(__file__).resolve().parents[1]
 WORK=Path('/Users/macbook/Documents/Codex/2026-08-20/new-chat/work')
-TITLES={26:'Traditional Bodily Signs',27:'Traditional Marks of a King',28:'Traditional Marks of Women',29:'Worship and Mantras of Gaṇeśa',30:'Further Worship and Rites of Gaṇeśa',31:'The Three Forms of Caturthī and the Aṅgāraka Vow'}
+TITLES={26:'Traditional Bodily Signs',27:'Traditional Marks of a King',28:'Traditional Marks of Women',29:'Worship and Mantras of Gaṇeśa',30:'Further Worship and Rites of Gaṇeśa',31:'The Three Forms of Caturthī and the Aṅgāraka Vow',32:'The Origin and Observance of Nāga-pañcamī'}
 
 def add(ch):
     template=BeautifulSoup((ROOT/'articles/bhavishya-purana-brahmaparvan-chapter-25/index.html').read_text(),'html.parser')
@@ -26,7 +26,7 @@ def update_index():
     soup=BeautifulSoup(path.read_text(),'html.parser'); ul=soup.select_one('.empyrean-introduction-content ul')
     existing={a.get('href') for a in ul.select('a')}
     marker=next((li for li in ul.find_all('li',recursive=False) if 'Chapters 39–44' in li.get_text()),None)
-    for ch in (26,27,28,29,30,31):
+    for ch in (26,27,28,29,30,31,32):
         href=f'/vivekadrishti/articles/bhavishya-purana-brahmaparvan-chapter-{ch}/'
         if href in existing: continue
         frag=BeautifulSoup(f'<li><a href="{href}" style="font-size:20px;font-weight:400;line-height:1.5;text-decoration:none;color:#6731fb;font-family:Merriweather,serif">Chapter {ch} — {TITLES[ch]}</a></li>','html.parser').li
@@ -34,5 +34,5 @@ def update_index():
         else: ul.append(frag)
     path.write_text(str(soup))
 
-for ch in (26,27,28,29,30,31): add(ch)
+for ch in (26,27,28,29,30,31,32): add(ch)
 update_index()
