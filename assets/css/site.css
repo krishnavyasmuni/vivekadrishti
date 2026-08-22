@@ -390,6 +390,7 @@ body {
   margin:0
 }
 
+/* Bhāgavatam rebuild — use the same compact scripture presentation as the Bhaviṣya Purāṇa chapters. */
 .empyrean-bhagavatam-rebuild {
   position:static!important;
   left:auto!important;
@@ -398,26 +399,66 @@ body {
   margin:0!important;
   padding:0!important;
   background:transparent!important;
-  color:var(--ink)!important
+  color:var(--ink)!important;
+  font-family:Merriweather,Georgia,'Times New Roman',serif!important
 }
 
 .empyrean-bhagavatam-rebuild>div {
   width:100%!important;
   max-width:100%!important;
   margin:0!important;
-  padding:0 0 42px!important;
-  background:transparent!important
+  padding:8px 0 20px!important;
+  background:#f7f6f4!important
 }
 
 .empyrean-bhagavatam-rebuild>div>div {
   width:100%!important;
-  max-width:100%!important;
-  margin:0!important
+  max-width:760px!important;
+  margin:0 auto!important;
+  padding:0 24px!important;
+  color:var(--ink)!important;
+  font-size:16px!important;
+  line-height:1.45!important
+}
+
+.empyrean-bhagavatam-rebuild h1 {
+  margin:0!important;
+  color:var(--teal)!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:clamp(38px,6vw,50px)!important;
+  font-weight:400!important;
+  line-height:1.125!important;
+  text-align:center!important
+}
+
+.empyrean-bhagavatam-rebuild h1+p {
+  margin:18px 0 0!important;
+  color:var(--red)!important;
+  font-size:18px!important;
+  line-height:1.45!important;
+  text-align:center!important
+}
+
+.empyrean-bhagavatam-rebuild h2 {
+  color:#2f7f82!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:26px!important;
+  font-weight:600!important;
+  line-height:1.1!important;
+  text-align:center!important
+}
+
+.empyrean-bhagavatam-rebuild ol {
+  max-width:760px;
+  margin:0 auto!important;
+  padding-left:28px!important;
+  font-size:16px!important;
+  line-height:1.4!important
 }
 
 .empyrean-bhagavatam-rebuild-part {
   width:100%;
-  margin:0 auto 3rem
+  margin:0 auto 26px
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-panel {
@@ -426,76 +467,122 @@ body {
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-inner {
-  padding:clamp(1.1rem,3vw,2rem) 0
+  padding:0
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-chapter {
-  margin:0 0 1.5rem;
-  color:var(--teal);
+  margin:0 0 26px;
+  padding:0;
+  color:#2f7f82;
   font-family:Vollkorn,Georgia,serif;
-  font-size:clamp(30px,5vw,38px);
-  font-weight:400;
-  line-height:1.18
+  font-size:28px;
+  font-weight:600;
+  line-height:1.15;
+  letter-spacing:.01em;
+  text-align:center
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-chapter span {
-  color:var(--red)
+  color:#2f7f82
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-rule {
-  margin:2rem 0;
-  background:var(--line)
+  width:56%;
+  max-width:520px;
+  height:1px;
+  margin:13px auto 16px;
+  background:#dedbd6
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-verse {
-  margin:0 0 1rem;
-  color:var(--teal);
+  margin:0;
+  color:#2f7f82;
   font-family:Vollkorn,Georgia,serif;
-  font-size:25px;
-  font-weight:400
+  font-size:26px;
+  font-weight:600;
+  line-height:1.1;
+  letter-spacing:.01em;
+  text-align:center
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-devanagari {
-  margin:0 0 1rem;
-  font-size:1.08em;
-  line-height:1.85
+  max-width:840px;
+  margin:0 auto 14px;
+  color:#3c362e;
+  font-size:21px;
+  font-weight:400;
+  line-height:1.48;
+  text-align:center
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-transliteration {
-  margin:0 0 1rem;
-  line-height:1.75
+  max-width:840px;
+  margin:0 auto 14px;
+  color:#3c362e;
+  font-size:14px;
+  font-weight:400;
+  line-height:1.55;
+  text-align:center
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-translation {
-  margin:0 0 1.25rem;
-  color:var(--red);
-  line-height:1.7
+  max-width:840px;
+  margin:0 auto 14px;
+  color:#3c362e;
+  font-size:16px;
+  font-weight:400;
+  line-height:1.45;
+  text-align:center
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-details {
-  margin:.75rem 0;
-  border:1px solid #d8d0c4;
-  border-radius:10px;
-  background:#faf8f2;
-  overflow:hidden
+  max-width:840px;
+  margin:0 auto 8px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  overflow:visible
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-details summary {
+  display:block;
+  width:max-content;
   cursor:pointer;
-  padding:.8rem 1rem;
-  color:var(--purple);
-  font-weight:700
+  list-style:none;
+  border:1px solid #9bc5c7;
+  border-radius:999px;
+  padding:5px 13px;
+  color:#2f7f82;
+  background:transparent;
+  font-size:14px;
+  line-height:1.15;
+  font-weight:600
+}
+
+.empyrean-bhagavatam-rebuild-part .sb-details summary::-webkit-details-marker {
+  display:none
 }
 
 .empyrean-bhagavatam-rebuild-part .sb-details>p,
 .empyrean-bhagavatam-rebuild-part .sb-details>div {
-  margin:0;
-  padding:0 1rem 1rem;
-  line-height:1.7
+  margin:8px 0 12px;
+  padding:0;
+  color:#3c362e;
+  font-size:13px;
+  line-height:1.55
 }
 
 .empyrean-bhagavatam-rebuild-part p {
-  line-height:1.7
+  max-width:840px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:16px;
+  line-height:1.55
+}
+
+.empyrean-bhagavatam-rebuild-part .sb-details + p {
+  margin-top:14px
 }
 
 @media(max-width:780px) {
@@ -563,9 +650,19 @@ body {
     margin-top:4px
   }
   .empyrean-bhagavatam-rebuild>div {
-    padding-bottom:28px!important
+    padding-bottom:20px!important
+  }
+  .empyrean-bhagavatam-rebuild>div>div {
+    padding:0 18px!important
   }
   .empyrean-bhagavatam-rebuild-part .sb-inner {
-    padding:1rem 0
+    padding:0
+  }
+  .empyrean-bhagavatam-rebuild-part .sb-chapter,
+  .empyrean-bhagavatam-rebuild-part .sb-verse {
+    font-size:24px
+  }
+  .empyrean-bhagavatam-rebuild-part .sb-devanagari {
+    font-size:19px
   }
 }
