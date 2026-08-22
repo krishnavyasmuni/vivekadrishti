@@ -276,5 +276,95 @@
     }
   }
 
-  loadBhagavatamContinuation();
+  const independentVowels = new Map(Object.entries({
+    'अ':'a','आ':'ā','इ':'i','ई':'ī','उ':'u','ऊ':'ū','ऋ':'ṛ','ॠ':'ṝ','ऌ':'ḷ','ए':'e','ऐ':'ai','ओ':'o','औ':'au'
+  }));
+  const vowelMarks = new Map(Object.entries({
+    'ा':'ā','ि':'i','ी':'ī','ु':'u','ू':'ū','ृ':'ṛ','ॄ':'ṝ','ॢ':'ḷ','े':'e','ै':'ai','ो':'o','ौ':'au'
+  }));
+  const consonants = new Map(Object.entries({
+    'क':'k','ख':'kh','ग':'g','घ':'gh','ङ':'ṅ','च':'c','छ':'ch','ज':'j','झ':'jh','ञ':'ñ',
+    'ट':'ṭ','ठ':'ṭh','ड':'ḍ','ढ':'ḍh','ण':'ṇ','त':'t','थ':'th','द':'d','ध':'dh','न':'n',
+    'प':'p','फ':'ph','ब':'b','भ':'bh','म':'m','य':'y','र':'r','ल':'l','व':'v','श':'ś','ष':'ṣ','स':'s','ह':'h','ळ':'ḷ'
+  }));
+  const devanagariDigits = new Map(Object.entries({'०':'0','१':'1','२':'2','३':'3','४':'4','५':'5','६':'6','७':'7','८':'8','९':'9'}));
+
+  function devanagariToIast(input) {
+    const chars = Array.from((input || '').normalize('NFC'));
+    let output = '';
+    for (let i = 0; i < chars.length; i += 1) {
+      const ch = chars[i];
+      if (consonants.has(ch)) {
+        const next = chars[i + 1];
+        output += consonants.get(ch);
+        if (next === '्') {
+          i += 1;
+        } else if (vowelMarks.has(next)) {
+          output += vowelMarks.get(next);
+          i += 1;
+        } else {
+          output += 'a';
+        }
+        continue;
+      }
+      if (independentVowels.has(ch)) { output += independentVowels.get(ch); continue; }
+      if (vowelMarks.has(ch)) { output += vowelMarks.get(ch); continue; }
+      if (devanagariDigits.has(ch)) { output += devanagariDigits.get(ch); continue; }
+      if (ch === 'ं') { output += 'ṃ'; continue; }
+      if (ch === 'ः') { output += 'ḥ'; continue; }
+      if (ch === 'ँ') { output += 'm̐'; continue; }
+      if (ch === 'ऽ') { output += '’'; continue; }
+      if (ch === '।') { output += '|'; continue; }
+      if (ch === '॥') { output += '||'; continue; }
+      if (ch === '़' || ch === '्') continue;
+      output += ch;
+    }
+    return output.replace(/\s+\|\|/g, ' ||').replace(/\s+\|/g, ' |').trim();
+  }
+
+  function enhanceAllVerseCards() {
+    document.querySelectorAll('.empyrean-bhagavatam-rebuild .sb-details, .bhagavatam-continuation-host .sb-details').forEach((details) => {
+      details.open = true;
+    });
+
+    document.querySelectorAll('.empyrean-bhagavatam-rebuild .sb-bhasya, .bhagavatam-continuation-host .sb-bhasya').forEach((details) => {
+      details.open = true;
+      const sanskrit = details.querySelector('p[lang="sa-Deva"], div[lang="sa-Deva"]');
+      if (!sanskrit) return;
+
+      const paragraphs = Array.from(details.querySelectorAll(':scope > p, :scope > div'));
+      const hasTransliteration = paragraphs.some((node) => node !== sanskrit && node.querySelector('em'));
+      if (!hasTransliteration) {
+        const transliteration = document.createElement('p');
+        transliteration.className = 'sb-sridhara-auto-transliteration';
+        const emphasis = document.createElement('em');
+        emphasis.textContent = devanagariToIast(sanskrit.textContent || '');
+        transliteration.appendChild(emphasis);
+        sanskrit.after(transliteration);
+      }
+
+      if (!/Śrīdhara word-for-word\./i.test(details.textContent || '')) {
+        const section = details.closest('.sb-verse-section');
+        const commentary = section?.querySelector(':scope > .sb-commentary');
+        const commentaryText = (commentary?.textContent || '')
+          .replace(/^\s*Śrīdhara[’']s Commentary\.\s*/i, '')
+          .trim();
+
+        const sense = document.createElement('p');
+        sense.className = 'sb-sridhara-legacy-sense';
+        const label = document.createElement('strong');
+        label.textContent = 'Śrīdhara word-for-word.';
+        sense.append(label, document.createTextNode(
+          commentaryText
+            ? ` Legacy-card sense: ${commentaryText}`
+            : ' Legacy-card sense follows directly from the Sanskrit commentary above; no unsupported lexical gloss has been invented.'
+        ));
+        details.appendChild(sense);
+      }
+    });
+  }
+
+  loadBhagavatamContinuation().finally(() => {
+    enhanceAllVerseCards();
+  });
 })();
