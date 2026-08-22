@@ -230,4 +230,50 @@
     }
     if (commentary && commentary !== translation) anchor.after(commentary);
   });
+
+  const continuationPath = '/vivekadrishti/articles/srimad-bhagavatam-second-canto-sridhara-svami-rebuild/fragments/';
+
+  async function loadBhagavatamContinuation() {
+    const articleBody = document.querySelector('.article-body');
+    if (!articleBody) return;
+
+    const host = document.createElement('div');
+    host.className = 'bhagavatam-continuation-host';
+    articleBody.appendChild(host);
+
+    for (let index = 1; index <= 64; index += 1) {
+      const batch = String(index).padStart(3, '0');
+      let response;
+      try {
+        response = await fetch(`${continuationPath}batch-${batch}.html`, {
+          cache: 'no-store',
+          credentials: 'same-origin'
+        });
+      } catch (_) {
+        break;
+      }
+
+      if (response.status === 404) break;
+      if (!response.ok) break;
+
+      const template = document.createElement('template');
+      template.innerHTML = await response.text();
+
+      template.content
+        .querySelectorAll('script,iframe,object,embed,form,input,button,link,style,meta')
+        .forEach((node) => node.remove());
+
+      template.content.querySelectorAll('*').forEach((element) => {
+        Array.from(element.attributes).forEach((attribute) => {
+          if (/^on/i.test(attribute.name) || attribute.name === 'srcdoc') {
+            element.removeAttribute(attribute.name);
+          }
+        });
+      });
+
+      host.appendChild(template.content.cloneNode(true));
+    }
+  }
+
+  loadBhagavatamContinuation();
 })();
