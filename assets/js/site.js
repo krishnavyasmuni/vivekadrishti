@@ -1,1 +1,44 @@
-(()=>{if(!document.querySelector('.site-header'))document.body.insertAdjacentHTML('afterbegin','<header class="site-header"><div class="nav-wrap"><a class="brand" href="/vivekadrishti/">Viveka Dṛṣṭi</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="/vivekadrishti/">Home</a><a href="/vivekadrishti/pages/introduction-to-hinduism/">Introduction to Hinduism</a><a href="/vivekadrishti/pages/indology/">Indology</a><a href="/vivekadrishti/pages/purana-library/">Purāṇa Library</a></nav></div></header>');if(!document.querySelector('.site-footer'))document.body.insertAdjacentHTML('beforeend','<footer class="site-footer"><p>Viveka Dṛṣṭi</p></footer>');const b=document.querySelector('.menu-toggle'),n=document.querySelector('#site-nav');if(b&&n){b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n.addEventListener('click',e=>{if(!e.target.matches('a'))return;n.classList.remove('open');b.setAttribute('aria-expanded','false')})}})();
+(() => {
+  const sectionPaths = new Map([
+    ['/vivekadrishti/introduction-to-hinduism/', '/vivekadrishti/pages/introduction-to-hinduism/'],
+    ['/vivekadrishti/indology/', '/vivekadrishti/pages/indology/'],
+    ['/vivekadrishti/purana-library/', '/vivekadrishti/pages/purana-library/'],
+    ['/vivekadrishti/bhagavatam-with-sridhara-bhasya/', '/vivekadrishti/pages/bhagavatam-with-sridhara-bhasya/'],
+    ['/vivekadrishti/bhavishya-purana-brahmaparvan/', '/vivekadrishti/pages/bhavishya-purana-brahmaparvan/']
+  ]);
+
+  document.querySelectorAll('a[href]').forEach((link) => {
+    const replacement = sectionPaths.get(link.getAttribute('href'));
+    if (replacement) link.setAttribute('href', replacement);
+  });
+
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('#site-nav');
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = navigation.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navigation.addEventListener('click', (event) => {
+      if (!event.target.matches('a')) return;
+      navigation.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  document.querySelectorAll('details.sanskrit-reveal').forEach((details) => {
+    const summary = details.querySelector('summary');
+    if (!summary) return;
+
+    const closedLabel = (summary.textContent || '').trim() || 'Show Sanskrit';
+    const openLabel = /show sanskrit/i.test(closedLabel)
+      ? closedLabel.replace(/show sanskrit/i, 'Hide Sanskrit')
+      : 'Hide Sanskrit';
+
+    details.addEventListener('toggle', () => {
+      summary.textContent = details.open ? openLabel : closedLabel;
+    });
+  });
+})();
