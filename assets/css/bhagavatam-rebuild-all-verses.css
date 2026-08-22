@@ -274,6 +274,12 @@
   font-weight:700!important
 }
 
+/* Keep the Śrīdhara layer strictly textual: no third-person commentary, textual notes, or legacy prose fallback. */
+.bhagavatam-rebuild-page .sb-commentary,
+.bhagavatam-rebuild-page .sb-sridhara-legacy-sense{
+  display:none!important
+}
+
 @media(max-width:780px){
   .bhagavatam-rebuild-page .article-body{
     width:calc(100% - 36px)!important
