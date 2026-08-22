@@ -263,9 +263,10 @@
         .querySelectorAll('script,iframe,object,embed,form,input,button,link,style,meta')
         .forEach((node) => node.remove());
 
+      const blockedAttributes = new Set(['srcdoc', 'href', 'src', 'srcset', 'xlink:href', 'formaction', 'style']);
       template.content.querySelectorAll('*').forEach((element) => {
         Array.from(element.attributes).forEach((attribute) => {
-          if (/^on/i.test(attribute.name) || attribute.name === 'srcdoc') {
+          if (/^on/i.test(attribute.name) || blockedAttributes.has(attribute.name.toLowerCase())) {
             element.removeAttribute(attribute.name);
           }
         });
