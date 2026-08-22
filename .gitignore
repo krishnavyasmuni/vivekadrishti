@@ -1,0 +1,25 @@
+# Local/private configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local tooling and generated scratch files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+tmp/
+temp/
+work/
+scripts/
