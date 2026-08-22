@@ -1,0 +1,117 @@
+name: Restore static site
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  restore:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - run: git clone --depth 1 https://github.com/krishnavyasmuni/vivekadrishtia.git /tmp/source
+      - shell: bash
+        run: |
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name .github -exec rm -rf {} +
+          cp -a /tmp/source/404.html /tmp/source/index.html /tmp/source/articles /tmp/source/assets /tmp/source/pages .
+      - shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          email = re.compile(r'\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b', re.I)
+          local_unix = re.compile(r'/(?:Users|home)/[^\s"\'<>]+')
+          local_win = re.compile(r'[A-Z]:\\Users\\[^\s"\'<>]+', re.I)
+          mailto = re.compile(r'mailto:[^\s"\'<>]+', re.I)
+          author_meta = re.compile(r'<meta\b[^>]*\bname=["\']author["\'][^>]*>', re.I)
+          html_comment = re.compile(r'<!--.*?-->', re.S)
+          text_ext = {'.html', '.css', '.js', '.txt', '.md', '.json', '.xml'}
+
+          for p in Path('.').rglob('*'):
+              if not p.is_file() or '.git' in p.parts or '.github' in p.parts or p.suffix.lower() not in text_ext:
+                  continue
+              s = p.read_text(encoding='utf-8', errors='replace')
+              s = email.sub('[email removed]', s)
+              s = local_unix.sub('[local path removed]', s)
+              s = local_win.sub('[local path removed]', s)
+              s = mailto.sub('#', s)
+              if p.suffix.lower() == '.html':
+                  s = author_meta.sub('', s)
+                  s = html_comment.sub('', s)
+              p.write_text(s, encoding='utf-8')
+
+          def strip_jpeg_metadata(path):
+              b = path.read_bytes()
+              if len(b) < 4 or b[:2] != b'\xff\xd8':
+                  return
+              out = bytearray(b[:2])
+              i = 2
+              while i < len(b):
+                  if b[i] != 0xFF:
+                      out.extend(b[i:])
+                      break
+                  start = i
+                  while i < len(b) and b[i] == 0xFF:
+                      i += 1
+                  if i >= len(b):
+                      out.extend(b[start:])
+                      break
+                  marker = b[i]
+                  i += 1
+                  if marker == 0xDA:
+                      out.extend(b[start:])
+                      break
+                  if marker == 0xD9:
+                      out.extend(b[start:i])
+                      break
+                  if marker in range(0xD0, 0xD8) or marker == 0x01:
+                      out.extend(b[start:i])
+                      continue
+                  if i + 2 > len(b):
+                      out.extend(b[start:])
+                      break
+                  length = int.from_bytes(b[i:i+2], 'big')
+                  end = i + length
+                  if end > len(b) or length < 2:
+                      out.extend(b[start:])
+                      break
+                  if marker not in {0xE1, 0xED, 0xFE}:
+                      out.extend(b[start:end])
+                  i = end
+              path.write_bytes(bytes(out))
+
+          for p in Path('.').rglob('*'):
+              if p.is_file() and p.suffix.lower() in {'.jpg', '.jpeg'}:
+                  strip_jpeg_metadata(p)
+
+          bad = []
+          secret_patterns = [
+              re.compile(r'\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b', re.I),
+              re.compile(r'/(?:Users|home)/[^\s"\'<>]+'),
+              re.compile(r'[A-Z]:\\Users\\', re.I),
+              re.compile(r'mailto:', re.I),
+              re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),
+              re.compile(r'\bghp_[A-Za-z0-9]{20,}\b'),
+              re.compile(r'\bgithub_pat_[A-Za-z0-9_]{20,}\b')
+          ]
+          for p in Path('.').rglob('*'):
+              if not p.is_file() or '.git' in p.parts or '.github' in p.parts or p.suffix.lower() not in text_ext:
+                  continue
+              s = p.read_text(encoding='utf-8', errors='replace')
+              if any(x.search(s) for x in secret_patterns):
+                  bad.append(str(p))
+          if bad:
+              raise SystemExit('Privacy scan failed: ' + ', '.join(bad))
+      - shell: bash
+        run: |
+          rm -f .github/workflows/restore-static-site.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Restore complete static Viveka Dṛṣṭi site'
+          git push
