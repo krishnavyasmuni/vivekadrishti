@@ -2,6 +2,10 @@
   const root = document.querySelector('[data-canto10-source-root]');
   if (!root) return;
 
+  const setText = (node, text) => {
+    if (node && node.textContent !== text) node.textContent = text;
+  };
+
   function makeLayer(label, className, nodes = []) {
     const layer = document.createElement('div');
     layer.className = `sb-combined-layer ${className}`;
@@ -18,7 +22,6 @@
     if (!details) {
       details = document.createElement('details');
       details.className = 'sb-details sb-word-details sb-combined-word-details';
-      details.open = false;
       const summary = document.createElement('summary');
       summary.textContent = 'Word-for-word';
       details.appendChild(summary);
@@ -26,9 +29,8 @@
     }
 
     details.classList.add('sb-details', 'sb-word-details', 'sb-combined-word-details');
-    details.open = false;
-    const summary = details.querySelector(':scope > summary');
-    if (summary) summary.textContent = 'Word-for-word';
+    if (details.open) details.open = false;
+    setText(details.querySelector(':scope > summary'), 'Word-for-word');
 
     if (!details.querySelector(':scope > .sb-bhagavatam-layer')) {
       const blocks = Array.from(details.querySelectorAll(':scope > .sb-source-block'));
@@ -61,8 +63,8 @@
       details.appendChild(layer);
     }
     const target = layer.querySelector('.sb-sridhara-word-for-word-content');
-    if (target && content) target.textContent = content.textContent.trim();
-    layer.dataset.verified = verified ? 'true' : 'false';
+    if (target && content) setText(target, content.textContent.trim());
+    if (layer.dataset.verified !== (verified ? 'true' : 'false')) layer.dataset.verified = verified ? 'true' : 'false';
     source.remove();
   }
 
@@ -70,9 +72,8 @@
     const details = section.querySelector(':scope > .sb-transliteration-details, :scope > .sb-combined-transliteration-details');
     if (!details) return null;
     details.classList.add('sb-details', 'sb-transliteration-details', 'sb-combined-transliteration-details');
-    details.open = false;
-    const summary = details.querySelector(':scope > summary');
-    if (summary) summary.textContent = 'Transliteration';
+    if (details.open) details.open = false;
+    setText(details.querySelector(':scope > summary'), 'Transliteration');
     if (details.querySelector(':scope > .sb-bhagavatam-layer, :scope > .sb-sridhara-layer')) return details;
 
     const blocks = Array.from(details.querySelectorAll(':scope > .sb-source-block'));
@@ -92,11 +93,9 @@
     const details = section.querySelector(':scope > .sb-bhasya');
     if (!details) return null;
     details.classList.add('sb-details', 'sb-bhasya');
-    details.open = false;
-    const summary = details.querySelector(':scope > summary');
-    if (summary) summary.textContent = 'Śrīdhara Sanskrit';
-    const label = details.querySelector(':scope > .sb-source-block > .sb-source-label');
-    if (label) label.textContent = 'Bhāvārtha-dīpikā';
+    if (details.open) details.open = false;
+    setText(details.querySelector(':scope > summary'), 'Śrīdhara Sanskrit');
+    setText(details.querySelector(':scope > .sb-source-block > .sb-source-label'), 'Bhāvārtha-dīpikā');
     return details;
   }
 
@@ -137,8 +136,7 @@
       commentary.append(label, text);
       section.appendChild(commentary);
     }
-    const label = commentary.querySelector(':scope > strong:first-child');
-    if (label) label.textContent = 'Śrīdhara’s Commentary. ';
+    setText(commentary.querySelector(':scope > strong:first-child'), 'Śrīdhara’s Commentary. ');
     let text = commentary.querySelector(':scope > .sb-commentary-text');
     if (!text) {
       text = document.createElement('span');
@@ -146,8 +144,9 @@
       commentary.appendChild(text);
     }
     const verified = commentaryText(section, wordDetails);
-    text.textContent = verified || 'A verified English translation has not yet been added for this passage.';
-    commentary.dataset.verified = verified ? 'true' : 'false';
+    setText(text, verified || 'A verified English translation has not yet been added for this passage.');
+    const value = verified ? 'true' : 'false';
+    if (commentary.dataset.verified !== value) commentary.dataset.verified = value;
     return commentary;
   }
 
