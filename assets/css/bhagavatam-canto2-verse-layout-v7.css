@@ -1,4 +1,4 @@
-/* Canto 2 unified verse layout: visible verse + transliteration, then compact controls. */
+/* Canto 2 unified verse layout: visible Sanskrit + translation; Bhagavatam and Śrīdhara controls below. */
 .canto-2-verse-layout .article-body{
   width:min(920px,calc(100% - 48px))!important;
   margin:0 auto!important;
@@ -139,7 +139,7 @@
 .canto-2-verse-layout .sb-verse-section>div[lang="sa-Deva"],
 .canto-2-verse-layout .sb-verse-section>div[lang="sa"]{
   max-width:840px!important;
-  margin:0 auto 10px!important;
+  margin:0 auto 12px!important;
   color:#3c362e!important;
   font-family:Merriweather,Georgia,'Times New Roman',serif!important;
   font-size:21px!important;
@@ -149,24 +149,21 @@
   text-align:center!important
 }
 
-/* Main Bhāgavatam transliteration stays visible; it is not a button. */
-.canto-2-verse-layout .sb-transliteration,
-.canto-2-verse-layout .sb-iast,
-.canto-2-verse-layout .sb-verse-section>.sb-transliteration,
-.canto-2-verse-layout .sb-verse-section>.sb-iast{
+/* Prabhupāda English translation remains visible — never a button. */
+.canto-2-verse-layout .sb-translation{
   display:block!important;
   max-width:840px!important;
   margin:0 auto 15px!important;
   color:#3c362e!important;
   font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:14px!important;
-  font-style:italic!important;
+  font-size:16px!important;
+  font-style:normal!important;
   font-weight:400!important;
-  line-height:1.55!important;
+  line-height:1.45!important;
   text-align:center!important
 }
 
-/* Word-for-word, Translation, and Śrīdhara Sanskrit are three separate controls. */
+/* All remaining textual layers use individual pill controls. */
 .canto-2-verse-layout .sb-details{
   display:block!important;
   width:100%!important;
@@ -202,7 +199,9 @@
   display:none!important
 }
 
-.canto-2-verse-layout .sb-bhasya>summary{
+.canto-2-verse-layout .sb-bhasya>summary,
+.canto-2-verse-layout .sb-sridhara-transliteration-details>summary,
+.canto-2-verse-layout .sb-sridhara-word-details>summary{
   border-color:#dfaaa5!important;
   color:#ab382d!important
 }
@@ -211,7 +210,9 @@
 .canto-2-verse-layout .sb-details>p,
 .canto-2-verse-layout .sb-meaning,
 .canto-2-verse-layout .sb-bhasya-text,
-.canto-2-verse-layout .sb-translation-content{
+.canto-2-verse-layout .sb-transliteration,
+.canto-2-verse-layout .sb-sridhara-auto-transliteration,
+.canto-2-verse-layout .sb-sridhara-wfw-missing{
   margin:8px 0 12px!important;
   padding:0!important;
   color:#3c362e!important;
@@ -223,7 +224,17 @@
   text-align:left!important
 }
 
-/* Śrīdhara's English commentary is normal text beneath the controls. */
+.canto-2-verse-layout .sb-transliteration,
+.canto-2-verse-layout .sb-sridhara-auto-transliteration{
+  font-style:italic!important
+}
+
+.canto-2-verse-layout .sb-sridhara-wfw-missing{
+  font-style:italic!important;
+  opacity:.75
+}
+
+/* Śrīdhara's English commentary stays visible below all Śrīdhara controls. */
 .canto-2-verse-layout .sb-commentary,
 .canto-2-verse-layout .sb-verse-section>p.sb-commentary,
 .canto-2-verse-layout section[aria-labelledby^="sb-"]>p.sb-commentary{
