@@ -27,7 +27,6 @@
       details.appendChild(summary);
       section.appendChild(details);
     }
-
     details.classList.add('sb-details', 'sb-word-details', 'sb-combined-word-details');
     if (details.open) details.open = false;
     setText(details.querySelector(':scope > summary'), 'Word-for-word');
@@ -50,11 +49,14 @@
     return details;
   }
 
-  function mergeSridharaWordLayer(section, details) {
+  function mergeSridharaEnglish(section, details) {
     const source = section.querySelector(':scope > .sb-sridhara-wfw-details');
     if (!source) return;
-    const verified = source.dataset.verified === 'true';
+    const verifiedGloss = source.dataset.verifiedGloss === 'true';
+    const verifiedTranslation = source.dataset.verifiedTranslation === 'true';
+    const translation = source.dataset.translation || '';
     const content = source.querySelector('.sb-sridhara-word-for-word, .sb-source-content');
+
     let layer = details.querySelector(':scope > .sb-sridhara-layer');
     if (!layer) {
       const node = document.createElement('p');
@@ -64,7 +66,10 @@
     }
     const target = layer.querySelector('.sb-sridhara-word-for-word-content');
     if (target && content) setText(target, content.textContent.trim());
-    if (layer.dataset.verified !== (verified ? 'true' : 'false')) layer.dataset.verified = verified ? 'true' : 'false';
+    layer.dataset.verifiedGloss = verifiedGloss ? 'true' : 'false';
+    layer.dataset.verifiedTranslation = verifiedTranslation ? 'true' : 'false';
+    if (verifiedTranslation && translation) layer.dataset.translation = translation;
+    else delete layer.dataset.translation;
     source.remove();
   }
 
@@ -99,26 +104,12 @@
     return details;
   }
 
-  function literalEnglishFromVerifiedGloss(gloss) {
-    const value = String(gloss || '').trim().replace(/\.\s*$/u, '');
-    if (!value) return '';
-    const pieces = value.split(/;\s+(?=[^;]+?\s+—\s+)/u).map((piece) => {
-      const divider = piece.indexOf(' — ');
-      return (divider >= 0 ? piece.slice(divider + 3) : piece).trim();
-    }).filter(Boolean);
-    if (!pieces.length) return '';
-    let text = pieces.join('; ').replace(/\s+/g, ' ').trim();
-    text = text.replace(/^([a-zāīūṛṝḷṃṁḥṅñṭḍṇśṣ])/u, (match) => match.toUpperCase());
-    if (!/[.!?]$/u.test(text)) text += '.';
-    return text;
-  }
-
   function commentaryText(section, wordDetails) {
     const sanskrit = section.querySelector(':scope > .sb-bhasya .sb-source-content')?.textContent?.trim() || '';
-    if (/न\s*व्याख्यातम्|na\s+vyākhyātam/i.test(sanskrit)) return 'Not explained.';
-    const layer = wordDetails?.querySelector(':scope > .sb-sridhara-layer[data-verified="true"]');
-    const gloss = layer?.querySelector('.sb-sridhara-word-for-word-content')?.textContent || '';
-    return literalEnglishFromVerifiedGloss(gloss);
+    if (/न\s*व्याख्यातम्|na\s+vyākhyātam/i.test(sanskrit)) return { text: 'Not explained.', verified: true };
+    const layer = wordDetails?.querySelector(':scope > .sb-sridhara-layer[data-verified-translation="true"]');
+    const translation = layer?.dataset.translation?.trim() || '';
+    return translation ? { text: translation, verified: true } : { text: 'A close English translation from Śrīdhara’s Sanskrit has not yet been completed for this passage.', verified: false };
   }
 
   function ensureCommentary(section, wordDetails) {
@@ -143,10 +134,9 @@
       text.className = 'sb-commentary-text';
       commentary.appendChild(text);
     }
-    const verified = commentaryText(section, wordDetails);
-    setText(text, verified || 'A verified English translation has not yet been added for this passage.');
-    const value = verified ? 'true' : 'false';
-    if (commentary.dataset.verified !== value) commentary.dataset.verified = value;
+    const result = commentaryText(section, wordDetails);
+    setText(text, result.text);
+    commentary.dataset.verified = result.verified ? 'true' : 'false';
     return commentary;
   }
 
@@ -154,7 +144,7 @@
     const translation = section.querySelector(':scope > .sb-translation');
     if (!translation) return;
     const word = ensureBhagavatamWordLayer(section);
-    mergeSridharaWordLayer(section, word);
+    mergeSridharaEnglish(section, word);
     const transliteration = normalizeTransliteration(section);
     const sanskrit = normalizeSanskrit(section);
     const commentary = ensureCommentary(section, word);
