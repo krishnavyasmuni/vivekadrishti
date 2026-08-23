@@ -19,7 +19,7 @@
   async function chapterData(chapter) {
     if (!cache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      cache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=2`, { cache: 'force-cache' })
+      cache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=3`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
