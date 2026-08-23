@@ -94,7 +94,7 @@ def is_placeholder(text: str) -> bool:
     compact = re.sub(r"\s+", "", text)
     return (
         not compact
-        or compact.startswith("[+++]" )
+        or compact.startswith("[+++]")
         or compact in {"+++", "[+++]{।मर्क्}", "[+++]{.mark}"}
     )
 
@@ -130,6 +130,7 @@ def parse(markdown: str, chapter: int) -> dict[str, dict[str, object]]:
 
 
 def main() -> None:
+    # Keep this extractor deterministic: it is temporary build tooling, not a translator.
     OUT.mkdir(parents=True, exist_ok=True)
     cache: dict[str, str] = {}
     for chapter in range(1, 91):
