@@ -10,14 +10,11 @@
       font-size:16px!important;line-height:1.55!important;text-align:left!important
     }
     .canto-10-continuous-layout .sb-sridhara-visible-label{
-      display:inline!important;color:#2f7f82!important;font-size:17px!important;font-weight:700!important
+      color:#2f7f82!important;font-size:17px!important;font-weight:700!important
     }
-    .canto-10-continuous-layout .sb-sridhara-visible-sanskrit{
-      display:block!important;margin:7px 0 0!important;color:#3c362e!important;
-      font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:18px!important;
-      font-weight:400!important;line-height:1.65!important;text-align:left!important
+    .canto-10-continuous-layout .sb-sridhara-visible-english{
+      color:#3c362e!important;font-size:16px!important;font-weight:400!important
     }
-    .canto-10-continuous-layout .sb-bhasya{display:none!important}
     .canto-10-continuous-layout .sb-word-details .sb-sridhara-wfw-details>summary{display:none!important}
     .canto-10-continuous-layout .sb-word-details .sb-sridhara-wfw-details{
       display:block!important;margin:10px 0 0!important;padding-top:10px!important;
@@ -27,32 +24,67 @@
   `;
   document.head.appendChild(style);
 
-  function ensureVisibleSridhara(section) {
-    if (!(section instanceof HTMLElement)) return;
+  function hasSridharaSanskrit(section) {
+    return Boolean(section.querySelector(':scope > .sb-bhasya .sb-source-content')?.textContent?.trim());
+  }
+
+  function ensureVisibleCommentary(section) {
+    if (!(section instanceof HTMLElement) || !hasSridharaSanskrit(section)) return null;
+    let paragraph = section.querySelector(':scope > .sb-sridhara-visible');
+    if (paragraph) return paragraph;
+
+    paragraph = document.createElement('p');
+    paragraph.className = 'sb-commentary sb-sridhara-visible';
+    paragraph.hidden = true;
+
+    const label = document.createElement('strong');
+    label.className = 'sb-sridhara-visible-label';
+    label.textContent = 'Śrīdhara Commentary: ';
+
+    const english = document.createElement('span');
+    english.className = 'sb-sridhara-visible-english';
+    paragraph.append(label, english);
+
     const translation = section.querySelector(':scope > .sb-translation');
-    const bhasya = section.querySelector(':scope > .sb-bhasya');
-    const sanskrit = bhasya?.querySelector('.sb-source-content')?.textContent?.trim() || '';
-    if (!translation || !sanskrit) return;
+    if (translation) translation.insertAdjacentElement('afterend', paragraph);
+    else section.appendChild(paragraph);
+    return paragraph;
+  }
 
-    let visible = section.querySelector(':scope > .sb-sridhara-visible');
-    if (!visible) {
-      visible = document.createElement('div');
-      visible.className = 'sb-sridhara-visible';
+  function englishFromGloss(gloss) {
+    const value = String(gloss || '').trim().replace(/\.\s*$/u, '');
+    if (!value) return '';
 
-      const label = document.createElement('strong');
-      label.className = 'sb-sridhara-visible-label';
-      label.textContent = 'Śrīdhara Commentary:';
+    // The Śrīdhara gloss is stored as "Sanskrit unit — English; Sanskrit unit — English".
+    // Keep only the English sides, in Śrīdhara's original word order, so the visible
+    // commentary is English-only and remains deliberately literal rather than paraphrased.
+    const pieces = value.split(/;\s+(?=[^;]+?\s+—\s+)/u);
+    return pieces.map((piece) => {
+      const divider = piece.indexOf(' — ');
+      return (divider >= 0 ? piece.slice(divider + 3) : piece).trim();
+    }).filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+  }
 
-      const text = document.createElement('div');
-      text.className = 'sb-sridhara-visible-sanskrit';
-      text.lang = 'sa-Deva';
+  function syncEnglishCommentary(section, sourceContent) {
+    if (!sourceContent) return;
+    const paragraph = ensureVisibleCommentary(section);
+    if (!paragraph) return;
+    const target = paragraph.querySelector('.sb-sridhara-visible-english');
 
-      visible.append(label, text);
-      translation.insertAdjacentElement('afterend', visible);
-    }
+    const sync = () => {
+      const english = englishFromGloss(sourceContent.textContent);
+      target.textContent = english;
+      paragraph.hidden = !english;
+    };
+    sync();
 
-    const text = visible.querySelector('.sb-sridhara-visible-sanskrit');
-    if (text && text.textContent !== sanskrit) text.textContent = sanskrit;
+    if (sourceContent.dataset.visibleEnglishSync === 'true') return;
+    sourceContent.dataset.visibleEnglishSync = 'true';
+    new MutationObserver(sync).observe(sourceContent, {
+      childList: true,
+      subtree: true,
+      characterData: true
+    });
   }
 
   function mergeWordForWord(section) {
@@ -68,21 +100,54 @@
       const summary = document.createElement('summary');
       summary.textContent = 'Word-for-word';
       bhagavatam.appendChild(summary);
-      const visible = section.querySelector(':scope > .sb-sridhara-visible');
-      if (visible) visible.insertAdjacentElement('afterend', bhagavatam);
+
+      const commentary = section.querySelector(':scope > .sb-sridhara-visible');
+      const translation = section.querySelector(':scope > .sb-translation');
+      if (commentary) commentary.insertAdjacentElement('afterend', bhagavatam);
+      else if (translation) translation.insertAdjacentElement('afterend', bhagavatam);
       else section.appendChild(bhagavatam);
     }
 
     const label = sridhara.querySelector('.sb-source-label');
     if (label) label.textContent = 'Śrīdhara word-for-word';
+
+    const sourceContent = sridhara.querySelector('.sb-sridhara-word-for-word, .sb-source-content');
+    syncEnglishCommentary(section, sourceContent);
+
+    // Keep the inner Śrīdhara details open so its lazy lexical resolver can run,
+    // but hide its own summary. The user sees only the single Word-for-word button.
     sridhara.open = true;
     if (sridhara.parentElement !== bhagavatam) bhagavatam.appendChild(sridhara);
   }
 
+  function enforceOrder(section) {
+    if (!(section instanceof HTMLElement)) return;
+    const translation = section.querySelector(':scope > .sb-translation');
+    const commentary = section.querySelector(':scope > .sb-sridhara-visible');
+    const word = section.querySelector(':scope > .sb-word-details');
+    const transliteration = section.querySelector(':scope > .sb-transliteration-details');
+    const sanskrit = section.querySelector(':scope > .sb-bhasya');
+    if (!translation) return;
+
+    let cursor = translation;
+    [commentary, word, transliteration, sanskrit].filter(Boolean).forEach((node) => {
+      if (cursor.nextElementSibling !== node) cursor.insertAdjacentElement('afterend', node);
+      cursor = node;
+    });
+
+    const sanskritSummary = sanskrit?.querySelector(':scope > summary');
+    if (sanskritSummary) sanskritSummary.textContent = 'Śrīdhara Sanskrit';
+    const transliterationSummary = transliteration?.querySelector(':scope > summary');
+    if (transliterationSummary) transliterationSummary.textContent = 'Transliteration';
+    const wordSummary = word?.querySelector(':scope > summary');
+    if (wordSummary) wordSummary.textContent = 'Word-for-word';
+  }
+
   function normalize(section) {
     if (!(section instanceof HTMLElement) || !section.matches('.sb-verse-section')) return;
-    ensureVisibleSridhara(section);
+    ensureVisibleCommentary(section);
     mergeWordForWord(section);
+    enforceOrder(section);
   }
 
   function scan(node = root) {
