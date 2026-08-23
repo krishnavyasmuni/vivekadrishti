@@ -44,7 +44,7 @@
   if (isCanto2 && !document.querySelector('link[data-canto2-layout]')) {
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = '/vivekadrishti/assets/css/bhagavatam-canto2-verse-layout-v7.css?v=8';
+    css.href = '/vivekadrishti/assets/css/bhagavatam-canto2-verse-layout-v7.css?v=9';
     css.dataset.canto2Layout = 'true';
     document.head.appendChild(css);
   } else if (!isCanto2 && !document.querySelector('link[data-bhagavatam-rebuild-styles]')) {
@@ -91,6 +91,27 @@
     nodes.filter(Boolean).forEach((node) => details.appendChild(node));
     details.open = false;
     return details;
+  }
+
+  function makeLayer(label, className, nodes = []) {
+    const layer = document.createElement('div');
+    layer.className = `sb-combined-layer ${className}`;
+    const heading = document.createElement('div');
+    heading.className = 'sb-layer-heading';
+    heading.textContent = label;
+    layer.appendChild(heading);
+    nodes.filter(Boolean).forEach((node) => layer.appendChild(node));
+    return layer;
+  }
+
+  function detailContent(details) {
+    return details ? children(details).filter((node) => node.tagName !== 'SUMMARY') : [];
+  }
+
+  function removeEmptyDetailWrapper(details) {
+    const parent = details?.parentElement;
+    details?.remove();
+    if (parent && parent.tagName === 'DIV' && !parent.className && !parent.textContent.trim() && !parent.children.length) parent.remove();
   }
 
   const independentVowels = new Map(Object.entries({
@@ -155,7 +176,7 @@
   function normalizeCanto2Verse(heading) {
     let section = heading.closest('section[aria-labelledby^="sb-"]');
     if (!section) section = wrapLegacyVerse(heading);
-    if (!section) return;
+    if (!section || section.dataset.canto2MergedLayout === 'true') return;
 
     section.classList.add('sb-verse-section');
     section.setAttribute('aria-labelledby', heading.id);
@@ -182,97 +203,92 @@
       translation.classList.remove('sb-translation-content');
       translation.classList.add('sb-translation');
     }
-    if (oldTranslationDetails) oldTranslationDetails.remove();
+    if (oldTranslationDetails) removeEmptyDetailWrapper(oldTranslationDetails);
 
-    let bhagavatamTranslitDetails = detailsByLabel(section, /^(?:bhāgavatam\s+)?transliteration$/i);
-    let transliteration = direct.find((node) =>
+    let bhagTranslitDetails = detailsByLabel(section, /^(?:bhāgavatam\s+)?transliteration$/i);
+    let bhagTranslit = direct.find((node) =>
       node.matches('.sb-transliteration,.sb-iast,[lang="sa-Latn"]') && !node.closest('details')
     );
-    if (!transliteration && bhagavatamTranslitDetails) {
-      transliteration = bhagavatamTranslitDetails.querySelector(':scope > .sb-transliteration, :scope > .sb-iast, :scope > div, :scope > p');
+    if (!bhagTranslit && bhagTranslitDetails) {
+      bhagTranslit = bhagTranslitDetails.querySelector(':scope > .sb-transliteration, :scope > .sb-iast, :scope > div, :scope > p');
     }
-    if (transliteration) transliteration.classList.add('sb-transliteration');
-    if (!bhagavatamTranslitDetails && transliteration) {
-      bhagavatamTranslitDetails = makeDetails('Bhāgavatam Transliteration', 'sb-bhagavatam-transliteration-details', [transliteration]);
-    } else if (bhagavatamTranslitDetails) {
-      bhagavatamTranslitDetails.classList.add('sb-details', 'sb-bhagavatam-transliteration-details');
-      const summary = bhagavatamTranslitDetails.querySelector(':scope > summary');
-      if (summary) summary.textContent = 'Bhāgavatam Transliteration';
-      if (transliteration && transliteration.parentElement !== bhagavatamTranslitDetails) bhagavatamTranslitDetails.appendChild(transliteration);
-      bhagavatamTranslitDetails.open = false;
-    }
+    if (bhagTranslit) bhagTranslit.classList.add('sb-transliteration', 'sb-bhagavatam-transliteration-content');
 
-    let bhagavatamWordDetails = verseDetails(section).find((details) =>
+    const bhagWordDetails = verseDetails(section).find((details) =>
       /word[- ]?for[- ]?word/i.test(summaryText(details)) && !/śrīdhara|sridhara/i.test(summaryText(details))
     );
-    if (bhagavatamWordDetails) {
-      bhagavatamWordDetails.classList.add('sb-details', 'sb-word-details');
-      const summary = bhagavatamWordDetails.querySelector(':scope > summary');
-      if (summary) summary.textContent = 'Bhāgavatam Word-for-word';
-      bhagavatamWordDetails.open = false;
-    }
+    const bhagWordNodes = detailContent(bhagWordDetails);
 
-    let sridharaSanskrit = detailsByLabel(section, /^śrīdhara sanskrit$|^sridhara sanskrit$/i)
+    const sridharaSanskrit = detailsByLabel(section, /^śrīdhara sanskrit$|^sridhara sanskrit$/i)
       || section.querySelector(':scope > .sb-bhasya, :scope > div > .sb-bhasya');
-    let sridharaTranslit = detailsByLabel(section, /^śrīdhara transliteration$|^sridhara transliteration$/i);
-    let sridharaWord = detailsByLabel(section, /^śrīdhara word[- ]?for[- ]?word$|^sridhara word[- ]?for[- ]?word$/i);
+    const separateSridharaTranslit = detailsByLabel(section, /^śrīdhara transliteration$|^sridhara transliteration$/i);
+    const separateSridharaWord = detailsByLabel(section, /^śrīdhara word[- ]?for[- ]?word$|^sridhara word[- ]?for[- ]?word$/i);
+
+    let sridharaTranslitNodes = detailContent(separateSridharaTranslit);
+    let sridharaWordNodes = detailContent(separateSridharaWord);
+    let sridharaSanskritNodes = [];
 
     if (sridharaSanskrit) {
       sridharaSanskrit.classList.add('sb-details', 'sb-bhasya');
       const summary = sridharaSanskrit.querySelector(':scope > summary');
       if (summary) summary.textContent = 'Śrīdhara Sanskrit';
 
-      const contentNodes = children(sridharaSanskrit).filter((node) => node.tagName !== 'SUMMARY');
-      const wordNodes = contentNodes.filter((node) => /Śrīdhara word-for-word\./i.test(node.textContent || ''));
-      const translitNodes = contentNodes.filter((node) =>
-        !wordNodes.includes(node) && (
+      const content = detailContent(sridharaSanskrit);
+      const embeddedWord = content.filter((node) => /Śrīdhara word-for-word\./i.test(node.textContent || ''));
+      const embeddedTranslit = content.filter((node) =>
+        !embeddedWord.includes(node) && (
           node.matches('[lang="sa-Latn"], .sb-sridhara-auto-transliteration') ||
           (!!node.querySelector('em') && !node.matches('[lang="sa-Deva"], [lang="sa"], .sb-bhasya-text'))
         )
       );
-      const sanskritNodes = contentNodes.filter((node) => !wordNodes.includes(node) && !translitNodes.includes(node));
+      sridharaWordNodes = [...sridharaWordNodes, ...embeddedWord];
+      sridharaTranslitNodes = [...sridharaTranslitNodes, ...embeddedTranslit];
+      sridharaSanskritNodes = content.filter((node) => !embeddedWord.includes(node) && !embeddedTranslit.includes(node));
 
-      if (!sridharaTranslit) {
-        let nodes = translitNodes;
-        if (!nodes.length && sanskritNodes.length) {
-          const source = sanskritNodes.find((node) => /[\u0900-\u097F]/.test(node.textContent || ''));
-          if (source) {
-            const p = document.createElement('p');
-            p.className = 'sb-sridhara-auto-transliteration';
-            const em = document.createElement('em');
-            em.textContent = devanagariToIast(source.textContent || '');
-            p.appendChild(em);
-            nodes = [p];
-          }
-        }
-        sridharaTranslit = makeDetails('Śrīdhara Transliteration', 'sb-sridhara-transliteration-details', nodes);
-      } else {
-        sridharaTranslit.classList.add('sb-details', 'sb-sridhara-transliteration-details');
-        const translitSummary = sridharaTranslit.querySelector(':scope > summary');
-        if (translitSummary) translitSummary.textContent = 'Śrīdhara Transliteration';
-        translitNodes.forEach((node) => sridharaTranslit.appendChild(node));
-      }
-
-      if (!sridharaWord) {
-        let nodes = wordNodes;
-        if (!nodes.length) {
-          const note = document.createElement('p');
-          note.className = 'sb-sridhara-wfw-missing';
-          note.textContent = 'A separate sourced Śrīdhara word-for-word gloss has not yet been added for this verse.';
-          nodes = [note];
-        }
-        sridharaWord = makeDetails('Śrīdhara Word-for-word', 'sb-sridhara-word-details', nodes);
-      } else {
-        sridharaWord.classList.add('sb-details', 'sb-sridhara-word-details');
-        const wordSummary = sridharaWord.querySelector(':scope > summary');
-        if (wordSummary) wordSummary.textContent = 'Śrīdhara Word-for-word';
-        wordNodes.forEach((node) => sridharaWord.appendChild(node));
-      }
-
+      sridharaSanskrit.replaceChildren(sridharaSanskrit.querySelector(':scope > summary'));
+      sridharaSanskritNodes.forEach((node) => sridharaSanskrit.appendChild(node));
       sridharaSanskrit.open = false;
-      sridharaTranslit.open = false;
-      sridharaWord.open = false;
     }
+
+    if (!sridharaTranslitNodes.length && sridharaSanskritNodes.length) {
+      const source = sridharaSanskritNodes.find((node) => /[\u0900-\u097F]/.test(node.textContent || ''));
+      if (source) {
+        const p = document.createElement('p');
+        p.className = 'sb-sridhara-auto-transliteration';
+        const em = document.createElement('em');
+        em.textContent = devanagariToIast(source.textContent || '');
+        p.appendChild(em);
+        sridharaTranslitNodes = [p];
+      }
+    }
+
+    if (!sridharaWordNodes.length) {
+      const note = document.createElement('p');
+      note.className = 'sb-sridhara-wfw-missing';
+      note.textContent = 'A separate sourced Śrīdhara word-for-word gloss has not yet been added for this verse.';
+      sridharaWordNodes = [note];
+    }
+
+    sridharaWordNodes.forEach((node) => {
+      const firstStrong = node.querySelector?.(':scope > strong:first-child');
+      if (firstStrong && /^Śrīdhara word-for-word\.?$/i.test((firstStrong.textContent || '').trim())) firstStrong.remove();
+    });
+
+    const wordDetails = makeDetails('Word-for-word', 'sb-combined-word-details', [
+      makeLayer('Bhāgavatam', 'sb-bhagavatam-layer', bhagWordNodes.length ? bhagWordNodes : [Object.assign(document.createElement('p'), { textContent: 'No Bhāgavatam word-for-word gloss is stored for this verse.' })]),
+      makeLayer('Śrīdhara', 'sb-sridhara-layer', sridharaWordNodes)
+    ]);
+
+    const bhagTranslitNode = bhagTranslit || Object.assign(document.createElement('p'), { textContent: 'No Bhāgavatam transliteration is stored for this verse.' });
+    bhagTranslitNode.classList.add('sb-bhagavatam-transliteration-content');
+    const translitDetails = makeDetails('Transliteration', 'sb-combined-transliteration-details', [
+      makeLayer('Bhāgavatam', 'sb-bhagavatam-layer', [bhagTranslitNode]),
+      makeLayer('Śrīdhara', 'sb-sridhara-layer', sridharaTranslitNodes.length ? sridharaTranslitNodes : [Object.assign(document.createElement('p'), { textContent: 'No Śrīdhara transliteration is stored for this verse.' })])
+    ]);
+
+    [bhagWordDetails, bhagTranslitDetails, separateSridharaTranslit, separateSridharaWord].forEach((details) => {
+      if (details && details.isConnected) removeEmptyDetailWrapper(details);
+    });
 
     verseDetails(section).forEach((details) => {
       details.classList.add('sb-details');
@@ -283,20 +299,13 @@
 
     heading.after(rule);
     let anchor = rule;
-    [
-      devanagari,
-      translation,
-      bhagavatamWordDetails,
-      bhagavatamTranslitDetails,
-      sridharaSanskrit,
-      sridharaTranslit,
-      sridharaWord,
-      commentary
-    ].forEach((node) => {
+    [devanagari, translation, wordDetails, translitDetails, sridharaSanskrit, commentary].forEach((node) => {
       if (!node) return;
       anchor.after(node);
       anchor = node;
     });
+
+    section.dataset.canto2MergedLayout = 'true';
   }
 
   function normalizeCanto2Scope(scope = document) {
@@ -407,9 +416,7 @@
     if (!section || !text) return;
     let translation = section.querySelector(':scope > .sb-translation');
     if (!translation) {
-      const oldDetails = detailsByLabel(section, /^translation$/i);
-      translation = oldDetails?.querySelector(':scope > div, :scope > p') || document.createElement('p');
-      oldDetails?.remove();
+      translation = document.createElement('p');
       translation.className = 'sb-translation';
       section.querySelector(':scope > .sb-devanagari, :scope > .sb-dev')?.after(translation);
     }
@@ -419,21 +426,9 @@
 
   function setExactTransliteration(section, lines) {
     if (!section || !lines.length) return;
-    let details = detailsByLabel(section, /^bhāgavatam transliteration$|^transliteration$/i);
-    if (!details) {
-      const content = document.createElement('div');
-      content.className = 'sb-transliteration';
-      details = makeDetails('Bhāgavatam Transliteration', 'sb-bhagavatam-transliteration-details', [content]);
-      const word = detailsByLabel(section, /^bhāgavatam word[- ]?for[- ]?word$|^word[- ]?for[- ]?word$/i);
-      (word || section.querySelector(':scope > .sb-translation') || section.querySelector(':scope > .sb-devanagari'))?.after(details);
-    }
-    let content = details.querySelector(':scope > .sb-transliteration, :scope > .sb-iast, :scope > div, :scope > p');
-    if (!content) {
-      content = document.createElement('div');
-      content.className = 'sb-transliteration';
-      details.appendChild(content);
-    }
-    content.classList.add('sb-transliteration');
+    const details = section.querySelector(':scope > .sb-combined-transliteration-details');
+    let content = details?.querySelector('.sb-bhagavatam-transliteration-content');
+    if (!content) return;
     const em = document.createElement('em');
     lines.forEach((line, index) => {
       if (index) em.appendChild(document.createElement('br'));
@@ -495,11 +490,7 @@
   window.addEventListener('hashchange', () => continuationPromise.finally(scrollToHash));
 
   continuationPromise.finally(async () => {
-    if (isCanto2) {
-      normalizeCanto2Scope(document);
-      await syncCanto2FromVishvasa();
-      normalizeCanto2Scope(document);
-    }
+    if (isCanto2) await syncCanto2FromVishvasa();
     scrollToHash();
   });
 })();
