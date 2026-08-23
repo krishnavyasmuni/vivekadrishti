@@ -1,0 +1,34 @@
+name: Extract Canto 10 Sridhara source
+
+on:
+  push:
+    paths:
+      - 'tools/extract_canto10_sridhara.py'
+      - '.github/workflows/extract-canto10-sridhara.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract Śrīdhara blocks
+        run: python tools/extract_canto10_sridhara.py
+      - name: Commit compact source data
+        run: |
+          if git diff --quiet -- assets/data/canto10-sridhara-source; then
+            echo 'No source changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/data/canto10-sridhara-source
+          git commit -m 'Extract compact Canto 10 Sridhara source data'
+          git push
