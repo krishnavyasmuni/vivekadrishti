@@ -66,7 +66,7 @@
   if (!document.querySelector('link[data-bhagavatam-rebuild-styles]')) {
     const verseStyles = document.createElement('link');
     verseStyles.rel = 'stylesheet';
-    verseStyles.href = '/vivekadrishti/assets/css/bhagavatam-rebuild-all-verses.css?v=4';
+    verseStyles.href = '/vivekadrishti/assets/css/bhagavatam-rebuild-all-verses.css?v=5';
     verseStyles.dataset.bhagavatamRebuildStyles = 'true';
     document.head.appendChild(verseStyles);
   }
@@ -232,16 +232,21 @@
   });
 
   const continuationPath = '/vivekadrishti/articles/srimad-bhagavatam-second-canto-sridhara-svami-rebuild/fragments/';
+  const continuationBatchCount = 32;
+  const vishvasaChapter10 = 'https://vishvasa.github.io/purANam_vaiShNavam/bhAgavatam/gauDIyo_abhaya-charaNaH/02/10/';
 
   async function loadBhagavatamContinuation() {
     const articleBody = document.querySelector('.article-body');
-    if (!articleBody) return;
+    if (!articleBody) return null;
+
+    const oldHost = articleBody.querySelector(':scope > .bhagavatam-continuation-host');
+    if (oldHost) oldHost.remove();
 
     const host = document.createElement('div');
     host.className = 'bhagavatam-continuation-host';
     articleBody.appendChild(host);
 
-    for (let index = 1; index <= 64; index += 1) {
+    for (let index = 1; index <= continuationBatchCount; index += 1) {
       const batch = String(index).padStart(3, '0');
       let response;
       try {
@@ -253,7 +258,6 @@
         break;
       }
 
-      if (response.status === 404) break;
       if (!response.ok) break;
 
       const template = document.createElement('template');
@@ -263,10 +267,14 @@
         .querySelectorAll('script,iframe,object,embed,form,input,button,link,style,meta')
         .forEach((node) => node.remove());
 
-      const blockedAttributes = new Set(['srcdoc', 'href', 'src', 'srcset', 'xlink:href', 'formaction', 'style']);
+      const blockedAttributes = new Set(['srcdoc', 'src', 'srcset', 'xlink:href', 'formaction', 'style']);
       template.content.querySelectorAll('*').forEach((element) => {
         Array.from(element.attributes).forEach((attribute) => {
-          if (/^on/i.test(attribute.name) || blockedAttributes.has(attribute.name.toLowerCase())) {
+          const name = attribute.name.toLowerCase();
+          if (/^on/i.test(attribute.name) || blockedAttributes.has(name)) {
+            element.removeAttribute(attribute.name);
+          }
+          if (name === 'href' && /^\s*javascript:/i.test(attribute.value || '')) {
             element.removeAttribute(attribute.name);
           }
         });
@@ -274,6 +282,9 @@
 
       host.appendChild(template.content.cloneNode(true));
     }
+
+    host.querySelectorAll('h2[id^="chapter-"]').forEach((heading) => heading.classList.add('sb-chapter'));
+    return host;
   }
 
   const independentVowels = new Map(Object.entries({
@@ -356,15 +367,124 @@
         label.textContent = 'Śrīdhara word-for-word.';
         sense.append(label, document.createTextNode(
           commentaryText
-            ? ` Legacy-card sense: ${commentaryText}`
-            : ' Legacy-card sense follows directly from the Sanskrit commentary above; no unsupported lexical gloss has been invented.'
+            ? ` Close lexical sense: ${commentaryText}`
+            : ' The Sanskrit commentary above is retained in full; its English sense is supplied in the commentary immediately below the verse.'
         ));
         details.appendChild(sense);
       }
     });
   }
 
-  loadBhagavatamContinuation().finally(() => {
+  function fieldAfterHeading(textHeading, wantedLabel) {
+    let node = textHeading.nextElementSibling;
+    while (node && node.tagName !== 'H2') {
+      if (node.tagName === 'H3' && (node.textContent || '').trim().toLowerCase() === wantedLabel.toLowerCase()) {
+        let content = node.nextElementSibling;
+        while (content && /^H[1-6]$/.test(content.tagName)) content = content.nextElementSibling;
+        return content && content.tagName !== 'H2' ? content : null;
+      }
+      node = node.nextElementSibling;
+    }
+    return null;
+  }
+
+  async function syncChapter10FromVishvasa() {
+    let response;
+    try {
+      response = await fetch(vishvasaChapter10, { mode: 'cors', cache: 'force-cache' });
+    } catch (_) {
+      return false;
+    }
+    if (!response.ok) return false;
+
+    const source = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const textHeadings = Array.from(source.querySelectorAll('h2')).filter((heading) => /^Text\s+\d+$/i.test((heading.textContent || '').trim()));
+    if (!textHeadings.length) return false;
+
+    let applied = 0;
+    textHeadings.forEach((textHeading) => {
+      const match = (textHeading.textContent || '').trim().match(/^Text\s+(\d+)$/i);
+      if (!match) return;
+      const verse = Number(match[1]);
+      const section = document.querySelector(`.sb-verse-section[aria-labelledby="sb-2-10-${verse}"]`)
+        || document.getElementById(`sb-2-10-${verse}`)?.closest('.sb-verse-section');
+      if (!section) return;
+
+      const verseText = fieldAfterHeading(textHeading, 'Verse text');
+      const synonyms = fieldAfterHeading(textHeading, 'Synonyms');
+      const translation = fieldAfterHeading(textHeading, 'Translation');
+
+      if (verseText) {
+        const details = section.querySelector(':scope > .sb-transliteration-details');
+        const container = details?.querySelector(':scope > div, :scope > p');
+        if (container) {
+          const em = document.createElement('em');
+          em.innerHTML = verseText.innerHTML;
+          container.replaceChildren(em);
+        }
+      }
+
+      if (synonyms) {
+        const details = section.querySelector(':scope > .sb-word-details');
+        const container = details?.querySelector(':scope > p, :scope > div');
+        if (container) container.innerHTML = synonyms.innerHTML;
+      }
+
+      if (translation) {
+        const container = section.querySelector(':scope > .sb-translation');
+        if (container) container.innerHTML = translation.innerHTML;
+      }
+
+      section.dataset.prabhupadaSource = 'vishvasa';
+      applied += 1;
+    });
+
+    return applied === 51;
+  }
+
+  function scrollToCurrentHash() {
+    if (!location.hash || location.hash === '#') return false;
+    let id;
+    try {
+      id = decodeURIComponent(location.hash.slice(1));
+    } catch (_) {
+      id = location.hash.slice(1);
+    }
+    const target = document.getElementById(id);
+    if (!target) return false;
+    requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+    return true;
+  }
+
+  const continuationPromise = loadBhagavatamContinuation();
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="#chapter-"], a[href^="#sb-"]');
+    if (!link || !rebuildRoot.contains(link)) return;
+
+    const href = link.getAttribute('href');
+    if (!href) return;
+    let id;
+    try {
+      id = decodeURIComponent(href.slice(1));
+    } catch (_) {
+      id = href.slice(1);
+    }
+    if (document.getElementById(id)) return;
+
+    event.preventDefault();
+    history.pushState(null, '', href);
+    continuationPromise.finally(() => scrollToCurrentHash());
+  });
+
+  window.addEventListener('hashchange', () => {
+    continuationPromise.finally(() => scrollToCurrentHash());
+  });
+
+  continuationPromise.finally(async () => {
     enhanceAllVerseCards();
+    await syncChapter10FromVishvasa();
+    enhanceAllVerseCards();
+    scrollToCurrentHash();
   });
 })();
