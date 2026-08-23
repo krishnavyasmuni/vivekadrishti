@@ -10,21 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Vollkorn:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/vivekadrishti/assets/css/site.css">
-  <link rel="stylesheet" href="/vivekadrishti/assets/css/bhagavatam-rebuild-all-verses.css?v=6">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/bhagavatam-canto2-verse-layout-v7.css?v=10" data-bhagavatam-rebuild-styles>
   <style>
-    .canto10-chapter-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px auto 28px;max-width:840px}
-    .canto10-chapter-grid .btn{margin:0}
-    .canto10-status{max-width:840px;margin:0 auto 18px;text-align:center;font-size:14px;color:#665f56}
-    .canto10-load-more{display:block;margin:22px auto 34px}
-    .canto10-verse-batch{max-width:840px;margin:0 auto}
-    .sb-source-block{margin:9px 0 14px}
-    .sb-source-label{display:block;margin-bottom:5px;color:#2f7f82}
-    .sb-bhasya .sb-source-label{color:#ab382d}
-    .sb-source-content{white-space:normal}
-    @media(max-width:780px){.canto10-chapter-grid{gap:6px}.canto10-chapter-grid .btn{font-size:13px;padding:7px 10px}}
+    .canto10-progress{max-width:760px;margin:28px auto 34px;color:#665f56;font-family:Merriweather,Georgia,serif;font-size:14px;line-height:1.5;text-align:center}
+    .canto10-chapter-loading{max-width:840px;margin:0 auto 28px;color:#777;font-size:13px;text-align:center}
+    .canto10-chapter-shell{min-height:38px}
+    .canto10-source-note{max-width:760px;margin:30px auto 0;padding:18px 20px;border-left:2px solid rgba(0,120,122,.28);background:rgba(0,120,122,.035);font-size:14px;line-height:1.6}
   </style>
 </head>
-<body class="article-page bhagavatam-rebuild-page">
+<body class="post-page bhagavatam-rebuild-page canto-2-verse-layout canto-10-continuous-layout">
   <header class="site-header">
     <div class="nav-wrap">
       <a class="brand" href="/vivekadrishti/">Viveka Dṛṣṭi</a>
@@ -40,21 +34,22 @@
 
   <main class="site-main">
     <article class="article-shell">
-      <header class="article-heading">
-        <h1>Śrīmad-Bhāgavatam — Canto 10</h1>
-        <div class="section-rule" aria-hidden="true"></div>
-      </header>
-
       <div class="article-body">
-        <div class="empyrean-bhagavatam-rebuild-part" data-canto10-source-root>
-          <div class="sb-panel"><div class="sb-inner">
-            <h2 style="text-align:center">The Summum Bonum</h2>
-            <p style="text-align:center">Prabhupāda’s Bhāgavatam text with Śrīdhara Svāmī’s <em>Bhāvārtha-dīpikā</em>, loaded directly from the Vishvasa GitHub source.</p>
-
-            <nav class="canto10-chapter-grid" data-canto10-chapters aria-label="Canto 10 chapters"></nav>
-            <p class="canto10-status" data-canto10-status aria-live="polite">Loading Chapter 1…</p>
-            <div data-canto10-chapter-host></div>
+        <div class="empyrean-bhagavatam-rebuild">
+          <div><div>
+            <div style="margin:0 auto 58px;text-align:center">
+              <h1>Śrīmad Bhāgavatam — Tenth Canto</h1>
+              <p>with the Bhāvārthadīpikā of Śrīdhara Svāmī</p>
+              <div aria-hidden="true" style="width:326px;max-width:50%;height:2px;margin:30px auto 0;background:rgba(119,119,119,.1)"></div>
+            </div>
+            <p style="margin:0;color:#3c362e;font-size:16px;line-height:1.6">The complete Tenth Canto is presented below as one continuous document. There are no chapter-selection or “load next” buttons: Chapters 1 through 90 remain in their natural order on this page.</p>
+            <div class="canto10-source-note"><strong style="color:#2f7f82">Textual basis.</strong> Prabhupāda’s Bhāgavatam text and translation are loaded from the Vishvasa GitHub recension. Śrīdhara Svāmī’s Sanskrit is loaded from its Vishvasa <em>Bhāvārtha-dīpikā</em> recension.</div>
+            <p class="canto10-progress" data-canto10-status aria-live="polite">Preparing all 90 chapters…</p>
           </div></div>
+        </div>
+
+        <div class="empyrean-bhagavatam-rebuild-part" data-canto10-source-root>
+          <div class="sb-panel"><div class="sb-inner" data-canto10-all-host></div></div>
         </div>
       </div>
     </article>
@@ -62,7 +57,7 @@
 
   <footer class="site-footer"><p>Viveka Dṛṣṭi</p></footer>
   <script src="/vivekadrishti/assets/js/site.js"></script>
-  <script src="/vivekadrishti/assets/js/canto10-source-loader.js?v=3"></script>
+  <script src="/vivekadrishti/assets/js/canto10-source-loader.js?v=4"></script>
   <script src="/vivekadrishti/assets/js/bhagavatam-mobile-details.js?v=2"></script>
 </body>
 </html>
