@@ -1,4 +1,4 @@
-/* Canto 2 unified verse layout: visible Sanskrit + translation; Bhagavatam and Śrīdhara controls below. */
+/* Canto 2 unified verse layout: visible Sanskrit + translation; merged textual controls below. */
 .canto-2-verse-layout .article-body{
   width:min(920px,calc(100% - 48px))!important;
   margin:0 auto!important;
@@ -7,288 +7,43 @@
   font-size:16px!important;
   line-height:1.45!important
 }
-
 .canto-2-verse-layout .empyrean-bhagavatam-rebuild,
 .canto-2-verse-layout .empyrean-bhagavatam-rebuild-part{
-  position:static!important;
-  left:auto!important;
-  width:100%!important;
-  max-width:100%!important;
-  margin:0!important;
-  padding:0!important;
-  background:#f7f6f4!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important
+  position:static!important;left:auto!important;width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;background:#f7f6f4!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important
 }
-
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild>div{
-  width:100%!important;
-  max-width:100%!important;
-  margin:0!important;
-  padding:8px 0 20px!important;
-  background:#f7f6f4!important
-}
-
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild>div>div{
-  width:100%!important;
-  max-width:760px!important;
-  margin:0 auto!important;
-  padding:0 24px!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:16px!important;
-  line-height:1.45!important
-}
-
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild h1{
-  margin:0!important;
-  color:#00787a!important;
-  font-family:Vollkorn,Georgia,serif!important;
-  font-size:clamp(38px,6vw,50px)!important;
-  font-weight:400!important;
-  line-height:1.125!important;
-  text-align:center!important
-}
-
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild h1+p{
-  margin:18px 0 0!important;
-  color:#a92727!important;
-  font-size:18px!important;
-  line-height:1.45!important;
-  text-align:center!important
-}
-
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild h2{
-  color:#2f7f82!important;
-  font-family:Vollkorn,Georgia,serif!important;
-  font-size:26px!important;
-  font-weight:600!important;
-  line-height:1.1!important;
-  text-align:center!important
-}
-
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild ol{
-  max-width:760px!important;
-  margin:0 auto!important;
-  padding-left:28px!important;
-  font-size:16px!important;
-  line-height:1.4!important
-}
-
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild>div{width:100%!important;max-width:100%!important;margin:0!important;padding:8px 0 20px!important;background:#f7f6f4!important}
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild>div>div{width:100%!important;max-width:760px!important;margin:0 auto!important;padding:0 24px!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:16px!important;line-height:1.45!important}
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild h1{margin:0!important;color:#00787a!important;font-family:Vollkorn,Georgia,serif!important;font-size:clamp(38px,6vw,50px)!important;font-weight:400!important;line-height:1.125!important;text-align:center!important}
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild h1+p{margin:18px 0 0!important;color:#a92727!important;font-size:18px!important;line-height:1.45!important;text-align:center!important}
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild h2{color:#2f7f82!important;font-family:Vollkorn,Georgia,serif!important;font-size:26px!important;font-weight:600!important;line-height:1.1!important;text-align:center!important}
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild ol{max-width:760px!important;margin:0 auto!important;padding-left:28px!important;font-size:16px!important;line-height:1.4!important}
 .canto-2-verse-layout .empyrean-bhagavatam-rebuild-part>div,
 .canto-2-verse-layout .empyrean-bhagavatam-rebuild-part>.sb-panel,
-.canto-2-verse-layout .empyrean-bhagavatam-rebuild-part .sb-inner{
-  position:static!important;
-  left:auto!important;
-  width:100%!important;
-  max-width:920px!important;
-  margin:0 auto!important;
-  padding:0 24px!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important
-}
-
-.canto-2-verse-layout h2[id^="chapter-"],
-.canto-2-verse-layout .sb-chapter{
-  max-width:840px!important;
-  margin:38px auto 28px!important;
-  padding:0!important;
-  color:#2f7f82!important;
-  font-family:Vollkorn,Georgia,serif!important;
-  font-size:28px!important;
-  font-weight:600!important;
-  line-height:1.15!important;
-  text-align:center!important
-}
-
-.canto-2-verse-layout .sb-verse-section,
-.canto-2-verse-layout section[aria-labelledby^="sb-"]{
-  width:100%!important;
-  max-width:840px!important;
-  margin:0 auto 30px!important;
-  padding:0!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important
-}
-
-.canto-2-verse-layout h3[id^="sb-"],
-.canto-2-verse-layout .sb-verse{
-  margin:0!important;
-  padding:0!important;
-  color:#2f7f82!important;
-  font-family:Vollkorn,Georgia,serif!important;
-  font-size:26px!important;
-  font-weight:600!important;
-  line-height:1.1!important;
-  text-align:center!important
-}
-
-.canto-2-verse-layout .sb-rule{
-  width:56%!important;
-  max-width:520px!important;
-  height:0!important;
-  margin:13px auto 16px!important;
-  padding:0!important;
-  border:0!important;
-  border-top:1px solid #dedbd6!important;
-  background:transparent!important
-}
-
-.canto-2-verse-layout .sb-devanagari,
-.canto-2-verse-layout .sb-dev,
-.canto-2-verse-layout .sb-verse-section>div[lang="sa-Deva"],
-.canto-2-verse-layout .sb-verse-section>div[lang="sa"]{
-  max-width:840px!important;
-  margin:0 auto 12px!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:21px!important;
-  font-style:normal!important;
-  font-weight:400!important;
-  line-height:1.48!important;
-  text-align:center!important
-}
-
-/* Prabhupāda English translation remains visible — never a button. */
-.canto-2-verse-layout .sb-translation{
-  display:block!important;
-  max-width:840px!important;
-  margin:0 auto 15px!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:16px!important;
-  font-style:normal!important;
-  font-weight:400!important;
-  line-height:1.45!important;
-  text-align:center!important
-}
-
-/* All remaining textual layers use individual pill controls. */
-.canto-2-verse-layout .sb-details{
-  display:block!important;
-  width:100%!important;
-  max-width:840px!important;
-  margin:0 auto 8px!important;
-  padding:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  overflow:visible!important
-}
-
-.canto-2-verse-layout .sb-details>summary{
-  display:block!important;
-  width:max-content!important;
-  max-width:100%!important;
-  margin:0!important;
-  padding:5px 13px!important;
-  cursor:pointer!important;
-  list-style:none!important;
-  border:1px solid #9bc5c7!important;
-  border-radius:999px!important;
-  background:transparent!important;
-  color:#2f7f82!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:14px!important;
-  font-weight:600!important;
-  line-height:1.15!important;
-  text-align:left!important
-}
-
-.canto-2-verse-layout details>summary::-webkit-details-marker{
-  display:none!important
-}
-
-.canto-2-verse-layout .sb-bhasya>summary,
-.canto-2-verse-layout .sb-sridhara-transliteration-details>summary,
-.canto-2-verse-layout .sb-sridhara-word-details>summary{
-  border-color:#dfaaa5!important;
-  color:#ab382d!important
-}
-
-.canto-2-verse-layout .sb-details>div,
-.canto-2-verse-layout .sb-details>p,
-.canto-2-verse-layout .sb-meaning,
-.canto-2-verse-layout .sb-bhasya-text,
-.canto-2-verse-layout .sb-transliteration,
-.canto-2-verse-layout .sb-sridhara-auto-transliteration,
-.canto-2-verse-layout .sb-sridhara-wfw-missing{
-  margin:8px 0 12px!important;
-  padding:0!important;
-  color:#3c362e!important;
-  background:transparent!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:13px!important;
-  font-weight:400!important;
-  line-height:1.55!important;
-  text-align:left!important
-}
-
-.canto-2-verse-layout .sb-transliteration,
-.canto-2-verse-layout .sb-sridhara-auto-transliteration{
-  font-style:italic!important
-}
-
-.canto-2-verse-layout .sb-sridhara-wfw-missing{
-  font-style:italic!important;
-  opacity:.75
-}
-
-/* Śrīdhara's English commentary stays visible below all Śrīdhara controls. */
-.canto-2-verse-layout .sb-commentary,
-.canto-2-verse-layout .sb-verse-section>p.sb-commentary,
-.canto-2-verse-layout section[aria-labelledby^="sb-"]>p.sb-commentary{
-  display:block!important;
-  max-width:840px!important;
-  margin:14px auto 0!important;
-  color:#3c362e!important;
-  font-family:Merriweather,Georgia,'Times New Roman',serif!important;
-  font-size:16px!important;
-  font-style:normal!important;
-  font-weight:400!important;
-  line-height:1.45!important;
-  text-align:left!important
-}
-
-.canto-2-verse-layout .sb-commentary>strong:first-child,
-.canto-2-verse-layout .sb-commentary-label{
-  color:#2f7f82!important;
-  font-size:17px!important;
-  font-weight:700!important
-}
-
-.canto-2-verse-layout .sb-sridhara-legacy-sense{
-  display:none!important
-}
-
+.canto-2-verse-layout .empyrean-bhagavatam-rebuild-part .sb-inner{position:static!important;left:auto!important;width:100%!important;max-width:920px!important;margin:0 auto!important;padding:0 24px!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important}
+.canto-2-verse-layout h2[id^="chapter-"],.canto-2-verse-layout .sb-chapter{max-width:840px!important;margin:38px auto 28px!important;padding:0!important;color:#2f7f82!important;font-family:Vollkorn,Georgia,serif!important;font-size:28px!important;font-weight:600!important;line-height:1.15!important;text-align:center!important}
+.canto-2-verse-layout .sb-verse-section,.canto-2-verse-layout section[aria-labelledby^="sb-"]{width:100%!important;max-width:840px!important;margin:0 auto 30px!important;padding:0!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important}
+.canto-2-verse-layout h3[id^="sb-"],.canto-2-verse-layout .sb-verse{margin:0!important;padding:0!important;color:#2f7f82!important;font-family:Vollkorn,Georgia,serif!important;font-size:26px!important;font-weight:600!important;line-height:1.1!important;text-align:center!important}
+.canto-2-verse-layout .sb-rule{width:56%!important;max-width:520px!important;height:0!important;margin:13px auto 16px!important;padding:0!important;border:0!important;border-top:1px solid #dedbd6!important;background:transparent!important}
+.canto-2-verse-layout .sb-devanagari,.canto-2-verse-layout .sb-dev,.canto-2-verse-layout .sb-verse-section>div[lang="sa-Deva"],.canto-2-verse-layout .sb-verse-section>div[lang="sa"]{max-width:840px!important;margin:0 auto 12px!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:21px!important;font-style:normal!important;font-weight:400!important;line-height:1.48!important;text-align:center!important}
+.canto-2-verse-layout .sb-translation{display:block!important;max-width:840px!important;margin:0 auto 15px!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:16px!important;font-style:normal!important;font-weight:400!important;line-height:1.45!important;text-align:center!important}
+.canto-2-verse-layout .sb-details{display:block!important;width:100%!important;max-width:840px!important;margin:0 auto 8px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;overflow:visible!important}
+.canto-2-verse-layout .sb-details>summary{display:block!important;width:max-content!important;max-width:100%!important;margin:0!important;padding:5px 13px!important;cursor:pointer!important;list-style:none!important;border:1px solid #9bc5c7!important;border-radius:999px!important;background:transparent!important;color:#2f7f82!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:14px!important;font-weight:600!important;line-height:1.15!important;text-align:left!important}
+.canto-2-verse-layout details>summary::-webkit-details-marker{display:none!important}
+.canto-2-verse-layout .sb-bhasya>summary{border-color:#dfaaa5!important;color:#ab382d!important}
+.canto-2-verse-layout .sb-details>div,.canto-2-verse-layout .sb-details>p,.canto-2-verse-layout .sb-meaning,.canto-2-verse-layout .sb-bhasya-text,.canto-2-verse-layout .sb-transliteration,.canto-2-verse-layout .sb-sridhara-auto-transliteration,.canto-2-verse-layout .sb-sridhara-wfw-missing{margin:8px 0 12px!important;padding:0!important;color:#3c362e!important;background:transparent!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:13px!important;font-weight:400!important;line-height:1.55!important;text-align:left!important}
+.canto-2-verse-layout .sb-combined-layer{margin:10px 0 14px!important;padding:0!important;border:0!important}
+.canto-2-verse-layout .sb-combined-layer+.sb-combined-layer{padding-top:10px!important;border-top:1px solid #e5e0da!important}
+.canto-2-verse-layout .sb-layer-heading{margin:0 0 6px!important;color:#2f7f82!important;font-family:Vollkorn,Georgia,serif!important;font-size:15px!important;font-weight:700!important;line-height:1.2!important}
+.canto-2-verse-layout .sb-sridhara-layer>.sb-layer-heading{color:#ab382d!important}
+.canto-2-verse-layout .sb-transliteration,.canto-2-verse-layout .sb-sridhara-auto-transliteration{font-style:italic!important}
+.canto-2-verse-layout .sb-sridhara-wfw-missing{font-style:italic!important;opacity:.75}
+.canto-2-verse-layout .sb-commentary,.canto-2-verse-layout .sb-verse-section>p.sb-commentary,.canto-2-verse-layout section[aria-labelledby^="sb-"]>p.sb-commentary{display:block!important;max-width:840px!important;margin:14px auto 0!important;color:#3c362e!important;font-family:Merriweather,Georgia,'Times New Roman',serif!important;font-size:16px!important;font-style:normal!important;font-weight:400!important;line-height:1.45!important;text-align:left!important}
+.canto-2-verse-layout .sb-commentary>strong:first-child,.canto-2-verse-layout .sb-commentary-label{color:#2f7f82!important;font-size:17px!important;font-weight:700!important}
+.canto-2-verse-layout .sb-sridhara-legacy-sense{display:none!important}
 @media(max-width:780px){
-  .canto-2-verse-layout .article-body{
-    width:calc(100% - 36px)!important
-  }
-  .canto-2-verse-layout .empyrean-bhagavatam-rebuild>div>div,
-  .canto-2-verse-layout .empyrean-bhagavatam-rebuild-part>div,
-  .canto-2-verse-layout .empyrean-bhagavatam-rebuild-part>.sb-panel,
-  .canto-2-verse-layout .empyrean-bhagavatam-rebuild-part .sb-inner,
-  .canto-2-verse-layout .sb-verse-section,
-  .canto-2-verse-layout section[aria-labelledby^="sb-"]{
-    width:100%!important;
-    max-width:100%!important;
-    padding-left:0!important;
-    padding-right:0!important
-  }
-  .canto-2-verse-layout h2[id^="chapter-"],
-  .canto-2-verse-layout .sb-chapter,
-  .canto-2-verse-layout h3[id^="sb-"],
-  .canto-2-verse-layout .sb-verse{
-    font-size:24px!important
-  }
-  .canto-2-verse-layout .sb-devanagari,
-  .canto-2-verse-layout .sb-dev,
-  .canto-2-verse-layout .sb-verse-section>div[lang="sa-Deva"],
-  .canto-2-verse-layout .sb-verse-section>div[lang="sa"]{
-    font-size:19px!important
-  }
-  .canto-2-verse-layout .sb-details>summary{
-    padding:6px 13px!important
-  }
+  .canto-2-verse-layout .article-body{width:calc(100% - 36px)!important}
+  .canto-2-verse-layout .empyrean-bhagavatam-rebuild>div>div,.canto-2-verse-layout .empyrean-bhagavatam-rebuild-part>div,.canto-2-verse-layout .empyrean-bhagavatam-rebuild-part>.sb-panel,.canto-2-verse-layout .empyrean-bhagavatam-rebuild-part .sb-inner,.canto-2-verse-layout .sb-verse-section,.canto-2-verse-layout section[aria-labelledby^="sb-"]{width:100%!important;max-width:100%!important;padding-left:0!important;padding-right:0!important}
+  .canto-2-verse-layout h2[id^="chapter-"],.canto-2-verse-layout .sb-chapter,.canto-2-verse-layout h3[id^="sb-"],.canto-2-verse-layout .sb-verse{font-size:24px!important}
+  .canto-2-verse-layout .sb-devanagari,.canto-2-verse-layout .sb-dev,.canto-2-verse-layout .sb-verse-section>div[lang="sa-Deva"],.canto-2-verse-layout .sb-verse-section>div[lang="sa"]{font-size:19px!important}
+  .canto-2-verse-layout .sb-details>summary{padding:6px 13px!important}
 }
