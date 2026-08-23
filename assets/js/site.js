@@ -51,7 +51,7 @@
     }
     if (!document.querySelector('script[data-canto2-renderer]')) {
       const script = document.createElement('script');
-      script.src = '/vivekadrishti/assets/js/bhagavatam-canto2.js?v=1';
+      script.src = '/vivekadrishti/assets/js/bhagavatam-canto2.js?v=2';
       script.async = false;
       script.dataset.canto2Renderer = 'true';
       document.head.appendChild(script);
