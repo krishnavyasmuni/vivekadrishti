@@ -9,11 +9,7 @@
     const heading = section.querySelector(':scope > h3[id^="sb-10-"]');
     const match = heading?.id.match(/^sb-10-(\d+)-(\d+)(?:-(\d+))?$/);
     if (!match) return null;
-    return {
-      chapter: Number(match[1]),
-      start: Number(match[2]),
-      end: Number(match[3] || match[2])
-    };
+    return { chapter: Number(match[1]), start: Number(match[2]), end: Number(match[3] || match[2]) };
   }
 
   function hasSridhara(section) {
@@ -23,28 +19,48 @@
   async function chapterData(chapter) {
     if (!cache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      cache.set(chapter, fetch(`${DATA_BASE}${file}.json`, { cache: 'force-cache' })
+      cache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=2`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
     return cache.get(chapter);
   }
 
-  function glossForRange(data, start, end) {
-    const key = start === end ? String(start) : `${start}-${end}`;
-    if (data[key]) return data[key];
-    if (start === end) return '';
-    return Array.from({ length: end - start + 1 }, (_, index) => data[String(start + index)] || '')
-      .filter(Boolean)
-      .join(' ')
-      .trim();
+  function normalizeEntry(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+    const wordForWord = String(value.word_for_word || '').trim();
+    const translation = String(value.translation || '').trim();
+    if (!wordForWord && !translation) return null;
+    return { wordForWord, translation };
   }
 
-  function makeDetails(gloss, verified) {
+  function entryForRange(data, start, end) {
+    const directKey = start === end ? String(start) : `${start}-${end}`;
+    const direct = normalizeEntry(data[directKey]);
+    if (direct) return direct;
+    if (start === end) return null;
+
+    const parts = [];
+    for (let verse = start; verse <= end; verse += 1) {
+      const entry = normalizeEntry(data[String(verse)]);
+      if (entry) parts.push(entry);
+    }
+    if (!parts.length) return null;
+    return {
+      wordForWord: parts.map((entry) => entry.wordForWord).filter(Boolean).join(' '),
+      translation: parts.map((entry) => entry.translation).filter(Boolean).join(' ')
+    };
+  }
+
+  function makeDetails(entry) {
+    const verifiedGloss = Boolean(entry?.wordForWord);
+    const verifiedTranslation = Boolean(entry?.translation);
     const details = document.createElement('details');
     details.className = 'sb-details sb-sridhara-wfw-details';
     details.open = false;
-    details.dataset.verified = verified ? 'true' : 'false';
+    details.dataset.verifiedGloss = verifiedGloss ? 'true' : 'false';
+    details.dataset.verifiedTranslation = verifiedTranslation ? 'true' : 'false';
+    if (verifiedTranslation) details.dataset.translation = entry.translation;
 
     const summary = document.createElement('summary');
     summary.textContent = 'Śrīdhara word-for-word';
@@ -56,9 +72,9 @@
     label.textContent = 'Śrīdhara word-for-word';
     const content = document.createElement('div');
     content.className = 'sb-source-content sb-sridhara-word-for-word';
-    content.textContent = verified
-      ? gloss
-      : 'A verified English word-for-word gloss has not yet been added for this verse.';
+    content.textContent = verifiedGloss
+      ? entry.wordForWord
+      : 'A verse-by-verse English gloss from Śrīdhara’s Sanskrit has not yet been completed for this passage.';
 
     wrapper.append(label, content);
     details.append(summary, wrapper);
@@ -67,16 +83,15 @@
 
   async function enhance(section) {
     if (!(section instanceof HTMLElement) || !section.matches('.sb-verse-section')) return;
-    if (section.dataset.sridharaVerifiedWfwChecked === 'true') return;
-    section.dataset.sridharaVerifiedWfwChecked = 'true';
+    if (section.dataset.sridharaEnglishChecked === 'true') return;
+    section.dataset.sridharaEnglishChecked = 'true';
     if (!hasSridhara(section)) return;
 
     const identity = verseIdentity(section);
     if (!identity) return;
     const data = await chapterData(identity.chapter);
     if (!section.isConnected) return;
-    const gloss = glossForRange(data, identity.start, identity.end);
-    section.appendChild(makeDetails(gloss, Boolean(gloss)));
+    section.appendChild(makeDetails(entryForRange(data, identity.start, identity.end)));
   }
 
   function scan(node = root) {
