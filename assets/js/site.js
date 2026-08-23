@@ -388,7 +388,7 @@
     return null;
   }
 
-  async function syncChapter10FromVishvasa() {
+  async function syncChapter10TransliterationFromVishvasa() {
     let response;
     try {
       response = await fetch(vishvasaChapter10, { mode: 'cors', cache: 'force-cache' });
@@ -411,31 +411,16 @@
       if (!section) return;
 
       const verseText = fieldAfterHeading(textHeading, 'Verse text');
-      const synonyms = fieldAfterHeading(textHeading, 'Synonyms');
-      const translation = fieldAfterHeading(textHeading, 'Translation');
+      if (!verseText) return;
 
-      if (verseText) {
-        const details = section.querySelector(':scope > .sb-transliteration-details');
-        const container = details?.querySelector(':scope > div, :scope > p');
-        if (container) {
-          const em = document.createElement('em');
-          em.innerHTML = verseText.innerHTML;
-          container.replaceChildren(em);
-        }
-      }
+      const details = section.querySelector(':scope > .sb-transliteration-details');
+      const container = details?.querySelector(':scope > div, :scope > p');
+      if (!container) return;
 
-      if (synonyms) {
-        const details = section.querySelector(':scope > .sb-word-details');
-        const container = details?.querySelector(':scope > p, :scope > div');
-        if (container) container.innerHTML = synonyms.innerHTML;
-      }
-
-      if (translation) {
-        const container = section.querySelector(':scope > .sb-translation');
-        if (container) container.innerHTML = translation.innerHTML;
-      }
-
-      section.dataset.prabhupadaSource = 'vishvasa';
+      const em = document.createElement('em');
+      em.innerHTML = verseText.innerHTML;
+      container.replaceChildren(em);
+      section.dataset.prabhupadaTransliterationSource = 'vishvasa';
       applied += 1;
     });
 
@@ -483,7 +468,7 @@
 
   continuationPromise.finally(async () => {
     enhanceAllVerseCards();
-    await syncChapter10FromVishvasa();
+    await syncChapter10TransliterationFromVishvasa();
     enhanceAllVerseCards();
     scrollToCurrentHash();
   });
