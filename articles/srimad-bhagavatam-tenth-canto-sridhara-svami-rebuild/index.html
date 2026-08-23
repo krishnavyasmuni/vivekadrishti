@@ -103,5 +103,10 @@
 
   <footer class="site-footer"><p>Viveka Dṛṣṭi</p></footer>
   <script src="/vivekadrishti/assets/js/site.js"></script>
+  <script>
+    if (window.matchMedia('(max-width: 780px)').matches) {
+      document.querySelectorAll('.sb-details').forEach((details) => { details.open = false; });
+    }
+  </script>
 </body>
 </html>
