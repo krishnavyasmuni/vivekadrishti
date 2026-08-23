@@ -343,7 +343,6 @@
       entries.push({
         start,
         end,
-        devanagari: markdownLines(sourceSection(body, 'Devanagari')),
         transliteration: markdownLines(sourceSection(body, 'Verse text')),
         synonyms: markdownPlainText(sourceSection(body, 'Synonyms')),
         translation: markdownPlainText(sourceSection(body, 'Translation'))
@@ -367,24 +366,6 @@
       if (section) result.push(section);
     }
     return result;
-  }
-
-  function replaceMultiline(target, lines) {
-    if (!target || !lines.length) return;
-    target.replaceChildren();
-    lines.forEach((line, index) => {
-      if (index) target.appendChild(document.createElement('br'));
-      target.appendChild(document.createTextNode(line));
-    });
-  }
-
-  function setExactDevanagari(section, lines) {
-    if (!section || !lines.length) return;
-    const target = section.querySelector(':scope > .sb-devanagari, :scope > .sb-dev');
-    if (!target) return;
-    replaceMultiline(target, lines);
-    target.lang = 'sa-Deva';
-    section.dataset.prabhupadaDevanagariSource = 'vishvasa-github';
   }
 
   function setExactTranslation(section, text) {
@@ -443,7 +424,6 @@
         const sections = canto2Sections(chapter, entry.start, entry.end);
         if (!sections.length) return;
         sections.forEach((section) => {
-          if (entry.devanagari.length && (entry.start === entry.end || sections.length === 1)) setExactDevanagari(section, entry.devanagari);
           if (entry.translation) setExactTranslation(section, entry.translation);
           if (entry.synonyms) setExactSynonyms(section, entry.synonyms);
         });
