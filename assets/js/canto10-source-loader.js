@@ -36,7 +36,59 @@
   const devaDigits = new Map(Object.entries({'०':'0','१':'1','२':'2','३':'3','४':'4','५':'5','६':'6','७':'7','८':'8','९':'9'}));
   const toAsciiDigits = (text) => Array.from(text || '').map((ch) => devaDigits.get(ch) || ch).join('');
 
+  const independentVowels = new Map(Object.entries({
+    'अ':'a','आ':'ā','इ':'i','ई':'ī','उ':'u','ऊ':'ū','ऋ':'ṛ','ॠ':'ṝ','ऌ':'ḷ','ए':'e','ऐ':'ai','ओ':'o','औ':'au'
+  }));
+  const vowelMarks = new Map(Object.entries({
+    'ा':'ā','ि':'i','ी':'ī','ु':'u','ू':'ū','ृ':'ṛ','ॄ':'ṝ','ॢ':'ḷ','े':'e','ै':'ai','ो':'o','ौ':'au'
+  }));
+  const consonants = new Map(Object.entries({
+    'क':'k','ख':'kh','ग':'g','घ':'gh','ङ':'ṅ','च':'c','छ':'ch','ज':'j','झ':'jh','ञ':'ñ',
+    'ट':'ṭ','ठ':'ṭh','ड':'ḍ','ढ':'ḍh','ण':'ṇ','त':'t','थ':'th','द':'d','ध':'dh','न':'n',
+    'प':'p','फ':'ph','ब':'b','भ':'bh','म':'m','य':'y','र':'r','ल':'l','व':'v','श':'ś','ष':'ṣ','स':'s','ह':'h','ळ':'ḷ'
+  }));
+
+  function devanagariToIast(input) {
+    const chars = Array.from((input || '').normalize('NFC'));
+    let output = '';
+
+    for (let i = 0; i < chars.length; i += 1) {
+      const ch = chars[i];
+      if (consonants.has(ch)) {
+        const next = chars[i + 1];
+        output += consonants.get(ch);
+        if (next === '्') {
+          i += 1;
+        } else if (vowelMarks.has(next)) {
+          output += vowelMarks.get(next);
+          i += 1;
+        } else {
+          output += 'a';
+        }
+        continue;
+      }
+      if (independentVowels.has(ch)) { output += independentVowels.get(ch); continue; }
+      if (vowelMarks.has(ch)) { output += vowelMarks.get(ch); continue; }
+      if (devaDigits.has(ch)) { output += devaDigits.get(ch); continue; }
+      if (ch === 'ं') { output += 'ṃ'; continue; }
+      if (ch === 'ः') { output += 'ḥ'; continue; }
+      if (ch === 'ँ') { output += 'm̐'; continue; }
+      if (ch === 'ऽ') { output += '’'; continue; }
+      if (ch === '।') { output += '|'; continue; }
+      if (ch === '॥') { output += '||'; continue; }
+      if (ch === '़' || ch === '्') continue;
+      output += ch;
+    }
+
+    return output
+      .replace(/\s+\|\|/g, ' ||')
+      .replace(/\s+\|/g, ' |')
+      .replace(/[ \t]+\n/g, '\n')
+      .trim();
+  }
+
   const stripInlineMarkdown = (text) => (text || '')
+    .replace(/\[\^[^\]]+\]/g, '')
     .replace(/\\([\\`*_{}\[\]()#+\-.!])/g, '$1')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/\*\*([^*]+)\*\*/g, '$1')
@@ -88,14 +140,15 @@
   }
 
   function parseSridhara(markdown, chapter) {
-    const map = new Map();
-    const markerPattern = /॥\s*([०-९]+)\.([०-९]+)\.([०-९]+)\s*॥/g;
+    const entries = [];
+    const markerPattern = /॥\s*([०-९]+)\.([०-९]+)\.([०-९]+)(?:\s*[-–—]\s*([०-९]+))?\s*॥/g;
     const markers = Array.from(markdown.matchAll(markerPattern));
 
     markers.forEach((marker, index) => {
       const canto = Number(toAsciiDigits(marker[1]));
       const ch = Number(toAsciiDigits(marker[2]));
-      const verse = Number(toAsciiDigits(marker[3]));
+      const start = Number(toAsciiDigits(marker[3]));
+      const end = Number(toAsciiDigits(marker[4] || marker[3]));
       if (canto !== 10 || ch !== chapter) return;
 
       const segmentStart = marker.index + marker[0].length;
@@ -104,36 +157,83 @@
       const label = segment.search(/\*\*श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)\s*:\*\*/);
       if (label < 0) return;
 
-      let commentary = segment.slice(label).replace(/^\*\*श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)\s*:\*\*\s*/,'');
+      let commentary = segment.slice(label).replace(/^\*\*श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)\s*:\*\*\s*/, '');
       const stops = [
         commentary.search(/\n_{4,}/),
         commentary.search(/\n\*\*वंशीधरः/),
         commentary.search(/\n\*\*वीरराघव/),
         commentary.search(/\n\*\*विजयध्वज/),
-        commentary.search(/\n\*\*जीवगोस्वाम/),
+        commentary.search(/\n\*\*जीव-?गोस्वामी/),
         commentary.search(/\n\*\*विश्वनाथ/)
       ].filter((value) => value >= 0);
       if (stops.length) commentary = commentary.slice(0, Math.min(...stops));
 
       commentary = cleanBlock(commentary);
-      if (commentary) map.set(verse, commentary);
+      if (commentary) entries.push({ start, end, text: commentary });
     });
 
-    return map;
+    return entries;
   }
 
-  function makeDetails(label, body, className = '') {
+  function sridharaForRange(sridharaEntries, start, end, chapter) {
+    return sridharaEntries
+      .filter((entry) => entry.end >= start && entry.start <= end)
+      .map((entry) => {
+        const label = entry.start === entry.end
+          ? `10.${chapter}.${entry.start}`
+          : `10.${chapter}.${entry.start}–${entry.end}`;
+        return start === end && entry.start === entry.end
+          ? entry.text
+          : `${label}\n${entry.text}`;
+      })
+      .join('\n\n')
+      .trim();
+  }
+
+  function appendMultiline(target, text) {
+    const lines = String(text || '').split(/\n/);
+    lines.forEach((line, index) => {
+      if (index) target.appendChild(document.createElement('br'));
+      target.appendChild(document.createTextNode(line));
+    });
+  }
+
+  function makeSourceDetails(label, blocks, className = '') {
     const details = document.createElement('details');
     details.className = `sb-details ${className}`.trim();
+
     const summary = document.createElement('summary');
     summary.textContent = label;
-    const content = document.createElement('div');
-    content.textContent = body;
-    details.append(summary, content);
+    details.appendChild(summary);
+
+    blocks.filter((block) => block && block.text).forEach((block) => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'sb-source-block';
+
+      const sourceLabel = document.createElement('strong');
+      sourceLabel.className = 'sb-source-label';
+      sourceLabel.textContent = block.label;
+      wrapper.appendChild(sourceLabel);
+
+      const content = document.createElement('div');
+      content.className = 'sb-source-content';
+      if (block.lang) content.lang = block.lang;
+      if (block.italic) {
+        const em = document.createElement('em');
+        appendMultiline(em, block.text);
+        content.appendChild(em);
+      } else {
+        appendMultiline(content, block.text);
+      }
+
+      wrapper.appendChild(content);
+      details.appendChild(wrapper);
+    });
+
     return details;
   }
 
-  function renderEntry(chapter, entry, sridharaMap) {
+  function renderEntry(chapter, entry, sridharaEntries) {
     const section = document.createElement('section');
     section.className = 'sb-verse-section';
     const rangeLabel = entry.start === entry.end ? `${entry.start}` : `${entry.start}–${entry.end}`;
@@ -151,26 +251,41 @@
     const devanagari = document.createElement('div');
     devanagari.className = 'sb-devanagari';
     devanagari.lang = 'sa-Deva';
-    devanagari.innerHTML = entry.devanagari.map((line) => {
-      const span = document.createElement('span');
-      span.textContent = line;
-      return span.outerHTML;
-    }).join('<br>');
+    entry.devanagari.forEach((line, index) => {
+      if (index) devanagari.appendChild(document.createElement('br'));
+      devanagari.appendChild(document.createTextNode(line));
+    });
 
     const translation = document.createElement('p');
     translation.className = 'sb-translation';
     translation.textContent = entry.translation;
 
-    section.append(heading, rule, devanagari, translation);
-    if (entry.synonyms) section.append(makeDetails('Word-for-word', entry.synonyms, 'sb-word-details'));
-    if (entry.transliteration.length) section.append(makeDetails('Transliteration', entry.transliteration.join('\n'), 'sb-transliteration-details'));
+    const sridharaSanskrit = sridharaForRange(sridharaEntries, entry.start, entry.end, chapter);
+    const sridharaTransliteration = sridharaSanskrit ? devanagariToIast(sridharaSanskrit) : '';
+    const bhagavatamSanskrit = entry.devanagari.join('\n');
+    const bhagavatamTransliteration = entry.transliteration.join('\n');
 
-    const sridharaParts = [];
-    for (let verse = entry.start; verse <= entry.end; verse += 1) {
-      const text = sridharaMap.get(verse);
-      if (text) sridharaParts.push(entry.start === entry.end ? text : `10.${chapter}.${verse}\n${text}`);
+    section.append(heading, rule, devanagari, translation);
+
+    if (entry.synonyms) {
+      section.append(makeSourceDetails('Word-for-word', [
+        { label: 'Bhāgavatam word-for-word', text: entry.synonyms }
+      ], 'sb-word-details'));
     }
-    if (sridharaParts.length) section.append(makeDetails('Śrīdhara Sanskrit', sridharaParts.join('\n\n'), 'sb-bhasya'));
+
+    if (bhagavatamTransliteration || sridharaTransliteration) {
+      section.append(makeSourceDetails('Transliteration', [
+        { label: 'Bhāgavatam transliteration', text: bhagavatamTransliteration, lang: 'sa-Latn', italic: true },
+        { label: 'Śrīdhara transliteration', text: sridharaTransliteration, lang: 'sa-Latn', italic: true }
+      ], 'sb-transliteration-details'));
+    }
+
+    if (bhagavatamSanskrit || sridharaSanskrit) {
+      section.append(makeSourceDetails('Śrīdhara Sanskrit', [
+        { label: 'Bhāgavatam Sanskrit', text: bhagavatamSanskrit, lang: 'sa-Deva' },
+        { label: 'Śrīdhara Sanskrit', text: sridharaSanskrit, lang: 'sa-Deva' }
+      ], 'sb-bhasya'));
+    }
 
     return section;
   }
@@ -195,15 +310,16 @@
         verseCount = 0;
       }
     });
+
     if (current.length) batches.push(current);
     return batches;
   }
 
-  function renderBatch(chapter, batch, sridharaMap, batchNumber) {
+  function renderBatch(chapter, batch, sridharaEntries, batchNumber) {
     const wrapper = document.createElement('div');
     wrapper.className = 'canto10-verse-batch';
     wrapper.dataset.batch = String(batchNumber);
-    batch.forEach((entry) => wrapper.appendChild(renderEntry(chapter, entry, sridharaMap)));
+    batch.forEach((entry) => wrapper.appendChild(renderEntry(chapter, entry, sridharaEntries)));
     chapterHost.appendChild(wrapper);
   }
 
@@ -226,7 +342,7 @@
       ]);
 
       const entries = parsePrabhupada(prabhupadaMarkdown);
-      const sridharaMap = parseSridhara(sridharaMarkdown, chapter);
+      const sridharaEntries = parseSridhara(sridharaMarkdown, chapter);
       if (!entries.length) throw new Error('No verse entries found');
 
       const chapterHeading = document.createElement('h2');
@@ -243,8 +359,9 @@
 
       const showNext = () => {
         if (shown >= batches.length) return;
-        renderBatch(chapter, batches[shown], sridharaMap, shown + 1);
+        renderBatch(chapter, batches[shown], sridharaEntries, shown + 1);
         shown += 1;
+
         const remaining = batches.length - shown;
         if (remaining > 0) {
           loadMore.textContent = `Load next 10 verses (${remaining} batch${remaining === 1 ? '' : 'es'} left)`;
