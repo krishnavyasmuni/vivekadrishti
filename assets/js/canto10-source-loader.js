@@ -5,33 +5,59 @@
   const PRABHUPADA_BASE = 'https://raw.githubusercontent.com/vishvAsa/purANam_vaiShNavam/content/bhAgavatam/gauDIyo_abhaya-charaNaH/10/';
   const SRIDHARA_BASE = 'https://raw.githubusercontent.com/vishvAsa/purANam_vaiShNavam/content/bhAgavatam/gauDIya-prastutiH/10/';
   const BATCH_SIZE = 10;
+  const mobileQuery = window.matchMedia('(max-width: 780px)');
 
   const chapterNav = root.querySelector('[data-canto10-chapters]');
   const chapterHost = root.querySelector('[data-canto10-chapter-host]');
   const status = root.querySelector('[data-canto10-status]');
-
-  const sridharaGroup = (chapter) => {
-    if (chapter <= 11) return '01-11';
-    if (chapter <= 17) return '12-17';
-    if (chapter <= 28) return '18-28';
-    if (chapter <= 33) return '29-33_rasa-panchAdhyAya';
-    if (chapter <= 49) return '34-49';
-    if (chapter <= 59) return '50-59';
-    if (chapter <= 69) return '60-69';
-    if (chapter <= 79) return '70-79';
-    if (chapter <= 86) return '80-86';
-    if (chapter === 87) return null;
-    return '88-90';
-  };
+  const textCache = new Map();
 
   const chapterFile = (chapter) => String(chapter).padStart(2, '0');
   const prabhupadaUrl = (chapter) => `${PRABHUPADA_BASE}${chapterFile(chapter)}.md`;
-  const sridharaUrl = (chapter) => {
-    const group = sridharaGroup(chapter);
-    return group
-      ? `${SRIDHARA_BASE}${group}/${chapterFile(chapter)}.md`
-      : `${SRIDHARA_BASE}87.md`;
-  };
+
+  function sridharaPath(chapter) {
+    if (chapter <= 11) return `01-11/${chapterFile(chapter)}.md`;
+    if (chapter <= 17) return `12-17/${chapterFile(chapter)}.md`;
+    if (chapter <= 28) return `18-28/${chapterFile(chapter)}.md`;
+
+    if (chapter === 29) return '29-33_rasa-panchAdhyAya/29.md';
+    if (chapter === 30) return '29-33_rasa-panchAdhyAya/30_atha-triMshodhyAyaH_unnumbered.md';
+    if (chapter === 31) return '29-33_rasa-panchAdhyAya/31_athaikatriMshodhyAyaH_unnumbered.md';
+    if (chapter === 32) return '29-33_rasa-panchAdhyAya/32_atha-dvAtriMshodhyAyaH_unnumbered.md';
+    if (chapter === 33) return '29-33_rasa-panchAdhyAya/33_atha-trayastriMshodhyAyaH_unnumbered.md';
+
+    if (chapter <= 49) return `34-49/${chapterFile(chapter)}.md`;
+    if (chapter <= 59) return `50-59/${chapterFile(chapter)}.md`;
+    if (chapter <= 69) return `60-69/${chapterFile(chapter)}.md`;
+    if (chapter <= 79) return `70-79/${chapterFile(chapter)}.md`;
+
+    // Vishvasa stores 80–84 together in one recension file.
+    if (chapter >= 80 && chapter <= 84) return '80-86/70_athAshItitamo-dhyayaH.md';
+    if (chapter === 85) return '80-86/72_bhagavatA_devakI-prArthanayA_tadIya-mRta-putrAN.md';
+    if (chapter === 86) return '80-86/74_10_86_1.md';
+    if (chapter === 87) return '87.md';
+
+    // The source filenames here reflect their internal source sequence, not canto chapter numbers.
+    if (chapter === 88) return '88-90/70.md';
+    if (chapter === 89) return '88-90/71.md';
+    if (chapter === 90) return '88-90/72.md';
+    throw new Error(`No Śrīdhara source mapping for Chapter ${chapter}`);
+  }
+
+  const sridharaUrl = (chapter) => `${SRIDHARA_BASE}${sridharaPath(chapter)}`;
+
+  async function fetchText(url) {
+    if (!textCache.has(url)) {
+      textCache.set(url, fetch(url, { mode: 'cors', cache: 'force-cache' }).then((response) => {
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        return response.text();
+      }).catch((error) => {
+        textCache.delete(url);
+        throw error;
+      }));
+    }
+    return textCache.get(url);
+  }
 
   const devaDigits = new Map(Object.entries({'०':'0','१':'1','२':'2','३':'3','४':'4','५':'5','६':'6','७':'7','८':'8','९':'9'}));
   const toAsciiDigits = (text) => Array.from(text || '').map((ch) => devaDigits.get(ch) || ch).join('');
@@ -51,20 +77,14 @@
   function devanagariToIast(input) {
     const chars = Array.from((input || '').normalize('NFC'));
     let output = '';
-
     for (let i = 0; i < chars.length; i += 1) {
       const ch = chars[i];
       if (consonants.has(ch)) {
         const next = chars[i + 1];
         output += consonants.get(ch);
-        if (next === '्') {
-          i += 1;
-        } else if (vowelMarks.has(next)) {
-          output += vowelMarks.get(next);
-          i += 1;
-        } else {
-          output += 'a';
-        }
+        if (next === '्') i += 1;
+        else if (vowelMarks.has(next)) { output += vowelMarks.get(next); i += 1; }
+        else output += 'a';
         continue;
       }
       if (independentVowels.has(ch)) { output += independentVowels.get(ch); continue; }
@@ -79,12 +99,7 @@
       if (ch === '़' || ch === '्') continue;
       output += ch;
     }
-
-    return output
-      .replace(/\s+\|\|/g, ' ||')
-      .replace(/\s+\|/g, ' |')
-      .replace(/[ \t]+\n/g, '\n')
-      .trim();
+    return output.replace(/\s+\|\|/g, ' ||').replace(/\s+\|/g, ' |').replace(/[ \t]+\n/g, '\n').trim();
   }
 
   const stripInlineMarkdown = (text) => (text || '')
@@ -118,14 +133,12 @@
     const entries = [];
     const headingPattern = /^##\s+Texts?\s+(\d+)(?:\s*[-–—]\s*(\d+))?\s*$/gmi;
     const headings = Array.from(markdown.matchAll(headingPattern));
-
     headings.forEach((match, index) => {
       const start = Number(match[1]);
       const end = Number(match[2] || match[1]);
       const bodyStart = match.index + match[0].length;
       const bodyEnd = index + 1 < headings.length ? headings[index + 1].index : markdown.length;
       const body = markdown.slice(bodyStart, bodyEnd);
-
       entries.push({
         start,
         end,
@@ -135,7 +148,6 @@
         translation: cleanBlock(sectionBlock(body, 'Translation'))
       });
     });
-
     return entries;
   }
 
@@ -143,6 +155,7 @@
     const entries = [];
     const markerPattern = /॥\s*([०-९]+)\.([०-९]+)\.([०-९]+)(?:\s*[-–—]\s*([०-९]+))?\s*॥/g;
     const markers = Array.from(markdown.matchAll(markerPattern));
+    const labelPattern = /\*\*(?:श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)|श्रीधर-स्वामी|श्रीधरः)\s*:\*\*/;
 
     markers.forEach((marker, index) => {
       const canto = Number(toAsciiDigits(marker[1]));
@@ -154,45 +167,40 @@
       const segmentStart = marker.index + marker[0].length;
       const segmentEnd = index + 1 < markers.length ? markers[index + 1].index : markdown.length;
       const segment = markdown.slice(segmentStart, segmentEnd);
-      const label = segment.search(/\*\*श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)\s*:\*\*/);
-      if (label < 0) return;
+      const labelMatch = segment.match(labelPattern);
+      if (!labelMatch) return;
 
-      let commentary = segment.slice(label).replace(/^\*\*श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)\s*:\*\*\s*/, '');
+      let commentary = segment.slice((labelMatch.index || 0) + labelMatch[0].length);
       const stops = [
         commentary.search(/\n_{4,}/),
         commentary.search(/\n\*\*वंशीधरः/),
         commentary.search(/\n\*\*वीरराघव/),
         commentary.search(/\n\*\*विजयध्वज/),
+        commentary.search(/\n\*\*श्रीनाथ/),
+        commentary.search(/\n\*\*सनातन/),
         commentary.search(/\n\*\*जीव-?गोस्वामी/),
         commentary.search(/\n\*\*विश्वनाथ/)
       ].filter((value) => value >= 0);
       if (stops.length) commentary = commentary.slice(0, Math.min(...stops));
-
       commentary = cleanBlock(commentary);
       if (commentary) entries.push({ start, end, text: commentary });
     });
-
     return entries;
   }
 
-  function sridharaForRange(sridharaEntries, start, end, chapter) {
-    return sridharaEntries
+  function sridharaForRange(entries, start, end, chapter) {
+    return entries
       .filter((entry) => entry.end >= start && entry.start <= end)
       .map((entry) => {
-        const label = entry.start === entry.end
-          ? `10.${chapter}.${entry.start}`
-          : `10.${chapter}.${entry.start}–${entry.end}`;
-        return start === end && entry.start === entry.end
-          ? entry.text
-          : `${label}\n${entry.text}`;
+        const label = entry.start === entry.end ? `10.${chapter}.${entry.start}` : `10.${chapter}.${entry.start}–${entry.end}`;
+        return start === end && entry.start === entry.end ? entry.text : `${label}\n${entry.text}`;
       })
       .join('\n\n')
       .trim();
   }
 
   function appendMultiline(target, text) {
-    const lines = String(text || '').split(/\n/);
-    lines.forEach((line, index) => {
+    String(text || '').split(/\n/).forEach((line, index) => {
       if (index) target.appendChild(document.createElement('br'));
       target.appendChild(document.createTextNode(line));
     });
@@ -201,7 +209,7 @@
   function makeSourceDetails(label, blocks, className = '') {
     const details = document.createElement('details');
     details.className = `sb-details ${className}`.trim();
-
+    details.open = !mobileQuery.matches;
     const summary = document.createElement('summary');
     summary.textContent = label;
     details.appendChild(summary);
@@ -209,12 +217,10 @@
     blocks.filter((block) => block && block.text).forEach((block) => {
       const wrapper = document.createElement('div');
       wrapper.className = 'sb-source-block';
-
       const sourceLabel = document.createElement('strong');
       sourceLabel.className = 'sb-source-label';
       sourceLabel.textContent = block.label;
       wrapper.appendChild(sourceLabel);
-
       const content = document.createElement('div');
       content.className = 'sb-source-content';
       if (block.lang) content.lang = block.lang;
@@ -222,14 +228,10 @@
         const em = document.createElement('em');
         appendMultiline(em, block.text);
         content.appendChild(em);
-      } else {
-        appendMultiline(content, block.text);
-      }
-
+      } else appendMultiline(content, block.text);
       wrapper.appendChild(content);
       details.appendChild(wrapper);
     });
-
     return details;
   }
 
@@ -239,12 +241,13 @@
     const rangeLabel = entry.start === entry.end ? `${entry.start}` : `${entry.start}–${entry.end}`;
     const id = `sb-10-${chapter}-${entry.start}${entry.end !== entry.start ? `-${entry.end}` : ''}`;
     section.setAttribute('aria-labelledby', id);
+    section.dataset.prabhupadaSource = 'vishvasa-github';
+    section.dataset.sridharaSource = 'vishvasa-github';
 
     const heading = document.createElement('h3');
     heading.id = id;
     heading.className = 'sb-verse';
     heading.textContent = `ŚB 10.${chapter}.${rangeLabel}`;
-
     const rule = document.createElement('hr');
     rule.className = 'sb-rule';
 
@@ -262,7 +265,6 @@
 
     const sridharaSanskrit = sridharaForRange(sridharaEntries, entry.start, entry.end, chapter);
     const sridharaTransliteration = sridharaSanskrit ? devanagariToIast(sridharaSanskrit) : '';
-    const bhagavatamSanskrit = entry.devanagari.join('\n');
     const bhagavatamTransliteration = entry.transliteration.join('\n');
 
     section.append(heading, rule, devanagari, translation);
@@ -280,9 +282,8 @@
       ], 'sb-transliteration-details'));
     }
 
-    if (bhagavatamSanskrit || sridharaSanskrit) {
+    if (sridharaSanskrit) {
       section.append(makeSourceDetails('Śrīdhara Sanskrit', [
-        { label: 'Bhāgavatam Sanskrit', text: bhagavatamSanskrit, lang: 'sa-Deva' },
         { label: 'Śrīdhara Sanskrit', text: sridharaSanskrit, lang: 'sa-Deva' }
       ], 'sb-bhasya'));
     }
@@ -294,7 +295,6 @@
     const batches = [];
     let current = [];
     let verseCount = 0;
-
     entries.forEach((entry) => {
       const size = entry.end - entry.start + 1;
       if (current.length && verseCount + size > BATCH_SIZE) {
@@ -310,7 +310,6 @@
         verseCount = 0;
       }
     });
-
     if (current.length) batches.push(current);
     return batches;
   }
@@ -323,33 +322,35 @@
     chapterHost.appendChild(wrapper);
   }
 
+  let loadToken = 0;
   async function loadChapter(chapter) {
+    const token = ++loadToken;
     chapterHost.replaceChildren();
     status.textContent = `Loading Canto 10, Chapter ${chapter}…`;
 
     try {
-      const [prabhupadaResponse, sridharaResponse] = await Promise.all([
-        fetch(prabhupadaUrl(chapter), { mode: 'cors', cache: 'force-cache' }),
-        fetch(sridharaUrl(chapter), { mode: 'cors', cache: 'force-cache' })
-      ]);
-
-      if (!prabhupadaResponse.ok) throw new Error(`Prabhupāda source ${prabhupadaResponse.status}`);
-      if (!sridharaResponse.ok) throw new Error(`Śrīdhara source ${sridharaResponse.status}`);
-
       const [prabhupadaMarkdown, sridharaMarkdown] = await Promise.all([
-        prabhupadaResponse.text(),
-        sridharaResponse.text()
+        fetchText(prabhupadaUrl(chapter)),
+        fetchText(sridharaUrl(chapter))
       ]);
+      if (token !== loadToken) return;
 
       const entries = parsePrabhupada(prabhupadaMarkdown);
       const sridharaEntries = parseSridhara(sridharaMarkdown, chapter);
-      if (!entries.length) throw new Error('No verse entries found');
+      if (!entries.length) throw new Error('No Prabhupāda verse entries found');
 
       const chapterHeading = document.createElement('h2');
       chapterHeading.id = `chapter-${chapter}`;
       chapterHeading.className = 'sb-chapter';
       chapterHeading.textContent = `Canto 10 — Chapter ${chapter}`;
       chapterHost.appendChild(chapterHeading);
+
+      if (!sridharaEntries.length) {
+        const warning = document.createElement('p');
+        warning.className = 'canto10-status';
+        warning.textContent = 'Prabhupāda text loaded; no matching Śrīdhara blocks were parsed for this chapter.';
+        chapterHost.appendChild(warning);
+      }
 
       const batches = batchEntries(entries);
       let shown = 0;
@@ -359,29 +360,25 @@
 
       const showNext = () => {
         if (shown >= batches.length) return;
+        loadMore.remove();
         renderBatch(chapter, batches[shown], sridharaEntries, shown + 1);
         shown += 1;
-
         const remaining = batches.length - shown;
         if (remaining > 0) {
           loadMore.textContent = `Load next 10 verses (${remaining} batch${remaining === 1 ? '' : 'es'} left)`;
           chapterHost.appendChild(loadMore);
+          status.textContent = `Chapter ${chapter}: ${Math.min(shown * BATCH_SIZE, entries[entries.length - 1].end)} verses shown.`;
         } else {
-          loadMore.remove();
-          status.textContent = `Chapter ${chapter} complete — ${entries[entries.length - 1].end} verses loaded.`;
+          status.textContent = `Chapter ${chapter} complete — through verse ${entries[entries.length - 1].end}.`;
         }
       };
 
-      loadMore.addEventListener('click', () => {
-        loadMore.remove();
-        showNext();
-      });
-
-      status.textContent = `Chapter ${chapter} source loaded. Showing the first 10 verses.`;
+      loadMore.addEventListener('click', showNext);
       showNext();
       history.replaceState(null, '', `#chapter-${chapter}`);
       chapterHeading.scrollIntoView({ block: 'start' });
     } catch (error) {
+      if (token !== loadToken) return;
       status.textContent = `Could not load Chapter ${chapter}: ${error.message}`;
     }
   }
@@ -396,7 +393,11 @@
     chapterNav.appendChild(button);
   }
 
+  window.addEventListener('hashchange', () => {
+    const match = location.hash.match(/^#chapter-(\d+)$/);
+    if (match) loadChapter(Math.min(90, Math.max(1, Number(match[1]))));
+  });
+
   const hashMatch = location.hash.match(/^#chapter-(\d+)$/);
-  const initialChapter = hashMatch ? Math.min(90, Math.max(1, Number(hashMatch[1]))) : 1;
-  loadChapter(initialChapter);
+  loadChapter(hashMatch ? Math.min(90, Math.max(1, Number(hashMatch[1]))) : 1);
 })();
