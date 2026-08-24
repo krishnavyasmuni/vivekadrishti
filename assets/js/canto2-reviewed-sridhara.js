@@ -34,7 +34,7 @@
   async function chapterData(chapter) {
     if (!chapterCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=2`, { cache: 'force-cache' })
+      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=3`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -42,8 +42,13 @@
   }
 
   function normalizeRecord(value) {
-    if (!value || typeof value !== 'object' || Array.isArray(value) || value.reviewed !== true) return null;
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+    const reviewed = value.reviewed === true;
+    const sourceAligned = value.source_aligned === true;
+    if (!reviewed && !sourceAligned) return null;
     return {
+      reviewed,
+      source_aligned: sourceAligned,
       word_for_word: String(value.word_for_word || value.wordForWord || '').trim(),
       translation: String(value.translation || value.direct_translation || '').trim()
     };
@@ -62,6 +67,8 @@
       records.push(record);
     }
     return {
+      reviewed: records.every((record) => record.reviewed),
+      source_aligned: records.some((record) => record.source_aligned),
       word_for_word: records.map((record) => record.word_for_word).filter(Boolean).join(' ').trim(),
       translation: records.map((record) => record.translation).filter(Boolean).join(' ').trim()
     };
@@ -71,23 +78,13 @@
     return section.querySelector(':scope > .sb-combined-word-details > .sb-sridhara-layer');
   }
 
-  function existingInlineEnglish(section) {
-    const layer = sridharaLayer(section);
-    const word = (layer?.querySelector(':scope > .sb-sridhara-word-for-word-content, :scope > p, :scope > div:not(.sb-layer-heading)')?.textContent || '').trim();
-    const commentary = section.querySelector(':scope > .sb-commentary');
-    const prose = (commentary?.querySelector(':scope > .sb-commentary-text')?.textContent || commentary?.textContent || '')
-      .replace(/^\s*Śrīdhara['’]s Commentary\.\s*/i, '')
-      .trim();
-    return { word, prose };
-  }
-
   function setLayerText(section, text) {
     const layer = sridharaLayer(section);
     if (!layer) return;
     const heading = layer.querySelector(':scope > .sb-layer-heading');
     const p = document.createElement('p');
     p.className = text ? 'sb-sridhara-reviewed-word-for-word' : 'sb-sridhara-wfw-missing';
-    p.textContent = text || 'A reviewed Śrīdhara word-for-word translation has not yet been added for this verse.';
+    p.textContent = text || 'A direct Śrīdhara word-for-word translation is not available for this verse.';
     layer.replaceChildren(...(heading ? [heading, p] : [p]));
   }
 
@@ -118,34 +115,25 @@
     if (!identity) return;
 
     if (explicitlyUncommented(section)) {
-      setLayerText(section, 'Śrīdhara does not comment on this verse.');
+      setLayerText(section, 'na vyākhyātam — not explained');
       setCommentary(section, '');
       section.dataset.sridharaEnglishStatus = 'no-commentary';
       return;
     }
 
-    // Chapters 2–10 were built directly from the same Bhāvārtha-dīpikā source
-    // and already contain clause-level English in the page. Preserve that text
-    // as the audited fallback while the dedicated JSON layer is progressively
-    // populated. Chapter 1 is always replaced by the separately reviewed file.
-    const inline = existingInlineEnglish(section);
     const data = await chapterData(identity.chapter);
     if (!section.isConnected) return;
     const record = recordForRange(data, identity);
     if (!record) {
-      if (identity.chapter > 1 && inline.word && inline.prose) {
-        section.dataset.sridharaEnglishStatus = 'reviewed-inline-direct';
-        return;
-      }
       setLayerText(section, '');
       setCommentary(section, '');
-      section.dataset.sridharaEnglishStatus = 'awaiting-reviewed-translation';
+      section.dataset.sridharaEnglishStatus = 'awaiting-direct-translation';
       return;
     }
 
     setLayerText(section, record.word_for_word);
     setCommentary(section, record.translation);
-    section.dataset.sridharaEnglishStatus = 'reviewed';
+    section.dataset.sridharaEnglishStatus = record.reviewed ? 'reviewed' : 'source-aligned-direct';
   }
 
   function scan(node = root) {
