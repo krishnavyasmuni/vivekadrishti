@@ -6,27 +6,75 @@
   const smritiButton = root.querySelector('[data-corpus="smriti"]');
   if (!stage || !puranaButton || !smritiButton) return;
 
-  const tones = {
+  const SOURCE = {
+    padmaPuranas: {
+      label: 'Padma Purāṇa VI.236.18–21',
+      url: 'https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364118.html'
+    },
+    mahapuranaVariants: {
+      label: 'Traditional Mahāpurāṇa lists and substitutions',
+      url: 'https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364118.html'
+    },
+    kurmaUpa: {
+      label: 'Kūrma Purāṇa I.1.17–20 (as collated in Studies in the Upapurāṇas)',
+      url: 'https://www.wisdomlib.org/hinduism/book/studies-in-the-upapuranas/d/doc1471554.html'
+    },
+    padmaUpa: {
+      label: 'Padma Purāṇa, Pātāla-khaṇḍa 111.94b–98 (collated list)',
+      url: 'https://www.wisdomlib.org/hinduism/book/studies-in-the-upapuranas/d/doc1471554.html'
+    },
+    deviUpa: {
+      label: 'Devī Bhāgavata I.3.13–16 (collated list)',
+      url: 'https://www.wisdomlib.org/hinduism/book/studies-in-the-upapuranas/d/doc1471554.html'
+    },
+    yaj: {
+      label: 'Yājñavalkya Smṛti 1.4–5',
+      url: 'https://www.wisdomlib.org/hinduism/book/yajnavalkya-smriti-with-mitakshara-and-viramitrodaya/d/doc1875969.html'
+    },
+    parasara: {
+      label: 'Parāśara Smṛti, Ācāra 12–15',
+      url: 'https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc145579.html'
+    },
+    padmaSmriti: {
+      label: 'Padma Purāṇa, Uttarakhāṇḍa 263.86–90 (Ānandāśrama ed.; numbering varies by edition)',
+      url: 'https://www.wisdomlib.org/hinduism/essay/devala-smriti-critical-study/d/doc1458518.html'
+    },
+    madhava: {
+      label: 'Mādhava on Parāśara Smṛti 1.20 (additional Smṛtikāras)',
+      url: 'https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc145579.html'
+    },
+    upasmriti: {
+      label: 'Viramitrodaya, Paribhāṣā-prakāśa p.18 — Upasmṛti list',
+      url: 'https://www.wisdomlib.org/hinduism/essay/devala-smriti-critical-study/d/doc1458518.html'
+    }
+  };
+
+  const gunaLabels = {
+    sattvika: 'Sāttvika',
+    rajasa: 'Rājasa',
+    tamasa: 'Tāmasa'
+  };
+
+  const sectLabels = {
     vaisnava: 'Vaiṣṇava',
     saiva: 'Śaiva',
     sakta: 'Śākta',
     saura: 'Saura',
     ganapatya: 'Gāṇapatya',
     brahma: 'Brahmā / cosmological',
-    mixed: 'Mixed / encyclopaedic'
+    mixed: 'Mixed / composite'
   };
 
   const puranaAbout = {
     'Brahma Purāṇa':'A Purāṇic compilation on creation, sacred geography, pilgrimage and religious observance.',
     'Padma Purāṇa':'A vast Purāṇa with cosmology, pilgrimage, dharma and extensive Vaiṣṇava devotional material.',
     'Viṣṇu Purāṇa':'A major Vaiṣṇava Purāṇa on cosmology, dynasties, avatāras and Viṣṇu as the supreme reality.',
-    'Vāyu Purāṇa':'An early Purāṇa rich in cosmology and genealogy; some traditions connect the Vāyavīya and Śaiva Purāṇa designations.',
+    'Vāyu Purāṇa':'An early Purāṇa rich in cosmology, genealogy and old Purāṇic material; it occupies the slot taken by Śiva Purāṇa in some other lists.',
     'Śiva Purāṇa':'A Śaiva Purāṇa devoted to Śiva, his forms, myths, worship and theology.',
     'Bhāgavata Purāṇa':'A foundational Vaiṣṇava bhakti Purāṇa, especially famous for Kṛṣṇa theology, avatāras and loving devotion.',
-    'Devī Bhāgavata Purāṇa':'A major Śākta scripture presenting Devī as the supreme reality; Śākta traditions defend its status as the Bhāgavata Mahāpurāṇa.',
+    'Devī Bhāgavata Purāṇa':'A major Śākta scripture presenting Devī as the supreme reality; Śākta tradition defends its Mahāpurāṇa status.',
     'Kālikā Purāṇa':'A Śākta Purāṇa especially associated with the Goddess, Kāmākhyā, ritual and sacred geography.',
-    'Nṛsiṃha Purāṇa':'A Vaiṣṇava Purāṇa centred on Nṛsiṃha and other Vaiṣṇava mythic and devotional material.',
-    'Nāradīya Purāṇa':'A devotional Purāṇa associated with Nārada, with extensive Vaiṣṇava worship, pilgrimage and religious practice.',
+    'Nāradīya Purāṇa':'A devotional Purāṇa associated with Nārada, containing substantial Vaiṣṇava worship, pilgrimage and practice.',
     'Mārkaṇḍeya Purāṇa':'A diverse Purāṇa whose celebrated Devī Māhātmya became one of the central scriptures of Goddess worship.',
     'Agni Purāṇa':'An encyclopaedic Purāṇa ranging across ritual, theology, polity, architecture, grammar, medicine and the arts.',
     'Bhaviṣya Purāṇa':'A composite Purāṇa with ritual, social, dynastic and future-oriented material accumulated over a long history.',
@@ -35,75 +83,95 @@
     'Varāha Purāṇa':'A Vaiṣṇava Purāṇa framed around Varāha, with substantial pilgrimage and sacred-geography material.',
     'Skanda Purāṇa':'The largest Purāṇa, especially rich in regional sacred geography, pilgrimage traditions and Śaiva material.',
     'Vāmana Purāṇa':'Named for Vāmana but textually mixed, with substantial Śaiva, cosmological and geographical material.',
-    'Kūrma Purāṇa':'A mixed Purāṇa framed through Kūrma, combining Vaiṣṇava, Śaiva and yogic teaching.',
+    'Kūrma Purāṇa':'A composite Purāṇa framed through Kūrma, combining Vaiṣṇava, Śaiva and yogic teaching.',
     'Matsya Purāṇa':'Known for the flood narrative and extensive material on kingship, temple construction, iconography and genealogies.',
     'Garuḍa Purāṇa':'A Vaiṣṇava Purāṇa famous for ritual and afterlife material, alongside medicine, ethics and religious observance.',
     'Brahmāṇḍa Purāṇa':'A cosmological Purāṇa containing large-scale accounts of the universe and important material connected with the Lalitā tradition.'
   };
 
-  const mahaPuranas = [
-    ['Brahma Purāṇa','brahma','common lists'],
-    ['Padma Purāṇa','vaisnava','common lists'],
-    ['Viṣṇu Purāṇa','vaisnava','common lists'],
-    ['Vāyu Purāṇa','saiva','many lists; often where Śiva is absent'],
-    ['Śiva Purāṇa','saiva','many lists; often where Vāyu is absent'],
-    ['Bhāgavata Purāṇa','vaisnava','common lists'],
-    ['Devī Bhāgavata Purāṇa','sakta','Śākta Mahāpurāṇa claim'],
-    ['Kālikā Purāṇa','sakta','Bhāgavata-slot variant in some accounts'],
-    ['Nṛsiṃha Purāṇa','vaisnava','appears in the Varāha Purāṇa list'],
-    ['Nāradīya Purāṇa','vaisnava','common lists'],
-    ['Mārkaṇḍeya Purāṇa','mixed','common lists; contains Devī Māhātmya'],
-    ['Agni Purāṇa','mixed','common lists'],
-    ['Bhaviṣya Purāṇa','mixed','common lists'],
-    ['Brahmavaivarta Purāṇa','vaisnava','common lists'],
-    ['Liṅga Purāṇa','saiva','common lists'],
-    ['Varāha Purāṇa','vaisnava','common lists'],
-    ['Skanda Purāṇa','saiva','common lists'],
-    ['Vāmana Purāṇa','mixed','common lists'],
-    ['Kūrma Purāṇa','mixed','common lists'],
-    ['Matsya Purāṇa','mixed','common lists'],
-    ['Garuḍa Purāṇa','vaisnava','common lists'],
-    ['Brahmāṇḍa Purāṇa','mixed','common lists']
+  const padmaGunaPuranas = {
+    sattvika: [
+      ['Viṣṇu Purāṇa','vaisnava'],['Nāradīya Purāṇa','vaisnava'],['Bhāgavata Purāṇa','vaisnava'],
+      ['Garuḍa Purāṇa','vaisnava'],['Padma Purāṇa','vaisnava'],['Varāha Purāṇa','vaisnava']
+    ],
+    rajasa: [
+      ['Brahmāṇḍa Purāṇa','mixed'],['Brahmavaivarta Purāṇa','vaisnava'],['Mārkaṇḍeya Purāṇa','mixed'],
+      ['Brahma Purāṇa','brahma'],['Vāmana Purāṇa','mixed'],['Bhaviṣya Purāṇa','mixed']
+    ],
+    tamasa: [
+      ['Matsya Purāṇa','mixed'],['Kūrma Purāṇa','mixed'],['Liṅga Purāṇa','saiva'],
+      ['Śiva Purāṇa','saiva'],['Agni Purāṇa','mixed'],['Skanda Purāṇa','saiva']
+    ]
+  };
+
+  const mahaVariantUnion = [
+    ['Brahma Purāṇa','brahma','standard lists'],['Padma Purāṇa','vaisnava','standard lists'],['Viṣṇu Purāṇa','vaisnava','standard lists'],
+    ['Śiva Purāṇa','saiva','Padma guṇa list / replaces Vāyu in some enumerations'],['Vāyu Purāṇa','mixed','widely transmitted standard list / replaces Śiva in other enumerations'],
+    ['Bhāgavata Purāṇa','vaisnava','standard lists'],['Devī Bhāgavata Purāṇa','sakta','Śākta claim to the Bhāgavata Mahāpurāṇa slot'],['Kālikā Purāṇa','sakta','another reported Bhāgavata-slot substitution'],
+    ['Nāradīya Purāṇa','vaisnava','standard lists'],['Mārkaṇḍeya Purāṇa','mixed','standard lists'],['Agni Purāṇa','mixed','standard lists'],
+    ['Bhaviṣya Purāṇa','mixed','standard lists'],['Brahmavaivarta Purāṇa','vaisnava','standard lists'],['Liṅga Purāṇa','saiva','standard lists'],
+    ['Varāha Purāṇa','vaisnava','standard lists'],['Skanda Purāṇa','saiva','standard lists'],['Vāmana Purāṇa','mixed','standard lists'],
+    ['Kūrma Purāṇa','mixed','standard lists'],['Matsya Purāṇa','mixed','standard lists'],['Garuḍa Purāṇa','vaisnava','standard lists'],['Brahmāṇḍa Purāṇa','mixed','standard lists']
   ];
 
-  const upaPuranas = [
-    ['Sanatkumāra Purāṇa','mixed'],['Nṛsiṃha Purāṇa','vaisnava'],['Bṛhannāradīya Purāṇa','vaisnava'],
-    ['Śivarahasya Purāṇa','saiva'],['Durvāsas Purāṇa','saiva'],['Kapila Purāṇa','mixed'],
-    ['Vāmana Upapurāṇa','vaisnava'],['Bhārgava Purāṇa','mixed'],['Vāruṇa Purāṇa','saiva'],
-    ['Kālikā Purāṇa','sakta'],['Sāmba Purāṇa','saura'],['Nandi / Nanda Purāṇa','saiva'],
-    ['Sūrya Purāṇa','saura'],['Parāśara Purāṇa','saiva'],['Vāsiṣṭha Purāṇa','mixed'],
-    ['Gaṇeśa Purāṇa','ganapatya'],['Mudgala Purāṇa','ganapatya'],['Haṃsa Purāṇa','mixed'],
-    ['Viṣṇudharma Purāṇa','vaisnava'],['Viṣṇudharmottara Purāṇa','vaisnava'],['Śivadharma Purāṇa','saiva'],
-    ['Māheśvara Purāṇa','saiva'],['Ekāmra Purāṇa','saiva'],['Devī Bhāgavata Purāṇa','sakta'],
-    ['Devī Purāṇa','sakta'],['Mahābhāgavata Purāṇa','sakta'],['Bhagavatī Purāṇa','sakta'],
-    ['Caṇḍī / Caṇḍikā Purāṇa','sakta'],['Devīrahasya','sakta'],['Saura Purāṇa','saiva'],
-    ['Ādi Purāṇa','mixed'],['Kalki Purāṇa','vaisnava'],['Puruṣottama Purāṇa','vaisnava'],
-    ['Kriyāyogasāra','vaisnava'],['Bhaviṣyottara Purāṇa','mixed'],['Bṛhaddharma Purāṇa','mixed'],
-    ['Mānava Purāṇa','mixed'],['Auśanasa Purāṇa','mixed']
-  ];
+  const upaSect = {
+    'Sanatkumāra Purāṇa':'mixed','Ādya / Sanatkumāra':'mixed','Nṛsiṃha Purāṇa':'vaisnava','Skanda / Āṇḍa':'saiva','Kaumāra':'saiva',
+    'Śivadharma Purāṇa':'saiva','Śiva Purāṇa':'saiva','Durvāsas Purāṇa':'mixed','Daurvāsasa':'mixed','Nāradīya Purāṇa':'vaisnava','Another Nāradīya':'vaisnava',
+    'Kapila Purāṇa':'mixed','Vāmana Upapurāṇa':'vaisnava','Mānava Purāṇa':'mixed','Auśanasa Purāṇa':'mixed','Uśanas Purāṇa':'mixed',
+    'Brahmāṇḍa Upapurāṇa':'mixed','Another Brahmāṇḍa':'mixed','Varuṇa Purāṇa':'mixed','Kālikā Purāṇa':'sakta','Mahesa / Māheśvara':'saiva','Māheśvara Purāṇa':'saiva',
+    'Sāmba Purāṇa':'saura','Saura Purāṇa':'saura','Parāśara Purāṇa':'mixed','Mārīca Purāṇa':'mixed','Bhārgava Purāṇa':'mixed',
+    'Nandi / Nanda Purāṇa':'saiva','Āditya Purāṇa':'saura','Bhāgavata Upapurāṇa':'vaisnava','Vāsiṣṭha Purāṇa':'mixed'
+  };
+
+  const upaLists = {
+    kurma: {
+      source: SOURCE.kurmaUpa,
+      note: 'One Kūrma-Purāṇa enumeration of eighteen. Read the colours as broad orientation, not exclusive ownership.',
+      items: ['Sanatkumāra Purāṇa','Nṛsiṃha Purāṇa','Skanda / Āṇḍa','Śivadharma Purāṇa','Durvāsas Purāṇa','Nāradīya Purāṇa','Kapila Purāṇa','Vāmana Upapurāṇa','Uśanas Purāṇa','Brahmāṇḍa Upapurāṇa','Varuṇa Purāṇa','Kālikā Purāṇa','Māheśvara Purāṇa','Sāmba Purāṇa','Saura Purāṇa','Parāśara Purāṇa','Mārīca Purāṇa','Bhārgava Purāṇa']
+    },
+    padma: {
+      source: SOURCE.padmaUpa,
+      note: 'The Padma list differs in several slots and even preserves uncertain or variant readings in modern collations.',
+      items: ['Ādya / Sanatkumāra','Nṛsiṃha Purāṇa','Skanda / Āṇḍa','Durvāsas Purāṇa','Another Nāradīya','Kapila Purāṇa','Mānava Purāṇa','Auśanasa Purāṇa','Another Brahmāṇḍa','Varuṇa Purāṇa','Kālikā Purāṇa','Mahesa / Māheśvara','Sāmba Purāṇa','Saura Purāṇa','Parāśara Purāṇa','Mārīca Purāṇa','Bhārgava Purāṇa','Kaumāra']
+    },
+    devi: {
+      source: SOURCE.deviUpa,
+      note: 'The Devī Bhāgavata gives yet another eighteen-name Upapurāṇa set.',
+      items: ['Sanatkumāra Purāṇa','Nṛsiṃha Purāṇa','Nāradīya Purāṇa','Śiva Purāṇa','Daurvāsasa','Kapila Purāṇa','Mānava Purāṇa','Auśanasa Purāṇa','Varuṇa Purāṇa','Kālikā Purāṇa','Sāmba Purāṇa','Nandi / Nanda Purāṇa','Saura Purāṇa','Parāśara Purāṇa','Āditya Purāṇa','Māheśvara Purāṇa','Bhāgavata Upapurāṇa','Vāsiṣṭha Purāṇa']
+    }
+  };
 
   const yajnavalkya = ['Manu','Atri','Viṣṇu','Hārīta','Yājñavalkya','Uśanas','Aṅgiras','Yama','Āpastamba','Saṃvarta','Kātyāyana','Bṛhaspati','Parāśara','Vyāsa','Śaṅkha','Likhita','Dakṣa','Gautama','Śātātapa','Vasiṣṭha'];
-  const parasaraVariants = ['Kāśyapa','Gārgya','Pracetas'];
-  const otherSmritikaras = ['Vasiṣṭha','Nārada','Sumantu','Pitāmaha','Babhru','Kārṣṇājini','Satyavrata','Gārgya','Devala','Jamadagni','Bharadvāja','Pulastya','Pulaha','Kratu','Ātreya','Marīci','Vatsa','Pāraskara','Ṛṣyaśṛṅga','Vaijavāpa'];
-  const upasmritis = ['Jābāli','Nāciketa','Skanda','Lāṅgākṣi','Kāśyapa','Vyāsa','Sanatkumāra','Sumantu','Pitāmaha','Vyāghra','Kārṣṇājini','Jātūkarṇa','Kapiñjala','Baudhāyana','Kāṇāda','Viśvāmitra','Paiṭhīnasi','Gobhila'];
-
-  const smritiGroups = [
-    {key:'yaj',label:'Yājñavalkya · 20',tone:'yaj',items:yajnavalkya,note:'Yājñavalkya names twenty promulgators of Dharmaśāstra. The Mitākṣarā explicitly treats this as illustrative, not exhaustive.'},
-    {key:'par',label:'Parāśara variants',tone:'par',items:parasaraVariants,note:'Parāśara’s list is a different traditional enumeration. These are the distinctive names that replace Bṛhaspati, Yama and Vyāsa in comparison with Yājñavalkya.'},
-    {key:'other',label:'Other Smṛtikāras',tone:'other',items:otherSmritikaras,note:'Commentarial tradition preserves further Smṛti authorities beyond the headline lists; several works are fragmentary or survive mainly through quotation.'},
-    {key:'upa',label:'Upasmṛtis · 18',tone:'upa',items:upasmritis,note:'A separate traditional set of eighteen Upasmṛti authorities, again demonstrating that “the 18 Smṛtis” is not a closed bibliography.'}
-  ];
+  const parasara = ['Manu','Vasiṣṭha','Kāśyapa','Garga','Gautama','Uśanas','Atri','Viṣṇu','Saṃvarta','Dakṣa','Aṅgiras','Śātātapa','Hārīta','Yājñavalkya','Āpastamba','Śaṅkha','Likhita','Kātyāyana','Pracetas'];
+  const madhavaAdditional = ['Vyāsa','Yama','Parāśara','Bhṛgu','Nārada','Baudhāyana','Pitāmaha','Sumantu','Kāśyapa','Babhru','Paiṭhīnasi','Vyāghra','Satyavrata','Bharadvāja','Kārṣṇājini','Jābāli','Jamadagni','Lokākṣi'];
+  const upasmriti18 = ['Jābāli','Nāciketa','Skanda','Laugākṣi','Kāśyapa','Vyāsa','Sanatkumāra','Śantanu','Janaka','Vyāghra','Kātyāyana','Jātūkarṇa','Kapiñjala','Baudhāyana','Kāṇāda','Viśvāmitra','Paiṭhīnasi','Gobhila'];
+  const padmaGunaSmritis = {
+    sattvika: ['Vasiṣṭha','Hārīta','Vyāsa','Parāśara','Bharadvāja','Kāśyapa'],
+    rajasa: ['Yājñavalkya','Atri','Tittiri','Dakṣa','Kātyāyana','Viṣṇu'],
+    tamasa: ['Gautama','Bṛhaspati','Saṃvarta','Yama','Śaṅkha','Uśanas']
+  };
 
   function esc(value) {
     return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function sourceLine(source) {
+    return `<div class="source-line"><span>Source</span><a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)}</a></div>`;
   }
 
   function info(title, meta, about) {
     return `<div class="text-info taxonomy-info" aria-live="polite"><div class="text-info-head"><strong>${esc(title)}</strong>${meta ? `<span>${esc(meta)}</span>` : ''}</div><p>${esc(about)}</p></div>`;
   }
 
-  function taxonomyButton(name, tone, meta, about, tag='') {
-    return `<button class="text-button taxonomy-button tone-${esc(tone)}" type="button" data-title="${esc(name)}" data-meta="${esc(meta)}" data-about="${esc(about)}"><span>${esc(name)}</span>${tag ? `<small>${esc(tag)}</small>` : ''}</button>`;
+  function itemButton(name, options = {}) {
+    const tone = options.tone || 'neutral';
+    const meta = options.meta || '';
+    const about = options.about || '';
+    const tag = options.tag || '';
+    const guna = options.guna || '';
+    const classes = ['text-button','taxonomy-button',`tone-${tone}`];
+    if (guna) classes.push(`guna-${guna}`);
+    return `<button class="${classes.join(' ')}" type="button" data-title="${esc(name)}" data-meta="${esc(meta)}" data-about="${esc(about)}"><span>${esc(name)}</span>${tag ? `<small>${esc(tag)}</small>` : ''}</button>`;
   }
 
   function wire(scope) {
@@ -111,75 +179,142 @@
       button.addEventListener('click', () => {
         scope.querySelectorAll('.taxonomy-button.is-active').forEach(b => b.classList.remove('is-active'));
         button.classList.add('is-active');
-        let target = scope.querySelector('.taxonomy-info');
-        if (!target) {
-          target = document.createElement('div');
-          target.className = 'text-info taxonomy-info';
-          scope.appendChild(target);
-        }
-        target.outerHTML = info(button.dataset.title, button.dataset.meta, button.dataset.about);
+        const old = scope.querySelector('.taxonomy-info');
+        if (old) old.remove();
+        scope.insertAdjacentHTML('beforeend', info(button.dataset.title, button.dataset.meta, button.dataset.about));
       });
     });
   }
 
-  function legend() {
-    return `<div class="taxonomy-legend" aria-label="Purāṇa orientation colours">${Object.entries(tones).map(([tone,label]) => `<span class="legend-item tone-${tone}">${esc(label)}</span>`).join('')}</div>`;
+  function sectLegend() {
+    const used = ['vaisnava','saiva','sakta','saura','ganapatya','brahma','mixed'];
+    return `<div class="taxonomy-legend sect-legend">${used.map(key => `<span class="legend-item sect-${key}">${esc(sectLabels[key])}</span>`).join('')}</div>`;
   }
 
-  function renderPuranaList(items, mode) {
-    const holder = stage.querySelector('.taxonomy-area');
-    const intro = mode === 'maha'
-      ? 'The traditional number is eighteen, but the membership is not fixed. This view shows the larger union of titles that occur in Mahāpurāṇa lists or make a traditional Mahāpurāṇa claim. Colour indicates broad dominant orientation, not an exclusive sectarian boundary.'
-      : 'Upapurāṇa lists vary even more widely. The colours below indicate the broad sectarian orientation of the surviving or traditionally described text; many are composite.';
-    holder.innerHTML = `<p class="taxonomy-note">${esc(intro)}</p>${legend()}<div class="text-grid taxonomy-grid">${items.map(([name,tone,claim]) => {
-      const about = puranaAbout[name] || `A Purāṇic work transmitted in a ${mode === 'maha' ? 'Mahāpurāṇa-list or Mahāpurāṇa-claim' : 'secondary or Upapurāṇa'} context. Purāṇic classifications vary across texts and regions.`;
-      return taxonomyButton(name,tone,`${tones[tone]} · ${claim || 'Upapurāṇa tradition'}`,about,tones[tone]);
+  function gunaLegend() {
+    return `<div class="taxonomy-legend guna-legend"><span class="legend-item guna-sattvika">Sāttvika</span><span class="legend-item guna-rajasa">Rājasa</span><span class="legend-item guna-tamasa">Tāmasa</span></div>`;
+  }
+
+  function renderPadmaPuranaGunas(holder) {
+    const rows = Object.entries(padmaGunaPuranas).flatMap(([guna,items]) => items.map(([name,sect]) => itemButton(name, {
+      tone: sect,
+      guna,
+      tag: `${gunaLabels[guna]} · ${sectLabels[sect]}`,
+      meta: `${gunaLabels[guna]} · ${sectLabels[sect]} · ${SOURCE.padmaPuranas.label}`,
+      about: puranaAbout[name] || `A Purāṇa placed in the ${gunaLabels[guna]} group by this Padma-Purāṇa classification.`
+    })));
+    holder.innerHTML = `<p class="taxonomy-note"><strong>Guṇa is the primary colour here.</strong> The small label gives a broad sectarian orientation. The Padma scheme is itself a traditional Vaiṣṇava classification, and other Purāṇas preserve slightly different schemes.</p>${sourceLine(SOURCE.padmaPuranas)}${gunaLegend()}${sectLegend()}<div class="text-grid taxonomy-grid">${rows.join('')}</div>`;
+    wire(holder);
+  }
+
+  function renderMahapuranaVariants(holder) {
+    holder.innerHTML = `<p class="taxonomy-note">The number <strong>18</strong> is traditional, but the membership varies. This comparison uses the union of the ordinary list plus the best-known substitutions: Vāyu/Śiva and the Śākta Bhāgavata-slot claims. Colour here means broad sectarian orientation, not guṇa.</p>${sourceLine(SOURCE.mahapuranaVariants)}${sectLegend()}<div class="text-grid taxonomy-grid">${mahaVariantUnion.map(([name,sect,claim]) => itemButton(name, {
+      tone: sect,
+      tag: sectLabels[sect],
+      meta: `${sectLabels[sect]} · ${claim}`,
+      about: puranaAbout[name] || 'A title occurring in the wider history of Mahāpurāṇa enumeration.'
+    })).join('')}</div>`;
+    wire(holder);
+  }
+
+  function renderUpapuranaSource(holder, key) {
+    const set = upaLists[key];
+    holder.innerHTML = `<p class="taxonomy-note">${esc(set.note)}</p>${sourceLine(set.source)}${sectLegend()}<div class="text-grid taxonomy-grid">${set.items.map(name => {
+      const sect = upaSect[name] || 'mixed';
+      return itemButton(name, {
+        tone: sect,
+        tag: sectLabels[sect],
+        meta: `${sectLabels[sect]} · ${set.source.label}`,
+        about: `A title appearing in this traditional Upapurāṇa enumeration. Upapurāṇa lists vary substantially across sources, and some identifications or surviving texts are uncertain.`
+      });
     }).join('')}</div>`;
     wire(holder);
   }
 
   function renderPuranas() {
-    stage.innerHTML = `<div class="panel-intro"><h2>Purāṇas</h2><p>Colour-coded by broad sectarian orientation. Click any title for a short description.</p></div><div class="subnav taxonomy-tabs"><button type="button" data-purana-view="maha">Mahāpurāṇa claims · 22</button><button type="button" data-purana-view="upa">Upapurāṇas</button></div><div class="taxonomy-area"></div>`;
-    const tabs = [...stage.querySelectorAll('[data-purana-view]')];
-    function show(which) {
-      tabs.forEach(b => b.classList.toggle('is-active', b.dataset.puranaView === which));
-      renderPuranaList(which === 'maha' ? mahaPuranas : upaPuranas, which);
+    stage.innerHTML = `<div class="panel-intro taxonomy-title"><h2>Purāṇas</h2><p>Compare the traditional guṇa scheme, wider Mahāpurāṇa membership, and source-specific Upapurāṇa lists.</p></div><div class="subnav taxonomy-tabs"><button type="button" data-pview="guna">Padma guṇa scheme · 18</button><button type="button" data-pview="maha">Mahāpurāṇa variants · 21</button><button type="button" data-pview="kurma">Upapurāṇas · Kūrma</button><button type="button" data-pview="padma">Upapurāṇas · Padma</button><button type="button" data-pview="devi">Upapurāṇas · Devī Bhāgavata</button></div><div class="taxonomy-area"></div>`;
+    const holder = stage.querySelector('.taxonomy-area');
+    const tabs = [...stage.querySelectorAll('[data-pview]')];
+    function show(key) {
+      tabs.forEach(b => b.classList.toggle('is-active', b.dataset.pview === key));
+      if (key === 'guna') renderPadmaPuranaGunas(holder);
+      else if (key === 'maha') renderMahapuranaVariants(holder);
+      else renderUpapuranaSource(holder,key);
     }
-    tabs.forEach(b => b.addEventListener('click', () => show(b.dataset.puranaView)));
-    show('maha');
+    tabs.forEach(b => b.addEventListener('click', () => show(b.dataset.pview)));
+    show('guna');
   }
 
-  function renderSmritiGroup(group) {
-    const holder = stage.querySelector('.taxonomy-area');
-    holder.innerHTML = `<p class="taxonomy-note">${esc(group.note)}</p><div class="text-grid taxonomy-grid">${group.items.map(name => taxonomyButton(name,group.tone,group.label,`${name} is named in this traditional Dharmaśāstra/Smṛti enumeration or commentarial grouping as an authority on dharma. Many attributed Smṛtis survive only partly or through quotation.`,group.label)).join('')}</div>`;
+  const smritiSets = {
+    yaj: {
+      source: SOURCE.yaj,
+      tone: 'source-yaj',
+      note: 'Yājñavalkya directly names twenty “promulgators of Dharmaśāstra”. The Mitākṣarā immediately says this is illustrative rather than exhaustive.',
+      items: yajnavalkya
+    },
+    par: {
+      source: SOURCE.parasara,
+      tone: 'source-par',
+      note: 'Parāśara gives a nineteen-name list. It overlaps heavily with Yājñavalkya but adds Kāśyapa, Garga and Pracetas and omits several Yājñavalkya names.',
+      items: parasara
+    },
+    madhava: {
+      source: SOURCE.madhava,
+      tone: 'source-madhava',
+      note: 'Mādhava, commenting on Parāśara 1.20, supplies eighteen additional names. This is one reason a single closed “18 Smṛtis” list is misleading.',
+      items: madhavaAdditional
+    },
+    upa: {
+      source: SOURCE.upasmriti,
+      tone: 'source-upa',
+      note: 'A distinct traditional list of eighteen Upasmṛti authors. Read it as a named source-list rather than a universal canon.',
+      items: upasmriti18
+    }
+  };
+
+  function renderPlainSmriti(holder, key) {
+    const set = smritiSets[key];
+    holder.innerHTML = `<p class="taxonomy-note">${esc(set.note)}</p>${sourceLine(set.source)}<div class="text-grid taxonomy-grid source-grid ${set.tone}">${set.items.map(name => itemButton(name, {
+      tone: set.tone,
+      tag: set.source.label.replace(/\s*\(.+$/, ''),
+      meta: set.source.label,
+      about: `${name} is named as a Dharmaśāstra/Smṛti authority in this particular source-list. The survival and extent of the attributed work varies greatly from author to author.`
+    })).join('')}</div>`;
+    wire(holder);
+  }
+
+  function renderPadmaSmritiGunas(holder) {
+    const rows = Object.entries(padmaGunaSmritis).flatMap(([guna,names]) => names.map(name => itemButton(name, {
+      tone: `source-padma`,
+      guna,
+      tag: gunaLabels[guna],
+      meta: `${gunaLabels[guna]} · ${SOURCE.padmaSmriti.label}`,
+      about: `${name} is placed in the ${gunaLabels[guna]} Smṛti group by this Padma-Purāṇa classification. The scheme is selective rather than exhaustive, and textual editions preserve variant readings.`
+    })));
+    holder.innerHTML = `<p class="taxonomy-note"><strong>This is a traditional guṇa classification of Smṛtis as well.</strong> It contains six Sāttvika, six Rājasa and six Tāmasa names, but omits major authorities such as Manu and Nārada; it should not be mistaken for a complete Smṛti canon.</p>${sourceLine(SOURCE.padmaSmriti)}${gunaLegend()}<div class="text-grid taxonomy-grid">${rows.join('')}</div>`;
     wire(holder);
   }
 
   function renderSmritis() {
-    stage.innerHTML = `<div class="panel-intro"><h2>Smṛti & Dharmaśāstra</h2><p>There is no single closed set of eighteen. Browse the different traditional enumerations; each source-list has its own colour.</p></div><div class="smriti-legend"><span class="legend-item tone-yaj">Yājñavalkya</span><span class="legend-item tone-par">Parāśara variants</span><span class="legend-item tone-other">Other Smṛtikāras</span><span class="legend-item tone-upa">Upasmṛtis</span></div><div class="subnav taxonomy-tabs"></div><div class="taxonomy-area"></div>`;
-    const nav = stage.querySelector('.taxonomy-tabs');
-    smritiGroups.forEach((group,index) => {
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.className = `tone-${group.tone}`;
-      b.dataset.smritiGroup = group.key;
-      b.textContent = group.label;
-      b.addEventListener('click', () => {
-        nav.querySelectorAll('button').forEach(x => x.classList.toggle('is-active', x === b));
-        renderSmritiGroup(group);
-      });
-      nav.appendChild(b);
-      if (index === 0) setTimeout(() => b.click(),0);
-    });
+    stage.innerHTML = `<div class="panel-intro taxonomy-title"><h2>Smṛti & Dharmaśāstra</h2><p>Each list is now tied to the text or commentator that actually gives it.</p></div><div class="subnav taxonomy-tabs smriti-tabs"><button type="button" data-sview="yaj">Yājñavalkya · 20</button><button type="button" data-sview="par">Parāśara · 19</button><button type="button" data-sview="guna">Padma guṇa scheme · 18</button><button type="button" data-sview="madhava">Mādhava · +18</button><button type="button" data-sview="upa">Viramitrodaya Upasmṛtis · 18</button></div><div class="taxonomy-area"></div>`;
+    const holder = stage.querySelector('.taxonomy-area');
+    const tabs = [...stage.querySelectorAll('[data-sview]')];
+    function show(key) {
+      tabs.forEach(b => b.classList.toggle('is-active', b.dataset.sview === key));
+      if (key === 'guna') renderPadmaSmritiGunas(holder);
+      else renderPlainSmriti(holder,key);
+    }
+    tabs.forEach(b => b.addEventListener('click', () => show(b.dataset.sview)));
+    show('yaj');
   }
 
   puranaButton.addEventListener('click', () => {
-    if (!puranaButton.classList.contains('is-active')) return;
+    if (!puranaButton.classList.contains('is-active') || stage.hidden) return;
     renderPuranas();
   });
 
   smritiButton.addEventListener('click', () => {
-    if (!smritiButton.classList.contains('is-active')) return;
+    if (!smritiButton.classList.contains('is-active') || stage.hidden) return;
     renderSmritis();
   });
 })();
