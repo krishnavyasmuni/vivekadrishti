@@ -58,11 +58,11 @@
       items: ['Manu','Vasiṣṭha','Kāśyapa','Garga','Gautama','Uśanas','Atri','Viṣṇu','Saṃvarta','Dakṣa','Aṅgiras','Śātātapa','Hārīta','Yājñavalkya','Āpastamba','Śaṅkha','Likhita','Kātyāyana','Pracetas']
     },
     'Padma Purāṇa': {
-      source: 'Padma Purāṇa, Uttarakhāṇḍa 263.86–90',
+      source: 'Padma Purāṇa, Uttarakhāṇḍa 263.86–90 (Ānandāśrama)',
       groups: {
-        'Sāttvika': ['Vasiṣṭha','Hārīta','Vyāsa','Parāśara','Bharadvāja','Kāśyapa'],
-        'Rājasa': ['Manu','Yājñavalkya','Atri','Dakṣa','Kātyāyana','Viṣṇu'],
-        'Tāmasa': ['Gautama','Bṛhaspati','Saṃvarta','Yama','Śaṅkha','Uśanas']
+        'Sāttvika': ['Vāsiṣṭha','Hārīta','Vyāsa','Pārāśara','Bhāradvāja','Kāśyapa'],
+        'Rājasa': ['Yājñavalkya','Ātreya','Taittira','Dakṣa','Kātyāyana','Vaiṣṇava'],
+        'Tāmasa': ['Gautama','Bārhaspatya','Sāṃvarta','Yama','Śaṅkha','Auśanasa']
       }
     }
   };
