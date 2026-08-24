@@ -1,0 +1,39 @@
+name: Test Sanskrit NMT
+
+on:
+  push:
+    branches: [fix/sridhara-canto2-canto10-complete]
+    paths: ['.github/workflows/test-sanskrit-m2m.yml']
+  pull_request:
+    branches: [main]
+    paths: ['.github/workflows/test-sanskrit-m2m.yml']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check 'transformers<5' torch sentencepiece
+      - name: Compare Sanskrit samples
+        run: |
+          python - <<'PY'
+          from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+          name='Swamitucats/M2M100_Sanskrit_English'
+          tok=AutoTokenizer.from_pretrained(name)
+          model=AutoModelForSeq2SeqLM.from_pretrained(name)
+          samples=[
+            'षोडशे कालियस्योक्तो निग्रहो यमुना-ह्रदे । तत्-पत्नीभिः स्तुतेनाथ कृष्णेनानुग्रहः कृतः ॥',
+            'तं कालियम् । चण्डो वेगो यस्य तद् विषम् एव वीर्यं यस्य तम् । कदम्बम् इति । भाविना श्री-कृष्ण-चरण-स्पर्श-भाग्येन स एकस् तत्-तीरे न शुष्कः इति ज्ञातव्यम् । अमृतम् आहरता गरुत्-मता क्रान्तत्वाद् इति च पुराणान्तरम् । आस्फोट्य बाहुं कर-तलेनाहत्य । गाढा दृढं बद्धा रशना कटि-बन्धन-वस्त्रं येन सः ॥६॥',
+            'किं च, विप्रुष्मता अम्बु-कण-युक्तेन विषोद-तरङ्ग-स्पर्शि-मारुतेन स्पृष्टा यस्य तीरगा म्रियन्ते, स ह्रद आसीद् इति ॥५॥'
+          ]
+          for s in samples:
+              inp=tok(s, return_tensors='pt', truncation=True, max_length=512)
+              out=model.generate(**inp, max_new_tokens=256, num_beams=4)
+              print('SRC:',s)
+              print('NMT:',tok.decode(out[0],skip_special_tokens=True))
+              print('---')
+          PY
