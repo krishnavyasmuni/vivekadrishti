@@ -56,6 +56,13 @@
       script.dataset.canto2Renderer = 'true';
       document.head.appendChild(script);
     }
+    if (!document.querySelector('script[data-canto2-literal-sridhara]')) {
+      const script = document.createElement('script');
+      script.src = '/vivekadrishti/assets/js/canto2-literal-sridhara.js?v=1';
+      script.async = false;
+      script.dataset.canto2LiteralSridhara = 'true';
+      document.head.appendChild(script);
+    }
     return;
   }
 
