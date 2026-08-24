@@ -1,263 +1,320 @@
-/* Source-aware taxonomy for Purāṇa and Smṛti browsers */
+/* Strong, source-aware colour taxonomy for Purāṇa and Smṛti browsers. */
 .scripture-browser {
-  --guna-sattvika:#66866d;
-  --guna-rajasa:#b57d42;
-  --guna-tamasa:#75667e;
-  --sect-vaisnava:#3f6f9f;
-  --sect-saiva:#6f657d;
-  --sect-sakta:#9b5267;
-  --sect-saura:#b98536;
-  --sect-ganapatya:#927048;
-  --sect-brahma:#7f654b;
-  --sect-mixed:#718077;
-  --source-yaj:#397977;
-  --source-par:#9a7242;
-  --source-madhava:#6f638d;
-  --source-upa:#8f6172;
-  --source-padma:#7f715a;
+  --guna-sattvika:#668b68;
+  --guna-sattvika-wash:#dfead9;
+  --guna-rajasa:#c07e2d;
+  --guna-rajasa-wash:#f4dfba;
+  --guna-tamasa:#76668c;
+  --guna-tamasa-wash:#e5deed;
+
+  --sect-vaisnava:#487caf;
+  --sect-vaisnava-wash:#dce9f5;
+  --sect-saiva:#766783;
+  --sect-saiva-wash:#e7e0ec;
+  --sect-sakta:#ad526d;
+  --sect-sakta-wash:#f2dce3;
+  --sect-saura:#c58b2e;
+  --sect-saura-wash:#f3e3bd;
+  --sect-ganapatya:#9c713d;
+  --sect-ganapatya-wash:#eadcc7;
+  --sect-brahma:#826344;
+  --sect-brahma-wash:#eadfce;
+  --sect-mixed:#6d8176;
+  --sect-mixed-wash:#dde6e0;
+
+  --source-yaj:#397a78;
+  --source-par:#a26d37;
+  --source-madhava:#72628f;
+  --source-upa:#995b71;
+  --source-padma:#847055;
 }
 
-.taxonomy-title {
-  margin-bottom: 18px;
-}
+.taxonomy-title { margin-bottom:18px; }
+.taxonomy-title h2 { letter-spacing:-.018em; }
+.taxonomy-title p { max-width:650px; }
 
-.taxonomy-title h2 {
-  letter-spacing: -.01em;
-}
-
-.taxonomy-title p {
-  max-width: 610px;
-}
-
+/* Make taxonomy tabs feel like labelled index cards, not tiny neutral pills. */
 .taxonomy-tabs {
-  gap: 6px;
-  margin-bottom: 20px;
+  gap:7px;
+  margin-bottom:21px;
+  padding-bottom:15px;
 }
 
 .taxonomy-tabs button {
-  position: relative;
-  padding: 8px 10px;
-  border-color: #d3cabd;
-  background: rgba(255,255,255,.28);
-  color: #625a51;
-  font-size: 10px;
+  --tab-tax:#6d665f;
+  position:relative;
+  min-height:38px;
+  padding:9px 12px 8px;
+  border:1px solid #c9bdad;
+  border-radius:3px;
+  background:#fff8ed;
+  color:#554e47;
+  font-size:9px;
+  font-weight:700;
+  line-height:1.2;
+  box-shadow:2px 2px 0 rgba(39,35,31,.05);
+}
+
+.taxonomy-tabs button::after {
+  content:'';
+  position:absolute;
+  left:7px;
+  right:7px;
+  bottom:4px;
+  height:4px;
+  background:var(--tab-tax);
+  opacity:.36;
+}
+
+.taxonomy-tabs button:hover {
+  border-color:var(--tab-tax);
+  transform:translateY(-1px);
 }
 
 .taxonomy-tabs button.is-active {
-  border-color: #7a7065;
-  background: #4f5f5e;
-  color: #fff;
+  border-color:var(--tab-tax);
+  background:color-mix(in srgb,var(--tab-tax) 18%,#fff8ed);
+  color:#302c28;
+  box-shadow:3px 3px 0 color-mix(in srgb,var(--tab-tax) 20%,transparent);
 }
 
-.smriti-tabs [data-sview="yaj"].is-active { background:var(--source-yaj); border-color:var(--source-yaj); }
-.smriti-tabs [data-sview="par"].is-active { background:var(--source-par); border-color:var(--source-par); }
-.smriti-tabs [data-sview="madhava"].is-active { background:var(--source-madhava); border-color:var(--source-madhava); }
-.smriti-tabs [data-sview="upa"].is-active { background:var(--source-upa); border-color:var(--source-upa); }
-.smriti-tabs [data-sview="guna"].is-active {
-  border-color:#84745f;
-  background:linear-gradient(90deg,var(--guna-sattvika) 0 33%,var(--guna-rajasa) 33% 66%,var(--guna-tamasa) 66% 100%);
+.taxonomy-tabs button.is-active::after { opacity:1; }
+
+/* Smṛti source tabs: each source has its own marker colour. */
+.smriti-tabs [data-sview='yaj'] { --tab-tax:var(--source-yaj); }
+.smriti-tabs [data-sview='par'] { --tab-tax:var(--source-par); }
+.smriti-tabs [data-sview='madhava'] { --tab-tax:var(--source-madhava); }
+.smriti-tabs [data-sview='upa'] { --tab-tax:var(--source-upa); }
+.smriti-tabs [data-sview='guna'] { --tab-tax:var(--source-padma); }
+
+.smriti-tabs [data-sview='guna'].is-active {
+  background:linear-gradient(90deg,var(--guna-sattvika-wash) 0 33%,var(--guna-rajasa-wash) 33% 66%,var(--guna-tamasa-wash) 66% 100%);
 }
 
+/* Textual explanation becomes a highlighted editorial annotation. */
 .taxonomy-note {
-  max-width: 680px;
-  margin: 0 0 11px !important;
-  color: #746c62;
-  font-size: 11px;
-  line-height: 1.7;
+  max-width:700px;
+  margin:0 0 13px!important;
+  padding:11px 13px 11px 15px;
+  border-left:5px solid var(--section-accent,#5d6b69);
+  background:var(--section-wash,#ece7dd);
+  color:#5e564e;
+  font-size:10px;
+  line-height:1.72;
 }
 
-.taxonomy-note strong {
-  color:#4e4841;
-}
+.taxonomy-note strong { color:#3e3934; }
 
+/* Source citation is deliberately unmistakable. */
 .source-line {
-  display:flex;
-  flex-wrap:wrap;
-  gap:5px 8px;
-  align-items:baseline;
-  margin:0 0 16px;
-  padding:8px 0;
-  border-top:1px solid #ded7cd;
-  border-bottom:1px solid #ded7cd;
-  color:#91877a;
+  position:relative;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:8px 12px;
+  align-items:center;
+  margin:0 0 19px;
+  padding:12px 14px;
+  border:1px solid #cfc2b1;
+  border-left:6px solid var(--section-accent,#7f715a);
+  background:#fffaf0;
+  color:#7a7065;
   font-size:9px;
-  line-height:1.5;
+  line-height:1.55;
+  box-shadow:3px 3px 0 rgba(39,35,31,.04);
 }
 
 .source-line > span {
-  color:#a36e37;
+  padding:4px 6px;
+  background:var(--section-wash,#ece7dd);
+  color:var(--section-accent,#6c6258);
   font-weight:700;
-  letter-spacing:.08em;
+  letter-spacing:.1em;
   text-transform:uppercase;
 }
 
 .source-line a {
-  color:#4b6d6c !important;
-  text-decoration:none !important;
+  color:#315f5f!important;
+  font-weight:700;
+  text-decoration:underline!important;
+  text-underline-offset:2px;
 }
 
-.source-line a:hover {
-  text-decoration:underline !important;
-}
-
+/* Larger, more graphic legends. */
 .taxonomy-legend {
   display:flex;
   flex-wrap:wrap;
-  gap:6px 13px;
-  margin:0 0 17px;
+  gap:7px;
+  margin:0 0 19px;
 }
 
 .legend-item {
+  --legend:#80776e;
   position:relative;
-  padding-left:12px;
-  color:#777067;
-  font-size:9px;
-  line-height:1.45;
+  padding:6px 8px 6px 23px;
+  border:1px solid color-mix(in srgb,var(--legend) 32%,#d4c8b8);
+  border-radius:2px;
+  background:color-mix(in srgb,var(--legend) 8%,#fffaf0);
+  color:#5b544c;
+  font-size:8px;
+  font-weight:700;
+  line-height:1.2;
   white-space:nowrap;
 }
 
 .legend-item::before {
   content:'';
   position:absolute;
-  left:0;
+  left:7px;
   top:50%;
-  width:6px;
-  height:6px;
-  border-radius:50%;
-  background:#999;
-  transform:translateY(-50%);
+  width:9px;
+  height:9px;
+  border-radius:1px;
+  background:var(--legend);
+  transform:translateY(-50%) rotate(-3deg);
 }
 
-.guna-sattvika::before { background:var(--guna-sattvika); }
-.guna-rajasa::before { background:var(--guna-rajasa); }
-.guna-tamasa::before { background:var(--guna-tamasa); }
-.sect-vaisnava::before { background:var(--sect-vaisnava); }
-.sect-saiva::before { background:var(--sect-saiva); }
-.sect-sakta::before { background:var(--sect-sakta); }
-.sect-saura::before { background:var(--sect-saura); }
-.sect-ganapatya::before { background:var(--sect-ganapatya); }
-.sect-brahma::before { background:var(--sect-brahma); }
-.sect-mixed::before { background:var(--sect-mixed); }
+.guna-sattvika { --legend:var(--guna-sattvika); }
+.guna-rajasa { --legend:var(--guna-rajasa); }
+.guna-tamasa { --legend:var(--guna-tamasa); }
+.sect-vaisnava { --legend:var(--sect-vaisnava); }
+.sect-saiva { --legend:var(--sect-saiva); }
+.sect-sakta { --legend:var(--sect-sakta); }
+.sect-saura { --legend:var(--sect-saura); }
+.sect-ganapatya { --legend:var(--sect-ganapatya); }
+.sect-brahma { --legend:var(--sect-brahma); }
+.sect-mixed { --legend:var(--sect-mixed); }
 
-.sect-legend {
-  padding-top:1px;
-  opacity:.9;
-}
+.sect-legend { opacity:1; }
+.taxonomy-grid { gap:10px; }
 
-.taxonomy-grid {
-  gap:7px 9px;
-}
-
+/* Every taxonomy item has a clearly visible highlighted identity strip. */
 .taxonomy-button {
   --accent:#7d756c;
-  --wash:rgba(255,255,255,.28);
-  display:flex;
-  gap:8px;
+  --wash:#efeae1;
+  --tag:#6a625a;
+  position:relative;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
   align-items:center;
-  justify-content:space-between;
-  min-height:44px;
-  padding:10px 11px 10px 13px;
-  border:1px solid #d6cec2;
-  border-left:3px solid var(--accent);
-  background:var(--wash);
-  color:#443f39;
+  min-height:62px;
+  padding:13px 13px 12px 19px;
+  overflow:hidden;
+  border:1px solid #d0c4b5;
+  border-radius:3px;
+  background:#fffaf1;
+  color:#3f3933;
+  box-shadow:3px 3px 0 rgba(39,35,31,.045);
 }
 
-.taxonomy-button::after {
-  display:none;
+.taxonomy-button::before {
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:8px;
+  background:var(--accent);
 }
 
-.taxonomy-button > span {
-  min-width:0;
-  font-size:11px;
-}
+.taxonomy-button::after { display:none; }
+.taxonomy-button > span { min-width:0;font-size:11px;font-weight:700; }
 
 .taxonomy-button > small {
-  flex:0 0 auto;
-  max-width:48%;
+  display:inline-block;
+  max-width:180px;
+  padding:4px 6px;
   overflow:hidden;
-  color:#8b8277;
-  font-size:8px;
-  line-height:1.25;
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);
+  border-radius:2px;
+  background:var(--wash);
+  color:var(--tag);
+  font-size:7px;
+  font-weight:700;
+  line-height:1.2;
   text-overflow:ellipsis;
   white-space:nowrap;
+  text-transform:uppercase;
+  letter-spacing:.035em;
 }
 
 .taxonomy-button:hover {
-  border-color:#bdb3a5;
-  border-left-color:var(--accent);
-  background:#fffdfa;
-  transform:translateY(-1px);
+  border-color:var(--accent);
+  background:color-mix(in srgb,var(--wash) 58%,#fffaf1);
+  transform:translate(-1px,-1px);
+  box-shadow:5px 5px 0 color-mix(in srgb,var(--accent) 12%,transparent);
 }
 
 .taxonomy-button.is-active {
   border-color:var(--accent);
-  border-left-color:var(--accent);
   background:var(--wash);
-  color:#332f2b;
-  box-shadow:0 0 0 1px var(--accent) inset;
+  color:#2d2925;
+  box-shadow:5px 5px 0 color-mix(in srgb,var(--accent) 17%,transparent);
 }
 
-/* Sectarian orientation: used when sect is the main visual classification. */
-.tone-vaisnava { --accent:var(--sect-vaisnava); --wash:rgba(63,111,159,.07); }
-.tone-saiva { --accent:var(--sect-saiva); --wash:rgba(111,101,125,.07); }
-.tone-sakta { --accent:var(--sect-sakta); --wash:rgba(155,82,103,.07); }
-.tone-saura { --accent:var(--sect-saura); --wash:rgba(185,133,54,.08); }
-.tone-ganapatya { --accent:var(--sect-ganapatya); --wash:rgba(146,112,72,.08); }
-.tone-brahma { --accent:var(--sect-brahma); --wash:rgba(127,101,75,.07); }
-.tone-mixed { --accent:var(--sect-mixed); --wash:rgba(113,128,119,.07); }
+/* Sectarian orientation palettes */
+.tone-vaisnava { --accent:var(--sect-vaisnava);--wash:var(--sect-vaisnava-wash);--tag:#355f86; }
+.tone-saiva { --accent:var(--sect-saiva);--wash:var(--sect-saiva-wash);--tag:#574d64; }
+.tone-sakta { --accent:var(--sect-sakta);--wash:var(--sect-sakta-wash);--tag:#7e3f53; }
+.tone-saura { --accent:var(--sect-saura);--wash:var(--sect-saura-wash);--tag:#7f581c; }
+.tone-ganapatya { --accent:var(--sect-ganapatya);--wash:var(--sect-ganapatya-wash);--tag:#6a4a27; }
+.tone-brahma { --accent:var(--sect-brahma);--wash:var(--sect-brahma-wash);--tag:#61472f; }
+.tone-mixed { --accent:var(--sect-mixed);--wash:var(--sect-mixed-wash);--tag:#4e6258; }
 
-/* Padma guṇa views: guṇa overrides the card colour; sect remains written in the small label. */
-.taxonomy-button.guna-sattvika { --accent:var(--guna-sattvika); --wash:rgba(102,134,109,.09); }
-.taxonomy-button.guna-rajasa { --accent:var(--guna-rajasa); --wash:rgba(181,125,66,.09); }
-.taxonomy-button.guna-tamasa { --accent:var(--guna-tamasa); --wash:rgba(117,102,126,.09); }
-
-/* Source colours in Smṛti list views. */
-.tone-source-yaj { --accent:var(--source-yaj); --wash:rgba(57,121,119,.065); }
-.tone-source-par { --accent:var(--source-par); --wash:rgba(154,114,66,.065); }
-.tone-source-madhava { --accent:var(--source-madhava); --wash:rgba(111,99,141,.065); }
-.tone-source-upa { --accent:var(--source-upa); --wash:rgba(143,97,114,.065); }
-.tone-source-padma { --accent:var(--source-padma); --wash:rgba(127,113,90,.065); }
-
-.source-grid .taxonomy-button > small {
-  display:none;
+/* Padma guṇa views use full pastel highlighting, much more obvious than a thin rule. */
+.taxonomy-button.guna-sattvika {
+  --accent:var(--guna-sattvika);
+  --wash:var(--guna-sattvika-wash);
+  --tag:#496548;
+  background:linear-gradient(90deg,var(--guna-sattvika-wash),#fffaf1 74%);
 }
+
+.taxonomy-button.guna-rajasa {
+  --accent:var(--guna-rajasa);
+  --wash:var(--guna-rajasa-wash);
+  --tag:#7b4d15;
+  background:linear-gradient(90deg,var(--guna-rajasa-wash),#fffaf1 74%);
+}
+
+.taxonomy-button.guna-tamasa {
+  --accent:var(--guna-tamasa);
+  --wash:var(--guna-tamasa-wash);
+  --tag:#574966;
+  background:linear-gradient(90deg,var(--guna-tamasa-wash),#fffaf1 74%);
+}
+
+/* Smṛti source colours: source identity stays distinct from guṇa identity. */
+.tone-source-yaj { --accent:var(--source-yaj);--wash:#dcebea;--tag:#2b605f; }
+.tone-source-par { --accent:var(--source-par);--wash:#efe0cf;--tag:#714b27; }
+.tone-source-madhava { --accent:var(--source-madhava);--wash:#e7e1ef;--tag:#53476b; }
+.tone-source-upa { --accent:var(--source-upa);--wash:#f0dde4;--tag:#713f51; }
+.tone-source-padma { --accent:var(--source-padma);--wash:#e9e0d2;--tag:#5f503c; }
+
+.source-grid .taxonomy-button > small { display:none; }
 
 .taxonomy-info {
-  margin-top:20px;
-  padding-top:16px;
-  border-top:1px solid #d8d0c4;
+  margin-top:24px;
+  padding:19px 20px 18px 24px;
+  border:1px solid #cdbfae;
+  border-left:7px solid var(--section-accent,#6c6258);
+  background:#fffdf8;
+  box-shadow:4px 4px 0 rgba(39,35,31,.04);
 }
 
-.taxonomy-info .text-info-head strong {
-  font-size:20px;
-}
+.taxonomy-info .text-info-head strong { font-size:23px; }
+.taxonomy-info .text-info-head span { color:#817263;font-size:8px; }
+.taxonomy-info p { max-width:680px;color:#5f574f; }
 
-.taxonomy-info .text-info-head span {
-  color:#8a7c6d;
-  font-size:9px;
-}
-
-.taxonomy-info p {
-  max-width:650px;
-  color:#655e56;
-}
-
-@media (max-width:700px) {
-  .taxonomy-tabs {
-    overflow-x:auto;
-    flex-wrap:nowrap;
-    padding-bottom:3px;
-    scrollbar-width:none;
-  }
-
+@media(max-width:700px){
+  .taxonomy-tabs { overflow-x:auto;flex-wrap:nowrap;padding-bottom:15px;scrollbar-width:none; }
   .taxonomy-tabs::-webkit-scrollbar { display:none; }
   .taxonomy-tabs button { flex:0 0 auto; }
+  .source-line { grid-template-columns:1fr; }
 }
 
-@media (max-width:520px) {
+@media(max-width:520px){
   .taxonomy-grid { grid-template-columns:1fr; }
-  .taxonomy-button > small { max-width:46%; }
-  .taxonomy-legend { gap:7px 11px; }
+  .taxonomy-button > small { max-width:145px; }
+  .taxonomy-legend { gap:6px; }
   .source-line { font-size:8px; }
 }
