@@ -56,3 +56,5 @@ jobs:
             git commit -m "Generate Canto 10 Sridhara word-for-word data"
             git push
           fi
+
+# Existing workflow; this edit intentionally triggers a fresh full build.
