@@ -1,0 +1,25 @@
+/* Shastra-only scripture index: names, grouping, interaction. */
+.scripture-page .article-body{width:min(820px,calc(100% - 36px))}
+.scripture-browser{--sattvika:#6f8c72;--rajasa:#b88442;--tamasa:#7b6a87}
+.corpus-nav{justify-content:flex-start;gap:8px;padding-bottom:24px}
+.corpus-button{padding:10px 14px;border-radius:4px;font-size:12px}
+.browser-stage{padding-top:30px;min-height:0}
+.shastra-title{margin:0 0 20px!important;color:#195b5d!important;font-family:Vollkorn,Georgia,serif!important;font-size:31px!important;font-weight:500!important;line-height:1.1!important;text-align:left!important}
+.shastra-subnav{margin-bottom:20px}
+.shastra-subnav button{border-radius:4px;padding:8px 10px;font-size:10px}
+.shastra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.shastra-name{appearance:none;position:relative;width:100%;min-height:44px;padding:10px 12px;border:1px solid #d3cabd;border-radius:4px;background:rgba(255,255,255,.42);color:#49433d;font-family:Merriweather,Georgia,serif;font-size:11px;line-height:1.35;text-align:left;cursor:pointer;transition:background .15s ease,border-color .15s ease,transform .15s ease}
+.shastra-name:hover{background:#fff;border-color:#9d9182;transform:translateY(-1px)}
+.shastra-name.is-active{border-color:#0b6f72;background:#edf5f3;color:#155456}
+.shastra-name.guna-sattvika{border-left:5px solid var(--sattvika);background:rgba(111,140,114,.07)}
+.shastra-name.guna-rajasa{border-left:5px solid var(--rajasa);background:rgba(184,132,66,.08)}
+.shastra-name.guna-tamasa{border-left:5px solid var(--tamasa);background:rgba(123,106,135,.08)}
+.shastra-name.guna-sattvika.is-active{border-color:var(--sattvika);background:rgba(111,140,114,.17);color:#405b43}
+.shastra-name.guna-rajasa.is-active{border-color:var(--rajasa);background:rgba(184,132,66,.17);color:#715022}
+.shastra-name.guna-tamasa.is-active{border-color:var(--tamasa);background:rgba(123,106,135,.17);color:#554962}
+.guna-group{margin:0 0 22px;padding:0}
+.guna-group h3{display:inline-block;margin:0 0 9px!important;padding:3px 7px;border-radius:3px;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;letter-spacing:.03em}
+.guna-group.guna-sattvika h3{background:rgba(111,140,114,.17);color:#49634c!important}
+.guna-group.guna-rajasa h3{background:rgba(184,132,66,.18);color:#765222!important}
+.guna-group.guna-tamasa h3{background:rgba(123,106,135,.17);color:#5b4d68!important}
+@media(max-width:700px){.corpus-nav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.corpus-nav::-webkit-scrollbar{display:none}.corpus-button{flex:0 0 auto}.shastra-grid{grid-template-columns:1fr}.shastra-subnav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.shastra-subnav::-webkit-scrollbar{display:none}.shastra-subnav button{flex:0 0 auto}}
