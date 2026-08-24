@@ -1,83 +1,33 @@
 {
-  "1": {
-    "word_for_word": "tataḥ — then; from that; pañcadaśe — in/on the 15th; dhenu — ilch; pālanaṃ — guarding; dhenuka — a kind of coitus; ardanam — oving restlessly; kāliya — of a; kṣveḍato — kṣveḍato; gopa — cowherd; rakṣaṇaṃ — ‘protector’; ca — and; nirūpyate — is described; established; ahi — a snake; vaktra — ‘organ of speech’; praveśena — by/with entrance; vṛthā — at will; khinnān — depresseds; sakhīn — (strong cases om. pls; ataḥ — therefore; from this; kṛṣṇaḥ — Kṛṣṇa; prāveśayat — prāveśayat; pakva — (considered as p.p. of √ 2; phalaṃ — fruit; result; tālāli — tālāli; kānanam — a orest; paśu — animal; pāla — a guard; sammatau — the two thinking togethers; paśu — animal; pālane — in/on guarding; sammatau — the two thinking togethers; paśu — animal; pālānāṃ — pālānāṃ; vā — or; sammatau — the two thinking togethers; īṣad — īṣad; vayo — in comp. or 3; balātirekam — balātirekam; anukṛtavantāv — anukṛtavantāv; ity — thus; arthaḥ — meaning; purpose; atīva — exceedingly; cakratuḥ — cakratuḥ; sarvataḥ — in comp. or; prasarpaṇena — by/with going orwards."
-  },
-  "6": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; anagha — sinless; vane — in/on forest; gūḍham — secretly; api — also; tvāṃ — tvāṃ; na — not; tyajanti — they cl. 1. ( etrically also; tvayi — tvayi; manuṣya — human; veṣeṇa — veṣeṇa; nigūḍhe — in/on concealed; sati — =; munayo'py — munayo'py; ali — ‘possessed of a sting’; veṣeṇa — veṣeṇa; nigūḍha — concealed; as — be; tvāṃ — tvāṃ; bhajantīty — bhajantīty; arthaḥ — meaning; purpose."
-  },
-  "10": {
-    "word_for_word": "tām — tām; eva — only; indeed; ratim — rest; āha — says; kvacid — kvacid; ity — thus; ādi — beginning; and so on; daśabhiḥ — by/with tens."
-  },
-  "13": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "19": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "21": {
-    "word_for_word": "īśa — Lord; ceṣṭitatvam — ceṣṭitatvam; eva — only; indeed; darśayitum — darśayitum; āha — says; śrīdāmā — śrīdāmā; iti — thus; stoka — ( accord. to some or r. √; kṛṣṇaḥ — Kṛṣṇa; kvacit — kvacit."
-  },
-  "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "27": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "29": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "34": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "37": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "40": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "42": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "45": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "46": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "47": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "48": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "49": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "50": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "51": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  },
-  "52": {
-    "word_for_word": "samprati — directly over; sadya — in , , , qq.vv; eva — only; indeed; itā — by/with ifc. going; pra — before; āptā — =; smṛtir — smṛtir; yas — cl. 4. P. (rarely cf; te — they; those; sampratīta — come back again; smṛtayaḥ — smṛtayaḥ."
-  },
-  "53": {
-    "word_for_word": "na — not; vyākhyātam — explained."
-  }
+"1":{"reviewed":true,"word_for_word":"पञ्चदशे — in the fifteenth chapter; धेनु-पालनं — the tending of the cows; धेनुक-अर्दनम् — the slaying of Dhenuka; कालिय-क्ष्वेडतः गोप-रक्षणम् — the protection of the cowherds from the poison of Kāliya; अहि-वक्त्र-प्रवेशेन वृथा खिन्नान् सखीन् — His friends wearied in vain after entering the serpent’s mouth; अतः कृष्णः प्रावेशयत् पक्व-फलं तालालि-काननम् — therefore Kṛṣṇa brought them into the tāla grove filled with ripe fruits; पशु-पाल-सम्मतौ — approved/accepted in the task of tending cattle, or approved by the cowherds; ईषद्-वयो-बलातिरेकम् अनुकृतवन्तौ — the two displayed a slight increase of age and strength; अतीव चक्रतुः सर्वतः प्रसर्पणेन — they did so abundantly by ranging everywhere.","translation":"The fifteenth chapter describes the tending of the cows, the slaying of Dhenukāsura, and the protection of the cowherds from Kāliya’s poison. After His friends had already undergone the exhausting adventure of entering Aghāsura’s mouth, Kṛṣṇa led them into the tāla grove laden with ripe fruit. Kṛṣṇa and Balarāma were now recognized as fit to tend the cattle—either accepted for the work itself or approved by the cowherds—and displayed the slightly greater age and strength appropriate to their new stage, ranging widely through the forest."},
+"2":{"reviewed":true,"word_for_word":"स्व-यशः गृणद्भिः गोपैः वृतः — surrounded by cowherds singing His own fame; तद् वनं प्राविशत् — He entered that forest.","translation":"Surrounded by cowherd boys who sang His glories, Kṛṣṇa entered the forest."},
+"3":{"reviewed":true,"word_for_word":"तद् वनं निरीक्ष्य रन्तुं मनो दधे — seeing the forest, He desired to sport there; मञ्जु-घोषाः अलि-मृग-द्विजाः — bees, deer and birds making charming sounds; तैर् आकुलम् — crowded with them; महत्-मनः-प्रख्यं स्वच्छं पयः — water clear like the minds of great souls; सरः आश्रयत्वेन — possessing such lakes; तेन वातेन शैत्यम् — the breeze thereby cool; शत-पत्र-गन्धिना — fragrant with lotuses; जुष्टं वनम् — the forest gently attended by that breeze, implying its softness.","translation":"Seeing that forest, Kṛṣṇa desired to play there. It was filled with the charming sounds of bees, deer and birds. Its lakes held water as clear as the minds of great souls, and the breeze blowing from them was cool, gentle and fragrant with lotuses."},
+"4":{"reviewed":true,"word_for_word":"अरुण-पल्लव-श्रिया सह — together with the beauty of reddish new leaves; स्पृशन्त्यः शिखाः — whose tips touched; शाखा-अग्राणि — the ends of the branches.","translation":"The branches were beautiful with reddish young leaves, and their tips bent down as though touching the Lord."},
+"5":{"reviewed":true,"word_for_word":"तरु-जन्म येन तमसा कृतम् — the darkness/sin by which birth as a tree was produced; तस्य अपहत्यै — for its destruction; अथवा — alternatively; येन त्वया ईश्वरेण सर्वोपकारकं तरु-जन्म कृतम् — by You, the Lord, tree-birth was made beneficial to all; तं त्वां नमन्ति — therefore they bow to You; श्लाघ्ये अपि जन्मनि अज्ञान-रूपं तमः — even in such praiseworthy birth there remains the darkness of ignorance; तस्य अपहत्यै — they bow for its removal.","translation":"The trees bow to Kṛṣṇa for the destruction of the darkness or sin that brought them tree-birth. Alternatively, because the Lord has made the life of trees beneficent to all, they bow to Him in gratitude; and even though such a birth is praiseworthy for its service, they seek the removal of the ignorance still associated with it."},
+"6":{"reviewed":true,"word_for_word":"हे अनघ — O sinless One; वने गूढम् अपि त्वां न त्यजन्ति — even though You are hidden in the forest, they do not leave You; त्वयि मनुष्य-वेषेण निगूढे — while You are concealed in a human guise; मुनयः अपि अलि-वेषेण निगूढाः — sages too are concealed in the guise of bees; त्वां भजन्ति — and worship You.","translation":"O sinless Kṛṣṇa, even though You hide Yourself in the forest they do not abandon You. As You conceal Yourself in a human form, sages too conceal themselves in the forms of bees and continue to worship You."},
+"7":{"reviewed":true,"word_for_word":"इयान् हि सतां निसर्गः — this is the natural disposition of the good; यद् अस्ति स्वस्मिन् — whatever they possess; गृहम् आगताय महते महा-पुरुषाय — to a great person who comes to their home; समर्पयन्ति — they offer it.","translation":"Such is the natural disposition of the good: whatever they possess, they offer to a great person who comes to their home. The trees therefore offer their fruits and flowers to Kṛṣṇa."},
+"8":{"reviewed":true,"word_for_word":"तृण-वीरुधः तव पादौ स्पृशन्ति — grasses and creepers touch Your feet; करज-अभिमृष्टाः — touched by Your fingernails; सदयैः अवलोकनैः — by compassionate glances; श्रीः अपि यस्मै स्पृहयति — for Him whom even Śrī desires; तेन भुजयोर् अन्तरेण वक्षसा — by the chest between those arms; गोप्यः धन्याः — the gopīs are blessed.","translation":"The grasses and creepers are blessed by touching Kṛṣṇa’s feet; other plants by the touch of His fingernails and by His compassionate glances. But the gopīs are supremely blessed, for they are embraced against that chest between His arms—a chest for which even Śrī herself longs."},
+"9":{"reviewed":true,"word_for_word":"श्रीमद् वृन्दावनं प्रति प्रीतः सन् — delighted with glorious Vṛndāvana; अद्रेः समीप-वर्ति-सरित्-तटेषु पशून् सञ्चारयन् — grazing the animals on riverbanks near the mountain; सानुगः गोपैः सह — accompanied by His followers and cowherd friends; प्रीत-मना रेमे — He sported with a delighted heart.","translation":"Delighted with beautiful Vṛndāvana, Kṛṣṇa grazed the cattle along the riverbanks near the mountain and sported there happily with His cowherd companions."},
+"10":{"reviewed":true,"word_for_word":"ताम् एव रतिम् आह — he describes that very delight; क्वचिद् इत्य्-आदि-दशभिः — in the ten verses beginning with ‘sometimes.’","translation":"The next ten verses, beginning with ‘sometimes,’ describe the many forms of that joyful forest play."},
+"12":{"reviewed":true,"word_for_word":"बर्हिणं नृत्यन्तम् अनु अभिनृत्यति — He dances in imitation of a dancing peacock; बर्हिणम् अभिमुखः नृत्यति वा — or dances facing the peacock; सखीन् हासयन् — making His friends laugh.","translation":"Kṛṣṇa would dance in imitation of a dancing peacock—or dance face-to-face with it—making His friends laugh."},
+"14":{"reviewed":true,"word_for_word":"चकोरादीन् अनुकृत्य रौति — He calls out imitating cakoras and other birds; कदाचित् सत्त्वानां मध्ये व्याघ्र-सिंहयोः भीतवत् भवति — sometimes among the animals He behaves as though afraid of tigers and lions; सत्त्वेषु पलायमानेषु पलायते — He runs when the other creatures run; तयोः बलोद्रेकाणां भीतवत् भवति वा — or pretends to fear the great strength of those beasts.","translation":"He cried out in imitation of cakoras and other birds. At times, among the forest creatures, He pretended to be afraid of tigers and lions, running when the animals ran, or acting as though frightened by the predators’ great strength."},
+"15":{"reviewed":true,"word_for_word":"आर्यम् — the venerable one; अग्रजम् — His elder brother; विश्रमयति — He gives him rest; विगत-श्रमं करोति — He removes his fatigue.","translation":"‘Ārya’ refers to His respected elder brother Balarāma. Kṛṣṇa would give Him rest and remove His fatigue."},
+"16":{"reviewed":true,"word_for_word":"मिथः नृत्यादीन् कुर्वतः गोपान् — the cowherd boys performing dances and other pastimes with one another; प्रशशंसतुः — the two brothers praised and applauded them.","translation":"Kṛṣṇa and Balarāma praised and applauded the cowherd boys as they danced and performed other games with one another."},
+"18":{"reviewed":true,"word_for_word":"व्यजनैः — with fans; पल्लवादि-निर्मितैः — fashioned from leaves and similar materials.","translation":"The fans used by the boys were made from leaves and other forest materials."},
+"20":{"reviewed":true,"word_for_word":"ईश-चेष्टितः — one in whom the acts of the Lord are seen; निगूढ-स्वभावत्वे अपि — although His true nature is concealed; अन्तरान्तरा — from time to time; ईशस्य एव चेष्टितानि दृश्यन्ते — deeds possible only for the Lord become visible in Him.","translation":"Although Kṛṣṇa’s divine nature remained concealed beneath the cowherd-boy role, from time to time actions appeared in Him that could only be the acts of the Supreme Lord."},
+"21":{"reviewed":true,"word_for_word":"ईश-चेष्टितत्वम् एव दर्शयितुम् — to show precisely those divine acts; श्रीदामा इति — the episode begins with Śrīdāma; स्तोक-कृष्णः क्वचित् — Stoka-Kṛṣṇa is also among the boys in some readings/contexts.","translation":"To display one of these divine acts the narrative now turns to Śrīdāma and the other boys; Stoka-Kṛṣṇa is also named among them."},
+"22":{"reviewed":true,"word_for_word":"तालालि-सङ्कुलम् — crowded with rows of tāla trees; ताल-पङ्क्तिभिः व्याप्तम् — filled throughout with lines of palm trees.","translation":"The grove was densely filled with row upon row of tāla palms."},
+"26":{"reviewed":true,"word_for_word":"विषूचीनः — spreading in every direction; सर्वतः प्रसृतः — extended on all sides.","translation":"‘Viṣūcīnaḥ’ means spreading or extending in every direction."},
+"30":{"reviewed":true,"word_for_word":"स-नगम् — together with the mountain; स-वृक्षम् — together with its trees.","translation":"The expression includes the mountain together with all its trees."},
+"31":{"reviewed":true,"word_for_word":"तरसा समेत्य — rushing up violently; प्रत्यक् द्वाभ्यां पद्भ्यां — with his two hind legs; बलम् उरसि निहत्य — striking Balarāma in the chest; बली खलः — the powerful wicked demon; का-शब्दं मुञ्चन् — braying out a harsh ‘kā’ sound.","translation":"The powerful wicked Dhenuka rushed upon Balarāma and struck Him in the chest with both hind legs while letting out a harsh braying cry."},
+"32":{"reviewed":true,"word_for_word":"उपक्रोष्टा — a donkey; गर्दभः — an ass; पराक् — facing away/backward; प्रतिमुखः — positioned opposite; अपरौ — the two rear legs; पश्चिमौ — the hind legs; बलाय — against Balarāma; बलं हन्तुम् — in order to strike Balarāma forcefully.","translation":"‘Upakroṣṭā’ means an ass. Turning his back toward Balarāma, Dhenuka positioned himself for attack and used his two rear legs to strike Him."},
+"33":{"reviewed":true,"word_for_word":"तृण-राजः — the king of grasses; तालः — the tāla palm.","translation":"The tāla is called the ‘king of grasses.’"},
+"35":{"reviewed":true,"word_for_word":"उत्सृष्टेन खर-देहेन — by the hurled body of the ass; हतैः आहताः — struck by those already hit; चकम्पिरे — they shook; अकम्पन्त — the trees trembled.","translation":"The hurled body of the donkey struck the trees; those trees struck others in turn, and the whole grove shook."},
+"36":{"reviewed":true,"word_for_word":"यस्मिन् इदं विश्वम् ओतम् — in whom this universe is woven lengthwise; ऊर्ध्व-तन्तुषु पट इव — like cloth upon the warp threads; प्रोतम् — woven crosswise; तिर्यक्-तन्तुषु पटवत् — like cloth upon the weft threads; सर्वतः अस्यूतम् — threaded through on every side.","translation":"The universe is woven into Him in every direction, like cloth held together by both warp and weft threads."},
+"39":{"reviewed":true,"word_for_word":"घनैः नभः इव भुवः तलं रराज — the ground shone like the sky filled with clouds; फल-प्रकर-सङ्कीर्णम् — strewn with heaps of fruit; दैत्य-देहैः स-तालाग्रैः सङ्कीर्णम् — also strewn with demon bodies and palm-tops; अरुण-श्वेत-नील-घन-सादृश्य — producing the appearance of reddish, white and dark clouds.","translation":"The forest floor, covered with heaps of fruit, the bodies of the demons, and fallen palm crowns, looked like a sky filled with clouds of red, white and dark hues."},
+"41":{"reviewed":true,"word_for_word":"आदन् — they ate; अभक्षयन् — they consumed the fruits.","translation":"‘Ādan’ means that they ate and enjoyed the fruits."},
+"43":{"reviewed":true,"word_for_word":"गो-रजोभिः छुरितेषु कुन्तलेषु — His locks dusted with the cows’ hoof-dust; बद्धं बर्हं वन्यानि प्रसूनानि च — peacock feather and forest flowers fastened there; रुचिरम् ईक्षणं चारु-हासः — beautiful glance and charming smile; दिदृक्षित-दृशः — whose eyes longed to see Him; दर्शन-उत्कण्ठा-युक्ताः दृशः — eyes filled with eagerness for His sight.","translation":"Kṛṣṇa returned with His hair powdered by the dust raised from the cows’ hooves and adorned with peacock feather and forest flowers, His glance lovely and His smile charming. The eyes of the gopīs were intensely eager to behold Him."},
+"44":{"reviewed":true,"word_for_word":"मुकुन्दस्य मुख-पद्म-गतं सारघं मधु — the honey gathered in Mukunda’s lotus face; अह्नि यो विरहः तस्मात् जातं तापम् — the pain produced by separation from Him during the day; सः च तासां सत्-कृतिं पूजाम् — His appearance removed that pain and constituted His honoring of them; स-व्रीडेन स-लज्जेन हासेन — with a shy, modest smile; विनयो यथा भवति — in a manner marked by humility; अपाङ्ग-मोक्षम् — releasing sidelong glances; कटाक्ष-दर्शनम् — looking upon them from the corners of His eyes.","translation":"The gopīs drank the honey of Mukunda’s lotus face, and the heat produced by their day-long separation was dispelled. Kṛṣṇa honored them with a shy, modest smile and with sidelong glances cast in a gentle, deferential way."},
+"52":{"reviewed":true,"word_for_word":"सम्प्रति — just now; सद्य एव इता प्राप्ता स्मृतिः यस् ते — those whose awareness or memory had just now returned; सम्प्रतीत-स्मृतयः — those who had immediately recovered consciousness/memory.","translation":"The expression means that their consciousness and memory had only just now returned to them."
+}
 }
