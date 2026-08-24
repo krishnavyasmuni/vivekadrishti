@@ -24,16 +24,32 @@
       .trim();
   }
 
+  function isNoCommentaryText(text) {
+    const value = String(text || '').trim();
+    if (!value) return false;
+    return /^न\s+व्याख्यातम्[।.]?$/u.test(value)
+      || /^na\s+vyākhyātam(?:\s*[—–-]\s*not explained)?[.]?$/iu.test(value)
+      || /^not explained[.]?$/iu.test(value);
+  }
+
   function hasActualCommentary(section) {
     const text = sridharaSourceText(section);
     if (!text) return false;
-    return !/^\s*न\s+व्याख्यातम्[।.]?\s*$/u.test(text) && !/^\s*na\s+vyākhyātam[.]?\s*$/iu.test(text);
+
+    // A rendered range can contain labels plus one or more "न व्याख्यातम्" records.
+    // Remove those placeholders before deciding whether the range contains real Śrīdhara text.
+    const residue = text
+      .replace(/\b10\.\d+\.\d+(?:\s*[–—-]\s*\d+)?\b/gi, ' ')
+      .replace(/न\s+व्याख्यातम्[।.]?/gu, ' ')
+      .replace(/na\s+vyākhyātam[.]?/giu, ' ')
+      .replace(/[\s|।॥.,;:()[\]{}–—-]+/g, '');
+    return Boolean(residue);
   }
 
   async function chapterData(chapter) {
     if (!chapterCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=11`, { cache: 'force-cache' })
+      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=12`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -43,7 +59,7 @@
   async function literalOverrides(chapter) {
     if (!overrideCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=1`, { cache: 'force-cache' })
+      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=2`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -53,64 +69,82 @@
   function normalizeRecord(value, chapter) {
     if (!value) return null;
     if (typeof value === 'string') {
-      return chapter <= 7 ? { reviewed: true, word_for_word: value.trim(), translation: '' } : null;
+      return chapter <= 7 ? {
+        reviewed: true,
+        word_for_word: value.trim(),
+        translation: '',
+        no_commentary: isNoCommentaryText(value)
+      } : null;
     }
     if (typeof value !== 'object' || Array.isArray(value)) return null;
 
     const reviewed = value.reviewed === true || (chapter <= 7 && value.generated !== true);
     if (!reviewed) return null;
+    const wordForWord = String(value.word_for_word || value.wordForWord || '').trim();
+    const translation = String(value.translation || value.direct_translation || '').trim();
     return {
       reviewed: true,
-      word_for_word: String(value.word_for_word || value.wordForWord || '').trim(),
-      translation: String(value.translation || value.direct_translation || '').trim()
+      word_for_word: wordForWord,
+      translation,
+      no_commentary: value.no_commentary === true
+        || ((isNoCommentaryText(wordForWord) || !wordForWord) && (isNoCommentaryText(translation) || !translation))
     };
   }
 
-  function recordForRange(data, identity) {
-    const directKey = identity.start === identity.end ? String(identity.start) : `${identity.start}-${identity.end}`;
-    const direct = normalizeRecord(data[directKey], identity.chapter);
-    if (direct) return direct;
-    if (identity.start === identity.end) return null;
-
-    const records = [];
-    for (let verse = identity.start; verse <= identity.end; verse += 1) {
-      const record = normalizeRecord(data[String(verse)], identity.chapter);
-      if (!record) return null;
-      records.push(record);
-    }
+  function normalizeOverride(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+    const wordForWord = String(value.word_for_word || value.wordForWord || '').trim();
+    const translation = String(value.translation || value.direct_translation || '').trim();
     return {
       reviewed: true,
-      word_for_word: records.map((record) => record.word_for_word).filter(Boolean).join(' ').trim(),
-      translation: records.map((record) => record.translation).filter(Boolean).join(' ').trim()
-    };
-  }
-
-  function overrideForRange(data, identity) {
-    const directKey = identity.start === identity.end ? String(identity.start) : `${identity.start}-${identity.end}`;
-    const direct = data?.[directKey];
-    if (direct && typeof direct === 'object' && !Array.isArray(direct)) return direct;
-    if (identity.start === identity.end) return null;
-
-    const records = [];
-    for (let verse = identity.start; verse <= identity.end; verse += 1) {
-      const record = data?.[String(verse)];
-      if (!record || typeof record !== 'object' || Array.isArray(record)) return null;
-      records.push(record);
-    }
-    return {
-      reviewed: true,
-      word_for_word: records.map((record) => String(record.word_for_word || '').trim()).filter(Boolean).join(' ').trim(),
-      translation: records.map((record) => String(record.translation || '').trim()).filter(Boolean).join(' ').trim()
+      word_for_word: wordForWord,
+      translation,
+      no_commentary: value.no_commentary === true
     };
   }
 
   function mergeReviewedRecord(base, override) {
     if (!base && !override) return null;
-    if (!override) return base;
+    if (override?.no_commentary) {
+      return { reviewed: true, word_for_word: '', translation: '', no_commentary: true };
+    }
+    const merged = {
+      reviewed: true,
+      word_for_word: String(override?.word_for_word || base?.word_for_word || '').trim(),
+      translation: String(override?.translation || base?.translation || '').trim(),
+      no_commentary: false
+    };
+    merged.no_commentary = ((isNoCommentaryText(merged.word_for_word) || !merged.word_for_word)
+      && (isNoCommentaryText(merged.translation) || !merged.translation));
+    return merged;
+  }
+
+  function recordForRange(data, overrides, identity) {
+    const directKey = identity.start === identity.end ? String(identity.start) : `${identity.start}-${identity.end}`;
+    const directBase = normalizeRecord(data?.[directKey], identity.chapter);
+    const directOverride = normalizeOverride(overrides?.[directKey]);
+
+    if (identity.start === identity.end || directBase || directOverride) {
+      const direct = mergeReviewedRecord(directBase, directOverride);
+      return direct?.no_commentary ? null : direct;
+    }
+
+    const records = [];
+    for (let verse = identity.start; verse <= identity.end; verse += 1) {
+      const base = normalizeRecord(data?.[String(verse)], identity.chapter);
+      const override = normalizeOverride(overrides?.[String(verse)]);
+      if (!base && !override) return null;
+      const record = mergeReviewedRecord(base, override);
+      if (!record || record.no_commentary) continue;
+      records.push(record);
+    }
+
+    if (!records.length) return null;
     return {
       reviewed: true,
-      word_for_word: String(override.word_for_word || base?.word_for_word || '').trim(),
-      translation: String(override.translation || base?.translation || '').trim()
+      word_for_word: records.map((record) => record.word_for_word).filter(Boolean).join(' ').trim(),
+      translation: records.map((record) => record.translation).filter(Boolean).join(' ').trim(),
+      no_commentary: false
     };
   }
 
@@ -169,9 +203,9 @@
     if (!identity) return;
     const [data, overrides] = await Promise.all([chapterData(identity.chapter), literalOverrides(identity.chapter)]);
     if (!section.isConnected) return;
-    const record = mergeReviewedRecord(recordForRange(data, identity), overrideForRange(overrides, identity));
+    const record = recordForRange(data, overrides, identity);
     if (!record) {
-      section.dataset.sridharaEnglishStatus = 'awaiting-reviewed-translation';
+      section.dataset.sridharaEnglishStatus = 'no-commentary-or-awaiting-review';
       section.querySelector(':scope > .sb-commentary')?.remove();
       return;
     }
