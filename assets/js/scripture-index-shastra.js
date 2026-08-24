@@ -18,7 +18,7 @@
   };
 
   const mahaPuranas = [
-    'Brahma Purāṇa','Padma Purāṇa','Viṣṇu Purāṇa','Śiva Purāṇa','Bhāgavata Purāṇa','Nāradīya Purāṇa','Mārkaṇḍeya Purāṇa','Agni Purāṇa','Bhaviṣya Purāṇa','Brahmavaivarta Purāṇa','Liṅga Purāṇa','Varāha Purāṇa','Skanda Purāṇa','Vāmana Purāṇa','Kūrma Purāṇa','Matsya Purāṇa','Garuḍa Purāṇa','Brahmāṇḍa Purāṇa','Vāyu Purāṇa','Devī Bhāgavata Purāṇa','Nṛsiṃha Purāṇa'
+    'Brahma Purāṇa','Padma Purāṇa','Viṣṇu Purāṇa','Śiva Purāṇa','Bhāgavata Purāṇa','Nāradīya Purāṇa','Mārkaṇḍeya Purāṇa','Agni Purāṇa','Bhaviṣya Purāṇa','Brahmavaivarta Purāṇa','Liṅga Purāṇa','Varāha Purāṇa','Skanda Purāṇa','Vāmana Purāṇa','Kūrma Purāṇa','Matsya Purāṇa','Garuḍa Purāṇa','Brahmāṇḍa Purāṇa','Vāyu Purāṇa','Devī Bhāgavata Purāṇa','Nṛsiṃha Purāṇa','Mahābhāgavata Purāṇa'
   ];
 
   const upaPuranas = [
