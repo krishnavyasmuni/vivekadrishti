@@ -102,7 +102,8 @@
       if (d.source) rows.push(['Scriptural source', d.source]);
     }
 
-    const researched = window.SCRIPTURE_DETAIL_DATA?.[name] || fallbackReference(name, kind, d);
+    const data = window.SCRIPTURE_DETAIL_DATA || {};
+    const researched = data[`${kind}:${name}`] || data[name] || fallbackReference(name, kind, d);
     return { name, rows, blocks, researched };
   }
 
