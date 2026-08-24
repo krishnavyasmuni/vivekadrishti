@@ -49,12 +49,9 @@
     return details;
   }
 
-  function mergeSridharaEnglish(section, details) {
+  function mergeSridharaWordForWord(section, details) {
     const source = section.querySelector(':scope > .sb-sridhara-wfw-details');
     if (!source) return;
-    const verifiedGloss = source.dataset.verifiedGloss === 'true';
-    const verifiedTranslation = source.dataset.verifiedTranslation === 'true';
-    const translation = source.dataset.translation || '';
     const content = source.querySelector('.sb-sridhara-word-for-word, .sb-source-content');
 
     let layer = details.querySelector(':scope > .sb-sridhara-layer');
@@ -66,10 +63,6 @@
     }
     const target = layer.querySelector('.sb-sridhara-word-for-word-content');
     if (target && content) setText(target, content.textContent.trim());
-    layer.dataset.verifiedGloss = verifiedGloss ? 'true' : 'false';
-    layer.dataset.verifiedTranslation = verifiedTranslation ? 'true' : 'false';
-    if (verifiedTranslation && translation) layer.dataset.translation = translation;
-    else delete layer.dataset.translation;
     source.remove();
   }
 
@@ -104,53 +97,21 @@
     return details;
   }
 
-  function commentaryText(section, wordDetails) {
-    const sanskrit = section.querySelector(':scope > .sb-bhasya .sb-source-content')?.textContent?.trim() || '';
-    if (/न\s*व्याख्यातम्|na\s+vyākhyātam/i.test(sanskrit)) return { text: 'Not explained.', verified: true };
-    const layer = wordDetails?.querySelector(':scope > .sb-sridhara-layer[data-verified-translation="true"]');
-    const translation = layer?.dataset.translation?.trim() || '';
-    return translation ? { text: translation, verified: true } : { text: 'A close English translation from Śrīdhara’s Sanskrit has not yet been completed for this passage.', verified: false };
-  }
-
-  function ensureCommentary(section, wordDetails) {
-    const hasSridhara = Boolean(section.querySelector(':scope > .sb-bhasya .sb-source-content')?.textContent?.trim());
-    if (!hasSridhara) return null;
-    let commentary = section.querySelector(':scope > .sb-commentary');
-    if (!commentary) {
-      commentary = document.createElement('p');
-      commentary.className = 'sb-commentary';
-      const label = document.createElement('strong');
-      label.className = 'sb-commentary-label';
-      label.textContent = 'Śrīdhara’s Commentary. ';
-      const text = document.createElement('span');
-      text.className = 'sb-commentary-text';
-      commentary.append(label, text);
-      section.appendChild(commentary);
-    }
-    setText(commentary.querySelector(':scope > strong:first-child'), 'Śrīdhara’s Commentary. ');
-    let text = commentary.querySelector(':scope > .sb-commentary-text');
-    if (!text) {
-      text = document.createElement('span');
-      text.className = 'sb-commentary-text';
-      commentary.appendChild(text);
-    }
-    const result = commentaryText(section, wordDetails);
-    setText(text, result.text);
-    commentary.dataset.verified = result.verified ? 'true' : 'false';
-    return commentary;
+  function removeProseCommentary(section) {
+    section.querySelectorAll(':scope > .sb-commentary').forEach((node) => node.remove());
   }
 
   function enforceOrder(section) {
     const translation = section.querySelector(':scope > .sb-translation');
     if (!translation) return;
     const word = ensureBhagavatamWordLayer(section);
-    mergeSridharaEnglish(section, word);
+    mergeSridharaWordForWord(section, word);
     const transliteration = normalizeTransliteration(section);
     const sanskrit = normalizeSanskrit(section);
-    const commentary = ensureCommentary(section, word);
+    removeProseCommentary(section);
 
     let anchor = translation;
-    [word, transliteration, sanskrit, commentary].filter(Boolean).forEach((node) => {
+    [word, transliteration, sanskrit].filter(Boolean).forEach((node) => {
       if (anchor.nextElementSibling !== node) anchor.insertAdjacentElement('afterend', node);
       anchor = node;
     });
