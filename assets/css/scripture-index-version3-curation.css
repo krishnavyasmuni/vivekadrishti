@@ -1,0 +1,13 @@
+/* Small compatibility layer for the curated Version 3 taxonomy. */
+.legend-item.tone-vaisnava::before{background:var(--sect-vaisnava)}
+.legend-item.tone-saiva::before{background:var(--sect-saiva)}
+.legend-item.tone-sakta::before{background:var(--sect-sakta)}
+.legend-item.tone-saura::before{background:var(--sect-saura)}
+.legend-item.tone-ganapatya::before{background:var(--sect-ganapatya)}
+.legend-item.tone-brahma::before{background:var(--sect-brahma)}
+.legend-item.tone-mixed::before{background:var(--sect-mixed)}
+
+.smriti-tabs [data-sview="padma"].is-active{background:var(--source-padma);border-color:var(--source-padma)}
+.smriti-tabs [data-sview="visnudharma"].is-active{background:var(--source-upa);border-color:var(--source-upa)}
+
+.source-line strong{color:#4d4943;font-weight:600}
