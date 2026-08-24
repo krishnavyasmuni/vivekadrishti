@@ -18,7 +18,11 @@ OUT = Path("assets/data/canto10-sridhara-source")
 
 DEVA_DIGITS = str.maketrans("०१२३४५६७८९", "0123456789")
 MARKER = re.compile(r"॥\s*([०-९]+)\.([०-९]+)\.([०-९]+)(?:\s*[-–—]\s*([०-९]+))?\s*॥")
-LABEL = re.compile(r"\*\*(?:श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)|श्रीधर-स्वामी|श्रीधरः)\s*:\*\*")
+# Vishvasa has both fully-bold labels (`... :** commentary`) and entries where
+# the first glossed word remains inside the same bold span (`... : तल्** ...`).
+# Stop at the colon, not at the markdown closing delimiter, so neither form is
+# silently dropped from the source audit.
+LABEL = re.compile(r"\*\*(?:श्रीधर-स्वामी\s*\(भावार्थ-दीपिका\)|श्रीधर-स्वामी|श्रीधरः)\s*:\s*(?:\*\*)?")
 STOP = re.compile(
     r"\n(?:_{4,}|\*\*(?:वंशीधरः|वीरराघव|विजयध्वज|श्रीनाथ|सनातन|जीव-?गोस्वामी|विश्वनाथ|बलदेव))"
 )
@@ -85,6 +89,9 @@ def clean_inline(text: str) -> str:
     text = re.sub(r"\*([^*\n]+)\*", r"\1", text)
     text = re.sub(r"_([^_\n]+)_", r"\1", text)
     text = re.sub(r"<[^>]+>", "", text)
+    # Remove a dangling markdown close left when the first glossed word was
+    # included in the same bold span as the label.
+    text = re.sub(r"^\s*([^\n*]+?)\*\*\s+", r"\1 ", text)
     text = re.sub(r"[ \t]+\n", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
@@ -130,7 +137,6 @@ def parse(markdown: str, chapter: int) -> dict[str, dict[str, object]]:
 
 
 def main() -> None:
-    # Keep this extractor deterministic: it is temporary build tooling, not a translator.
     OUT.mkdir(parents=True, exist_ok=True)
     cache: dict[str, str] = {}
     for chapter in range(1, 91):
