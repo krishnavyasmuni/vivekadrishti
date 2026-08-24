@@ -42,25 +42,28 @@
 
   function fallbackReference(name, kind, d) {
     if (kind === 'Upaniṣad') return {
-      overview: `${name} is one of the Upaniṣads included in the 108-text Muktikā enumeration. On this page it is placed in the traditional ${d.type || 'minor'} group and associated with ${d.veda || 'its transmitted Veda'}; the Muktikā supplies the name/Veda association, while thematic grouping belongs to the later received organization of the minor Upaniṣads.`,
-      themes: [d.type || 'Upaniṣadic teaching', 'Ātman, brahman and liberation', 'Later Upaniṣadic tradition'],
-      status: 'A complete individualized research note has not yet been securely established beyond the transmitted text and catalogue evidence.',
-      significance: 'Its presence documents the breadth of the later Upaniṣadic corpus beyond the earliest principal texts.',
+      overview: `${name} is one of the Upaniṣads included in the 108-text Muktikā enumeration.`,
+      period: 'Later Upaniṣadic period; exact dating is uncertain unless a more specific textual study is available.',
+      history: 'The Muktikā supplies the name and Veda association. The thematic grouping shown on this page belongs to the later received organization of the minor Upaniṣads.',
+      themes: [d.type || 'Upaniṣadic teaching', 'Ātman, brahman and liberation'],
+      status: 'This entry still lacks a securely individualized historical study and should not be assigned a precise date without evidence.',
       sources: ['Muktikā Upaniṣad — 108-name/Veda list', 'Minor Upaniṣad editions and manuscript catalogues']
     };
     if (kind === 'Mahāpurāṇa' || kind === 'Upapurāṇa' || kind === 'Both') return {
-      overview: `${name} is a Purāṇic title attested by the scriptural witness or witnesses shown above. Where the surviving textual identity is uncertain, this entry intentionally does not infer contents merely from the title.`,
+      overview: `${name} is a Purāṇic title attested by the scriptural witness or witnesses shown above.`,
+      period: 'Date of the exact textual recension represented by this catalogue-title is uncertain.',
+      history: 'Purāṇic titles can survive through multiple recensions, replacements and later expansions. Where a secure extant recension cannot be identified, the catalogue attestation is kept separate from guesses about contents.',
       themes: ['Purāṇic catalogue and textual transmission'],
-      status: 'Further content description requires a securely identified recension of this exact title.',
-      significance: 'The direct śāstric attestation is itself important evidence for the history of Purāṇic classification.',
-      sources: ['Purāṇic catalogue passage(s) shown above', 'R. C. Hazra, Studies in the Upapurāṇas', 'Purāṇa manuscript catalogues']
+      status: 'No responsible detailed contents-summary can be supplied until the exact surviving text behind this title is securely identified.',
+      sources: ['Purāṇic catalogue passage(s) shown above', 'R. C. Hazra, Studies in the Upapurāṇas', 'Ludo Rocher, The Purāṇas']
     };
     if (kind === 'Smṛti') return {
-      overview: `${name} is named in the scriptural Dharma/Smṛti enumeration shown above. Many ancient Smṛti authorities survive only incompletely or through later quotation, so the name of an authority does not always correspond to one securely preserved continuous book.`,
+      overview: `${name} is named in the scriptural Dharma/Smṛti enumeration shown above.`,
+      period: 'Date uncertain unless a surviving text or securely reconstructed corpus can be identified.',
+      history: 'Many ancient Smṛti authorities survive only through quotations, later recensions or reconstructed fragments rather than one continuous authorial book.',
       themes: ['Dharma authority', 'Conduct, ritual and/or law'],
       status: 'Textual survival varies by authority and recension.',
-      significance: 'The entry records a Dharma authority named by śāstra itself.',
-      sources: ['Scriptural Smṛti source shown above', 'P. V. Kane, History of Dharmaśāstra', 'Dharmaśāstra textual studies']
+      sources: ['Scriptural Smṛti source shown above', 'P. V. Kane, History of Dharmaśāstra', 'Patrick Olivelle, Dharmaśāstra studies']
     };
     return null;
   }
@@ -109,12 +112,21 @@
 
   function renderResearch(entry) {
     if (!entry) return '';
+    const contentList = entry.contents || entry.keyContents || entry.themes;
+    const secondaryTopics = entry.contents && entry.themes ? entry.themes : null;
     return [
-      proseSection('Overview', entry.overview),
-      listSection('Contents & themes', entry.themes),
-      proseSection('Structure', entry.structure),
-      proseSection('Textual status', entry.status, 'is-status'),
-      proseSection('Why it matters', entry.significance),
+      proseSection('What this text actually is', entry.overview),
+      proseSection('Date / period', entry.period, 'is-period'),
+      proseSection('Where / textual milieu', entry.milieu),
+      proseSection('History of the text', entry.history),
+      proseSection('How it is dated', entry.datingBasis),
+      listSection('What you actually find inside', contentList, 'is-contents'),
+      listSection('Major themes / doctrines', secondaryTopics),
+      listSection('Named episodes / practices / sections', entry.namedFeatures),
+      proseSection('Internal structure', entry.structure),
+      proseSection('Doctrinal / sectarian profile', entry.profile),
+      proseSection('Transmission & textual problems', entry.status, 'is-status'),
+      proseSection('Later reception & influence', entry.reception || entry.significance),
       listSection('Sources consulted', entry.sources, 'scripture-drawer-sources')
     ].join('');
   }
