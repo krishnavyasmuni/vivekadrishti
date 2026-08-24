@@ -17,73 +17,53 @@
     return layer;
   }
 
-  function ensureBhagavatamWordLayer(section) {
+  function ensureWordForWord(section) {
     let details = section.querySelector(':scope > .sb-word-details, :scope > .sb-combined-word-details');
-    if (!details) {
-      details = document.createElement('details');
-      details.className = 'sb-details sb-word-details sb-combined-word-details';
-      const summary = document.createElement('summary');
-      summary.textContent = 'Word-for-word';
-      details.appendChild(summary);
-      section.appendChild(details);
-    }
+    if (!details) return null;
     details.classList.add('sb-details', 'sb-word-details', 'sb-combined-word-details');
-    if (details.open) details.open = false;
+    details.open = false;
     setText(details.querySelector(':scope > summary'), 'Word-for-word');
 
     if (!details.querySelector(':scope > .sb-bhagavatam-layer')) {
-      const blocks = Array.from(details.querySelectorAll(':scope > .sb-source-block'));
       const nodes = [];
-      blocks.forEach((block) => {
+      Array.from(details.querySelectorAll(':scope > .sb-source-block')).forEach((block) => {
         const content = block.querySelector(':scope > .sb-source-content');
         if (content) nodes.push(content);
         block.remove();
       });
-      if (!nodes.length) {
-        const note = document.createElement('p');
-        note.textContent = 'No Bhāgavatam word-for-word gloss is stored for this verse.';
-        nodes.push(note);
+      if (nodes.length) details.appendChild(makeLayer('Bhāgavatam', 'sb-bhagavatam-layer', nodes));
+    }
+
+    const source = section.querySelector(':scope > .sb-sridhara-wfw-details');
+    if (source) {
+      const content = source.querySelector('.sb-sridhara-word-for-word, .sb-source-content');
+      if (content) {
+        let layer = details.querySelector(':scope > .sb-sridhara-layer');
+        if (!layer) {
+          const paragraph = document.createElement('p');
+          paragraph.className = 'sb-sridhara-word-for-word-content';
+          paragraph.textContent = content.textContent.trim();
+          layer = makeLayer('Śrīdhara', 'sb-sridhara-layer', [paragraph]);
+          details.appendChild(layer);
+        } else {
+          const target = layer.querySelector('.sb-sridhara-word-for-word-content');
+          if (target) target.textContent = content.textContent.trim();
+        }
       }
-      details.appendChild(makeLayer('Bhāgavatam', 'sb-bhagavatam-layer', nodes));
+      source.remove();
     }
     return details;
-  }
-
-  function mergeSridharaWordForWord(section, details) {
-    const source = section.querySelector(':scope > .sb-sridhara-wfw-details');
-    if (!source) return;
-    const content = source.querySelector('.sb-sridhara-word-for-word, .sb-source-content');
-
-    let layer = details.querySelector(':scope > .sb-sridhara-layer');
-    if (!layer) {
-      const node = document.createElement('p');
-      node.className = 'sb-sridhara-word-for-word-content';
-      layer = makeLayer('Śrīdhara', 'sb-sridhara-layer', [node]);
-      details.appendChild(layer);
-    }
-    const target = layer.querySelector('.sb-sridhara-word-for-word-content');
-    if (target && content) setText(target, content.textContent.trim());
-
-    source.hidden = true;
-    if (source.dataset.combinedProxy !== 'true') {
-      source.dataset.combinedProxy = 'true';
-      details.addEventListener('toggle', () => {
-        if (details.open && !source.open) source.open = true;
-      });
-    }
-    if (details.open && !source.open) source.open = true;
   }
 
   function normalizeTransliteration(section) {
     const details = section.querySelector(':scope > .sb-transliteration-details, :scope > .sb-combined-transliteration-details');
     if (!details) return null;
     details.classList.add('sb-details', 'sb-transliteration-details', 'sb-combined-transliteration-details');
-    if (details.open) details.open = false;
+    details.open = false;
     setText(details.querySelector(':scope > summary'), 'Transliteration');
     if (details.querySelector(':scope > .sb-bhagavatam-layer, :scope > .sb-sridhara-layer')) return details;
 
-    const blocks = Array.from(details.querySelectorAll(':scope > .sb-source-block'));
-    blocks.forEach((block) => {
+    Array.from(details.querySelectorAll(':scope > .sb-source-block')).forEach((block) => {
       const sourceLabel = block.querySelector(':scope > .sb-source-label')?.textContent || '';
       const content = block.querySelector(':scope > .sb-source-content');
       if (!content) { block.remove(); return; }
@@ -99,57 +79,27 @@
     const details = section.querySelector(':scope > .sb-bhasya');
     if (!details) return null;
     details.classList.add('sb-details', 'sb-bhasya');
-    if (details.open) details.open = false;
+    details.open = false;
     setText(details.querySelector(':scope > summary'), 'Śrīdhara Sanskrit');
     setText(details.querySelector(':scope > .sb-source-block > .sb-source-label'), 'Bhāvārtha-dīpikā');
     return details;
   }
 
-  function sridharaLiteralText(section) {
-    const visible = section.querySelector(':scope > .sb-combined-word-details > .sb-sridhara-layer .sb-sridhara-word-for-word-content');
-    const hidden = section.querySelector(':scope > .sb-sridhara-wfw-details .sb-sridhara-word-for-word, :scope > .sb-sridhara-wfw-details .sb-source-content');
-    return (visible?.textContent || hidden?.textContent || '').replace(/\s+/g, ' ').trim();
-  }
-
-  function ensureLiteralCommentary(section) {
-    const literal = sridharaLiteralText(section);
-    let commentary = section.querySelector(':scope > .sb-commentary');
-    if (!literal) {
-      commentary?.remove();
-      return null;
-    }
-
-    if (!commentary) {
-      commentary = document.createElement('p');
-      commentary.className = 'sb-commentary';
-    }
-
-    const current = commentary.querySelector(':scope > .sb-commentary-text')?.textContent || '';
-    if (current !== literal || !commentary.querySelector(':scope > strong:first-child')) {
-      const label = document.createElement('strong');
-      label.textContent = 'Śrīdhara’s Commentary. ';
-      const text = document.createElement('span');
-      text.className = 'sb-commentary-text';
-      text.textContent = literal;
-      commentary.replaceChildren(label, text);
-    }
-    return commentary;
-  }
-
   function enforceOrder(section) {
     const translation = section.querySelector(':scope > .sb-translation');
     if (!translation) return;
-    const word = ensureBhagavatamWordLayer(section);
-    mergeSridharaWordForWord(section, word);
+    const word = ensureWordForWord(section);
     const transliteration = normalizeTransliteration(section);
     const sanskrit = normalizeSanskrit(section);
-    const commentary = ensureLiteralCommentary(section);
+    const commentary = section.querySelector(':scope > .sb-commentary');
 
     let anchor = translation;
     [word, transliteration, sanskrit, commentary].filter(Boolean).forEach((node) => {
       if (anchor.nextElementSibling !== node) anchor.insertAdjacentElement('afterend', node);
       anchor = node;
     });
+
+    section.querySelectorAll(':scope > .sb-sridhara-wfw-details').forEach((node) => node.remove());
   }
 
   function normalize(section) {
