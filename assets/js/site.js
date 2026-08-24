@@ -51,6 +51,21 @@
 
   if (isCanto2) {
     document.body.classList.add('canto-2-verse-layout');
+
+    // Some of the hand-built Chapter 2 sections predate the shared renderer and
+    // stored the English translation as an unclassed div immediately after the
+    // Devanagari. Mark it before the renderer runs so it is moved and styled in
+    // exactly the same position as every other verse instead of falling below
+    // Śrīdhara's commentary as a giant duplicate block.
+    document.querySelectorAll('section[aria-labelledby^="sb-2-"]').forEach((section) => {
+      if (section.querySelector(':scope > .sb-translation, :scope > .sb-translation-content')) return;
+      const devanagari = section.querySelector(':scope > [lang="sa-Deva"], :scope > .sb-devanagari, :scope > .sb-dev');
+      const candidate = devanagari?.nextElementSibling;
+      if (!candidate || candidate.matches('details, hr, h1, h2, h3')) return;
+      if (/Śrīdhara['’]s Commentary/i.test(candidate.textContent || '')) return;
+      candidate.classList.add('sb-translation');
+    });
+
     if (!document.querySelector('link[data-canto2-layout]')) {
       const css = document.createElement('link');
       css.rel = 'stylesheet';
