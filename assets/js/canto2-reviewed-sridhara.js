@@ -21,7 +21,7 @@
   function sridharaSourceText(section) {
     const details = section.querySelector(':scope > .sb-bhasya');
     if (!details) return '';
-    const candidates = Array.from(details.querySelectorAll(':scope > [lang="sa-Deva"], :scope > [lang="sa"], :scope > p'));
+    const candidates = Array.from(details.querySelectorAll(':scope > [lang="sa-Deva"], :scope > [lang="sa"], :scope > .sb-source-block > .sb-source-content, :scope > p'));
     const source = candidates.find((node) => /[\u0900-\u097f]/u.test(node.textContent || ''));
     return (source?.textContent || '').replace(/\s+/g, ' ').trim();
   }
@@ -34,7 +34,7 @@
   async function chapterData(chapter) {
     if (!chapterCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=1`, { cache: 'force-cache' })
+      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=2`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -69,6 +69,16 @@
 
   function sridharaLayer(section) {
     return section.querySelector(':scope > .sb-combined-word-details > .sb-sridhara-layer');
+  }
+
+  function existingInlineEnglish(section) {
+    const layer = sridharaLayer(section);
+    const word = (layer?.querySelector(':scope > .sb-sridhara-word-for-word-content, :scope > p, :scope > div:not(.sb-layer-heading)')?.textContent || '').trim();
+    const commentary = section.querySelector(':scope > .sb-commentary');
+    const prose = (commentary?.querySelector(':scope > .sb-commentary-text')?.textContent || commentary?.textContent || '')
+      .replace(/^\s*Śrīdhara['’]s Commentary\.\s*/i, '')
+      .trim();
+    return { word, prose };
   }
 
   function setLayerText(section, text) {
@@ -114,10 +124,19 @@
       return;
     }
 
+    // Chapters 2–10 were built directly from the same Bhāvārtha-dīpikā source
+    // and already contain clause-level English in the page. Preserve that text
+    // as the audited fallback while the dedicated JSON layer is progressively
+    // populated. Chapter 1 is always replaced by the separately reviewed file.
+    const inline = existingInlineEnglish(section);
     const data = await chapterData(identity.chapter);
     if (!section.isConnected) return;
     const record = recordForRange(data, identity);
     if (!record) {
+      if (identity.chapter > 1 && inline.word && inline.prose) {
+        section.dataset.sridharaEnglishStatus = 'reviewed-inline-direct';
+        return;
+      }
       setLayerText(section, '');
       setCommentary(section, '');
       section.dataset.sridharaEnglishStatus = 'awaiting-reviewed-translation';
@@ -141,7 +160,5 @@
   });
   observer.observe(root, { childList: true, subtree: true });
 
-  // The Canto 2 renderer runs dynamically; wait one frame so its merged controls
-  // exist, then scan. The observer handles any remaining sections it creates.
   requestAnimationFrame(() => scan());
 })();
