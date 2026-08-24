@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - tools/generate_canto10_sridhara_wfw.py
+      - tools/refine_canto10_sridhara_wfw.py
       - .github/workflows/generate-canto10-sridhara-wfw.yml
   workflow_dispatch:
 
@@ -18,40 +19,26 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Preserve existing reviewed chapter files
-        shell: bash
-        run: |
-          mkdir -p /tmp/canto10-existing-wfw
-          cp assets/data/canto10-sridhara-word-for-word/[0-9][0-9].json /tmp/canto10-existing-wfw/ 2>/dev/null || true
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-      - name: Generate literal word-for-word data
-        run: python3 tools/generate_canto10_sridhara_wfw.py
+      - name: Install Sanskrit morphology tools
+        run: python -m pip install --disable-pip-version-check sanskrit_parser
 
-      - name: Restore existing reviewed chapter files
-        shell: bash
-        run: |
-          cp /tmp/canto10-existing-wfw/*.json assets/data/canto10-sridhara-word-for-word/ 2>/dev/null || true
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          out = Path('assets/data/canto10-sridhara-word-for-word')
-          manifest_path = out / 'manifest.json'
-          if manifest_path.exists():
-              data = json.loads(manifest_path.read_text(encoding='utf-8'))
-              preserved = sorted(int(p.stem) for p in Path('/tmp/canto10-existing-wfw').glob('[0-9][0-9].json'))
-              data['preserved_existing_chapter_files'] = preserved
-              data['generated_missing_chapter_files'] = [n for n in range(1, 91) if n not in preserved]
-              manifest_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          PY
+      - name: Refine chapters 8 through 90
+        run: python tools/refine_canto10_sridhara_wfw.py
 
-      - name: Commit generated chapter files
+      - name: Commit refined chapter files
         shell: bash
         run: |
           if git diff --quiet -- assets/data/canto10-sridhara-word-for-word; then
@@ -61,5 +48,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/data/canto10-sridhara-word-for-word
-          git commit -m "Store complete Canto 10 Sridhara word-for-word data"
+          git commit -m "Refine complete Canto 10 Sridhara word-for-word data"
           git push
