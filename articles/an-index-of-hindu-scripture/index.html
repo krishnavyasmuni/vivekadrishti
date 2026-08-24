@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A minimal interactive index of Hindu scripture: Vedas, 108 Upanishads, Itihasa, Puranas, Smritis, Vedangas and Agamas.">
+  <meta name="description" content="A visual interactive index of Hindu scripture: Vedas, 108 Upanishads, Itihasa, Puranas, Smritis, Vedangas and Agamas.">
   <meta name="color-scheme" content="light">
   <title>An Index of Hindu Scripture — Viveka Dṛṣṭi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/vivekadrishti/assets/css/site.css">
   <link rel="stylesheet" href="/vivekadrishti/assets/css/scripture-index-clean.css?v=2">
   <link rel="stylesheet" href="/vivekadrishti/assets/css/scripture-index-taxonomy.css?v=2">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/scripture-index-editorial.css?v=1">
 </head>
 <body class="post-page scripture-page">
   <header class="site-header">
@@ -36,13 +37,13 @@
       <div class="article-body">
         <section id="scripture-browser" class="scripture-browser" aria-label="Interactive Hindu scripture index">
           <nav class="corpus-nav" aria-label="Scripture corpora">
-            <button class="corpus-button" type="button" data-corpus="vedas" aria-expanded="false">Vedas</button>
-            <button class="corpus-button" type="button" data-corpus="upanishads" aria-expanded="false">108 Upaniṣads</button>
-            <button class="corpus-button" type="button" data-corpus="itihasa" aria-expanded="false">Itihāsa</button>
-            <button class="corpus-button" type="button" data-corpus="puranas" aria-expanded="false">Purāṇas</button>
-            <button class="corpus-button" type="button" data-corpus="smriti" aria-expanded="false">Smṛti</button>
-            <button class="corpus-button" type="button" data-corpus="vedanga" aria-expanded="false">Vedāṅga & Darśana</button>
-            <button class="corpus-button" type="button" data-corpus="agama" aria-expanded="false">Āgama</button>
+            <button class="corpus-button" type="button" data-corpus="vedas" aria-expanded="false"><span>Vedas</span><small>Saṃhitā · Brāhmaṇa · Āraṇyaka</small></button>
+            <button class="corpus-button" type="button" data-corpus="upanishads" aria-expanded="false"><span>108 Upaniṣads</span><small>Mukhya · Yoga · Vaiṣṇava · Śaiva · Śākta…</small></button>
+            <button class="corpus-button" type="button" data-corpus="itihasa" aria-expanded="false"><span>Itihāsa</span><small>Rāmāyaṇa · Mahābhārata · Harivaṃśa</small></button>
+            <button class="corpus-button" type="button" data-corpus="puranas" aria-expanded="false"><span>Purāṇas</span><small>Guṇa lists · Mahāpurāṇa variants · Upapurāṇas</small></button>
+            <button class="corpus-button" type="button" data-corpus="smriti" aria-expanded="false"><span>Smṛti</span><small>Named source lists · guṇa classification · Upasmṛtis</small></button>
+            <button class="corpus-button" type="button" data-corpus="vedanga" aria-expanded="false"><span>Vedāṅga & Darśana</span><small>Six limbs · six classical systems</small></button>
+            <button class="corpus-button" type="button" data-corpus="agama" aria-expanded="false"><span>Āgama</span><small>Vaiṣṇava · Śaiva · Śākta ritual corpora</small></button>
           </nav>
           <div class="browser-stage" hidden></div>
         </section>
