@@ -1,0 +1,45 @@
+name: Test NLLB Sanskrit
+
+on:
+  push:
+    branches:
+      - fix/sridhara-canto2-canto10-complete
+    paths:
+      - '.github/workflows/test-nllb-sanskrit.yml'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CPU translation stack
+        run: |
+          python -m pip install --disable-pip-version-check torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --disable-pip-version-check 'transformers<5' sentencepiece
+      - name: Compare NLLB Sanskrit samples
+        run: |
+          python - <<'PY'
+          from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+          name='facebook/nllb-200-distilled-600M'
+          tok=AutoTokenizer.from_pretrained(name, src_lang='san_Deva', tgt_lang='eng_Latn')
+          model=AutoModelForSeq2SeqLM.from_pretrained(name)
+          samples=[
+            'षोडशे कालियस्योक्तो निग्रहो यमुना-ह्रदे । तत्-पत्नीभिः स्तुतेनाथ कृष्णेनानुग्रहः कृतः ॥',
+            'तं कालियम् । चण्डो वेगो यस्य तद् विषम् एव वीर्यं यस्य तम् । कदम्बम् इति । भाविना श्री-कृष्ण-चरण-स्पर्श-भाग्येन स एकस् तत्-तीरे न शुष्कः इति ज्ञातव्यम् । अमृतम् आहरता गरुत्-मता क्रान्तत्वाद् इति च पुराणान्तरम् । आस्फोट्य बाहुं कर-तलेनाहत्य । गाढा दृढं बद्धा रशना कटि-बन्धन-वस्त्रं येन सः ॥६॥',
+            'किं च, विप्रुष्मता अम्बु-कण-युक्तेन विषोद-तरङ्ग-स्पर्शि-मारुतेन स्पृष्टा यस्य तीरगा म्रियन्ते, स ह्रद आसीद् इति ॥५॥',
+            'गोपालेन यद् उदारं चरितम् आचरितं, तद् एवामृतम् । अतः कथ्यताम् इति ॥३॥',
+            'अरणं शरणम् ॥३०॥',
+            'न च निग्रहानुग्रह-लक्षणं वैषम्यं तवास्तीत्य् आहुः---धत्से दमम् इति । अनुशंसन्न् आलोचयन् ॥३३॥'
+          ]
+          for s in samples:
+              x=tok(s, return_tensors='pt', truncation=True, max_length=512)
+              y=model.generate(**x, forced_bos_token_id=tok.convert_tokens_to_ids('eng_Latn'), max_new_tokens=256, num_beams=4)
+              print('SRC:',s)
+              print('NLLB:',tok.batch_decode(y, skip_special_tokens=True)[0])
+              print('---')
+          PY
