@@ -37,7 +37,7 @@ jobs:
       - name: Refresh exact Canto 10 Bhavartha-dipika source
         run: python tools/extract_canto10_sridhara.py
       - name: Complete both English layers and validate coverage
-        run: python tools/complete_sridhara_bulk.py
+        run: python tools/complete_sridhara_bulk_v2.py
       - name: Commit final Canto 2 and 10 data
         run: |
           git config user.name 'github-actions[bot]'
