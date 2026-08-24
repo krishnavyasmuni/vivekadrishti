@@ -1,7 +1,9 @@
 name: Test Sanskrit translation endpoint
 
 on:
-  pull_request:
+  push:
+    branches:
+      - audit/sridhara-direct-canto2-canto10
     paths:
       - '.github/workflows/test-sanskrit-translation.yml'
 
