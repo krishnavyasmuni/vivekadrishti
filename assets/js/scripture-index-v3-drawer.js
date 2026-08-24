@@ -30,6 +30,41 @@
     return `<section class="scripture-drawer-witness"><h4>${esc(label)}</h4><ul>${values.map(v => `<li>${esc(v)}</li>`).join('')}</ul></section>`;
   }
 
+  function proseSection(label, value, extraClass = '') {
+    if (!value) return '';
+    return `<section class="scripture-drawer-section ${extraClass}"><h4>${esc(label)}</h4><p>${esc(value)}</p></section>`;
+  }
+
+  function listSection(label, values, extraClass = '') {
+    if (!Array.isArray(values) || !values.length) return '';
+    return `<section class="scripture-drawer-section ${extraClass}"><h4>${esc(label)}</h4><ul>${values.map(v => `<li>${esc(v)}</li>`).join('')}</ul></section>`;
+  }
+
+  function fallbackReference(name, kind, d) {
+    if (kind === 'Upaniṣad') return {
+      overview: `${name} is one of the Upaniṣads included in the 108-text Muktikā enumeration. On this page it is placed in the traditional ${d.type || 'minor'} group and associated with ${d.veda || 'its transmitted Veda'}; the Muktikā supplies the name/Veda association, while thematic grouping belongs to the later received organization of the minor Upaniṣads.`,
+      themes: [d.type || 'Upaniṣadic teaching', 'Ātman, brahman and liberation', 'Later Upaniṣadic tradition'],
+      status: 'A complete individualized research note has not yet been securely established beyond the transmitted text and catalogue evidence.',
+      significance: 'Its presence documents the breadth of the later Upaniṣadic corpus beyond the earliest principal texts.',
+      sources: ['Muktikā Upaniṣad — 108-name/Veda list', 'Minor Upaniṣad editions and manuscript catalogues']
+    };
+    if (kind === 'Mahāpurāṇa' || kind === 'Upapurāṇa' || kind === 'Both') return {
+      overview: `${name} is a Purāṇic title attested by the scriptural witness or witnesses shown above. Where the surviving textual identity is uncertain, this entry intentionally does not infer contents merely from the title.`,
+      themes: ['Purāṇic catalogue and textual transmission'],
+      status: 'Further content description requires a securely identified recension of this exact title.',
+      significance: 'The direct śāstric attestation is itself important evidence for the history of Purāṇic classification.',
+      sources: ['Purāṇic catalogue passage(s) shown above', 'R. C. Hazra, Studies in the Upapurāṇas', 'Purāṇa manuscript catalogues']
+    };
+    if (kind === 'Smṛti') return {
+      overview: `${name} is named in the scriptural Dharma/Smṛti enumeration shown above. Many ancient Smṛti authorities survive only incompletely or through later quotation, so the name of an authority does not always correspond to one securely preserved continuous book.`,
+      themes: ['Dharma authority', 'Conduct, ritual and/or law'],
+      status: 'Textual survival varies by authority and recension.',
+      significance: 'The entry records a Dharma authority named by śāstra itself.',
+      sources: ['Scriptural Smṛti source shown above', 'P. V. Kane, History of Dharmaśāstra', 'Dharmaśāstra textual studies']
+    };
+    return null;
+  }
+
   function detailsFor(button) {
     const d = button.dataset;
     const name = d.name || button.querySelector('span')?.textContent?.trim() || button.textContent.trim();
@@ -67,7 +102,20 @@
       if (d.source) rows.push(['Scriptural source', d.source]);
     }
 
-    return { name, rows, blocks };
+    const researched = window.SCRIPTURE_DETAIL_DATA?.[name] || fallbackReference(name, kind, d);
+    return { name, rows, blocks, researched };
+  }
+
+  function renderResearch(entry) {
+    if (!entry) return '';
+    return [
+      proseSection('Overview', entry.overview),
+      listSection('Contents & themes', entry.themes),
+      proseSection('Structure', entry.structure),
+      proseSection('Textual status', entry.status, 'is-status'),
+      proseSection('Why it matters', entry.significance),
+      listSection('Sources consulted', entry.sources, 'scripture-drawer-sources')
+    ].join('');
   }
 
   function openDrawer(button) {
@@ -101,6 +149,7 @@
       <div class="scripture-drawer-body">
         ${info.rows.length ? `<dl class="scripture-drawer-meta">${info.rows.map(([k,v]) => row(k,v)).join('')}</dl>` : ''}
         ${info.blocks.map(([label,values]) => witnessBlock(label,values)).join('')}
+        ${renderResearch(info.researched)}
       </div>`;
 
     document.body.append(backdrop, drawer);
@@ -108,7 +157,6 @@
     drawer.querySelector('.scripture-drawer-close')?.focus({ preventScroll: true });
   }
 
-  // Capture phase deliberately runs before the legacy bubbling click handler.
   root.addEventListener('click', event => {
     const button = event.target.closest('.shastra-name');
     if (!button || !root.contains(button)) return;
