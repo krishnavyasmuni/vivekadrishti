@@ -63,7 +63,15 @@
     }
     const target = layer.querySelector('.sb-sridhara-word-for-word-content');
     if (target && content) setText(target, content.textContent.trim());
-    source.remove();
+
+    source.hidden = true;
+    if (source.dataset.combinedProxy !== 'true') {
+      source.dataset.combinedProxy = 'true';
+      details.addEventListener('toggle', () => {
+        if (details.open && !source.open) source.open = true;
+      });
+    }
+    if (details.open && !source.open) source.open = true;
   }
 
   function normalizeTransliteration(section) {
