@@ -1,53 +1,212 @@
 {
   "1-2": {
-    "word_for_word": "catustriṃśe'hinā — catustriṃśe'hinā; grastaṃ — swallowed; nandaṃ — Nanda; harir — harir; amūmucat — amūmucat; vidyādhraṃ — a airy; cāṅgiraḥ — cāṅgiraḥ; śāpāc — śāpāc; chaṅkhacūḍaṃ — chaṅkhacūḍaṃ; tathāvadhīt — tathāvadhīt; rāsāpadeśataḥ — rāsāpadeśataḥ; kāmaṃ — desire; kiṅkarī — kiṅkarī; kṛtya — ‘to be done or performed’; kāmataḥ — kāmataḥ; anugṛhṇan — anugṛhṇan; vaśaṃ — will; ninye — ninye; tathā — so; in that way; vidya — = ( ifc; adhara — lower; adhipam — a ruler; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; evaṃ — thus; in this way; kāmānugraha — kāmānugraha; mukhena — by eans of; kāma — desire; jayaṃ — ifc. conquering; pratipādya — to be treated of or discussed; tathaiva — tathaiva; vidyādhara — possessed of science or spells; jayaṃ — ifc. conquering; pratipādayituṃ — pratipādayituṃ; tat — that; prasaṅgaṃ — prasaṅgaṃ; darśayati — darśayati; ekadā — at the same time; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ce305304f23903decfe259c2f6e3c7e6af2042c29fb660405b51b292695c72c0",
+    "word_for_word": "चतुस्त्रिंशेऽहिना ग्रस्तं नन्दं हरिर् अमूमुचत् । — When Nanda Mahārāja was swallowed by a snake for thirty-four days, Lord Hari released him.; विद्याध्रं चाङ्गिरः-शापाच् छङ्खचूडं तथावधीत् ॥ — Because of the curse of Aṅgirā, he killed Vidyādhra and Śaṅkhacūḍa.; रासापदेशतः कामं किङ्करी-कृत्य कामतः । — By the advice of the Rāsa, she made herself a maidservant of desire.; अनुगृह्णन् वशं निन्ये तथा विद्याधराधिपम् ॥ — He showed mercy to the king of the Vidyādharas and brought him under his control.; तद् एवं कामानुग्रह-मुखेन काम-जयं प्रतिपाद्य तथैव विद्याधर-जयं प्रतिपादयितुं तत् प्रसङ्गं दर्शयति---एकदा इति ॥१.२॥ — That thus, by the face of the grace of desire, he shows the victory over desire and in the same way to show the victory over the Vidyadharas, he shows that incident by saying, \"Once.",
+    "translation": "When Nanda Mahārāja was swallowed by a snake for thirty-four days, Lord Hari released him. Because of the curse of Aṅgirā, he killed Vidyādhra and Śaṅkhacūḍa. By the advice of the Rāsa, she made herself a maidservant of desire. He showed mercy to the king of the Vidyādharas and brought him under his control. That thus, by the face of the grace of desire, he shows the victory over desire and in the same way to show the victory over the Vidyadharas, he shows that incident by saying, \"Once."
+  },
+  "3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "451d64c033866d033d90f4dbd373ec7d45a516443795853f853601b25b35d567",
+    "word_for_word": "गावो गाः । — Cows are cows.; मधु मधुरम् । — Honey is sweet.; मध्व्-अन्नं मधुना सहितम् अन्नम् ॥३॥ — Honey-food is food with honey.",
+    "translation": "Cows are cows. Honey is sweet. Honey-food is food with honey."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ba43897b9f438f532753e1b9382f490455b9b641207cb23d0c3aac5412f5782b",
+    "word_for_word": "जल-मात्रं प्राश्य उपोषितास् तां निशां तत्र ऊषुर् न्यवसन् ॥४॥ — They drank only water and fasted and spent the night there.",
+    "translation": "They drank only water and fasted and spent the night there."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5420d778b3b511fdacffc1b894100bff06598b2fb5c9d9f19639789eb99ed4d9",
+    "word_for_word": "महान् अहिर् अजगरः । — The great serpent is the dragon.; उरग उरसा गच्छन्न् इत्य् अलक्षितत्वम् उक्तम् । — The snake’s chest is said to be unnoticed.; अग्रसीत् जग्रास ॥५॥ — Agrasit Jagras.",
+    "translation": "The great serpent is the dragon. The snake’s chest is said to be unnoticed. Agrasit Jagras."
   },
   "6": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "67e6e0122fbcb2e768f1899d2a7f5f12d1299a055e88756a33951c976c02d46c",
+    "word_for_word": "विव्यधुस् ताडयामासुः । — They shot and beat him.; उल्मुकैर् ज्वलत्-काष्ठैः ॥७॥ — with meteors and burning wood.",
+    "translation": "They shot and beat him. with meteors and burning wood."
+  },
+  "8": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2aade2a72f73c23c9e6b95e631266ccc6b0617cb2cf2a2b902d39cc20b1ac9ee",
+    "word_for_word": "अलातैर् एवोल्मुकैः ॥८॥ — Alatair evolmukaiḥ.",
+    "translation": "Alatair evolmukaiḥ."
+  },
+  "9": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "094eb18d149bd2f809f1697b24db41e79f1d9564cf0a680250c0fe2de2352e44",
+    "word_for_word": "विद्याधरेष्व् अर्चितं पूजितम् ॥९॥ — It is worshiped and worshiped by the Vidyadharas.",
+    "translation": "It is worshiped and worshiped by the Vidyadharas."
   },
   "10": {
-    "word_for_word": "gopeṣv — gopeṣv; ātmana — ātmana; aiśvaryaṃ — lordship; opulence; prakāśayitum — prakāśayitum; avidvān — avidvān; iva — like; as if; tam — him; that; apṛcchat — apṛcchat; dīpyam — to be kindled or inflamed or stimulated; anena — by this; vapuṣā — =; samavasthitam — standing or remaining irm."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "37e6fb7f3a0f3183e0d7b8f5fc2ced804c7ceb73e27b38804aa225615dfe8d71",
+    "word_for_word": "गोपेष्व् आत्मन ऐश्वर्यं प्रकाशयितुम् अविद्वान् इव तम् अपृच्छत् । — He asked him, as if he were ignorant, to reveal his opulence to the cowherd men.; दीप्यमानेन वपुषा समवस्थितम् ॥१०॥ — It is situated with a glowing body.",
+    "translation": "He asked him, as if he were ignorant, to reveal his opulence to the cowherd men. It is situated with a glowing body."
   },
   "11": {
-    "word_for_word": "yaḥ — who; which; parayā — by/with a oreign country; śobhayā — by/with splendour; prakāśate — to become visibles; bhavān — worldly existence; becomings; ka — the irst consonant of the alphabet; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8ed7bdf3f1a837cc1a34d09e424919bd3114a4b611d84c04a152130271d052ff",
+    "word_for_word": "यः परया शोभया प्रकाशते भवान् क इति ॥११.१२॥ — Who are you who shines with supreme beauty?",
+    "translation": "Who are you who shines with supreme beauty?"
   },
   "12": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "13": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2a7020abf2b55385fced2308dde48b32baf817737cf8c33443003815e01780ad",
+    "word_for_word": "प्राहसम् उपहसितवान् अस्मि । — I’ve laughed at the laughter.; प्रलब्धैर् उपहसितैः । — They were ridiculed and laughed at.; मदीयेनैव पापेन निमित्तेन ॥१३॥ — By my own sinful cause.",
+    "translation": "I’ve laughed at the laughter. They were ridiculed and laughed at. By my own sinful cause."
+  },
+  "14": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "29e472cb1e37701b765777987ab5821184fe23341cff1b321a6368ef003e36bb",
+    "word_for_word": "यद् यतः शापात् ॥१४॥ — Whatever from the curse.",
+    "translation": "Whatever from the curse."
+  },
+  "15": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "61e9e5a4c67f57f7877d7f26d72d29f44e666201ad80032ea43e0758cdb4a4bf",
+    "word_for_word": "त्वा त्वां आपृच्छे स्वं लोकं गन्तुम् अनुज्ञां याचे । — I ask you to allow me to go to my own world.; हे अमीवहन् ! — O Amivahan!; दुःख-नाशन ! — Dukh-nashan!; ॥१५॥ — ॥15॥",
+    "translation": "I ask you to allow me to go to my own world. O Amivahan! Dukh-nashan! ॥15॥"
   },
   "16": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "18": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "19": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "20": {
-    "word_for_word": "ahi — a snake; dehaṃ — body; nihatyaivaṃ — nihatyaivaṃ; prāg — in comp. or; unmattaṃ — unmattaṃ; sudarśanam — easily seen by; tadvad — tadvad; unmādinaṃ — insane; kṛṣṇaṃ — Kṛṣṇa; śaṅkhacūḍam — of an; atāḍayat — atāḍayat; tat — that; prasaṅgam — prasaṅgam; āha — says; kadācid — kadācid; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "01e87223b8822db4b053462c5a1e8dce77f9c80c45ad1010d5888792bc136cdb",
+    "word_for_word": "अहि-देहं निहत्यैवं प्राग् उन्मत्तं सुदर्शनम् । — In this way, Sudarśana, who had previously gone mad, killed the body of the snake.; तद्वद् उन्मादिनं कृष्णं शङ्खचूडम् अताडयत् ॥ — In the same way, the Lord struck the mad Lord Kṛṣṇa with His conchshell.; तत्-प्रसङ्गम् आह---कदाचिद् इति ॥२०॥ — He argues that the case is sometimes.",
+    "translation": "In this way, Sudarśana, who had previously gone mad, killed the body of the snake. In the same way, the Lord struck the mad Lord Kṛṣṇa with His conchshell. He argues that the case is sometimes."
+  },
+  "21": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2dfedcb7f4082f0099505dde870449a02f15ebd61947c28748175508c577b2ed",
+    "word_for_word": "विरजो-ऽम्बराव् इति विरजसी निर्मले अम्बरे ययोस् तौ ॥२१॥ — Virajo-'mbarāv, the two of whom are in the clear sky, are called Virajasi.",
+    "translation": "Virajo-'mbarāv, the two of whom are in the clear sky, are called Virajasi."
   },
   "22": {
-    "word_for_word": "kiṃ — what; ca — and; niśā — ight; praveśaṃ — entrance; sat — being; kurvantau — kurvantau; udita — risen; uḍupas — uḍupas; tāraka — causing or enabling to pass or go over; aś — Ā. ( aor. 3. pl; ca — and; yasmiṃs — yasmiṃs; tat — that; mallikā — Jasminum Zambac (both the plant and the lower; gandhena — by/with smell; mattā — any intoxicating drink; alayo — alayo; yasmiṃs — yasmiṃs; tat — that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "57c8da9693f112908b46a99a5a728e31028e4b842e2476ef2c2681dd01c09a92",
+    "word_for_word": "किं च, निशा-प्रवेशं सत्-कुर्वन्तौ । — What’s more, they’re making a good night’s entrance.; उदित उडुपस् तारकाश् च यस्मिंस् तत् । — That in which the moon and stars have risen.; मल्लिका-गन्धेन मत्ता अलयो यस्मिंस् तत् ॥२२॥ — That in which the dwelling is intoxicated with the fragrance of jasmine.",
+    "translation": "What’s more, they’re making a good night’s entrance. That in which the moon and stars have risen. That in which the dwelling is intoxicated with the fragrance of jasmine."
   },
   "23": {
-    "word_for_word": "anibaddhatvā — having ot tied down; ad — to eat; anyair — anyair; yugapat — yugapat; kalpayitum — kalpayitum; aśakyam — impossible; api — also; tau — the two the 1st dental consonants; svara — svara; maṇḍalasya — of circular; mūrcchitaṃ — mūrcchitaṃ; yugapat — yugapat; kalpayantau — kalpayantau; manaḥ — mind; śravaṇayor — śravaṇayor; maṅgalaṃ — happiness; yathā — as; just as; bhavati — is; becomes; tathā — so; in that way; jagatur — jagatur; aga — a snake; ayatām — of ot aking effortss; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3aa525dc02a5bc517001c78ce90fd5ea0a2aea6ff25fcb69dc66f53df4f50288",
+    "word_for_word": "अनिबद्धत्वाद् अन्यैर् युगपत् कल्पयितुम् अशक्यम् अपि तौ स्वर-मण्डलस्य मूर्च्छितं युगपत् कल्पयन्तौ । — Even though it was impossible for others to imagine simultaneously because they were unbound, they both simultaneously imagined the faintness of the vocal chord.; मनः-श्रवणयोर् मङ्गलं यथा भवति तथा जगतुर् अगायताम् इति ॥२३॥ — Let the world sing in such a way that it is auspicious to the mind and the ears.",
+    "translation": "Even though it was impossible for others to imagine simultaneously because they were unbound, they both simultaneously imagined the faintness of the vocal chord. Let the world sing in such a way that it is auspicious to the mind and the ears."
+  },
+  "24": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "62067bd23d08017ef898ecca11fc29cf3fd27c5994f7e01c576782ea9adb2cf5",
+    "word_for_word": "मूर्च्छितास् तद्-गीत-लीन-चित्ताः । — They were stunned and absorbed in that song.; स्रंसद् भ्रश्यद् दुकूलं यस्मात् तम् आत्मानं देहम् । — The body of the soul is the one from which the dress falls off and falls off.; स्रस्ताः केशेभ्यः स्रजो यस्य तं च । — and to him whose garlands have fallen from his hair.; ततो नाविदन् ॥२४.२५॥ — Then they did not know.",
+    "translation": "They were stunned and absorbed in that song. The body of the soul is the one from which the dress falls off and falls off. and to him whose garlands have fallen from his hair. Then they did not know."
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e6a178044844cdb465e980951f808d439284e2208c61f574d31d69b095796fb1",
+    "word_for_word": "निरीक्षतोर् निरीक्षमाणयोः तौ नाथौ यस्य तं प्रमदा-जनं कालयामास हठात् प्रेरयामास ॥२६॥ — As the two masters looked at him he suddenly drove away the crowd of women",
+    "translation": "As the two masters looked at him he suddenly drove away the crowd of women"
+  },
+  "27": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d40f82167e6ce5ec1dfc1587f6f76e1ea11fb95faed346869dea31eee06bcb81",
+    "word_for_word": "दस्युना व्याघ्रेण ॥२७॥ — by the thief and the tiger.",
+    "translation": "by the thief and the tiger."
   },
   "28": {
-    "word_for_word": "mā — do not; bhaiṣṭa — bhaiṣṭa; bhayaṃ — fear; na — not; prāpnutety — prāpnutety; abhaya — unfearful; vacau — the two speakings."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "38a96f08dd4abd8b5fe039447a1d717736822d59b1fce4737ef83b148363e1f1",
+    "word_for_word": "मा भैष्ट भयं न प्राप्नुतेत्य् अभय-वचौ ॥२८॥ — Do not fear, for fear does not overtake you, in the words of fearlessness.",
+    "translation": "Do not fear, for fear does not overtake you, in the words of fearlessness."
   },
   "29": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "śirasā — śirasā; saha — with; cūḍāmaṇiṃ — a jewel worn by en and women on the top of the head; jagārety — jagārety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b6b5af43c3f0ac7a5fe90087a039f4cd962a80f8143368e1d5381bfa9f203342",
+    "word_for_word": "शिरसा सह चूडामणिं जगारेत्य् अर्थः ॥३१॥ — This means that he should wear the Chudamani with his head.",
+    "translation": "This means that he should wear the Chudamani with his head."
   },
   "32": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   }
 }

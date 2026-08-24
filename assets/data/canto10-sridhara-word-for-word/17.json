@@ -1,26 +1,128 @@
 {
   "1": {
-    "word_for_word": "nāgaṃ — a snake; saptadaśe — in/on the 17th; nāgā — nāgā; layaṃ — col. 2; taṃ — the 1st dental consonant; nirayāpayat — nirayāpayat; bandhūn — connections; sva — own; self; duḥkhataḥ — duḥkhataḥ; śrāntān — wearieds; suptāṃs — suptāṃs; tatra — there; in that; dava — a wood on ire; ad — to eat; apāt — from away; asamañjasam — unbecomingly; apriyam — disagreeable."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "583e04a06c94bf9bac28a2638ac13399c48aa00dcc9b35d341e1708a44368b0a",
+    "word_for_word": "नागं सप्तदशे नागा लयं तं निरयापयत् । — In the seventeenth snake, the serpent Laya sent him to hell.; बन्धून् स्व-दुःखतः श्रान्तान् सुप्तांस् तत्र दवाद् अपात् ॥ — There he saw his relatives asleep exhausted from his own grief; असमञ्जसम् अप्रियम् ॥१॥ — It is inconsistent and unpleasant.",
+    "translation": "In the seventeenth snake, the serpent Laya sent him to hell. There he saw his relatives asleep exhausted from his own grief It is inconsistent and unpleasant."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "86c07c5df1e9f849efb6989041e591173455e50714557a4112ef7097af50eeb1",
+    "word_for_word": "उपहार्यैर् भक्ष्यैः । — with gifts and food.; सर्प-जनैः सर्पायतैर् जनैः । — The snake-people, the snake-like people.; वानस्पत्यो वनस्-पतेर् मूले देयो नागानां तद्-बाधा-परिहाराय यो बलिर् निरूपित उपकल्पितः ॥२॥ — The sacrifice prescribed for the serpents should be offered at the root of the tree to counteract the obstacles of the serpents",
+    "translation": "with gifts and food. The snake-people, the snake-like people. The sacrifice prescribed for the serpents should be offered at the root of the tree to counteract the obstacles of the serpents"
   },
   "3": {
-    "word_for_word": "te — they; those; ca — and; nāgāḥ — a snakes; svaṃ — own; self; svaṃ — own; self; bhāgaṃ — portion; janair — janair; dattaṃ — protected; suparṇāya — to/for a beautiful leaf; prayacchanti — prayacchanti; tato — in comp. or; bhītāḥ — righteneds; gopīthāya — to/for a draught of ilk; rakṣaṇāya — to/for ‘protector’."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "70c61b7ff72bc66eece2741545e6de67c80ed0818d135b92306e02f5f157c963",
+    "word_for_word": "ते च नागाः स्वं स्वं भागं जनैर् दत्तं सुपर्णाय प्रयच्छन्ति ततो भीताः । — The serpents were afraid and gave their share of the food given to Garuda by the people; गोपीथाय रक्षणाय ॥ — Gopithaaya rakshanaaya ॥",
+    "translation": "The serpents were afraid and gave their share of the food given to Garuda by the people Gopithaaya rakshanaaya ॥"
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c60dc8b333bb455a252a4a50d7589ed1d8012539ad7f2524c6ff6d1ef93c3c4f",
+    "word_for_word": "विष-वीर्याभ्यां यो मदस् तेनाविष्टः । — The intoxication that is possessed by poison and energy; काद्रवेयः कद्रू-पुत्रः । — Kadraveya was the son of Kadru.; गरुड कदर्थी-कृत्य अविगणय्य । — Garuda ignored the miserly deeds.; यद् वा, उपहार्यैः सुपर्ण-भक्ष्यैः सर्पा एव जनास् तैर् नागानां सम्बन्धी यस्मिन्न् एकैको नागो दीयते तथा-भूतो यो बलिः सुपर्णाय निरूपितस् तत्र स्वं स्वं भागं सर्वे नागाः प्रयच्छन्ति, कालियस् तु न प्रयच्छति, किन्त्व् अन्यैर् दत्तम् अपि तं बलिं स्वयम् एव बुभुजे ॥४॥ — That is, the serpents are the only people who are related to the serpents by the gifts offered to them by the food offered to Garuda. In the same way, when each serpent is offered to Garuda, all the serpents offer their share of the sacrifice offered to Garuda, but Kāliya does not offer it, but he himself eats the sacrifice offered by others.",
+    "translation": "The intoxication that is possessed by poison and energy Kadraveya was the son of Kadru. Garuda ignored the miserly deeds. That is, the serpents are the only people who are related to the serpents by the gifts offered to them by the food offered to Garuda. In the same way, when each serpent is offered to Garuda, all the serpents offer their share of the sacrifice offered to Garuda, but Kāliya does not offer it, but he himself eats the sacrifice offered by others."
   },
   "5": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "670cfc8f0cd7101cbaa0d6d5532f400fd19ac3d29d9aed9a84b81080558aaaa3",
+    "word_for_word": "विषम् एव्आयुधं यस्य सः । — He whose weapon is poison.; प्रत्यभ्ययाद् योद्धुं प्रतिजगाम् । — She counterattacked and went back to fight.; उच्छ्रित-नैक-मस्तक उन्नमितानेक-फणः । — He had a raised head and many tails.; दद्-आयुधो दन्तायुधः । — The tooth-weapon is the tooth-weapon.; कराल-जिह्वश् चासाव् उच्छ्वसितोग्र-लोचनश् च उच्छ्वसितान्य् उज्जृम्भितान्य् उग्राणि लोचनानि यस्य सः ॥६॥ — He whose tongue is terrible and whose eyes are fierce and whose eyes are wide open",
+    "translation": "He whose weapon is poison. She counterattacked and went back to fight. He had a raised head and many tails. The tooth-weapon is the tooth-weapon. He whose tongue is terrible and whose eyes are fierce and whose eyes are wide open"
+  },
+  "7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "de4b4376acc14e859cdbd73602a9033834c4a8b73cf54d77667b8223307e0a20",
+    "word_for_word": "तार्क्ष्य-पुत्रो गरुडः । — Garuda, the son of Tarkshya.; मधुसूदनस्यासनं यस्मिन् सः ॥७॥ — He is the seat of Madhusoodana.",
+    "translation": "Garuda, the son of Tarkshya. He is the seat of Madhusoodana."
   },
   "8": {
-    "word_for_word": "tasya — of him; of that; garuḍasya — of of a ythical bird (chief of…; agamyam — unfit to be walked in; agādhatayā — agādhatayā; ca — and; durāsadam — d or dangerous to be approached."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "01f293b2d5543bcc51e9b336058007fc3eaea41e099e3e92759b324bddcbb4d2",
+    "word_for_word": "तस्य गरुडस्य्आगम्यम् अगाधतया च दुरासदम् ॥८॥ — It was inaccessible to that eagle and difficult to approach because of its depth.",
+    "translation": "It was inaccessible to that eagle and difficult to approach because of its depth."
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "17e12c1ad55f34da544241d576b3c670c62ba400958b1cfb7f37716e9079314a",
+    "word_for_word": "लेलिहः सर्पः । — Leliha is a snake.; अतस् तत्र्आवात्सीत् ॥१२॥ — Therefore he settled there.",
+    "translation": "Leliha is a snake. Therefore he settled there."
+  },
+  "13": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "717c79f24b5a8e59d643274badef7b6c2c87bb367140e5af86541aa11f27b51e",
+    "word_for_word": "जाम्बू-नदं सुवर्णं तेनालङ्कृतम् ॥१३॥ — The Jambu-river is adorned with gold.",
+    "translation": "The Jambu-river is adorned with gold."
+  },
+  "15": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c7eb86efd6523ca29813443f1b5caf480bb08f59069e02aaaf49c759722c637c",
+    "word_for_word": "लब्धेहा लब्ध-चेष्टाः ॥१५॥ — Labdheha Labdha-cheshtaḥ.",
+    "translation": "Labdheha Labdha-cheshtaḥ."
   },
   "16": {
-    "word_for_word": "nagā — nagā; vṛkṣā — vṛkṣā; api — also; pūrvaṃ — previous; śuṣkāḥ — drieds; santaḥ — =; eva — only; indeed; virūḍhā — virūḍhā; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d80f30ee48043b46f832a52e1c5e3ff771c011d111b40aab7972a8e33c71bd38",
+    "word_for_word": "नगा वृक्षा अपि पूर्वं शुष्काः सन्तः एव विरूढा इत्य् अर्थः ॥१६॥ — This means that even the trees, which were formerly dry, have grown up.",
+    "translation": "This means that even the trees, which were formerly dry, have grown up."
+  },
+  "17": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ab5eabbd43642803efcfe61f7677a58a7fc3dc1ecc1c211d9b7828a43a39ccae",
+    "word_for_word": "ते विप्रा ऊचुः ॥१७.१८॥ — They said to the brahmins.",
+    "translation": "They said to the brahmins."
   },
   "18": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "19": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1d2c40b2d92101d99b7a3b96a341586e844b138bf3e3088ab89a27cb1a6b471a",
+    "word_for_word": "नष्ट-लब्ध-प्रजा नष्ट-प्राया पुनर्-लब्धा प्रजा यया सा ॥१९॥ — She who has lost and regained her progeny has almost lost and regained her progeny.",
+    "translation": "She who has lost and regained her progeny has almost lost and regained her progeny."
+  },
+  "20": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "013801a4066f18354c5d3843e3f01be0950c6aef1910001eb4b8ceea8d3d37b3",
+    "word_for_word": "श्रमेण च कर्षिताः उपकूलतः कूल-प्रान्ते ॥२०.२३॥ — They were dragged by exertion from the banks to the banks of the river",
+    "translation": "They were dragged by exertion from the banks to the banks of the river"
   },
   "21": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   }
 }

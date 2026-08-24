@@ -1,134 +1,348 @@
 {
   "1": {
-    "word_for_word": "caturthe — in/on f( )n. ( g. , ) the 4th; caṇḍikā — N. of , , Sch.; vākyam — &c. See p. 936, col. 2 .; ākarṇyātibhayākulaḥ — ākarṇyātibhayākulaḥ; durmantribhir — durmantribhir; hitaṃ — 1. mfn. (for 2. See p. 1298, col. 2 ) sent, impelled, urged on, set in motion &c.; mene — considered; kaṃso — kaṃso; bālādi — bālādi; hiṃsanam — an enemy."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9cde93708b83a3c50d035e6d9ec61a4a6172fed03a01889e078da7dfcdfa0b35",
+    "word_for_word": "caturthe — in/on f( )n. ( g. , ) the 4th; caṇḍikā — N. of , , Sch.; vākyam — &c. See p. 936, col. 2 .; ākarṇyātibhayākulaḥ — ākarṇyātibhayākulaḥ; durmantribhir — durmantribhir; hitaṃ — 1. mfn. (for 2. See p. 1298, col. 2 ) sent, impelled, urged on, set in motion &c.; mene — considered; kaṃso — kaṃso; bālādi — bālādi; hiṃsanam — an enemy.",
+    "translation": "In the fourth place he heard the words of Chaṇḍika and was greatly afraid Kaṁsa thought it good for his wicked counselors to kill children and others.",
+    "lexical_reviewed": true
   },
   "2": {
-    "word_for_word": "tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; aṣṭamaṃ — f( )n. the eighth; janma — birth."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0d70b0226bfc30315158f5482110283a26ae6f41a7c2bfe10b3b245e2a7e83f4",
+    "word_for_word": "tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; aṣṭamaṃ — f( )n. the eighth; janma — birth.",
+    "translation": "That is the eighth birth.",
+    "lexical_reviewed": true
   },
   "3": {
-    "word_for_word": "kālo — kālo; mṛtyuḥ — (very rarely f. ) death, dying, &c., &c.."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2a6d1fc2a62e7cdcd0814c3f8dbf0aa7d9f77808c15f0037001a56e957024997",
+    "word_for_word": "kālo — kālo; mṛtyuḥ — (very rarely f. ) death, dying, &c., &c..",
+    "translation": "Time is death.",
+    "lexical_reviewed": true
   },
   "4": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "5": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "6": {
-    "word_for_word": "aṅga — limb; body; he — a vocative particle (‘oh!’ ‘ho!’ &c.; bhrātaḥ — bhrātaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "31e5d7883f4093f5aff1af6dbe60b34f419e40dfb402e46cbfb41b888b2ca80a",
+    "word_for_word": "aṅga — limb; body; he — a vocative particle (‘oh!’ ‘ho!’ &c.; bhrātaḥ — bhrātaḥ.",
+    "translation": "Anga, O brother.",
+    "lexical_reviewed": true
   },
   "7": {
-    "word_for_word": "dīna — fn. ( fr. √ 3. ?) scarce, scanty; dīnavat — dīnavat; dīnād — dīnād; api — also; dīnavan — dīnavan; na — not; tu — but; tathā — so; in that way; putrasyānyatra — putrasyānyatra; nītatvāt — nītatvāt; sā — she; that; ca — and; yogamāyeti — yogamāyeti; jñātatvāt — jñātatvāt; yācito'py — yācito'py; ācicchide — ācicchide; hastād — hastād; ākṛṣya — ākṛṣya; jagrāha — jagrāha."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "537ab6652a29563ce232c577473a26260d11155ebfda57fe380efa2462cdc5ef",
+    "word_for_word": "dīna — fn. ( fr. √ 3. ?) scarce, scanty; dīnavat — dīnavat; dīnād — dīnād; api — also; dīnavan — dīnavan; na — not; tu — but; tathā — so; in that way; putrasyānyatra — putrasyānyatra; nītatvāt — nītatvāt; sā — she; that; ca — and; yogamāyeti — yogamāyeti; jñātatvāt — jñātatvāt; yācito'py — yācito'py; ācicchide — ācicchide; hastād — hastād; ākṛṣya — ākṛṣya; jagrāha — jagrāha.",
+    "translation": "Like the poor, he is poorer than the poor, but he is not so. Because her son was taken elsewhere, she was known to be a yogic illusion. Even when requested he cut it off and pulled it from his hand and seized it.",
+    "lexical_reviewed": true
   },
   "8": {
-    "word_for_word": "apothayad — apothayad; balena — by/with (or m. g. ) power, strength, might, vigour, force, validity, &c. &c. ( , ‘forcibly, against one's will, without being able to help it’; cikṣepa — cikṣepa."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "46ff7c3f449e0d177aecf2b8185f56ef1d5ed27f214a9da0243ee7a4e7f900f6",
+    "word_for_word": "apothayad — apothayad; balena — by/with (or m. g. ) power, strength, might, vigour, force, validity, &c. &c. ( , ‘forcibly, against one's will, without being able to help it’; cikṣepa — cikṣepa.",
+    "translation": "He threw it away with force.",
+    "lexical_reviewed": true
   },
   "9-10": {
-    "word_for_word": "sadya — 1. n. in , , , qq.vv. (for 2. 3. See p. 1140, col. 1 ).; eva — only; indeed; devī — goddess; bhūtvā — bhūtvā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "906b6dd322c09d406c69bbfe38112784b933bb4fecc8c558b4ba1660b29c5489",
+    "word_for_word": "sadya — 1. n. in , , , qq.vv. (for 2. 3. See p. 1140, col. 1 ).; eva — only; indeed; devī — goddess; bhūtvā — bhūtvā.",
+    "translation": "Immediately becoming a goddess.9-1",
+    "lexical_reviewed": true
   },
   "11": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "12": {
-    "word_for_word": "kṛpaṇān — 1. mf(s; iti — thus; anyān — 1. (3), , n. inexhaustibleness (as of the milk of cows), ( cf. .).s; śiśūn — śiśūn; haniṣyatīti — haniṣyatīti; jñātvā — jñātvā; vārayati — vārayati; pāṭhāntare — in/on ‘another reading’, a variation of the text in a book or manuscript; mā — do not; māṃ — a mother; kṛpaṇāṃ — kṛpaṇāṃ; vṛthā'hiṃsīr — vṛthā'hiṃsīr; hiṃsitavān — hiṃsitavān; asīti — asīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6fc5ff94e13156140afc4dc595d05fc3a5b06bb9b72515c8341e7b9792198ee8",
+    "word_for_word": "kṛpaṇān — 1. mf(s; iti — thus; anyān — 1. (3), , n. inexhaustibleness (as of the milk of cows), ( cf. .).s; śiśūn — śiśūn; haniṣyatīti — haniṣyatīti; jñātvā — jñātvā; vārayati — vārayati; pāṭhāntare — in/on ‘another reading’, a variation of the text in a book or manuscript; mā — do not; māṃ — a mother; kṛpaṇāṃ — kṛpaṇāṃ; vṛthā'hiṃsīr — vṛthā'hiṃsīr; hiṃsitavān — hiṃsitavān; asīti — asīti.",
+    "translation": "Knowing that he will kill other children because they are miserable, he stops them. In another text, do not harm me, who am wretched, for you have harmed me in vain.",
+    "lexical_reviewed": true
   },
   "13": {
-    "word_for_word": "bahu — many; much; nāma — name; nikeṭeṣu — nikeṭeṣu; vārāṇasy — vārāṇasy; ādi — beginning; and so on; sthāneṣu — in/among (also said to be m. , ) the act of standing, standing firmly, being fixed or stationary, &c. &c.s."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2bc5014d38ae8b1222a44027b133aaa335f84043f07261531562689bd368db95",
+    "word_for_word": "bahu — many; much; nāma — name; nikeṭeṣu — nikeṭeṣu; vārāṇasy — vārāṇasy; ādi — beginning; and so on; sthāneṣu — in/among (also said to be m. , ) the act of standing, standing firmly, being fixed or stationary, &c. &c.s.",
+    "translation": "In places like Varanasi and other neighborhoods with many names.",
+    "lexical_reviewed": true
   },
   "14": {
-    "word_for_word": "parama — supreme; vismitaḥ — fn. amazed, surprised, perplexed; kathaṃ — (in comp. for; daivī — ( ), f. a woman married according to the rite; vāg — in comp. for .; anṛtā — anṛtā; jāteti — jāteti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "67aef383e28da5be77cc995cf2c12b1bc1abcefe2b99fb0ab1657d9a1a59b722",
+    "word_for_word": "parama — supreme; vismitaḥ — fn. amazed, surprised, perplexed; kathaṃ — (in comp. for; daivī — ( ), f. a woman married according to the rite; vāg — in comp. for .; anṛtā — anṛtā; jāteti — jāteti.",
+    "translation": "He was most astonished at how the divine words could become false.",
+    "lexical_reviewed": true
   },
   "15": {
-    "word_for_word": "bhāma — 1. m. (for 2. See p. 752, col. 3 ) light, brightness, splendour; he — a vocative particle (‘oh!’ ‘ho!’ &c.; bhaganī — bhaganī; bhartaḥ — bhartaḥ; puruṣādo — puruṣādo; rākṣaso — rākṣaso; yathā — as; just as; svāpatyam — svāpatyam; eva — only; indeed; hinasti — hinasti; tadvat — fn. having or containing that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "edfec3c4e6b71bf67393500f481acddf85c515a63300201cb96aeb5492bfa4e9",
+    "word_for_word": "bhāma — 1. m. (for 2. See p. 752, col. 3 ) light, brightness, splendour; he — a vocative particle (‘oh!’ ‘ho!’ &c.; bhaganī — bhaganī; bhartaḥ — bhartaḥ; puruṣādo — puruṣādo; rākṣaso — rākṣaso; yathā — as; just as; svāpatyam — svāpatyam; eva — only; indeed; hinasti — hinasti; tadvat — fn. having or containing that.",
+    "translation": "Bham, O sister-in-law. Just as a demon who eats men kills his own children",
+    "lexical_reviewed": true
   },
   "16": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "18": {
-    "word_for_word": "he — a vocative particle (‘oh!’ ‘ho!’ &c.; mahā — great; bhāgau — the two 1. m. (√ ) a part, portion, share, allotment, inheritance (in Ved. also = lot, esp. fortunate lot, good fortune, luck, destiny), &c. &c.s; sva — own; self; kṛtaṃ — 1. mfn. done, made, accomplished, performed; bhujaḥ — ( ifc. f( ). ) the arm; svārabdha — or , mfn. self-undertaken; karma — action; karma; bhoktṝn — bhoktṝn; svātmajān — svātmajān; mā — do not; śocatam — śocatam; kiṃ — 1. (in comp. for ).; ca — and; jantavaḥ — jantavaḥ; prāṇinaḥ — of fn. breathing, living, alive; sadā — always; nāsate — nāsate; kintv — kintv; alpa — little; small; kālam — ( ), ind. for a certain time ( e.g. , for a long time, ); eva — only; indeed; tadāpy — tadāpy; ekatra — in one, in one and the same; nāsate — nāsate; kintu — but; viyujyante — viyujyante; yato — in comp. for .; daivādhīnāḥ — fn. subject to fates."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9501c56c48cf0cbf4ba318091a1fcbb98524e5dbd5c669f2cb796afe24d5a3b5",
+    "word_for_word": "he — a vocative particle (‘oh!’ ‘ho!’ &c.; mahā — great; bhāgau — the two 1. m. (√ ) a part, portion, share, allotment, inheritance (in Ved. also = lot, esp. fortunate lot, good fortune, luck, destiny), &c. &c.s; sva — own; self; kṛtaṃ — 1. mfn. done, made, accomplished, performed; bhujaḥ — ( ifc. f( ). ) the arm; svārabdha — or , mfn. self-undertaken; karma — action; karma; bhoktṝn — bhoktṝn; svātmajān — svātmajān; mā — do not; śocatam — śocatam; kiṃ — 1. (in comp. for ).; ca — and; jantavaḥ — jantavaḥ; prāṇinaḥ — of fn. breathing, living, alive; sadā — always; nāsate — nāsate; kintv — kintv; alpa — little; small; kālam — ( ), ind. for a certain time ( e.g. , for a long time, ); eva — only; indeed; tadāpy — tadāpy; ekatra — in one, in one and the same; nāsate — nāsate; kintu — but; viyujyante — viyujyante; yato — in comp. for .; daivādhīnāḥ — fn. subject to fates.",
+    "translation": "O great-fortunates! Do not grieve for your own children who are enjoying the fruits of your own actions. What’s more, animals are not always creatures, but only for a short time. Even then they are not together but separated. Because they are subject to fate.",
+    "lexical_reviewed": true
   },
   "19": {
-    "word_for_word": "sadā — always; nāsata — nāsata; ity — thus; anena — by this; yad — ( nom. and acc. sg. n. and base in comp. of 3. ), who, which, what, whichever, whatever, that, &c. &c. (with correlatives , , , , , , , , , , , ,…; uktaṃ — fn. ( p.p. of √ , q.v. , , ), uttered, said, spoken; janma — birth; maraṇādi — maraṇādi; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; api — also; dehānām — of n. (√ , to plaster, mould, fashion) the bodys; eva — only; indeed; nātmana — nātmana; ity — thus; āha — says; bhuvīti — bhuvīti; bhūtāni — bhūtāni; dehā — dehā; eva — only; indeed; yānty — yānty; apayānti — apayānti; ca — and; bhavanti — are; become; na — not; bhavanti — are; become; cety — cety; arthaḥ — meaning; object; purpose; yathā — as; just as; bhuvi — loc. of 2. , in comp.; bhaumāni — bhaumāni; ghaṭādīni — ghaṭādīni; tadvat — fn. having or containing that; eteṣu — in/among 1. (for 2. See s.v. ) mfn. come near, approacheds; bhūteṣu — in/among f( )n. become, been, gone, past ( n. the past), &c. &c.s; janmādibhir — janmādibhir; vikriyamāṇeṣv — vikriyamāṇeṣv; ayam — this; he; aparokṣatayā — aparokṣatayā; pratyabhijñāyamāno — pratyabhijñāyamāno; na — not; viparyeti — viparyeti; viparyayaṃ — fn. reversed, inverted, perverse, contrary to ( gen. ); na — not; prāpnoti — attains; eka — one; rūpa — form; eva — only; indeed; vartata — vartata; ity — thus; arthaḥ — meaning; object; purpose; bhaumeṣu — in/among f( )n. relating or dedicated to the earth, produced or coming from the earth, earthly, terrestrial, &c. &c. (with m. = hell on earths; vikriyamāṇeṣu — vikriyamāṇeṣu; yathā — as; just as; bhūs — bhūs; tatheti — tatheti; evaṃ — 1. ind. (in the also ) (√; vicāryamāṇe — vicāryamāṇe; sati — =; na — not; śokādyavakāśaḥ — śokādyavakāśaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c1bbb5e5b331c72c4749a92e0b25371019255a700b60bf51f606398e823821df",
+    "word_for_word": "sadā — always; nāsata — nāsata; ity — thus; anena — by this; yad — ( nom. and acc. sg. n. and base in comp. of 3. ), who, which, what, whichever, whatever, that, &c. &c. (with correlatives , , , , , , , , , , , ,…; uktaṃ — fn. ( p.p. of √ , q.v. , , ), uttered, said, spoken; janma — birth; maraṇādi — maraṇādi; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; api — also; dehānām — of n. (√ , to plaster, mould, fashion) the bodys; eva — only; indeed; nātmana — nātmana; ity — thus; āha — says; bhuvīti — bhuvīti; bhūtāni — bhūtāni; dehā — dehā; eva — only; indeed; yānty — yānty; apayānti — apayānti; ca — and; bhavanti — are; become; na — not; bhavanti — are; become; cety — cety; arthaḥ — meaning; object; purpose; yathā — as; just as; bhuvi — loc. of 2. , in comp.; bhaumāni — bhaumāni; ghaṭādīni — ghaṭādīni; tadvat — fn. having or containing that; eteṣu — in/among 1. (for 2. See s.v. ) mfn. come near, approacheds; bhūteṣu — in/among f( )n. become, been, gone, past ( n. the past), &c. &c.s; janmādibhir — janmādibhir; vikriyamāṇeṣv — vikriyamāṇeṣv; ayam — this; he; aparokṣatayā — aparokṣatayā; pratyabhijñāyamāno — pratyabhijñāyamāno; na — not; viparyeti — viparyeti; viparyayaṃ — fn. reversed, inverted, perverse, contrary to ( gen. ); na — not; prāpnoti — attains; eka — one; rūpa — form; eva — only; indeed; vartata — vartata; ity — thus; arthaḥ — meaning; object; purpose; bhaumeṣu — in/among f( )n. relating or dedicated to the earth, produced or coming from the earth, earthly, terrestrial, &c. &c. (with m. = hell on earths; vikriyamāṇeṣu — vikriyamāṇeṣu; yathā — as; just as; bhūs — bhūs; tatheti — tatheti; evaṃ — 1. ind. (in the also ) (√; vicāryamāṇe — vicāryamāṇe; sati — =; na — not; śokādyavakāśaḥ — śokādyavakāśaḥ.",
+    "translation": "He argues that the birth and death, which he has said are not always present, are also of the bodies and not of the self. This means that beings are bodies that move and disappear, whether they are created or not. Just as the earthly objects on the earth are like pots and other objects. When these beings are transformed by birth and death, this indirectly perceived universe does not reverse itself, nor does it reverse itself. This means that there is only one form. When the earth is sold, so is the earth. When this is considered, there is no room for grief.",
+    "lexical_reviewed": true
   },
   "20": {
-    "word_for_word": "ajñānatas — unawares, inadvertently.; tu — but; na — not; nivartata — nivartata; ity — thus; āha — says; yatheti — yatheti; yathā — as; just as; yathāvat — duly, properly, rightly, suitably, exactly; anevaṃ — otherwise; vida — fn. = prec. ( cf. , , ); evam — thus; in this way; ajānata — ajānata; ātma — (in comp. for; viparyayo — viparyayo; dehātma — dehātma; buddhir — buddhir; bhavati — is; becomes; yato — in comp. for .; viparyayād — viparyayād; bhedo — bhedo; bhavati — is; becomes; dehāhaṅkāreṇa — dehāhaṅkāreṇa; hy — hy; ātmani — ātmani; paricchinne — in/on fn. cut off, divided, detached, confined, limited, circumscribed ( n. ); satīdaṃ — satīdaṃ; kārāspadaṃ — kārāspadaṃ; bhinnaṃ — fn. split, broken, shattered, pierced, destroyed, &c. &c.; bhavati — is; becomes; yato — in comp. for .; bhedāt — from &c. See p. 766.; putrādi — putrādi; dehair — dehair; yogo — yogo; viyogaś — viyogaś; ca — and; tataḥ — then; from that; saṃsṛtiḥ — course, revolution, ( esp. ) passage through successive states of existence, course of mundane existence, transmigration, the world ( n. and n.…; sukha — happiness; duḥkhe — in/on 1. mfn. (according to grammarians properly written and said to be from and; iti — thus; yāvad — in comp. for .; ajñānaṃ — non-cognizance; na — not; nivartate — nivartate; ity — thus; arthaḥ — meaning; object; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "06e90e3fdcf73af7db780dbbe58c86383c84bc3573dd8e065d1763148a713d66",
+    "word_for_word": "ajñānatas — unawares, inadvertently.; tu — but; na — not; nivartata — nivartata; ity — thus; āha — says; yatheti — yatheti; yathā — as; just as; yathāvat — duly, properly, rightly, suitably, exactly; anevaṃ — otherwise; vida — fn. = prec. ( cf. , , ); evam — thus; in this way; ajānata — ajānata; ātma — (in comp. for; viparyayo — viparyayo; dehātma — dehātma; buddhir — buddhir; bhavati — is; becomes; yato — in comp. for .; viparyayād — viparyayād; bhedo — bhedo; bhavati — is; becomes; dehāhaṅkāreṇa — dehāhaṅkāreṇa; hy — hy; ātmani — ātmani; paricchinne — in/on fn. cut off, divided, detached, confined, limited, circumscribed ( n. ); satīdaṃ — satīdaṃ; kārāspadaṃ — kārāspadaṃ; bhinnaṃ — fn. split, broken, shattered, pierced, destroyed, &c. &c.; bhavati — is; becomes; yato — in comp. for .; bhedāt — from &c. See p. 766.; putrādi — putrādi; dehair — dehair; yogo — yogo; viyogaś — viyogaś; ca — and; tataḥ — then; from that; saṃsṛtiḥ — course, revolution, ( esp. ) passage through successive states of existence, course of mundane existence, transmigration, the world ( n. and n.…; sukha — happiness; duḥkhe — in/on 1. mfn. (according to grammarians properly written and said to be from and; iti — thus; yāvad — in comp. for .; ajñānaṃ — non-cognizance; na — not; nivartate — nivartate; ity — thus; arthaḥ — meaning; object; purpose.",
+    "translation": "But it does not cease from ignorance, he argues, as. As one who knows this is not so, the opposite of the self becomes the intellect of the body and the self, because there is a difference from the opposite. This means that when the ego of the body is separated from the self, this true prison is different, because from the difference, yoga and separation from the bodies of the son and others, and then continue in happiness and distress, ignorance does not cease.",
+    "lexical_reviewed": true
   },
   "21": {
-    "word_for_word": "evam — thus; in this way; ukta — stated; prakāreṇa — prakāreṇa; naite — naite; tava — your; of you; tanayā — ( g. ) a daughter, ( v.l. ); ahaṃ — (in comp. for ).; tu — but; tāvan — in comp. for .; na — not; ghaṭitavāṃs — ghaṭitavāṃs; tathā'py — tathā'py; ajñāna — non-cognizance; dṛṣṭyā — dṛṣṭyā; sva — own; self; tanayān — fn. propagating a family, belonging to one's own family (often said of )s; mayā — by me; vyāpāditān — fn. destroyed, killed, slain ( mfn. one who has destroyed &c.)s; api — also; mānuṣoceti — mānuṣoceti; sāntvayati — sāntvayati; tasmād — tasmād; iti — thus; ajñānāśrayam — ajñānāśrayam; eva — only; indeed; karma — action; karma; vādam — fn. ( fr. √ ) speaking of or about (see ); āha — says; yata — See under √ , p. 845.; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c665340a1572864260dcb6dbfeb794e60b087595fd967318aa6684a4718b0743",
+    "word_for_word": "evam — thus; in this way; ukta — stated; prakāreṇa — prakāreṇa; naite — naite; tava — your; of you; tanayā — ( g. ) a daughter, ( v.l. ); ahaṃ — (in comp. for ).; tu — but; tāvan — in comp. for .; na — not; ghaṭitavāṃs — ghaṭitavāṃs; tathā'py — tathā'py; ajñāna — non-cognizance; dṛṣṭyā — dṛṣṭyā; sva — own; self; tanayān — fn. propagating a family, belonging to one's own family (often said of )s; mayā — by me; vyāpāditān — fn. destroyed, killed, slain ( mfn. one who has destroyed &c.)s; api — also; mānuṣoceti — mānuṣoceti; sāntvayati — sāntvayati; tasmād — tasmād; iti — thus; ajñānāśrayam — ajñānāśrayam; eva — only; indeed; karma — action; karma; vādam — fn. ( fr. √ ) speaking of or about (see ); āha — says; yata — See under √ , p. 845.; iti — thus.",
+    "translation": "In the manner thus stated, these are not your daughters, but I have not happened so much. He argues that the argument of action is based on ignorance, because.",
+    "lexical_reviewed": true
   },
   "22": {
-    "word_for_word": "kathaṃ — (in comp. for; tarhi — then; brāhmaṇādi — brāhmaṇādi; hantus — hantus; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; vadhyasya — of fn. (frequently written ) to be slain or killed, to be capitally punished, to be corporally chastised ( cf. under ), sentenced, a criminal, &c. &c.; caa — caa; prāyaścitta — (; śravaṇam — 1. n. the act of hearing (also ‘that which is heard’ = , q.v.; ajñāna — non-cognizance; mūlam — (or m. g.; evety — evety; āha — says; yāvad — in comp. for .; iti — thus; asvadṛk — asvadṛk; dehābhimānī — dehābhimānī; tāvat — f( )n. ( fr. 2.; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; abhimānī — abhimānī; tasya — of him; of that; dehasya — of n. (√ , to plaster, mould, fashion) the body; hananam — f( )n. killing, a killer, slayer; ātmany — ātmany; abhimanyamāna — abhimanyamāna; ity — thus; arthaḥ — meaning; object; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7f98cfb6f848817110d652cb9b5be995091156b047f8b0772aba403fb10b04ab",
+    "word_for_word": "kathaṃ — (in comp. for; tarhi — then; brāhmaṇādi — brāhmaṇādi; hantus — hantus; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; vadhyasya — of fn. (frequently written ) to be slain or killed, to be capitally punished, to be corporally chastised ( cf. under ), sentenced, a criminal, &c. &c.; caa — caa; prāyaścitta — (; śravaṇam — 1. n. the act of hearing (also ‘that which is heard’ = , q.v.; ajñāna — non-cognizance; mūlam — (or m. g.; evety — evety; āha — says; yāvad — in comp. for .; iti — thus; asvadṛk — asvadṛk; dehābhimānī — dehābhimānī; tāvat — f( )n. ( fr. 2.; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; abhimānī — abhimānī; tasya — of him; of that; dehasya — of n. (√ , to plaster, mould, fashion) the body; hananam — f( )n. killing, a killer, slayer; ātmany — ātmany; abhimanyamāna — abhimanyamāna; ity — thus; arthaḥ — meaning; object; purpose.",
+    "translation": "How, then, is it that the hearing of the atonement for the killer of a brāhmaṇa or other person is the root of ignorance? He is self-conscious and self-conscious. Meanwhile, that proud person is killing that body, which means that he is proud of himself.",
+    "lexical_reviewed": true
   },
   "23": {
-    "word_for_word": "śyālaḥ — See .; kaṃsāḥ — n. (√ , ), a vessel made of metal, drinking vessel, cup, goblets; svasror — svasror; iti — thus; svasṛ — (of doubtful derivation) a sister (also applied to closely connected things of the fem. gender, as to the fingers, the waters &c.); śabdena — by/with (in also n. ifc. f( ). perhaps connected with √ 3. cf. also 2. ) sound, noise, voice, tone, note ( , to utter a sound, raise the voice, cry aloud; dvi — two; vacanānupapattyā — vacanānupapattyā; mithuna — f( )n. paired, forming a pair; gaṇa — a flock, troop, multitude, number, tribe, series, class (of animate or inanimate beings), body of followers or attendants; dvārā — dvārā; mithuni — mithuni; lakṣaṇayā — lakṣaṇayā; svasṛ — (of doubtful derivation) a sister (also applied to closely connected things of the fem. gender, as to the fingers, the waters &c.); tat — that; patyor — patyor; abhidhānaṃ — telling, naming, speaking, speech, manifesting; liṅga — (once m. in; samavāya — coming or meeting together, contact, concourse, congress, assemblage, collection, crowd, aggregate ( or , ‘in combination’; nyāyena — either ‘in the right manner, regularly, duly’, or ifc. ‘after the manner of, by way of’; prāṇa — life-air; living being; bhṛta — fn. borne, carried &c. (see prec. ); upadādhāti — upadādhāti; iti — thus; vat — like; possessing; devakī — See below.; vasudevayoḥ — of the two N. of the father of (he was the son of , a descendant of of the lunar line, and was also called q.v. , because at his birth the gods, foreseeing…s; praty — in comp. before vowels for above.; ekaṃ — fn. (√ , , probably fr. a base; pādam — ( ifc. f( ). , rarely f( ). ) the foot (of men and animals), &c. &c. (the pl. sometimes added to proper names or titles in token of respect, e.g.…; agrahīd — agrahīd; ity — thus; arthaḥ — meaning; object; purpose; śyāla — See .; śabdena — by/with (in also n. ifc. f( ). perhaps connected with √ 3. cf. also 2. ) sound, noise, voice, tone, note ( , to utter a sound, raise the voice, cry aloud; vā — or; kathañcid — kathañcid; vasudevābidhānam — vasudevābidhānam."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6cfeca00509018d3ba56d37fa0f1082395e48d8e211ecd20bf791c3fe7a65007",
+    "word_for_word": "śyālaḥ — See .; kaṃsāḥ — n. (√ , ), a vessel made of metal, drinking vessel, cup, goblets; svasror — svasror; iti — thus; svasṛ — (of doubtful derivation) a sister (also applied to closely connected things of the fem. gender, as to the fingers, the waters &c.); śabdena — by/with (in also n. ifc. f( ). perhaps connected with √ 3. cf. also 2. ) sound, noise, voice, tone, note ( , to utter a sound, raise the voice, cry aloud; dvi — two; vacanānupapattyā — vacanānupapattyā; mithuna — f( )n. paired, forming a pair; gaṇa — a flock, troop, multitude, number, tribe, series, class (of animate or inanimate beings), body of followers or attendants; dvārā — dvārā; mithuni — mithuni; lakṣaṇayā — lakṣaṇayā; svasṛ — (of doubtful derivation) a sister (also applied to closely connected things of the fem. gender, as to the fingers, the waters &c.); tat — that; patyor — patyor; abhidhānaṃ — telling, naming, speaking, speech, manifesting; liṅga — (once m. in; samavāya — coming or meeting together, contact, concourse, congress, assemblage, collection, crowd, aggregate ( or , ‘in combination’; nyāyena — either ‘in the right manner, regularly, duly’, or ifc. ‘after the manner of, by way of’; prāṇa — life-air; living being; bhṛta — fn. borne, carried &c. (see prec. ); upadādhāti — upadādhāti; iti — thus; vat — like; possessing; devakī — See below.; vasudevayoḥ — of the two N. of the father of (he was the son of , a descendant of of the lunar line, and was also called q.v. , because at his birth the gods, foreseeing…s; praty — in comp. before vowels for above.; ekaṃ — fn. (√ , , probably fr. a base; pādam — ( ifc. f( ). , rarely f( ). ) the foot (of men and animals), &c. &c. (the pl. sometimes added to proper names or titles in token of respect, e.g.…; agrahīd — agrahīd; ity — thus; arthaḥ — meaning; object; purpose; śyāla — See .; śabdena — by/with (in also n. ifc. f( ). perhaps connected with √ 3. cf. also 2. ) sound, noise, voice, tone, note ( , to utter a sound, raise the voice, cry aloud; vā — or; kathañcid — kathañcid; vasudevābidhānam — vasudevābidhānam.",
+    "translation": "The brother-in-law is a Kansas. By the diphthong svasror, the word svasru, which is characterized by the gemini, took one step towards Devakī and Vasudeva, as in the case of \"prana-bhṛta upadadhati\" by the law of gender combination. Or by the word śyāla, somehow Vasudeva’s prescription.",
+    "lexical_reviewed": true
   },
   "24": {
-    "word_for_word": "ātma — (in comp. for; sauhṛdaṃ — fn. relating to or coming from a friend; priya — . See under √ 1. below.; vādādinā — vādādinā; darśayan — darśayan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2ede98a1e97d501acbc89cfe9829245ce4a4736c7a29f8dc585b3e4291597cbc",
+    "word_for_word": "ātma — (in comp. for; sauhṛdaṃ — fn. relating to or coming from a friend; priya — . See under √ 1. below.; vādādinā — vādādinā; darśayan — darśayan.",
+    "translation": "Showing self-friendliness by pleasant words and so on.",
+    "lexical_reviewed": true
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "26": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "27": {
-    "word_for_word": "sva — own; self; para — higher; other; bheda — difference; division; darśane — in/on f( )n. showing; kiṃ — 1. (in comp. for ).; bhavati — is; becomes; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; āha — says; śoka — sorrow; harṣeti — harṣeti; bhāvair — bhāvair; eva — only; indeed; nimitta — cause; occasion; bhūtair — bhūtair; mitho — in comp. for ( cf. g. ).; bhāvān — (√ ) becoming, being, existing, occurring, appearances; ghnantaṃ — ghnantaṃ; bhāvam — (√ ) becoming, being, existing, occurring, appearance; īśvaram — fn. able to do, capable of (with gen. of Vedic inf. , or with common inf. ), liable, exposed to; pṛthag — in comp. for .; dṛśaste — dṛśaste; na — not; paśyanti — paśyanti; kintv — kintv; aham — I; eva — only; indeed; hantā — hantā; hataś — hataś; ceti — ceti; manyanta — manyanta; ity — thus; arthaḥ — meaning; object; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ddac86c2903b240a2a26efc2926c5258a5e4be51705025d89a37506f2bb48ae7",
+    "word_for_word": "sva — own; self; para — higher; other; bheda — difference; division; darśane — in/on f( )n. showing; kiṃ — 1. (in comp. for ).; bhavati — is; becomes; tad — ( nom. and acc. sg. n. of and base in comp. for 2. from which latter all the cases of this pron. are formed except nom. sg. m. or & f.; āha — says; śoka — sorrow; harṣeti — harṣeti; bhāvair — bhāvair; eva — only; indeed; nimitta — cause; occasion; bhūtair — bhūtair; mitho — in comp. for ( cf. g. ).; bhāvān — (√ ) becoming, being, existing, occurring, appearances; ghnantaṃ — ghnantaṃ; bhāvam — (√ ) becoming, being, existing, occurring, appearance; īśvaram — fn. able to do, capable of (with gen. of Vedic inf. , or with common inf. ), liable, exposed to; pṛthag — in comp. for .; dṛśaste — dṛśaste; na — not; paśyanti — paśyanti; kintv — kintv; aham — I; eva — only; indeed; hantā — hantā; hataś — hataś; ceti — ceti; manyanta — manyanta; ity — thus; arthaḥ — meaning; object; purpose.",
+    "translation": "What happens when we see the difference between ourselves and others, he argues, is sorrow and joy. The Supreme Personality of Godhead is the Supreme Personality of Godhead, who is the cause of all emotions. This means that they do not see a separate scene but think that I am the killer and that I have been killed",
+    "lexical_reviewed": true
   },
   "28": {
-    "word_for_word": "viśuddhaṃ — fn. completely cleansed or purified (also in a ritual sense), clean, clear, pure ( lit. and fig. ); yathā — as; just as; bhavati — is; becomes."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a0a0d5507bd632b5b1d597c145dc9fe6af579546532a0268d32d860b96f3d614",
+    "word_for_word": "viśuddhaṃ — fn. completely cleansed or purified (also in a ritual sense), clean, clear, pure ( lit. and fig. ); yathā — as; just as; bhavati — is; becomes.",
+    "translation": "It’s as pure as it gets.",
+    "lexical_reviewed": true
   },
   "29": {
-    "word_for_word": "nāti — (for + , in comp.; kovidā — kovidā; dṛṣṭa — fn. seen, looked at, beheld, perceived, noticed; mātra — only; measure; matayo — matayo; na — not; dīrgha — f( )n. ( compar. , superl.; darśanāḥ — f( )n. showings."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b89c34bd2faf6c1e901dd89c35450d6a599a4b0c01ffac5ab01d5d528db06bac",
+    "word_for_word": "nāti — (for + , in comp.; kovidā — kovidā; dṛṣṭa — fn. seen, looked at, beheld, perceived, noticed; mātra — only; measure; matayo — matayo; na — not; dīrgha — f( )n. ( compar. , superl.; darśanāḥ — f( )n. showings.",
+    "translation": "They are not very experts, they have only seen opinions, and they have no long views.",
+    "lexical_reviewed": true
   },
   "30": {
-    "word_for_word": "nātikovidā — nātikovidā; dṛṣṭa — fn. seen, looked at, beheld, perceived, noticed; mātra — only; measure; matayo — matayo; na — not; dīrgha — f( )n. ( compar. , superl.; darśanāḥ — f( )n. showings."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a18b7a03598b74d1275a024a869b97507c19f470d1b12f0ea12dfbc0342098ad",
+    "word_for_word": "nātikovidā — nātikovidā; dṛṣṭa — fn. seen, looked at, beheld, perceived, noticed; mātra — only; measure; matayo — matayo; na — not; dīrgha — f( )n. ( compar. , superl.; darśanāḥ — f( )n. showings.",
+    "translation": "They are not very expert, they think only of what they have seen, nor do they have far-sightedness.",
+    "lexical_reviewed": true
   },
   "31": {
-    "word_for_word": "na — not; nirgatāni — nirgatāni; daśa — ten; dināni — dināni; yeṣāṃ — yeṣāṃ; tānanyāṃś — tānanyāṃś; ca — and."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0f0c1b1bbde9c0377229de648055caf3ca5a889b101599f4d80fce4c158a7939",
+    "word_for_word": "na — not; nirgatāni — nirgatāni; daśa — ten; dināni — dināni; yeṣāṃ — yeṣāṃ; tānanyāṃś — tānanyāṃś; ca — and.",
+    "translation": "Those who have not left for ten days and others",
+    "lexical_reviewed": true
   },
   "32": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "33": {
-    "word_for_word": "asyato — asyato; vidhyataḥ — vidhyataḥ; sataḥ — in comp. for .; utsṛjya — p. having let loose, having abandoned &c.; raṇaṃ — 1. m. delight, pleasure, gladness, joy; tyaktvā — having abandoned."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9e323f14db88dd1c7e4c7e39ccd827bdcc951e9abf34d2b48dd1c95d933c9b03",
+    "word_for_word": "asyato — asyato; vidhyataḥ — vidhyataḥ; sataḥ — in comp. for .; utsṛjya — p. having let loose, having abandoned &c.; raṇaṃ — 1. m. delight, pleasure, gladness, joy; tyaktvā — having abandoned.",
+    "translation": "This is the truth that is being struck. Leaving the battlefield behind.",
+    "lexical_reviewed": true
   },
   "34": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "35": {
-    "word_for_word": "anyāsaktān — fn. intent on something else.s; vimukhāṃś — vimukhāṃś; ceti — ceti; na — not; haṃsi — haṃsi; na — not; hinatsi — hinatsi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "590d984c621c5ea0957dbc60cbce1ce7586d94458d42f46b12267d6f252a8a83",
+    "word_for_word": "anyāsaktān — fn. intent on something else.s; vimukhāṃś — vimukhāṃś; ceti — ceti; na — not; haṃsi — haṃsi; na — not; hinatsi — hinatsi.",
+    "translation": "Thou dost not kill nor kill those who are attached to others and those who are averse to them.",
+    "lexical_reviewed": true
   },
   "36": {
-    "word_for_word": "kṣeme — in/on f( )n. (√ 2. ) habitable; nirbhaye — in/on fearlessness, security; deśe — in/on (√ 1. ) point, region, spot, place, part, portion; śūraiḥ — by/with fn. ( prob. fr. √ 1. = and connected with , , ) strong, powerful, valiant, heroic, brave ( cf. and )s; saṃyugād — saṃyugād; anyatra — elsewhere; vikatthanaṃ — fn. boasting, a boaster, braggart; prauḍhi — full growth, increase; vādo — vādo; yeṣāṃ — yeṣāṃ; taiḥ — by/with 1. the 1st dental consonant.s; nanu — but surely; indeed; harer — harer; bibhemi — bibhemi; śambhoś — śambhoś; ceti — ceti; cet — if; tatrāhuḥ — tatrāhuḥ; raho — in comp. for 2. .; juṣeti — juṣeti; sarvasyāpy — sarvasyāpy; antaḥ — within; praviṣṭena — by/with fn. entered; kvacid — kvacid; api — also; bahir — in comp. for .; adṛṣṭenety — adṛṣṭenety; arthaḥ — meaning; object; purpose; puruṣa — person; Puruṣa; pravṛtti — moving onwards, advance, progress; rahitam — fn. left, quitted, forsaken, deserted, lonely, solitary; ilāvṛta — N. of a son of (who received the as his kingdom); vanam — 1. n. (once m.; oko — oko; yasya — whose; of which; tena — by him; by that; śambhunā — śambhunā; vā — or."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b702750beba5a56eed86c96158c14a95815261b5d16cd4577715f3d19ae50e76",
+    "word_for_word": "kṣeme — in/on f( )n. (√ 2. ) habitable; nirbhaye — in/on fearlessness, security; deśe — in/on (√ 1. ) point, region, spot, place, part, portion; śūraiḥ — by/with fn. ( prob. fr. √ 1. = and connected with , , ) strong, powerful, valiant, heroic, brave ( cf. and )s; saṃyugād — saṃyugād; anyatra — elsewhere; vikatthanaṃ — fn. boasting, a boaster, braggart; prauḍhi — full growth, increase; vādo — vādo; yeṣāṃ — yeṣāṃ; taiḥ — by/with 1. the 1st dental consonant.s; nanu — but surely; indeed; harer — harer; bibhemi — bibhemi; śambhoś — śambhoś; ceti — ceti; cet — if; tatrāhuḥ — tatrāhuḥ; raho — in comp. for 2. .; juṣeti — juṣeti; sarvasyāpy — sarvasyāpy; antaḥ — within; praviṣṭena — by/with fn. entered; kvacid — kvacid; api — also; bahir — in comp. for .; adṛṣṭenety — adṛṣṭenety; arthaḥ — meaning; object; purpose; puruṣa — person; Puruṣa; pravṛtti — moving onwards, advance, progress; rahitam — fn. left, quitted, forsaken, deserted, lonely, solitary; ilāvṛta — N. of a son of (who received the as his kingdom); vanam — 1. n. (once m.; oko — oko; yasya — whose; of which; tena — by him; by that; śambhunā — śambhunā; vā — or.",
+    "translation": "In a safe and fearless country by the brave. Those who argue that they are mature and speak out other than in battle If, indeed, I am afraid of Hari and Shambho, they say, Raho-jushe. This means that he has entered into everything and has never seen anything outside. The forest of the Ilāvṛta forest without the involvement of men was destroyed by the oak tree or by Lord Śambhu",
+    "lexical_reviewed": true
   },
   "37": {
-    "word_for_word": "yady — yady; apy — apy; udyamair — udyamair; devā — ( ), f. Hibiscus Mutabilis or Marsilea Quadrifolia; na — not; kiñcid — kiñcid; api — also; kartuṃ — (for inf. of √ 1. , q.v. ); samarthās — samarthās; tathāpi — nevertheless; nītir — nītir; anusartavyety — anusartavyety; āhuḥ — they say; tathāpīti — tathāpīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "447adfab2e0e8418c9acdd80202007324396a83d7d7dc85e1e4e29f7ad04d164",
+    "word_for_word": "yady — yady; apy — apy; udyamair — udyamair; devā — ( ), f. Hibiscus Mutabilis or Marsilea Quadrifolia; na — not; kiñcid — kiñcid; api — also; kartuṃ — (for inf. of √ 1. , q.v. ); samarthās — samarthās; tathāpi — nevertheless; nītir — nītir; anusartavyety — anusartavyety; āhuḥ — they say; tathāpīti — tathāpīti.",
+    "translation": "They say that even if the gods are not able to do anything by enterprise, they should follow the policy, and so on.",
+    "lexical_reviewed": true
   },
   "38": {
-    "word_for_word": "rūḍha — fn. mounted, risen, ascended, &c. &c.; pado — pado; baddha — &c. See p. 720, col. 2 .; mūlaḥ — (or m. g.."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "44e28c747f7c82fee2de22f0bc4e88876395b82f69668c61406316cc728b183f",
+    "word_for_word": "rūḍha — fn. mounted, risen, ascended, &c. &c.; pado — pado; baddha — &c. See p. 720, col. 2 .; mūlaḥ — (or m. g..",
+    "translation": "The roots are tied to the roots of the roots.",
+    "lexical_reviewed": true
   },
   "39": {
-    "word_for_word": "devānāṃ — devānāṃ; mulaṃ — mulaṃ; viṣṇuḥ — ( prob. fr. √ , ‘All-pervader’ or ‘Worker’) N. of one of the principal Hindū deities (in the later mythology regarded as ‘the preserver’, and with…; sa — 1. the last of the three sibilants (it belongs to the dental class and in sound corresponds to s in sin ).; ca — and; yatra — where; dharmas — dharmas; tatrāste — tatrāste; dharmasya — of 1. m. (rarely n. g.; mūlaṃ — (or m. g.; vedādaya — vedādaya; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1d0ab9ca7d10997a46b2f24a2e029b81e18c43c62946d770dcb9f6c36b2780f7",
+    "word_for_word": "devānāṃ — devānāṃ; mulaṃ — mulaṃ; viṣṇuḥ — ( prob. fr. √ , ‘All-pervader’ or ‘Worker’) N. of one of the principal Hindū deities (in the later mythology regarded as ‘the preserver’, and with…; sa — 1. the last of the three sibilants (it belongs to the dental class and in sound corresponds to s in sin ).; ca — and; yatra — where; dharmas — dharmas; tatrāste — tatrāste; dharmasya — of 1. m. (rarely n. g.; mūlaṃ — (or m. g.; vedādaya — vedādaya; iti — thus.",
+    "translation": "Lord Viṣṇu is the root of the demigods, and wherever there is religion, He resides. The Vedas and others are the root of religion.",
+    "lexical_reviewed": true
   },
   "40": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "41": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "42": {
-    "word_for_word": "kiṃ — 1. (in comp. for ).; ca — and; viprādayo — viprādayo; harer — harer; eva — only; indeed; tanavo — tanavo; yasmāt — because; from which; tasmād — tasmād; ayam — this; he; evopāya — evopāya; ity — thus; āhuḥ — they say; ayam — this; he; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4c5192400ad0f46b4ab4a3adcfd46096bbd999b787410cf809de5cc0fc167551",
+    "word_for_word": "kiṃ — 1. (in comp. for ).; ca — and; viprādayo — viprādayo; harer — harer; eva — only; indeed; tanavo — tanavo; yasmāt — because; from which; tasmād — tasmād; ayam — this; he; evopāya — evopāya; ity — thus; āhuḥ — they say; ayam — this; he; iti — thus.",
+    "translation": "Moreover, since the brāhmaṇas and others are the very bodies of the Supreme Personality of Godhead, they say, \"This is the only means.",
+    "lexical_reviewed": true
   },
   "43": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "44": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "45": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2e7a7026b064d29986cd77b2ac1d522c50d6ce5254ed92c499e39e78fb0ec5f4",
+    "word_for_word": "आरात् समीपम् आगतो मृत्युर् येषां ते ॥४६॥ — Those whose death has come near from the beginning.",
+    "translation": "Those whose death has come near from the beginning."
   },
   "46": {
-    "word_for_word": "satāṃ — satāṃ; vidveṣo — vidveṣo; na — not; mṛtyu — death; mātra — only; measure; hetuḥ — &c. See p. 1303, col. 3 .; kintu — but; bahv — in comp. for .; anartha — non-value, a worthless or useless object; kārīty — kārīty; āha — says; āyuḥ — (in comp. for below).; śriyam — śriyam; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "41505ca962ddff577d04451accaa4668d75f31b81f89eb1bf068400cb3caa797",
+    "word_for_word": "satāṃ — satāṃ; vidveṣo — vidveṣo; na — not; mṛtyu — death; mātra — only; measure; hetuḥ — &c. See p. 1303, col. 3 .; kintu — but; bahv — in comp. for .; anartha — non-value, a worthless or useless object; kārīty — kārīty; āha — says; āyuḥ — (in comp. for below).; śriyam — śriyam; iti — thus.",
+    "translation": "He argues that hatred of the virtuous is not only the cause of death but also the cause of many evils, namely, longevity and prosperity.",
+    "lexical_reviewed": true
   }
 }

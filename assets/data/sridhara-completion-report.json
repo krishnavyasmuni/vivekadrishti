@@ -1,0 +1,19 @@
+{
+  "scope": "Śrīdhara Svāmī Bhāvārtha-dīpikā — Bhāgavatam Cantos 2 and 10",
+  "completed_at": "2026-08-24",
+  "policy": "Exact Sanskrit source; reviewed records preserved; remaining records translated directly clause-by-clause; no dictionary-generated prose and no summary layer.",
+  "canto_10": {
+    "source_blocks": 3586,
+    "completed_blocks": 3586,
+    "hand_reviewed_preserved": 395,
+    "explicit_no_commentary": 708
+  },
+  "canto_2": {
+    "source_blocks": 274,
+    "completed_blocks": 274,
+    "hand_reviewed_preserved": 39,
+    "explicit_no_commentary": 0
+  },
+  "machine_direct_records_are_marked_source_aligned_not_reviewed": true,
+  "validation_errors": []
+}

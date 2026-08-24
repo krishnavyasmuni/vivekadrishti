@@ -1,137 +1,352 @@
 {
   "1": {
-    "word_for_word": "catuś — in comp. or; catvāriṃśake — catvāriṃśake; tu — but; malla — a wrestler or boxer by profession (the offspring of an out-caste by a emale who…; kaṃsādi — kaṃsādi; mardanam — crushing; dir=\"rtl — dir=\"rtl; kaṃsa — Kaṃsa; yoṣit — =; samāśvāsas — samāśvāsas; tābhyāṃ — tābhyāṃ; pitroś — pitroś; ca — and; darśanam — seeing; vision; dir=\"rtl — dir=\"rtl; carcito — carcito; niścita — one who has come to a conclusion or ormed a certain opinion; eva — only; indeed; saṅkalpo — saṅkalpo; yasya — whose; of which; saḥ — he; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3fb8b7bf6993a102f7316b03f4f5ab91647bfa9f327dd324cd92c63ac93e5f38",
+    "word_for_word": "चतुश्-चत्वारिंशके तु मल्ल-कंसादि-मर्दनम् [।]{दिर्=\"र्त्ल्\"} — In the fourth and fortieth, the wrestlers and others are crushed [.]{dir=\"rtl\"}; कंस-योषित् समाश्वासस् ताभ्यां पित्रोश् च दर्शनम् [॥]{दिर्=\"र्त्ल्\"} — The consolation of Kaṁsa's wife and the sight of their father [॥]{dir=\"rtl\"}; चर्चितो निश्चित एव सङ्कल्पो यस्य सः ॥१॥ — He whose resolve is discussed and fixed.",
+    "translation": "In the fourth and fortieth, the wrestlers and others are crushed [.]{dir=\"rtl\"} The consolation of Kaṁsa's wife and the sight of their father [॥]{dir=\"rtl\"} He whose resolve is discussed and fixed."
   },
   "2": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "3": {
-    "word_for_word": "bāhu — ( r. √; madhyāt — rom the idst of; kaniṣṭhāṅguli — kaniṣṭhāṅguli; vyatirekeṇa — with exception of; kṛta — done; made; muṣṭir — muṣṭir; hasto'ratniḥ — hasto'ratniḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "15172f70edb39ee2517f7b2350c5ce5269313a1ec88ddf950b45a0e3ab49ea98",
+    "word_for_word": "बाहु-मध्यात् कनिष्ठाङ्गुलि-व्यतिरेकेण कृत-मुष्टिर् हस्तोऽरत्निः ॥३॥ — The jewel of the hand is a fist made from the middle of the arm with the separation of the lower fingers.",
+    "translation": "The jewel of the hand is a fist made from the middle of the arm with the separation of the lower fingers."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "70d5cfaa2408b257dfdfe327c99823d440b28e8e9247df4db6859f8d46f80cbc",
+    "word_for_word": "परिभ्रामणं हस्तादिषु गृहीत्वा परितश् चालनम् । — Rotation is the movement of the body by holding it in the hands and other parts of the body; विक्षेपो नोदनम् । — Deflection is a notation.; परिरम्भो बाहुभ्यां निष्पीडनम् । — Embrace is the squeezing of the arms.; अवपातनम् अधः[-]{दिर्=\"र्त्ल्\"}क्षेपः । — Deduction is a downward[-]{dir=\"rtl\"}throw.; उत्सर्पणम् उत्सृज्य पुरतो गमनम् । — Leaving the excretion behind and moving forward.; अपसर्पणं पृष्ठतो गमनम् । — To slip away is to go behind.; एतैः प्रत्यरुन्धतां प्रत्यावृतवन्तौ ॥४॥ — With these they covered the obstruction.",
+    "translation": "Rotation is the movement of the body by holding it in the hands and other parts of the body Deflection is a notation. Embrace is the squeezing of the arms. Deduction is a downward[-]{dir=\"rtl\"}throw. Leaving the excretion behind and moving forward. To slip away is to go behind. With these they covered the obstruction."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c6e9ab28666a251f7a2846ae0e7b0d311b784f0c8efe219d4a33e0377978a137",
+    "word_for_word": "उत्थापनं जानुनी पादौ च पिण्डी-कृत्य पतितस्योच्चाटनम् । — Lifting the knees and legs together and lifting the fallen person.; उन्नयनं हस्ताभ्याम् उद्धृत्य नयनम् । — Raise your hands and lift your eyes.; चालनं कण्ठादि-लग्नस्य निःसारणम् । — Movement is the expulsion of the neck and other attachments.; स्थापनं पादादि-पिण्डी-करणम् । — Installation is the pinning of the feet and other objects.; एवं परस्परम् आत्मनो देहस्य अपचक्रतुर् अपकारं कृतवन्तौ ॥५॥ — Thus they destroyed each other's bodies and did harm to each other.",
+    "translation": "Lifting the knees and legs together and lifting the fallen person. Raise your hands and lift your eyes. Movement is the expulsion of the neck and other attachments. Installation is the pinning of the feet and other objects. Thus they destroyed each other's bodies and did harm to each other."
+  },
+  "6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "90d220b83ee97a2d9e21f0675bd5b04c5fe6d6c93b9eb24c456d68579c34dc88",
+    "word_for_word": "तद् युद्धं बलाबलवद्[,]{दिर्=\"र्त्ल्\"} एकतो बलम् अन्यतोऽबलम्[,]{दिर्=\"र्त्ल्\"} तद्-युक्तं बलाबलवत् विषमम् इत्य् ऊचुर् इत्य् अर्थः । — That battle was said to be as strong and weak[,]{dir=\"rtl\"} as strong on one side and weak on the other[,]{dir=\"rtl\"} as uneven as strong and weak with it.; वरूथशः समेताः सङ्घशो मिलिताः । — They gathered in herds and groups; यद् वा, बलाबलवतोर् युद्धं दृष्ट्वा महान् अयम् अधर्म इत्य् ऊचुर् इत्य् अन्वयः । — Or rather, it follows that when they saw the battle between the strong and the weak, they said, “This is a great iniquity.”; अत्र दृष्ट्वेत्य् अध्याहार्यम् ॥६॥ — Here, seeing, it is to be addressed.",
+    "translation": "That battle was said to be as strong and weak[,]{dir=\"rtl\"} as strong on one side and weak on the other[,]{dir=\"rtl\"} as uneven as strong and weak with it. They gathered in herds and groups Or rather, it follows that when they saw the battle between the strong and the weak, they said, “This is a great iniquity.” Here, seeing, it is to be addressed."
   },
   "7": {
-    "word_for_word": "tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; eva — only; indeed; darśayati — darśayati; mahān — greats; iti — thus; bālayor — bālayor; balavatoś — balavatoś; ca — and; yuddhaṃ — battle; rājā — king; cet — if; paśya — seeing; it — ifc. going; svayaṃ — in comp. or; vāraṇīyaḥ — to be checked or restrained; ete — these; tu — but; rājñaḥ — rājñaḥ; paśyataḥ — visible; svayam — himself; oneself; anvicchanty — anvicchanty; anunanyanta — anunanyanta; iti — thus; mahān — greats; adharma — unrighteousness; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "024c9b72a37d56fd06417f3e68f35afb241dbc221069a72bd83c10cb31de4517",
+    "word_for_word": "तद् एव दर्शयति---महान् इति । — That’s what it shows: it’s great.; बालयोर् बलवतोश् च युद्धं राजा चेत् पश्येत् स्वयं वारणीयः । — If the king sees a fight between a child and a strong man he himself should be prevented; एते तु राज्ञः पश्यतः स्वयम् अन्विच्छन्त्य् अनुनन्यन्त इति महान् अधर्म इत्य् अर्थः ॥७॥ — These, however, seek and persuade themselves while the king is watching, which means that it is a great iniquity.",
+    "translation": "That’s what it shows: it’s great. If the king sees a fight between a child and a strong man he himself should be prevented These, however, seek and persuade themselves while the king is watching, which means that it is a great iniquity."
   },
   "8": {
-    "word_for_word": "balābalavad — balābalavad; yuddhatāṃ — yuddhatāṃ; prapañcayati — expands; elaborates; pañcabhiḥ — by/with fives; kveti — kveti; vajra — ‘the hard or ighty one’; sārāṇi — sārāṇi; vajravat — vajravat; kaṭhina — hard; ani — the pin of an axle tree; sarvāṇy — sarvāṇy; aṅga — limb; body; ani — the pin of an axle tree; yayos — yayos; tau — the two the 1st dental consonants."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e51f2c5763b947c3756e383ab689d69c3d6cd5009ebc27ac863ad96d48f6999d",
+    "word_for_word": "बलाबलवद् युद्धतां प्रपञ्चयति पञ्चभिः---क्वेति । — He pretends to be a fighter like a strong man in five ways.; वज्र-साराणि वज्रवत् कठिनानि सर्वाण्य् अङ्गानि ययोस् तौ ॥८॥ — They both had thunderbolt-like essences and all their limbs were as hard as thunderbolts.",
+    "translation": "He pretends to be a fighter like a strong man in five ways. They both had thunderbolt-like essences and all their limbs were as hard as thunderbolts."
+  },
+  "9": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b0dab997bb229b5874505b661d7bce421cc89ab537961751a05999f2f7aca321",
+    "word_for_word": "समाजस्य सभायाः ॥९॥ — of the assembly of the society.",
+    "translation": "of the assembly of the society."
   },
   "10": {
-    "word_for_word": "aparā — the west; ūcuḥ — they said; na — not; sabhām — (of unknown derivation; iti — thus; abruvan — abruvan; jñātvā — having know; api — also; tūṣṇīṃ — or; tiṣṭhan — tiṣṭhan; vibruvan — vibruvan; viparītaṃ — turned round; bruvan — bruvan; ajño — ajño; na — not; jānām — of the 3rd palatal letters; īti — plague; bruvan — bruvan; ataḥ — therefore; from this; prājño — prājño; na — not; sabhāṃ — (of unknown derivation; praviśed — praviśed; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2b81848c5e44900aaf6d88c3baa8de8b17211b1f166a63ce5a918c69d432deef",
+    "word_for_word": "अपरा ऊचुः---न सभाम् इति । — Others said, \"Not a meeting.; अब्रुवन् ज्ञात्वापि तूष्णीं तिष्ठन्, विब्रुवन् विपरीतं ब्रुवन्, अज्ञो न जानाम् ईति ब्रुवन् । — He who speaks knowingly remains silent, he who speaks the opposite, he who is ignorant says that he does not know.; अतः प्राज्ञो न सभां प्रविशेद् इति ॥१०॥ — Therefore a wise man should not enter the assembly.",
+    "translation": "Others said, \"Not a meeting. He who speaks knowingly remains silent, he who speaks the opposite, he who is ignorant says that he does not know. Therefore a wise man should not enter the assembly."
+  },
+  "11": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "af654d5ead7caaccda79cb3ebb9d90256c710b75f58fa495d636edd83d8ab5bf",
+    "word_for_word": "वल्गतः शत्रुम् अभित इति । — Walgata is around the enemy.; शत्रोः सर्वतो धावतः कृष्णस्य श्रम-वारिणा उप्तं व्याप्तं मुखाम्बुजं दृश्यताम् ॥११॥ — Behold the lotus face of Krishna covered with the waters of exhaustion as the enemy runs from all sides",
+    "translation": "Walgata is around the enemy. Behold the lotus face of Krishna covered with the waters of exhaustion as the enemy runs from all sides"
   },
   "12": {
-    "word_for_word": "anyā — inexhaustible; ūcuḥ — they said; kiṃ — what; na — not; paśyata — visible; iti — thus; sāmarṣaṃ — having impatience or anger; sa — the last of the three sibilants; krodham — anger; hāsena — by/with laughing; saṃrambha — the act of grasping or taking hold of; āveśaḥ — joining one's self; tena — by him; by that; śobhitam — splendid."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "15d6f871d57499461da06648211ca003ec7ee955ada491e75e27bcac25fc8a33",
+    "word_for_word": "अन्या ऊचुः---किं न पश्यत ? — Others said, \"Why don't you see?\"; इति । — It is.; सामर्षं स-क्रोधम् । — Anger and anger.; हासेन संरम्भ आवेशः, तेन शोभितम् ॥१२॥ — Laughter is the charge of anger, and it is adorned with it.",
+    "translation": "Others said, \"Why don't you see?\" It is. Anger and anger. Laughter is the charge of anger, and it is adorned with it."
   },
   "13": {
-    "word_for_word": "anyā — inexhaustible; ūcuḥ — they said; puṇyā — holy basil; bata — (later usually; iti — thus; nṛ — ( acc. dat. gen. abl; liṅgena — by/with (once in; manuṣya — human; dehena — by/with body; gūḍhaḥ — covered; vana — forest; sthaṇi — sthaṇi; citra — conspicuous; aṇi — the point of a eedle or of a sharp stake; mālya — patr; ani — the pin of an axle tree; yasya — whose; of which; saḥ — he; that; giritraḥ — protecting ountains; śivo — śivo; ramā — ramā; ca — and; tābhyām — by/from/for the two the 1st dental consonants; arcita — honoured; av — cl. 1. P. ( Imper. 2. sg; aṅghrī — aṅghrī; yasya — whose; of which; saḥ — he; that; ayaṃ — going; bhāvaḥ — sense; purport; dhig — in comp. or; imāṃ — imāṃ; sabhāṃ — (of unknown derivation; yasya — whose; of which; am — quickly; ayaṃ — going; parābhūyate — is being P. ( ut; tās — tās; tu — but; vraja — Vraja; bhuvo — bhuvo; dhanyāḥ — bringing or bestowing wealths; yad — who; yāḥ — the 1st semivowels; svayaṃ — in comp. or; kṛṣṇo — kṛṣṇo; vividha — vividha; krīḍayāñcati — krīḍayāñcati; gacchatīti — gacchatīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3664932101921e5c5eba73c10614937e3881b3fe463141bbbdb96ce5ca58f3a3",
+    "word_for_word": "अन्या ऊचुः---पुण्या बत इति । — Others said, \"It's a pious thing.; नृ-लिङ्गेन मनुष्य-देहेन गूढः । — He is concealed by the human body in the human form.; वन-स्थणि चित्राणि माल्यानि यस्य सः । — He who has pictures of garlands in the forest; गिरित्रः शिवो रमा च, ताभ्याम् अर्चिताव् अङ्घ्री यस्य सः । — Giritra, Shiva and Rama, whose feet are worshiped by them.; अयं भावः---धिग् इमां सभां यस्याम् अयं पराभूयते । — This is the sense: Woe to this assembly in which he is defeated.; तास् तु व्रज-भुवो धन्याः, यद् याः स्वयं कृष्णो विविध-क्रीडयाञ्चति गच्छतीति ॥१३॥ — Blessed are those women in the land of Vraja, for they are the places where Krishna Himself goes to play in various pastimes.",
+    "translation": "Others said, \"It's a pious thing. He is concealed by the human body in the human form. He who has pictures of garlands in the forest Giritra, Shiva and Rama, whose feet are worshiped by them. This is the sense: Woe to this assembly in which he is defeated. Blessed are those women in the land of Vraja, for they are the places where Krishna Himself goes to play in various pastimes."
   },
   "14": {
-    "word_for_word": "aho — aho; kaṣṭam — an exclamation of grief or sorrow; alpa — little; small; puṇyā — holy basil; vayaṃ — one who weaves; yato'smābhir — yato'smābhir; anavasare — in/on having o interval of leisure; dṛṣṭo'yam — dṛṣṭo'yam; gopyas — gopyas; tu — but; bahu — many; much; puṇyā — holy basil; ity — thus; āhus — āhus; tribhiḥ — by/with threes; dir=\"rtl\"}gopya — dir=\"rtl\"}gopya; iti — thus; amuṣya — of such a one; śrī-kṛṣṇasya — of Śrī Kṛṣṇa; rūpam — form; aṅga — limb; body; lāvaṇyena — by/with saltness; sāraṃ — course; śreṣṭham — ost splendid or beautiful; kiṃ — what; ca — and; dir=\"rtl — dir=\"rtl; asama — uneven; ūrdhvaṃ — (√; na — not; vidyate — exists; samam — in like anner; ūrdhvam — upwards; adhikaṃ — more; greater; ca — and; yasya — whose; of which; tat — that; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; api — also; nānyen — nānyen; dir=\"rtl — dir=\"rtl; ābharaṇa — decorating; ādinā — by/with ifc. eating; siddhaṃ — driven off; dir=\"rtl — dir=\"rtl; kintu — but; svata — svata; iva — like; as if; aiśvarasya — of relating to or coming rom a ighty lord or king; dir=\"rtl\"}aiśvar — dir=\"rtl\"}aiśvar; dir=\"rtl\"}asya — dir=\"rtl\"}asya; dir=\"rtl\"}caikānta — dir=\"rtl\"}caikānta; dhāma — pl. of a class of superhuman beings; avyabhicāri — avyabhicāri; sthānam — the act of standing; pāṭhāntare — in/on ‘another reading’; amuṣya — of such a one; īśvarasy — īśvarasy; dir=\"rtl\"}ty — dir=\"rtl\"}ty; anvayaḥ — syntactic connection; evaṃ — thus; in this way; bhutaṃ — bhutaṃ; nityaṃ — ( r; navīnaṃ — resh; rūpaṃ — form; yā — who; which; netraiḥ — by/with eyes; paśyantīti — paśyantīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0dbc0868f6214f38d279e8f1c94745fea87e428e07f7d95f54cee717e16d1a12",
+    "word_for_word": "अहो कष्टम् अल्प-पुण्या वयं यतोऽस्माभिर् अनवसरे दृष्टोऽयम् । — Oh, it’s a pity we’re so less pious that we’ve seen this at an untimely opportunity.; गोप्यस् तु बहु-पुण्या इत्य् आहुस् त्रिभिः[--]{दिर्=\"र्त्ल्\"}गोप्य इति । — The gopis, however, are said to be very pious by three[--]{dir=\"rtl\"}gopis.; अमुष्य श्री-कृष्णस्य रूपम् अङ्ग-लावण्येन सारं श्रेष्ठम् । — The essence of this form of Lord Kṛṣṇa is superior to the beauty of His limbs.; किं च[,]{दिर्=\"र्त्ल्\"} असमोर्ध्वं न विद्यते समम् ऊर्ध्वम् अधिकं च यस्य तत् । — What is more[,]{dir=\"rtl\"} that which has no equal height and more than that which is not above it.; तद् अपि नान्येन्[अ]{दिर्=\"र्त्ल्\"} आभरणादिना सिद्धं[,]{दिर्=\"र्त्ल्\"} किन्तु स्वत इव । — That too is not proved by any other[a]{dir=\"rtl\"} ornament[,]{dir=\"rtl\"} but as if by itself.; ऐश्वरस्य []{दिर्=\"र्त्ल्\"}ऐश्वर्[य्]{दिर्=\"र्त्ल्\"}अस्य []{दिर्=\"र्त्ल्\"}चैकान्त-धाम अव्यभिचारि-स्थानम् । — The []{dir=\"rtl\"}Aishvar[y]{dir=\"rtl\"} of the []{dir=\"rtl\"}Chaikanta-dham is the inviolable place.; पाठान्तरे अमुष्य\nईश्वरस्य्[अ इ]{दिर्=\"र्त्ल्\"}त्य् अन्वयः । — In another text, this\nGod's[a i]{dir=\"rtl\"} is the consequence.; एवं-भुतं नित्यं नवीनं रूपं या नेत्रैः पश्यन्तीति ॥१४॥ — Thus-they see with their eyes the ever-new form of the universe.",
+    "translation": "Oh, it’s a pity we’re so less pious that we’ve seen this at an untimely opportunity. The gopis, however, are said to be very pious by three[--]{dir=\"rtl\"}gopis. The essence of this form of Lord Kṛṣṇa is superior to the beauty of His limbs. What is more[,]{dir=\"rtl\"} that which has no equal height and more than that which is not above it. That too is not proved by any other[a]{dir=\"rtl\"} ornament[,]{dir=\"rtl\"} but as if by itself. The []{dir=\"rtl\"}Aishvar[y]{dir=\"rtl\"} of the []{dir=\"rtl\"}Chaikanta-dham is the inviolable place. In another text, this\nGod's[a i]{dir=\"rtl\"} is the consequence. Thus-they see with their eyes the ever-new form of the universe."
   },
   "15": {
-    "word_for_word": "kiṃ — what; ca — and; yā — who; which; dohanādiṣv — dohanādiṣv; enaṃ — a om. base (used or certain cases of the 3rd personal oun; gāyanti — gāyanti; tā — tā; vraja — Vraja; striyo — striyo; dhanyāḥ — bringing or bestowing wealths; preṅkheṅkhanaṃ — swinging; dolān — swingings; dolanam — dolanam; ukṣaṇaṃ — sprinkling; secanam — sprinkling; kathaṃ — (in comp. or; bhūtāḥ — becomes; urukrame — in/on ar-stepping; cittam — mind; consciousness; urukrama — ar-stepping; cittaṃ — mind; consciousness; tetaiva — tetaiva; yānaṃ — leading; sarva — all; viṣaya — object; subject; prāptir — prāptir; yāsāṃ — Turdus Salica; tāḥ — the 1st dental consonants; pāṭhāntare — in/on ‘another reading’; urukramaṃ — ar-stepping; cintayantya — cintayantya; ity — thus; arthaḥ — meaning; purpose; kutaḥ — from where; why; anurakta — ond of; dhiyaḥ — om. P; tatra — there; in that; liṅgam — (once in; aśrukaṇṭhyaḥ — aśrukaṇṭhyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2ba15c554421afedd08f57dbb71e46588fc35ff2c778f947f324109b7da2543d",
+    "word_for_word": "किं च, या दोहनादिष्व् एनं गायन्ति ता व्रज-स्त्रियो धन्याः । — Moreover, blessed are the women of Vraja who sing it during milking and other occasions.; प्रेङ्खेङ्खनं दोलान् दोलनम् । — Prenkhengkhanam dolan dolan.; उक्षणं सेचनम् । — Uksana is irrigation.; कथं भूताः । — How are the ghosts?; उरुक्रमे चित्तम् उरुक्रम-चित्तं तेतैव यानं सर्व-विषय-प्राप्तिर् यासां ताः । — The mind in Urukrama is the mind of Urukrama, and that is the vehicle for those who attain all objects.; पाठान्तरे उरुक्रमं चिन्तयन्त्य इत्य् अर्थः । — In another text, it means that they are thinking of Urukrama.; कुतः ? — Where is it from?; अनुरक्त-धियः । — Attached-minded.; तत्र लिङ्गम्, अश्रुकण्ठ्यः ॥१५॥ — There is the Lingam, the tear-neck.",
+    "translation": "Moreover, blessed are the women of Vraja who sing it during milking and other occasions. Prenkhengkhanam dolan dolan. Uksana is irrigation. How are the ghosts? The mind in Urukrama is the mind of Urukrama, and that is the vehicle for those who attain all objects. In another text, it means that they are thinking of Urukrama. Where is it from? Attached-minded. There is the Lingam, the tear-neck."
   },
   "16": {
-    "word_for_word": "prātar — ( r. 1; iti — thus; yā — who; which; abalā — a woman; asya — of this; of him; veṇuṃ — a bamboo; niśamya — niśamya; gṛhāt — from house; tūrṇaṃ — (√; nirgamya — nirgamya; pathi — or in comp; sa — the last of the three sibilants; smita — smiled; mukhaṃ — face; mouth; paśyanti — they seeing; tā — tā; bhūri — uch; puṇyā — holy basil; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6d9cc4169f3d8b55d10a37dce7d1d036d6c617698d3806319e4ee8608126deef",
+    "word_for_word": "प्रातर् इति । — It’s in the morning.; या अबला अस्य वेणुं निशम्य गृहात् तूर्णं निर्गम्य पथि स-स्मित-मुखं पश्यन्ति ता भूरि-पुण्या इति । — The weak women who hear his flute and quickly leave their homes and see his smiling face on the road are very pious.",
+    "translation": "It’s in the morning. The weak women who hear his flute and quickly leave their homes and see his smiling face on the road are very pious."
   },
   "17": {
-    "word_for_word": "evaṃ — thus; in this way; sa — the last of the three sibilants; bhayaṃ — fear; bruvāṇa — speaking; asu — Ved. breath; strīṣu — in/among (perhaps ors; tāsāṃ — tāsāṃ; bhaya — fear; nivṛttaye — to/for returning; kṛṣṇaḥ — Kṛṣṇa; śatruṃ — enemy; hantuṃ — killing; manaś — in comp. or; cakre — in/on disc; wheel."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "583058ad1da77ff059d842ca6bf104fa54e0daac5c4e1097527a93cfcea01080",
+    "word_for_word": "एवं स-भयं ब्रुवाणासु स्त्रीषु तासां भय-निवृत्तये कृष्णः शत्रुं हन्तुं मनश् चक्रे ॥१७॥ — While the women were thus speaking with fear, in order to dispel their fear, Krishna decided to kill the enemy.",
+    "translation": "While the women were thus speaking with fear, in order to dispel their fear, Krishna decided to kill the enemy."
   },
   "18": {
-    "word_for_word": "sa — the last of the three sibilants; bhayāḥ — fears; strīṇāṃ — strīṇāṃ; giraḥ — ifc. = 1; śrutvā — having heard; putrayoḥ — of the two sons; snehena — by/with (or g; yā — who; which; śuk — ove; tayā — tayā; āturau — the two sufferings; vihvalau — the two agitateds; putrayor — putrayor; balam — strength; aja — a drove; anantau — the two endlesss; pitarāv — pitarāv; anutāpaṃ — repentance; prāpta — attained; av — cl. 1. P. ( Imper. 2. sg; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f6e136ae4d5ca24075b05413a81769b7022cb1f93bb1016277213d28194ac07b",
+    "word_for_word": "स-भयाः स्त्रीणां गिरः श्रुत्वा पुत्रयोः स्नेहेन या शुक् तया आतुरौ विह्वलौ पुत्रयोर् बलम् अजानन्तौ पितराव् अनुतापं प्राप्ताव् इति ॥१८.१९॥ — Hearing the words of the women with fear the fathers were overwhelmed with affection for their sons They did not know the strength of their sons and felt remorse",
+    "translation": "Hearing the words of the women with fear the fathers were overwhelmed with affection for their sons They did not know the strength of their sons and felt remorse"
   },
   "19": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "20": {
-    "word_for_word": "tadā — then; bhagavato — bhagavato; gātrāṇām — gātrāṇām; aratni — ‘disgusted; jānv — in comp. or; ādīnāṃ — of √ 2. (3. sg. impfs; niṣpātaiḥ — by/with throbbings; prahā — to drive off; araiḥ — by/with swifts; vajrasya — of ‘the hard or ighty one’; niṣpeṣas — niṣpeṣas; tīvra — strong; prapātas — prapātas; tadvan — pl. of a class of s; niṣṭhuraiḥ — by/with hards; bhajyam — =; ana — {{Lbody=4781}}; aṅgaḥ — limb; body; ślatha — loose; gātraḥ — ‘instrument of oving’."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dd4cf9e1627496d57593e4c28eb76cd4b398a5ff2b8fe612d08badf60b93a801",
+    "word_for_word": "तदा भगवतो गात्राणाम् अरत्नि-जान्व्-आदीनां निष्पातैः प्रहारैः वज्रस्य निष्पेषस् तीव्र-प्रपातस् तद्वन् निष्ठुरैः । — Then the Lord’s limbs, such as the Aratni and Janv, were struck by blows, and the thunderbolt struck them with a sharp fall, just as cruel as the thunderbolt.; भज्यमानाङ्गः श्लथ-गात्रः ॥२०॥ — The limbs are being broken and the body is sluggish.",
+    "translation": "Then the Lord’s limbs, such as the Aratni and Janv, were struck by blows, and the thunderbolt struck them with a sharp fall, just as cruel as the thunderbolt. The limbs are being broken and the body is sluggish."
   },
   "21": {
-    "word_for_word": "śyenasya — of a hawk; iva — like; as if; vego — vego; yasya — whose; of which; sa — the last of the three sibilants; cāṇūraḥ — of a prince; abādhatātāḍayat — abādhatātāḍayat."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3770e0e1f776b95e2967ca8b9edd15159abc80e85384554e174d4913977d90c3",
+    "word_for_word": "श्येनस्येव वेगो यस्य स चाणूरः । — The Cāṇūra, whose speed is like that of a hawk.; अबाधताताडयत् ॥२१॥ — He beat him without interruption.",
+    "translation": "The Cāṇūra, whose speed is like that of a hawk. He beat him without interruption."
   },
   "22": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "bhū — be; become; pṛṣṭhe — behind or rom behind; bhuva — bhuva; upari — above; pothayām — pothayām; āsāsphālayat — āsāsphālayat; indra — ( or etym. as given by ative authorities See; dhvajo — dhvajo; vajram — ‘the hard or ighty one’; yadvā — perception; indra — ( or etym. as given by ative authorities See; dhvajo — dhvajo; gauḍeṣu — in/among prepared rom sugar or olassess; prasiddhaḥ — brought about; kasmiṃścid — kasmiṃścid; utsave — utsave; mahān — greats; stambho — stambho; dhvaja — ( only; patākādy — patākādy; alaṅkṛtaḥ — alaṅkṛtaḥ; puruṣākṛtir — puruṣākṛtir; ucchrīyate — ucchrīyate; sa — the last of the three sibilants; yathā — as; just as; patati — in/on lying; tadvad — tadvad; apatad — apatad; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3e645d28818a658cf450e955e00f7f7de1f6d3236139c8a1eadabe9ccc984d6b",
+    "word_for_word": "भू-पृष्ठे भुव उपरि । — on the surface of the earth.; पोथयाम् आसास्फालयत् । — He splashed his hopes in the book.; इन्द्र-ध्वजो वज्रम् । — The Indra-flag is the thunderbolt.; यद्वा इन्द्र-ध्वजो गौडेषु प्रसिद्धः । — Or rather the Indra-dhvaja is famous among the Gaudas.; कस्मिंश्चिद् उत्सवे महान् स्तम्भो ध्वज-पताकाद्य्-अलङ्कृतः पुरुषाकृतिर् उच्छ्रीयते स यथा पतति तद्वद् अपतद् इति ॥२३॥ — At some festival a huge pillar in the form of a man decorated with flags and banners is raised up and falls down as it falls down.",
+    "translation": "on the surface of the earth. He splashed his hopes in the book. The Indra-flag is the thunderbolt. Or rather the Indra-dhvaja is famous among the Gaudas. At some festival a huge pillar in the form of a man decorated with flags and banners is raised up and falls down as it falls down."
   },
   "24": {
-    "word_for_word": "arditaḥ — asked; pīḍitaḥ — squeezed; urvy — urvy; upasthe — in/on ‘the which is under’; bhū — be; become; tale — in/on surface."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "76dcd26bdea8ed02777ce95de519a38c1706e62bc09e62e8321d2553ca652f30",
+    "word_for_word": "अर्दितः पीडितः । — Tormented and oppressed.; उर्व्य्-उपस्थे भू-तले ॥२४॥ — Urvy-upsthe ground floor.",
+    "translation": "Tormented and oppressed. Urvy-upsthe ground floor."
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "26": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "27": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "29": {
-    "word_for_word": "valgantau — valgantau; nṛtya — dancing; ādi — beginning; and so on; kurvantau — kurvantau."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b34d0aeca00eda23af1c91e2af69c38719e88b7117afec1191b43de6674628f0",
+    "word_for_word": "वल्गन्तौ नृत्यादि कुर्वन्तौ ॥२९॥ — They moved about and danced and so on.",
+    "translation": "They moved about and danced and so on."
   },
   "30": {
-    "word_for_word": "sādhu — straight; sādhu — straight; iti — thus; vadantaḥ — or . See."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0be27e8450c23d0276f7ad14455fd9b6ec4fb5974d3926d37d0cbc77db50cba9",
+    "word_for_word": "साधु साधु इति वदन्तः ॥३०.३३॥ — saying, \"Well done, well done.",
+    "translation": "saying, \"Well done, well done."
   },
   "31": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "32": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "33": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "34": {
-    "word_for_word": "avyayo'śramaḥ — avyayo'śramaḥ; laghimnā — laghimnā; lāghavena — by/with swiftness."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c7fc6a98aeb7caacd72a8c6a3da494d332bff10fe18d206bcd5b9c1f20a57ea4",
+    "word_for_word": "अव्ययोऽश्रमः । — The infinitive is the ashram.; लघिम्ना लाघवेन ॥३५॥ — lightly by lightness.",
+    "translation": "The infinitive is the ashram. lightly by lightness."
   },
   "36": {
-    "word_for_word": "durviṣaham — d to be borne or supported; aviṣahyam — ot bearable; ugraṃ — (said to be r. √; tejo — =; yasya — whose; of which; sa — the last of the three sibilants; śrī-kṛṣṇaḥ — Śrī Kṛṣṇa."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c59ca693c321943d87b5ec5bc5e8cbf213c8acf55ebc7f64675a238a77ea3329",
+    "word_for_word": "दुर्विषहम् अविषह्यम् उग्रं तेजो यस्य स श्री-कृष्णः ॥३६॥ — He whose effulgence is unbearable, unbearable and fierce is that Śrī-Kṛṣṇa.",
+    "translation": "He whose effulgence is unbearable, unbearable and fierce is that Śrī-Kṛṣṇa."
   },
   "37": {
-    "word_for_word": "gariṣṭhatvā — having heaviest; aya — going; viśva — universe; all; āśrayatvam — the state of above; uktam — stated; tatra — there; in that; hetuḥ — cause; reason; abja — born in water; nābhaḥ — ifc. =; kutas — rom whom?; tasyopary — tasyopary; eva — only; indeed; papāta — papāta; yata — yata; ātma — (in comp. or; tantraḥ — a loom; sva — own; self; tantraḥ — a loom."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d5eb92bbca248078333fb10cc3896d72816a236005d60472f602c14ec0cb0a05",
+    "word_for_word": "गरिष्ठत्वाय विश्वाश्रयत्वम् उक्तम् । — To be the greatest, one is said to be dependent on the universe.; तत्र हेतुः, अब्ज-नाभः । — There is a reason, the lotus-navel.; कुतस् तस्योपर्य् एव पपात । — Where did it fall right on top of him?; यत आत्म-तन्त्रः स्व-तन्त्रः ॥३७.३९॥ — Because the self-controlled is self-controlled.",
+    "translation": "To be the greatest, one is said to be dependent on the universe. There is a reason, the lotus-navel. Where did it fall right on top of him? Because the self-controlled is self-controlled."
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "39": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "40": {
-    "word_for_word": "nirveśo — nirveśo; niṣkṛtir — niṣkṛtir; ānṛṇyam — acquittance of debt or obligation; ity — thus; arthaḥ — meaning; purpose; tat — that; kāriṇaḥ — kāriṇaḥ; santas — santas; te'bhyadhavan — te'bhyadhavan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dd07de40c3af4ff9573f88aea239d7fec74bf26158c3d571e0ee2ad43120f55a",
+    "word_for_word": "निर्वेशो निष्कृतिर् आनृण्यम् इत्य् अर्थः । — It means to be free from attachment, to be freed from debt.; तत्-कारिणः सन्तस् तेऽभ्यधवन् ॥४०॥ — The saints who were doing that rushed to him.",
+    "translation": "It means to be free from attachment, to be freed from debt. The saints who were doing that rushed to him."
   },
   "41": {
-    "word_for_word": "tatha — tatha; tādṛg — in comp. or; ati — very; exceedingly; rabhaso — rabhaso; vego — vego; yeṣ — to boil up; aṃ — not; tān — them; those; saṃyattānudyuktān — saṃyattānudyuktān."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6384d1520b93038f1506c5aec2366956a609ad972ed61b77e5d7b63fa0630a59",
+    "word_for_word": "तथ तादृग् अति-रभसो वेगो येषां तान् । — And those who have such a very fast speed.; संयत्तानुद्युक्तान् ॥४१॥ — the controlled and the uncontrolled.",
+    "translation": "And those who have such a very fast speed. the controlled and the uncontrolled."
   },
   "42": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "43": {
-    "word_for_word": "śocantyo — śocantyo; vilāpa — = prec; aṃś — to divide; cakruḥ — = ‘a wheel’; śucaḥ — pure; aśrūṇi — aśrūṇi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "587f5d650e785903369499f2072a879412f753fddfb8ac083d4cf31fe4536c7a",
+    "word_for_word": "शोचन्त्यो विलापांश् चक्रुः । — They were mourning and wailing.; शुचः अश्रूणि ॥४३॥ — mourning and tears.",
+    "translation": "They were mourning and wailing. mourning and tears."
   },
   "44": {
-    "word_for_word": "dharma — dharma; duty; jña — or 1. . See; ity — thus; ādīni — ādīni; vilāpe — in/on = prec; prema — love; sambodhanāni — sambodhanāni; te — they; those; tvadīyā — tvadīyā; vayam — we."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7c55d39f3fb8b9a564b7e8c15c1c6e412a1605fb999e91ff1974914b8851d196",
+    "word_for_word": "धर्म-ज्ञ इत्य्-आदीनि विलापे प्रेम-सम्बोधनानि । — They are addresses of love in lamentation, such as Dharma-jna.; ते त्वदीया वयम् ॥४४॥ — They are yours and we are yours.",
+    "translation": "They are addresses of love in lamentation, such as Dharma-jna. They are yours and we are yours."
   },
   "45": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "46": {
-    "word_for_word": "tvayā — by you; patyā — patyā; virahitā — virahitā; purīyaṃ — purīyaṃ; na — not; śobhata — śobhata; iti — thus; sva — own; self; dṛṣṭyābhidhānam — dṛṣṭyābhidhānam."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d4708b2cedc81057530643fc165844bc669b371d073091823d83311108475367",
+    "word_for_word": "त्वया पत्या विरहिता पुरीयं न शोभत इति स्व-दृष्ट्याभिधानम् ॥४६॥ — It is said from your own point of view that the city without your husband does not look beautiful",
+    "translation": "It is said from your own point of view that the city without your husband does not look beautiful"
   },
   "47": {
-    "word_for_word": "anāgas — sinless; am — quickly; iti — thus; tu — but; parama — supreme; artha — meaning; purpose; abhidhānam — telling."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d42eaf1902df6a534b4eb0061551e0d59aaecba20ab3dcb0999cc6d2e30dee2e",
+    "word_for_word": "अनागसाम् इति तु परमार्थाभिधानम् ॥४७॥ — Innocent, however, is the expression of the supreme meaning.",
+    "translation": "Innocent, however, is the expression of the supreme meaning."
   },
   "48": {
-    "word_for_word": "eṣa — gliding; kṛṣṇaḥ — Kṛṣṇa; prabhavanty — prabhavanty; asma — a om. base rom which some orms of are ormed; ad — to eat; iti — thus; prabhavaḥ — prabhavaḥ; apiyanti — apiyanti; asminn — asminn; ity — thus; apyayaḥ — joint; sa — the last of the three sibilants; ca — and; sa — the last of the three sibilants; ca — and; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; avadhyānaṃ — disregard; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; avajñā — ( p; tat — that; kartuṃ — kartuṃ; śīlaṃ — (and g; yasya — whose; of which; saḥ — he; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b2963c11edea81000a6cf6c7e309f5da2be1ac1df5dc6d879bc43740e6af2741",
+    "word_for_word": "एष कृष्णः । — This is the black one.; प्रभवन्त्य् अस्माद् इति प्रभवः, अपियन्ति अस्मिन्न् इत्य् अप्ययः स च स च । — They arise from us, that is, they arise from us, and they drink from us, that is, they arise from us, and that and that.; तद् अवध्यानं तद् अवज्ञा तत् कर्तुं शीलं यस्य सः ॥४८॥ — That is inattention that is contempt that is the characteristic of him who has to do that.",
+    "translation": "This is the black one. They arise from us, that is, they arise from us, and they drink from us, that is, they arise from us, and that and that. That is inattention that is contempt that is the characteristic of him who has to do that."
   },
   "49": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "50": {
-    "word_for_word": "āspṛśya — āspṛśya; īṣat — attacking; spṛṣṭvā — spṛṣṭvā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "60a9347b018d964871d739d2d5e440ccb6cdd940160a98a8dbd1ec7a2ac157e7",
+    "word_for_word": "आस्पृश्य ईषत् स्पृष्ट्वा ॥५०॥ — Touching and slightly touching.",
+    "translation": "Touching and slightly touching."
   },
   "51": {
-    "word_for_word": "putra — son; bhrāntiṃ — wandering or roaming about; vihāya — leaving behind i.e. at a distance rom; jagad — in comp. or; īśvarāv — īśvarāv; iti — thus; jñātvā — having know; śaṅkitau — the two alarmeds; na — not; sasvajāte — sasvajāte; nāliṅgitavantau — nāliṅgitavantau; kintu — but; baddhāñjalī — baddhāñjalī; tasthatur — tasthatur; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1fbd4c651b23c127c4c5c72a2834e9880cafb5d89753fd5f9a63264cdd26fa0e",
+    "word_for_word": "पुत्र-भ्रान्तिं विहाय जगद्-ईश्वराव् इति ज्ञात्वा शङ्कितौ न सस्वजाते नालिङ्गितवन्तौ, किन्तु बद्धाञ्जली तस्थतुर् इत्य् अर्थः ॥५१॥ — This means that they, knowing that they were the Lords of the universe, having abandoned the delusion of their sons, did not embrace their own children in suspicion, but stood with folded hands.",
+    "translation": "This means that they, knowing that they were the Lords of the universe, having abandoned the delusion of their sons, did not embrace their own children in suspicion, but stood with folded hands."
   }
 }

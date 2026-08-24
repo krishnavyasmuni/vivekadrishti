@@ -1,98 +1,268 @@
 {
   "1": {
-    "word_for_word": "pañcayuk — pañcayuk; saptatitame — in/on the 70th; yajñāvabhṛtha — yajñāvabhṛtha; sambhramaḥ — whirling round; suyodhanasya — of ‘ ighting well’; cākṣāntyā — cākṣāntyā; māna — col. 3; bhaṅgo — bhaṅgo; dṛśi — seeing; bhramāt — by an error or istake; duryodhanasyaiva — duryodhanasyaiva; duḥkhe — in/on suffering; kāraṇaṃ — cause; praṣṭumuktamanuvadati — praṣṭumuktamanuvadati; ajātaśatror — ajātaśatror; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ace71a1e4b87c1428ceba6de2385cbf014de85aeebc9b14ce0a57675de909ff8",
+    "word_for_word": "पञ्चयुक्-सप्ततितमे यज्ञावभृथ-सम्भ्रमः । — In the seventy-fifth day of the fifth yuga, the sacrificial avabhrthas are confused.; सुयोधनस्य चाक्षान्त्या मान-भङ्गो दृशि भ्रमात् ॥ — Duryodhana’s dishonor was broken by his forgiveness because of his illusion of sight.; दुर्योधनस्यैव दुःखे कारणं प्रष्टुमुक्तमनुवदति-अजातशत्रोर् इति ॥१॥ — When asked the reason for Duryodhana's own suffering he replied that he was the cause of his unborn enemies.",
+    "translation": "In the seventy-fifth day of the fifth yuga, the sacrificial avabhrthas are confused. Duryodhana’s dishonor was broken by his forgiveness because of his illusion of sight. When asked the reason for Duryodhana's own suffering he replied that he was the cause of his unborn enemies."
   },
   "2": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "3": {
-    "word_for_word": "duryodhanasyāsahana — duryodhanasyāsahana; kāraṇatvena — by/with =; yāga — an offering; mahotsavam — a gr estival; eva — only; indeed; punaḥ — again; siṃhāvalokanena — accord. to the rule of the lion's look; nirūpayati — nirūpayati; pitāmahasya — of a paternal grandfather; ity-ādinā — by/with and so on; ekadāntaḥ — ekadāntaḥ; pure — in/on city; tasya — of him; of that; ity — thus; ataḥ — therefore; from this; prāktanena — by/with ormer; granthena — by/with tying; prema — love; bandhanāḥ — bindings; prema — love; yantritāḥ — col. 1s."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "65068fa5417452d7c9f3a1372ebc3d8f3a3d0a7f06799e00fd8cc17687d500f2",
+    "word_for_word": "दुर्योधनस्यासहन-कारणत्वेन याग-महोत्सवम् एव पुनः सिंहावलोकनेन निरूपयति---पितामहस्य इत्य्-आदिना । — He again describes the sacrificial festival as the cause of Duryodhana’s intolerance by looking at the lion, saying, “of his grandfather.”; एकदान्तः-पुरे तस्य [भा।पु। — Once in the inner-city of his [Bh.p.; १०.८५.३१] इत्य् अतः प्राक्तनेन ग्रन्थेन । — 10.85.31] It is therefore by the previous text.; प्रेम-बन्धनाः प्रेम-यन्त्रिताः ॥३॥ — They are bound by love and controlled by love.",
+    "translation": "He again describes the sacrificial festival as the cause of Duryodhana’s intolerance by looking at the lion, saying, “of his grandfather.” Once in the inner-city of his [Bh.p. 10.85.31] It is therefore by the previous text. They are bound by love and controlled by love."
+  },
+  "4-5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fa759b884ad530ed38d687b4a7a69adff93c28aab88057b97fd1574bf4592982",
+    "word_for_word": "पूजायां सन्-मानने । — in worship, in honor.; द्रव्य-साधने नाना-वस्तु-सम्पादने ॥४॥ — in the acquisition of material possessions and in the acquisition of various objects.; गुरूणं शुश्रूषणे चन्दनालेपनादौ ॥५॥ — In the service of the spiritual master, in the beginning of anointing with sandalwood paste.",
+    "translation": "in worship, in honor. in the acquisition of material possessions and in the acquisition of various objects. In the service of the spiritual master, in the beginning of anointing with sandalwood paste."
   },
   "6": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c49a84a6830f94390e69293aba45f76314f14bd7aba2601547f6088db824523a",
+    "word_for_word": "निरूपिताः नियुक्ताः सन्तो नाना-कर्मसु प्रवर्तन्ते स्म ॥७॥ — The saints were appointed and appointed and engaged in various activities.",
+    "translation": "The saints were appointed and appointed and engaged in various activities."
   },
   "8": {
-    "word_for_word": "ṛtvijaś — ṛtvijaś; ca — and; sadasya — ‘present in the sacrificial enclosure’; aś — Ā. ( aor. 3. pl; ca — and; sabhāsado — sabhāsado; bahuvidaś — bahuvidaś; ca — and; teṣu — in/among the 1st dental consonants; sviṣṭeṣu — in/among uch desired or loveds; samyak — properly; completely; pūjiteṣu — in/among honoureds; sūnṛtaṃ — joyful; priyavāk — priyavāk; samarhaṇamalaṅkārādi — samarhaṇamalaṅkārādi; dakṣiṇa — (declined as a when denoting relative position; aś — Ā. ( aor. 3. pl; ca — and; prasiddha — brought about; astābhiḥ — by/with a issiles; dyunadyā — by/with id; aṃ — not; gaṅgāyām — in/on ‘swift-goer’."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "95a70313c6e45dbf13e88172a3c60b1c769cbca73552df37cd55e7d2a87c001e",
+    "word_for_word": "ऋत्विजश् च सदस्याश् च सभासदो बहुविदश् च तेषु स्विष्टेषु सम्यक् पूजितेषु सूनृतं प्रियवाक् समर्हणमलङ्कारादि दक्षिणाश् च प्रसिद्धास्ताभिः द्युनद्यां गङ्गायाम् ॥८-१०॥ — The priests and members of the assembly and the members of the assembly were well versed in the river Ganga when they were properly worshiped and offered kind words pleasing words offerings ornaments and other gifts",
+    "translation": "The priests and members of the assembly and the members of the assembly were well versed in the river Ganga when they were properly worshiped and offered kind words pleasing words offerings ornaments and other gifts"
   },
   "9": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "10": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "11": {
-    "word_for_word": "citra — conspicuous; aṇi — the point of a eedle or of a sharp stake; dhvaja — ( only; patākāgrāṇi — patākāgrāṇi; yeṣu — in/among the 1st semivowels; tair — tair; ibha — servants; indraiḥ — by/with ( or etym. as given by ative authorities Sees; syandanair — syandanair; arvabhir — arvabhir; aśvari — aśvari; bhaṭaiś — bhaṭaiś; ca — and; evaṃ — thus; in this way; caturaṅgaiḥ — by/with having 4 limbss; sainyair — sainyair; niryayuḥ — niryayuḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5c6bfdf39aa9fd9e56ff6751c8f21c209b6ba7b26d6080e0783f30a35e40eb91",
+    "word_for_word": "चित्राणि ध्वज-पताकाग्राणि येषु तैर् इभेन्द्रैः स्यन्दनैर् अर्वभिर् अश्वरि भटैश् च । — There were pictures of flags and banners on the tops of these elephants, chariots, horses and soldiers.; एवं चतुरङ्गैः सैन्यैर् निर्ययुः ॥११॥ — Thus they set out with their four divisions of armies.",
+    "translation": "There were pictures of flags and banners on the tops of these elephants, chariots, horses and soldiers. Thus they set out with their four divisions of armies."
   },
   "12": {
-    "word_for_word": "yajam — a word ormed to explain; ano — o, ot; yudhiṣṭhiraḥ — ‘ irm or steady in battle’; puraḥsaro — puraḥsaro; yeṣ — to boil up; aṃ — not; te — they; those."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "407b0687c494e95dd204fb476c75674a0943774e155d61516fa71a7ceaa9d7a5",
+    "word_for_word": "यजमानो युधिष्ठिरः पुरःसरो येषां ते ॥१२॥ — Those whose sacrificer Yudhisthira was in the forefront.",
+    "translation": "Those whose sacrificer Yudhisthira was in the forefront."
   },
   "13-14": {
-    "word_for_word": "sadasyā — sadasyā; ṛtvijo'nye — ṛtvijo'nye; ca — and; dvija — dvija; śreṣṭhā — an excellent woman; niryayuḥ — niryayuḥ; kiṃ — what; ca — and; gandha — smell; ādibhiḥ — by/with beginning; and so ons; svalaṅkṛtā — svalaṅkṛtā; narā — narā; nāryaś — nāryaś; ca — and; mitho — in comp. or; vijahruḥ — vijahruḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "34d62491a4c2756052a1b5fcdfb157e07f0ff76fd24b4d09607cf984d7ed306f",
+    "word_for_word": "सदस्या ऋत्विजोऽन्ये च द्विज-श्रेष्ठा निर्ययुः ॥१३॥ — The members of the assembly priests and other distinguished brahmins set out; किं च, गन्धादिभिः स्वलङ्कृता नरा नार्यश् च मिथो विजह्रुः ॥१४॥ — What is more, the men and women, well adorned with perfumes and other things, enjoyed themselves with each other.",
+    "translation": "The members of the assembly priests and other distinguished brahmins set out What is more, the men and women, well adorned with perfumes and other things, enjoyed themselves with each other."
   },
   "15": {
-    "word_for_word": "rasān — rasa; relishs; evāha — evāha; taileti — taileti; kiṃ — what; ca — and; sāndra — viscid; kuṅkumādibhiḥ — kuṅkumādibhiḥ; pumbhir — pumbhir; lipta — smeared; as — be; tān — them; those; pralimpantyo — pralimpantyo; vāra — the hair of any animal's tail; yoṣitaś — yoṣitaś; ca — and; vijahruḥ — vijahruḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "36a597a47bfd8b52bc0975fd95908a10629051d2def0d84c2655a9b4653530fa",
+    "word_for_word": "रसान् एवाह---तैलेति । — He called the juices oil.; किं च, सान्द्र-कुङ्कुमादिभिः पुम्भिर् लिप्तास् तान् प्रलिम्पन्त्यो वार-योषितश् च विजह्रुः ॥१५॥ — What is more, the men smeared them with concentrated saffron and other oils and the women of the court enjoyed themselves as they smeared them.",
+    "translation": "He called the juices oil. What is more, the men smeared them with concentrated saffron and other oils and the women of the court enjoyed themselves as they smeared them."
   },
   "16": {
-    "word_for_word": "nṛbhirguptā — nṛbhirguptā; rathādiyānaidevyo — rathādiyānaidevyo; yathā — as; just as; tadvat — having or containing that; mātuleyaiḥ — by/with the son of a aternal uncles; sakhibhiś — sakhibhiś; ca — and; paritaḥ — paritaḥ; sicyamānāḥ — sicyamānāḥ; savrīḍena — by/with eeling shame; hāsena — by/with laughing; vikasanti — they to burst; vadana — the act of speaking; ani — the pin of an axle tree; yāsāṃ — Turdus Salica; tāḥ — the 1st dental consonants."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3d6157503fca5d87be1ae7e20a96de27ba85a0bcfe883a6dcc7de1d4541adccc",
+    "word_for_word": "नृभिर्गुप्ता रथादियानैदेव्यो यथा तद्वत् मातुलेयैः सखिभिश् च परितः सिच्यमानाः सव्रीडेन हासेन विकसन्ति वदनानि यासां ताः ॥१६॥ — Just as goddesses are protected by men in chariots and other vehicles their faces blossom with shy smiles as they are sprinkled with water by their maternal uncles and friends",
+    "translation": "Just as goddesses are protected by men in chariots and other vehicles their faces blossom with shy smiles as they are sprinkled with water by their maternal uncles and friends"
+  },
+  "17": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8d8790281769301e21abd18d7097541c7003573ca2131d8469c7428baf0a4247",
+    "word_for_word": "देवरान् पति-भ्रातृन् । — brothers-in-law, husbands and brothers.; उत सखीन् सखीन् अपि । — Or even friends and friends.; दृतीभिर् उदक-नोदन-चर्म-यन्त्रैः सेचन-पात्रैश् च । — They were also equipped with dry water, nooding, leather machines and irrigation vessels.; मल-धियां कामिनाम् ॥१७॥ — They are dirty-minded and lustful.",
+    "translation": "brothers-in-law, husbands and brothers. Or even friends and friends. They were also equipped with dry water, nooding, leather machines and irrigation vessels. They are dirty-minded and lustful."
+  },
+  "18": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4f4d89ca31493604265d65554050a4a7a89a3dee76c5178d2f10b72ebf913d1b",
+    "word_for_word": "क्रियाभिर् अङ्ग-क्रियाभिः क्रतु-राट् स-शरीरो राजसूय इव ॥१८॥ — By the actions of the limbs the king of sacrifices with his body is like a Rajasuya sacrifice.",
+    "translation": "By the actions of the limbs the king of sacrifices with his body is like a Rajasuya sacrifice."
   },
   "19": {
-    "word_for_word": "patnī — a emale possessor; saṃyājo — saṃyājo; yāga — an offering; viśeṣaḥ — specific distinction; avabhṛtha — ‘carrying off; sambandhi — joined or connected with; āvabhṛthyaṃ — āvabhṛthyaṃ; ca — and; taiś — taiś; caritvā — having an animal; tān — them; those; anuṣṭhā — to stand ear or by; aya — going; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fb8801f48e219e8f17bdccd7ff9d10d4848849aa7acfb5345933f9375b0ed539",
+    "word_for_word": "पत्नी संयाजो याग-विशेषः अवभृथ-सम्बन्धि आवभृथ्यं च तैश् चरित्वा तान् अनुष्ठायेत्य् अर्थः ॥१९-२१॥ — The wife, the sacrifice, is a special sacrifice related to the avabhrithas and the avabhrithas, and she should go about with them and perform them, that is, 19-2",
+    "translation": "The wife, the sacrifice, is a special sacrifice related to the avabhrithas and the avabhrithas, and she should go about with them and perform them, that is, 19-2"
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "21": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "22": {
-    "word_for_word": "ahate — in/on unhurt; nūtane — in/on belonging to ‘ ow’ or the present day; ānarcārcitavān — ānarcārcitavān."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b89be44188def98ffd3179ceac52e8ee64eaf7c912f09a6ce7ea80cfcf01c0bd",
+    "word_for_word": "अहते नूतने आनर्चार्चितवान् ॥२२-२३॥ — He worshiped the new one who was not killed (22-23).",
+    "translation": "He worshiped the new one who was not killed (22-23)."
   },
   "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "24": {
-    "word_for_word": "surāṇām — surāṇām; iva — like; as if; ruk — in comp. or 2; kāntiryeṣāṃ — kāntiryeṣāṃ; maṇikuṇḍalaiḥ — maṇikuṇḍalaiḥ; sahitāḥ — together withs; sraguṣṇīṣādayo — sraguṣṇīṣādayo; yeṣ — to boil up; aṃ — not; te — they; those; kuṇḍalayugenālakavṛndena — kuṇḍalayugenālakavṛndena; ca — and; juṣṭa — (; vaktraśrīryāsāṃ — vaktraśrīryāsāṃ; tāḥ — the 1st dental consonants."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "810bc37602dec9510fd6e440ffd94cdf6d29beb24fb026e973352bb1381bb71e",
+    "word_for_word": "सुराणाम् इव रुक् कान्तिर्येषां मणिकुण्डलैः सहिताः स्रगुष्णीषादयो येषां ते कुण्डलयुगेनालकवृन्देन च जुष्ट । — They were as bright as the gods, and their garlands and necklaces were adorned with jeweled earrings and a pair of earrings and a bunch of nails.; वक्त्रश्रीर्यासां ताः ॥२४-२९॥ — They are the beauty of their faces.24-2",
+    "translation": "They were as bright as the gods, and their garlands and necklaces were adorned with jeweled earrings and a pair of earrings and a bunch of nails. They are the beauty of their faces.24-2"
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "26": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "27": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "29": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "30": {
-    "word_for_word": "gatajvaro — gatajvaro; niścinta — ot thinking; āsīt — was."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4bc7cd74800d43c9b1a0b84cf9739a2f2b115e6b6e8d9420941efeef6bc3920c",
+    "word_for_word": "गतज्वरो निश्चिन्त आसीत् ॥३०॥ — The fever was gone and he was at peace.",
+    "translation": "The fever was gone and he was at peace."
   },
   "31": {
-    "word_for_word": "acyute — in/on ot allen; ātmā — self; yasya — whose; of which; tasya — of him; of that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "965fecf1cc5f20c15f52ee8c94b5ee0f96e23725b6a3c34001d2516829aa6254",
+    "word_for_word": "अच्युते आत्मा यस्य तस्य ॥३१॥ — He whose soul is infallible.",
+    "translation": "He whose soul is infallible."
   },
   "32": {
-    "word_for_word": "narendra — ‘ -lord’; ādīnāṃ — of √ 2. (3. sg. impfs; lakṣmīr — lakṣmīr; lakṣmyo — lakṣmyo; vibhūtayo — vibhūtayo; viśvasṛjā — viśvasṛjā; mayenopakḷptā — mayenopakḷptā; viracitāḥ — constructeds; tābhiḥ — tābhiḥ; saha — with; kuru — do; make; rāḍ — rāḍ; duryodhano'tapyat — duryodhano'tapyat."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ed31e09d871c8aafd22fa3a18d426f14ce47f7df39ed5f6329163cb60465350e",
+    "word_for_word": "नरेन्द्रादीनां लक्ष्मीर् लक्ष्म्यो विभूतयो विश्वसृजा मयेनोपकॢप्ता विरचिताः । — The goddess of fortune, the goddess of fortune, the opulence of kings and others, the creator of the universe, has been created by Me.; ताभिः सह । — With them.; कुरु-राड् दुर्योधनोऽतप्यत् ॥३२॥ — Duryodhana, king of the Kurus, was tormented.",
+    "translation": "The goddess of fortune, the goddess of fortune, the opulence of kings and others, the creator of the universe, has been created by Me. With them. Duryodhana, king of the Kurus, was tormented."
+  },
+  "33": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a4fbdcdbccb0088cb5a29840960327942cb974b44e47bff51c46b825e79be32c",
+    "word_for_word": "महिषी-सहस्रम् इति बहुत्वोपलक्षणम् । — The buffalo-thousand is a plural characteristic.; क्वणद्भिर् अङ्घ्रिभिः शोभा यस्य । — whose beauty is with his ringing feet.; मध्ये सुचारु सुचारु-मध्यम् इत्य् अर्थः । — Smooth in the middle means smooth-middle.; कुच-कुङ्कुमैः शोणा हारा यस्य तत् । — That which has a necklace of Shona with breasts and saffron.; श्रीमन्ति मुखानि यस्य तत् । — That which has beautiful faces.; चलैः कुण्डलैः कुन्तलैश् चाढ्यं सम्पन्नम् अशोभतेति शेषः ॥३३॥ — The rest is that he is richly adorned with movable earrings and locks of hair and is not beautiful.",
+    "translation": "The buffalo-thousand is a plural characteristic. whose beauty is with his ringing feet. Smooth in the middle means smooth-middle. That which has a necklace of Shona with breasts and saffron. That which has beautiful faces. The rest is that he is richly adorned with movable earrings and locks of hair and is not beautiful."
+  },
+  "34": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "60ccbed198fe1f06563889b4bb5c9ae7210e4f8ab06281ae0d69062f7dde07bf",
+    "word_for_word": "क्वापि कदाचित् स विरेज इति शेषः । — The rest is that he sometimes shone somewhere.; स्वस्य चक्षुषा हिताहित-ज्ञापकेन ॥३४-३५॥ — By his own eyes, which indicate good and evil.34-3",
+    "translation": "The rest is that he sometimes shone somewhere. By his own eyes, which indicate good and evil.34-3"
   },
   "35": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "36": {
-    "word_for_word": "mānī — easure; sāhaṅkāraḥ — sāhaṅkāraḥ; kirīṭaṃ — kirīṭaṃ; ca — and; mālā — mālā; ca — and; vidya — = ( ifc; ite — in/on ifc. gone; yasya — whose; of which; saḥ — he; that; nyaviśat — nyaviśat; viva — riding on a bird; īśa — Lord; kṣipan — kṣipan; dvāḥ — in comp. or; sthādīn — sthādīn; adhikṣipan — adhikṣipan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "405f095b4baa9c66b49f36ede0d7d09bcd157aea3d5723de16aa8f23421036b3",
+    "word_for_word": "मानी साहङ्कारः । — The proud is the ego.; किरीटं च माला च विद्येते यस्य सः । — He who has a crown and a garland; न्यविशत् विवेश । — entered and entered.; क्षिपन् द्वाः-स्थादीन् अधिक्षिपन् ॥३६॥ — throwing the two-standing and others.",
+    "translation": "The proud is the ego. He who has a crown and a garland entered and entered. throwing the two-standing and others."
   },
   "37": {
-    "word_for_word": "tatra — there; in that; sthale — in comp; vastrāntam — the end or hem of a garm; abhyagṛhṇād — abhyagṛhṇād; ākuñcitavān — ākuñcitavān; kutaḥ — from where; why; tasmin — in him; in that; sthale — in comp; eva — only; indeed; bhra — in comp. or; antyā — by/with an oven; jalaṃ — water; matvā — having the labial asal; jale — in/on water; cāpatat — cāpatat; kutaḥ — from where; why; sthalavad — sthalavad; bhrāntyā — bhrāntyā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "07e793e224fa3ed4cc55a5b9c3c71a117dda68399ab381f0a8f64b8fc6b3a69a",
+    "word_for_word": "तत्र स्थले वस्त्रान्तम् अभ्यगृह्णाद् आकुञ्चितवान् । — There, on the ground, he grabbed the end of his clothes and shrunk.; कुतः? — Where from?; तस्मिन् स्थले एव भ्रान्त्या जलं मत्वा जले चापतत् । — On the spot, he mistakenly thought it was water and fell into the water.; कुतः? — Where from?; स्थलवद्-भ्रान्त्या ॥३७-३८॥ — by the illusion of being like a land.37-3",
+    "translation": "There, on the ground, he grabbed the end of his clothes and shrunk. Where from? On the spot, he mistakenly thought it was water and fell into the water. Where from? by the illusion of being like a land.37-3"
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "39": {
-    "word_for_word": "bhuvo — bhuvo; bharaṃ — bearing; bhāraṃ — a burden; jihīrṣur — jihīrṣur; iti — thus; adya — today; now; sampāditena — by/with brought about; kalaha — strife; bījena — by/with seed; kurūṇāṃ — kurūṇāṃ; saṃhāraṃ — destruction; kariṣyāmīti — kariṣyāmīti; matveti — matveti; kiṃ — what; ca — and; yasya — whose; of which; dṛśā — the eye; dṛṣṭi — vision; mātreṇa — mātreṇa; duryodhano — duryodhano; bhramati — in/on wandering about; sma — indeed; formerly; bhrāntiṃ — wandering or roaming about; prāpa — reaching; maya — of an; māyā — māyā; illusory power; tu — but; nimitta — cause; occasion; mātram — only; measure; sa — the last of the three sibilants; bhū — be; become; bhāra — a burden; haraṇa — carrying; bījaṃ — seed; duryodhanasya — of id; bhramaṃ — wandering or roaming about; bhīmādi — bhīmādi; hāsyena — by/with to be laughed at; ca — and; tasya — of him; of that; parābhavaṃ — vanishing; vidhāya — to/for piercing; tūṣṇīm — silently; āsīd — āsīd; ity — thus; arthaḥ — meaning; purpose; iti — thus; śrīmad — śrīmad; bhāgavate — in/on Bhāgavata; daśama — tenth; skandhe — in/on the shoulder; śrīdhara — ‘bearer or possessor of ortune’; svāmi — in comp. or; viracitāyāṃ — viracitāyāṃ; bhāvārthadīpinyāṃ — bhāvārthadīpinyāṃ; pañcasaptatitamo\\'dhyāyaḥ — pañcasaptatitamo\\'dhyāyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ae6d677ae9a98051cc20d3dd20c6c4af8d26d9100a5c71025ef73bc9a198d2fe",
+    "word_for_word": "भुवो भरं भारं जिहीर्षुर् इति । — They wanted to take away the burden of the earth.; अद्य सम्पादितेन कलह-बीजेन कुरूणां संहारं करिष्यामीति मत्वेति । — He thought that he would destroy the Kurus with the seed of quarrel he had acquired today.; किं च, यस्य दृशा दृष्टि-मात्रेण दुर्योधनो भ्रमति स्म भ्रान्तिं प्राप । — What’s more, the sight of whom Duryodhana was wandering around at the mere sight of him became confused.; मय-माया तु निमित्त-मात्रम् । — Maya-maya, however, is only a cause.; स भू-भार-हरण-बीजं दुर्योधनस्य भ्रमं भीमादि-हास्येन च तस्य पराभवं विधाय तूष्णीम् आसीद् इत्य् अर्थः ॥३९॥ — This means that he remained silent after confusing Duryodhana with the seed of removing the burden of the earth and defeating him with Bhima and other jokes.; इति श्रीमद्-भागवते दशम-स्कन्धे श्रीधर-स्वामि-विरचितायां भावार्थदीपिन्यां पञ्चसप्ततितमो\\ऽध्यायः ॥७५॥ — This is the seventy-fifth chapter of the tenth section of the Śrīmad-Bhāgavatam compiled by Śrīdhara-svāmi in the Bhāvartha-dipiṇī.",
+    "translation": "They wanted to take away the burden of the earth. He thought that he would destroy the Kurus with the seed of quarrel he had acquired today. What’s more, the sight of whom Duryodhana was wandering around at the mere sight of him became confused. Maya-maya, however, is only a cause. This means that he remained silent after confusing Duryodhana with the seed of removing the burden of the earth and defeating him with Bhima and other jokes. This is the seventy-fifth chapter of the tenth section of the Śrīmad-Bhāgavatam compiled by Śrīdhara-svāmi in the Bhāvartha-dipiṇī."
   },
   "40": {
-    "word_for_word": "iti — thus; śrīmad — śrīmad; bhāgavate — in/on Bhāgavata; mahā — great; purāṇe — in/on Purāṇa; daśama — tenth; skandhe — in/on the shoulder; uttarārdhe — in/on the upper; śrīdhara — ‘bearer or possessor of ortune’; svāmi — in comp. or; viracitāyāṃ — viracitāyāṃ; bhāvārtha — the simple or obvious eaning; dīpikāyām — in/on a light; pañcasaptatitamo\\'dhyāyaḥ — pañcasaptatitamo\\'dhyāyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4b5873f1963d320cc7e542b6897e22cee557b433b436e09f6a40a246724de9c5",
+    "word_for_word": "इति श्रीमद्-भागवते महा-पुराणे दशम-स्कन्धे उत्तरार्धे श्रीधर-स्वामि-विरचितायां भावार्थ-दीपिकायाम् पञ्चसप्ततितमो\\ऽध्यायः ॥७५॥ — This is the seventy-fifth chapter of the Śrīmad-Bhāgavatam, the great Purāṇa, the tenth section, the second half of the Bhāva-artha-dīpika, compiled by Śrīdhara-svāmi.",
+    "translation": "This is the seventy-fifth chapter of the Śrīmad-Bhāgavatam, the great Purāṇa, the tenth section, the second half of the Bhāva-artha-dīpika, compiled by Śrīdhara-svāmi."
   }
 }

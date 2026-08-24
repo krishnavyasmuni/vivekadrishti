@@ -1,77 +1,219 @@
 {
+  "1": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "80273d35e856cd789a2a08f9125ee168d7804107c21e8ef9ee56d3eaeb8c24c8",
+    "word_for_word": "[नो वेर्से? — [No verse?; ]{।मर्क्}कृष्णो नाथो येषां तेभ्यः ॥१॥ — ]{.Mark}To those whose Lord is Krishna.",
+    "translation": "[No verse? ]{.Mark}To those whose Lord is Krishna."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cfaaf5eedcf0225d3c6c5a2629c1a0e27fc0192aa3dd5a7b7d7d5ca864e06ec2",
+    "word_for_word": "क्रुद्धः सन्न् इन्द्रः सांवर्तकं नाम, संवर्तः प्रलयः, तत्-कर्तारं मेघानां प्रसिद्धं गणं प्राचोदयत् प्रेषयाम् आस । — Being angry, Indra sent forth a famous group of clouds called Samvartaka, the creator of Samvartaka, the doomsday.; ननु कृष्ण-नाथानां घाते कथं प्रवृत्तः ? — How, then, did he engage in the assassination of the Krishna-nathas?; इत्य् आशङ्क्य आत्म-सम्भावनया निरस्त-विवेकत्वाद् इत्य् आशयेनाह---वाक्यं चाह इत्य्-आदि-पञ्चभिः । — Doubting this, he argues that it is because of the discrimination rejected by the possibility of the self.; ईश-मानी अहम् एवेश्वर इति गर्ववान् ॥२॥ — He is proud of himself as the Lord and is proud that he is the Lord.",
+    "translation": "Being angry, Indra sent forth a famous group of clouds called Samvartaka, the creator of Samvartaka, the doomsday. How, then, did he engage in the assassination of the Krishna-nathas? Doubting this, he argues that it is because of the discrimination rejected by the possibility of the self. He is proud of himself as the Lord and is proud that he is the Lord."
+  },
+  "3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dcbbf73aae2857a92a17265813e6829950742ad1185e458d7b4277ba2145a220",
+    "word_for_word": "देव-हेलनं देवस्य ममावज्ञाम् ॥३॥ — Neglect of the gods and contempt for the gods.",
+    "translation": "Neglect of the gods and contempt for the gods."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ac177bb7be3c7a9b46742b20603219a5d1057c1f466e373e4a690a25787f1953",
+    "word_for_word": "अदृढैर् असमर्थैः कर्म-मयैः क्रिया-निर्वर्त्यैः, अत एव नाम-नौ-निभैर् नाम-मात्रेण या नौ इति व्यवह्रियते, तत्-सदृशैः । — They are weak and incapable of performing actions, and therefore are like the names of the boats, which are treated as boats in name only.; आन्वीक्षिकीम् आत्मानुस्मृति-रूपाम् ॥४॥ — The intellectual form of self-reflection.",
+    "translation": "They are weak and incapable of performing actions, and therefore are like the names of the boats, which are treated as boats in name only. The intellectual form of self-reflection."
+  },
   "5": {
-    "word_for_word": "tathā — so; in that way; vācālaṃ — talkative; bahu — many; much; bhāṣiṇaṃ — bhāṣiṇaṃ; bāliśaṃ — young; śiśuṃ — a child; paṇḍita — learned; māninaṃ — thinking; paṇḍitaṃ — learned; manyam — (only ifc; ataḥ — therefore; from this; stabdham — col. 1; avinītam — badly trained or brought up; iti — thus; ninda — only in; ayāṃ — in this anner; yojitāpīndrasya — yojitāpīndrasya; bhāratī — bhāratī; kṛṣṇaṃ — Kṛṣṇa; stauti — stauti; tathā — so; in that way; hi — indeed; because; vācālaṃ — talkative; śāstra — scripture; yonim — (in only; bāliśam — young; evam — thus; in this way; api — also; śiśu — a child; van — cl. 1. P. (; nirabhimāninam — nirabhimāninam; stabdham — col. 1; anyasya — of other; vandyasya — of to be praised; abhāva — absence; ad — to eat; anamram — anamram; ajñaṃ — ot knowing; nāsti — does not exist; jño — jño; yasmāt — because; from which; taṃ — the 1st dental consonant; sarva — all; jñam — or 1. . See; ity — thus; arthaḥ — meaning; purpose; paṇḍita — learned; māninaṃ — thinking; brahma — Brahman; Absolute; vidāṃ — to give out; bahu — many; much; mānanīyam — to be honoured; kṛṣṇaṃ — Kṛṣṇa; sad — in comp. or; ānanda — bliss; rūpaṃ — form; paraṃ — higher; other; brahma — Brahman; Absolute; martyaṃ — who or what ust die; tathā — so; in that way; āpī — of a constellation; bhakta — devotee; vātsalyena — by/with affection or tenderness; manuṣyatayā — by/with anhood; pratīyamānam — pratīyamānam; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "411fc17c1a7de8748feae587e77d7526aef02de98686cb6b2182aa0411fafbf7",
+    "word_for_word": "तथा वाचालं बहु-भाषिणं बालिशं शिशुं, पण्डित-मानिनं पण्डितं-मन्यम्, अतः स्तब्धम् अविनीतम् इति निन्दायां योजितापीन्द्रस्य भारती कृष्णं स्तौति । — Similarly, Bharati praises Indra’s condemnation of a childish child who is talkative and talks a lot, who thinks he is a scholar and therefore stunned and immodest.; तथा हि, वाचालं शास्त्र-योनिम् । — Thus, the speech is the source of the scriptures.; बालिशम् एवम् अपि शिशु-वन् निरभिमानिनम् । — He was childish and yet like a child he was not proud; स्तब्धम् अन्यस्य वन्द्यस्याभावाद् अनम्रम् । — He was stunned and humbled by the lack of anyone else to worship.; अज्ञं नास्ति ज्ञो यस्मात् तं । — There is no ignorance from which there is no knower.; सर्व-ज्ञम् इत्य् अर्थः । — It means that he is omniscient.; पण्डित-मानिनं ब्रह्म-विदां बहु-माननीयम् । — He is a learned man and is highly respected by those who know the Absolute Truth.; कृष्णं सद्-आनन्द-रूपं परं ब्रह्म । — Kṛṣṇa is the Supreme Absolute Truth, the form of good bliss.; मर्त्यं तथापी भक्त-वात्सल्येन मनुष्यतया प्रतीयमानम् इति ॥५॥ — Yet mortals are perceived as human beings by the affection of their devotees.",
+    "translation": "Similarly, Bharati praises Indra’s condemnation of a childish child who is talkative and talks a lot, who thinks he is a scholar and therefore stunned and immodest. Thus, the speech is the source of the scriptures. He was childish and yet like a child he was not proud He was stunned and humbled by the lack of anyone else to worship. There is no ignorance from which there is no knower. It means that he is omniscient. He is a learned man and is highly respected by those who know the Absolute Truth. Kṛṣṇa is the Supreme Absolute Truth, the form of good bliss. Yet mortals are perceived as human beings by the affection of their devotees."
   },
   "6": {
-    "word_for_word": "avalipta — smeared; anāṃ — hereby; mattānām — of col. 3s; ādhmāyitātmanāṃ — ādhmāyitātmanāṃ; bṛṃhita — strengthened; dehānām — of bodys; dhunutāpanayata — dhunutāpanayata; śrī — Śrī; sacred; glorious; madena — by/with hilarity; yaḥ — who; which; stambho — stambho; garvas — garvas; tam — him; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f795731092db974d62dd5b8b4a4e5c2421f77da9dbb78e728bd1bb88bbc640ae",
+    "word_for_word": "अवलिप्तानां मत्तानाम् । — They are unclean and drunk.; आध्मायितात्मनां बृंहित-देहानाम् । — They were asthmatic and had enlarged bodies.; धुनुतापनयत । — Heat the tune.; श्री-मदेन यः स्तम्भो गर्वस् तम् ॥६॥ — The pillar of pride which is in the pride of prosperity.",
+    "translation": "They are unclean and drunk. They were asthmatic and had enlarged bodies. Heat the tune. The pillar of pride which is in the pride of prosperity."
   },
   "7": {
-    "word_for_word": "bibhyatas — bibhyatas; tān — them; those; praty — in comp. before vowels or above; āha — says; ahaṃ — I; ceti — in/on if; anuvraje — anuvraje; anvanantaram — anvanantaram; evāgamiṣyāmi — evāgamiṣyāmi; marud — in comp. or; gaṇair — gaṇair; deva — deity; god; gaṇaiḥ — by/with a locks; saha — with."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a8e6f81f181e5c185ea7b7b5a3243f35ba9411b29978934c9e74c1622abca0b4",
+    "word_for_word": "बिभ्यतस् तान् प्रत्य् आह---अहं चेति । — Frightened, he replied to them, “And I am.; अनुव्रजे अन्वनन्तरम् एवागमिष्यामि । — I’ll follow you and come back later.; मरुद्-गणैर् देव-गणैः सह ॥७॥ — with the hosts of the Maruts and the hosts of the gods.",
+    "translation": "Frightened, he replied to them, “And I am. I’ll follow you and come back later. with the hosts of the Maruts and the hosts of the gods."
   },
   "8": {
-    "word_for_word": "maghavatā — maghavatā; indreṇa — indreṇa; nirmuktaṃ — loosed; bandhanaṃ — binding; yeṣ — to boil up; aṃ — not; te — they; those; pralaya — dissolution; abhiprāyeṇa — with the intended sense; baddhā — baddhā; āsan — outh; tadā — then; nirmukta — loosed; bandhanāḥ — bindings; santa — =; āsārair — āsārair; dha — aspirate of the preceding letter; ara — swift; asaṃpātaiḥ — by/with ot present or at hands; pīḍayām — with pain i.e. unwillingly; āsuḥ — to press out."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "17e7e1a6c76addc4ef65e8dcf8dac9a6aefc48d15136bac6d51e2e911eca674b",
+    "word_for_word": "मघवता इन्द्रेण निर्मुक्तं बन्धनं येषां ते । — They were freed from bondage by Indra, the King of the Indras.; प्रलयाभिप्रायेण बद्धा आसन् । — They were bound by the intention of doom.; तदा निर्मुक्त-बन्धनाः सन्त आसारैर् धारासंपातैः पीडयाम् आसुः ॥८॥ — Then the saints, freed from their bonds, were tormented by the floods of streams of water.",
+    "translation": "They were freed from bondage by Indra, the King of the Indras. They were bound by the intention of doom. Then the saints, freed from their bonds, were tormented by the floods of streams of water."
+  },
+  "9": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "25987a00b4261e13ab9580fb74a7e9ff5ad2f9d921353d058a7377a55aacc763",
+    "word_for_word": "स्तनयित्नुभिर् अशनिभिः । — with thunderbolts that thundered.; स्तनन्तो गर्जन्तः । — They were breastfeeding and roaring.; मरुद्-गणैर् आवह-प्रवहादि-वायु-समुहैर् नुन्नाः प्रेरिताः । — The Maruts were driven by the winds of the Avaha, Pravaha and others.; जल-शर्करा जलोपलाः ॥९॥ — Water-sugars and watermelons.",
+    "translation": "with thunderbolts that thundered. They were breastfeeding and roaring. The Maruts were driven by the winds of the Avaha, Pravaha and others. Water-sugars and watermelons."
+  },
+  "10": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5a8a87d178c019debf4556c07846fdb5ff5af92633c34ee74c3d036e106eb341",
+    "word_for_word": "स्थूणावत् स्थूलाः । — They are as thick as a pillar.; अभ्रेषु मुञ्चत्सु सत्सु । — They were released in the clouds.; नतोन्नतं निम्नम् उन्नतं तद्-विपरीतं यथा भवति, तथा भूर् नादृश्यत ॥१०॥ — The earth did not appear to be bowed or raised or raised or raised or the opposite of it",
+    "translation": "They are as thick as a pillar. They were released in the clouds. The earth did not appear to be bowed or raised or raised or raised or the opposite of it"
   },
   "11": {
-    "word_for_word": "jāta — born; vepanā — vepanā; jāta — born; kampāḥ — tremblings."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a03b29f24f6da4e8558b3bcef3a0dc639a53fa3ea0412518bcf91a9f03d15887",
+    "word_for_word": "जात-वेपना जात-कम्पाः ॥११॥ — They trembled and trembled.",
+    "translation": "They trembled and trembled."
   },
   "12": {
-    "word_for_word": "tatra — there; in that; paśūn — animals; aṃ — not; yānaṃ — leading; viśinaṣṭi — viśinaṣṭi; śira — the head; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1ab7e01228ce9e3f313ef6dfa95dba17a96fb60cfb8fd64ae06885921cf9ac27",
+    "word_for_word": "तत्र पशूनां यानं विशिनष्टि, शिर इति ॥१२॥ — There the carriage of the animals is destroyed, the head.",
+    "translation": "There the carriage of the animals is destroyed, the head."
   },
   "13": {
-    "word_for_word": "gopa — cowherd; gopīnāṃ — of gopī; cowherd womans; prārthanām — of eager or ready to set out on a journeys; āha — says; kṛṣṇa — Kṛṣṇa; kṛṣṇa — Kṛṣṇa; iti — thus; tvam — you; eva — only; indeed; nātho — nātho; yasya — whose; of which; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; gokulaṃ — Gokula; gava — in comp. before a word beginning with a vowel and ifc. or; aṃ — not; kulaṃ — family; vaṃśaṃ — dynasty; lineage; no — no; sma — indeed; formerly; aṃś — to divide; ca — and; deva — deity; god; ad — to eat; indrāt — from ( or etym. as given by ative authorities See; tra — ifc. ‘protecting’; ātuṃ — =; rakṣitum — rakṣitum; arhasi — arhasi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a0e7b9cb84b0e4944dfb724a79fd1caef31dffd426d5c419f51ddf48c9859d42",
+    "word_for_word": "गोप-गोपीनां प्रार्थनाम् आह---कृष्ण कृष्णेति । — He said to the prayers of the cowherd men and women, “Kṛṣṇa, Kṛṣṇa.”; त्वम् एव नाथो यस्य तद् गोकुलं गवां कुलं वंशं नो ऽस्मांश् च देवाद् इन्द्रात् त्रातुं रक्षितुम् अर्हसि ॥१३॥ — You alone are the master of whom that Gokula is the herd of cows and our race You should protect us and us from the god Indra.",
+    "translation": "He said to the prayers of the cowherd men and women, “Kṛṣṇa, Kṛṣṇa.” You alone are the master of whom that Gokula is the herd of cows and our race You should protect us and us from the god Indra."
   },
   "14": {
-    "word_for_word": "vijñāpanāt — from information; pūrvam — before; eva — only; indeed; kupitenendreṇa — kupitenendreṇa; kṛtaṃ — done; made; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; varṣaṃ — raining; mene — considered."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2c0d62e82dabff1946c2a75991da7b5d7bdbb3248e125bbad556024f3144e0b8",
+    "word_for_word": "विज्ञापनात् पूर्वम् एव कुपितेनेन्द्रेण कृतं तद् वर्षं मेने ॥१४॥ — He thought that the rain had been caused by the angry Indra just before the announcement.",
+    "translation": "He thought that the rain had been caused by the angry Indra just before the announcement."
   },
   "15": {
-    "word_for_word": "kathaṃ — (in comp. or; mene — considered; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; apartv — apartv; iti — thus; apagata — gone; ṛtur — ṛtur; yasya — whose; of which; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; varṣam — raining; atiśayito — atiśayito; vāto — vāto; yasmiṃs — yasmiṃs; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; ativātam — high wind; śilā — a stone; mayaṃ — of an; śilā — a stone; pracuram — uch."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "810b1f42abc9e14891c540b472af0a031d97e6e8827e37dbad4873ed4f2037f9",
+    "word_for_word": "कथं मेने तद् आह---अपर्त्व् इति । — How did he think that, he argued, was apart?; अपगत ऋतुर् यस्य तद् वर्षम् । — The year in which the season has passed.; अतिशयितो वातो यस्मिंस् तद् अतिवातम् । — The wind in which the wind is excessive is called hyperwind.; शिला-मयं शिला-प्रचुरम् ॥१५॥ — It is made of rocks and abundant in rocks.",
+    "translation": "How did he think that, he argued, was apart? The year in which the season has passed. The wind in which the wind is excessive is called hyperwind. It is made of rocks and abundant in rocks."
   },
   "16": {
-    "word_for_word": "tatra — there; in that; pratijñā — to admit; pūrvakaṃ — earlier; govardhana — a celebrated hill in ear (lifted up and supported by upon one inger or 7 days…; uddharaṇam — the act of taking up; āha — says; tatreti — tatreti; tatra — there; in that; pratividhiṃ — a eans or remedy against; pratīkāraṃ — =; sva — own; self; sāmarthyena — by/with sameness of aim or object or eaning or signification; sādhayiṣyāmi — sādhayiṣyāmi; tena — by him; by that; ca — and; mauḍhya — patr. g; al — to adorn; lokeśa — lord of the world; mānināṃ — mānināṃ; śrī — Śrī; sacred; glorious; mada — hilarity; lakṣaṇaṃ — characteristic; definition; tamo — in comp. or; hariṣyāmi — hariṣyāmi; bahu — many; much; vacanena — by/with statement; grammatical number; varuṇa — ‘All-enveloping Sky’; ādīnām — of √ 2. (3. sg. impfs; abhipraiti — abhipraiti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7860d6bc4d6ad7bf649d0cb26f70116034ab83abfaefd7d390a1b085d3595114",
+    "word_for_word": "तत्र प्रतिज्ञा-पूर्वकं गोवर्धनोद्धरणम् आह---तत्रेति । — There he argues for the quotation of Govardhana with the promise: There.; तत्र प्रतिविधिं प्रतीकारं स्व-सामर्थ्येन साधयिष्यामि । — I will do my best to counter the countermeasures there.; तेन च मौढ्याल् लोकेश-मानिनां श्री-मद-लक्षणं तमो हरिष्यामि । — By doing so, I will remove the darkness characteristic of the foolishness of those who think they are the Lord of the universe.; बहु-वचनेन वरुणादीनाम् अभिप्रैति ॥१६॥ — By many words he means Varuna and others.",
+    "translation": "There he argues for the quotation of Govardhana with the promise: There. I will do my best to counter the countermeasures there. By doing so, I will remove the darkness characteristic of the foolishness of those who think they are the Lord of the universe. By many words he means Varuna and others."
   },
   "17": {
-    "word_for_word": "nanu — but surely; indeed; devāḥ — deity; gods; sāttvika — spirited; as — be; tvad — =; bhaktāś — bhaktāś; ca — and; kutas — rom whom?; teṣāṃ — teṣāṃ; tamaḥ — in comp. or; tatrāha — tatrāha; na — not; hīti — hīti; sad — in comp. or; bhāvaḥ — sense; purport; sattvaṃ — sattvaṃ; mad — base of the irst pers. in the sg. umber; bhaktir — bhaktir; vā — or; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; yuktānāṃ — yuktānāṃ; surāṇām — surāṇām; īśā — aculty; vayam — we; iti — thus; vismayo — vismayo; garvo — garvo; hi — indeed; because; yasm — cl. 4. P. (rarely cf; an — not; na — not; ghaṭate'to'santas — ghaṭate'to'santas; te — they; those; kiṃ — what; ca — and; teṣāṃ — teṣāṃ; māna — col. 3; bhaṅgo'nugraha — bhaṅgo'nugraha; eva — only; indeed; ity — thus; āha — says; matta — col. 3; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "20487b2c6fd78469011ea1c658d66aef08ca4373981076704c7be4353b59089b",
+    "word_for_word": "ननु देवाः सात्त्विकास् त्वद्-भक्ताश् च कुतस् तेषां तमः ? — If the gods are Sattvic and Your devotees, where is their darkness?; तत्राह---न हीति । — There he argues that it is not.; सद्-भावः सत्त्वं मद्-भक्तिर् वा तद्-युक्तानां सुराणाम् ईशा वयम् इति विस्मयो गर्वो हि यस्मान् न घटतेऽतोऽसन्तस् ते । — The wonder and pride of the demigods who are endowed with goodness, goodness, or devotion to Me, that we are the Lords, does not happen to them, and therefore they are infinite.; किं च, तेषां मान-भङ्गोऽनुग्रह एवेत्य् आह---मत्त इति ॥१७॥ — Moreover, it is argued that the breach of their honor is only a favor, and that it is from me.",
+    "translation": "If the gods are Sattvic and Your devotees, where is their darkness? There he argues that it is not. The wonder and pride of the demigods who are endowed with goodness, goodness, or devotion to Me, that we are the Lords, does not happen to them, and therefore they are infinite. Moreover, it is argued that the breach of their honor is only a favor, and that it is from me."
   },
   "19": {
-    "word_for_word": "kṛtvā — having done; having made; utkṛtya — p. having cut off or up; chatrākam — chatrākam; ucchilīndhram — covered with sprouting ushrooms."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "358e51239030b468a04a2a57080028ed396fff224ec99d90ce0e29ff8aab5a72",
+    "word_for_word": "कृत्वा उत्कृत्य । — and cut it out.; छत्राकम् उच्छिलीन्ध्रम् ॥१९॥ — The umbrella is a hole in the ground.",
+    "translation": "and cut it out. The umbrella is a hole in the ground."
   },
   "20": {
-    "word_for_word": "yatha — or before and =; upajoṣaṃ — desire; yathā — as; just as; sukham — easily."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "18bbe8acb1c0b7e40836d02e8f9089a8b1f5cbc4ac58a947d4ce73e2fd09e1f9",
+    "word_for_word": "यथोपजोषं यथा-सुखम् ॥२०॥ — as pleasure as pleasure.",
+    "translation": "as pleasure as pleasure."
   },
   "21": {
-    "word_for_word": "sa — the last of the three sibilants; vrajāḥ — Vrajas; śakaṭa — a cart; maṇḍala — circular; sahitāḥ — together withs; sopajīvino — sopajīvino; bhṛtya — to be ourished or aintained; purohitādi — purohitādi; sahitāḥ — together withs."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b4ce86e40bdeb4940a631d4b89f7dc0d333e38e89f910c933c617ca6e93c1e80",
+    "word_for_word": "स-व्रजाः शकट-मण्डल-सहिताः सोपजीविनो भृत्य-पुरोहितादि-सहिताः ॥२१॥ — They lived in Vraja with their chariots and circles with their subsistence servants priests and others",
+    "translation": "They lived in Vraja with their chariots and circles with their subsistence servants priests and others"
   },
   "22": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "padāt — from word; term; position; sthānāt — from the act of standing."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e7ae4ee36a74e3534995890e6f966580dd4da1ae13d9f18fbd0a461dfea48de1",
+    "word_for_word": "पदात् स्थानात् ॥२३॥ — from the foot to the place.",
+    "translation": "from the foot to the place."
   },
   "24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "26": {
-    "word_for_word": "vyuda — waterless; prāyā — to come ear; vigatodaka — vigatodaka; prāyāḥ — ( r. +s; svalpa — very small or little; jalā — of a river; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "63fa55a3e0d750ded76f88ac5fa3cdf75ff168d9000bf4d23a36261b7406e8f7",
+    "word_for_word": "व्युद-प्राया विगतोदक-प्रायाः । — They are almost devoid of water.; स्वल्प-जला इत्य् अर्थः ॥२६॥ — It means little-water.",
+    "translation": "They are almost devoid of water. It means little-water."
   },
   "27": {
-    "word_for_word": "śakaṭoḍhopakaraṇaṃ — śakaṭoḍhopakaraṇaṃ; śakaṭair — śakaṭair; ūḍham — p.p. of √; upakaraṇaṃ — upakaraṇaṃ; yathā — as; just as; bhavati — is; becomes; tathā — so; in that way."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "eeaf949b70ac2f5aa72eb76418f99c35730b635120f267859b01f6b4ac61dc53",
+    "word_for_word": "शकटोढोपकरणं शकटैर् ऊढम् उपकरणं यथा भवति तथा ॥२७॥ — The equipment carried in the cart is the same as the equipment carried in the carts.",
+    "translation": "The equipment carried in the cart is the same as the equipment carried in the carts."
   },
   "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "29": {
-    "word_for_word": "nibhṛtāḥ — borne or placed downs; pūrṇāḥ — illeds; yathā — as; just as; yathocitaṃ — accordant with propriety or equity; parirambhaṇa — embracing; ādibhiḥ — by/with beginning; and so ons; samīyur — samīyur; upajagmuḥ — upajagmuḥ; sad — in comp. or; āśiṣaḥ — āśiṣaḥ; śreṣṭhān — ost splendid or beautifuls; āśīr — āśīr; vādān — speaking of or abouts."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "86dcc119aa4373b4314fa06e75e5651ce6654343decdb2c09f7b13de74057b3f",
+    "word_for_word": "निभृताः पूर्णाः यथा यथोचितं परिरम्भणादिभिः समीयुर् उपजग्मुः । — They were calm and full, and they approached him as they should, embracing him and so on.; सद्-आशिषः श्रेष्ठान् आशीर् वादान् ॥२९॥ — The best of the good blessings are the words of blessings.",
+    "translation": "They were calm and full, and they approached him as they should, embracing him and so on. The best of the good blessings are the words of blessings."
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "32": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "33": {
-    "word_for_word": "tato — in comp. or; govardhana — a celebrated hill in ear (lifted up and supported by upon one inger or 7 days…; sthānāt — from the act of standing; asya — of this; of him; śrī-kṛṣṇasya — of Śrī Kṛṣṇa; tathā — so; in that way; vidhāni — vidhāni; govardhanoddharaṇā — govardhanoddharaṇā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a9cb3904516d51453c30c2e0759ac211b5c7b33946c4eb9bd28ef48d598179ff",
+    "word_for_word": "ततो गोवर्धन-स्थानात् । — Then from the place of Govardhana.; अस्य श्री-कृष्णस्य तथा-विधानि गोवर्धनोद्धरणा ॥३३॥ — This is the lifting of Govardhana by Lord Kṛṣṇa in such ways.",
+    "translation": "Then from the place of Govardhana. This is the lifting of Govardhana by Lord Kṛṣṇa in such ways."
   }
 }

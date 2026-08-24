@@ -1,53 +1,338 @@
 {
   "1": {
-    "word_for_word": "viṃśe — viṃśe; prāvṛṭ — in comp. or; śarac — in comp. or; chobhā — chobhā; varṇanena — by/with and; vana — forest; ucita — delightful; aḥ — not; prāvṛṭ — in comp. or; krīḍā — play; pastime; nirūpyante — are being describe; establish; gopa — cowherd; rāma — Rāma; yujo — yujo; hareḥ — of Hari; heya — to be gone; adeya — improper or unfit to be given; upama — uppermost; anena — by this; prāvṛṭ — in comp. or; śarad — autumn; ṛtu — any settled point of time; śriyoḥ — śriyoḥ; varṇanaṃ — and; tv — tv; adbhutaiśvarya — adbhutaiśvarya; kṛṣṇa — Kṛṣṇa; līlā — pastime; vivakṣayā — by/with the wish or desire to speak or declare or teach or express."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7ae36b654ebe346498985a846061414d5a6a730233f22587814754cb55e4c13e",
+    "word_for_word": "विंशे प्रावृट्-शरच्-छोभा वर्णनेन वनोचिताः । — In the twentieth century the forests are described as spring, autumn and chobha.; प्रावृट्-क्रीडा निरूप्यन्ते गोप-राम-युजो हरेः ॥ — The games of the rainy season are described as the ages of the cowherd boys and Lord Rāmacandra.; हेयादेयोपमानेन प्रावृट्-शरद्-ऋतु-श्रियोः । — By comparing the beauty of the spring and autumn seasons to Heya and others.; वर्णनं त्व् अद्भुतैश्वर्य कृष्ण-लीला-विवक्षया ॥१॥ — The description is intended to describe the wonderful opulence of Krishna’s pastimes.",
+    "translation": "In the twentieth century the forests are described as spring, autumn and chobha. The games of the rainy season are described as the ages of the cowherd boys and Lord Rāmacandra. By comparing the beauty of the spring and autumn seasons to Heya and others. The description is intended to describe the wonderful opulence of Krishna’s pastimes."
   },
   "2": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "3": {
-    "word_for_word": "tatra — there; in that; prāvṛḍ — in comp. or; varṇanaṃ — and; tata — chiefly Ved. a ather; ity-ādi — and so on; dvā — old om. du. of; viṃśatyā — viṃśatyā; sarva — all; iṣa — seeking; aṃ — not; prāṇinā — by/with living being; aṃ — not; samudbhava — existence; utpattito — utpattito; jīvanataś — jīvanataś; ca — and; yasya — whose; of which; aṃ — not; sā — she; that; prāvṛṭ — in comp. or; vidyotam — lashing; anāḥ — {{Lbody=4781}}s; paridhayaḥ — paridhayaḥ; pariveṣādi — pariveṣādi; śobhā — splendour; yasya — whose; of which; aṃ — not; sā — she; that; visphurjitaṃ — visphurjitaṃ; saṅkṣubhitaṃ — saṅkṣubhitaṃ; nabhas — ist; talaṃ — surface; yasya — whose; of which; aṃ — not; sā — she; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ff82e5f66ac1e559c11c3fcaf0902b49bbd29e83ce06ebfb543cfe14d7a759e8",
+    "word_for_word": "तत्र प्रावृड्-वर्णनं, तत इत्य्-आदि द्वा-विंशत्या । — There is a description of the spring, and then it, etc., in twenty-two.; सर्वेषां प्राणिनां समुद्भव उत्पत्तितो जीवनतश् च यस्यां सा प्रावृट् । — The rainy season is the month in which all living things originate, originate and live.; विद्योतमानाः परिधयः परिवेषादि-शोभा यस्यां सा । — She whose surroundings are shining and whose garments and other beauty are beautiful.; विस्फुर्जितं सङ्क्षुभितं नभस् तलं यस्यां सा ॥३॥ — That in which the sky is shaken and the earth is shaken.",
+    "translation": "There is a description of the spring, and then it, etc., in twenty-two. The rainy season is the month in which all living things originate, originate and live. She whose surroundings are shining and whose garments and other beauty are beautiful. That in which the sky is shaken and the earth is shaken."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f0f2371e8f810eabc1d54d912b5a0fc627b3e0203778e7a4d63fdcc2ef08a374",
+    "word_for_word": "सान्द्रैर् निबिडैर् नीलाम्बुदैर् विद्युद्-गर्जित-सहितैर् आच्छन्नम् । — It was covered in dense, dense blue clouds accompanied by lightning and thunder.; स-गुणं गुणैर् आच्छन्नं जीवाख्यम् । — The same-quality is called the living entity, covered by the qualities.; विद्युद्-गर्जिताम्बुदानां सत्त्व-रजस्-तमोभिर् उपमा ॥४॥ — The clouds thundered by lightning are likened to Sattva, Rajas and Tamas.",
+    "translation": "It was covered in dense, dense blue clouds accompanied by lightning and thunder. The same-quality is called the living entity, covered by the qualities. The clouds thundered by lightning are likened to Sattva, Rajas and Tamas."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "19f8debda4420f36053583f2646b5562d640e1296633d9bd909e4aeb284c24d4",
+    "word_for_word": "पर्जन्यः सूर्यः । — The rain is the sun.; स्व-गोभिर् निज-रश्मिभिः । — With their own cows and their own rays.; काले यथोचित-समये । — At the right time at the right time.; अत्र राजोपमा कराद् आनतः समये पुनर् दानतश् च सूचिता ॥५॥ — Here the likeness of a king is indicated by the one who brings it from the hand and gives it back at the right time.",
+    "translation": "The rain is the sun. With their own cows and their own rays. At the right time at the right time. Here the likeness of a king is indicated by the one who brings it from the hand and gives it back at the right time."
+  },
+  "6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "836ea4c3941f60f322e3a14c8c7061e8e881a7112f52e4952baea7115fc6281d",
+    "word_for_word": "अस्य विश्वस्य प्रीणनम् आप्यायन-करं जीवनम् उदकं मुमुचुः । — They released the water of life that satisfies and nourishes this universe.; कृपालवो यथा तप्तं जनं निरीक्ष्यानुकम्पमानास् तद्-आप्यायनाय स्व-जीवनम् अपि त्यजन्ति । — Just as compassionate people look at a suffering person and feel compassion for him, so they give up their lives to feed him.; तद्वन् महान्तो मेघास् तडिन्-नेत्रैर् विश्वं तप्तं निरीक्ष्य वायुभिर् वेपिता जीवनं मुमुचुर् इति ॥६॥ — Similarly the great clouds, shaken by the winds, looking at the scorched universe with their eyes like lightning, gave up their lives.",
+    "translation": "They released the water of life that satisfies and nourishes this universe. Just as compassionate people look at a suffering person and feel compassion for him, so they give up their lives to feed him. Similarly the great clouds, shaken by the winds, looking at the scorched universe with their eyes like lightning, gave up their lives."
+  },
+  "7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0fcdd57d005ec733c4ee6fe71bdfd234510ce9bd762fdbfa5129aaa0de9cdcf9",
+    "word_for_word": "तपसा ग्रीष्मेण कृशा । — She was thin with austerities and summer.; देव-मीढा पर्जन्य-सिक्ता । — Deva-meedha parjanya-sikta.; वर्षीयसी उच्छूना पुष्टा । — The year-old is strong and strong.; काम्यं तपो यस्य तस्य तनुः कामान् संप्राप्य यथेति ॥७-८॥ — The body of one whose austerities are desirable is as if he had attained his desires (7-8).",
+    "translation": "She was thin with austerities and summer. Deva-meedha parjanya-sikta. The year-old is strong and strong. The body of one whose austerities are desirable is as if he had attained his desires (7-8)."
   },
   "8": {
-    "word_for_word": "anuśuṣyantyaḥ — anuśuṣyantyaḥ; asvatantrasyendriya — asvatantrasyendriya; paratantrasya — of a rule or ormula or another rite; svatantrasya — of self-dependence; niraṅkuśasya — of unchecked; iti — thus; vā — or."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a7dc26b498d1271a089c3bd68182a52a728c950c93bbefe4709bdd5700c3e98f",
+    "word_for_word": "अनुशुष्यन्त्यः । — They’re drying up.; अस्वतन्त्रस्येन्द्रिय-परतन्त्रस्य । — of the unindependent, independent of the senses and others.; स्वतन्त्रस्य निरङ्कुशस्येति वा ॥८॥ — or of the free and the uncontrolled.",
+    "translation": "They’re drying up. of the unindependent, independent of the senses and others. or of the free and the uncontrolled."
   },
   "9": {
-    "word_for_word": "nitya — ( r; karmāvasāne — karmāvasāne; ācārya — ‘knowing or teaching the or rules’; ninadaṃ — sound; śrutvā — having heard; tac — in comp. or; chiṣyā — chiṣyā; yatha — or before and =; adhīyate — is being to turn the towards; tadvad — tadvad; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d60c18a502cc564c52401c1275134b567c55b14580a0f3139565b871e24690a8",
+    "word_for_word": "नित्य-कर्मावसाने आचार्य-निनदं श्रुत्वा तच्-छिष्या यथाधीयते तद्वद् इति ॥९॥ — At the end of the daily rituals the disciple hears the voice of the teacher and says, 'That is what the disciple is studying.",
+    "translation": "At the end of the daily rituals the disciple hears the voice of the teacher and says, 'That is what the disciple is studying."
+  },
+  "10": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "39c7346f92d0de0f449ce32f0998eaf9ebf65be6983286349d13fec5078d66f0",
+    "word_for_word": "अनुशुष्यतीर् अनुशुष्यन्त्यः । — They are dry and dry.; अस्वतन्त्रस्येन्द्रिय-परतन्त्रस्य । — of the unindependent, independent of the senses and others.; स्वतन्त्रस्य निरङ्कुशस्येति वा ॥१०॥ — or of the free and the uncontrolled.",
+    "translation": "They are dry and dry. of the unindependent, independent of the senses and others. or of the free and the uncontrolled."
+  },
+  "11": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "43078eb7fc2aebdc71fb72c177a2be287cdd1e1c5ae1f9a096577adc56e43316",
+    "word_for_word": "हरिभिर् नीलैः शष्पैर् बाल-तृणैर् नील-वर्णा । — It was blue with green grass and young grass.; क्वचिद् इन्द्र-गोपैः कीट-विशेषैर् लोहिता । — Sometimes it is red with Indra’s cows and special insects.; तत्र तत्र्ओच्छिलीन्ध्रैश् छत्राकारैर् उद्भिदैः कृत-च्छाया नृणां राज्ञां श्रीः सेनासम्पद् इव ॥११॥ — Here and there the holes in the rocks and the umbrella-shaped plants provided shade for the kings like the wealth of an army",
+    "translation": "It was blue with green grass and young grass. Sometimes it is red with Indra’s cows and special insects. Here and there the holes in the rocks and the umbrella-shaped plants provided shade for the kings like the wealth of an army"
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0f187b44f9ef10291257282e12e779b804ed617a9daf8c905e0c43d2478ad61b",
+    "word_for_word": "क्षेत्राण्ईति । — fields, etc.; तदा हि वृष्टेर् अविच्छेदे लसन्तः प्रियङ्ग्व्-आदयो मुदं ददति, विच्छेदे शुष्यन्तोऽनुतापं चेति ॥१२॥ — Then, when the rain is not interrupted, the flowers like priyangva give joy, but when they are interrupted, they wither and cause regret.",
+    "translation": "fields, etc. Then, when the rain is not interrupted, the flowers like priyangva give joy, but when they are interrupted, they wither and cause regret."
+  },
+  "13": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ff9bba9d657f84f169d673f9ec83c9606eb97231b5a5ff8f556f8d7ccdce9ec9",
+    "word_for_word": "अबिभ्रद् अबिभरुः यथा हरि-निषेवयेति । — They did not carry it, as if they were serving the Lord.; हरि-सेवायां प्रवृत्ता हि सद्य एव सर्वे रुचिरा भवन्ति । — Everyone who is engaged in the service of the Lord is immediately attractive.; तस्यां परम-धर्मत्वात् परम-सुखत्वाच् च तद्वद् इति ॥१३॥ — Because it is the supreme religion and the supreme happiness in it, it is the same.",
+    "translation": "They did not carry it, as if they were serving the Lord. Everyone who is engaged in the service of the Lord is immediately attractive. Because it is the supreme religion and the supreme happiness in it, it is the same."
+  },
+  "14": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3be2e2589725ed9cd56e989069a96c12269122fd2768df0a09b6fac5f17258f9",
+    "word_for_word": "कामाक्तं काम-वासनायुक्तम् इति श्वसनोर्मि-साम्यम् । — The equivalent of the waves of breath is that it is full of lust and desire.; गुणैर् विषयैर् युज्यत इति सरित्-सङ्गति-साम्यम् ॥१४॥ — The equality of the river-association is that it is engaged in the modes of nature and the objects.",
+    "translation": "The equivalent of the waves of breath is that it is full of lust and desire. The equality of the river-association is that it is engaged in the modes of nature and the objects."
+  },
+  "15": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f3a70f2fcd3dec9950f716e6b9793823056f08fe99b3ebead449f05632109699",
+    "word_for_word": "अधोक्षज एव चेतो येषां ते ॥१५॥ — Those whose minds are only transcendental.",
+    "translation": "Those whose minds are only transcendental."
+  },
+  "16": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b14f4adbf543b040aedc249e58d536e06d64a5b0387f88461343d710f5aa0d2d",
+    "word_for_word": "असंस्कृता अक्षुण्णा नाभ्यस्यमाना इत्य् असंस्कृत-साम्यम् । — The equivalent of uncultured is that it is uncultured, intact and not practiced.; कालेन चाहता इति तृणाच्छादन-साम्यम् ॥१६॥ — The equivalent of covering with grass is called Chahata in time.",
+    "translation": "The equivalent of uncultured is that it is uncultured, intact and not practiced. The equivalent of covering with grass is called Chahata in time."
   },
   "17": {
-    "word_for_word": "yathā — as; just as; kāminyaḥ — kāminyaḥ; puṃś — in comp. or 2; calyaḥ — calyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "50e64357ecccf7c83f701d953f34fba909c6146ca111fb460012a4854edbb5d9",
+    "word_for_word": "यथा कामिन्यः पुंश्-चल्यः ॥१७॥ — as the lustful male-moving.",
+    "translation": "as the lustful male-moving."
+  },
+  "18": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3e612965e7785462b0001431d510c737ddbe2fdf159f3f6ba8c01f5b62ac221a",
+    "word_for_word": "निर्गुणं ज्यारहितम् अपि गुणिनि गर्जित-शब्दवति अभाद् अशोभत । — Even though it was devoid of virtue and without a bow, it was beautiful because it was like a roaring sound in the virtuous.; गुण-व्यतिकरात्मके व्यक्ते प्रपञ्चेऽगुणवान् निर्गुणः पुरुषो यथेति ॥१८॥ — In the manifest world consisting of the differences between the modes of nature, the modeless and devoid of the modes of nature are as follows.",
+    "translation": "Even though it was devoid of virtue and without a bow, it was beautiful because it was like a roaring sound in the virtuous. In the manifest world consisting of the differences between the modes of nature, the modeless and devoid of the modes of nature are as follows."
+  },
+  "19": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cce2b896e37da9357546bac67f50476018bf02af8639b3a2a0d5294916ddf8c1",
+    "word_for_word": "स्व-भासा भासितयाहम्-मत्येति स्व-चैतन्येनैव प्रकाशितेनाहङ्कारेण च्छन्नो जीवो यथा । — Just as a living entity is covered by the ego, which is revealed by his own consciousness, he thinks that he is “I” by his own illumination.; यद् वा, अहं विद्वान् दाता वेत्ता शूर इति स्व-प्रतीत्यैवारोपितया इति ॥१९॥ — Or else, by self-perception that I am a learned giver, a knower and a hero.",
+    "translation": "Just as a living entity is covered by the ego, which is revealed by his own consciousness, he thinks that he is “I” by his own illumination. Or else, by self-perception that I am a learned giver, a knower and a hero."
+  },
+  "20": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9d48b7593d00f5bf2d9e044bb8978a6994c8634f00b7f811082f51a4217526c9",
+    "word_for_word": "मेघा गमेनोत्सवो येषाम् अतो हृष्टाः ॥२०॥ — The clouds are therefore delighted with the festival of their departure",
+    "translation": "The clouds are therefore delighted with the festival of their departure"
+  },
+  "21": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3f15a0d02d7d8f6de02ad064ae187f8c2628294ebd1460c61e9ba8d9e0010940",
+    "word_for_word": "नानात्म-मूर्तयः अनेक-रूप-देहाः ॥२१॥ — They are various self-images and bodies of many forms.",
+    "translation": "They are various self-images and bodies of many forms."
+  },
+  "22": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "603e58a573a74c7b48e6c840286720b7405f75e27a9ee6bc9a050aba48b44d65",
+    "word_for_word": "अशान्तानि पङ्क-कण्टकादि-युक्तानि रोधांसि तटानि येषां तेष्व् अपि न्यूषुर् नितराम् अवसन् । — They also lived on the banks of the river, which was unsettled and covered with mud and thorns.; सारसाश् चक्रवाकाः । — The storks and the chakravakas.; अशान्तानि घोराण्य् अनुपरतानि वा कृत्यानि येषु तेष्व् अपि गृहेषु ॥२२॥ — Even in those houses where there are unsettled and terrible or continuous acts.",
+    "translation": "They also lived on the banks of the river, which was unsettled and covered with mud and thorns. The storks and the chakravakas. Even in those houses where there are unsettled and terrible or continuous acts."
+  },
+  "23": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "194f6cd4ea4e110aabc24b0b8ae4d9c8184816667fff37ed4004bacf92b7cfff",
+    "word_for_word": "ईश्वरे इन्द्रे ॥२३॥ — In the Lord, Indra.",
+    "translation": "In the Lord, Indra."
+  },
+  "24": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e986e2aa7fff6e712ae9ffcfb6edcb0516c1c0c89526f1d024706cf2125aa76d",
+    "word_for_word": "नुन्नाः प्रेरिताः । — The Nunnas were inspired.; आशिषः कामान् । — Blessings and desires.; विश्पतयो राजानः, वणिजां पतयो व । — The masters of the world are kings, and the masters of merchants.; द्विजेरिताः पुरोहितैर् उक्ताः ॥२४॥ — They were spoken of by the priests encouraged by the brahmins.",
+    "translation": "The Nunnas were inspired. Blessings and desires. The masters of the world are kings, and the masters of merchants. They were spoken of by the priests encouraged by the brahmins."
   },
   "25": {
-    "word_for_word": "prāvṛṣi — prāvṛṣi; kṛtāṃ — an abyss; krīḍāṃ — play; pastime; varṇayati — a kind of easure; evaṃ — thus; in this way; vanam — forest; iti — thus; saptabhiḥ — by/with sevens; varṣiṣṭhaṃ — highest; samṛddham — accomplished."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "830205770a6a1dbfcb7a05790fcfa13118f6294704d8d4c93c0d54551a20e31a",
+    "word_for_word": "प्रावृषि कृतां क्रीडां वर्णयति---एवं वनम् इति सप्तभिः । — He describes a game played in the spring: “Thus is the forest,” with seven.; वर्षिष्ठं समृद्धम् ॥२५॥ — The rainy and prosperous.",
+    "translation": "He describes a game played in the spring: “Thus is the forest,” with seven. The rainy and prosperous."
   },
   "27": {
-    "word_for_word": "vanaukasaḥ — vanaukasaḥ; pulindīḥ — a woman; pramuditā — of one of the 10 s; bhagavān — the Supreme Lord; dadṛśe — dadṛśe; tathā — so; in that way; vana — forest; rājīr — rājīr; madhu — ( gen. Ved; cyuto — cyuto; madhu — ( gen. Ved; sravā — of various plants; dadṛśe — dadṛśe; gireḥ — of mountain; sakāśāj — sakāśāj; jala — water; dhārāś — dhārāś; ca — and; tāsāṃ — tāsāṃ; nāda — a loud sound; ad — to eat; āsannā — āsannā; nikaṭa — being at the side; vartinīr — vartinīr; guha — ‘reared in a secret place’; aś — Ā. ( aor. 3. pl; ca — and; yad — who; vā — or; vanaukasaḥ — vanaukasaḥ; pramuditā — of one of the 10 s; āsan — outh; tathā — so; in that way; vana — forest; rājīr — rājīr; vana — forest; rājayo — rājayo; vana — forest; paramparā — an uninterrupted row or series; madhu — ( gen. Ved; cyuta — oved; āsan — outh; gira — ifc. = 1; ir — cl. 6. P. , to go; jala — water; dhārā — stream or current of water; āsan — outh; tān — them; those; evaṃ — thus; in this way; bhūtān — becomes; ādadṛśe — ādadṛśe; sarvato — in comp. or; dadarśa — saw; bhagavān — the Supreme Lord; tathā — so; in that way; dha — aspirate of the preceding letter; arāṇa — aor. p. √; aṃ — not; nādān — a loud sounds; guha — ‘reared in a secret place’; aś — Ā. ( aor. 3. pl; ceti — in/on if."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3bf236c5f5d37881925ba45eeaf6b40819b21fc5d5c860d352c7d7ea74cbe511",
+    "word_for_word": "वनौकसः पुलिन्दीः प्रमुदिता भगवान् ददृशे । — The Lord saw the forest dwellers on the banks of the river, delighted.; तथा वन-राजीर् मधु-च्युतो मधु-स्रवा ददृशे । — Similarly, the forest kingdom saw a stream of honey falling from the honeycomb.; गिरेः सकाशाज् जल-धाराश् च तासां नादाद् आसन्ना निकट-वर्तिनीर् गुहाश् च। — The streams of water from the mountains and the caves nearby from their sound.; यद् वा, वनौकसः प्रमुदिता आसन् । — Whatever it was, the forest dwellers were delighted.; तथा वन-राजीर् वन-राजयो वन-परम्परा मधु-च्युत आसन् । — Similarly, the forest kings, the forest kings, and the forest traditions were honey-dropped.; गिरेर् जल-धारा आसन् । — There were streams of water in the mountains.; तान् एवं-भूतान् आददृशे सर्वतो ददर्श भगवान् । — When the Supreme Personality of Godhead saw these creatures, He saw them everywhere.; तथा धाराणां नादान् गुहाश् चेति ॥२७॥ — and the sounds of the streams and the caves.",
+    "translation": "The Lord saw the forest dwellers on the banks of the river, delighted. Similarly, the forest kingdom saw a stream of honey falling from the honeycomb. The streams of water from the mountains and the caves nearby from their sound. Whatever it was, the forest dwellers were delighted. Similarly, the forest kings, the forest kings, and the forest traditions were honey-dropped. There were streams of water in the mountains. When the Supreme Personality of Godhead saw these creatures, He saw them everywhere. and the sounds of the streams and the caves."
   },
   "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "29": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "32": {
-    "word_for_word": "atha — now; then; śaradaṃ — autumn; varṇayati — a kind of easure; evaṃ — thus; in this way; nivasator — nivasator; ity — thus; aṣṭādaśabhiḥ — by/with the eighteenths; vigatāny — vigatāny; abhra — (sometimes spelt; aṇi — the point of a eedle or of a sharp stake; yasyāḥ — whose; of whichs; sā — she; that; svacchāny — svacchāny; ambūni — ambūni; yasya — whose; of which; aṃ — not; sā — she; that; aparuṣaḥ — ot harsh; śānto'nilo — śānto'nilo; yasya — whose; of which; aṃ — not; sā — she; that; ca — and; sā — she; that; ca — and."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "603ebc4b0f512c6462e1791ccd9004ddf9763e3b3d0cc7d5ce549de6c5e9da8c",
+    "word_for_word": "अथ शरदं वर्णयति---एवं निवसतोर् इत्य् अष्टादशभिः । — Then he describes the autumn as eighteen, saying that they lived thus.; [व्यभ्रा] विगतान्य् अभ्राणि यस्याः सा, स्वच्छान्य् अम्बूनि यस्यां सा, अपरुषः शान्तोऽनिलो यस्यां सा च सा च ॥३२॥ — [Vyabhra] That in which the clouds have disappeared, that in which the waters are clear, that in which the air is unharmed and calm, and that is that.",
+    "translation": "Then he describes the autumn as eighteen, saying that they lived thus. [Vyabhra] That in which the clouds have disappeared, that in which the waters are clear, that in which the air is unharmed and calm, and that is that."
   },
   "33": {
-    "word_for_word": "nīrajānām — of ree rom dusts; utpattir — utpattir; yayā — by/with who; which; tayā — tayā; śaradā — autumn; kṛtvā — having done; having made; nīrajānām — of ree rom dusts; utpattyā — utpattyā; vā — or."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "77a092e3befe37567f28bb10c40f2aa1986889983226e78cb818787d15bdd4a7",
+    "word_for_word": "नीरजानाम् उत्पत्तिर् यया तया शरदा कृत्वा । — The origin of the blue sky is the autumn.; नीरजानाम् उत्पत्त्या वा ॥३३॥ — or by the origin of the waters.",
+    "translation": "The origin of the blue sky is the autumn. or by the origin of the waters."
+  },
+  "34": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5722be36e24b1f13f2601b6f91421132f7d2cf951ec8fad90b920c125e858da5",
+    "word_for_word": "व्योम्नोऽब्दम् इति व्योमादीनां चतुर्णां चतुरो मलान् शरद् अहरत्, आश्रमिणां चतुर्णां कृष्णे जाता भक्तिर् यथाशुभम् असुखं हरति । — The autumn season, which is the year of the sky, removes the four impurities of the four elements, beginning with the sky.; तथा हि, ब्रह्मचारिणो गुर्व्-अर्थोदकाहरणादि-कष्टं यथा भक्तिर् हरति । — Thus, just as devotion removes the trouble of a celibate from stealing his spiritual master’s wealth, water, etc.; तया पूर्णस्य तेनानुपयोगात् । — Because of the use of that which is full of it.; गुरुभिर् अपि कृतार्थस्य तस्यानियोगात् । — Even the teachers did not do what he had done.; एवं व्योम्नोऽब्दं शरज् अहार । — Thus the sky ate the autumn for a year.; यथा च गृहिणोऽपत्यादि-साङ्कर्यं भक्तिर् हरति, विविक्त-वास-रुच्य्-उत्पत्तेः । — And just as devotion takes away the association of a householder with children and other things, it produces a taste for secluded living.; तथा भूतानां शाबल्यं साङ्कर्यं शरत् । — Similarly, autumn is the time of the śābalya of the living entities.; वर्षासु वृष्टिभिया सङ्कुलानि वसन्ति । — During the rainy season, they live in crowded places for fear of rain.; यथा च वन-स्थस्य मल-धारण-क्लेशं भक्तिर् हरति एवं भुवः पङ्कं शरत् । — And just as devotion takes away the trouble of holding dirt in the forest, so the mud of the earth falls.; यथा च यतीनां कामादि-वासनाम् अलं श्री-कृष्ण-भक्तिर् हरति एवम् अपां मलं शरद् इति ॥३४॥ — And just as devotion to Lord Kṛṣṇa removes the sufficiency of lust and other desires of the ascetics, so does autumn remove the dirt of water.",
+    "translation": "The autumn season, which is the year of the sky, removes the four impurities of the four elements, beginning with the sky. Thus, just as devotion removes the trouble of a celibate from stealing his spiritual master’s wealth, water, etc. Because of the use of that which is full of it. Even the teachers did not do what he had done. Thus the sky ate the autumn for a year. And just as devotion takes away the association of a householder with children and other things, it produces a taste for secluded living. Similarly, autumn is the time of the śābalya of the living entities. During the rainy season, they live in crowded places for fear of rain. And just as devotion takes away the trouble of holding dirt in the forest, so the mud of the earth falls. And just as devotion to Lord Kṛṣṇa removes the sufficiency of lust and other desires of the ascetics, so does autumn remove the dirt of water."
+  },
+  "35": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4d6119888f588fdd5ec100a93d4b8851e1360a8f5592b2047ac4075832c2eb64",
+    "word_for_word": "त्यक्तैषणाः त्यक्ताः पुत्र-वित्त-लोकैषणा यैस् ते ॥३५॥ — They have abandoned their desires for sons, wealth and the world.",
+    "translation": "They have abandoned their desires for sons, wealth and the world."
   },
   "36": {
-    "word_for_word": "giraya — giraya; iti — thus; ayaṃ — going; bhāvaḥ — sense; purport; na — not; hy — hy; upādhyāyāḥ — a teachers; karma — action; karma; vidyām — knowledge; iva — like; as if; jñānino — jñānino; jñānāmṛtaṃ — ‘knowledge- ectar’; sarvato — in comp. or; vitaranti — they leading urther away; api — also; tu — but; kṛpayā — by/with mercy; kvacid — kvacid; eva — only; indeed; evaṃ — thus; in this way; girayaḥ — girayaḥ; śivaṃ — (according to; nirmalaṃ — spotless; toyaṃ — water; kvacin — kvacin; mumucuḥ — of a; kvacin — kvacin; na — not; na — not; punaḥ — again; prāvṛṣīva — prāvṛṣīva; sarvata — all-sided; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a7ba787401966c3d7d41a3f8582cfa7046acee532ee12f60a006fbf6707223cb",
+    "word_for_word": "गिरय इति । — The mountains are.; अयं भावः, न ह्य् उपाध्यायाः कर्म-विद्याम् इव ज्ञानिनो ज्ञानामृतं सर्वतो वितरन्ति, अपि तु कृपया क्वचिद् एव । — This means that, like the teachers, the wise do not distribute the nectar of knowledge everywhere, but only somewhere by grace.; एवं गिरयः शिवं निर्मलं तोयं क्वचिन् मुमुचुः क्वचिन् न । — Thus the mountains sometimes released auspicious, pure water, but sometimes not.; न पुनः प्रावृषीव सर्वत इति ॥३६॥ — It is not again like the rainy season everywhere.",
+    "translation": "The mountains are. This means that, like the teachers, the wise do not distribute the nectar of knowledge everywhere, but only somewhere by grace. Thus the mountains sometimes released auspicious, pure water, but sometimes not. It is not again like the rainy season everywhere."
+  },
+  "37": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ed068400d87fbdcfd97643795caaae0235eeea366a58d4f9f1c3d603a8116180",
+    "word_for_word": "गाधे क्षुद्रे जले चरन्तीति तथा ते मीनादयः ॥३७॥ — They are said to be the fish and others that move in the shallow waters of the Gadha.",
+    "translation": "They are said to be the fish and others that move in the shallow waters of the Gadha."
+  },
+  "38": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f96b619ab6dde21962f0f831d5047a376cd408134bb6b3925365dd18c78e4399",
+    "word_for_word": "अविन्दन् लेभिरे ॥३८॥ — They found it and took it.",
+    "translation": "They found it and took it."
+  },
+  "39": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8e68bdbd03b771bea307a1db8c687b0dd5ef31e53ffc5fe4a1a171938392ed0b",
+    "word_for_word": "शनैः शनैर् इति । — Slowly, slowly, it is.; तत्र ममताम् इव पङ्कम् अहन्ताम् इव आमताम् अपक्वतां जहुर् इति ॥३९॥ — There they gave up the mud as if they were killing the unripe mangoes.",
+    "translation": "Slowly, slowly, it is. There they gave up the mud as if they were killing the unripe mangoes."
+  },
+  "40": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2f7144d84c23d21d555e0c3a0c9c0faa1c3efd0d29a89af71df7b784efea58d0",
+    "word_for_word": "आत्मन्य् उपरते त्यक्त-क्रिये मुनिर् इव निश्चलाम्बुः स एव व्युपरतागमो निवृत्त-वेद-घोष इव तूष्णीम् अभुद् इति ॥४०॥ — When he ceased to act in the Self he became silent like a sage whose waters remain still, like the sound of the Vedas ceased.",
+    "translation": "When he ceased to act in the Self he became silent like a sage whose waters remain still, like the sound of the Vedas ceased."
+  },
+  "41": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1e181e7baba4edb231edef35b03239577a28039ef303b1658c8bc09ff0a58423",
+    "word_for_word": "केदारेभ्यो बद्धे सेतु-शालि-क्षेत्रेभ्यो दृढैः सेतुभिर् अपोऽगृह्णन् । — They took water from the bridges and paddy fields tied to the kedars by strong bridges.; ततः परं वृष्ट्य्-अभावात् । — After that, there was no rain.; प्राणैर् इन्द्रियैः । — by the life-force and the senses.; तन् निरोधेनेन्द्रिय-प्रत्याहारेण ॥४१॥ — That is by restraint and withdrawal of the senses.",
+    "translation": "They took water from the bridges and paddy fields tied to the kedars by strong bridges. After that, there was no rain. by the life-force and the senses. That is by restraint and withdrawal of the senses."
+  },
+  "42": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a16739bd521713fcc0a7e885b559bf3d1142703653c41a98d6b5cd48b60bb3fe",
+    "word_for_word": "देहाभिमान-जं बोध इव व्रज-योषितां मुकुन्द इव चेत्य् अर्थः ॥४२॥ — This means that the women of Vraja are like Mukunda, who is born of the ego of the body.",
+    "translation": "This means that the women of Vraja are like Mukunda, who is born of the ego of the body."
+  },
+  "43": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c8c6ed4c5b8d0daa58d4caad7cb808d6743a2bd8f6fe75a00c6a88ea2be8ce03",
+    "word_for_word": "शरदा विमलास् तारका यस्मिंस् तत् । — Autumn is the one in which the stars are pure.; शब्द-ब्रह्मणो वेदस्यार्थान् पूर्वोत्तर-मीमांसा-निर्णीतान् दर्शयतीति तथा तद्वत् ॥४३.४४॥ — Similarly it shows the meanings of the Vedas of the Brahman of sound as determined by the mysticism of the east and the west.",
+    "translation": "Autumn is the one in which the stars are pure. Similarly it shows the meanings of the Vedas of the Brahman of sound as determined by the mysticism of the east and the west."
   },
   "44": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "45": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d5f0d9d6e1ae7fdd0ef110cd08002ad20c9fe9d072739145815f0b02b57ada01",
+    "word_for_word": "समोऽन्यूनाधिकः शीतश् च्ओष्णश् च तम् । — He is more or less equal, cold and hot.; न तु गोप्यः, कृष्णापहृत-चेतस्त्वेन तासां सन्तापो दुःसह इति । — It is not that the gopīs, whose minds have been taken away by Kṛṣṇa, are suffering unbearably.; यद् वा, न-कार उपमार्थः । — or, the n-car is a metaphor.; तदा कृष्ण-हृत-चेतस इति चेतसा कृष्णम् आश्लिष्य यथा, इत्य् अर्थः ॥४५॥ — Then, with the mind taken away by Kṛṣṇa, as if embracing Kṛṣṇa with the mind, this means.",
+    "translation": "He is more or less equal, cold and hot. It is not that the gopīs, whose minds have been taken away by Kṛṣṇa, are suffering unbearably. or, the n-car is a metaphor. Then, with the mind taken away by Kṛṣṇa, as if embracing Kṛṣṇa with the mind, this means."
+  },
+  "46": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bbe3e9e84805e9f77a2f4e6f95845735351377a0542ce3f3d0eb4fc0fd684cc4",
+    "word_for_word": "पुष्पिण्यो गर्भिण्यः । — The flowers are pregnant.; अन्वीयमानाः स्व-वृषैः स्व-पतिभिर् अनिच्छन्त्योऽपि बलाद् अनुगम्यमानाः । — They were being pursued by their bulls and their husbands, and they were forced to follow them, even though they did not want to.; ईश्वराराधनार्थाः क्रियाः बलात् फलैर् अनुगम्यमानाः समस्त-भोग-गर्भा यथेति ॥४६॥ — The actions for the worship of the Lord are forcibly followed by the fruits, as the womb of all enjoyment.",
+    "translation": "The flowers are pregnant. They were being pursued by their bulls and their husbands, and they were forced to follow them, even though they did not want to. The actions for the worship of the Lord are forcibly followed by the fruits, as the womb of all enjoyment."
+  },
+  "47": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "25d4c672df9366370ca141a8183a5e6e8783a0ebbddb534ef46ea5f25de49365",
+    "word_for_word": "कुमुत् कुमुदम् । — The lily is the lily.; कुत्सिता मुत् यस्येति दस्यु-साम्यम् ॥४७॥ — The cursed is the equivalent of a thief.",
+    "translation": "The lily is the lily. The cursed is the equivalent of a thief."
   },
   "48": {
-    "word_for_word": "āgrayaṇair — āgrayaṇair; navānna — ew rice or grain; prāśanārtha — prāśanārtha; vaidikair — vaidikair; aindriyair — aindriyair; indriyārthair — indriyārthair; laukikaiś — laukikaiś; ca — and; mahotsavaiḥ — by/with a gr estivals; kala — istinct; abhyā — by/with earless; aṃ — not; rāma — Rāma; kṛṣṇābhyāṃ — kṛṣṇābhyāṃ; darśanādi — darśanādi; mahotsavābhyām — by/from/for the two a gr estivals."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2bc09a12d615e304b9222a3d36497b87bc2cf1b6979cbf80fb2aa6ed9f5f585d",
+    "word_for_word": "आग्रयणैर् नवान्न-प्राशनार्थ-वैदिकैर् ऐन्द्रियैर् इन्द्रियार्थैर् लौकिकैश् च महोत्सवैः । — They offered sacrifices for the sake of eating new food, Vedic rituals for the senses, and secular festivals for the senses.; कलाभ्यां राम-कृष्णाभ्यां दर्शनादि-महोत्सवाभ्याम् ॥४८॥ — The arts of Rama and Krishna are the great festivals of seeing and other things.",
+    "translation": "They offered sacrifices for the sake of eating new food, Vedic rituals for the senses, and secular festivals for the senses. The arts of Rama and Krishna are the great festivals of seeing and other things."
+  },
+  "49": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9763ca4256c5caf2eb78292bbd9e1f3a9aad8f402de2acdd2d7be6426d05ca2d",
+    "word_for_word": "वणिजो यतयो नृपाः स्नातकाश् च दृष्टादृष्टाभ्यां वर्ष-रुद्धाः सन्तो निर्गम्यार्थान् वानिज्य-स्वाच्छन्द्य-दिग्-विजय-विद्यादीन् प्रपेदिरे प्रापद्यन्त । — Merchants, ascetics, kings and graduates, who were trapped by the rain, both seen and unseen, sought out the means of exit, such as trade, freedom, direction, conquest, and knowledge.; यथा मन्त्रयोगादि-सिद्धाः । — For example, the Siddhas of Mantra Yoga and others.; आयुषा रुद्धाः काले आगते स्व-पिण्डान् योगादि-प्राप्यान् देवादि-देहान् इति ॥४९॥ — They are restrained by their life span and at the appointed time assume their own bodies, which are attainable by yoga and other means, and by the bodies of the gods and others.",
+    "translation": "Merchants, ascetics, kings and graduates, who were trapped by the rain, both seen and unseen, sought out the means of exit, such as trade, freedom, direction, conquest, and knowledge. For example, the Siddhas of Mantra Yoga and others. They are restrained by their life span and at the appointed time assume their own bodies, which are attainable by yoga and other means, and by the bodies of the gods and others."
   }
 }

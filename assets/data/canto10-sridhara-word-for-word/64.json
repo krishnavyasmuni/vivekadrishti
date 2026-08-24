@@ -1,128 +1,296 @@
 {
   "1": {
-    "word_for_word": "catuḥ — in comp. or &; ṣaṣṭitame — in/on ( accord. to the only orm when used alone; kṛṣṇo — kṛṣṇo; nṛgaṃ — of an ancient king; pāpa — ( older than; ad — to eat; amocayat — amocayat; brahma — Brahman; Absolute; sva — own; self; hāri — = 1; doṣoktyā — doṣoktyā; rājño — rājño; dṛptān — wilds; aśikṣayat — aśikṣayat; vibhūti — penetrating; bhāgya — relating to; bhogādi — bhogādi; madonnaddha — madonnaddha; manorathān — ‘heart's joy’s; anvaś — to reach; āsad — P. ( Ved. also; yadūn — Yadus; kṛṣṇo — kṛṣṇo; nṛgoddhāra — nṛgoddhāra; prasaṅgataḥ — prasaṅgataḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7dc1cb52782eba5ff2a8374b2b41af9a6638af2168c0271d81d4e917f3c37bc8",
+    "word_for_word": "चतुः-षष्टितमे कृष्णो नृगं पापाद् अमोचयत् । — In the sixty-fourth year, Lord Kṛṣṇa delivered Nṛga from sin.; ब्रह्म-स्व-हारि-दोषोक्त्या राज्ञो दृप्तान् अशिक्षयत् ॥ — He instructed the proud kings by telling them the faults of the brāhmaṇas and their own destroyers.; विभूति-भाग्य-भोगादि- मदोन्नद्ध-मनोरथान् । — They are intoxicated with desires for glory, fortune, enjoyment, etc.; अन्वशासद् यदून् कृष्णो नृगोद्धार-प्रसङ्गतः ॥१॥ — Krishna ruled the Yadus in connection with the rescue of men.",
+    "translation": "In the sixty-fourth year, Lord Kṛṣṇa delivered Nṛga from sin. He instructed the proud kings by telling them the faults of the brāhmaṇas and their own destroyers. They are intoxicated with desires for glory, fortune, enjoyment, etc. Krishna ruled the Yadus in connection with the rescue of men."
   },
   "2": {
-    "word_for_word": "pipāsita — (; as — be; tṛṣitā — tṛṣitā; jalaṃ — water; vicinvantaḥ — vicinvantaḥ; sattvaṃ — sattvaṃ; jīvam — living being."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ad95c1624c0526e934522db5ea0ea363bb088cf59f5086f668be126004529a1a",
+    "word_for_word": "पिपासितास् तृषिता जलं विचिन्वन्तः । — They were thirsty and thirsty, and they were looking for water.; सत्त्वं जीवम् ॥२॥ — Sattva is the living entity.",
+    "translation": "They were thirsty and thirsty, and they were looking for water. Sattva is the living entity."
   },
   "3": {
-    "word_for_word": "taṃ — the 1st dental consonant; ca — and; kṛkalāsaṃ — a lizard; vīkṣya — =."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "652da6ea1df418d2fce4639178cf7fc996d7ae873d9e9f8ca9fd915df1105b06",
+    "word_for_word": "तं च कृकलासं वीक्ष्य ॥३॥ — And he looked at the lizard.",
+    "translation": "And he looked at the lizard."
   },
   "4": {
-    "word_for_word": "carma — in comp. or; jaiś — jaiś; carma — in comp. or; mayaiḥ — by/with of ans; pāśais — pāśais; tāntavais — tāntavais; tantu — a thread; mayaiś — mayaiś; ca — and."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c976a9b030bbaf7d603459705ad6674f072b2dce6b27c03b016e236b9fb51547",
+    "word_for_word": "चर्म-जैश् चर्म-मयैः पाशैस् तान्तवैस् तन्तु-मयैश् च ॥४॥ — They were covered with leather and leather ropes and fibers.",
+    "translation": "They were covered with leather and leather ropes and fibers."
   },
   "5": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "6": {
-    "word_for_word": "santaptaṃ — santaptaṃ; cāmīkaraṃ — gold; su — ove; varṇaṃ — prob. r. √ 1; tadvad — tadvad; varṇo — varṇo; yasya — whose; of which; saḥ — he; that; adbhutā — adbhutā; alaṅkārāmbara — alaṅkārāmbara; srajo — srajo; yasya — whose; of which; saḥ — he; that; svargī — svargī; devo — devo; babhūva — became; was; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2a24d79b5755238a3863d417f934f94a423f51dd54a745bdecc9b42317f4ee81",
+    "word_for_word": "सन्तप्तं चामीकरं सु-वर्णं तद्वद् वर्णो यस्य सः । — The color of the hot copper is the same as that of the good color.; अद्भुता अलङ्काराम्बर-स्रजो यस्य सः स्वर्गी देवो बभूवेति ॥६-७॥ — He who wore wonderful ornaments, clothes and garlands became a heavenly god (6-7).",
+    "translation": "The color of the hot copper is the same as that of the good color. He who wore wonderful ornaments, clothes and garlands became a heavenly god (6-7)."
   },
   "8": {
-    "word_for_word": "yad — who; yadi — if; kṣamaṃ — patient; yogyam — yogyam."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "00cd8005b52cdc70199ad77457cec8aafdf01114901291dca55aaa041e8806e5",
+    "word_for_word": "यद् यदि । — What if.; क्षमं योग्यम् ॥८॥ — Forgiveness is worthy.",
+    "translation": "What if. Forgiveness is worthy."
   },
   "9": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "10": {
-    "word_for_word": "yadi — if; te — they; those; karṇam — ear; aspṛśam — aspṛśam; ity — thus; asandehe — asandehe; sandeha — sandeha; vacanaṃ — statement; grammatical number; yadi — if; vedāḥ — knowledges; pramāṇaṃ — easure; syur — syur; iti — thus; vat — like; possessing; karṇa — ear; pathaṃ — a way; nūnaṃ — nūnaṃ; prāptaḥ — attained; syām — in/on a word used in learning letters; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e15464e339f3555c3b6b138ef0668a78ee1425d142c53ccee92cb72ce2ce75f8",
+    "word_for_word": "यदि ते कर्णम् अस्पृशम् इत्य् असन्देहे सन्देह-वचनं यदि वेदाः प्रमाणं स्युर् इति-वत् । — If you have not touched your ears, it is a statement of doubt, as if the Vedas were the proof.; कर्ण-पथं नूनं प्राप्तः स्याम् इत्य् अर्थः ॥१०॥ — This means that I must have reached the path of the ears.",
+    "translation": "If you have not touched your ears, it is a statement of doubt, as if the Vedas were the proof. This means that I must have reached the path of the ears."
   },
   "11": {
-    "word_for_word": "kiṃ — what; ca — and; kiṃ — what; nv — nv; iti — thus; sarva — all; iṣa — seeking; aṃ — not; bhūtānām — of becomes; ātmano — ātmano; buddheḥ — of intelligence; sākṣiṇas — sākṣiṇas; te'viditaṃ — te'viditaṃ; kiṃ — what; nu — (in also; na — not; kiñcit — kiñcit."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "56852a185bb782d978b57186a30ef452f534c0217ea7d353e13251a04b8982ef",
+    "word_for_word": "किं च किं न्व् इति । — What and what nv is.; सर्वेषां भूतानाम् आत्मनो बुद्धेः साक्षिणस् तेऽविदितं किं नु, न किञ्चित् ॥११-१३॥ — Thou art the witness of the intellect of the Self of all beings, what is unknown to Thee, and nothing else? (11-13).",
+    "translation": "What and what nv is. Thou art the witness of the intellect of the Self of all beings, what is unknown to Thee, and nothing else? (11-13)."
   },
   "12": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "14": {
-    "word_for_word": "ṛta — et with; vratebhyo'dambhācārebhyaḥ — vratebhyo'dambhācārebhyaḥ; tapasā — tapasā; śrutāḥ — heards; prakhyāta — known; aś — Ā. ( aor. 3. pl; ca — and; te — they; those; brahmaṇi — brahmaṇi; vada — speak; tell; anyā — inexhaustible; atyudāra — very liberal; adhyāpana — instruction; śīlāś — śīlāś; ca — and; te — they; those; santaś — santaś; ca — and; tebhyaḥ — from/for the 1st dental consonants."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2b78893a0164d6780b1de9db5c76056f7d59a89d86b04e9ddd13e231ea898049",
+    "word_for_word": "ऋत-व्रतेभ्योऽदम्भाचारेभ्यः । — From true vows and arrogant practices.; तपसा श्रुताः प्रख्याताश् च ते ब्रह्मणि वदान्या अत्युदार अध्यापन-शीलाश् च ते सन्तश् च तेभ्यः ॥१४॥ — They were heard and renowned for their austerities in the Brahman they were generous and very generous in their teaching skills and they were saintly to them.",
+    "translation": "From true vows and arrogant practices. They were heard and renowned for their austerities in the Brahman they were generous and very generous in their teaching skills and they were saintly to them."
   },
   "15": {
-    "word_for_word": "pūrtaṃ — illed; vāpī — any pond; kūpādi — kūpādi; caritaṃ — deed; account; kṛtam — done; made."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "48a6fcf2e467342190c2492969c674705ea96907de57b9d7357f4d65ba952a18",
+    "word_for_word": "पूर्तं वापी-कूपादि । — Full wells and wells.; चरितं कृतम् ॥१५॥ — The character is done.",
+    "translation": "Full wells and wells. The character is done."
   },
   "16": {
-    "word_for_word": "evaṃ — thus; in this way; vartamānasya — of turning; mama — my; of me; saṅkaṭaṃ — saṅkaṭaṃ; kiñcid — kiñcid; āpannaṃ — entered; śṛṇv — śṛṇv; ity — thus; āha — says; kasyacid — kasyacid; iti — thus; dvija — dvija; mukhyasya — of principal; pratigraha — receiving; nivṛt — Ā. ( p; tasya — of him; of that; sampṛktā — sampṛktā; militā — militā; aviduṣā — aviduṣā; brāhmaṇasya — of brāhmaṇa; iyam — this; she; ity — thus; ajānatā — by/with ot knowing."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "21d2d69844a4381331b6028eb9b7ff2b738623b5f883c99c0c390f6400ac8e0d",
+    "word_for_word": "एवं वर्तमानस्य मम सङ्कटं किञ्चिद् आपन्नं शृण्व् इत्य् आह---कस्यचिद् इति । — While I was thus present, I was in some danger, and he said, “Listen to someone.”; द्विज-मुख्यस्य प्रतिग्रह-निवृत् तस्य । — The chief of the brāhmaṇas refrained from accepting charity.; सम्पृक्ता मिलिता । — Samprukta met.; अविदुषा ब्राह्मणस्येयम् इत्य् अजानता ॥१६-१७॥ — By ignorance, not knowing that this is the Brahmin.16-1",
+    "translation": "While I was thus present, I was in some danger, and he said, “Listen to someone.” The chief of the brāhmaṇas refrained from accepting charity. Samprukta met. By ignorance, not knowing that this is the Brahmin.16-1"
   },
   "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "18": {
-    "word_for_word": "pratigrāhiṇoktaṃ — pratigrāhiṇoktaṃ; dāta — ‘given’; iti — thus; sva — own; self; amina — impetuous; uktam — stated; apaharteti — apaharteti; abhavad — abhavad; bhramaḥ — wandering or roaming about; vyākulo'bhavam — vyākulo'bhavam; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cb1f8cc5280f91e3b02e63fc3432c2d2e672817de60c44897426027b7a2c3aba",
+    "word_for_word": "प्रतिग्राहिणोक्तं, दातेति । — The receiver said, the giver.; स्वामिनोक्तम् अपहर्तेति । — The owner said he was a thief.; अभवद् भ्रमः, व्याकुलोऽभवम् इत्य् अर्थः ॥१८॥ — I became confused, that is, I became confused.",
+    "translation": "The receiver said, the giver. The owner said he was a thief. I became confused, that is, I became confused."
   },
   "19": {
-    "word_for_word": "tadobhāv — tadobhāv; api — also; pratyekam — one by one; anunītau — the two disciplineds; prārthitau — the two wished ors; kathaṃ — (in comp. or; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; gavām — ( gen. pl. of; iti — thus; sārdhena — by/with joined with a half."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "94b97ef24d707c9fb34585c36cfe24b798ce8f7e967a7dd64c1ef6f5b68b5a7b",
+    "word_for_word": "तदोभाव् अपि प्रत्येकम् अनुनीतौ प्रार्थितौ । — Then both of them were persuaded and prayed to each other.; कथं तद् आह---गवाम् इति सार्धेन ॥१९-२०॥ — How does he say that with the cows?19-2",
+    "translation": "Then both of them were persuaded and prayed to each other. How does he say that with the cows?19-2"
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "21": {
-    "word_for_word": "aparaḥ — other; later; pratigrāhī — pratigrāhī; durāgraho — durāgraho; yal — yal; lakṣaṃ — or a ark; tvayoktam — tvayoktam; anyad — anyad; api — also; gavām — ( gen. pl. of; ayutaṃ — unimpeded; yadi — if; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; apīmāṃ — apīmāṃ; vihāya — leaving behind i.e. at a distance rom; necchāmīty — necchāmīty; uktvā — p. having spoken or said; gāṃ — a song; tyaktvā — having abandoned; yayā — by/with who; which; av — cl. 1. P. ( Imper. 2. sg; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7983f30a9ea3fb7059cd4954d57a5ef5cb3cce797c12b3df834d1749738f09bc",
+    "word_for_word": "अपरः प्रतिग्राही । — The other is the recipient.; दुराग्रहो यल् लक्षं त्वयोक्तम् अन्यद् अपि गवाम् अयुतं यदि तद् अपीमां विहाय नेच्छामीत्य् उक्त्वा गां त्यक्त्वा ययाव् इत्य् अर्थः ॥२१॥ — If the lakh of cows which you have mentioned are difficult to grasp, and if it is another ten thousand cows, it means that they should leave the cow and go away, saying, \"I do not wish to leave this one.",
+    "translation": "The other is the recipient. If the lakh of cows which you have mentioned are difficult to grasp, and if it is another ten thousand cows, it means that they should leave the cow and go away, saying, \"I do not wish to leave this one."
   },
   "22": {
-    "word_for_word": "etasminn — etasminn; antara — being in the interior; iti — thus; itaḥ — ifc. gone; pūrvaṃ — previous; pāpa — ( older than; abhāvān — absences; netum — netum; asamarthā — asamarthā; iti — thus; bhāvaḥ — sense; purport."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7a1e9f5439a177f3e906fc89a432d660dd9d6bc009898983b42bddf3a13d0f97",
+    "word_for_word": "एतस्मिन्न् अन्तर इति । — There is a difference in this.; इतः पूर्वं पापाभावान् नेतुम् असमर्था इति भावः ॥२२॥ — This means that they were unable to carry away the feelings of sin before this.",
+    "translation": "There is a difference in this. This means that they were unable to carry away the feelings of sin before this."
   },
   "23": {
-    "word_for_word": "utāho — and . See 2. above; ity — thus; ekaṃ — one; padam — word; term; position; athavā — or rather; pūrvaṃ — previous; śubham — auspicious; iti — thus; nāntam — nāntam; iti — thus; yam — whom; which; asya — of this; of him; svasya — of own; self; vā — or; vākyam — sentence; statement; paśye — in/on seeing; paśyāmi — paśyāmi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "75dd8b0a09052047e0ffa7c4e3e001a1352ca3f5c38c7e026f44c18573e0f44f",
+    "word_for_word": "उताहो इत्य् एकं पदम् । — Utah is a term.; अथवा पूर्वं शुभम् इति । — Or that it was good in the past.; नान्तम् इति यम् अस्य स्वस्य वा वाक्यम् । — Not the end, which is the statement of this or his own.; पश्ये पश्यामि ॥२३॥ — I see, I see.",
+    "translation": "Utah is a term. Or that it was good in the past. Not the end, which is the statement of this or his own. I see, I see."
   },
   "24": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; deva — deity; god; yama — a rein; pūrvam — before; aśubhaṃ — inauspicious; bhuñja — bhuñja; iti — thus; maya — of an; ukte — in/on stated; sa — the last of the three sibilants; yamaḥ — a rein; pata — lying; iti — thus; prāha — instruction in the art of dancing."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b660817f0537043448229db8442cfdd2a75d374e5b598a600dc4a2a05cd45877",
+    "word_for_word": "हे देव यम, पूर्वम् अशुभं भुञ्ज इति मयोक्ते स यमः पतेति प्राह ॥२४॥ — When I said, \"O lord Yama, first enjoy the evil,\" he said, \"Fall down.",
+    "translation": "When I said, \"O lord Yama, first enjoy the evil,\" he said, \"Fall down."
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "26": {
-    "word_for_word": "durghaṭena — by/with hard to be accomplished; śrī — Śrī; sacred; glorious; kṛṣṇa — Kṛṣṇa; darśanena — by/with seeing; vision; vismitaḥ — amazed; sann — sann; ātmano — ātmano; bhāgyam — relating to; abhinandati — to pleases; sa — the last of the three sibilants; tvam — you; iti — thus; he — a vocative icle (‘oh!’ ‘ho!’; vibho — vibho; sa — the last of the three sibilants; tvaṃ — you; mamākṣi — mamākṣi; patho — patho; locana — illuminating; gocaraḥ — pasture ground or cattle; san — in comp. or; kathaṃ — (in comp. or; sākṣāt — directly; pratyakṣo'sīty — pratyakṣo'sīty; arthaḥ — meaning; purpose; kim — what; atra — here; āścaryam — rarely; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; para — higher; other; ātmā — self; ata — ata; eva — only; indeed; yogeśvarair — yogeśvarair; api — also; śruti — scripture; hearing; dṛśā — the eye; upaniṣac — upaniṣac; cakṣuṣāmale — cakṣuṣāmale; hṛdi — in comp; vibhāvyaś — vibhāvyaś; cintyaḥ — to be thought about or imagined; yato'dhokṣajaḥ — yato'dhokṣajaḥ; akṣa — an axle; jam — the 3rd palatal letter; aindriyaka — relating to the senses; jñānaṃ — knowledge; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; adho'rvāg — adho'rvāg; eva — only; indeed; yasmāt — because; from which; saḥ — he; that; yasya — whose; of which; iha — in this place; bhavāpavargo — bhavāpavargo; bhavet — may be; becomes; tasya — of him; of that; bhavān — worldly existence; becomings; anudṛśyaḥ — anudṛśyaḥ; syāt — may be; uru — (√ 1; vyasanena — by/with oving to and ro; kṛkalāsa — a lizard; bhava — worldly existence; becoming; duḥkhenāndha — duḥkhenāndha; buddhes — buddhes; tu — but; mamaitac — mamaitac; citram — so as to be bright; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "218c650442d285b95a658a9e0d96cd1707ec125170f60d3c2d87b8f71bf487c9",
+    "word_for_word": "दुर्घटेन श्री-कृष्ण-दर्शनेन विस्मितः सन्न् आत्मनो भाग्यम् अभिनन्दति---स त्वम् इति । — Astonished at the accidental sight of Lord Kṛṣṇa, he congratulates himself on his fate, saying, “That is you.”; हे विभो, स त्वं ममाक्षि-पथो लोचन-गोचरः सन् कथं साक्षात् प्रत्यक्षोऽसीत्य् अर्थः । — O Lord, how could that You, who are the path of my eyes, be visible to my eyes, be directly visible to me?; किम् अत्राश्चर्यम् ? — What’s the surprise here?; तद् आह---पर आत्मा । — That is the Ah---the other soul.; अत एव योगेश्वरैर् अपि श्रुति-दृशा उपनिषच्-चक्षुषामले हृदि विभाव्यश् चिन्त्यः । — That is why even the masters of yoga should meditate on the scriptural vision of the Upanishads in their pure eyes.; यतोऽधोक्षजः । — Because he is transcendental.; अक्ष-जम् ऐन्द्रियक-ज्ञानं, तद् अधोऽर्वाग् एव यस्मात् सः । — The sensory knowledge born of the axis is the lower arvag from which it is derived.; यस्येह भवापवर्गो भवेत्, तस्य भवान् अनुदृश्यः स्यात् । — You will be invisible to anyone who is freed from this world.; उरु-व्यसनेन कृकलास-भव-दुःखेनान्ध-बुद्धेस् तु ममैतच् चित्रम् इत्य् अर्थः ॥२६॥ — This means that this is strange to me, who am blinded by the pain of being a lizard and by the pain of being a lizard.",
+    "translation": "Astonished at the accidental sight of Lord Kṛṣṇa, he congratulates himself on his fate, saying, “That is you.” O Lord, how could that You, who are the path of my eyes, be visible to my eyes, be directly visible to me? What’s the surprise here? That is the Ah---the other soul. That is why even the masters of yoga should meditate on the scriptural vision of the Upanishads in their pure eyes. Because he is transcendental. The sensory knowledge born of the axis is the lower arvag from which it is derived. You will be invisible to anyone who is freed from this world. This means that this is strange to me, who am blinded by the pain of being a lizard and by the pain of being a lizard."
   },
   "27": {
-    "word_for_word": "udrikta — prominent; bhaktir — bhaktir; bahudhā — col. 2; sambodhayann — sambodhayann; āha — says; deva — deity; god; deva — deity; god; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6d60d073e559e0f1cb879a02eee4eaef9aa9ac755e113284c233a7b7b8821805",
+    "word_for_word": "उद्रिक्त-भक्तिर् बहुधा सम्बोधयन्न् आह---देव-देव इति ॥२७॥ — Addressing the devotion that has arisen in many ways, he says, \"God, God.",
+    "translation": "Addressing the devotion that has arisen in many ways, he says, \"God, God."
   },
   "28": {
-    "word_for_word": "anujñāpayati — anujñāpayati; anujānīhīti — anujānīhīti; deva — deity; god; loke'pi — loke'pi; sato — in comp. or; vartamānasyātmano — vartamānasyātmano; manasaḥ — of a; sannidhiṃ — sannidhiṃ; prārthayate — is being eager or ready to set out on a journey; yatra — where; kva — ( r. 1; apīti — entering into; tvat — in comp. or 2; padam — word; term; position; āspadaṃ — place; viṣayo — viṣayo; yasya — whose; of which; tathābhūtaṃ — of such qualities or kind or ature; bhūya — becoming; ad — to eat; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "da69602db8be14b059ad5dccf090c6cabf7999d7e3b3d816ff6c1e1a4a352c95",
+    "word_for_word": "अनुज्ञापयति, अनुजानीहीति । — He permits, to permit.; देव-लोकेऽपि सतो वर्तमानस्यात्मनो मनसः सन्निधिं प्रार्थयते । — He prays for the presence of the mind of the self, which is present in the world of the gods.; यत्र क्वापीति । — Wherever and whenever.; त्वत्-पदम् आस्पदं विषयो यस्य तथाभूतं भूयाद् इति ॥२८॥ — Thy feet are the abode of the object of which may be so.",
+    "translation": "He permits, to permit. He prays for the presence of the mind of the self, which is present in the world of the gods. Wherever and whenever. Thy feet are the abode of the object of which may be so."
   },
   "29": {
-    "word_for_word": "yāsyan — yāsyan; namasyati — namasyati; nama — pasture-ground; iti — thus; sarva — all; bhāvāya — to/for sense; purport; sarvasya — of all; bhāvo — bhāvo; janma — birth; yena — by whom; by which; tasmai — tasmai; brahmaṇe — brahmaṇe; kartṛtve'py — kartṛtve'py; avikārāya — to/for on-change of orm or ature; kutaḥ — from where; why; ananta — endless; śaktaye — to/for power; anantā — the earth; māya — easuring; ākhyā — P. to behold; śaktir — śaktir; yasya — whose; of which; tasmai — tasmai; vāsudevāya — to/for Vāsudeva; sarva — all; bhūtāśrayāyety — bhūtāśrayāyety; upādānatvam — the state of being a aterial cause; uktam — stated; śrī-kṛṣṇāya — to/for Śrī Kṛṣṇa; sadānanda — perpetual bliss; rūpāyeti — rūpāyeti; puruṣa — person; Puruṣa; ārthatvam — significance; uktam — stated; kṛṣir — kṛṣir; bhū — be; become; vācakaḥ — speaking; śabdo — śabdo; ṇaś — ṇaś; ca — and; nirvṛti — complete satisfaction or happiness; vācakaḥ — speaking; tayor — tayor; aikyaṃ — oneness; paraṃ — higher; other; brahma — Brahman; Absolute; kṛṣṇa — Kṛṣṇa; ity — thus; abhidhīyate — is being ( perf. 1. sg. or; iti — thus; smṛteḥ — of remembered scripture; remembrance; kiṃ — what; ca — and; yogānām — of yoga; connections; iṣṭāpūrtādi — iṣṭāpūrtādi; karmaṇāṃ — karmaṇāṃ; pataye — to/for husband; lord; phala — fruit; result; dātre — in/on a sort of sickle or crooked knife; ayaṃ — going; bhāvaḥ — sense; purport; evaṃ — thus; in this way; bhūtaṃ — become; tvāṃ — tvāṃ; vihāya — leaving behind i.e. at a distance rom; gantum — gantum; anicchur — anicchur; api — also; gamiṣyāmi — gamiṣyāmi; tvad — =; datta — protected; darma — a demolisher; phala — fruit; result; bhogāyeti — bhogāyeti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cf3c162cf3c95e37b7857e930d194faf970b140d8febd22346b9f7c9b334a446",
+    "word_for_word": "यास्यन् नमस्यति---नम इति । — Yasyan namasyati---to bow down.; सर्व-भावाय सर्वस्य भावो जन्म येन तस्मै । — For all-being, the being of all things is born to Him.; ब्रह्मणे कर्तृत्वेऽप्य् अविकाराय । — For the Brahman, even as the doer, is incorruptible.; कुतः ? — Where is it from?; अनन्त-शक्तये, अनन्ता मायाख्या शक्तिर् यस्य तस्मै । — To the infinite power, to the one who has the power called infinite illusion.; वासुदेवाय सर्व-भूताश्रयायेत्य् उपादानत्वम् उक्तम् । — It is said that Vāsudeva is the source of all living entities.; श्री-कृष्णाय सदानन्द-रूपायेति पुरुषार्थत्वम् उक्तम्--- — Sri-Krishna, the form of eternal bliss, is said to be the purpose of man; > कृषिर् भू-वाचकः शब्दो णश् च निर्वृति-वाचकः । — > The word agriculture denotes land and the word na denotes satisfaction.; >\n> तयोर् ऐक्यं परं ब्रह्म कृष्ण इत्य् अभिधीयते ॥ — >\n> The unity of the two is called the Supreme Absolute Truth, Kṛṣṇa.; इति स्मृतेः । — This is the memory.; किं च योगानाम् इष्टापूर्तादि-कर्मणां पतये फल-दात्रे । — What about the master of the yogas, who fulfills their desires and gives them their fruits?; अयं भावः, एवं-भूतं त्वां विहाय गन्तुम् अनिच्छुर् अपि गमिष्यामि त्वद्-दत्त-दर्म-फल-भोगायेति ॥२९-३१॥ — This is the meaning, that even though I do not wish to leave You in this state, I shall go to enjoy the fruits of the righteousness given to me by You. 29-3",
+    "translation": "Yasyan namasyati---to bow down. For all-being, the being of all things is born to Him. For the Brahman, even as the doer, is incorruptible. Where is it from? To the infinite power, to the one who has the power called infinite illusion. It is said that Vāsudeva is the source of all living entities. Sri-Krishna, the form of eternal bliss, is said to be the purpose of man > The word agriculture denotes land and the word na denotes satisfaction. >\n> The unity of the two is called the Supreme Absolute Truth, Kṛṣṇa. This is the memory. What about the master of the yogas, who fulfills their desires and gives them their fruits? This is the meaning, that even though I do not wish to leave You in this state, I shall go to enjoy the fruits of the righteousness given to me by You. 29-3"
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "32": {
-    "word_for_word": "mana — ian spikenard; ag — to ove tortuously; īṣad — īṣad; api — also; bhuktaṃ — bhuktaṃ; sad — in comp. or; agner — agner; agni — fire; sadṛśasya — of like; tejīyaso'ti — tejīyaso'ti; tejasvino'pi — tejasvino'pi; durjaram — ot decaying or ouldering."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c29989b0460cf0eedaaf412edd5dd3ac1ac78fbb904e55d515863466f999e583",
+    "word_for_word": "मनाग् ईषद् अपि भुक्तं सद्-अग्नेर् अग्नि-सदृशस्य तेजीयसोऽति-तेजस्विनोऽपि दुर्जरम् ॥३२॥ — Even a little of the mind is eaten by the good fire which is like fire and which is very effulgent and difficult to decay.",
+    "translation": "Even a little of the mind is eaten by the good fire which is like fire and which is very effulgent and difficult to decay."
   },
   "33": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "34": {
-    "word_for_word": "kiṃ — what; ca — and; viṣād — eating p; api — also; ghoram — ‘dreadfully’; ity — thus; āha — says; hinastīti — hinastīti; saṃsargi — saṃsargi; saṃsargeṇa — saṃsargeṇa; mārakatvā — having killing a killer; ad — to eat; agni — fire; tulyatā — =; syāt — may be; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; api — also; nety — nety; āha — says; vahnir — vahnir; iti — thus; api — also; ca — and; samūlam — entirely; iti — thus; vahnir — vahnir; mūlāny — mūlāny; avaśeṣayati — avaśeṣayati; brahma — Brahman; Absolute; sva — own; self; lakṣaṇāraṇijaḥ — lakṣaṇāraṇijaḥ; pāpa — ( older than; pāvakas — pāvakas; tu — but; kulaṃ — family; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; api — also; samūlam — entirely; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "95726f5bee0d11c7e0ac040025a25d834add01d35fb8bfde7a082b1b7726e071",
+    "word_for_word": "किं च विषाद् अपि घोरम् इत्य् आह---हिनस्तीति । — And what is more terrible than depression, he argues, is that it kills.; संसर्गि संसर्गेण मारकत्वाद् अग्नि-तुल्यता स्यात् तद् अपि नेत्य् आह---वह्निर् इति । — Since the contact is deadly by contact, it is equivalent to fire, but he argues that it is not.; अपि च समूलम् इति । — Moreover, it is the whole.; वह्निर् मूलान्य् अवशेषयति, ब्रह्म-स्व-लक्षणारणिजः पाप-पावकस् तु कुलं तद् अपि समूलम् इति ॥३४॥ — Fire leaves the roots, and the forest of the Brahman-self-characteristics, the fire of sin, is the root of the family.",
+    "translation": "And what is more terrible than depression, he argues, is that it kills. Since the contact is deadly by contact, it is equivalent to fire, but he argues that it is not. Moreover, it is the whole. Fire leaves the roots, and the forest of the Brahman-self-characteristics, the fire of sin, is the root of the family."
   },
   "35": {
-    "word_for_word": "duranujñātaṃ — badly allowed or granted; yatha — or before and =; āvad — to speak to; ananujñātam — ot agreed to; tri — three; pūruṣaṃ — =; kulaṃ — family; svayaṃ — in comp. or; putraṃ — son; pautraṃ — derived rom or relating to a son or children; ca — and; prasahya — to be conquered or resisted; haṭhāt — from violence; bala — strength; ad — to eat; rājādy — rājādy; āśrayataḥ — āśrayataḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5310a90f05566dfc90a5feadc178db7c738bb6f1eb99ad24b025246033a7456a",
+    "word_for_word": "दुरनुज्ञातं यथावद् अननुज्ञातम् । — Badly permitted, properly unauthorized.; त्रि-पूरुषं कुलं स्वयं पुत्रं पौत्रं च । — The three-person family is itself a son and a grandson.; प्रसह्य हठात् । — forced suddenly.; बलाद् राजाद्य्-आश्रयतः ॥३५॥ — By force, depending on the king and others.",
+    "translation": "Badly permitted, properly unauthorized. The three-person family is itself a son and a grandson. forced suddenly. By force, depending on the king and others."
   },
   "36": {
-    "word_for_word": "ye — those who; brahma — Brahman; Absolute; svam — own; self; abhimanyante — are being to think of; icchanti — they desire; te — they; those; nirayam — or Hell; eva — only; indeed; abhimanyante — are being to think of; ato — ato; bāliśā — bāliśā; ajñā — ajñā; ātma — (in comp. or; pātaṃ — watched; na — not; vicakṣata — vicakṣata; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b8c2721a74af63051bea0edaa59fa64d6653f32e4bc6f481bdaaf0268f8634e5",
+    "word_for_word": "ये ब्रह्म-स्वम् अभिमन्यन्ते इच्छन्ति ते निरयम् एवाभिमन्यन्ते । — Those who desire to be self-sufficient in the Absolute Truth are self-sufficient in hell.; अतो बालिशा अज्ञा आत्म-पातं न विचक्षत इति ॥३६॥ — Therefore foolish ignorant people do not consider their own fall.",
+    "translation": "Those who desire to be self-sufficient in the Absolute Truth are self-sufficient in hell. Therefore foolish ignorant people do not consider their own fall."
   },
   "37": {
-    "word_for_word": "api — also; ca — and; gṛhṇantīti — gṛhṇantīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2950b6fdfd9249180c41319bd6b93cce9fe4870016ae8c561164e6d280dee38c",
+    "word_for_word": "अपि च गृह्णन्तीति ॥३७-३९॥ — and that they take it.37-3",
+    "translation": "and that they take it.37-3"
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "39": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "40": {
-    "word_for_word": "gṛddhvā — gṛddhvā; abhikāṅkṣya — abhikāṅkṣya."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0c76cf471daff9edfa38a4318fb64c2e2e431bddbbae93511725878f95440ee3",
+    "word_for_word": "गृद्ध्वा अभिकाङ्क्ष्य ॥४०-४१॥ — coveting and desiring.40-4",
+    "translation": "coveting and desiring.40-4"
   },
   "41": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "42": {
-    "word_for_word": "praṇame — praṇame; namāmi — namāmi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9e0ab9ac3e10009c25bb19ffcfad0edc2d57e53b2284950dd43e146440b464b3",
+    "word_for_word": "प्रणमे नमामि ॥४२॥ — I bow down to you.",
+    "translation": "I bow down to you."
   },
   "43": {
-    "word_for_word": "na — not; kevalam — only; artha — meaning; purpose; vada — speak; tell; vibhīṣikeyaṃ — vibhīṣikeyaṃ; kiṃ — what; tu — but; pratyakṣam — before the eyes; ity — thus; āha — says; brāhmaṇārtha — brāhmaṇārtha; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2161b9b0c2db7ad29c1ab81933902c7120e2405204b1ecf674e8a6441c7c1cc9",
+    "word_for_word": "न केवलम् अर्थ-वद-विभीषिकेयं, किं तु प्रत्यक्षम् इत्य् आह---ब्राह्मणार्थ इति ॥४३-४४॥ — This is not only terrible as meaning-speaking, but also direct, he argues, for the sake of the Brahman.",
+    "translation": "This is not only terrible as meaning-speaking, but also direct, he argues, for the sake of the Brahman."
   },
   "44": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   }
 }

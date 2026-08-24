@@ -1,128 +1,296 @@
 {
   "1": {
-    "word_for_word": "ṣaṭpañcāśattame — in/on the 56th; mithyābhiyoge — in/on a charge; maṇim — ( only; āharat — āharat; kanya — the smallest; aṃ — not; jāmbavataḥ — patr. r; prāpa — reaching; kṛṣṇaḥ — Kṛṣṇa; satrājitas — satrājitas; tataḥ — then; from that; putra — son; ādika — and so on; am — quickly; asaukhyasya — asaukhyasya; niṣṭhām — (√; uktvāticañcalām — uktvāticañcalām; arthasyānarthatām — arthasyānarthatām; āha — says; syamanta — syamanta; haraṇādinā — haraṇādinā; satyabhāmā — ‘having true lustre’; jāmbavatyor — jāmbavatyor; vivāha — leading away; prastāvāya — to/for introductory eulogy; syamantaka — of a celebrated jewel (worn by on his wrist; ākhyānam — telling; āha — says; satrājita — of a son of; iti — thus; satrājita — of a son of; ity — thus; a — not; kārāntaḥ — kārāntaḥ; kvacic — kvacic; ca — and; ta — the 1st dental consonant; kārānto\\'py — kārānto\\'py; anvaya — syntactic connection; anusāreṇa — conformably to; draṣṭavyaḥ — to be seen; kṛta — done; made; apara — other; later; adhas — below; tac — in comp. or; chāntaye — chāntaye; svayam — himself; oneself; eva — only; indeed; udyamaṃ — the act of raising or lifting up; kṛtvā — having done; having made; maṇinā — by/with ( only; saha — with; prādā — to give; ad — to eat; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "50ece40f39d226f289527b98cc51bf916db5fba749e4415dbd5b757f1f8c46b7",
+    "word_for_word": "षट्पञ्चाशत्तमे मिथ्याभियोगे मणिम् आहरत् । — In the fifty-sixth he stole the jewel on a false charge.; कन्यां जाम्बवतः प्राप कृष्णः सत्राजितस् ततः ॥ — Then Lord Kṛṣṇa, the son of Satrajit, obtained the daughter of Jāmbavān.; पुत्रादिकाम् असौख्यस्य निष्ठाम् उक्त्वातिचञ्चलाम् । — She was very restless, saying that she was fixed on her son and others for her unhappiness.; अर्थस्यानर्थताम् आह स्यमन्त-हरणादिना ॥ — He argued that the meaning of wealth was meaningless by the abduction of Syamantha.; सत्यभामा-जाम्बवत्योर् विवाह-प्रस्तावाय स्यमन्तकाख्यानम् आह---सत्राजित इति । — To propose the marriage of Satyabhama and Jambavati, he told the story of Syamantak, who was called Satrajit.; सत्राजित इत्य् अ-कारान्तः क्वचिच् च त-कारान्तो\\ऽप्य् अन्वयानुसारेण द्रष्टव्यः । — Satrajit, ending in a and sometimes in t, should be seen according to the context.; कृतापराधस् तच्-छान्तये स्वयम् एव उद्यमं कृत्वा मणिना सह प्रादाद् इति ॥ — The king, who had committed an offense, personally undertook to appease the king and gave him the jewel to the king.; १-२ ॥ — 1-2 ॥",
+    "translation": "In the fifty-sixth he stole the jewel on a false charge. Then Lord Kṛṣṇa, the son of Satrajit, obtained the daughter of Jāmbavān. She was very restless, saying that she was fixed on her son and others for her unhappiness. He argued that the meaning of wealth was meaningless by the abduction of Syamantha. To propose the marriage of Satyabhama and Jambavati, he told the story of Syamantak, who was called Satrajit. Satrajit, ending in a and sometimes in t, should be seen according to the context. The king, who had committed an offense, personally undertook to appease the king and gave him the jewel to the king. 1-2 ॥"
   },
   "2": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "3": {
-    "word_for_word": "bhaktasya — of devotee; satrājitaḥ — of a son of; sūryaḥ — sun; svāmy — in comp. or; api — also; sakhevāsīd — sakhevāsīd; ity — thus; arthaḥ — meaning; purpose; sa — the last of the three sibilants; ca — and; tuṣṭas — tuṣṭas; tasmai — tasmai; syamantaka — of a celebrated jewel (worn by on his wrist; nāma — name; namely; maṇiṃ — ( only; pra — before; adāt — from chiefly ifc; prītaḥ — pleased; snigdhaḥ — snigdhaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "efdf2186d68ac4c3c30a5c9a591b2d842edb7720b5dc40988e46fad90398d10d",
+    "word_for_word": "भक्तस्य सत्राजितः सूर्यः स्वाम्य् अपि सखेवासीद् इत्य् अर्थः । — This means that the sun, the conqueror of the devotee, was also a friend of his master.; स च तुष्टस् तस्मै स्यमन्तक-नाम मणिं प्रादात् । — He was satisfied and gave him a jewel called Syamantak.; प्रीतः स्निग्धः ॥३॥ — Pleased and affectionate.",
+    "translation": "This means that the sun, the conqueror of the devotee, was also a friend of his master. He was satisfied and gave him a jewel called Syamantak. Pleased and affectionate."
   },
   "4-5": {
-    "word_for_word": "nopalakṣitaḥ — nopalakṣitaḥ; satrājito\\'sāv — satrājito\\'sāv; ity — thus; avijñātaḥ — unknown; dīvyate — is being (only dat. loc; krīḍate — cl. 1. P. (ors; sūryo\\'yam — sūryo\\'yam; iti — thus; śaṅkitāḥ — alarmeds; santaḥ — =; kathayāmāsur — kathayāmāsur; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8069ed640360b69e793210d25cf2a5a5ad7ba4aa5527c40f77b9e8146217e6c8",
+    "word_for_word": "नोपलक्षितः सत्राजितो\\ऽसाव् इत्य् अविज्ञातः ॥४॥ — He was not recognized as Satrajit\\'sav and was not known.; दीव्यते क्रीडते । — Divyate plays.; सूर्यो\\ऽयम् इति शङ्किताः सन्तः कथयामासुर् इति ॥५॥ — The saints, suspecting that it was the sun, told him that it was the sun.",
+    "translation": "He was not recognized as Satrajit\\'sav and was not known. Divyate plays. The saints, suspecting that it was the sun, told him that it was the sun."
   },
   "6": {
-    "word_for_word": "sūryaṃ — sun; namaskāra — the exclamation ‘ ’; artham — meaning; for the purpose; agataṃ — ot gone; kalpiyatvodriktabhaktīnāṃ — kalpiyatvodriktabhaktīnāṃ; sambodhana — awaking; ani — the pin of an axle tree; nārāyaṇetyādīni — nārāyaṇetyādīni."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ce4d183f72b867bbc12d5124e67f9e413f9adf1b5afd3533bed557f62929877f",
+    "word_for_word": "सूर्यं नमस्कारार्थमागतं कल्पियत्वोद्रिक्तभक्तीनां सम्बोधनानि नारायणेत्यादीनि ॥६॥ — Imagine that the sun has come to offer obeisances to the devotees and address them as Nārāyaṇa and so on.",
+    "translation": "Imagine that the sun has come to offer obeisances to the devotees and address them as Nārāyaṇa and so on."
   },
   "7": {
-    "word_for_word": "gabhasticakreṇa — gabhasticakreṇa; raśmijālena — by/with a et or garland of rays; muṣṇanpratighnan — muṣṇanpratighnan; tigmāstīkṣṇā — tigmāstīkṣṇā; gāvo — gāvo; raśmayo — raśmayo; yasya — whose; of which; saḥ — he; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "486a6dcf655a10e72e692cc0c1432b65ecda0c57f2d6ad0deab268451ae79005",
+    "word_for_word": "गभस्तिचक्रेण रश्मिजालेन मुष्णन्प्रतिघ्नन् तिग्मास्तीक्ष्णा गावो रश्मयो यस्य सः ॥७॥ — The rays of the cows are sharp and sharp and repulsive by the wheel of the sun's rays.",
+    "translation": "The rays of the cows are sharp and sharp and repulsive by the wheel of the sun's rays."
   },
   "8": {
-    "word_for_word": "na — not; cedam — cedam; aghaṭamānam — incongruous; ity — thus; āhuḥ — they say; nanv — but surely; iti — thus; anvicchanti — anvicchanti; mṛgayante — are being a orest animal or wild beast; ajaḥ — a drove; sūryaḥ — sun."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7f4e4a8ff32fdbabea632027f94b0b085b6a29677912e3518eb0080acee33469",
+    "word_for_word": "न चेदम् अघटमानम् इत्य् आहुः---नन्व् इति । — If not, they say, it is not happening.; अन्विच्छन्ति मृगयन्ते अजः सूर्यः ॥८॥ — They seek and hunt for the unborn sun.",
+    "translation": "If not, they say, it is not happening. They seek and hunt for the unborn sun."
   },
   "9": {
-    "word_for_word": "bālānām — of child; youngs; ajña — ot knowing; anāṃ — hereby; vacanam — statement; grammatical number; jvalan — in comp. or; vidyotam — lashing; anaḥ — {{Lbody=4781}}."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fa40737767d75eb80a7ae362a9122786e446c2e962188f1cca0b343068b5760f",
+    "word_for_word": "बालानाम् अज्ञानां वचनम् ज्वलन् विद्योतमानः ॥९॥ — The words of the ignorant children are burning and shining.",
+    "translation": "The words of the ignorant children are burning and shining."
   },
   "10": {
-    "word_for_word": "kṛta — done; made; ani — the pin of an axle tree; kautukenotsavena — kautukenotsavena; maṅgala — happiness; ani — the pin of an axle tree; yasmistat — yasmistat; vipraiḥ — by/with stirred or exciteds; kṛtvā — having done; having made."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a5d5a8875034af1a171a87503a644152cddc9300596b91d582b3b12f5562328f",
+    "word_for_word": "कृतानि कौतुकेनोत्सवेन मङ्गलानि यस्मिस्तत् विप्रैः कृत्वा ॥१०॥ — The brahmins performed auspicious rituals with curiosity and festivity",
+    "translation": "The brahmins performed auspicious rituals with curiosity and festivity"
   },
   "11": {
-    "word_for_word": "bhāra — a burden; pramāṇaṃ — easure; ca — and; caturbhir — caturbhir; vīhibhir — vīhibhir; guñjaṃ — humming; guñjānpaṃ — guñjānpaṃ; ca — and; paṇaṃ — play; paṇān — plays; aṣṭau — the two eights; dharaṇamaṣṭau — dharaṇamaṣṭau; ca — and; karṣantaś — karṣantaś; ca — and; turaḥ — quick; palam — straw; tulāṃ — a balance; palaśataṃ — palaśataṃ; prāhurbhāraḥ — prāhurbhāraḥ; syādviśatistulāḥ — syādviśatistulāḥ; iti — thus; mārīnāmākālamṛtyuḥ — mārīnāmākālamṛtyuḥ; ariṣṭamabhadram — ariṣṭamabhadram; aśubhā — aśubhā; duḥkhahetavaḥ — duḥkhahetavaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1e42443e725087c3e9600ee61e64f9376703e19e87d774117c185a44fbf64978",
+    "word_for_word": "भार-प्रमाणं च । — and the load-proportion.; > चतुर्भिर् वीहिभिर् गुञ्जं गुञ्जान्पं च पणं पणान् । — > With four vehicles, the gunjas, the gunjas, the pans, the pans, the pans.; >\n> अष्टौ धरणमष्टौ च कर्षन्तश् च तुरः पलम् ॥ — >\n> Eight horses are pulling the ground and eight are pulling the horse.; >\n> तुलां पलशतं प्राहुर्भारः स्याद्विशतिस्तुलाः । — >\n> A balance is said to be one hundred palas, and the weight is twenty balances.; इति । — It is.; मारीनामाकालमृत्युः अरिष्टमभद्रम् अशुभा दुःखहेतवः ॥११॥ — Untimely death in the name of Mari is the cause of evil, misfortune and evil suffering.",
+    "translation": "and the load-proportion. > With four vehicles, the gunjas, the gunjas, the pans, the pans, the pans. >\n> Eight horses are pulling the ground and eight are pulling the horse. >\n> A balance is said to be one hundred palas, and the weight is twenty balances. It is. Untimely death in the name of Mari is the cause of evil, misfortune and evil suffering."
   },
   "12": {
-    "word_for_word": "kāpi — kāpi; kada — ‘water-giver’; acit — without understanding; anena — by this; bhagavatyasamarthya — bhagavatyasamarthya; svayamagrabhojinaḥ — svayamagrabhojinaḥ; sarvāniṣṭanirvatakam — sarvāniṣṭanirvatakam; apy — apy; aniṣṭahetur — aniṣṭahetur; eva — only; indeed; bhavatīti — bhavatīti; sūcitam — pointed out."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7da3f7b0260a17a6b1c5ac087123de25fd578bbf5d003de2acab6ec977f2bceb",
+    "word_for_word": "कापि कदाचित् । — Sometimes sometimes.; अनेन भगवत्यसमर्थ्य स्वयमग्रभोजिनः सर्वानिष्टनिर्वतकम् अप्य् अनिष्टहेतुर् एव भवतीति सूचितम् ॥१२॥ — This indicates that even the fulfillment of all evils by the Supreme Personality of Godhead, who is himself the first eater, becomes the cause of evil.",
+    "translation": "Sometimes sometimes. This indicates that even the fulfillment of all evils by the Supreme Personality of Godhead, who is himself the first eater, becomes the cause of evil."
   },
   "13": {
-    "word_for_word": "tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; eva — only; indeed; darśayitum — darśayitum; āha — says; tamekadeti — tamekadeti; pratimucya — pratimucya; baddhā — baddhā; prasenaḥ — or a kind of jugglery; satrājidbhrātā — satrājidbhrātā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3e912b577d87ff5267609dbb6127b6295b4eb3db5caefdc51d9b012cfb59b578",
+    "word_for_word": "तद् एव दर्शयितुम् आह । — That is what he said to show.; तमेकदेति । — He gives him one.; प्रतिमुच्य बद्धा । — Released and tied.; प्रसेनः सत्राजिद्भ्राता ॥१३॥ — Prasena was the brother of Satrajit.",
+    "translation": "That is what he said to show. He gives him one. Released and tied. Prasena was the brother of Satrajit."
   },
   "14": {
-    "word_for_word": "ācchidya — p. cutting off; ākṛṣya — ākṛṣya; gṛhītvā — having taken."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "95b598f07d5c797bdd0bb05a8e9a50cd775bc2f0d1c1acf32cb6c0ab63f28b32",
+    "word_for_word": "आच्छिद्य आकृष्य गृहीत्वा ॥१४-१५ ॥ — cut it off, pull it out and hold it.14-1",
+    "translation": "cut it off, pull it out and hold it.14-1"
   },
   "15": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "16": {
-    "word_for_word": "ajapannupāṃśu — ajapannupāṃśu; avocan — avocan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e6f4b29cdd15a58e1aa821b0b9df7f62188d3ed4f158f1fd42c2a6ffb6c687aa",
+    "word_for_word": "अजपन्नुपांशु अवोचन् ॥ — They chanted the mantra and said; १६-२२ — 16-22",
+    "translation": "They chanted the mantra and said 16-22"
   },
   "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "19": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "21": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "22": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "kravya — =; arthe — loc. with √ 1; āmiṣārtha — āmiṣārtha."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a99606715ca67df40a537eb7a359eabecfe8b9bd1aa937abe873c0713f06a4fa",
+    "word_for_word": "क्रव्यार्थे आमिषार्थ ॥२३॥ — for the sake of flesh, for the sake of food.",
+    "translation": "for the sake of flesh, for the sake of food."
   },
   "24": {
-    "word_for_word": "aṣṭāviṃśa — the twenty-eight; aham — I; aṣṭa — eight; ca — and; viṃśatiścāhāni — viṃśatiścāhāni; dina — cut; ani — the pin of an axle tree; yasmistadaṣṭāviṃśāham — yasmistadaṣṭāviṃśāham; viṃśatiśabde — viṃśatiśabde; tila — Sesamum icum (its blossom is compared to the ose; upa — towards; ārṣaḥ — relating or belonging to or derived rom s; vajrasya — of ‘the hard or ighty one’; niṣpeṣonirghātastadvatparuṣaniṣṭhuraiḥ — niṣpeṣonirghātastadvatparuṣaniṣṭhuraiḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b0133cd7883c6322cf36e0a263e3289485a403bacb122b96ba238f78eb0bcc61",
+    "word_for_word": "अष्टाविंशाहम् अष्ट च विंशतिश्चाहानि दिनानि यस्मिस्तदष्टाविंशाहम् । — Twenty-eight days and twenty-eight days are called twenty-eight days.; विंशतिशब्दे । — In the word twenty.; तिलोप आर्षः । — Tilop Arsha.; वज्रस्य निष्पेषोनिर्घातस्तद्वत्परुषनिष्ठुरैः ॥२४॥ — The thunderbolt was crushed and struck by the same fierce and cruel blows.",
+    "translation": "Twenty-eight days and twenty-eight days are called twenty-eight days. In the word twenty. Tilop Arsha. The thunderbolt was crushed and struck by the same fierce and cruel blows."
   },
   "25": {
-    "word_for_word": "śrī-kṛṣṇasya — of Śrī Kṛṣṇa; muṣṭīnāṃ — of in comp. ors; viniṣpātair — viniṣpātair; āghātair — āghātair; niṣpiṣṭa — stamped; ani — the pin of an axle tree; ślathānyaṅgānāmurūṇi — ślathānyaṅgānāmurūṇi; bandhana — binding; ani — the pin of an axle tree; sandhisthānāni — sandhisthānāni; yasya — whose; of which; saḥ — he; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6f1499ce3e5ad4c86121e6fbf48bf6410b055d68a4fd84514876c44f0bc38832",
+    "word_for_word": "श्री-कृष्णस्य मुष्टीनां विनिष्पातैर् आघातैर् निष्पिष्टानि श्लथान्यङ्गानामुरूणि बन्धनानि सन्धिस्थानानि यस्य सः ॥२५॥ — He whose thighs, thighs, bonds and joints were crushed by the blows of the fists of Lord Kṛṣṇa.",
+    "translation": "He whose thighs, thighs, bonds and joints were crushed by the blows of the fists of Lord Kṛṣṇa."
   },
   "26": {
-    "word_for_word": "loke — in/on world; ko — Oh o!; vāyaṃ — ( r. √; matto — matto; balīyāniti — balīyāniti; vismitaḥ — amazed; sanvimṛśyāha — sanvimṛśyāha; jāna — birth; iti — thus; sarvabhūta — being everywhere; anāṃ — hereby; yaḥ — who; which; prāṇas — prāṇas; tatra — there; in that; yadojaḥ — yadojaḥ; saho — in comp. or; balaṃ — strength; ca — and; indriyahṛdayadehabalāni — indriyahṛdayadehabalāni; tatsarvaṃ — tatsarvaṃ; tvam — you; ity — thus; ahaṃ — I; jāne — in/on birth; kathaṃ — (in comp. or; tathātvamata — tathātvamata; āha — says; viṣṇum — Viṣṇu; ity — thus; ādi — beginning; and so on."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "105061e70e4312a4d71bf57768eda3af5352a2aa49f14efdce7f30a86a51664e",
+    "word_for_word": "लोके को वायं मत्तो बलीयानिति विस्मितः सन्विमृश्याह---जान इति । — He wondered who in this world was stronger than he was, and he thought, “Know.”; सर्वभूतानां यः प्राणस् तत्र यदोजः सहो बलं च इन्द्रियहृदयदेहबलानि तत्सर्वं त्वम् इत्य् अहं जाने कथं तथात्वमत आह, विष्णुम् इत्य् -आदि ॥२६॥ — The life-force of all beings, the energy, the endurance, the strength, the senses, the heart and the body are all You. How can I know that You are the same?",
+    "translation": "He wondered who in this world was stronger than he was, and he thought, “Know.” The life-force of all beings, the energy, the endurance, the strength, the senses, the heart and the body are all You. How can I know that You are the same?"
   },
   "27": {
-    "word_for_word": "purāṇatve — purāṇatve; hetuḥ — cause; reason; tvaṃ — you; hīti — hīti; sraṣṭā — sraṣṭā; nimittam — cause; occasion; yac — in comp. or; ca — and; sadupādānam — sadupādānam; ataḥ — therefore; from this; purāṇam — Purāṇa; prabhaviṣṇutve — prabhaviṣṇutve; hetuḥ — cause; reason; kāla — time; iti — thus; adhīśvarastvam — adhīśvarastvam; apy — apy; ata — ata; eva — only; indeed; ity — thus; āha — says; īśaḥ — Lord; para — higher; other; iti — thus; na — not; ca — and; taṭastha — standing on a declivity or bank; ity — thus; āha — says; ātman — self; ama — impetuosity; ātma — (in comp. or; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2411b954f1209991b788c26b70272e37130eb87e792ba8dd59a8cb99bdf5fc88",
+    "word_for_word": "पुराणत्वे हेतुः त्वं हीति स्रष्टा निमित्तम् यच् च सदुपादानम् अतः पुराणम् प्रभविष्णुत्वे हेतुः काल इति अधीश्वरस्त्वम् अप्य् अत एवेत्य् आह---ईशः पर इति । — You are the cause of the Purāṇa, the cause of the Purāṇa, and whatever is the cause of the Purāṇa is the good cause.; न च तटस्थ इत्य् आह आत्मनामात्मेति ॥२७॥ — Nor is he on the bank, he argues, because the name of the Self is the Self.",
+    "translation": "You are the cause of the Purāṇa, the cause of the Purāṇa, and whatever is the cause of the Purāṇa is the good cause. Nor is he on the bank, he argues, because the name of the Self is the Self."
   },
   "28": {
-    "word_for_word": "yata — yata; evaṃbhūto\\'to — evaṃbhūto\\'to; mameṣṭadaivataṃ — mameṣṭadaivataṃ; raghunātha — ‘lord of the s’; evaṃ — thus; in this way; tvam — you; ity — thus; āha — says; yasya — whose; of which; iti — thus; īṣadutkalita — īṣadutkalita; uddīpito — uddīpito; yo — yo; roṣas — roṣas; tena — by him; by that; ye — those who; kaṭa — a twist of straw of grass; akṣama — unable to endure; ukṣa — large; astaiḥ — by/with throwns; kṣubhitā — kṣubhitā; nakrā — a swarm of bees or wasps; grāhāstimiṅgilā — grāhāstimiṅgilā; mahāmatsya — a large ish; aś — Ā. ( aor. 3. pl; ca — and; yasmin — in whom; in which; so\\'vdhirvartma — so\\'vdhirvartma; mārgamādiśaddattavāṃs — mārgamādiśaddattavāṃs; tathā\\'pi — tathā\\'pi; tasmin — in him; in that; yena — by whom; by which; tvayā — by you; svayaśa — svayaśa; eva — only; indeed; setuḥ — binding; kṛtaḥ — done; made; ujjvalitā — ujjvalitā; ca — and; dagdhā — the quarter where the sun remains overhead; yasya — whose; of which; iṣubhiḥ — by/with an arrows; kṣatā — a violated girl; ani — the pin of an axle tree; chinna — cut off; ani — the pin of an axle tree; rakṣaso — rakṣaso; daśagrīvasya — of =; śirāṃsi — śirāṃsi; bhuvi — bhuvi; petuḥ — petuḥ; sa — the last of the three sibilants; eva — only; indeed; tvam — you; iti — thus; jāne — in/on birth."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d9cad57e80c81ac534cd4fd5927e3f8f72d12d10e54ef5841af45245d441a216",
+    "word_for_word": "यत एवंभूतो\\ऽतो ममेष्टदैवतं रघुनाथ एवं त्वम् इत्य् आह, यस्येति । — Because he is thus\\'s my dearest deity, O Lord of the Raghus, thus you are, he said, whose.; ईषदुत्कलित उद्दीपितो यो रोषस् तेन ये कटाक्षमोक्षास्तैः क्षुभिता नक्रा ग्राहास्तिमिङ्गिला महामत्स्याश् च यस्मिन् सो\\ऽव्धिर्वर्त्म मार्गमादिशद्दत्तवांस् तथा\\ऽपि तस्मिन् येन त्वया स्वयश एव सेतुः कृतः उज्ज्वलिता च दग्धा यस्येषुभिः क्षतानि छिन्नानि रक्षसो — The anger which was slightly aroused and aroused by the glances which were released, in which the crocodiles, crocodiles, whales and great fishes were shaken, and in which the ocean gave directions, yet in which you bridged your own fame, brightened and burned, whose arrows cut the wounds of the demon; दशग्रीवस्य शिरांसि भुवि पेतुः स एव त्वम् इति जाने ॥२८॥ — The heads of the ten-headed demon fell to the ground I know that it is you",
+    "translation": "Because he is thus\\'s my dearest deity, O Lord of the Raghus, thus you are, he said, whose. The anger which was slightly aroused and aroused by the glances which were released, in which the crocodiles, crocodiles, whales and great fishes were shaken, and in which the ocean gave directions, yet in which you bridged your own fame, brightened and burned, whose arrows cut the wounds of the demon The heads of the ten-headed demon fell to the ground I know that it is you"
   },
   "29-30": {
-    "word_for_word": "iti — thus; vijñātaṃ — discerned; vijñānaṃ — realized knowledge; yena — by whom; by which; taṃ — the 1st dental consonant; bijñānaśabdaḥ — bijñānaśabdaḥ; karaṇasādhanaḥ — karaṇasādhanaḥ; karmasādhano — karmasādhano; vā — or; ṛkṣarājaṃ — {{Lbody=38671}}; praty — in comp. before vowels or above; uktavān — uktavān."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "63804df3658607c395d2100ba6fac740aba1f82dc3e7b3ca308817a260bcecf8",
+    "word_for_word": "इति विज्ञातं विज्ञानं येन तं बिज्ञानशब्दः करणसाधनः कर्मसाधनो वा ऋक्षराजं प्रत्य् उक्तवान् ॥ — The king of the bears, who had thus understood the science of knowledge, which is the means of attaining the senses or the means of action, addressed the king of the bears.; २९-३०॥ — 29-30.",
+    "translation": "The king of the bears, who had thus understood the science of knowledge, which is the means of attaining the senses or the means of action, addressed the king of the bears. 29-30."
   },
   "31": {
-    "word_for_word": "vayaṃ — one who weaves; bahavo — bahavo; biladvāraṃ — biladvāraṃ; prāpta — attained; as — be; tatra — there; in that; mithyābhiśāpamamunā — mithyābhiśāpamamunā; maṇinā — by/with ( only; pramṛjana — pramṛjana; pramārṣṭumahamantarbilamiha — pramārṣṭumahamantarbilamiha; prāpta — attained; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "686cc3cda0e3d2d51c5da073e1a6b1f507f64799f1d14f3464f89c5747b52326",
+    "word_for_word": "वयं बहवो बिलद्वारं प्राप्तास् तत्र मिथ्याभिशापममुना मणिना प्रमृजन प्रमार्ष्टुमहमन्तर्बिलमिह प्राप्त इत्य् अर्थः ॥३१॥ — Many of us have reached the entrance of the cave There I have reached the inner cave to wipe away the false curse with this jewel This means that I have reached here",
+    "translation": "Many of us have reached the entrance of the cave There I have reached the inner cave to wipe away the false curse with this jewel This means that I have reached here"
   },
   "32": {
-    "word_for_word": "sahamaṇinā — sahamaṇinā; samarpayāmāsa — samarpayāmāsa."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "09a0f673f1789b86bf252dcd6bb03414bf888a1b656c09951b0373e97d9ea3f8",
+    "word_for_word": "सहमणिना समर्पयामास ॥ — He offered it to the Lord with a jewel.; ३२-३४ ॥ — 32-34.",
+    "translation": "He offered it to the Lord with a jewel. 32-34."
   },
   "33": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "34": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "35": {
-    "word_for_word": "śrī — Śrī; sacred; glorious; kṛṣṇaprāptaye — kṛṣṇaprāptaye; candrabhāgāṃ — the river Chenab; nāma — name; namely; durgamabhajan — durgamabhajan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c8b4d0143885b0ccebc7aa8e79baffeae03302897f275c7f42cd6554e7edfe56",
+    "word_for_word": "श्री-कृष्णप्राप्तये चन्द्रभागां नाम दुर्गमभजन् ॥३५॥ — To attain Lord Kṛṣṇa they worshiped a fortress named Chandrabhaga.",
+    "translation": "To attain Lord Kṛṣṇa they worshiped a fortress named Chandrabhaga."
   },
   "36": {
-    "word_for_word": "sa — the last of the three sibilants; ca — and; kṛṣṇasteṣāṃ — kṛṣṇasteṣāṃ; prādurbabhūva — prādurbabhūva; āsava — distilling; iti — thus; pāṭhe — in/on recitation; asava — asava; iṃdriyāṇi — iṃdriyāṇi; teṣāṃ — teṣāṃ; preṣṭha — dearest; ity — thus; arthaḥ — meaning; purpose; kadā — when; devyā — by/with goddess; upasthānāt — from the act of placing one's self ear to; tayā — tayā; tānprati — tānprati; ādiṣṭā — ādiṣṭā; dattā — of a woman; yā — who; which; āśīḥ — = 1; kṛṣṇaṃ — Kṛṣṇa; drakṣyatheti — drakṣyatheti; tayā — tayā; sahaiva — sahaiva."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5363ab4d577d45345b918debd77334fbc1304b959372d7a9a775d4819498164c",
+    "word_for_word": "स च कृष्णस्तेषां प्रादुर्बभूव आसव इति पाठे असव इंद्रियाणि तेषां प्रेष्ठ इत्य् अर्थः । — And that Kṛṣṇa appeared to them in the text, Asava, which means that Asava is their dearest sense.; कदा देव्या उपस्थानात् तया तान्प्रति आदिष्टा दत्ता या आशीः कृष्णं द्रक्ष्यथेति तया सहैव ॥३६॥ — When did the goddess, after her arrival, give them the orders and give them the blessings that they would see Krishna with her?",
+    "translation": "And that Kṛṣṇa appeared to them in the text, Asava, which means that Asava is their dearest sense. When did the goddess, after her arrival, give them the orders and give them the blessings that they would see Krishna with her?"
   },
   "37": {
-    "word_for_word": "loke — in/on world; janāḥ — person; peoples; kathañcin — kathañcin; mṛtaṃ — dead; bandhu — connection; punar — back; āgatam — come; arrived; upalabhante — upalabhante; tadvad — tadvad; upalabhya — obtainable; sarve — all; jāta — born; mahotsavā — mahotsavā; āsann — āsann; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "af60f5cde62d2431c64070fee9b5f4e49bc31932572eae7edeeb499c56c55a00",
+    "word_for_word": "लोके जनाः कथञ्चिन् मृतं बन्धु पुनर् आगतम् उपलभन्ते तद्वद् उपलभ्य सर्वे जात-महोत्सवा आसन्न् इति ॥ — People in this world sometimes perceive that a dead relative has returned to their homes.; ३७-३८ ॥ — 37-38.",
+    "translation": "People in this world sometimes perceive that a dead relative has returned to their homes. 37-38."
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "39": {
-    "word_for_word": "pāpmanāparādhenānutapyamānaḥ — pāpmanāparādhenānutapyamānaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ae67034229b61052f11975595f6fec69c48bd2a86d755931059df8ca6f7a27a3",
+    "word_for_word": "पाप्मनापराधेनानुतप्यमानः ॥३९॥ — He is unrepentant for his sins and offenses.",
+    "translation": "He is unrepentant for his sins and offenses."
   },
   "40": {
-    "word_for_word": "aghaṃ — bad; doṣam — fault; ātmano — ātmano; rajomalamaparādham — rajomalamaparādham; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7618ec98b80b62a79900e6282fde414eade3ace0201d7098e8bec905cf65e5a6",
+    "word_for_word": "अघं दोषम् आत्मनो रजोमलमपराधम् इति ॥४०॥ — Sin is the evil of the self, the impurity of dust is the offense, and so on.",
+    "translation": "Sin is the evil of the self, the impurity of dust is the offense, and so on."
   },
   "41": {
-    "word_for_word": "kiṃ — what; kṛtvā — having done; having made; kasmin — kasmin; kṛte — on account of; ity — thus; arthaḥ — meaning; purpose; sādhu — straight; bhadram — happily; adīrghadarśanamavicārakaṃ — adīrghadarśanamavicārakaṃ; mām — me; kṣudraṃ — inute; kṛpaṇaṃ — (; mūḍhaṃ — stupefied; maṇdamatim — maṇdamatim."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "eb288a1246392709478752117cff373fcd89dce5e21ab54944c548c42e2ac203",
+    "word_for_word": "किं कृत्वा कस्मिन् कृते इत्य् अर्थः । — It means what to do and for what purpose.; साधु भद्रम् । — Well, good luck.; अदीर्घदर्शनमविचारकं माम् । — I’m short-sighted and thoughtless.; क्षुद्रं कृपणं मूढं मण्दमतिम् ॥४१॥ — The mean, the miserable, the foolish, the slow-witted.",
+    "translation": "It means what to do and for what purpose. Well, good luck. I’m short-sighted and thoughtless. The mean, the miserable, the foolish, the slow-witted."
   },
   "42": {
-    "word_for_word": "evaṃ — thus; in this way; dhyāyannupāyaṃ — dhyāyannupāyaṃ; niścinoti — niścinoti; dāsya — servitude; iti — thus; strīratnaṃ — ‘jewel of a woman’; duhitaraṃ — duhitaraṃ; tāvaddāsyāmi — tāvaddāsyāmi; tadanantaraṃ — earest to any one; pāribarhatvena — pāribarhatvena; ratnamapīti — ratnamapīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1194914092e51cad447a63ae7d94aa3cd6e4266c1b9a513d594c772fc09e40be",
+    "word_for_word": "एवं ध्यायन्नुपायं निश्चिनोति---दास्य इति । — Thus meditating, he decides on a solution: to be a servant.; स्त्रीरत्नं दुहितरं तावद्दास्यामि तदनन्तरं पारिबर्हत्वेन रत्नमपीति ॥ — I shall give my daughter as the jewel of a woman, and after that I shall give her the jewel as a bride.; ४२-४३ ॥ — 42-43.",
+    "translation": "Thus meditating, he decides on a solution: to be a servant. I shall give my daughter as the jewel of a woman, and after that I shall give her the jewel as a bride. 42-43."
   },
   "43": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "44": {
-    "word_for_word": "bahubhiḥ — by/with many; muchs; kṛtavarmādibhiḥ — kṛtavarmādibhiḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "63fb4be1527e616797ed486c32362216f700d63078f6b7d27a903eca85d360bc",
+    "word_for_word": "बहुभिः कृतवर्मादिभिः ॥४४॥ — by many, such as Kritavarma.",
+    "translation": "by many, such as Kritavarma."
   },
   "45": {
-    "word_for_word": "maṇiṃ — ( only; na — not; pratīcchāmo — pratīcchāmo; na — not; svīkurmaḥ — svīkurmaḥ; devaḥ — deity; god; sūryastadbhaktasyeti — sūryastadbhaktasyeti; kaṭākṣaḥ — a glance or side look; phalabhāgina — phalabhāgina; iti — thus; tavāputratvāttvadīyaṃ — tavāputratvāttvadīyaṃ; dhanamasmākam — dhanamasmākam; eva — only; indeed; iti — thus; gūḍho\\'bhiprāyaḥ — gūḍho\\'bhiprāyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f4f672303da2ec2afb1181b0a20d215d179bff9baba64c1b3e6b3fed11141917",
+    "word_for_word": "मणिं न प्रतीच्छामो न स्वीकुर्मः देवः सूर्यस्तद्भक्तस्येति कटाक्षः फलभागिन इति तवापुत्रत्वात्त्वदीयं धनमस्माकम् एवेति गूढो\\ऽभिप्रायः ॥४५॥ — We do not accept or accept the jewel The sun is the god of his devotee The glance is the share of the fruits This is the mysterious meaning that as your son your wealth is ours.",
+    "translation": "We do not accept or accept the jewel The sun is the god of his devotee The glance is the share of the fruits This is the mysterious meaning that as your son your wealth is ours."
   }
 }

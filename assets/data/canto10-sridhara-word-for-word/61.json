@@ -1,107 +1,261 @@
 {
   "1": {
-    "word_for_word": "eka — one; ṣaṣṭhitame — ṣaṣṭhitame; śaureḥ — of patr. of; putra — son; pautrādi — pautrādi; santatiḥ — santatiḥ; aniruddha — unobstructed; vivāhe — in/on leading away; ca — and; rukmiṇo — rukmiṇo; rāmato — rāmato; vadhaḥ — killing; a — not; aṣṭādhika — aṣṭādhika; śata — (rarely; dvyaṣṭa — copper; sahasra — sahasra; strī — (perhaps or; samudbhavān — existences; koṭiśaḥ — ‘pointed’; putra — son; pautrādīn — pautrādīn; harir — harir; dārair — dārair; ayojayat — ayojayat; b — b; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; etad — this; vaktum — vaktum; āha — says; ekaikaśa — ekaikaśa; iti — thus; kṛṣṇasya — of Kṛṣṇa; abalā — a woman; bhāryāḥ — to be borne or supported or cherished or ourished or aintaineds; sarvā — sarvā; yā — who; which; ātmani — ātmani; sampattyā — sampattyā; pituḥ — of the father; sakāśād — sakāśād; anavamān — ot lows; anyūnān — ot defectives."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d926c51df93f05e3e1827f47b9f39b6c5a9803fb539a028c968f914bf3660207",
+    "word_for_word": "एक-षष्ठितमे शौरेः पुत्र-पौत्रादि-सन्ततिः । — In the one-sixth, Shauri had sons, grandsons and other descendants.; अनिरुद्ध-विवाहे च रुक्मिणो रामतो वधः ॥अ॥ — The killing of Rukmi by Rama at the marriage of Aniruddha; अष्टाधिक-शत-द्व्यष्ट-सहस्र-स्त्री-समुद्भवान् । — They were born of more than eight hundred and eighty-two thousand women.; कोटिशः पुत्र-पौत्रादीन् हरिर् दारैर् अयोजयत् ॥ब्॥ — The Supreme Personality of Godhead married crores of sons and grandsons.; तद् एतद् वक्तुम् आह---एकैकश इति । — That is why he says this: one by one.; कृष्णस्याबला भार्याः । — The weak wives of Krishna.; सर्वा या आत्मनि सम्पत्त्या । — All that is in the self by property.; पितुः सकाशाद् अनवमान् अन्यूनान् ॥१॥ — From the presence of his father, he was inferior to anyone else.",
+    "translation": "In the one-sixth, Shauri had sons, grandsons and other descendants. The killing of Rukmi by Rama at the marriage of Aniruddha They were born of more than eight hundred and eighty-two thousand women. The Supreme Personality of Godhead married crores of sons and grandsons. That is why he says this: one by one. The weak wives of Krishna. All that is in the self by property. From the presence of his father, he was inferior to anyone else."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6650271ff025f5f2d7103445c79c0f7f2b9b9495bc047fc2f66a92088e0c3800",
+    "word_for_word": "प्रेष्ठं न्यमंसत अच्युतस्य प्रियतमं प्रत्येकं स्वं स्वं मेनिरे । — They bowed down to the dearest, and each of them considered himself to be the most dear to the infallible.; न तस्य तत्त्वम् आत्मारामत्वं विदन्ति ताः ॥२॥ — They do not know the truth of Him as self-satisfied.",
+    "translation": "They bowed down to the dearest, and each of them considered himself to be the most dear to the infallible. They do not know the truth of Him as self-satisfied."
   },
   "3": {
-    "word_for_word": "ātmārāmatvaṃ — ātmārāmatvaṃ; vyanakti — vyanakti; dvayena — by/with twofold; cārv — in comp. or; iti — thus; cārv — in comp. or; abja — born in water; kośa — (; vad — speak; say; vadanaṃ — the act of speaking; ca — and; āyata — stretched; ani — the pin of an axle tree; bāhu — ( r. √; netrāṇi — netrāṇi; ca — and; sa — the last of the three sibilants; premṇā — through love or affection; hāsa — laughing; rasena — by/with rasa; relish; vīkṣita — looked at; ani — the pin of an axle tree; ca — and; valgu — handsome; jalpāś — jalpāś; ca — and; bhagavataḥ — of the Supreme Lord; etaiḥ — by/with come ears; saṃmohitā — saṃmohitā; vanitāḥ — soliciteds; svaiḥ — by/with own; selfs; svair — svair; anekair — anekair; vibhramais — vibhramais; tasya — of him; of that; śrī-kṛṣṇasya — of Śrī Kṛṣṇa; mano — in comp. or; vijetuṃ — vijetuṃ; hartuṃ — ‘seizer’; na — not; samaśakan — samaśakan; na — not; śaktā — śaktā; babhūvuḥ — babhūvuḥ; vibhūmnaḥ — vibhūmnaḥ; paripūrṇasya — of quite ull."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4e42777e44d4099992a6acf0cb274906afa0f148787a2cdfaea625adbc6c442d",
+    "word_for_word": "आत्मारामत्वं व्यनक्ति द्वयेन---चार्व् इति । — He expresses his self-satisfaction in two ways: Charv.; चार्व्-अब्ज-कोश-वद् वदनं च आयतानि बाहु-नेत्राणि च स-प्रेम्णा हास-रसेन वीक्षितानि च । — His face was like a charv’s lotus treasure chest, and his arms and eyes were rectangular, and he looked at them with a loving smile.; वल्गु-जल्पाश् च भगवतः एतैः संमोहिता वनिताः स्वैः स्वैर् अनेकैर् विभ्रमैस् तस्य श्री-कृष्णस्य मनो विजेतुं हर्तुं न समशकन्, न शक्ता बभूवुः । — The women, bewildered by these charming conversations of the Lord, could not, nor were they able, to conquer the mind of Lord Kṛṣṇa by their own many delusions.; विभूम्नः परिपूर्णस्य ॥३॥ — of the Supreme Being, the Perfect.",
+    "translation": "He expresses his self-satisfaction in two ways: Charv. His face was like a charv’s lotus treasure chest, and his arms and eyes were rectangular, and he looked at them with a loving smile. The women, bewildered by these charming conversations of the Lord, could not, nor were they able, to conquer the mind of Lord Kṛṣṇa by their own many delusions. of the Supreme Being, the Perfect."
   },
   "4": {
-    "word_for_word": "tāsāṃ — tāsāṃ; vibhramān — oving to and ros; varṇayann — varṇayann; etad — this; vivṛṇoti — vivṛṇoti; smāya — to/for indeed; formerly; iti — thus; smāyo — smāyo; gūḍha — covered; hasitaṃ — laughing; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; yukto'valoka — yukto'valoka; lavaḥ — the act of cutting; kaṭākṣaḥ — a glance or side look; tena — by him; by that; darśitaḥ — shown; sūcito — sūcito; bhāvo'bhiprāyaḥ — bhāvo'bhiprāyaḥ; tena — by him; by that; hāri — = 1; mano — in comp. or; haraṇa — carrying; śīlaṃ — (and g; yad — who; bhrū — an eyebrow; maṇḍalaṃ — circular; tena — by him; by that; prahitāḥ — urged on inciteds; prastha — going on a arch or journey; apitā — by/with ot swelling; ye — those who; sauratā — sauratā; mantrāḥ — (rarelys; teṣu — in/among the 1st dental consonants; śauṇḍaiḥ — by/with ond of spirituous liquors; pragalbhair — pragalbhair; anaṅgasya — of bodiless; bāṇaiḥ — by/with or , (s; śaraiḥ — by/with a sort of reed or grasss; anyaiś — anyaiś; ca — and; karaṇaiḥ — by/with doings; kāma — desire; śāstra — scripture; prasiddhair — prasiddhair; yasya — whose; of which; indriyaṃ — sense; mano — in comp. or; vimathituṃ — vimathituṃ; kṣobhayituṃ — kṣobhayituṃ; ṣoḍaśa — ṣoḍaśa; sahasram — ‘with a th s’; api — also; patnyo — patnyo; na — not; śekur — śekur; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9b896ac0d0734d97f977b90cec249b448da4cff775db125327057bfb0856224e",
+    "word_for_word": "तासां विभ्रमान् वर्णयन्न् एतद् विवृणोति---स्माय- इति । — Describing their confusion, he explains this by saying, “Smaya.”; स्मायो गूढ-हसितं, तद्-युक्तोऽवलोक-लवः कटाक्षः, तेन दर्शितः सूचितो भावोऽभिप्रायः, तेन हारि मनो-हरण-शीलं यद् भ्रू-मण्डलं, तेन प्रहिताः प्रस्थापिता ये सौरता मन्त्राः, तेषु शौण्डैः प्रगल्भैर् अनङ्गस्य बाणैः शरैः, — The smile with its mysterious smile, the glance with which it is accompanied by the love of observation, the intention of the indicated emotion shown by it, the circle of eyebrows which is captivating to the mind of the loser, the solar spells sent by it,; अन्यैश् च करणैः काम-शास्त्र-प्रसिद्धैर् यस्येन्द्रियं मनो विमथितुं क्षोभयितुं षोडश-सहस्रम् अपि पत्न्यो न शेकुर् इति ॥४॥ — And by other means well known in the scriptures of lust, even sixteen thousand wives could not disturb his senses and mind.",
+    "translation": "Describing their confusion, he explains this by saying, “Smaya.” The smile with its mysterious smile, the glance with which it is accompanied by the love of observation, the intention of the indicated emotion shown by it, the circle of eyebrows which is captivating to the mind of the loser, the solar spells sent by it, And by other means well known in the scriptures of lust, even sixteen thousand wives could not disturb his senses and mind."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9e184121882e2c8c226cafb87712891c77e9036c182e20205f29e2df6896b127",
+    "word_for_word": "अनुरागेण हासो\\ऽवलोकश् च नव-सङ्गमे लालसम् औत्सुक्यं च ते आद्या यस्य विभ्रम-कदम्बस्य, तं भेजुः । — With affection, laughter and looks, longing and eagerness for the new association, they sent to the illusory kadamba whom they had originally visited.; अनुराग-हासावलोक-नव-सङ्गम-लालसाद्यं भेजुः, तस्य मनो विजेतुं न शेकुर् इति वा ॥५॥ — They sent him affection, laughter, glances, longing for new association, or they could not conquer his mind.",
+    "translation": "With affection, laughter and looks, longing and eagerness for the new association, they sent to the illusory kadamba whom they had originally visited. They sent him affection, laughter, glances, longing for new association, or they could not conquer his mind."
   },
   "6": {
-    "word_for_word": "kiṃ — what; tu — but; pratyudgamādibhir — pratyudgamādibhir; vibhos — vibhos; tasya — of him; of that; dāsyaṃ — servitude; nityaṃ — ( r; vidadhur — vidadhur; iti — thus; prauḍha — prauḍha; bhāve\\'pi — bhāve\\'pi; nava — nine; saṅgamādy — saṅgamādy; abhidhānam — telling; agata — ot gone; sāratvena — by/with hardness; autsukyena — by/with anxiety; ca — and; tathā — so; in that way; pratīteḥ — of going towards; teṣām — of them; eva — only; indeed; śloka — verse; anāṃ — hereby; prastāva — introductory eulogy; antare — amidst; punaḥ — again; punar — back; āvṛttir — āvṛttir; iti — thus; saundaryāt — from beauty."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4081f4461598b3ea05564dcb151953edf6203d19baa6cddd37c86343def5f7e0",
+    "word_for_word": "किं तु प्रत्युद्गमादिभिर् विभोस् तस्य दास्यं नित्यं विदधुर् इति । — Instead, they always made themselves servants of the Lord by counter-attacking and other means.; प्रौढ-भावे\\ऽपि नव-सङ्गमाद्य्-अभिधानम् अगत-सारत्वेन औत्सुक्येन च तथा प्रतीतेः । — Even in the mature sense, the expression of new association and others is perceived as such because of the essence of the past and the curiosity.; तेषाम् एव श्लोकानां प्रस्तावान्तरे पुनः पुनर् आवृत्तिर् इति सौन्दर्यात् ॥६॥ — The beauty of these same verses is that they are repeated again and again in the interval between the proposals.",
+    "translation": "Instead, they always made themselves servants of the Lord by counter-attacking and other means. Even in the mature sense, the expression of new association and others is perceived as such because of the essence of the past and the curiosity. The beauty of these same verses is that they are repeated again and again in the interval between the proposals."
   },
   "7-8": {
-    "word_for_word": "prāsaṅgikam — resulting rom attachment or close connection; uktvā — p. having spoken or said; prastutam — praised; āha — says; tāsām — tāsām; iti — thus; daśa — ten; daśa — ten; putrā — putrā; yāsāṃ — Turdus Salica; tāsāṃ — tāsāṃ; madhye\\'ṣṭī — madhye\\'ṣṭī; mahiṣyo — mahiṣyo; yāḥ — the 1st semivowels; prāg — in comp. or; uktās — uktās; tat — that; putrān — sons; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6d0e0408e9582f86859e516aead71a1c8a3a3fffee32bfa45013ff1c6dd88f14",
+    "word_for_word": "प्रासङ्गिकम् उक्त्वा प्रस्तुतम् आह---तासाम् इति । — Having said the relevant, he argues that the present is of them.; दश दश पुत्रा यासां, तासां मध्ये\\ऽष्टी महिष्यो याः प्राग्-उक्तास् तत्-पुत्रान् इति ॥७-१२॥ — She had ten sons, and among them eight queens, who were mentioned earlier, were her sons, 7-1",
+    "translation": "Having said the relevant, he argues that the present is of them. She had ten sons, and among them eight queens, who were mentioned earlier, were her sons, 7-1"
   },
   "10": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "11": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "13": {
-    "word_for_word": "śrīm — Śrī; sacred; glorious; an — not; iti — thus; vasoḥ — of excellent; kunta — a spear; ir — cl. 6. P. , to go; vā — or; viśeṣaṇam — distinguishing."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3a3710dcd6a56d9cb9950179ccdf191a0f2a8a3f821f65dd43d5650913e7f5e2",
+    "word_for_word": "श्रीमान् इति वसोः कुन्तेर् वा विशेषणम् ॥१३॥ — Shriman is an adjective of Vasu or Kunti.",
+    "translation": "Shriman is an adjective of Vasu or Kunti."
   },
   "14": {
-    "word_for_word": "bhadro — bhadro; nāma — name; namely; ekala — alone; ekaḥ — one; somako\\'varaḥ — somako\\'varaḥ; kanīyān — kanīyān; ete — these; kālindyāḥ — of a sort of vessel; sutā — by/with ( ifc; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5f51055ba6f90cc6380e1015e164bb63e0f83313c72c2125d6f9dcc353f79562",
+    "word_for_word": "भद्रो नाम एकल एकः । — Bhadro is a single one.; सोमको\\ऽवरः कनीयान् । — Somako\\'vara is the youngest.; एते कालिन्द्याः सुता इति ॥१४॥ — These are the sons of Kalindi.",
+    "translation": "Bhadro is a single one. Somako\\'vara is the youngest. These are the sons of Kalindi."
   },
   "15": {
-    "word_for_word": "mādrayā — mādrayā; lakṣmaṇāyāḥ — of the emale of the Ardea Sibirica."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "22c41df9084155c4e5dfd0b37d293d43eda24f59ffdad6a1e7a039cea405d6d1",
+    "word_for_word": "माद्रया लक्ष्मणायाः ॥१५॥ — Madraya of Lakshmana.",
+    "translation": "Madraya of Lakshmana."
   },
   "16": {
-    "word_for_word": "kṣudhiś — kṣudhiś; ca — and; daśamaḥ — tenth; ete — these; mitravid — a spy; ātmajāḥ — self-originateds."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ded765dec97d7f295ce468e6918c4a9aa6524cf78fa8743fb2c58527f5147e1b",
+    "word_for_word": "क्षुधिश् च दशमः । — and hunger, the tenth.; एते मित्रविदात्मजाः ॥१६॥ — These are the sons of Mitravida.",
+    "translation": "and hunger, the tenth. These are the sons of Mitravida."
   },
   "17": {
-    "word_for_word": "saṅgrāmajit — saṅgrāmajit; pramukhāḥ — turning the ace towardss; satyaka — =; antā — by/with to bind; bhadrāyāḥ — of a cow; satāḥ — a kind of sacrificial vessels; śaibya — relating or belonging to the s; anām — of nots; api — also; saiva — saiva."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dd9a792eba4b1ab59fb171e20e69a9c5ae54b8564a15587cf545be540c891ff7",
+    "word_for_word": "सङ्ग्रामजित्-प्रमुखाः सत्यकान्ता भद्रायाः सताः, शैब्यानामापि सैव ॥१७॥ — Satyakanta, headed by Sangramajit, was the virtuous of Bhadra, and she was also of the Saibyas.",
+    "translation": "Satyakanta, headed by Sangramajit, was the virtuous of Bhadra, and she was also of the Saibyas."
   },
   "18": {
-    "word_for_word": "rohiṇyāḥ — rohiṇyāḥ; satānām — of a kind of sacrificial vessels; uktir — uktir; anyāsām — anyāsām; upalakṣaṇa — the act of observing; artham — meaning; for the purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "be502bb07eee1e5d4c2d5e85854e5046681bc60a0215a851edbb6b29773d4d3d",
+    "word_for_word": "रोहिण्याः सतानाम् उक्तिर् अन्यासाम् उपलक्षणार्थम् ॥१८॥ — The utterance of the virtuous Rohini is for the purpose of characterizing others.",
+    "translation": "The utterance of the virtuous Rohini is for the purpose of characterizing others."
   },
   "19": {
-    "word_for_word": "eta — come ear; īṣām — the pole or shafts of a carriage or plough; iti — thus; anya — other; īṣām — the pole or shafts of a carriage or plough; api — also; śrī — Śrī; sacred; glorious; kṛṣṇa — Kṛṣṇa; putrāṇāṃ — putrāṇāṃ; śata — (rarely; saṅkhyastrīṣu — saṅkhyastrīṣu; putrāḥ — sons; pautra — derived rom or relating to a son or children; aś — Ā. ( aor. 3. pl; ca — and; koṭiśo — koṭiśo; babhūvaḥ — became; was; tatra — there; in that; hetutvena — by/with the state of being a; śrī — Śrī; sacred; glorious; kṛṣṇa — Kṛṣṇa; patnīnāṃ — of a emale possessors; bāhulyamanusmārayati — bāhulyamanusmārayati; mātaraḥ — mātaraḥ; kṛṣṇa — Kṛṣṇa; jātānām — of borns; iti — thus; ca — and; śabdenādhikāś — śabdenādhikāś; cety — cety; uktam — stated."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "212405029558f138e12db8d8d1a18b79cd4fb5825584bd471f981ade49169078",
+    "word_for_word": "एतेषाम् इति । — of these, it is.; अन्येषाम् अपि श्री-कृष्ण-पुत्राणां शत-सङ्ख्यस्त्रीषु पुत्राः पौत्राश् च कोटिशो बभूवः । — Other sons of Lord Kṛṣṇa also had millions of sons and grandsons among their hundreds of wives.; तत्र हेतुत्वेन श्री-कृष्ण-पत्नीनां बाहुल्यमनुस्मारयति । — As a reason for this, he reminds us of the abundance of wives of Lord Kṛṣṇa.; मातरः कृष्ण-जातानाम् इति । — Mothers are black-born.; च-शब्देनाधिकाश् चेत्य् उक्तम् ॥१९ ॥ — The word cha means more than that.",
+    "translation": "of these, it is. Other sons of Lord Kṛṣṇa also had millions of sons and grandsons among their hundreds of wives. As a reason for this, he reminds us of the abundance of wives of Lord Kṛṣṇa. Mothers are black-born. The word cha means more than that."
   },
   "20": {
-    "word_for_word": "yaḥ — who; which; kṛṣṇaṃ — Kṛṣṇa; hantuṃ — killing; randhra — rarely a slit; pratīkṣate — to look ats; sa — the last of the three sibilants; kathaṃ — (in comp. or; prādā — to give; ad — to eat; iti — thus; baivāhikaṃ — baivāhikaṃ; vivāha — leading away; nimittam — cause; occasion."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "430a1b07917d930b0d6e19423800156afbb9ec4b7fbd1b2fa17cc5d3e9c7a1ad",
+    "word_for_word": "यः कृष्णं हन्तुं रन्ध्र प्रतीक्षते स कथं प्रादाद् इति । — How could he who is waiting for the hole to kill Kṛṣṇa give it?; बैवाहिकं विवाह-निमित्तम् ॥२०॥ — The marriage is the occasion of marriage.",
+    "translation": "How could he who is waiting for the hole to kill Kṛṣṇa give it? The marriage is the occasion of marriage."
   },
   "21": {
-    "word_for_word": "rukmiṇo\\'bhi — rukmiṇo\\'bhi; prāyaṃ — ( r. +; kathaṃ — (in comp. or; jānīma — jānīma; iti — thus; ced — ‘and’; ata — ata; āha — says; anāgatam — ot come; iti — thus; atīndriyam — beyond the senses; asmadādīdriyāgocaram — asmadādīdriyāgocaram; viprakṛṣṭaṃ — dragged or drawn apart; dūrastham — =; vyavahitaṃ — placed apart or asunder; kuḍyādyantaritam — kuḍyādyantaritam."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b2c1aa49c755c86257be9bd857445437e83f1d985082bbef942898c0c1e89770",
+    "word_for_word": "रुक्मिणो\\ऽभि प्रायं कथं जानीम इति चेद् अत आह । — If we ask how we know that Rukmi\\'s is almost there, he argues.; अनागतम् इति । — That it has not come.; अतीन्द्रियम् अस्मदादीद्रियागोचरम् । — It is transcendental and visible to us and other senses.; विप्रकृष्टं दूरस्थम् । — It’s distant and distant.; व्यवहितं कुड्याद्यन्तरितम् ॥२१॥ — It is fixed and moved from the hut.",
+    "translation": "If we ask how we know that Rukmi\\'s is almost there, he argues. That it has not come. It is transcendental and visible to us and other senses. It’s distant and distant. It is fixed and moved from the hut."
   },
   "22": {
-    "word_for_word": "tatra — there; in that; uttaram — at the conclusion; svayaṃvare — in/on self-choosing; rukmavatyā — by/with a ic. etre; vṛtaḥ — concealed; san — in comp. or; rājño — rājño; nirjitya — nirjitya; jahāreti — jahāreti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "46c6132dd84d32c6ecdde5dae900e631404d8fa08f9d07ac068c74cc8f087264",
+    "word_for_word": "तत्रोत्तरम् । — There’s the answer.; स्वयंवरे रुक्मवत्या वृतः सन् राज्ञो निर्जित्य जहारेति ॥२२॥ — Surrounded by Rukmavati at the swayamvara he defeated the king and stole him",
+    "translation": "There’s the answer. Surrounded by Rukmavati at the swayamvara he defeated the king and stole him"
   },
   "23": {
-    "word_for_word": "yadyapi — yadyapi; śrī — Śrī; sacred; glorious; kṛṣṇāvamānitas — kṛṣṇāvamānitas; tathāpi — nevertheless; vairam — hostile; anusmarann — anusmarann; api — also; vyatarat — vyatarat; prādāt — prādāt; anvamodatety — anvamodatety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "425be7373dfd9e9d82f58dc65e7b2cb7a94b5ba5da820890408b39ff923729e7",
+    "word_for_word": "यद्यपि श्री-कृष्णावमानितस् तथापि वैरम् अनुस्मरन्न् अपि व्यतरत्-प्रादात् अन्वमोदतेत्य् अर्थः ॥२३॥ — This means that although he was insulted by Lord Kṛṣṇa, even though he remembered his enmity, he gave up and accepted Him.",
+    "translation": "This means that although he was insulted by Lord Kṛṣṇa, even though he remembered his enmity, he gave up and accepted Him."
   },
   "24": {
-    "word_for_word": "s — s; sarva — all; asa — ot he; am — quickly; api — also; ekaikā — ekaikā; kanyā — by/with a girl; tat — that; sarvavivāhopalakṣaṇārthaṃ — sarvavivāhopalakṣaṇārthaṃ; jyeṣṭha — ost excellent; kanyā — by/with a girl; vivāham — leading away; āha — says; rukmiṇyā — by/with a species of plant; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "570cc0ab1f1e2b9e5a43b4276f786225e757f614077f4e4e0779f921b2b827e4",
+    "word_for_word": "स् सर्वासाम् अपि एकैका कन्या तत्-सर्वविवाहोपलक्षणार्थं ज्येष्ठ-कन्या-विवाहम् आह---। — S said that one daughter of all of them married the eldest daughter to characterize all of those marriages.; रुक्मिण्या इति ॥२४॥ — Rukmini, it is said.",
+    "translation": "S said that one daughter of all of them married the eldest daughter to characterize all of those marriages. Rukmini, it is said."
   },
   "25": {
-    "word_for_word": "yaunaṃ — relating to the womb or place of birth; vivāhaḥ — leading away; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; yaunam — relating to the womb or place of birth; adharma — unrighteousness; jānann — jānann; iti — thus; dviṣannaṃ — dviṣannaṃ; na — not; bhoktavyaṃ — to be enjoyed or eaten; dviṣataṃ — dviṣataṃ; naiva — naiva; bhojayet — bhojayet; iti — thus; lokavirodhāt — from opposed to the people's opinion; asvayaṃ — asvayaṃ; lokavidviṣṭaṃ — hated by en; dharmam — dharma; duty; apy — apy; ācarena — ācarena; tu — but; iti — thus; niṣedha — warding or keeping off; ac — ove; cety — cety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "efd094377f6ec94df718431662c141b8a64426d172d171ed5e07b54a4f8fcb5e",
+    "word_for_word": "यौनं विवाहः । — Sex is marriage.; तद्-यौनम् अधर्म जानन्न् इति द्विषन्नं न भोक्तव्यं द्विषतं नैव भोजयेत् इति लोकविरोधात् । — Knowing that sexual intercourse is unrighteous, one should not eat food that one hates, since it is contrary to the world’s view that one should not eat food that one hates.; अस्वयं लोकविद्विष्टं धर्मम् अप्य् आचरेन तु इति निषेधाच् चेत्य् अर्थः ॥२५-२६॥ — This means that even by the practitioner of righteousness which is not itself hated by the world it is forbidden (25-26).",
+    "translation": "Sex is marriage. Knowing that sexual intercourse is unrighteous, one should not eat food that one hates, since it is contrary to the world’s view that one should not eat food that one hates. This means that even by the practitioner of righteousness which is not itself hated by the world it is forbidden (25-26)."
   },
   "26": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "27": {
-    "word_for_word": "lokaviruddhācaraṇa — lokaviruddhācaraṇa; phalaṃ — fruit; result; vaktam — vaktam; āha — says; tasminn — tasminn; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "76772cb0723041900c6b0500b2e20f0e0a7c6dd9c8c9ff9ccd6396ee33ae65db",
+    "word_for_word": "लोकविरुद्धाचरण-फलं वक्तम् आह। — He says that the fruit of conduct against the world is stated.; तस्मिन्न् इति ॥२७॥ — in that, it is said.",
+    "translation": "He says that the fruit of conduct against the world is stated. in that, it is said."
   },
   "28": {
-    "word_for_word": "adīvyat — adīvyat; krīḍitavān — krīḍitavān."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ffaebce09a27a66f1247b1e8465e6366bbcccb2c76166526cff0474b27621296",
+    "word_for_word": "अदीव्यत् क्रीडितवान् ॥२८-२९॥ — He played with the fire.28-2",
+    "translation": "He played with the fire.28-2"
   },
   "29": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "30": {
-    "word_for_word": "niṣkāṇāṃ — niṣkāṇāṃ; lakṣaṃ — or a ark; glahaṃ — cast of the dice; paṇaṃ — play; kṛtavān — kṛtavān; kaitavaṃ — deceitful; kapaṭam — raud."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "604790d5a855f0e9d0718041f0ac2ec0d963421930bb57c8a15b30eec1e217c5",
+    "word_for_word": "निष्काणां लक्षं ग्लहं पणं कृतवान् । — He bet a million coins.; कैतवं कपटम् ॥३०॥ — Kaitavam is a hypocrisy.",
+    "translation": "He bet a million coins. Kaitavam is a hypocrisy."
   },
   "31": {
-    "word_for_word": "nyarbudaṃ — one hundred illions; daśa — ten; koṭīrglahaṃ — koṭīrglahaṃ; kṣabhito — kṣabhito; rāma — Rāma; ādade — ādade."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "88b54fc7595a9b54fb4555d97473434b7cbc97df0e53701c9a43b7dcee97fee9",
+    "word_for_word": "न्यर्बुदं दश-कोटीर्ग्लहं क्षभितो राम आददे ॥३१॥ — Shaken Rama accepted a bet of ten billion rupees",
+    "translation": "Shaken Rama accepted a bet of ten billion rupees"
   },
   "32": {
-    "word_for_word": "chalamā — chalamā; śrito — śrito; rukmo — rukmo; mayā — by me; jitam — conquered; ity — thus; āha — says."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "33b21174dc9d7bde9d1f8d6bf4df62d51e924c4ff9252772ffe7a5a690ef81d9",
+    "word_for_word": "छलमा श्रितो रुक्मो मया जितम् इत्य् आह ॥३२-३५॥ — Rukma, who was lying in deception, said, \"I have conquered him.",
+    "translation": "Rukma, who was lying in deception, said, \"I have conquered him."
   },
   "33": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "34": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "35": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "36": {
-    "word_for_word": "nṛmṇa — anhood; saṃsadi — saṃsadi; maṅgala — happiness; sabhāyām — in/on (of unknown derivation."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "128610ceb19562ee01fbc3fe1583e648b665d04d21372e248bee5d6edfa26171",
+    "word_for_word": "नृम्ण-संसदि मङ्गल-सभायाम् ॥३६-३९॥ — In the auspicious assembly of the Nrimna parliament.36-3",
+    "translation": "In the auspicious assembly of the Nrimna parliament.36-3"
   },
   "37": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "39": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "40": {
-    "word_for_word": "sūryayā — by/with the wife of or the Sun; navoḍhayā — by/with a ewly- arried woman; siddhā — a or semi-divine emale; akhilā — akhilā; arthā — arthā; abhyudaya — sunrise or rise of luminaries; śatru — enemy; vadhādayo — vadhādayo; yeṣ — to boil up; aṃ — not; te — they; those."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b1130a70e0ffd4fd1f1d6d7568940713bbec5d4349c797104a262dbc11cf420d",
+    "word_for_word": "सूर्यया नवोढया । — The sun is newly married.; सिद्धा अखिला अर्था अभ्युदय-शत्रु-वधादयो येषां ते ॥४०॥ — They have perfected all their purposes such as prosperity, killing enemies and so on.",
+    "translation": "The sun is newly married. They have perfected all their purposes such as prosperity, killing enemies and so on."
   }
 }

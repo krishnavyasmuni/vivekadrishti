@@ -1,59 +1,219 @@
 {
   "1": {
-    "word_for_word": "sapta — seven; yuk — or badly; saptatitame — in/on the 70th; nānā — coin; māyā — māyā; illusory power; vicakṣaṇaḥ — conspicuous; kṛṣṇena — by Kṛṣṇa; āgatya — having come; śālvas — śālvas; tu — but; hataḥ — killed; saubhaṃ — of the aerial city of; ca — and; cūrṇitam — =; daṃśitaḥ — bitten; sannaddhaḥ — sannaddhaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1494bd12fea7055f6bdb8b2f2b04ced59c39fc03ef0217e0330b12f324b153ff",
+    "word_for_word": "सप्त-युक्-सप्ततितमे नाना-माया-विचक्षणः । — In the seventh yuk, he is skilled in various magic.; कृष्णेनागत्य शाल्वस् तु हतः सौभं च चूर्णितम् ॥ — Lord Kṛṣṇa arrived and killed Śālva and crushed Saubha.; दंशितः सन्नद्धः ॥१॥ — bitten and armed.",
+    "translation": "In the seventh yuk, he is skilled in various magic. Lord Kṛṣṇa arrived and killed Śālva and crushed Saubha. bitten and armed."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "54181f527e40f99ae07342f5ab029cb3ebd8089197b95d5861de76afe34def19",
+    "word_for_word": "विधमन्तं क्षपयन्तम् । — destroying and destroying.; प्रतिहस्य प्रतिरुध्य ॥२॥ — counter-laughing and resisting.",
+    "translation": "destroying and destroying. counter-laughing and resisting."
   },
   "3": {
-    "word_for_word": "aṣṭa — eight; anāṃ — hereby; viniyogam — apportionment; āha — says; caturbhir — caturbhir; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1f5c3b7fb742ca37d1e46726f19c2fabadb1f2b906ef5649f53647df404261f1",
+    "word_for_word": "अष्टानां विनियोगम् आह---चतुर्भिर् इति । — He argues that the eight are assigned by four.",
+    "translation": "He argues that the eight are assigned by four."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bb500553cdd9e81a0491f2afc86945c5acfe4cf506065147918ee2271466e993",
+    "word_for_word": "सौभेयाः सौभ-स्थाः ॥४॥ — Saubheyas Saubha-sthaḥ.",
+    "translation": "Saubheyas Saubha-sthaḥ."
   },
   "5": {
-    "word_for_word": "nava — nine; anāṃ — hereby; rātrīṇāṃ — rātrīṇāṃ; samāhāro — samāhāro; navarātram — a period of 9 days; trayāṇāṃ — trayāṇāṃ; nava — nine; rātrāṇāṃ — rātrāṇāṃ; samāhāras — samāhāras; tri — three; navarātram — a period of 9 days; sapta — seven; viṃśatim — twenty; aho — aho; rātrāṇīty — rātrāṇīty; arthaḥ — meaning; purpose; tumulam — tumultuous; ākulam — confounded; ulbaṇaṃ — the embrane enveloping the embryo; ghoram — ‘dreadfully’."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2817ba42f237f9cff7ab32af41f6ab2bae1feaaffbbb3e8e99ba846f2b3144d0",
+    "word_for_word": "नवानां रात्रीणां समाहारो नवरात्रम्, त्रयाणां नव-रात्राणां समाहारस् त्रि-नवरात्रम् । — The combination of nine nights is called Navaratra, and the combination of three nine nights is called Tri-Navaratra.; सप्त-विंशतिम् अहो-रात्राणीत्य् अर्थः । — This means twenty-seven days and nights.; तुमुलम् आकुलम् । — Tumulam agitated.; उल्बणं घोरम् ॥५॥ — Ulbana is terrible.",
+    "translation": "The combination of nine nights is called Navaratra, and the combination of three nine nights is called Tri-Navaratra. This means twenty-seven days and nights. Tumulam agitated. Ulbana is terrible."
   },
   "6-7": {
-    "word_for_word": "para — higher; other; matam — matam; upanyasyati — upanyasyati; indraprasthaṃ — ‘ 's place’; gata — gone; ity-ādinā — by/with and so on."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d043ee6ce1f515b4a1b7da12e79464e590df319ba3471a99357d712230fc98fd",
+    "word_for_word": "पर-मतम् उपन्यस्यति---इन्द्रप्रस्थं गत इत्य्-आदिना ॥६-७॥ — He presents the other opinion by saying that he went to Indraprastha.6-7",
+    "translation": "He presents the other opinion by saying that he went to Indraprastha.6-7"
+  },
+  "8": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d470b6b5d5854ea39788107a50ebcc49751f623cfe004a249769bd7304525d88",
+    "word_for_word": "आह च इति स्व-गतम् एव पथि चिन्ता-विजृम्भित-भाषणम् । — He said, “I’m going to go to my own place, and I’m going to talk about it on the road, worrying about it.; आर्य-मिश्राभिसङ्गतो बलभद्र-सहितः ॥८॥ — He was accompanied by a mixture of nobles and Balabhadra.",
+    "translation": "He said, “I’m going to go to my own place, and I’m going to talk about it on the road, worrying about it. He was accompanied by a mixture of nobles and Balabhadra."
   },
   "9": {
-    "word_for_word": "durnimitta — a bad omen; darśanākula — darśanākula; citta — mind; consciousness; evaṃ — thus; in this way; cintayan — cintayan; dvārakām — Dvārakā; āgatya — having come; sva — own; self; anāṃ — hereby; kadanaṃ — destruction; vīkṣya — =; saubhaṃ — of the aerial city of; ca — and; śālva — pl. (also written; rājaṃ — a king; ca — and; vīkṣya — =; rāmaṃ — Rāma; pura — city; rakṣaṇaṃ — ‘protector’; prati — toward; regarding; nirūpya — performing; niyujya — having joined or attached or harnessed or appointed; dārukaṃ — of 's charioteer; prāha — instruction in the art of dancing; ity — thus; anvayaḥ — syntactic connection."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5fe5f8c26fd36a5585c966edf48ee22b610c7c831c400bfb86baced3c6ac74ef",
+    "word_for_word": "दुर्निमित्त-दर्शनाकुल-चित्त एवं चिन्तयन् द्वारकाम् आगत्य स्वानां कदनं वीक्ष्य, सौभं च शाल्व-राजं च वीक्ष्य, रामं पुर-रक्षणं प्रति निरूप्य नियुज्य दारुकं प्राह इत्य् अन्वयः ॥९॥ — Thus thinking, his mind agitated by the sight of evil occasions, he came to Dwarka, saw the slaughter of his own men, saw Saubha and the king of Śālva, appointed Rama to guard the city, and engaged him in the protection of the city, and spoke to Dāruka, as follows.",
+    "translation": "Thus thinking, his mind agitated by the sight of evil occasions, he came to Dwarka, saw the slaughter of his own men, saw Saubha and the king of Śālva, appointed Rama to guard the city, and engaged him in the protection of the city, and spoke to Dāruka, as follows."
+  },
+  "10": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "46c8b3759f8cbe4b02acd7cee5d6056a62b03c751c7fd5a1270aa07f2e5a33a6",
+    "word_for_word": "ते त्वया ॥१०॥ — They are by you.",
+    "translation": "They are by you."
+  },
+  "11": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4706b239f3031b39c1567992b59efcb983bb0692139a64a0d1321b546e60179b",
+    "word_for_word": "आस्थाय सम्यग् अधिष्ठाय अरुणानुजं ध्वजे वर्तमानं गरुडम् ॥११॥ — Having seated himself properly he saw Garuda the younger brother of Aruna standing on the banner",
+    "translation": "Having seated himself properly he saw Garuda the younger brother of Aruna standing on the banner"
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "819143285375ecbacf294366c8949ae1feb6cacb8ecd0efc3f2b1f077540ee07",
+    "word_for_word": "हत-प्रायस्य बलस्य सैन्यस्य ईश्वरः ॥१२॥ — He is the lord of an army of forces almost defeated",
+    "translation": "He is the lord of an army of forces almost defeated"
   },
   "13": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "14": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9f76b0b3ac64e444d1ee0b0e2c1d891567348251367d0ceb71c749c618c62459",
+    "word_for_word": "तं च शाल्वम् । — And that’s Shalva.; शर-सन्दोहैः शर-जालैः । — with arrows and arrows and nets.; खं सूर्य इव रश्मिभिर् इति सुनीलत्व-विपुलत्वादिभिर् आकाशोपमा सौभस्य । — The sky is like the sun in its rays, and its blueness and abundance are like the sky of Saubha.; अचिन्त्य-वेग-बाहुल्यादिभिः शराणां रश्मि-सादृश्यम् । — The arrows are similar to rays because of their inconceivable speed and abundance.; अयत्नेनैव रश्मि-वच् छर-जाल-प्रसारणात् सूर्य-तुल्यः श्री-कृष्ण इति ॥१४॥ — By spreading the network of arrows like rays without effort he is equal to the sun and is called Śrī Kṛṣṇa.",
+    "translation": "And that’s Shalva. with arrows and arrows and nets. The sky is like the sun in its rays, and its blueness and abundance are like the sky of Saubha. The arrows are similar to rays because of their inconceivable speed and abundance. By spreading the network of arrows like rays without effort he is equal to the sun and is called Śrī Kṛṣṇa."
+  },
+  "15-16": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cad861d2912c166b69cd0a3b2d8ecba632060f1c34f98af6c81bd8ce80ce1a51",
+    "word_for_word": "दोर् बाहुम् ॥१५-१६॥ — Dor arm.15-1",
+    "translation": "Dor arm.15-1"
+  },
+  "17": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "084b169bc485137fad7155ffc32c9aab8810a41173d9e17e4d606fe178683f89",
+    "word_for_word": "सख्युः शिशुपालस्य । — of the friend Shishupala.; ईक्षताम् अस्माकम् । — Let’s look at us.; प्रमत्तोऽनवहितः । — He is careless and unconscious.; व्यापादितो निहतः ॥१७॥ — tormented and killed.; अपराजितोऽहम् इति मानिनं मानवन्तम् । — He was a human being who thought he was invincible; अपुनर्-आवृत्तिं मृत्युम् । — Irreversible death.; तिष्ठेः स्थास्यसि ॥१८॥ — You’ll stay and stay.",
+    "translation": "of the friend Shishupala. Let’s look at us. He is careless and unconscious. tormented and killed. He was a human being who thought he was invincible Irreversible death. You’ll stay and stay."
   },
   "19": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "21": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "22-23": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "28fad1294897b18b84abb941e5ff989fc687d17fd96eba3c828bbaf52deec517",
+    "word_for_word": "घृणी दयावान् ॥२३॥ — hateful and compassionate.",
+    "translation": "hateful and compassionate."
   },
   "24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b863813c9208bf7904ce1b69ca5b9f607f016d5c9c319d72916875b9d6ef1e3f",
+    "word_for_word": "जनिता जनयिता । — The parent is the parent.; ईशश् चेच् छक्तश् चेत् ॥२६॥ — If God is able, then.",
+    "translation": "The parent is the parent. If God is able, then."
+  },
+  "28": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "90a0a525c9f91169d12f7cabf25e9da016922056c4e7a1eb640e7aba957cb6ef",
+    "word_for_word": "स्व-बोधः स्वतः सिद्ध-ज्ञानवान् अपि स्व-जन-स्नेहतः प्रकृतौ मनुष्य-स्वभावे उपप्लुतो निमग्न आस्ते अतिष्ठत् । — Even though he was self-aware and self-perfect in knowledge, he remained immersed in nature and human nature because of his love for his people.; ततस् तत् सर्वम् आसुरीं मायाम् अबुध्यत् मायेयम् इति ज्ञातवान् ॥२८॥ — Then he understood that all that was demonic illusion and knew that it was illusory.",
+    "translation": "Even though he was self-aware and self-perfect in knowledge, he remained immersed in nature and human nature because of his love for his people. Then he understood that all that was demonic illusion and knew that it was illusory."
   },
   "29": {
-    "word_for_word": "svapnaṃ — (once in ifc; svapna — (once in ifc; prapañcaṃ — expansion; yathā — as; just as."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "73276375b8981d524f2d01eff037b1a04a91eb39fb1f6def9cb32c07d08da65b",
+    "word_for_word": "स्वप्नं स्वप्न-प्रपञ्चं यथा ॥२९॥ — A dream is like a dream-world.",
+    "translation": "A dream is like a dream-world."
   },
   "30": {
-    "word_for_word": "evaṃ — thus; in this way; para — higher; other; matam — matam; upanyastaṃ — entioned; nirākaroti — nirākaroti; evam — thus; in this way; iti — thus; keca — keca; kecana — kecana; nānvitā — nānvitā; ananvitāḥ — unconnecteds; pūrvāparānusandhāna — pūrvāparānusandhāna; rahitāḥ — lefts; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; yat — which; that which; sva — own; self; vāca — a species of ish; iti — thus; tan — in comp. or; nānusmaranti — nānusmaranti; ity — thus; arthaḥ — meaning; purpose; ayam — this; he; abhiprāyaḥ — intended sense; na — not; tāvad — in comp. or; rājasūya — a great sacrifice performed at the coronation of a k (by himself and his…; arthaṃ — meaning; purpose; rāmeṇa — rāmeṇa; saha — with; gataḥ — gone; śrī-kṛṣṇaḥ — Śrī Kṛṣṇa; saṅkarṣaṇam — Saṅkarṣaṇa; anujñāpya — to be allowed or permitted; iti — thus; pūrvam — before; uktatvāt — from the being spoken or uttered."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1a08f72359ef7758213e5196ba29372d2e8367fcdc9a06af27fa3087e94fa550",
+    "word_for_word": "एवं पर-मतम् उपन्यस्तं निराकरोति---एवम् इति । — Thus he rejects the other opinion presented by saying that it is so.; केच केचन । — Some of these.; नान्विता अनन्विताः पूर्वापरानुसन्धान-रहिताः । — They are not accompanied, they are not accompanied, and they are devoid of previous and next research.; तद् आह---यत् स्व-वाच इति । — He argues that it is his own word.; तन् नानुस्मरन्ति इत्य् अर्थः । — That means they don’t remember that.; अयम् अभिप्रायः---न तावद् राजसूयार्थं रामेण सह गतः श्री-कृष्णः, सङ्कर्षणम् अनुज्ञाप्य [१०.७१.१३] इति पूर्वम् उक्तत्वात् ॥३०॥ — This is the intention, since it has been said earlier that Lord Krishna, having permitted Saṅkarṣaṇa, did not go with Rama for the Rajasuya sacrifice so far.",
+    "translation": "Thus he rejects the other opinion presented by saying that it is so. Some of these. They are not accompanied, they are not accompanied, and they are devoid of previous and next research. He argues that it is his own word. That means they don’t remember that. This is the intention, since it has been said earlier that Lord Krishna, having permitted Saṅkarṣaṇa, did not go with Rama for the Rajasuya sacrifice so far."
   },
   "31": {
-    "word_for_word": "asambhāvitaṃ — asambhāvitaṃ; cety — cety; āha — says; kva — ( r. 1; śoka — sorrow; mohāv — mohāv; iti — thus; bhayaṃ — fear; vā — or; durnimitta — a bad omen; darśana — seeing; vision; kṛtaṃ — done; made; nūnaṃ — nūnaṃ; hanyuḥ — hanyuḥ; purīṃ — a ortress; mama — my; of me; iti — thus; yad — who; uktaṃ — stated; yac — in comp. or; ca — and; hasta — hand; ac — ove; chārṅgaṃ — chārṅgaṃ; nyapatad — nyapatad; ity — thus; uktaṃ — stated; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; bhayaṃ — fear; vā — or; kva — ( r. 1; iti — thus; ajñeṣu — in/among ot knowings; sambhavo — sambhavo; yeṣ — to boil up; aṃ — not; te — they; those; akhaṇḍita — unbroken; ani — the pin of an axle tree; vijñāna — realized knowledge; jñānaiśvaryāṇi — jñānaiśvaryāṇi; yasya — whose; of which; saḥ — he; that; tatra — there; in that; vijñānaṃ — realized knowledge; svarūpa — own form; essential nature; viṣayam — object; subject; jñānaṃ — knowledge; bāhya — ( r; viṣayam — object; subject."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4e0c5991b75923317799e8f434868dbd9c8557e4a43a21d0f20bb01ac96bbce1",
+    "word_for_word": "असम्भावितं चेत्य् आह---क्व शोक-मोहाव् इति । — If it is unlikely, he argues, where is the sorrow and delusion?; भयं वा दुर्निमित्त-दर्शन-कृतं नूनं हन्युः पुरीं ममेति यद् उक्तं यच् च हस्ताच् छार्ङ्गं न्यपतद् [१०.७७.१३] इत्य् उक्तं । — Fear or seeing a bad occasion, it is said that they will surely kill my city, and that the sword fell from his hand [10.77.13] is said.; तद् भयं वा क्व इति । — Where is that fear or that?; अज्ञेषु सम्भवो येषां ते । — Those who are able to do so in the ignorant.; अखण्डितानि विज्ञान-ज्ञानैश्वर्याणि यस्य सः । — He who possesses unbroken wealth of science and knowledge; तत्र विज्ञानं स्वरूप-विषयम् । — There, science is the subject of form.; ज्ञानं बाह्य-विषयम् ॥३१॥ — Knowledge is an external object.",
+    "translation": "If it is unlikely, he argues, where is the sorrow and delusion? Fear or seeing a bad occasion, it is said that they will surely kill my city, and that the sword fell from his hand [10.77.13] is said. Where is that fear or that? Those who are able to do so in the ignorant. He who possesses unbroken wealth of science and knowledge There, science is the subject of form. Knowledge is an external object."
   },
   "32": {
-    "word_for_word": "kiṃ — what; ca — and; yasya — whose; of which; pāda — foot; quarter; sevayā — by/with service; ūrjitā — ūrjitā; puṣkalā — puṣkalā; yā — who; which; ātma — (in comp. or; vidyā — knowledge; tayā — tayā; ana — {{Lbody=4781}}; ādiś — rarely inf. and to aim at; cāsa — wrong spelling or; av — cl. 1. P. ( Imper. 2. sg; ātma — (in comp. or; viparyaya — reversed; grahaś — grahaś; ca — and; ahaṃ — I; kṛśaḥ — lean; sukhī — one who loves pleasure; duḥkhī — duḥkhī; ity — thus; ādi — beginning; and so on; lakṣaṇaḥ — characteristic; definition; taṃ — the 1st dental consonant; hinvanti — they ‘Inciter’; nāśayanti — nāśayanti; santaḥ — =; aiśvaraṃ — relating to or coming rom a ighty lord or king; padaṃ — word; term; position; ca — and; tasya — of him; of that; sata — a kind of sacrificial vessel; aṃ — not; gateḥ — of going; kuto — kuto; nu — (in also; mohaḥ — delusion; iti — thus; ato — ato; vā — or; etad — this; vacanaṃ — statement; grammatical number; satyam — true; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "32ae45be1a46adbcca5fac503e8c8e0db0cbf9ddbff0eb7b76f5a85acf973343",
+    "word_for_word": "किं च, यस्य पाद-सेवया ऊर्जिता पुष्कला या आत्म-विद्या, तया अनादिश् चासाव् आत्म-विपर्यय-ग्रहश् च, अहं कृशः सुखी दुःखी इत्य्-आदि-लक्षणः, तं हिन्वन्ति नाशयन्ति सन्तः । — Moreover, the saints destroy and destroy the abundant self-knowledge energized by the service of the feet of one whose eternal self-contradiction and self-contradiction, such as I am thin, happy and unhappy, are destroyed.; ऐश्वरं पदं च । — and the divine position.; तस्य सतां गतेः कुतो नु मोहः ? — Where is the delusion of that virtuous movement?; इति । — It is.; अतो वा एतद् वचनं सत्यम् इत्य् अर्थः । — Or that is why this statement is true.",
+    "translation": "Moreover, the saints destroy and destroy the abundant self-knowledge energized by the service of the feet of one whose eternal self-contradiction and self-contradiction, such as I am thin, happy and unhappy, are destroyed. and the divine position. Where is the delusion of that virtuous movement? It is. Or that is why this statement is true."
   },
   "33": {
-    "word_for_word": "kiṃ — what; tarhi — then; satyaṃ — true; truth; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; taṃ — the 1st dental consonant; śastra — weapon; pūgair — pūgair; iti — thus; varma — in comp. or; kavacam — (√ 3; ruroja — ruroja; babhañja — babhañja."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "85cf7ca564e13d08d7e9e791e028f67a8f4687f5b4349882520ba430ad5b826e",
+    "word_for_word": "किं तर्हि सत्यं ? — What, then, is the truth?; तद् आह---तं शस्त्र-पूगैर् इति । — That is, he said, by the weapons.; वर्म कवचम् । — Worm shield.; रुरोज बभञ्ज ॥३३॥ — Ruroz broke it.",
+    "translation": "What, then, is the truth? That is, he said, by the weapons. Worm shield. Ruroz broke it."
   },
   "35": {
-    "word_for_word": "layārka — the sun at the dissolution of the world; sannibhaṃ — sannibhaṃ; pralaya — dissolution; kālīna — belonging or relating to any icular time; sūrya — sun; sadṛśam — suitably."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b0738ee932eda0a5703e2f4465377428e16880f9794c2f4214411f203e6be910",
+    "word_for_word": "लयार्क-सन्निभं प्रलय-कालीन-सूर्य-सदृशम् । — It is like the sun of rhythm and like the sun of the time of doom.",
+    "translation": "It is like the sun of rhythm and like the sun of the time of doom."
   },
   "36": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "37": {
-    "word_for_word": "deva — deity; god; gaṇair — gaṇair; īritā — īritā; vāditāḥ — ade to speak or to be uttereds; kiṃ — what; ca — and; sakhīn — (strong cases om. pls; am — quickly; iti — thus; iti — thus; śrīmad — śrīmad; bhāgavate — in/on Bhāgavata; mahā — great; purāṇe — in/on Purāṇa; daśama — tenth; skandhe — in/on the shoulder; uttarārdhe — in/on the upper; śrīdhara — ‘bearer or possessor of ortune’; svāmi — in comp. or; viracitāyāṃ — viracitāyāṃ; bhāvārtha — the simple or obvious eaning; dīpikāyām — in/on a light; saptasaptatitamo\\'dhyāyaḥ — saptasaptatitamo\\'dhyāyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "820aed74425e6dc02dc0719a889d56426236b83c788093513c24faaa7e10a4a6",
+    "word_for_word": "देव-गणैर् ईरिता वादिताः । — They were played by the hosts of the gods.; किं च, सखीनाम् इति । — What’s more, it’s the girlfriends.; इति श्रीमद्-भागवते महा-पुराणे दशम-स्कन्धे उत्तरार्धे श्रीधर-स्वामि-विरचितायां भावार्थ-दीपिकायाम् सप्तसप्ततितमो\\ऽध्यायः ॥७७॥ — This is the seventy-seventh chapter of the Śrīmad-Bhāgavatam, the second half of the tenth section of the Maha-Purāṇa, compiled by Śrīdhara-svāmi in the Bhavartha-dīpika.",
+    "translation": "They were played by the hosts of the gods. What’s more, it’s the girlfriends. This is the seventy-seventh chapter of the Śrīmad-Bhāgavatam, the second half of the tenth section of the Maha-Purāṇa, compiled by Śrīdhara-svāmi in the Bhavartha-dīpika."
   }
 }

@@ -1,23 +1,184 @@
 {
   "1": {
-    "word_for_word": "tataḥ — then; from that; ṣaṭ — six; saptatitame — in/on the 70th; vṛṣṇi — anly; śālva — pl. (also written; mahā — great; mṛdhe — in/on ight; dyumad — dyumad; gadā — mace; prahāreṇa — prahāreṇa; raṇāt — from delight; pradyumna — ‘the pre-eminently ighty one’; nirgamaḥ — going orth; saṃpādya — saṃpādya; dharma — dharma; duty; rājasya — of a king; rājasūya — a great sacrifice performed at the coronation of a k (by himself and his…; mahodayam — great ortune or prosperity; nihatya — nihatya; saubha — of the aerial city of; rājādīn — rājādīn; athopāramad — athopāramad; acyutaḥ — ot allen."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d2048b041195433db6f72209526132a72f47619f7b092c314c6d695b556975d1",
+    "word_for_word": "ततः षट्-सप्ततितमे वृष्णि-शाल्व-महा-मृधे । — Then, in the seventy-sixth, there was a great battle between the Vṛṣṇis and Śālva.; द्युमद्-गदा-प्रहारेण रणात् प्रद्युम्न-निर्गमः ॥ — Pradyumna came out of the battlefield by the blow of Dyuma’s club.; संपाद्य धर्म-राजस्य राजसूय-महोदयम् । — Having completed the great Rājasūya sacrifice of the king of religion; निहत्य सौभ-राजादीन् अथोपारमद् अच्युतः ॥ — After killing the kings of Saubha and others, Lord Acyuta stopped fighting.",
+    "translation": "Then, in the seventy-sixth, there was a great battle between the Vṛṣṇis and Śālva. Pradyumna came out of the battlefield by the blow of Dyuma’s club. Having completed the great Rājasūya sacrifice of the king of religion After killing the kings of Saubha and others, Lord Acyuta stopped fighting."
   },
   "2": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "4": {
-    "word_for_word": "pratyahaṃ — daily; sakṛt — once; pāṃśu — =; muṣṭim — stealing; ekāṃ — of; grasan — grasan; bhakṣayan — bhakṣayan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8b137e9a724faf63b0c09d5bd9a2720e401922adae07eeb2543b04bc1dd922b8",
+    "word_for_word": "प्रत्यहं सकृत् पांशु-मुष्टिम् एकां ग्रसन् भक्षयन् ॥४॥ — Swallowing and eating a handful of dust once a day.",
+    "translation": "Swallowing and eating a handful of dust once a day."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "645ad2235c8ce5eb5211948a1f97aa33fa5346254ed8b7daae59366fc27a9555",
+    "word_for_word": "संवत्सरान्त इति । — It is the end of the year.; आशुतोषोऽपि भगवान् उमा-पतिः श्री-कृष्ण-विद्विषि शाल्वे वरस्य वैफल्यं मन्यमानो न शीघ्रं प्रादुरभूत् । — Although immediately satisfied, the Supreme Personality of Godhead, the husband of Uma, did not appear immediately, thinking that Śālva, an enemy of Lord Kṛṣṇa, had failed in his boon.; तस्यातिनिर्बन्धम् आलक्ष्य संवत्सरान्ते च वरेण छन्दयामास इच्छां कारितवान् \\\"वरं वृणीष्व\\\" इत्य् उवाचेत्य् अर्थः ॥५॥ — Seeing his great restraint at the end of the year he pleased him with a boon and fulfilled his desire and said, \"Ask for a boon,\" meaning.",
+    "translation": "It is the end of the year. Although immediately satisfied, the Supreme Personality of Godhead, the husband of Uma, did not appear immediately, thinking that Śālva, an enemy of Lord Kṛṣṇa, had failed in his boon. Seeing his great restraint at the end of the year he pleased him with a boon and fulfilled his desire and said, \"Ask for a boon,\" meaning."
   },
   "6": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a75beb3052acdbbbe70c64e07c3f197452c2dd1fff85723139c2506a5f027401",
+    "word_for_word": "तथेति प्रतिज्ञाय गिरिशेनादिष्टोऽयस्-मयं लोह-मयं पुरं सौभ-संज्ञं निर्माय रचयित्वा प्रादात् ॥७॥ — Having promised so he constructed an iron city called Saubha and gave it to him on the orders of Lord Girisha",
+    "translation": "Having promised so he constructed an iron city called Saubha and gave it to him on the orders of Lord Girisha"
+  },
+  "8": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "713c818a5f5fa4314616aaee619b30097e30ec9c258a84cde44c2ae2eb9cd1bb",
+    "word_for_word": "तमसोऽन्धकारस्य धाम आश्रयम् । — The abode of darkness is the shelter of darkness.; अन्यैर् दुरासदं दुष्प्राप्यम् ॥८॥ — It is difficult to reach and difficult to attain by others.",
+    "translation": "The abode of darkness is the shelter of darkness. It is difficult to reach and difficult to attain by others."
+  },
+  "10": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "db9d4bc80b4e71e1ea3dd1e5c6dc0683cda5a39bb921eeba91439b5b26bc6fe8",
+    "word_for_word": "प्रासादा गृहाः । — Palaces and houses.; अट्टालास् तद्-उपरि-गृहाः । — The attics are the houses above it.; तोलिकास् तत्-पर्यन्त-कुड्यानि, ताः । — Tolikas are the rooms up to that, those.; विहारान् क्रीडा-स्थानानि च स बभञ्ज । — He destroyed the parks and playgrounds.; किं च, विमानाग्र्यात् तस्माच् छस्त्र-वृष्ट्य्-आदयः पेतुः ॥१०॥ — What is more, weapons and rain fell from the top of the plane.",
+    "translation": "Palaces and houses. The attics are the houses above it. Tolikas are the rooms up to that, those. He destroyed the parks and playgrounds. What is more, weapons and rain fell from the top of the plane."
+  },
+  "11": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5c2ad1379ca9db3fe91c57f56d6f5e026e41aed3fd708ca61a4798b3409cc4d0",
+    "word_for_word": "आसार-शर्करा धारा-संपात-वज् जलोपलाः ॥११॥ — They are like the sugars of the essence and the water of the stream.; : जलोपलाः वायुना घनीभूत-जलमय-पाषाणाः इति १०.२५.९\nवंशीधरः । — Aquatic rocks are watery stones condensed by air\nVanshidhar.",
+    "translation": "They are like the sugars of the essence and the water of the stream. Aquatic rocks are watery stones condensed by air\nVanshidhar."
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9eb73ebd2f02a62ec3ee53cd0b2169470f2314d7f909792f54bd176238bd0343",
+    "word_for_word": "शं सुखं नाभ्यपद्यत ॥१२॥ — He did not attain peace and happiness.",
+    "translation": "He did not attain peace and happiness."
+  },
+  "16": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8f23c187000587b5d94ff878d2e161ab0b9f7282aa3311851c4328adb7c7a776",
+    "word_for_word": "तुमुलं व्याकुलम् । — It’s tumultuous and agitated.; लोम-हर्षणं रौद्रम् ॥१६॥ — It’s hair-raising and terrible.",
+    "translation": "It’s tumultuous and agitated. It’s hair-raising and terrible."
+  },
+  "17-18": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "023b000799621c2447d23315568cde51dc0cd4943f75ba07f8fe9ad355935900",
+    "word_for_word": "नैशं निशि भवं । — I’m not a nightmare.; तम उष्ण-गुः सूर्य इव ॥१७॥ — Darkness is like the hot-gu sun.; किं च, विव्याधेति । — What’s more, it’s a distraction.; स्वर्ण-मयानि पुङ्खानि पृष्ठ-प्रान्ता येषां तैः । — They have golden feathers on their backs and edges.; अयो लोहं तन्-मयानि मुखान्य् अग्राणि येषां तैः । — They are the ones whose faces are made of iron and whose tips are made of iron.; ध्वजिनी-पालं सेनान्यम् । — The flagship is another army.; सन्नतानि निम्नानि पर्वाणि ग्रन्थयो येषां तैः ॥१८॥ — They whose knots are bent and low on the other sides.",
+    "translation": "I’m not a nightmare. Darkness is like the hot-gu sun. What’s more, it’s a distraction. They have golden feathers on their backs and edges. They are the ones whose faces are made of iron and whose tips are made of iron. The flagship is another army. They whose knots are bent and low on the other sides."
+  },
+  "19": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1a031419e40896f4b9dfeab7b85ac74d337bb6adfaf8f9c42e80bcb03c4978ce",
+    "word_for_word": "सैनिकान् भटान् । — soldiers and soldiers.; नेतॄन् सारथीन् ॥१९॥ — leaders and charioteers.",
+    "translation": "soldiers and soldiers. leaders and charioteers."
+  },
+  "20": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2fac94839235b02eaaee008a8b703b0bfeea0351245a059d5a077dfc054f3b40",
+    "word_for_word": "स्व-पर-सेनयोर् वर्तमानाः सर्वे पूजयामासुः संमानितवन्तः ॥२०॥ — All those present in the armies of their own and others worshiped and honored him",
+    "translation": "All those present in the armies of their own and others worshiped and honored him"
   },
   "21-22": {
-    "word_for_word": "kadācid — kadācid; bahu — many; much; rūpaṃ — form; kadācid — kadācid; eka — one; rūpaṃ — form; kvacin — kvacin; na — not; dṛśyate — is seen; evaṃ — thus; in this way; durvibhāvyaṃ — {{Lbody=94366}}; durvitarkyam — {{Lbody=94349}}; abhūt — abhūt; kiṃ — what; ca — and; kvacid — kvacid; iti — thus; evaṃ — thus; in this way; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; duravasthitam — ot irmly established; anavasthitaṃ — unsettled; cābhūt — cābhūt."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d8dd163f85bf1780e6b83948abc92cd175604e7ea71a03f4c050b0d0f0f1be9b",
+    "word_for_word": "कदाचिद् बहु-रूपं, कदाचिद् एक-रूपं, क्वचिन् न दृश्यते । — Sometimes it is multi-form, sometimes it is single-form, and sometimes it is not visible.; एवं दुर्विभाव्यं दुर्वितर्क्यम् अभूत् ॥२१॥ — Thus it became inconceivable and inconceivable.; किं च, क्वचिद् इति । — And what, somewhere?; एवं तद् दुरवस्थितम् अनवस्थितं चाभूत् ॥२२॥ — Thus it became unsettled and unsettled.",
+    "translation": "Sometimes it is multi-form, sometimes it is single-form, and sometimes it is not visible. Thus it became inconceivable and inconceivable. And what, somewhere? Thus it became unsettled and unsettled."
   },
   "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "24": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "83c212245b2778b472e5862455aeb82c738ba2afbaf378525842399392034019",
+    "word_for_word": "अग्निवद् दाहकः, अर्कवद् युगपत् सर्वतः संस्पर्शो येषां तैः । — Those whose touch is as burning as fire and as simultaneous as the sun from all sides.; आशी-विषवद् एक-देश-स्पर्श-मात्रेण मारकत्वाद् दुरासदैर् दुःसहैः पीड्यमानं पुरम् अनीकानि च यस्य सः । — He whose city and many others are tormented by unbearable and unbearable enemies because they are deadly at the mere touch of a single country like the poison of a snake; परैर् यदुभिर् ईरितैर् मुक्तैः ॥२४॥ — The other Yadus, who were freed from the irritation.",
+    "translation": "Those whose touch is as burning as fire and as simultaneous as the sun from all sides. He whose city and many others are tormented by unbearable and unbearable enemies because they are deadly at the mere touch of a single country like the poison of a snake The other Yadus, who were freed from the irritation."
+  },
+  "25": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a779cfe609aad8a7cc3eb63300b45f37fdaa0c33b440f9ac57dca7b3b1a38b5f",
+    "word_for_word": "भृशार्दिता अपि स्वं स्वं रणं स्वां युद्ध-भूमिम् ॥२५॥ — Even though they were severely tormented they returned to their own battlefields",
+    "translation": "Even though they were severely tormented they returned to their own battlefields"
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "197961b4cf5376164380ca895b25e9703b5bf88c806c2723284740b05de2e2f2",
+    "word_for_word": "मौर्व्या कार्ष्णायस-मय्या । — Maurya with black iron.; व्याहत्य प्रहृत्य ॥२६॥ — struck and struck.",
+    "translation": "Maurya with black iron. struck and struck."
+  },
+  "27": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "094bfee3c032c1c1e7cb08b1f692424a017553edf017f0e1027a3b206f988879",
+    "word_for_word": "अपोवाह अन्यतो निनाय ॥२७॥ — He carried her away and took her to another place.",
+    "translation": "He carried her away and took her to another place."
   },
   "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "29": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9ffa45973a63e6778633f04b9dea3373a11799050e4c87c9813598e01b25246b",
+    "word_for_word": "मत् मत्तो विना, क्लीबं चित्तं यस्य तेन । — Without me, I’m drunk, by the one whose mind is clever.; त्वया सूतेन ॥२९॥ — By you, the thread.",
+    "translation": "Without me, I’m drunk, by the one whose mind is clever. By you, the thread."
+  },
+  "30": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dee47c5e15bbd91740134686ce39c17dc3b6be08df4175efff0951348ef65bd4",
+    "word_for_word": "पितरौ राम-कृष्णाव् अभिसङ्गम्य तत्-पार्श्वं गत्वा ताभ्यां पृष्टः स्व-योग्यं किं नु वक्ष्यामि ? — He approached his fathers Rama and Krishna and went to their side and asked them what they should say to him.; इति । — It is.",
+    "translation": "He approached his fathers Rama and Krishna and went to their side and asked them what they should say to him. It is."
+  },
+  "31": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bbc9cf52dacb7c0c1af8d17472a286805075e88a6ee9b7cc8aa58abada08f5a1",
+    "word_for_word": "भ्रातृ-जामयो भ्रातृ-भार्याः व्यक्तं निश्चितं मत्-क्लैब्यं कथयिष्यन्ति । — Brothers-in-law, brothers-in-law and brothers-in-law will obviously and definitely tell me about my clubbiness.; तत् कथनम् अनुकरोति---कथं कथम् इति ॥३१॥ — He imitates that statement by saying, \"How, how?\"",
+    "translation": "Brothers-in-law, brothers-in-law and brothers-in-law will obviously and definitely tell me about my clubbiness. He imitates that statement by saying, \"How, how?\""
+  },
+  "32": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f8a23c84a59344eaf91525c4dc6bffe0dd2909cc909bbe81cc76447724dbe0ca",
+    "word_for_word": "विभो ! — Vibho !; हे समर्थ ! — O mighty one!; एतद् अपसर्पणम् । — This is a deviation.; धर्मम् आह---सूत इति ॥३२॥ — He argues that Dharma is a charioteer.",
+    "translation": "Vibho ! O mighty one! This is a deviation. He argues that Dharma is a charioteer."
+  },
+  "33": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "66d2c47506bed366f168f3135bcf072beaa4bebf446f5a352b3d4ca8320612e2",
+    "word_for_word": "अपोवाहितोऽपनीतः । — He was carried away and brought away.; उपसृष्ट उपसर्गं पीडां प्राप्त इति कृत्वा । — The approached approach is made to mean that the pain has been received.; यतः परेण शत्रुणा गदया हतः सन् मूर्च्छितो निःसंज्ञतां गतो भवान् इति ॥३३॥ — Because you were killed by the club of another enemy you fainted and became unconscious'; इति श्रीमद्-भागवते महा-पुराणे दशम-स्कन्धे उत्तरार्धे — This is the second half of the tenth Skanda of the Maha-Purana in the Srimad-Bhagavatam; श्रीधर-स्वामि-विरचितायां भावार्थ-दीपिकायाम् — In the Bhavartha-dipika, composed by Sridhar Swami; षट्सप्ततितमो\\ऽध्यायः ॥७६॥ — Chapter Seventy-Six.",
+    "translation": "He was carried away and brought away. The approached approach is made to mean that the pain has been received. Because you were killed by the club of another enemy you fainted and became unconscious' This is the second half of the tenth Skanda of the Maha-Purana in the Srimad-Bhagavatam In the Bhavartha-dipika, composed by Sridhar Swami Chapter Seventy-Six."
   }
 }

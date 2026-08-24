@@ -1,65 +1,261 @@
 {
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "58958570f2d289cf38165bf0b18769a7b50bf16f2e93ec44efe9c9def4dd9aa8",
+    "word_for_word": "अनवमो\\ऽन्यूनः ॥२॥ — Anavamo\\'anyunaḥ.",
+    "translation": "Anavamo\\'anyunaḥ."
+  },
+  "3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ad44920f5fa7ae18b537d4975044d27dcabbe48f8b799fe20fddfe7939d4f26a",
+    "word_for_word": "स प्रसिद्धः काम-शत्रुः शम्बरस् तम् आत्मनः शत्रुं विदित्वा हृत्वा [उदन्वति] समुद्रे प्रास्य प्रक्षिप्य गृहम् अगाद् इति ॥३॥ — That famous enemy of lust Sambara, knowing him to be his enemy, took him away, threw him into the sea and threw him into the sea and returned home.",
+    "translation": "That famous enemy of lust Sambara, knowing him to be his enemy, took him away, threw him into the sea and threw him into the sea and returned home."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "78b82e7fb4e91ef8f4f80ff9191fa04e8d54efec55cc5079831e27c2345f0612",
+    "word_for_word": "निर्जगार गिलितवान् ॥४॥ — He swallowed and swallowed.",
+    "translation": "He swallowed and swallowed."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c7dde00aee9a521a774d362d2c49c666044938cbb1e1d33f40d30fa05f80dc68",
+    "word_for_word": "स्वधितिना शस्त्रिकया अवद्यन् अवाद्यन् खण्डितवन्तः ॥५॥ — They struck him with their own weapons and cut him to pieces.",
+    "translation": "They struck him with their own weapons and cut him to pieces."
+  },
+  "6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0aa1c8007ff3e3042ebe35b123e141adc6ee70cdce37c70fea59ed33a123a4b8",
+    "word_for_word": "तत्त्वं \\\"कामो\\ऽयं तव भर्ता ते\\\" । — In fact, \\\"this is your husband\\'s desire\\\"; उत्पत्तिं श्री-कृष्णाद् रुक्मिण्याम् उत्पन्न इति ॥६॥ — It is said that he was born from Sri Krishna and from Rukmiṇī.",
+    "translation": "In fact, \\\"this is your husband\\'s desire\\\" It is said that he was born from Sri Krishna and from Rukmiṇī."
+  },
+  "7-8": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5f1a1fd3e6e36cc47560582869441f8a9941f6fc56c9f92147d20216631d03c9",
+    "word_for_word": "यशस्विनी पतिव्रता भर्तृ-देह-प्राप्तिं प्रतीक्षमाणा ॥७॥ — She was illustrious and chaste and awaited the recovery of her husband's body.; तं शिशुं काम-देवं बुद्ध्वा विज्ञाय ॥८॥ — They knew that the child was the god of desire.",
+    "translation": "She was illustrious and chaste and awaited the recovery of her husband's body. They knew that the child was the god of desire."
+  },
+  "9": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4c7c23401c083db5dfa6cfec4824cbf950fb80beb677403dec009c3848df5bdb",
+    "word_for_word": "विभ्रमं सम्मोहम् ॥९॥ — confusion and delusion.",
+    "translation": "confusion and delusion."
+  },
+  "10": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a9afb70c57089cb80b29c02dd37f8662653e150e7583a89b06885cce177cd479",
+    "word_for_word": "अङ्ग हे राजन् । — Ang, O King.; सौरतैर् भावैर् उपतस्थे\\ऽभजत् ॥ — He approached her with the Sauratai emotions and worshiped her.; १०-११ ॥ — 10-11 ॥",
+    "translation": "Ang, O King. He approached her with the Sauratai emotions and worshiped her. 10-11 ॥"
+  },
   "11": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "12": {
-    "word_for_word": "adhikṛtā — adhikṛtā; patnī — a emale possessor; ity — thus; atra — here; hetuḥ — cause; reason; ratir — ratir; ahaṃ — I; bhavān — worldly existence; becomings; kāma — desire; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f2159b9b0de26e62452340cd73c83787061d098ff720c18cf5004d59b7cd4174",
+    "word_for_word": "अधिकृता पत्नी इत्य् अत्र हेतुः रतिर् अहं भवान् काम इति ॥ — The reason for this is that the wife is the authorized wife.; १२-१३ ॥ — 12-13.",
+    "translation": "The reason for this is that the wife is the authorized wife. 12-13."
   },
   "13": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "14": {
-    "word_for_word": "durjayatve — durjayatve; hetuḥ — cause; reason; māyā — māyā; illusory power; śata — (rarely; vidam — = prec; iti — thus; kathaṃ — (in comp. or; tarhi — then; hntabyastatrāha — hntabyastatrāha; māyābhir — māyābhir; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0c8044be601b13d770d503b608fcbf73b0d3d6c12443bbc9167a302461d9dcd0",
+    "word_for_word": "दुर्जयत्वे हेतुः---माया-शत-विदम् इति । — The reason for his invincibility is that he knows the hundreds of illusion.; कथं तर्हि ह्न्तब्यस्तत्राह---मायाभिर् इति ॥१४॥ — How, then, can he be killed?",
+    "translation": "The reason for his invincibility is that he knows the hundreds of illusion. How, then, can he be killed?"
   },
   "15": {
-    "word_for_word": "na — not; cātra — cātra; vilambaḥ — hanging down; kārya — to be ade or done or practised or performed; ity — thus; āha — says; pariśocati — pariśocati; roditīty — roditīty; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "97204fe2606644c5844014877b7b979c082ccde68a6ee0537672ec2f50691719",
+    "word_for_word": "न चात्र विलम्बः कार्य इत्य् आह---परिशोचति रोदितीत्य् अर्थः ॥ — There is no need to delay in this, he argues, because he is lamenting and crying.; १५-१८ ॥ — 15-18.",
+    "translation": "There is no need to delay in this, he argues, because he is lamenting and crying. 15-18."
   },
   "16": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "18": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "19": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "02c3d72be20054c447d20cf01aef020f2c19ec4387ef3458c638727e16b4a534",
+    "word_for_word": "वज्रस्य निष्पेष-निर्घाते यथा निष्ठुरस् तीव्रो नादो भवति, तथा-भूतं नादं व्यनदत् सामान्य-विशेषतया व्याप्य व्यापकत्व-भावेन पाकं पचतीतिवत् अतिनिष्ठुरं नादम् अकरोद् इत्य् अर्थः ॥१९-२०॥ — This means that he made a very harsh sound, as if he were cooking food in the sense of pervasiveness, pervading the general and the special, as if he were making a cruel and intense sound when a thunderbolt is crushed.",
+    "translation": "This means that he made a very harsh sound, as if he were cooking food in the sense of pervasiveness, pervading the general and the special, as if he were making a cruel and intense sound when a thunderbolt is crushed."
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "21": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b6487e5426dc92fa84d25c314369d260e09a82d8badc6337da33bf4b6f5aa744",
+    "word_for_word": "वैहायस आकाशे स्थितः ॥२१॥ — Vaihayas is situated in the sky.",
+    "translation": "Vaihayas is situated in the sky."
+  },
+  "22-23": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0df6722ecfbd09bcd547870b2f17380742a65b452081c71c6cda0781aac83aee",
+    "word_for_word": "सत्त्वात्मिकां सत्त्व-गुण-मयीं प्रायुङ्क्त इत्य् उत्तरस्यानुषङ्गः ॥२२॥ — This is the consequence of the latter, that he uses the mode of goodness which is composed of the modes of goodness.; ता मायाः व्यधमयत् स नाशयत् ॥२३॥ — He destroyed those illusionary forces.",
+    "translation": "This is the consequence of the latter, that he uses the mode of goodness which is composed of the modes of goodness. He destroyed those illusionary forces."
+  },
+  "24": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "146041e648280fba9b61605c3c040bdac0fbfe46fcdf808bd9264dce306d4298",
+    "word_for_word": "ताम्राणि श्मश्रूणि यस्मिंस् तत् । — That which has copper mustaches.; ओजसा बलेन ॥२४-२५॥ — with energy and strength.24-2",
+    "translation": "That which has copper mustaches. with energy and strength.24-2"
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3a12a7463c90f9ff64cd54b89c37e5780aeacc182e4d30645505673ea9c5d9b6",
+    "word_for_word": "विद्युता सह बलाहको मेघ इव ॥२६-२७॥ — Clouds with lightning like a cloud (26-27).",
+    "translation": "Clouds with lightning like a cloud (26-27)."
   },
   "27": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "28": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "623fe5f6f217109fdcafa97c090d01b9cc653cc5b6440f700c6fae6413ff3379",
+    "word_for_word": "नीलाश् च वक्राश् च ये\\ऽलकास् त एव आलयः, तैः ह्रीता लज्जिताः ॥२८॥ — The blue and curved ones are the very dwelling places, and they are ashamed of themselves.",
+    "translation": "The blue and curved ones are the very dwelling places, and they are ashamed of themselves."
   },
   "29": {
-    "word_for_word": "śrī — Śrī; sacred; glorious; kṛṣṇo — kṛṣṇo; na — not; bhavatīty — bhavatīty; avadhārya — to be ascertained or known; strīṣu — in/among (perhaps ors; ratnaṃ — a gift; śreṣṭhā — an excellent woman; ratiḥ — rest; tat — that; sahitam — together."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b1a304aec52edc86e115c3ece49b9f95a4fd0365b11f9291337135b858ce0c5b",
+    "word_for_word": "श्री-कृष्णो न भवतीत्य् अवधार्य स्त्रीषु रत्नं श्रेष्ठा रतिः, तत्-सहितम् ॥ — Understanding that Lord Śrī Kṛṣṇa does not exist, the best attraction among women is a jewel, along with that.; २९-३०॥ — 29-30.",
+    "translation": "Understanding that Lord Śrī Kṛṣṇa does not exist, the best attraction among women is a jewel, along with that. 29-30."
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "sutaṃ — son; smaranty — smaranty; āha — says; ko\\'nv — ko\\'nv; ayam — this; he; iti — thus; nara — a ale; vaidūryaḥ — brought rom; puruṣa — person; Puruṣa; śreṣṭhaḥ — ost splendid or beautiful."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "61ac382b2eb5ee47d4be15b7f65275e0ac1b99776f3511bf54a40ed1f45f42b2",
+    "word_for_word": "सुतं स्मरन्त्य् आह---को\\ऽन्व् अयम् इति नर-वैदूर्यः पुरुष-श्रेष्ठः ॥३१॥ — Remembering his son he said, \"Who is this?\"",
+    "translation": "Remembering his son he said, \"Who is this?\""
+  },
+  "32": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "49dfdfd0bec6149ebc9aca900f9d798fdad035ac5e1234c935ff54cd078460dd",
+    "word_for_word": "एतेन तुल्यं वयो रूपं च यस्य स भवेद् इति ॥३२॥ — This means that he who has the same age and appearance will become a man.",
+    "translation": "This means that he who has the same age and appearance will become a man."
   },
   "33": {
-    "word_for_word": "tasya — of him; of that; sva — own; self; putratvaṃ — sonship; saṃbhāvayantīty — saṃbhāvayantīty; āha — says; kathaṃ — (in comp. or; tv — tv; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3ad72d2e3a860e3dfff070a69bceac0c4f8dc120a257b35e46f85bfbbce4d59b",
+    "word_for_word": "तस्य स्व-पुत्रत्वं संभावयन्तीत्य् आह---कथं त्व् इति ॥३३॥ — They thought that he was their own son, and he said, \"How is it?\"",
+    "translation": "They thought that he was their own son, and he said, \"How is it?\""
   },
   "34": {
-    "word_for_word": "tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; eva — only; indeed; adhikaṃ — more; greater; saṃbhāvayati — saṃbhāvayati; sa — the last of the three sibilants; eva — only; indeed; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3b389c516a3761a226209b76c5fd561833dc6838544b240325912c1c51a446c7",
+    "word_for_word": "तद् एव अधिकं संभावयति---स एव इति ॥३४॥ — That is what makes it more likely that he is the same.",
+    "translation": "That is what makes it more likely that he is the same."
+  },
+  "35": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a811725ee3cd56bd02b2c9f22a6c5142ba064c21f3ad68b9de885b893168d10c",
+    "word_for_word": "देवक्य्-आनकदुन्दुभ्यां देवक्य्-आनकदुन्दुभिभ्याम् इत्य् अर्थः ॥ — This means that the drums of Devakī and Ānaka are the two drums of Devakī and Ānaka.; ३५-३६ ॥ — 35-36.",
+    "translation": "This means that the drums of Devakī and Ānaka are the two drums of Devakī and Ānaka. 35-36."
   },
   "36": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "37": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "39": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "40": {
-    "word_for_word": "atisaundaryeṇa — atisaundaryeṇa; pradyumnaṃ — ‘the pre-eminently ighty one’; varṇayati — a kind of easure; yam — whom; which; iti — thus; pitā — father; śrī — Śrī; sacred; glorious; kṛṣṇas — kṛṣṇas; tat — that; sadṛśe — in/on like; pradyumne — in/on ‘the pre-eminently ighty one’; nija — own; ātmīya — one's own; īśe — in/on Lord; bhartari — bhartari; bhāvo — bhāvo; bhāvanā — demonstration; yāsāṃ — Turdus Salica; tās — tās; tan — in comp. or; mātaraḥ — mātaraḥ; kṛṣṇa — Kṛṣṇa; patnyo\\'pi — patnyo\\'pi; rahasi — privately; nirūḍha — unmarried; bhāvāḥ — sense; purports; satyo — satyo; yam — whom; which; abhajann — abhajann; iti — thus; yat — which; that which; tan — in comp. or; na — not; khalu — indeed; citraṃ — conspicuous; kathaṃ — (in comp. or; sati — =; smare — in/on col. 1; smayamāṇatvenaiva — smayamāṇatvenaiva; kṣobhake — in/on shaking; kāme\\'kṣi — kāme\\'kṣi; viṣaye — in/on object; subject; sati — =; kiṃ — what; ca — and; rama — pleasing; āspadaṃ — place; śrī — Śrī; sacred; glorious; kṛṣṇas — kṛṣṇas; tasya — of him; of that; bimbaṃ — (also written; śrī — Śrī; sacred; glorious; mūrtiḥ — any solid body or aterial orm; tasya — of him; of that; bimbe — in/on (also written; pratibimbe — in/on the disc of the sun or oon reflected; putre — in/on son; tadā — then; kiṃ — what; nu — (in also; vaktavyam — cols. 1; anya — other; nāryo — nāryo; bhejur — bhejur; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d3f6c6935e74b8e0da79b1b6026626978642c830a8c132da5fb1d440c89c886d",
+    "word_for_word": "अतिसौन्दर्येण प्रद्युम्नं वर्णयति---यम् इति । — He describes Pradyumna very beautifully as Yam.; पिता श्री-कृष्णस् तत्-सदृशे प्रद्युम्ने निज आत्मीय ईशे भर्तरि भावो भावना यासां तास् तन्-मातरः कृष्ण-पत्न्यो\\ऽपि रहसि निरूढ-भावाः सत्यो यम् अभजन्न् इति यत्, तन् न खलु चित्रं । — It is not surprising that the mothers and wives of Lord Kṛṣṇa, whose father, Lord Kṛṣṇa, had a feeling for their husband, Pradyumna, who was like him, worshiped the truth, whose feelings were hidden in secret.; कथं सति ? — In what case?; स्मरे स्मयमाणत्वेनैव क्षोभके कामे\\ऽक्षि-विषये सति । — I remember, smiling, when I’m in a disturbing state of lust\\’s eyes.; किं च, रमास्पदं श्री-कृष्णस् तस्य बिम्बं श्री-मूर्तिः, तस्य बिम्बे प्रतिबिम्बे पुत्रे तदा किं नु वक्तव्यम् अन्य-नार्यो भेजुर् इति ॥४०॥ — What is more, Lord Kṛṣṇa, the abode of the goddess of fortune, is His image, the form of His beauty, and His image is every image of His son.",
+    "translation": "He describes Pradyumna very beautifully as Yam. It is not surprising that the mothers and wives of Lord Kṛṣṇa, whose father, Lord Kṛṣṇa, had a feeling for their husband, Pradyumna, who was like him, worshiped the truth, whose feelings were hidden in secret. In what case? I remember, smiling, when I’m in a disturbing state of lust\\’s eyes. What is more, Lord Kṛṣṇa, the abode of the goddess of fortune, is His image, the form of His beauty, and His image is every image of His son."
   }
 }

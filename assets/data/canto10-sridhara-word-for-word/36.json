@@ -1,104 +1,261 @@
 {
   "1": {
-    "word_for_word": "ṣaṭ — six; triṃśe — in/on the 30th; tu — but; hate'riṣṭe — hate'riṣṭe; nāradoktyā — nāradoktyā; bala — strength; acyutau — the two ot allens; vasudeva — Vasudeva; sutau — the two sons; jñātvā — having know; kaṃso'krūraṃ — kaṃso'krūraṃ; samādiśat — samādiśat; gopī — gopī; cowherd woman; rāsāntarāyāntaṃ — rāsāntarāyāntaṃ; śaṅkhacūḍaṃ — of an; nihatya — nihatya; saḥ — he; that; ahan — the base of the weak and some other cases of; gopī — gopī; cowherd woman; mahānandā — ardent spirits; sahaṃ — with; duṣṭam — spoilt; ariṣṭakam — the soapberry tree; evaṃ — thus; in this way; deva — deity; god; gandharvādi — gandharvādi; gīta — sung; nṛtya — dancing; vādya — to be said or spoken or ounced or uttered; kusuma — ( r. √; varṣādibhiḥ — varṣādibhiḥ; kṛṣṇaṃ — Kṛṣṇa; prāptaṃ — attained; dṛṣṭvā — and . See 1; vrajasya — of Vraja; paramotsave — paramotsave; vartamāne — in/on turning; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; viruddha — opposed; arthāntara — another atter; adhikāra — authority; artham — meaning; for the purpose; atha — now; then; śabdaḥ — word; sound; tarhi — then; tadā — then; vṛṣabhākṛtir — vṛṣabhākṛtir; asuraḥ — demon; taṃ — the 1st dental consonant; varṇayati — a kind of easure; sārdha — joined with a half; trayeṇa — trayeṇa; mahāntau — the two greats; kakut — kakut; kāyau — the two relating or devoted to the gods; yasya — whose; of which; khurair — khurair; vida — = prec; aritāṃ — enmity; mahīṃ — mahīṃ; kampayan — kampayan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c55447e3501aecbc0262e11fc0928f8c8e27f0336e74f7c152978b747d6fcd30",
+    "word_for_word": "षट्-त्रिंशे तु हतेऽरिष्टे नारदोक्त्या बलाच्युतौ । — When Arishta was killed in the thirty-sixth year, Bala and Acyuta were killed by Nārada.; वसुदेव-सुतौ ज्ञात्वा कंसोऽक्रूरं समादिशत् ॥ — When Kaṁsa learned that he was the son of Vasudeva, he sent orders to Akrūra.; गोपी-रासान्तरायान्तं शङ्खचूडं निहत्य सः । — He killed the conchshell at the end of the gopī-rasa.; अहन् गोपी-महानन्दा- सहं दुष्टम् अरिष्टकम् ॥ — I killed the gopīs, the great bliss, the evil and the unfortunate.; एवं देव-गन्धर्वादि-गीत-नृत्य-वाद्य-कुसुम-वर्षादिभिः कृष्णं प्राप्तं दृष्ट्वा व्रजस्य परमोत्सवे वर्तमाने तद् विरुद्धार्थान्तराधिकारार्थम् अथ-शब्दः । — Thus, when the demigods, Gandharvas and others saw Lord Kṛṣṇa attained by singing, dancing, playing musical instruments, showering flowers and so on, and when the people of Vraja were celebrating the supreme festival, the word atha was used to express the opposite meaning.; तर्हि तदा । — Then then.; वृषभाकृतिर् असुरः । — The bull-shaped demon.; तं वर्णयति सार्ध-त्रयेण, महान्तौ ककुत्-कायौ यस्य । — He describes him as three and a half, with two huge hips.; खुरैर् विदारितां महीं कम्पयन् ॥१॥ — shaking the ground torn by their hooves.",
+    "translation": "When Arishta was killed in the thirty-sixth year, Bala and Acyuta were killed by Nārada. When Kaṁsa learned that he was the son of Vasudeva, he sent orders to Akrūra. He killed the conchshell at the end of the gopī-rasa. I killed the gopīs, the great bliss, the evil and the unfortunate. Thus, when the demigods, Gandharvas and others saw Lord Kṛṣṇa attained by singing, dancing, playing musical instruments, showering flowers and so on, and when the people of Vraja were celebrating the supreme festival, the word atha was used to express the opposite meaning. Then then. The bull-shaped demon. He describes him as three and a half, with two huge hips. shaking the ground torn by their hooves."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c37fcce087670794f2760c4f54e6257516991fd0c4826f55658be43fe2683f54",
+    "word_for_word": "रम्भमाणो वृषभ-जाति-शब्दं कुर्वन् । — He was rambling and making a bull-like noise.; विलिखन् विदारयन् । — Writing and tearing.; उद्यम्य ऊर्ध्वं कृत्वा । — Rising up and turning upwards.; वप्राणि तटान्य् उत्क्षिपन् ॥२॥ — They threw the boats on the banks.",
+    "translation": "He was rambling and making a bull-like noise. Writing and tearing. Rising up and turning upwards. They threw the boats on the banks."
+  },
+  "3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "20df30c0fabd7826a1c45b4fe43e3c2976055b95402f237d758898a1b9093f20",
+    "word_for_word": "किञ्चित् किञ्चिच् छकृन् मध्ये मध्ये ईषद्-ईषत्-पुरीषं मुञ्चन् तथा मूत्रयन् मूत्रम् उत्सृजन् । — He sighed little by little, releasing slightly urine from time to time, and then passed urine.; स्तब्ध-लोचनोऽनिमिष-लोचनः । — He’s stunned-eyed and unblinking.; यस्य ध्वनिना गवां नारीणां च ॥३॥ — whose sound is the sound of cows and women.",
+    "translation": "He sighed little by little, releasing slightly urine from time to time, and then passed urine. He’s stunned-eyed and unblinking. whose sound is the sound of cows and women."
   },
   "4": {
-    "word_for_word": "tatra — there; in that; ā — the second vowel of the alphabet corresponding to the a in ar; caturthād — caturthād; bhavet — may be; becomes; srāvaḥ — srāvaḥ; pātaḥ — watched; pañcama — the ifth; ṣaṣṭhayoḥ — of the two sixths; ata — ata; ūrdhvaṃ — (√; prasūtiḥ — instigation; syāt — may be; iti — thus; vibhāgaḥ — distribution; kakudi — kakudi; gala — ‘oozing’; pṛṣṭha — ( prob. r; śṛṅge — in/on (perhaps connected with."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "15b67e5cb31dbf773a3eff5451829b5665ac7a4b068e7968326a4717ba3a1846",
+    "word_for_word": "तत्र, \"आ-चतुर्थाद् भवेत् स्रावः पातः पञ्चम-षष्ठयोः । — There, \"A-from the fourth there should be a discharge and a fall from the fifth and sixth.; अत ऊर्ध्वं प्रसूतिः स्यात्\" इति विभागः । — From this point onwards there will be delivery.\" The division.; ककुदि गल-पृष्ठ-शृङ्गे ॥४॥ — hip, neck, back and horn.",
+    "translation": "There, \"A-from the fourth there should be a discharge and a fall from the fifth and sixth. From this point onwards there will be delivery.\" The division. hip, neck, back and horn."
   },
   "5": {
-    "word_for_word": "tīkṣṇe — in/on sharp; śṛṅga — (perhaps connected with; agra — oremost; yasya — whose; of which; taṃ — the 1st dental consonant; vīkṣya — =."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f3fcfc5d1eb802001ecffa7828c41058f3214c7b823cc51ce45c65a1926f2bf9",
+    "word_for_word": "तीक्ष्णे शृङ्गाग्र यस्य तं वीक्ष्य ॥५॥ — Looking at the one whose horn is sharp.",
+    "translation": "Looking at the one whose horn is sharp."
+  },
+  "6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6273260a9e59262b2d0860dacd463af72522f8fa68e17655e277dcf2489b147b",
+    "word_for_word": "कृष्ण कृष्ण रक्षेति ॥६.७॥ — Krishna, Krishna, protect me.",
+    "translation": "Krishna, Krishna, protect me."
   },
   "7": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "8": {
-    "word_for_word": "ity — thus; evaṃ — thus; in this way; vadan — vadan; āsphoṭya — āsphoṭya; kara — hand; doer; tale — in/on surface; bāhum — ( r. √; āhatya — p. having struck or beaten; tena — by him; by that; tala — surface; śabdena — by/with word; sound; kopayan — kopayan."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bad074eef8bebfae5cfff6d51a2e8937b14dd27ce0705ce36d03c29a946cf7de",
+    "word_for_word": "इत्य् एवं वदन् । — It’s saying this.; आस्फोट्य कर-तले बाहुम् आहत्य । — Exploding, he struck his arm under his hand.; तेन तल-शब्देन कोपयन् ॥८॥ — They were angry with the sound of the floor.",
+    "translation": "It’s saying this. Exploding, he struck his arm under his hand. They were angry with the sound of the floor."
   },
   "9": {
-    "word_for_word": "bhujā — bhujā; bhogaṃ — any winding or curve; bhujā — bhujā; bhujaḥ — the arm; sa — the last of the three sibilants; eva — only; indeed; bhogaḥ — any winding or curve; sarpa — creeping; dehas — dehas; tam — him; that; sarpa — creeping; dehākāraṃ — dehākāraṃ; bhujam — the arm; ity — thus; arthaḥ — meaning; purpose; svayam — himself; oneself; acyutaḥ — ot allen; anyān — others; duṣṭān — spoilts; haratīti — haratīti; hariḥ — Hari; udyatā — by/with rising; ūrdhvaṃ — (√; gacchatā — by/with pr. p. P. r. √; pucchena — by/with a tail; bhramanto — bhramanto; meghā — meghā; yasmin — in whom; in which."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bb70f12219de31daa6e2bdfa368b844475dbbc516aca84766da543585325dee3",
+    "word_for_word": "भुजा-भोगं भुजा भुजः स एव भोगः सर्प-देहस् तम् । — The arm-enjoyment is the arm-arm, and that is the enjoyment of the snake’s body.; सर्प-देहाकारं भुजम् इत्य् अर्थः । — It means an arm in the shape of a snake’s body.; स्वयम् अच्युतः अन्यान् दुष्टान् हरतीति हरिः । — The Lord Himself, the infallible Lord, takes away other evildoers.; उद्यता ऊर्ध्वं गच्छता पुच्छेन भ्रमन्तो मेघा यस्मिन् ॥९॥ — The clouds in which the clouds rotate as they rise upwards with their tails.",
+    "translation": "The arm-enjoyment is the arm-arm, and that is the enjoyment of the snake’s body. It means an arm in the shape of a snake’s body. The Lord Himself, the infallible Lord, takes away other evildoers. The clouds in which the clouds rotate as they rise upwards with their tails."
   },
   "10": {
-    "word_for_word": "agre — before; in front; nyaste — in/on thrown or cast or laid down; viṣāṇa — ( or 2. See under; agre — before; in front; yena — by whom; by which; saḥ — he; that; stabdhe — in/on col. 1; asṛk — asṛk; tulye — in/on equal; like; locane — in/on illuminating; yasya — whose; of which; saḥ — he; that; kaṭākṣipya — having looked at with a side glance; kaṭākṣeṇa — kaṭākṣeṇa; tiryaḍ — tiryaḍ; nirīkṣya — to be looked at or regarded or considered."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8b377e166d3e3f67584bb0b5be1ccb0737a8f550d3eddf9c08479b018afc155b",
+    "word_for_word": "अग्रे न्यस्ते विषाणाग्रे येन सः । — He placed it in front of him on the tip of his horn.; स्तब्धे असृक्-तुल्ये लोचने यस्य सः । — He whose eyes are stunned and bloodless.; कटाक्षिप्य कटाक्षेण तिर्यड् निरीक्ष्य ॥१०॥ — He glanced at her with a glance and looked at her obliquely.",
+    "translation": "He placed it in front of him on the tip of his horn. He whose eyes are stunned and bloodless. He glanced at her with a glance and looked at her obliquely."
   },
   "11": {
-    "word_for_word": "pratyapovāha — pratyapovāha; pratilomaṃ — against the hair or grain; vyanudat — vyanudat."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7646e0c6e362cda2a3ecd7b2294da923ba077432d783bb6eb78ed2d00e40a2e0",
+    "word_for_word": "प्रत्यपोवाह प्रतिलोमं व्यनुदत् ॥११॥ — He carried it back and turned it around.",
+    "translation": "He carried it back and turned it around."
   },
   "12": {
-    "word_for_word": "apaviddho'pakṣiptaḥ — apaviddho'pakṣiptaḥ; āpatad — āpatad; ādravat — ādravat; svinna — sweating; ani — the pin of an axle tree; sveda — sweating; yuktāni — yuktāni; sarvāṅga — the whole body; ani — the pin of an axle tree; yasya — whose; of which; saḥ — he; that; krodha — anger; mūrcchitaḥ — mūrcchitaḥ; krodhena — by/with anger; vyāptaḥ — spread through."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "af509640245094082de527677d771c9682bf9f4df7f308b44661c0bc6d3a0338",
+    "word_for_word": "अपविद्धोऽपक्षिप्तः । — He was thrown away and thrown away.; आपतद् आद्रवत् । — The accident ran.; स्विन्नानि स्वेद-युक्तानि सर्वाङ्गानि यस्य सः । — He whose whole body is sweaty and covered with sweat; क्रोध-मूर्च्छितः क्रोधेन व्याप्तः ॥१२॥ — He fainted with anger and was overwhelmed with anger.",
+    "translation": "He was thrown away and thrown away. The accident ran. He whose whole body is sweaty and covered with sweat He fainted with anger and was overwhelmed with anger."
   },
   "13": {
-    "word_for_word": "kṛttvā — having only ifc. aking; viṣāṇam — ( or 2. See under; utpāṭya — p. having plucked up; tenaiva — tenaiva; jaghāna — jaghāna; sa — the last of the three sibilants; cāpatat — cāpatat."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "97572fbd02d9637a835f89978584ca0c7497f4f8781849f5e6b95865d7533816",
+    "word_for_word": "कृत्त्वा विषाणम् उत्पाट्य तेनैव जघान स चापतत् ॥१३॥ — He made a horn and tore it out and struck him with it and he fell down.",
+    "translation": "He made a horn and tore it out and struck him with it and he fell down."
   },
   "14": {
-    "word_for_word": "mūtraṃ — ( prob. r. √ =; ca — and; śakṛc — śakṛc; ca — and; mūtra — ( prob. r. √ =; śakṛt — (the weak cases are optionally ormed r. a base cf; eka — one; vad — speak; say; bhāvaḥ — sense; purport; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; ubhayaṃ — both; samutsṛjann — samutsṛjann; ity — thus; arthaḥ — meaning; purpose; pāda — foot; quarter; aṃś — to divide; ca — and; kṣipann — kṣipann; itas — rom hence; tataś — tataś; cālayan — cālayan; anavasthita — unsettled; īkṣaṇaḥ — a look; pracalita — set in otion; netraḥ — eye; kṛcchraṃ — causing trouble or pain; kaṣṭaṃ — (perhaps p.p. of √; jagāma — went; atha — now; then; nirṛta — dissolved; ir — cl. 6. P. , to go; mṛtyoḥ — of death; kṣayaṃ — kṣayaṃ; nivāsaṃ — clothing; jagāma — went; kṛcchraṃ — causing trouble or pain; yathā — as; just as; bhavati — is; becomes; tathā — so; in that way; mṛta — dead; iti — thus; vā — or."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "011dd1b7f95fb421abec913a578b4301c0cd1d0ad1382f79831c38a852f5a4d4",
+    "word_for_word": "मूत्रं च शकृच् च मूत्र-शकृत् । — Urine and feces are urine-feces.; एक-वद्-भावः । — One-likeness.; तद्-उभयं समुत्सृजन्न् इत्य् अर्थः । — That means leaving both of them behind.; पादांश् च क्षिपन्न् इतस् ततश् चालयन् । — He threw his feet and moved them here and there.; अनवस्थितेक्षणः प्रचलित-नेत्रः कृच्छ्रं कष्टं जगाम । — With his eyes unsettled and his eyes wide open he went from pain to pain; अथ निरृतेर् मृत्योः क्षयं निवासं जगाम । — Then, after the death of Nirṛti, he went to his abode.; कृच्छ्रं यथा भवति तथा मृत इति वा ॥१४॥ — or dead as it is with difficulty.",
+    "translation": "Urine and feces are urine-feces. One-likeness. That means leaving both of them behind. He threw his feet and moved them here and there. With his eyes unsettled and his eyes wide open he went from pain to pain Then, after the death of Nirṛti, he went to his abode. or dead as it is with difficulty."
   },
   "15": {
-    "word_for_word": "nayanotsavo — nayanotsavo; nayana — of a an; anāṃ — hereby; mūrtim — any solid body or aterial orm; an — not; utsavaḥ — utsavaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6bc52f5e1c23f9befcb2a6bdc31bf1a841c79f3e516f92f6be9fc9bdf447daf1",
+    "word_for_word": "नयनोत्सवो नयनानां मूर्तिमान् उत्सवः ॥१५॥ — The festival of the eyes is the embodied festival of the eyes.",
+    "translation": "The festival of the eyes is the embodied festival of the eyes."
   },
   "16": {
-    "word_for_word": "kāmaṃ — desire; vraje — in Vraja; vasantaṃ — ‘brilliant ’; taṃ — the 1st dental consonant; kṛṣṇaṃ — Kṛṣṇa; tena — by him; by that; tu — but; vismṛtam — one who has orgotten anything; nāradaḥ — author of; sma — indeed; formerly; arayā — by/with an awl Comm. on; am — quickly; āsa — seat; kaṃsaṃ — Kaṃsa; dūta — ( prob. r. √ 1; gir — addressing; eva — only; indeed; tu — but; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; ariṣṭa — unhurt; iti — thus; deva — deity; god; darśano — darśano; devarṣiḥ — a saint of the celestial class; yadvā — perception; evaṃ — thus; in this way; kathite — in/on narrated; evaṃ — thus; in this way; bhaviṣyatīti — bhaviṣyatīti; sākṣād — in comp. or; deva — deity; god; vad — speak; say; darśanaṃ — seeing; vision; jñānaṃ — knowledge; yasya — whose; of which; saḥ — he; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b0925a34bc04dec5131d85bd1fba00850c7bf44463e735fad00c6a9a3ebb8330",
+    "word_for_word": "कामं व्रजे वसन्तं तं कृष्णं तेन तु विस्मृतम् । — I wanted to go to Vraja, but I forgot about that Kṛṣṇa.; नारदः स्मारयाम् आस कंसं दूत-गिर् एव तु ॥ — Nārada continued to remind Kaṁsa of his messengership.; तद् आह---अरिष्ट इति । — He argues that it is unfortunate.; देव-दर्शनो देवर्षिः । — He is a devarshi who sees the gods.; यद्वा एवं कथिते एवं भविष्यतीति साक्षाद् देव-वद्-दर्शनं ज्ञानं यस्य सः ॥१६॥ — Or that which is thus said, thus it will be, is the knowledge of the direct vision of the gods.",
+    "translation": "I wanted to go to Vraja, but I forgot about that Kṛṣṇa. Nārada continued to remind Kaṁsa of his messengership. He argues that it is unfortunate. He is a devarshi who sees the gods. Or that which is thus said, thus it will be, is the knowledge of the direct vision of the gods."
   },
   "17": {
-    "word_for_word": "āptena — by/with reached; iva — like; as if; nārada — author of; ina — ( r. √; uktam — stated; āha — says; yaśodāyā — yaśodāyā; iti — thus; devakyā — by/with Devakī; aṣṭama — eighth; garbhatvena — by/with impregnation; prasiddhāṃ — a ic. easure; kanya — the smallest; aṃ — not; yaśodāyāḥ — of Yaśodā; sutām — of ( ifcs; āha — says; yaśodāyaḥ — yaśodāyaḥ; sutatvena — by/with condition of sonship; prasiddhaṃ — brought about; kṛṣṇaṃ — Kṛṣṇa; devakyāḥ — ids; sutam — son; āha — says; rohiṇī — rohiṇī; putraṃ — son; rāmaṃ — Rāma; ca — and; devakyāḥ — ids; saptamaṃ — the 7th; sutam — son; āha — says; yadvā — perception; nanda — Nanda; sutatvena — by/with condition of sonship; prasiddhaṃ — brought about; rāmaṃ — Rāma; ca — and; vasudeva — Vasudeva; bhāryāyā — bhāryāyā; rohiṇyāḥ — rohiṇyāḥ; putram — son; āha — says; tau — the two the 1st dental consonants; vasudeva — Vasudeva; sutau — the two sons; cet — if; kathaṃ — (in comp. or; vrajaṃ — Vraja; gatau — the two gones; tatrāha — tatrāha; vasudeveneti — vasudeveneti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "af7d342bfa230b57e91d5e68646c139c94444106e9357db7005ec63561b44f6f",
+    "word_for_word": "आप्तेनेव नारदेनोक्तम् आह---यशोदाया इति । — He said that Narada had just received it and that it was Yashoda’s.; देवक्या अष्टम-गर्भत्वेन प्रसिद्धां कन्यां यशोदायाः सुताम् आह---यशोदायः सुतत्वेन प्रसिद्धं कृष्णं देवक्याः सुतम् आह---रोहिणी-पुत्रं रामं च देवक्याः सप्तमं सुतम् आह---यद्वा नन्द-सुतत्वेन प्रसिद्धं रामं च वसुदेव-भार्याया रोहिण्याः पुत्रम् आह---तौ वसुदेव-सुतौ — He called the daughter of Yashoda, known as the eighth pregnancy of Devakī, Yashoda called Krishna, the son of Devakī, the son of Rohini, and Rama, the seventh son of Devakī, the son of Nanda, and Rama, the son of Rohini, the wife of Vasudeva; चेत् कथं व्रजं गतौ तत्राह---वसुदेवेनेति ॥१७.१८॥ — If so, how did they go to Vraja?",
+    "translation": "He said that Narada had just received it and that it was Yashoda’s. He called the daughter of Yashoda, known as the eighth pregnancy of Devakī, Yashoda called Krishna, the son of Devakī, the son of Rohini, and Rama, the seventh son of Devakī, the son of Nanda, and Rama, the son of Rohini, the wife of Vasudeva If so, how did they go to Vraja?"
   },
   "18": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "19": {
-    "word_for_word": "nivārita — kept off; iti — thus; hate — in/on killed; vasudeve — in/on Vasudeva; tau — the two the 1st dental consonants; palāya — to/for straw; ita — ifc. gone; am — quickly; ato — ato; badhyatām — badhyatām; iti — thus; mantraṃ — (rarely; vadatā — vadatā; nāradena — by/with author of; nivārita — kept off; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7539aaac73f5a9719e420e8547975cf4a29b991e625d0836db7a8ba1339e30ae",
+    "word_for_word": "निवारित इति । — It is prevented.; हते वसुदेवे तौ पलायेताम् अतो बध्यताम् इति मन्त्रं वदता नारदेन निवारित इति ॥१९.२२॥ — When Vasudeva was killed Narada restrained them while chanting the mantra 'Let them flee therefore bind them'",
+    "translation": "It is prevented. When Vasudeva was killed Narada restrained them while chanting the mantra 'Let them flee therefore bind them'"
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "mahyaṃ — to me; mama — my; of me; nidarśito — nidarśito; vidha — piercing; atrā — {{Lbody=3500}}; nāradena — by/with author of; vā — or."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9209fef08846d20fab84e9bf7c0a45b955094eabd4c8293ef42809de728bb8df",
+    "word_for_word": "मह्यं मम निदर्शितो विधात्रा नारदेन वा ॥२३॥ — It was shown to me by the creator or by Narada.",
+    "translation": "It was shown to me by the creator or by Narada."
   },
   "24": {
-    "word_for_word": "vrajaṃ — Vraja; gantum — gantum; udyatau — the two raiseds; tāv — tāv; aha — surely; bhavadbhyām — in/on having ear present i.e. afraid; iti — thus; mañcā — mañcā; uttuṅga — lofty; stambhābhiracita — stambhābhiracita; sthānāni — sthānāni."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e7ee1c14778238c13bc2ae8d6614fd31abeb0c478a69b710e44f034545907b0d",
+    "word_for_word": "व्रजं गन्तुम् उद्यतौ ताव् अह, भवद्भ्याम् इति । — When they were about to go to Vraja, Tav said, “I’m going to you both.”; मञ्चा उत्तुङ्ग-स्तम्भाभिरचित-स्थानानि ॥२४॥ — The platforms were arranged with high pillars.",
+    "translation": "When they were about to go to Vraja, Tav said, “I’m going to you both.” The platforms were arranged with high pillars."
   },
   "25": {
-    "word_for_word": "ahitau — the two unfits; śatrū — śatrū."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b6949e301a3eba9dc7ff4f726144d3ad5e6ecb4a7518b8d803403c3e8b147308",
+    "word_for_word": "अहितौ शत्रू ॥२५॥ — Ahitau shatru ॥25॥",
+    "translation": "Ahitau shatru ॥25॥"
   },
   "26": {
-    "word_for_word": "mīḍhuṣe — in/on of a son of by; varadāya — to/for granting wishes."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9161335a96a9e1371fcc9e494eb7a40412e57b069bba5bf8d8eb05f33c0465e9",
+    "word_for_word": "मीढुषे वरदाय ॥२६॥ — Meedhushe varadaya ॥26॥",
+    "translation": "Meedhushe varadaya ॥26॥"
   },
   "27": {
-    "word_for_word": "artha — meaning; purpose; tantra — a loom; jño'rtha — jño'rtha; siddhāntam — siddhāntam; eva — only; indeed; jānātīti — jānātīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4b7ec2bcb1250ef80c719be2997ad4831329a2a1f63dcbce22b122689625cc5a",
+    "word_for_word": "अर्थ-तन्त्र-ज्ञोऽर्थ-सिद्धान्तम् एव जानातीति ॥२७॥ — He who knows the system of meaning knows only the principle of meaning.",
+    "translation": "He who knows the system of meaning knows only the principle of meaning."
   },
   "28": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; dāna — the act of giving; pate — in/on lying; akrūra — ot cruel; maitraṃ — coming rom or given by or belonging to a riend; mitra — friend; kṛtyaṃ — ‘to be done or performed’; tvayā — by you; kriyatām — kriyatām; tvatto'nya — tvatto'nya; ādṛtaḥ — attentive; sādaro — sādaro; hita — sent; tamaś — tamaś; ca — and; na — not; vidyata — vidyata; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6074c98b559c57d67d245ded3f9d21b85d30b04384fd8cb33f6ba35b4ae7b2e5",
+    "word_for_word": "हे दान-पते अक्रूर, मैत्रं मित्र-कृत्यं त्वया क्रियताम् । — O lord of charity, Akrūra, may you do the duty of a friend to a friend.; त्वत्तोऽन्य आदृतः सादरो हित-तमश् च न विद्यत इति ॥२८.३०॥ — There is none other than You who is respected, respected and well-wishers.",
+    "translation": "O lord of charity, Akrūra, may you do the duty of a friend to a friend. There is none other than You who is respected, respected and well-wishers."
   },
   "29": {
-    "word_for_word": "tau — the two the 1st dental consonants; me — cl. 1. Ā. ( ep. also P; mṛtyur — mṛtyur; nitara — deeply ixed; aṃ — not; sṛṣṭaḥ — let go; vaikuṇṭha — of; saṃśrayair — saṃśrayair; viṣṇu — Viṣṇu; saṃśrayair — saṃśrayair; devaiḥ — by/with deity; gods."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a7a8c3ef6af56712dd27e60b55528a32e2e3be0da3103871bd59f1417880ccf4",
+    "word_for_word": "तौ मे मृत्युर् नितरां सृष्टः । — Both of them have created death for me.; वैकुण्ठ-संश्रयैर् विष्णु-संश्रयैर् देवैः ॥२९॥ — By the gods who take shelter of Vaikuntha and who take shelter of Vishnu.",
+    "translation": "Both of them have created death for me. By the gods who take shelter of Vaikuntha and who take shelter of Vishnu."
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "tau — the two the 1st dental consonants; me — cl. 1. Ā. ( ep. also P; mṛtyur — mṛtyur; nitara — deeply ixed; aṃ — not; sṛṣṭaḥ — let go; vaikuṇṭha — of; saṃśrayair — saṃśrayair; viṣṇu — Viṣṇu; saṃśrayair — saṃśrayair; devaiḥ — by/with deity; gods."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c727a432ad06c622933b766f98a69b5a1756eb0af68ca5600559911bfca2bfdc",
+    "word_for_word": "तौ मे मृत्युर् नितरां सृष्टः । — Both of them have created death for me.; वैकुण्ठ-संश्रयैर् विष्णु-संश्रयैर् देवैः ॥३१॥ — The gods who take refuge in Vaikuntha and who take refuge in Vishnu.",
+    "translation": "Both of them have created death for me. The gods who take refuge in Vaikuntha and who take refuge in Vishnu."
   },
   "32": {
-    "word_for_word": "kiṃ — what; tatas — tatas; tatrāha — tatrāha; ghātayiṣya — ghātayiṣya; iti — thus; kāla — time; kalpena — by/with practicable; mṛtyu — death; tulyena — by/with equal; like; vaidyutopamair — vaidyutopamair; aśani — (rarely; tulyaiḥ — by/with equal; likes."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "71c734b490e36341f75ffdde2fabc2710282503e340dbf0aa3654e126c53bb56",
+    "word_for_word": "किं ततस् तत्राह---घातयिष्य इति । — What then, he said, would kill him?; काल-कल्पेन मृत्यु-तुल्येन वैद्युतोपमैर् अशनि-तुल्यैः ॥३२.३४॥ — They were like death in the course of time and like lightning and like thunderbolts.",
+    "translation": "What then, he said, would kill him? They were like death in the course of time and like lightning and like thunderbolts."
   },
   "33": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "34": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "35": {
-    "word_for_word": "naṣṭa — lost; kaṇṭakā — kaṇṭakā; naṣṭa — lost; śatruḥ — enemy; nanu — but surely; indeed; katipayāsuhṛd — katipayāsuhṛd; vadhena — by/with killing; naṣṭa — lost; kaṇṭakā — kaṇṭakā; kathaṃ — (in comp. or; syād — in comp. or; iti — thus; tatrāha — tatrāha; jarāsandha — jarāsandha; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e104872fe94f0baed33557ab9110028c4181098baec50d02593cc3ef0ca22b24",
+    "word_for_word": "नष्ट-कण्टका नष्ट-शत्रुः । — The lost thorn is the lost enemy.; ननु कतिपयासुहृद्-वधेन नष्ट-कण्टका कथं स्याद् ? — How can there be a lost thorn by killing a few friends?; इति तत्राह---जरासन्ध इति ॥३५.३६॥ — This is what he says there: Jarasandha.",
+    "translation": "The lost thorn is the lost enemy. How can there be a lost thorn by killing a few friends? This is what he says there: Jarasandha."
   },
   "37": {
-    "word_for_word": "yadu — Yadu; pura — city; śriyaṃ — śriyaṃ; draṣṭuṃ — inf. -stem of √ in comp; ceti — in/on if."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "14045d403bf4ebd6b5bd15f97afdbb9f7fe8b2f09827477b021f0f01da19a92c",
+    "word_for_word": "यदु-पुर-श्रियं द्रष्टुं चेति ॥३७॥ — and to see the splendor of the Yadu city.",
+    "translation": "and to see the splendor of the Yadu city."
   },
   "38": {
-    "word_for_word": "tatra — there; in that; sva — own; self; manīṣitaṃ — desired; vic — cl. 7. P. Ā. , (2. sg; aritām — enmity; sadhryak — together with; samyak — properly; completely; sva — own; self; avadyaṃ — ‘ ot to be praised’; maraṇaṃ — the act of dying; tan — in comp. or; mārjanam — wiping away; tathā'py — tathā'py; etāvānabhiniveśo — etāvānabhiniveśo; na — not; kārya — to be ade or done or practised or performed; iti — thus; bhaviṣyat — about to become or be; sūcayann — sūcayann; āha — says; siddhy — in comp. or 2; asiddhyor — asiddhyor; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fcb2e0340d8223bb35cd0b7f92242a45d57a2d95e8f6a7692db3bda1c3edb6d7",
+    "word_for_word": "तत्र स्व-मनीषितं विचारिताम् सध्र्यक् सम्यक् स्वावद्यं मरणं तन्-मार्जनम् । — There, one should think about one’s own intentions, one should die one’s own faults and wipe them away.; तथाऽप्य् एतावानभिनिवेशो न कार्य इति भविष्यत् सूचयन्न् आह---सिद्ध्य्-असिद्ध्योर् इति ॥३८॥ — Nevertheless, indicating that such concentration is not necessary in the future, he argues that it is between perfection and incompleteness.",
+    "translation": "There, one should think about one’s own intentions, one should die one’s own faults and wipe them away. Nevertheless, indicating that such concentration is not necessary in the future, he argues that it is between perfection and incompleteness."
   },
   "39": {
-    "word_for_word": "puruṣa — person; Puruṣa; kārasya — of aking; vyabhicāram — going apart or astray; āha — says; mano — in comp. or; rathān — chariots; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9735a69dda51353b61ba03b951789ecbfb2f39d4ea7eb0f682e9bee987e04b26",
+    "word_for_word": "पुरुष-कारस्य व्यभिचारम् आह---मनो-रथान् इति ॥३९.४०॥ — He argues that the deviation of the Purusha-kara is the chariots of the mind.",
+    "translation": "He argues that the deviation of the Purusha-kara is the chariots of the mind."
   },
   "40": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   }
 }

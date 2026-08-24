@@ -1,8 +1,17 @@
 {
-  "1-2": {
-    "reviewed": true,
-    "word_for_word": "navame — in the ninth chapter; payasi udrikte — when the milk boiled over; gatvā gopī — the gopī went to it; atha tat-kṛtam vilokya — then, seeing what He had done; bhāṇḍa-bhaṅga-ādi — the breaking of the vessel and the other acts; kṛṣṇam dāmnā babandha — she bound Kṛṣṇa with a rope; tan-udara-āśritam viśvam dṛṣṭvā — having seen the universe contained in His small belly; vismita-cetasaḥ — while her mind had been astonished; bandhana-dvi-aṅgula-apūrtyā — by the rope's remaining deficient by two fingers when she tried to bind Him; pūrṇatām anvadarśayat — He showed His fullness/completeness; svayam dadhi nirmamantha — she herself churned the yogurt; tadā ca agāyata — at that time she also sang; ca-kāra-anvayaḥ — the word ca ('and') is connected in this way.",
-    "translation": "In the ninth chapter, when the milk boiled over, the gopī went to attend to it; then, seeing Kṛṣṇa's breaking of the vessel and His other acts, she bound Him with a rope. Although she had previously seen the universe contained within His small belly and had been astonished, He now showed His completeness through the rope's repeatedly remaining short by two fingers. In verse 1, 'she herself churned the yogurt.' In verse 2, the word 'and' is to be connected so that the sense is: at that time she also sang."
+  "1": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8cf614073107682a86236fb660b699a5ebd16dc91009636e4e19faf757002110",
+    "word_for_word": "नवमे पय उद्रिक्तौ गत्वा गोप्य् अथ तत्-कृतम् । — On the ninth day, when the milk was poured out, the cowherd woman went and did that.; विलोक्य भाण्ड-भङ्गादि कृष्णं दाम्ना बबन्ध तम् ॥*॥ — Seeing the vessels broken and so on he tied him up with a rope.; तनूदराश्रितं विश्वं दृष्ट्वा विस्मित-चेतसः । — They were astonished to see the universe resting on their thin abdomen; बन्धन-द्व्य्-अङ्गुलापूर्त्या पूर्णताम् अन्वदर्शयत् ॥॥ — He showed completeness by filling the bond with two fingers; स्वयं दधि निर्ममन्थ ॥१॥ — They themselves made the curd.",
+    "translation": "On the ninth day, when the milk was poured out, the cowherd woman went and did that. Seeing the vessels broken and so on he tied him up with a rope. They were astonished to see the universe resting on their thin abdomen He showed completeness by filling the bond with two fingers They themselves made the curd."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d15edf4b34c107ba3f715ab9a389d2f59b0ca9de0a857c030c0bfa95ea2891c8",
+    "word_for_word": "तदा च अगायत इति च-कारान्वयः ॥२॥ — Then and agayat, the conjunction of the cha-kara.",
+    "translation": "Then and agayat, the conjunction of the cha-kara."
   },
   "3": {
     "reviewed": true,
@@ -74,6 +83,13 @@
     "word_for_word": "smitam kurvatīnām madhye — among the gopīs who were smiling; svayam api hasantī — she herself also laughing; vismayam āpa — became astonished.",
     "translation": "Among the gopīs who were smiling, Yaśodā herself also laughed, yet at the same time she became astonished."
   },
+  "18": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
   "19": {
     "reviewed": true,
     "word_for_word": "na ca evam svātantrya-bhaṅgaḥ — this does not imply a loss of His independence; iti āha — therefore the verse says; evam sandarśitā — thus He displayed; seśvaram idam viśvam — this universe together with its rulers; vaśe — is under control; yad-adhīnam — subject to Him.",
@@ -93,5 +109,12 @@
     "reviewed": true,
     "word_for_word": "bhaktaiḥ baddhasya api — although bound by devotees; anya-mocakatvam — His power to liberate others; āha — he states; kṛṣṇaḥ tu iti — with the verse beginning 'but Kṛṣṇa.'",
     "translation": "Although He Himself had been bound by His devotee, He still possessed the power to free others. Śuka now states this with the verse beginning 'but Kṛṣṇa.'"
+  },
+  "23": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   }
 }

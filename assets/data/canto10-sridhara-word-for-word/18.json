@@ -1,56 +1,226 @@
 {
   "1": {
-    "word_for_word": "vimohan — vimohan; mark} — ove; daṇḍena — by/with a stick; tataḥ — then; from that; svān — own; selfs; śaraṇāgatān — come or prs; gopān — cowherds; apād — apād; ananto'sāv — ananto'sāv; ananta — endless; vana — forest; vahnitaḥ — vahnitaḥ; aṣṭādaśe — in/on the eighteenth; tato — in comp. or; grīṣme — in/on the summer; vasanta — ‘brilliant ’; guṇa — quality; lakṣite — in/on arked; aghātayad — aghātayad; balena — by/with strength; alaṃ — the sting in the tail of a scorpion; pralambaṃ — hanging down; līlayā — by/with pastime; hariḥ — Hari; kṛtvā — having done; having made; nṛtyaṃ — dancing; phaṇa — scum; agreṣu — in/among oremosts; kāliyasya — of of a; sa — the last of the three sibilants; kautukam — ( r; balaṃ — strength; pralamba — hanging down; tuṅgāṃsam — tuṅgāṃsam; ārohayad — ārohayad; ara — swift; atihā — √ 2. to jump over."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a286fdfcd880f1cc874aeaef55b9f5273a02bfd01e5ca752f99073db34652ea9",
+    "word_for_word": "विमोहन्[अहि]{।मर्क्}-दण्डेन ततः स्वान् शरणागतान् । — Then he bewitched those who had taken refuge in him with the rod of the snake.; गोपान् अपाद् अनन्तोऽसाव् अनन्त-वन-वह्नितः ॥ — The fire of the infinite forest saved the cowherd men.; अष्टादशे ततो ग्रीष्मे वसन्त-गुण-लक्षिते । — Then in the eighteenth summer, when the spring is characterized by its qualities.; अघातयद् बलेनालं प्रलम्बं लीलया हरिः ॥ — Lord Hari easily struck Pralamba with His mighty force.; कृत्वा नृत्यं फणाग्रेषु कालियस्य स-कौतुकम् । — They danced on the tops of the hoods of the Kāliya with curiosity.; बलं प्रलम्ब-तुङ्गांसम् आरोहयद् अरातिहा ॥१॥ — The destroyer of enemies mounted the army on the peak of Pralamba",
+    "translation": "Then he bewitched those who had taken refuge in him with the rod of the snake. The fire of the infinite forest saved the cowherd men. Then in the eighteenth summer, when the spring is characterized by its qualities. Lord Hari easily struck Pralamba with His mighty force. They danced on the tops of the hoods of the Kāliya with curiosity. The destroyer of enemies mounted the army on the peak of Pralamba"
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "363668f940a80a1925ebca76516b5766962b09cb13d9a550c2fbb54ee4e481df",
+    "word_for_word": "गोपाल-च्छद्म-माया गो-पालनम् एव च्छद्म यस्यां, तया मायया ॥२॥ — The illusion of the cowherd disguise is the illusion in which the cowherd is disguised, by that illusion.",
+    "translation": "The illusion of the cowherd disguise is the illusion in which the cowherd is disguised, by that illusion."
   },
   "3": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "4": {
-    "word_for_word": "vasanta — ‘brilliant ’; sāmyam — equality; āha — says; caturbhiḥ — by/with fours; yatra — where; grīṣme'pi — grīṣme'pi; nirjhara — a waterfall; aṇ — to sound; aṃ — not; nirhrādena — by/with sound; ghoṣeṇa — ghoṣeṇa; nivṛtta — turned back; svanāś — svanāś; channa — covered; dhvanayo — dhvanayo; jhillikāḥ — pl. v.l. ors; kaṭhora — hard; dhvani — sound; sūkṣma — inute; kīṭā — kīṭā; yasmiṃs — yasmiṃs; tathā — so; in that way; bhūtaṃ — become; vṛndāvanaṃ — Vṛndāvana; bhavati — is; becomes; kiṃ — what; ca — and; śaśvat — perpetual; teṣāṃ — teṣāṃ; nirjhara — a waterfall; aṇ — to sound; aṃ — not; śīkarair — śīkarair; ambu — water; kaṇair — kaṇair; ṛjīṣāḥ — expellers; snigdhā — arrow; ye — those who; druma — a tree; as — be; teṣāṃ — teṣāṃ; maṇḍalair — maṇḍalair; maṇḍitam — adorned."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5a46a1b9c093d52458a5f63ba111d23b17c1343ce27b381ed06f28f3421f0ad2",
+    "word_for_word": "वसन्त-साम्यम् आह चतुर्भिः । — He said that the spring equality is fourfold.; यत्र ग्रीष्मेऽपि निर्झराणां निर्ह्रादेन घोषेण निवृत्त-स्वनाश् छन्न-ध्वनयो झिल्लिकाः कठोर-ध्वनि-सूक्ष्म-कीटा यस्मिंस् तथा-भूतं वृन्दावनं भवति । — Where, even in summer, the silent sound of the streams ceases to sound, the hidden sounds of the membranes, the harsh sounds, the tiny insects, in which such a Vrindavan is.; किं च, शश्वत् तेषां निर्झराणां शीकरैर् अम्बु-कणैर् ऋजीषाः स्निग्धा ये द्रुमास् तेषां मण्डलैर् मण्डितम् ॥४॥ — What is more, the trees which are always greasy with the drops of water from their streams are adorned with their circles.",
+    "translation": "He said that the spring equality is fourfold. Where, even in summer, the silent sound of the streams ceases to sound, the hidden sounds of the membranes, the harsh sounds, the tiny insects, in which such a Vrindavan is. What is more, the trees which are always greasy with the drops of water from their streams are adorned with their circles."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cb6a47af8e6eb3585943dfbb2156b93591be1255b8ed77ca7363616965f417f2",
+    "word_for_word": "यत्र ग्रीष्ंए वने वा । — Where in the summer or in the forest.; निदाघो ग्रीष्मः, तेन तत्-कालीन-वह्न्य्-अर्काभ्यां च भवति यो दवस् तापः । — Summer is summer, and the heat of the day is caused by the fire and sun of that time.; अति-शाद्वलेऽति-हरित-तृणाकीर्णे । — It was very grassy and very green.; यद् वा, अतिक्रान्त-शाद्वलेऽपि स्थाने ॥५॥ — or, even in a place in the pastures of the grass.",
+    "translation": "Where in the summer or in the forest. Summer is summer, and the heat of the day is caused by the fire and sun of that time. It was very grassy and very green. or, even in a place in the pastures of the grass."
   },
   "6": {
-    "word_for_word": "nanu — but surely; indeed; śādvalam — (often written; eva — only; indeed; kutastyaṃ — coming rom where?; tatrāha — tatrāha; agādha — ot shallow; iti — thus; agādha — ot shallow; ani — the pin of an axle tree; toya — water; ani — the pin of an axle tree; yāsāṃ — Turdus Salica; tāsāṃ — tāsāṃ; hradinīnāṃ — of a rivers; taṭa — a slope; sparśibhir — sparśibhir; ūrmibhiḥ — by/with a waves; pulinaiḥ — by/with a sandbanks; saha — with; dravat — running; purīṣaṃ — earth; paṅko — paṅko; yasyāḥ — whose; of whichs; tasyā — tasyā; bhuvaḥ — bhuvaḥ; rasaṃ — rasa; relish; śādvalitaṃ — the being covered with grass; śādvala — (often written; rūpatāṃ — the state of being ormed or composed of; ca — and; viṣavad — viṣavad; ulbaṇā — {{Lbody=37527}}; api — also; sūrya — sun; raśmayo — raśmayo; na — not; gṛhṇate — gṛhṇate; na — not; haranti — they (only ifc."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7c45454d71efda31189fc238f09a084e5a6e7f38db7dace458c9210c77fc89b4",
+    "word_for_word": "ननु शाद्वलम् एव कुतस्त्यं ? — Where is the grass itself?; तत्राह---अगाध-इति । — There he says, \"Agadha.; अगाधानि तोयानि यासां तासां ह्रदिनीनां तट-स्पर्शिभिर् ऊर्मिभिः पुलिनैः सह द्रवत्-पुरीषं पङ्को यस्याः, तस्या भुवः रसं शाद्वलितं शाद्वल-रूपतां च विषवद् उल्बणा अपि [चण्डांशु-कराः] सूर्य-रश्मयो न गृह्णते न हरन्ति ॥६॥ — The waters of the lakes whose waters are deep and whose mud flows with the waves touching the shores of the earth whose taste is like grass and whose appearance is grassy are not captured nor taken away by the poisonous rays of the sun",
+    "translation": "Where is the grass itself? There he says, \"Agadha. The waters of the lakes whose waters are deep and whose mud flows with the waves touching the shores of the earth whose taste is like grass and whose appearance is grassy are not captured nor taken away by the poisonous rays of the sun"
   },
   "7": {
-    "word_for_word": "tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; vanam — forest; aviśad — aviśad; ity — thus; uttareṇa — orthward; anvayaḥ — syntactic connection; nadantaś — nadantaś; citrā — Spica virginis; mṛgā — =; dvijā — twice-born; aś — Ā. ( aor. 3. pl; ca — and; yasmin — in whom; in which; gāyanto — gāyanto; mayūrā — mayūrā; bhramara — a large black bee; aś — Ā. ( aor. 3. pl; ca — and; yasmin — in whom; in which; kūjantaḥ — kūjantaḥ; kokilāḥ — ( onomats; sārasa — relating or belonging to or coming rom a pond or lake; aś — Ā. ( aor. 3. pl; ca — and; yasmiṃs — yasmiṃs; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; aviśat — aviśat."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bc7906c15a78220e5fd60fa2c81e4c75614daf48aa0be9cda1bf389d353aaee7",
+    "word_for_word": "तद् वनम् अविशद् इत्य् उत्तरेणान्वयः । — The answer is that he entered the forest.; नदन्तश् चित्रा मृगा द्विजाश् च यस्मिन् । — There were many wonderful animals and birds roaring in it.; गायन्तो मयूरा भ्रमराश् च यस्मिन् । — The peacocks and the bees are singing in it.; कूजन्तः कोकिलाः सारसाश् च यस्मिंस् तद् अविशत् ॥७-११॥ — The cuckoos and cranes were chirping and he entered the place where he was.7-1",
+    "translation": "The answer is that he entered the forest. There were many wonderful animals and birds roaring in it. The peacocks and the bees are singing in it. The cuckoos and cranes were chirping and he entered the place where he was.7-1"
   },
   "8": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "9": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "10": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "11": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f2945093383bd514778c19e5af309db3f188597357795980e1587d83b901f8c5",
+    "word_for_word": "काक-पक्षाश् चूडा-करणात् प्राक्तन-केशाः । — The crow’s wings are the old hair from the chuda.; भ्रामणादि-प्रकारैर् नियुद्धेन बाहु-युद्धेन चिक्रीडतुः ॥१२.१३॥ — They played with arm-wrestling in various ways such as spinning.",
+    "translation": "The crow’s wings are the old hair from the chuda. They played with arm-wrestling in various ways such as spinning."
   },
   "13": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "14": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3b2c61132552841fb545177b7f01badf1d1cf5a1918837a0e38b2b4afac2dc64",
+    "word_for_word": "कुम्भैः कुम्भ-वृक्ष-फलैः । — Aquarius with aquarium tree fruits.; अस्पृश्यत्वं नेत्र-बन्धश् च तद्-आद्यैः । — Untouchability and blindfold by the like.; मृगाणां स्व-गाणां च चेष्टया ॥१४॥ — By the behavior of the deer and their own cows.",
+    "translation": "Aquarius with aquarium tree fruits. Untouchability and blindfold by the like. By the behavior of the deer and their own cows."
+  },
+  "15": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "97467f35581b401761976180e8eda2d114f935453e7f1f04710d85457f7209ab",
+    "word_for_word": "दर्दुर-प्लावैर् मण्डूक-प्लुतिभिः । — The painful floods and the frog jumps.; स्पृन्दोलिकया कोलालम्बनेन । — by the cola suspension of the sprundolika.; नृपाणाम् इव लीलया ॥१५॥ — Like the playfulness of kings.",
+    "translation": "The painful floods and the frog jumps. by the cola suspension of the sprundolika. Like the playfulness of kings."
+  },
+  "16": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dbcde70ff388b8502fe40840f54ca499c59edb17245d6079e75204efb193fbb2",
+    "word_for_word": "नद्योऽद्रि-द्रोण्यः कुञ्जानि च एतेषु ॥१६॥ — Rivers, mountains, valleys and ponds are in these.",
+    "translation": "Rivers, mountains, valleys and ponds are in these."
   },
   "17": {
-    "word_for_word": "cārayatoḥ — cārayatoḥ; satoḥ — in comp. or; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; vane — in/on forest; tasmin — in him; in that; vane — in/on forest; tayor — tayor; jihīrṣayā — by/with ifc. desire of carrying."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "192323f28f24b7855f731c3f086adbac45e518a94d7e7c11ec7839d526196128",
+    "word_for_word": "चारयतोः सतोः तद्-वने तस्मिन् वने । — They were grazing in that forest.; तयोर् जिहीर्षया ॥१७.१८॥ — with the desire to take them away.",
+    "translation": "They were grazing in that forest. with the desire to take them away."
   },
   "18": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "19": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "178e94b57882f7ecb2e661b7ce246c7c75ef4a15c952e049888ac6f0ab0222fd",
+    "word_for_word": "यथा-यथं वयो-बलाद्य्-अनुरूपं द्वन्द्वी-भूय ॥१९॥ — They became dualistic according to their age, strength and so on.",
+    "translation": "They became dualistic according to their age, strength and so on."
+  },
+  "20": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cfe74d3c717a7720ee99df4a04ba827412ee1a377dcf09f0d506d16468c34124",
+    "word_for_word": "परिवृढौ नायकौ । — The two grown-up heroes.; तत्र केचन कृष्ण-सङ्घट्टिनः कृष्ण-पक्षीयाः ॥२०.२१॥ — There are some black groups and black parties.",
+    "translation": "The two grown-up heroes. There are some black groups and black parties."
   },
   "21": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "22": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93051bfc599492c78dd5635b6552a06626982bea01f4b116e498a02f839ab739",
+    "word_for_word": "वाह्यमानाः पृष्ठे नोह्यमानाः ॥२२.२४॥ — They were carried on their backs and not carried on their backs.",
+    "translation": "They were carried on their backs and not carried on their backs."
   },
   "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "25": {
-    "word_for_word": "kṛṣṇa — Kṛṣṇa; dṛṣṭi — vision; vañcanāya — to/for cheating; avaruhyate'sminn — avaruhyate'sminn; ity — thus; avarohaṇaṃ — alighting; maryādā — (doubtful whether r. or; tataḥ — then; from that; paraṃ — higher; other; dūram — ar rom; agāt — went."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e0d2992355f6cce1e5aedd7e3cdb867038d90b4fbe8ea3fdf146a35cf6695c02",
+    "word_for_word": "कृष्ण-दृष्टि-वञ्चनाय अवरुह्यतेऽस्मिन्न् इत्य् अवरोहणं मर्यादा, ततः परं दूरम् अगात् ॥२५॥ — The limit of descending, thinking that he was descending to deceive the sight of Krishna, went far beyond that.",
+    "translation": "The limit of descending, thinking that he was descending to deceive the sight of Krishna, went far beyond that."
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "28d3095bede411f11fad6bd774da70fb1bc22dfc9a9e1659726f88fe137f5874",
+    "word_for_word": "धरणि-धरेन्द्रवद् गौरवं यस्य तन् निजम् आसुरं वपुर् आस्थितः । — He assumed his own demoniac form, which was as glorious as the lord of the earth.; पुरट-परिच्छदः सुवर्णालङ्कारः, तडिद्-द्युमान् विद्युद्-दीप्तिमान् इत्य् अलङ्कारोपमा । — The purat-cloth is a golden ornament, and the lightning-bright lightning is like an ornament.; उडुपति-वाड् इति रामोपमा । — Udupati-vad is like Rama.; उडुपतिं वहतीत्य् उडुपति-वाट् । — Udupati-vat, which carries the moon.; यदि यथोचित-स्थानेषु स्थिता विद्युतो भवन्त्य् उपरि चोडुपतिः, तदा सोऽम्बुदो यथा भाति, तद्वद् बभाव् इत्य् अर्थः ॥२६॥ — If the lightning and the moon are situated in the proper places above, then that cloud will appear as it appears, this means.",
+    "translation": "He assumed his own demoniac form, which was as glorious as the lord of the earth. The purat-cloth is a golden ornament, and the lightning-bright lightning is like an ornament. Udupati-vad is like Rama. Udupati-vat, which carries the moon. If the lightning and the moon are situated in the proper places above, then that cloud will appear as it appears, this means."
+  },
+  "27": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a0ebd3227560de5ccf6ca284a429c4f99beffe66dad040fbfdf12cea63083487",
+    "word_for_word": "अलम् अतिवेगेन । — Alam too fast.; प्रदीप्ते दृशौ यस्मिन् वपुषि, तत् । — The body in which the scene is illuminated.; भ्रु-कुटि-तट-सल्लग्ना उग्रा दंष्ट्रा यस्मिंस् तत् । — That in which the fierce fangs are attached to the banks of the eyebrows and crotches.; प्रदीप्त-दृक् भ्रु-कुटि-तटं यस्मिन्, उग्रा दंष्ट्रा यस्मिंस् तच् च तच् चेति वा । — or that which has a burning eye, a bank of eyebrows, and a fierce fang.; ज्वलन्त्यः शिखाः केशा यस्मिंस् तत् ॥२७॥ — That in which the crests of the hair are burning.",
+    "translation": "Alam too fast. The body in which the scene is illuminated. That in which the fierce fangs are attached to the banks of the eyebrows and crotches. or that which has a burning eye, a bank of eyebrows, and a fierce fang. That in which the crests of the hair are burning."
+  },
+  "28": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bedc6006f3940a01f227340bcdb391651c2e0a71cab9ca71318c0110946ba889",
+    "word_for_word": "आगत-स्मृतिर् अभय इवात्मनः सार्थं गोप-समूहं विहाय हरन्तं रिपुम् अहनत् । — The memory that had come, as if safe, struck the enemy who was taking away the herd of cows for his own sake.; यद् वा, विहाय-साकाश-मार्गेणात्मनः प्राप्तम् अर्थम् इव हरन्तम् इति । — or, as if taking away the meaning of the self obtained by the path of leaving and the sky.; वज्र-रंहसा वज्र-वेगेन मुष्टिना ॥२८॥ — With a fist as fast as a thunderbolt",
+    "translation": "The memory that had come, as if safe, struck the enemy who was taking away the herd of cows for his own sake. or, as if taking away the meaning of the self obtained by the path of leaving and the sky. With a fist as fast as a thunderbolt"
+  },
+  "29": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ecc43c90a86b4feb15f23e3b3e175b666c413add2080a99c2de7e1c10298e128",
+    "word_for_word": "अपस्मृतो गत-स्मृतिः । — Forgotten is the past-memory.; महा-रवं समीरयन् ॥२९.३०॥ — They made a great noise.",
+    "translation": "Forgotten is the past-memory. They made a great noise."
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "31": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4c649a322908dc37219a9d7f450a3b12be3a68e0ca359929140068e15e91ef7e",
+    "word_for_word": "तद्-अर्हणं प्रशंसार्हम् ॥३१.३२॥ — That merit is worthy of praise.",
+    "translation": "That merit is worthy of praise."
   },
   "32": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   }
 }

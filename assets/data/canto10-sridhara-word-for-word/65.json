@@ -1,65 +1,170 @@
 {
   "1": {
-    "word_for_word": "pañca — five; ṣaṣṭitame — in/on ( accord. to the only orm when used alone; rāmaś — rāmaś; cakre — in/on disc; wheel; gokulam — Gokula; āgataḥ — come; arrived; ramamāṇas — ramamāṇas; tu — but; gopībhiḥ — by/with gopī; cowherd womans; kālindyāḥ — of a sort of vessel; karṣaṇaṃ — pulling to and ro; madāt — from hilarity; rām — amorous play; asya — of this; of him; caritaṃ — deed; account; citraṃ — conspicuous; kālindy — kālindy; ākarṣaṇādi — ākarṣaṇādi; yat — which; that which; pauṇḍraka — the pale straw-coloured species of sugarcane; antādi — du. end and beginning; kṛṣṇasya — of Kṛṣṇa; pṛthag — in comp. or; uktam — stated; ataḥ — therefore; from this; param — afterwards."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "34cfd172ecd3468ebdf8a577d32a42154adc0225fc85e9f334b1e7603f881380",
+    "word_for_word": "पञ्च-षष्टितमे रामश् चक्रे गोकुलम् आगतः । — In the sixty-fifth century Rama arrived at Gokula; रममाणस् तु गोपीभिः कालिन्द्याः कर्षणं मदात् ॥ — While enjoying himself with the gopīs, he was intoxicated with the pull of the river Kalindi.; राम् अस्य चरितं चित्रं कालिन्द्य्-आकर्षणादि यत् । — The character of Rāma is wonderful, including the attraction of the Kalindya.; पौण्ड्रकान्तादि कृष्णस्य पृथग् उक्तम् अतः परम् ॥१॥ — Paundrakanta and others of Krishna are mentioned separately beyond this.",
+    "translation": "In the sixty-fifth century Rama arrived at Gokula While enjoying himself with the gopīs, he was intoxicated with the pull of the river Kalindi. The character of Rāma is wonderful, including the attraction of the Kalindya. Paundrakanta and others of Krishna are mentioned separately beyond this."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6551cddf0eae32c9ad698222d66c88ed101744d74a778cfa77243fdb04d66ddc",
+    "word_for_word": "आशीर्भिर् अभिनन्दितो बभूव ॥२॥ — He was greeted with blessings.",
+    "translation": "He was greeted with blessings."
   },
   "3": {
-    "word_for_word": "tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; āha — says; ciram — for a long time; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bab6748e249ee03639168fab5159bc3b87fa1474fd5c35c72c9c3659d0b5a221",
+    "word_for_word": "तद् आह---चिरम् इति ॥३॥ — That is, he argues, for a long time.",
+    "translation": "That is, he argues, for a long time."
+  },
+  "4-6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5ca3670f6bfcb67cfabffc99c0a233d11a458890c00164308062693dc37fe7b0",
+    "word_for_word": "गोप-वृद्धांश् च विधिवद् अभिवन्द्य यविष्ठैर् अभिवन्दितो बभूवेत्य् अर्थः। — This means that he greeted the elders of the cows according to the custom and was greeted by the younger ones.; अपि च यथा-वय इति ॥ — Moreover, it is as-age.; ते सर्वे स्वेषु यादवेषु तं रामम् अनामयम् आरोग्यं पप्रच्छुः । — All of them among their Yadavas inquired of Rama about his health; ते च तेन पृष्टा इति । — And they were asked by him.; कृष्णे कृष्ण-प्राप्त्य्-अर्थं संन्यस्ताखिल-राधसस् त्यक्त-सर्व-विषयाः ॥४-६॥ — In Krishna, for the sake of attaining Krishna, he has renounced all his desires and abandoned all objects.4-6",
+    "translation": "This means that he greeted the elders of the cows according to the custom and was greeted by the younger ones. Moreover, it is as-age. All of them among their Yadavas inquired of Rama about his health And they were asked by him. In Krishna, for the sake of attaining Krishna, he has renounced all his desires and abandoned all objects.4-6"
   },
   "7": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "8": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "9": {
-    "word_for_word": "rām — amorous play; asya — of this; of him; sandarśanenādṛtāḥ — sandarśanenādṛtāḥ; sādarāḥ — having or showing respects."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bf57e4fe9665ac81f7864cf881cfc97f2cd9638d28c2d371454d751fccfd5402",
+    "word_for_word": "राम् अस्य सन्दर्शनेनादृताः सादराः ॥९॥ — They were honored with reverence at the sight of Rama",
+    "translation": "They were honored with reverence at the sight of Rama"
   },
   "10": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "11": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "12": {
-    "word_for_word": "tarhi — then; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; gamane — in/on going; yuṣmābhiḥ — by/with in comp. or ors; pratibandhaḥ — connection; kiṃ — what; na — not; kṛtaḥ — done; made; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; vākya — sentence; statement; viśvāsād — viśvāsād; iti — thus; cet — if; nanu — but surely; indeed; viśvāsaḥ — confidence; kim — what; iti — thus; kṛtaḥ — done; made; tatrāhuḥ — tatrāhuḥ; kathaṃ — (in comp. or; nv — nv; iti — thus; vaktṛ — one who speaks; bahutvān — uchnesss; nānā — coin; vidhāni — vidhāni; vākya — sentence; statement; ani — the pin of an axle tree."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cde55e8660b851d358c7e56d1f97778df541c64563a7fc730ad063d43b800904",
+    "word_for_word": "तर्हि तद्-गमने युष्माभिः प्रतिबन्धः किं न कृतः, तद्-वाक्य-विश्वासाद् इति चेत् । — Why, then, did you not prevent him from going, if it were because you believed in his word?; ननु विश्वासः किम् इति कृतः ? — Indeed, what has faith been made of?; तत्राहुः---कथं न्व् इति । — There they say: How is it that nv?; वक्तृ-बहुत्वान् नाना-विधानि वाक्यानि ॥१२॥ — There are many different kinds of speakers.",
+    "translation": "Why, then, did you not prevent him from going, if it were because you believed in his word? Indeed, what has faith been made of? There they say: How is it that nv? There are many different kinds of speakers."
   },
   "13": {
-    "word_for_word": "tatra — there; in that; anyā — inexhaustible; ūcuḥ — they said; kathaṃ — (in comp. or; na — not; gṛhṇantīti — gṛhṇantīti; anyā — inexhaustible; ūcuḥ — they said; gṛhṇanti — gṛhṇanti; vā — or; iti — thus; citrakathasya — of ull of varied converse; citra — conspicuous; kathā — narration; kathana — telling; kovidasya — of experienced; kiṃ — what; ca — and; sundaraṃ — (perhaps or =; smitaṃ — smiled; yasmiṃs — yasmiṃs; tena — by him; by that; avalokana — seeing; ina — ( r. √; ucchvasitaḥ — heaving; kṣubhito — kṣubhito; yaḥ — who; which; smaras — smaras; tena — by him; by that; aturāḥ — ot liberals."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a66cc554b885f9ba71f0e6be65e8292744782fd3ed28f59ba4044160d1d3afee",
+    "word_for_word": "तत्रान्या ऊचुः---कथं न गृह्णन्तीति । — Others there said, \"How come they don't take it?\"; अन्या ऊचुः---गृह्णन्ति वा इति । — Others said, \"Will they take it?\"; चित्रकथस्य चित्र-कथा-कथन-कोविदस्य । — He is an expert in picture storytelling and picture storytelling.; किं च सुन्दरं स्मितं यस्मिंस् तेनावलोकनेनोच्छ्वसितः क्षुभितो यः स्मरस् तेनातुराः ॥१३॥ — What to speak of the beautiful smile in which they were afflicted by the memory which was shaken by the breath of his gaze",
+    "translation": "Others there said, \"How come they don't take it?\" Others said, \"Will they take it?\" He is an expert in picture storytelling and picture storytelling. What to speak of the beautiful smile in which they were afflicted by the memory which was shaken by the breath of his gaze"
   },
   "14": {
-    "word_for_word": "anyā — inexhaustible; ūcuḥ — they said; kiṃ — what; na — not; iti — thus; klaṣ — klaṣ; tāvat — ( r. 2; tat — that; tasya — of him; of that; cāsmākaṃ — cāsmākaṃ; ca — and; yātv — yātv; eva — only; indeed; kiṃ — what; tu — but; tasya — of him; of that; sukhena — by/with happiness; asmākaṃ — our; tu — but; duḥsvenety — duḥsvenety; eta — come ear; avān — to breathe or inhale; eva — only; indeed; viśeṣa — specific distinction; iti — thus; dhvanitam — caused to sound."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "def405c1b7a6da1a200f3199a9f34dbd8d0abbe40043db87670e52d9d0201c11",
+    "word_for_word": "अन्या ऊचुः---किं न इति । — Others said, \"Why not?\"; क्लष् तावत् तत् तस्य चास्माकं च यात्व् एव, किं तु तस्य सुखेन । — The trouble is that it must go to him and us, but with his happiness.; अस्माकं तु दुःस्वेनेत्य् एतावान् एव विशेष इति ध्वनितम् ॥१४॥ — But by our misfortune it is implied that this is the only difference.",
+    "translation": "Others said, \"Why not?\" The trouble is that it must go to him and us, but with his happiness. But by our misfortune it is implied that this is the only difference."
   },
   "15": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "16": {
-    "word_for_word": "nānā — coin; vidheṣv — vidheṣv; anunayeṣu — anunayeṣu; kovidaḥ — experienced."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c9e66f3aa8966ae85f2f998f135731e3e0fb61ddfca2357cd5487c2be35cb252",
+    "word_for_word": "नाना-विधेष्व् अनुनयेषु कोविदः ॥१६॥ — He is skilled in various kinds of persuasion.",
+    "translation": "He is skilled in various kinds of persuasion."
+  },
+  "17": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "385f30599ec3d632fc57f2d74941031f408df6816535d34a5963727cba86e4c7",
+    "word_for_word": "मधुं चैत्रम् । — Honey is the month of Chaitra.; माधवं वैशाखम् । — Madhavam Vaishakham.; गोपीनां रतिम् इति श्री-कृष्ण-क्रीडा-समयेऽनुत्पन्नानाम् अतिबालानाम् अन्यासाम् इत्य् अभियुक्त-प्रसिद्धिः ॥१७॥ — It is well known that the gopīs are attracted to others who are very young and who are not born at the time of the pastimes of Lord Kṛṣṇa.",
+    "translation": "Honey is the month of Chaitra. Madhavam Vaishakham. It is well known that the gopīs are attracted to others who are very young and who are not born at the time of the pastimes of Lord Kṛṣṇa."
   },
   "18": {
-    "word_for_word": "pūrṇa — illed; candrasya — of moon; kalābhir — kalābhir; marīcibhir — marīcibhir; āmṛṣṭe — in/on wiped off; ujjvale — in/on blazing up; kaumudī — oonlight; gandha — smell; vāyunā — by/with air; kumudvatīnāṃ — of an assemblage of lotusess; gandha — smell; vātena — by/with blown; sevite — in/on dwelt in; yad — who; vā — or; kaumudī — oonlight; śabdena — by/with word; sound; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; vikāsitāni — vikāsitāni; kumudā — a orm of; ani — the pin of an axle tree; lakṣyante — are being to perceive; kumuda — kumuda; gandha — smell; vātenety — vātenety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "014b802092145a3d12906f6c74f9845593ebeecaba477dcdadf0607b58576b8d",
+    "word_for_word": "पूर्ण-चन्द्रस्य कलाभिर् मरीचिभिर् आमृष्टे उज्ज्वले । — The brightness of the full moon was covered with the arts of pepper.; कौमुदी-गन्ध-वायुना कुमुद्वतीनां गन्ध-वातेन सेविते । — The air was filled with the fragrance of the lily of the valley and the fragrance of the lilies.; यद् वा कौमुदी-शब्देन तद्-विकासितानि कुमुदानि लक्ष्यन्ते । — Or whatever the word kaumudi means, the lilies that have grown from it are noticed.; कुमुद-गन्ध-वातेनेत्य् अर्थः ॥१८॥ — by the breeze of the lily-scent, that is, by the wind.",
+    "translation": "The brightness of the full moon was covered with the arts of pepper. The air was filled with the fragrance of the lily of the valley and the fragrance of the lilies. Or whatever the word kaumudi means, the lilies that have grown from it are noticed. by the breeze of the lily-scent, that is, by the wind."
   },
   "19-23": {
-    "word_for_word": "vāruṇī — vāruṇī; sudhayā — by/with (√ 1; sahotpannā — sahotpannā; madirā — madirā; kṣībo — kṣībo; mattaḥ — col. 3; sveda — sweating; eva — only; indeed; prāleyaṃ — produced by elting; himaṃ — cold; tena — by him; by that; bhūṣitam — bhūṣitam; matto'yam — matto'yam; ity — thus; ana — {{Lbody=4781}}; ādṛtya — venerable; anāgata — ot come; am — quickly; āpagāṃ — a river; nadīm — river."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5954eb85cba4858470fef89d9ef8b7d1992d7096a734df8615508b7c3636acc4",
+    "word_for_word": "वारुणी सुधया सहोत्पन्ना मदिरा ॥१९-२०॥ — Varuni is the wine produced with nectar (19-20).; क्षीबो मत्तः ॥२१॥ — I’m drunk and I’m drunk.; स्वेद एव प्रालेयं हिमं तेन भूषितम् ॥२२॥ — Sweat is the melting pot and the snow is adorned with it.; मत्तोऽयम् इत्य् अनादृत्यानागताम् आपगां नदीम् ॥२३॥ — He ignored the river that flowed from him saying 'This is from me'",
+    "translation": "Varuni is the wine produced with nectar (19-20). I’m drunk and I’m drunk. Sweat is the melting pot and the snow is adorned with it. He ignored the river that flowed from him saying 'This is from me'"
   },
   "24-25": {
-    "word_for_word": "āhutā — āhutā; āhūtā — āhūtā; yady — yady; asmān — a om. base rom which some orms of are ormeds; nāgacchasi — nāgacchasi; tasmāt — therefore; from that; neṣye — neṣye; gamayiṣyāmi — gamayiṣyāmi; cakitā — a etre of 4 × 16 syllables; kampitā — kampitā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "eb29da59d3fe6c28425221f0a00352dce80ce9728614fc2be362f0d17cf57794",
+    "word_for_word": "आहुता आहूता यद्य् अस्मान् नागच्छसि तस्मात् । — If you’re invited and invited, you don’t come to us, that’s why.; नेष्ये गमयिष्यामि ॥२४॥ — I’ll take it and I’ll go.; चकिता कम्पिता ॥२५॥ — surprised and trembling.",
+    "translation": "If you’re invited and invited, you don’t come to us, that’s why. I’ll take it and I’ll go. surprised and trembling."
   },
   "26": {
-    "word_for_word": "ekāṃśena — by/with a single; śeṣākhyena — śeṣākhyena."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b0eda479c5abf73e84fee3c631fb85ad1ed8e074ec387266ea609db2e96b3471",
+    "word_for_word": "एकांशेन शेषाख्येन ॥२६॥ — by one part called the remainder.",
+    "translation": "by one part called the remainder."
   },
   "27-28": {
-    "word_for_word": "vijagāha — vijagāha; avagāhanaṃ — immersion; kṛtavān — kṛtavān."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5917c2b8eee495ca3a37a584dd1658d1db025ae6389b0e94123190e086d0b19c",
+    "word_for_word": "विजगाह अवगाहनं कृतवान् ॥२७॥ — He dived and took a dip.",
+    "translation": "He dived and took a dip."
   },
   "29": {
-    "word_for_word": "uttīrṇāya — uttīrṇāya; nirgatāyāsitāmbarādīni — nirgatāyāsitāmbarādīni; kāntir — kāntir; dadau — gave; kāntir — kāntir; lakṣmīḥ — rarely; yathoktaṃ — as said or told; vaiṣṇave — in/on Vaiṣṇava; varuṇa — ‘All-enveloping Sky’; prahitā — prahitā; cāsmi — cāsmi; māla — of a district; am — quickly; amlāna — unwithered; paṅkajām — paṅkajām; samudra — ocean; agre — before; in front; tathā — so; in that way; vastre — in/on (or g; nīle — in/on ( or; lakṣmīr — lakṣmīr; ayacchata — ayacchata; iti — thus; hari — Hari; vaṃśe — in the dynasty; ca — and; balaṃ — strength; prati — toward; regarding; lakṣmī — rarely; vākyam — sentence; statement; jāta — born; rūpa — form; mayaṃ — of an; caikaṃ — caikaṃ; kuṇḍalaṃ — ( ifc; vajra — ‘the hard or ighty one’; bhūṣaṇam — decorating; ādi — beginning; and so on; padmaṃ — lotus; ca — and; padmākhyaṃ — padmākhyaṃ; divyaṃ — to long or heaven; śravaṇa — hearing; bhūṣaṇam — decorating; devemāṃ — devemāṃ; pratigṛhṇīṣva — pratigṛhṇīṣva; paura — ‘ iller; aṇīṃ — {{Lbody=2395}}; bhūṣaṇa — decorating; kriyām — doing; ity-ādi — and so on."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0275d1cab53f9794a9bb2bb48cebf8beccc7287697952b9497201654c5a147a1",
+    "word_for_word": "उत्तीर्णाय निर्गतायासिताम्बरादीनि कान्तिर् ददौ । — When he crossed the river, Kanti gave him black clothes and other things.; कान्तिर् लक्ष्मीः । — Kanti is the Lakshmi.; यथोक्तं वैष्णवे--- — As stated in Vaishnava; > वरुण-प्रहिता चास्मि मालाम् अम्लान-पङ्कजाम् । — > I am also sent by Varuna with a garland of sour lotuses.; >\n> समुद्राग्रे तथा वस्त्रे नीले लक्ष्मीर् अयच्छत ॥ — >\n> He gave her the ocean and the blue clothes and the goddess of fortune.; [वि।पु। — [V.P.; ५.२५.१६] > इति । — 5.25.16] >; हरि-वंशे च बलं प्रति लक्ष्मी-वाक्यम्--- — And in the Hari dynasty, Lakshmi's words to Bala; > जात-रूप-मयं चैकं कुण्डलं वज्र-भूषणम् । — > One earring made of gold and silver and adorned with diamonds.; >\n> आदि-पद्मं च पद्माख्यं दिव्यं श्रवण-भूषणम् । — >\n> The original lotus, called the lotus, is the divine ornament of the ears.; >\n> देवेमां प्रतिगृह्णीष्व पौराणीं भूषण-क्रियाम् ॥ — >\n> O goddess, please accept this ancient ornamental ritual.; इत्य्-आदि ॥२९॥ — It-etc.",
+    "translation": "When he crossed the river, Kanti gave him black clothes and other things. Kanti is the Lakshmi. As stated in Vaishnava > I am also sent by Varuna with a garland of sour lotuses. >\n> He gave her the ocean and the blue clothes and the goddess of fortune. [V.P. 5.25.16] > And in the Hari dynasty, Lakshmi's words to Bala > One earring made of gold and silver and adorned with diamonds. >\n> The original lotus, called the lotus, is the divine ornament of the ears. >\n> O goddess, please accept this ancient ornamental ritual. It-etc."
   },
   "30": {
-    "word_for_word": "vasitva — vasitva; paridhāya — train; āmucya — āmucya; kaṇṭhe — in/on the throat; nidhāya — having ixed or placed in or on; candanādibhir — candanādibhir; āliptaḥ — anointed."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b9c1c5e549957036d98b5dffdf341b698d79bd0456054b1ab4cec1b96295f2e0",
+    "word_for_word": "वसित्व परिधाय । — dressed in residence.; आमुच्य कण्ठे निधाय । — He untied it and put it around his neck.; चन्दनादिभिर् आलिप्तः ॥३०-३१॥ — smeared with sandalwood and other ointments.30-3",
+    "translation": "dressed in residence. He untied it and put it around his neck. smeared with sandalwood and other ointments.30-3"
   },
   "31": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "32": {
-    "word_for_word": "eka — one; iva — like; as if; ekaiva — ekaiva; niśā — ight; yathā — as; just as; tathā — so; in that way; mādhuryair — mādhuryair; vilāsaiḥ — by/with shining orths."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "20a83f5bb0831448c11f0047c8f185ba2385cfb5e0961811336a1286bcf6d15b",
+    "word_for_word": "एकेव एकैव निशा यथा तथा । — There is only one night, as it is.; माधुर्यैर् विलासैः ॥३२॥ — sweetness and luxury.",
+    "translation": "There is only one night, as it is. sweetness and luxury."
   }
 }

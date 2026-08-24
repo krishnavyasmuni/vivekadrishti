@@ -1,110 +1,268 @@
 {
   "1": {
-    "word_for_word": "ṣaḍ — in comp. or; yuk — or badly; ṣaṣṭitame — in/on ( accord. to the only orm when used alone; kāśīṃ — Benares; gatvā — having gone; ahan — the base of the weak and some other cases of; pauṇḍrakaṃ — the pale straw-coloured species of sugarcane; hariḥ — Hari; tan — in comp. or; mitraṃ — friend; ca — and; tato — in comp. or; vṛttaṃ — turned; sudakṣiṇa — having an excellent right hand; vadhādikam — vadhādikam."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "58708438c96855ff721d9612b7fcb73709b32ac183b02c0703b47548a272b1ab",
+    "word_for_word": "षड्-युक्-षष्टितमे काशीं गत्वाहन् पौण्ड्रकं हरिः । — In the sixty-sixth year of the yuga, Lord Hari went to Kāśī and killed Paundraka.; तन्-मित्रं च ततो वृत्तं सुदक्षिण-वधादिकम् ॥१॥ — That friend and then the story of the killing of Sudakshina.",
+    "translation": "In the sixty-sixth year of the yuga, Lord Hari went to Kāśī and killed Paundraka. That friend and then the story of the killing of Sudakshina."
   },
   "2": {
-    "word_for_word": "prastībhitaḥ — prastībhitaḥ; stutyā — a ic. ragrant bark; protsāhitaḥ — incited; bālair — bālair; ajñaḥ — ot knowing."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "02a8b36d1b2f2d4f958507fc383d875e9910b97ec5fe6be0a507cc680102ea03",
+    "word_for_word": "प्रस्तीभितः स्तुत्या प्रोत्साहितः । — He was presented and encouraged by praise.; बालैर् अज्ञः ॥२॥ — Ignorant of children.",
+    "translation": "He was presented and encouraged by praise. Ignorant of children."
   },
   "3": {
-    "word_for_word": "bālakṛto — bālakṛto; nṛpo — nṛpo; bālaina — bālaina; patvena — patvena; bālair — bālair; nṛpatvena — by/with royalty; krīḍa — playing; ayāṃ — in this anner; parikalpitaḥ — settled."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0e7a0e8f4fee8c4b48acdf234bffd0973db1801baab5af9dc45c5240de435a72",
+    "word_for_word": "बालकृतो नृपो बालैन पत्वेन बालैर् नृपत्वेन क्रीडायां परिकल्पितः ॥३-७॥ — A king made by a child is designed by a child to fall and by children to be a king in the game (3-7).",
+    "translation": "A king made by a child is designed by a child to fall and by children to be a king in the game (3-7)."
   },
   "4": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "6": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "7": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "8": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; mūḍha — stupefied; utsrakṣye — utsrakṣye; tvayi — tvayi; prakṣepsyāmi — prakṣepsyāmi; yaiḥ — by/with the 1st semivowels; saha — with; tvam — you; evaṃ — thus; in this way; vikatthase — vikatthase; teṣv — teṣv; apīty — apīty; arthaḥ — meaning; purpose; yad — who; vā — or; yaiḥ — by/with the 1st semivowels; kṛtrimaiḥ — by/with ade artificiallys; sudarśanādibhis — sudarśanādibhis; tvam — you; evaṃ — thus; in this way; ślāghase — ślāghase; tāny — tāny; utsrakṣye — utsrakṣye; tyājayiṣyāmīty — tyājayiṣyāmīty; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f5bf78d39f747fd7f277f44ba6ea16d22783f970ceda78fdf8b09241ebb1e505",
+    "word_for_word": "हे मूढ ! — O fool!; उत्स्रक्ष्ये त्वयि प्रक्षेप्स्यामि । — I’ll throw it out and throw it at you.; यैः सह त्वम् एवं विकत्थसे तेष्व् अपीत्य् अर्थः । — This means that even those with whom you are bragging like this.; यद् वा, यैः कृत्रिमैः सुदर्शनादिभिस् त्वम् एवं श्लाघसे, तान्य् उत्स्रक्ष्ये त्याजयिष्यामीत्य् अर्थः ॥८॥ — That is to say, I shall throw away and abandon those artificial Sudarsanas and others with whom you thus boast.",
+    "translation": "O fool! I’ll throw it out and throw it at you. This means that even those with whom you are bragging like this. That is to say, I shall throw away and abandon those artificial Sudarsanas and others with whom you thus boast."
+  },
+  "9": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dfb2c2359e26133349aa8369442b5c9230e74af3d3246273b6865c90cedcfda1",
+    "word_for_word": "\\\"मां शरणम् एहि\\\" [१०.६६.६] इत्य् अस्योत्तरम् । — \\\"Take refuge in me\\\" [10.66.6] is the answer.; मुखम् इति । — It’s the face.; वटाः कङ्कादिवत्ंक्पक्षि-विशेषाः । — Bananas are a species of bird like crows.; तत्र तदा शुनां शरणम् आश्रयो भविता\\ऽसि ॥९॥ — There then you will be the refuge of the dogs.",
+    "translation": "\\\"Take refuge in me\\\" [10.66.6] is the answer. It’s the face. Bananas are a species of bird like crows. There then you will be the refuge of the dogs."
   },
   "10": {
-    "word_for_word": "kāśīm — Benares; iti — thus; pauṇḍrakasya — of the pale straw-coloured species of sugarcane; api — also; tadā — then; mitra — friend; pūre\\'vasthānāt — pūre\\'vasthānāt."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ca5b70714e62d7e4bd13d6dce107fd8498ca00510e032820f4b81dd3b95bcb8c",
+    "word_for_word": "काशीम् इति । — Kashi is the name.; पौण्ड्रकस्यापि तदा मित्र-पूरे\\ऽवस्थानात् ॥१०-११॥ — Paundraka also then from his position in Mitra-pura.10-1",
+    "translation": "Kashi is the name. Paundraka also then from his position in Mitra-pura.10-1"
   },
   "11": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "12": {
-    "word_for_word": "pāṇigrāhaḥ — id; pṛṣṭato — pṛṣṭato; rakṣakaḥ — = 1."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "37bb725f9087ecae9a3f61d53c3925a5ce8a50076d6256c132ae9f281c9a574d",
+    "word_for_word": "पाणिग्राहः पृष्टतो रक्षकः ॥१२-१३॥ — The hand-holder is the protector when asked.12-1",
+    "translation": "The hand-holder is the protector when asked.12-1"
   },
   "13": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "14": {
-    "word_for_word": "garuḍaḥ — of a ythical bird (chief of…; kṛtrimo — kṛtrimo; dhvaje — in/on ( only; yasya — whose; of which; tam — him; that; amūlyo\\'narghyo — amūlyo\\'narghyo; maulir — maulir; ābharaṇaṃ — decorating; ca — and; yasya — whose; of which; tam — him; that."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e916fdeb3ba3731a17123c779b414a86cf68e0ae5a8d24caa0ed7f78c3110fcd",
+    "word_for_word": "गरुडः कृत्रिमो ध्वजे यस्य तम् । — The one whose flag has an artificial eagle.; अमूल्यो\\ऽनर्घ्यो मौलिर् आभरणं च यस्य तम् ॥१४-१६॥ — He whose crown and ornaments are priceless and inexpensive (14-16).",
+    "translation": "The one whose flag has an artificial eagle. He whose crown and ornaments are priceless and inexpensive (14-16)."
   },
   "15": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "16": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "17": {
-    "word_for_word": "gaja — an elephant; syandanādi — syandanādi; caturaṅga — having 4 limbs; bala — strength; marditavān — marditavān; pṛthak — widely apart; prajāś — prajāś; caturvidhaṃ — ourfold; bhūta — become; grāmaṃ — village; yathā — as; just as; yugāntāgnir — yugāntāgnir; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7026e7570ed2497120fe6076414341ff99bbac41272addf5ba304463d587c17b",
+    "word_for_word": "गज-स्यन्दनादि-चतुरङ्ग-बल-मर्दितवान् । — He crushed the forces of elephants, chariots and other four divisions.; पृथक् प्रजाश् चतुर्विधं भूत-ग्रामं यथा युगान्ताग्निर् इति ॥१७॥ — The separate creatures are the fourfold group of beings, just as the fire at the end of the ages is the same.",
+    "translation": "He crushed the forces of elephants, chariots and other four divisions. The separate creatures are the fourfold group of beings, just as the fire at the end of the ages is the same."
   },
   "18": {
-    "word_for_word": "āyodhanaṃ — war; raṇa — delight; sthānam — the act of standing; ariṇā — ariṇā; cakreṇa — cakreṇa; citam — piled up; ākrīḍanam — ākrīḍanam; iva — like; as if; kalpānta — the end of a; rudrasya — of crying; krīḍā — play; pastime; sthānam — the act of standing; iva — like; as if."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "23e2bfefb4b069a2bc56910798209b1e0ec8863aff17e1f9a93804ed420c81ac",
+    "word_for_word": "आयोधनं रण-स्थानम् । — Ayodhana is a battlefield.; अरिणा चक्रेण चितम् आक्रीडनम् इव कल्पान्त रुद्रस्य क्रीडा-स्थानम् इव ॥१८-२०॥ — It was like a playground covered with the wheel of the enemy and like the playground of Rudra at the end of the kalpa (18-20).",
+    "translation": "Ayodhana is a battlefield. It was like a playground covered with the wheel of the enemy and like the playground of Rudra at the end of the kalpa (18-20)."
   },
   "19": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "20": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "21": {
-    "word_for_word": "gireḥ — of mountain; śṛṅgaṃ — (perhaps connected with; yatha — or before and =; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f17d5df426c71cd494dde688a192cbd5183baf0bae4158571b7e88b549ce9cdd",
+    "word_for_word": "गिरेः शृङ्गं यथेति ॥२१-२४॥ — as the peak of a mountain.21-2",
+    "translation": "as the peak of a mountain.21-2"
   },
   "22": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "25": {
-    "word_for_word": "prathamaṃ — first; kim — what; idam — this; iti — thus; paścād — in comp. or; vaktram — ‘organ of speech’; iti — thus; vibhāvya — to be clearly perceived or observed; kasya — whose; of whom; ceti — in/on if; saṃśayaṃ — saṃśayaṃ; kṛtavanta — kṛtavanta; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "722fe9c24e3a56bceba2302b51e678eb0326f97a764aa640bebb156dcd1a55cd",
+    "word_for_word": "प्रथमं किम् इदम् इति पश्चाद्-वक्त्रम् इति विभाव्य कस्य चेति संशयं कृतवन्त इति ॥२५-२६॥ — First they wondered what this was and then they thought it was his face and doubted whose it was (25-26).",
+    "translation": "First they wondered what this was and then they thought it was his face and doubted whose it was (25-26)."
   },
   "27": {
-    "word_for_word": "saṃsthā — Ā. (; vidhim — a worshipper; uttarakriyām — the last action; apacitiṃ — honouring; niṣkṛtim — complete development."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e0b9c435b775c8c84eb6652e37518b2c1f49c61703d4d8e0c4ed9845c4399d57",
+    "word_for_word": "संस्था-विधिम् उत्तरक्रियाम् । — The institution-method is the post-action.; अपचितिं निष्कृतिम् ॥२७॥ — Apacitim nishkritim.",
+    "translation": "The institution-method is the post-action. Apacitim nishkritim."
   },
   "28": {
-    "word_for_word": "ātmanābhisandhāya — ātmanābhisandhāya; buddhyā — buddhyā; vyavasya — vyavasya; sudakṣiṇo\\'ty — sudakṣiṇo\\'ty; udāraḥ — high."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "eecb6511b84bcfe200c9ebd299124db3a3a0275199ab9bfa0bef2465d1b60b38",
+    "word_for_word": "आत्मनाभिसन्धाय बुद्ध्या व्यवस्य । — He decided to focus on himself and his intellect.; सुदक्षिणो\\ऽत्य् उदारः ॥२८॥ — He is very generous and generous.",
+    "translation": "He decided to focus on himself and his intellect. He is very generous and generous."
   },
   "29": {
-    "word_for_word": "avimukto — avimukto; mahā — great; devaḥ — deity; god; avimuktaṃ — ot loosened; hi — indeed; because; me — cl. 1. Ā. ( ep. also P; gṛham — house; iti — thus; hari — Hari; vaṃśe — in the dynasty; pārvatīṃ — pārvatīṃ; śivaḥ — (according to; so — (usually with prepositions; vimukte — vimukte; pratiṣṭhitaḥ — standing; iti — thus; jābāla — =; śruteś — śruteś; ca — and; kutra — where? whereto? in which case? when?; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; avimuktam — ot loosened; ity — thus; ākāṅkṣāyām — in/on desire; varaṇāyāṃnāsyāṃ — varaṇāyāṃnāsyāṃ; ca — and; madhye — in the middle; among; pratiṣṭhitaḥ — standing; iti — thus; śruta — heard; ir — cl. 6. P. , to go; vārāṇasī — the city Benares ( ore properly written Banāras; kṣetraṃ — landed property; labhyate — is being obtain; tatrasthatvāc — tatrasthatvāc; chivo\\'py — chivo\\'py; avimukta — ot loosened; ity — thus; ucyate — is said; tasmai — tasmai; sudakṣiṇāya — to/for having an excellent right hand; sa — the last of the three sibilants; sudakṣiṇaḥ — having an excellent right hand; ity — thus; artha — meaning; purpose; iti — thus; vara — ‘environing’; śabdasya — of word; sound; jāmātrādy — jāmātrādy; arthakatvāditthaṃ — arthakatvāditthaṃ; vyākhyeyam — to be explained or expounded; iti — thus; bhāvaḥ — sense; purport; prīta — pleased; iti — thus; tat — that; pratīty — pratīty; apekṣayā — with regard to; avimuktas — avimuktas; tatratyāvimuktākhya — tatratyāvimuktākhya; kṣetrādhiṣṭhātṛtvena — kṣetrādhiṣṭhātṛtvena; tat — that; sañjñaḥ — sañjñaḥ; avimukte — in/on ot loosened; mahā — great; kṣetre — in/on landed property; bhāṣitas — bhāṣitas; tena — by him; by that; śaṅkarā — śaṅkarā; iti — thus; vaiṣṇava — Vaiṣṇava; ukteḥ — of sentence; bhagavān — the Supreme Lord; iti — thus; sarvajñatvād — sarvajñatvād; eva — only; indeed; savyāja — artful; varaṃ — ‘environing’; dada — ‘giving’; av — cl. 1. P. ( Imper. 2. sg; iti — thus; bhāvaḥ — sense; purport; vadhasya — of killing; upa — towards; ayam — this; he; eva — only; indeed; na — not; tu — but; vadham — killing; iti — thus; tadānīm — at that time; api — also; buddhi — intelligence; vibhraṃśaṃ — diarrhoea; cakāra — did; made; iti — thus; lakṣyate — is being to perceive; brāhmaṇaḥ — brāhmaṇa; samam — in like anner; iti — thus; tasya — of him; of that; yajñasya — of worship; tan — in comp. or; mūlatvāt — from the state of being a root or oundation or source; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; bhakte — in/on devotee; tu — but; sa — the last of the three sibilants; na — not; dviṣyāt — dviṣyāt; ete — these; ca — and; brāhmaṇā — brāhmaṇā; na — not; bhavantīti — bhavantīti; bhāvaḥ — sense; purport."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e4142af3a0aeab8e48ba1773e050f421f38f7646c7d6575837ebf9daa4146c03",
+    "word_for_word": "अविमुक्तो महा-देवः । — The unredeemed Maha-deva.; अविमुक्तं हि मे गृहम् इति हरि-वंशे पार्वतीं शिवः । — Lord Śiva, in the Hari dynasty, said to Parvatī, “My house is not liberated.”; सो विमुक्ते प्रतिष्ठितः इति जाबाल-श्रुतेश् च कुत्र तद् अविमुक्तम् इत्य् आकाङ्क्षायाम् । — He is established in the liberated, and in the desire to know where that which is not liberated is from the scriptures of Jabal.; वरणायांनास्यां च मध्ये प्रतिष्ठितः इति श्रुतेर् वाराणसी-क्षेत्रं लभ्यते तत्रस्थत्वाच्-छिवो\\ऽप्य् अविमुक्त इत्य् उच्यते । — According to the scriptures, Varanasi is situated in the middle of this city, and because it is situated there, it is said that even Shiva is not freed.; तस्मै सुदक्षिणाय । — He gave him a good gift.; स सुदक्षिणः । — He’s a very generous man.; इत्य् अर्थ इति-वर-शब्दस्य जामात्राद्य् अर्थकत्वादित्थं व्याख्येयम् इति भावः । — This means that the word vara should be interpreted in this way because it means son-in-law and so on.; प्रीत इति तत्-प्रतीत्य् अपेक्षया अविमुक्तस् तत्रत्याविमुक्ताख्य-क्षेत्राधिष्ठातृत्वेन तत्-सञ्ज्ञः । — Being pleased, he is not liberated from the perception of that, and is therefore known as the holder of the field called liberated.; अविमुक्ते महा-क्षेत्रे भाषितस् तेन शङ्करा इति वैष्णवोक्तेः । — He was spoken to in the unreleased great field, and he was called Shankara, according to the Vaishnavas.; भगवान् इति---सर्वज्ञत्वाद् एव सव्याज वरं ददाव् इति भावः । — This means that the Lord gave the boon with interest because He knew everything.; वधस्योपायम् एव न तु वधम् इति तदानीम् अपि बुद्धि-विभ्रंशं चकारेति लक्ष्यते । — It is noticeable that even then he confused his mind by thinking that it was the means of killing and not killing.; ब्राह्मणः समम् इति तस्य यज्ञस्य तन्-मूलत्वात्-तद्-भक्ते तु स न द्विष्यात्, एते च ब्राह्मणा न भवन्तीति भावः ॥२९॥ — A Brahmin is equal to him, since that sacrifice is the root of that sacrifice, but he should not hate his devotee, and these do not become Brahmins, this means.",
+    "translation": "The unredeemed Maha-deva. Lord Śiva, in the Hari dynasty, said to Parvatī, “My house is not liberated.” He is established in the liberated, and in the desire to know where that which is not liberated is from the scriptures of Jabal. According to the scriptures, Varanasi is situated in the middle of this city, and because it is situated there, it is said that even Shiva is not freed. He gave him a good gift. He’s a very generous man. This means that the word vara should be interpreted in this way because it means son-in-law and so on. Being pleased, he is not liberated from the perception of that, and is therefore known as the holder of the field called liberated. He was spoken to in the unreleased great field, and he was called Shankara, according to the Vaishnavas. This means that the Lord gave the boon with interest because He knew everything. It is noticeable that even then he confused his mind by thinking that it was the means of killing and not killing. A Brahmin is equal to him, since that sacrifice is the root of that sacrifice, but he should not hate his devotee, and these do not become Brahmins, this means."
   },
   "30": {
-    "word_for_word": "dakṣiṇāgnimanvāhāryanāmānam — dakṣiṇāgnimanvāhāryanāmānam; agnimīḍe — agnimīḍe; purohitam — placed oremost or in ront; yajñasya — of worship; devaṃ — deity; god; mukhyaṃ — principal; kṛṣṇasya — of Kṛṣṇa; brahmaṇyatvā — having om. P. to pray; at — a prefix said to imply ‘surprise’; namo — in comp. or; brahma — Brahman; Absolute; devāya — only p. =; iti — thus; mantrāt — from (rarely; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; brahmaṇyāgraṇīr — brahmaṇyāgraṇīr; bhavān — worldly existence; becomings; iti — thus; vasudevayā — by/with of a daughter of; gopa — cowherd; ākhyāne — in/on telling; munyukteś — munyukteś; ca — and."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "461d82e30b7de5d1e92e83f47a76231244d4b7bc955eceb3fb914460cff4e911",
+    "word_for_word": "दक्षिणाग्निमन्वाहार्यनामानम् । — The southern fire is called Manvaharya.; अग्निमीडे पुरोहितम्, यज्ञस्य देवं मुख्यं कृष्णस्य ब्रह्मण्यत्वात्, नमो ब्रह्म-देवाय इति मन्त्रात् । — I worship the fire, the priest, the chief deity of the sacrifice, since Lord Kṛṣṇa is a Brahmin, and I offer my obeisances to the Brahman-god.; तद्-ब्रह्मण्याग्रणीर् भवान् इति वसुदेवया गोपाख्याने मुन्युक्तेश् च ॥३०॥ — That is why you are the foremost among the Brahmins, as stated by Vasudeva in the story of the cowherd men and by the sage.",
+    "translation": "The southern fire is called Manvaharya. I worship the fire, the priest, the chief deity of the sacrifice, since Lord Kṛṣṇa is a Brahmin, and I offer my obeisances to the Brahman-god. That is why you are the foremost among the Brahmins, as stated by Vasudeva in the story of the cowherd men and by the sage."
   },
   "31": {
-    "word_for_word": "viparītaḥ — turned round; saṅkalpa — saṅkalpa; nāśakaḥ — destroying; abhicaran — abhicaran; iti — thus; śatru — enemy; vadhakāmaḥ — desirous of killing; tathaivāha — tathaivāha; brahmaṇyam — om. P. to pray; iti — thus; brahmaṇye — in/on om. P. to pray; tu — but; na — not; kiñcit — kiñcit; kariṣyatīti — kariṣyatīti; brahmaṇyadeve — in/on of; tu — but; tasmin — in him; in that; prayojitaḥ — prayojitaḥ; san — in comp. or; prayojayitṝṇām — prayojayitṝṇām; hala — a plough; antaṃ — end; brahmavarcasam — divine glory or splendour; iti — thus; brāhmaṇya — it or Brāhmans; ādikaṃ — and so on; nāśayan — nāśayan; dehanāśam — dehanāśam; api — also; kariṣyatīti — kariṣyatīti; śrī — Śrī; sacred; glorious; rudrābhiprāyaḥ — rudrābhiprāyaḥ; kvacid — kvacid; brāhmaṇānām — of brāhmaṇas; api — also; kṛṣṇa — Kṛṣṇa; namanādi — namanādi; śravaṇāt — from hearing; kṛṣṇasya — of Kṛṣṇa; vipra — stirred or excited; namaskāra — the exclamation ‘ ’; jighṛkṣor — jighṛkṣor; brahmaṇyatā — riendliness towards Brāhmans; naivāstīti — naivāstīti; sudakṣiṇa — having an excellent right hand; ada — chiefly ifc; ir — cl. 6. P. , to go; abhiprāyaḥ — intended sense."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3c46cdf2ef1bdba489b6ced9f51aa4a166236ed00be685124076e0f9198212f1",
+    "word_for_word": "विपरीतः सङ्कल्प-नाशकः । — The opposite is a destroyer of resolve.; अभिचरन् इति शत्रु-वधकामः। — Abhicharan is the desire to kill the enemy.; तथैवाह---ब्रह्मण्यम् इति । — Similarly, he says, \"Brahmanism.; ब्रह्मण्ये तु न किञ्चित्-करिष्यतीति ब्रह्मण्यदेवे तु तस्मिन्-प्रयोजितः सन्-प्रयोजयितॄणाम् हलान्तं ब्रह्मवर्चसम् इति ब्राह्मण्यादिकं नाशयन्-देहनाशम् अपि करिष्यतीति श्री-रुद्राभिप्रायः, — But in the Brahman, he will do nothing, but in the Brahman-god, being engaged in it, he will destroy the Brahma-varchas, the halanta of the engagers, and even destroy the body, as Sri Rudra means,; क्वचिद्\n-ब्राह्मणानाम् अपि कृष्ण-नमनादि-श्रवणात्-कृष्णस्य\nविप्र-नमस्कार-जिघृक्षोर्-ब्रह्मण्यता नैवास्तीति सुदक्षिणादेर् अभिप्रायः — somewhere\n-Even the Brahmins, by hearing Krishna-bowing and so on-of-Krishna\nSudakshina and others mean that there is no brahminhood for one who desires to salute a brahmin",
+    "translation": "The opposite is a destroyer of resolve. Abhicharan is the desire to kill the enemy. Similarly, he says, \"Brahmanism. But in the Brahman, he will do nothing, but in the Brahman-god, being engaged in it, he will destroy the Brahma-varchas, the halanta of the engagers, and even destroy the body, as Sri Rudra means, somewhere\n-Even the Brahmins, by hearing Krishna-bowing and so on-of-Krishna\nSudakshina and others mean that there is no brahminhood for one who desires to salute a brahmin"
   },
   "32": {
-    "word_for_word": "tato\\'bhicāravidhinā — tato\\'bhicāravidhinā; yajana — the act of sacrificing or worshipping; uttaram — at the conclusion; aṅgārāṇyugirantīty — aṅgārāṇyugirantīty; aṅgārodgārīṇi — aṅgārodgārīṇi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b29ce3a320f7279dda286cbac3a9fd054b9757e44bae2898f88087230020451f",
+    "word_for_word": "ततो\\ऽभिचारविधिना यजनोत्तरम् । — Then, after the sacrifice, according to the ritual of adultery.; अङ्गाराण्युगिरन्तीत्य् अङ्गारोद्गारीणि ॥३२॥ — They are called charcoal-burners.",
+    "translation": "Then, after the sacrifice, according to the ritual of adultery. They are called charcoal-burners."
   },
   "33": {
-    "word_for_word": "daṃṣṭrābhiścoghrair — daṃṣṭrābhiścoghrair; bhrukuṭīdaṇḍaiś — bhrukuṭīdaṇḍaiś; ca — and; kaṭhoraṃ — hard; krūram — in a ormidable anner; āsyaṃ — outh; yasya — whose; of which; sa — the last of the three sibilants; triśikhaṃ — three-pointed; triśalam — 3 bristles long."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9c5139c1caca2ced30c8a58c03c7280456d1bbb7344d6ac90e98d687cb6bcbc7",
+    "word_for_word": "दंष्ट्राभिश्चोघ्रैर् भ्रुकुटीदण्डैश् च कठोरं क्रूरम् आस्यं यस्य स त्रिशिखं त्रिशलम् ॥३३॥ — He whose mouth is harsh and cruel with its sharp fangs and frowning rods has three peaks and three tridents.",
+    "translation": "He whose mouth is harsh and cruel with its sharp fangs and frowning rods has three peaks and three tridents."
   },
   "34": {
-    "word_for_word": "diśaḥ — diśaḥ; pradahana — pradahana."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6358c97cce92f123a76bdbc9153fc3e092077340c414cf1292702f78b4d42b35",
+    "word_for_word": "दिशः प्रदहन ॥३४-३५॥ — directions burning.34-3",
+    "translation": "directions burning.34-3"
   },
   "36": {
-    "word_for_word": "trāhi — trāhi; pāhīty — pāhīty; āhur — āhur; iti — thus; śeṣaḥ — remaining; remainder."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f40d09c31b3fabaf82f516ffb233b7d0fce44bc57aa4d34b76ffb956aecb6181",
+    "word_for_word": "त्राहि-पाहीत्य् आहुर् इति शेषः ॥३६॥ — They say, 'Save me, save me,' and the rest.",
+    "translation": "They say, 'Save me, save me,' and the rest."
   },
   "37": {
-    "word_for_word": "aham — I; avitāsmi — avitāsmi; rakṣiṣyāmīti — rakṣiṣyāmīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7381ba572b95c555014f56c98e4cb72ba40365fcb3d6f348f4e62a15e18ef11e",
+    "word_for_word": "अहम् अवितास्मि रक्षिष्यामीति ॥३७-३८॥ — I am Avita and I will protect you.37-3",
+    "translation": "I am Avita and I will protect you.37-3"
   },
   "38": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "39": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8c55812504e1d44f8a4b3a925f5e2978edabcdf44297875cd1fa2d78643bc514",
+    "word_for_word": "रोदसी च प्रकाशयद् इति शेषः । — He also illuminated the heavens, the rest.; यद् वा, स्व-तेजसा खादीन् प्रति जाज्वल्यमानम् अत्यर्थं प्रकाशमानम् इत्य् अर्थः । — That is, it is very bright, burning with its own effulgence towards the Khadis.; आर्दयद् अपीडयत् ॥३९॥ — Ardayad apidayat.",
+    "translation": "He also illuminated the heavens, the rest. That is, it is very bright, burning with its own effulgence towards the Khadis. Ardayad apidayat."
   },
   "40": {
-    "word_for_word": "ardito\\'gnir — ardito\\'gnir; yat — which; that which; kṛtavāṃs — kṛtavāṃs; tadā — then; aha — surely; kṛtya — ‘to be done or performed’; anala — ire; iti — thus; sahartvigbhir — sahartvigbhir; janai — janai; ś — ś; ca — and; vartamānam — turning; abhicaryate — is being ( Ved. Inf; māryate\\'nenety — māryate\\'nenety; abhicāraḥ — exorcising; kṛtya — ‘to be done or performed’; analaḥ — ire."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5cb98f88d9d21e29c8b4937bbba0ad7b3b12405c44194d0ff49b2e45768082b8",
+    "word_for_word": "अर्दितो\\ऽग्निर् यत्-कृतवांस् तदाह कृत्यानल इति सहर्त्विग्भिर् जनै श् च वर्तमानम् । — The fire that was burned was called the fire of action, and it was present with the priests and the people.; अभिचर्यते मार्यते\\ऽनेनेत्य् अभिचारः कृत्यानलः ॥४०॥ — Abhichara is the fire of action, that is, he is being killed by this.",
+    "translation": "The fire that was burned was called the fire of action, and it was present with the priests and the people. Abhichara is the fire of action, that is, he is being killed by this."
   },
   "41": {
-    "word_for_word": "aṭṭādi — aṭṭādi; sahitāṃ — of a river; aṭṭā — overbearing conduct; mañcaḥ — a stage or platform on a palace or on columns."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3b334cefe40d7e33f2286d53ce6d6781abbc212195097ea4c4262c9a2d7f63f5",
+    "word_for_word": "अट्टादि-सहितां। — with the attic.; अट्टा मञ्चः ॥४१-४३॥ — Attic stage.41-4",
+    "translation": "with the attic. Attic stage.41-4"
   }
 }

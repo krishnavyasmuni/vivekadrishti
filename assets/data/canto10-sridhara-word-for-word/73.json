@@ -1,92 +1,226 @@
 {
   "1": {
-    "word_for_word": "tatas — tatas; tri — three; saptatitame — in/on the 70th; mocayitvā — mocayitvā; nṛpān — kings; hariḥ — Hari; rājārha — it or or worthy of or due to a k; bhogaiḥ — by/with any winding or curves; svān — own; selfs; deśān — points; pra — before; astha — only ifc. or; apya — (; punar — back; āgamat — āgamat; atyunnaddha — atyunnaddha; jarāsandha — jarāsandha; vadhāt — from killing; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; ruddha — ruddha; bhū — be; become; patīn — husband; lords; vimokṣya — vimokṣya; kṛpayā — by/with mercy; kṛṣṇo — kṛṣṇo; nija — own; rūpam — form; adarśayat — adarśayat; ye — those who; nirjitā — nirjitā; jarāsandhena — jarāsandhena; niruddha — held back; aś — Ā. ( aor. 3. pl; ca — and; giri — mountain; droṇyāṃ — droṇyāṃ; te — they; those; tato — in comp. or; nirgatāḥ — gone outs; santo — santo; ghana — a striker; śyāmaṃ — black; dadṛśur — dadṛśur; ity — thus; uttareṇa — orthward; anvayaḥ — syntactic connection."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "de197341524587b4643cf63d774a313cf8581554c2bf3a33e766f798bea87308",
+    "word_for_word": "ततस् त्रि-सप्ततितमे मोचयित्वा नृपान् हरिः । — Then, on the seventy-third day, Lord Hari released the kings.; राजार्ह-भोगैः स्वान् देशान् प्रास्थाप्य पुनर् आगमत् ॥*॥ — He returned to his countries with the enjoyments worthy of a king.; अत्युन्नद्ध-जरासन्ध- वधात् तद्-रुद्ध-भू-पतीन् । — The kings of the earth were trapped by the killing of Jarasandha, who was very proud.; विमोक्ष्य कृपया कृष्णो निज-रूपम् अदर्शयत् ॥॥ — Mercifully releasing them Lord Krishna revealed His own form.; ये निर्जिता जरासन्धेन निरुद्धाश् च गिरि-द्रोण्यां, ते ततो निर्गताः सन्तो घन-श्यामं ददृशुर् इत्य् उत्तरेणान्वयः ॥१॥ — Those saints who had been defeated by Jarasandh and imprisoned in the mountain valley came out of that place and saw the dark clouds, thus the consequence of the north.",
+    "translation": "Then, on the seventy-third day, Lord Hari released the kings. He returned to his countries with the enjoyments worthy of a king. The kings of the earth were trapped by the killing of Jarasandha, who was very proud. Mercifully releasing them Lord Krishna revealed His own form. Those saints who had been defeated by Jarasandh and imprisoned in the mountain valley came out of that place and saw the dark clouds, thus the consequence of the north."
+  },
+  "2-3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2f688d4923a6779d1a3dda5aaa666e9b54bd55fdb6f8e543f68f99294209cb13",
+    "word_for_word": "क्षुधा क्षामा कृशाः । — They are hungry, lean and thin.; संरोधेन परिकर्शिताः क्लेशिताः ॥२-४॥ — They were weakened and tormented by restraint (2-4).",
+    "translation": "They are hungry, lean and thin. They were weakened and tormented by restraint (2-4)."
+  },
+  "5-7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "460cb08a5e99659e83a062c9fc22880d54af4f60546544c0338cb82ae4698c63",
+    "word_for_word": "भ्राजन् भ्राजमानो वर-मणिः कौस्तुभो यया, सा ग्रीवा यस्य तम् । — The one whose neck is adorned with the Kaustubha gem, which shines brightly.; निवीतं कण्ठ-लम्बितया व्याप्तम् । — The nivita is covered with a neck-length.; पिबन्त इवेत्य्-आदीनां हरेः पादयोः प्रणेमुर् इत्य् उत्तरेणान्वयः ॥५॥ — They bowed down at the feet of the Supreme Personality of Godhead, as if they were drinking, and so on.; रम्भन्तः परिरम्भमाणा इव ॥६॥ — They seemed to be embracing each other.",
+    "translation": "The one whose neck is adorned with the Kaustubha gem, which shines brightly. The nivita is covered with a neck-length. They bowed down at the feet of the Supreme Personality of Godhead, as if they were drinking, and so on. They seemed to be embracing each other."
   },
   "7": {
-    "word_for_word": "kṛṣṇa — Kṛṣṇa; darśanāhlādena — darśanāhlādena; dhvastaḥ — allen; saṃrodhana — complete obstruction; klamo — klamo; yeṣ — to boil up; aṃ — not; te — they; those."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7faad70278a57793d7bd1243b9628920685a1650fcd4a0d31ea18c041fa341d8",
+    "word_for_word": "कृष्ण-दर्शनाह्लादेन ध्वस्तः संरोधन-क्लमो येषां ते । — Those whose fatigue of restraint is destroyed by the joy of seeing Kṛṣṇa",
+    "translation": "Those whose fatigue of restraint is destroyed by the joy of seeing Kṛṣṇa"
   },
   "8": {
-    "word_for_word": "saṃrodha — complete obstruction or opposition; ad — to eat; rakṣitān — guardeds; asmān — a om. base rom which some orms of are ormeds; ghorāyāḥ — of the ight; saṃsṛter — saṃsṛter; api — also; pāhi — pāhi; mocaya — mocaya."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "eff30117a548f4de1fe7ef09a95e88909c7bba23653348b180a5141f27d7dc11",
+    "word_for_word": "संरोधाद् रक्षितान् अस्मान् घोरायाः संसृतेर् अपि पाहि मोचय । — Protect us from anger and deliver us from this terrible material world.",
+    "translation": "Protect us from anger and deliver us from this terrible material world."
   },
   "9": {
-    "word_for_word": "nanu — but surely; indeed; bhavanto — bhavanto; jarāsandhāsūyāviṣṭā — jarāsandhāsūyāviṣṭā; ihāmutra — here and there; bhoga — any winding or curve; asakta — ot stopped or intercepted by or at ( loc; aś — Ā. ( aor. 3. pl; ca — and; kathaṃ — (in comp. or; saṃsṛter — saṃsṛter; mocanīyā — mocanīyā; ity — thus; āśaṅkya — p. having suspected; saṃprati — saṃprati; na — not; vayaṃ — one who weaves; tathā — so; in that way; bhūtā — the 14th day of the dark half of the lunar onth; ity — thus; āhuḥ — they say; nainam — nainam; ity — thus; aṣṭabhiḥ — by/with eights; he — a vocative icle (‘oh!’ ‘ho!’; nātha — refuge; vayam — we; enaṃ — a om. base (used or certain cases of the 3rd personal oun; nānvasūyāmaḥ — nānvasūyāmaḥ; anv — anv; anu — after; according to; doṣa — fault; dṛṣṭyā — dṛṣṭyā; na — not; paśya — seeing; amaḥ — impetuosity; kuta — of one of the eighteen attendants of the sun; ity — thus; ata — ata; āhuḥ — they say; anugraha — avour; iti — thus; yad — who; yasmāt — because; from which."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5911121236ba55a28cd0e7a26710d6ecfb39d33e6a170fe13093f80d9946d821",
+    "word_for_word": "ननु भवन्तो जरासन्धासूयाविष्टा इहामुत्र भोगासक्ताश् च कथं संसृतेर् मोचनीया इत्य् आशङ्क्य संप्रति न वयं तथा-भूता इत्य् आहुः---नैनम् इत्य् अष्टभिः । — Indeed, you are filled with the envy of Jarasandha and are attached to pleasures here and hereafter.; हे नाथ ! — O Lord!; वयम् एनं नान्वसूयामः । — We don’t follow him.; अन्व् अनु दोष-दृष्ट्या न पश्यामः । — We do not look at Anv Anu from the point of view of fault.; कुत इत्य् अत आहुः---अनुग्रह इति । — Where, then, they say, is grace?; यद् यस्मात् ॥९॥ — Whatever from whatever.",
+    "translation": "Indeed, you are filled with the envy of Jarasandha and are attached to pleasures here and hereafter. O Lord! We don’t follow him. We do not look at Anv Anu from the point of view of fault. Where, then, they say, is grace? Whatever from whatever."
   },
   "10": {
-    "word_for_word": "etad — this; eva — only; indeed; vyatirekeṇa — with exception of; upapā — √ 1. Caus; adayanti — they erciless; rājyaiśvaryeti — rājyaiśvaryeti; rājyaiśvaryābhyāṃ — rājyaiśvaryābhyāṃ; madas — madas; tena — by him; by that; unnaddha — tied or bound up; ucchṛṅkhalo — ucchṛṅkhalo; nityā — a plough-share; acala — ot oving; aś — Ā. ( aor. 3. pl; ca — and; saṃpado — saṃpado; manyate — considers; yad — who; vā — or; anityāḥ — ot everlastings; satīr — satīr; acalāḥ — ot ovings; śāśvatīr — śāśvatīr; manyate — considers."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "48ac7d396e21afffec421f573f4496bd506350e035d4cd55e5a2bef47ba7c8dc",
+    "word_for_word": "एतद् एव व्यतिरेकेणोपपादयन्ति, राज्यैश्वर्येति । — This is what they argue with distinction, that it is the kingdom and the wealth.; राज्यैश्वर्याभ्यां मदस् तेनोन्नद्ध उच्छृङ्खलो नित्या अचलाश् च संपदो मन्यते । — He is infatuated with kingdom and wealth and therefore considers himself to be a chain of eternal and unchanging possessions; यद् वा, अनित्याः सतीर् अचलाः शाश्वतीर् मन्यते । — In other words, he considers the impermanent, the chaste, the unchanging, and the eternal.",
+    "translation": "This is what they argue with distinction, that it is the kingdom and the wealth. He is infatuated with kingdom and wealth and therefore considers himself to be a chain of eternal and unchanging possessions In other words, he considers the impermanent, the chaste, the unchanging, and the eternal."
   },
   "11": {
-    "word_for_word": "kiṃ — what; ca — and; avas — avour; tu — but; sad — in comp. or; vastutayā — by/with the state of being the object of; paśyantīty — paśyantīty; āhuḥ — they say; mṛga — a orest animal or wild beast; tṛṣṇām — thirst; craving; iti — thus; vaikārikīṃ — vaikārikīṃ; sṛṣṭy — in comp. or; ādi — beginning; and so on; vikārāpannām — vikārāpannām; ayuktā — ayuktā; avivekinaḥ — of ot separated."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4dbadd6058f0d059dc4a147ed1432fdee2919e03e8614878c259b37d14c985d4",
+    "word_for_word": "किं च, अवस् तु सद्-वस्तुतया पश्यन्तीत्य् आहुः, मृग-तृष्णाम् इति । — What is more, they say that they see the Avast as a good thing, and that they are thirsty for deer.; वैकारिकीं सृष्ट्य्-आदि-विकारापन्नाम् । — The transformational is the transformation of creation and other things.; अयुक्ता अविवेकिनः । — They are unjust and irrational.",
+    "translation": "What is more, they say that they see the Avast as a good thing, and that they are thirsty for deer. The transformational is the transformation of creation and other things. They are unjust and irrational."
   },
   "12": {
-    "word_for_word": "rājyasya — of kingly; yoga — yoga; connection; viyogayor — viyogayor; anarthārthāvahatvam — anarthārthāvahatvam; asmāsv — asmāsv; eva — only; indeed; dṛṣṭam — seen; ity — thus; āhuḥ — they say; vayam — we; iti — thus; dvābhyām — by/from/for the two original stem ofs; śrī — Śrī; sacred; glorious; madena — by/with hilarity; naṣṭā — naṣṭā; dṛṣṭir — dṛṣṭir; yeṣ — to boil up; aṃ — not; te — they; those; asyāḥ — of this; of hims; pṛthivyāḥ — of earth; itaretara — (occurring chiefly in oblique cases of sing. and in comp; spṛdhaḥ — spṛdhaḥ; parasparaṃ — ( r. om. sg. of +; spardham — emulous; anāḥ — {{Lbody=4781}}s; puraḥ — in comp. or; purataḥ — purataḥ; tvā — tvā; mṛtyum — death; avigaṇayya — taking o otice of; purā — before; ye — those who; durmadā — durmadā; vayam — we."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "40e16b46f9c166d4a952e15ae621783031cbb8522d96550a314619e155d00ca0",
+    "word_for_word": "राज्यस्य योग-वियोगयोर् अनर्थार्थावहत्वम् अस्मास्व् एव दृष्टम् इत्य् आहुः---वयम् इति द्वाभ्याम् । — They say that we have seen the evil-meaning of the combination and separation of the kingdom, and that we are the two.; श्री-मदेन नष्टा दृष्टिर् येषां ते । — Those whose sight has been lost by the lust for beauty.; अस्याः पृथिव्याः । — of this earth.; इतरेतर-स्पृधः परस्परं स्पर्धमानाः । — They competed with each other; पुरः पुरतः । — In front of the front.; त्वा मृत्युम् अविगणय्य । — Ignoring your death.; पुरा ये दुर्मदा वयम् ॥१२॥ — We who were mad in the past.",
+    "translation": "They say that we have seen the evil-meaning of the combination and separation of the kingdom, and that we are the two. Those whose sight has been lost by the lust for beauty. of this earth. They competed with each other In front of the front. Ignoring your death. We who were mad in the past."
   },
   "13": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; kṛṣṇa — Kṛṣṇa; ta — the 1st dental consonant; eva — only; indeed; vayam — we; adya — today; now; vinaṣṭa — utterly lost or ruined; darpās — darpās; te — they; those; caraṇau — the two foots; smara — col. 1; amaḥ — impetuosity; smartum — smartum; āśāsmahe — āśāsmahe; kathaṃ — (in comp. or; bhūtāḥ — becomes; bhavatas — bhavatas; tanvā — tanvā; mūrtyā — mūrtyā; kālena — instr. in the course of time; śriyo — śriyo; vicālitāḥ — vicālitāḥ; vibhraṃśitāḥ — caused to alls; ato — ato; rājya — kingly; cyutir — cyutir; bhavad — in comp. or; anugraha — avour; eva — only; indeed; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "30acdd6dac8c7befd50c7d1bb176a273d754346a4725e82d8aa620ce2a37454f",
+    "word_for_word": "हे कृष्ण ! — O Krishna!; त एव वयम् अद्य विनष्ट-दर्पास् ते चरणौ स्मरामः स्मर्तुम् आशास्महे । — Today we remember Your feet and hope to remember them with our pride destroyed; कथं-भूताः ? — How-good are they?; भवतस् तन्वा मूर्त्या कालेन श्रियो विचालिताः विभ्रंशिताः । — Your bodies and idols have been shaken and shattered by the beauty of time.; अतो राज्य-च्युतिर् भवद्-अनुग्रह एवेत्य् अर्थः ॥१३॥ — Therefore the fall of the kingdom is by Your grace, this means.",
+    "translation": "O Krishna! Today we remember Your feet and hope to remember them with our pride destroyed How-good are they? Your bodies and idols have been shaken and shattered by the beauty of time. Therefore the fall of the kingdom is by Your grace, this means."
   },
   "14": {
-    "word_for_word": "ata — ata; eva — only; indeed; atho — ow; anantaraṃ — having o interior; mṛga — a orest animal or wild beast; tṛṣṇi — tṛṣṇi; sadṛśaṃ — like; rājyaṃ — kingly; śaśvat — perpetual; patatā — by/with lying; pratikṣaṇaṃ — pratikṣaṇaṃ; kṣīyamāṇena — by/with perishing; tathā — so; in that way; ruja — breaking; aṃ — not; rogāṇāṃ — rogāṇāṃ; bhuvā — bhuvā; janma — birth; kṣetreṇa — kṣetreṇa; dehena — by/with body; upāsitavyaṃ — to be revered or honoured; sevyaṃ — to be resorted to or requented or inhabited by; na — not; spṛhayāmahe — spṛhayāmahe; pretya — having died; para — higher; other; loke — in/on world; ca — and; kriyā — doing; phalaṃ — fruit; result; svargādi — svargādi; bhogam — any winding or curve; upāsitavyaṃ — to be revered or honoured; na — not; spṛhayāmahe — spṛhayāmahe; kathaṃ — (in comp. or; bhūtam — become; karṇayo — karṇayo; rocanaṃ — bright; ruci — light; janaka — generative; mātram — only; measure; tatra — there; in that; gatasya — of gone; spardhādy — spardhādy; anapagamena — anapagamena; sukha — happiness; abhāva — absence; ad — to eat; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "119bf06c248f9e07378a5bc111d3f233fece40a9623dd44829c82e0a73f8da34",
+    "word_for_word": "अत एव अथो अनन्तरं मृग-तृष्णि-सदृशं राज्यं शश्वत् पतता प्रतिक्षणं क्षीयमाणेन तथा रुजां रोगाणां भुवा जन्म-क्षेत्रेण देहेन उपासितव्यं सेव्यं न स्पृहयामहे । — That is why we do not desire to be worshiped and served by the body, which is like a deer-thirsty kingdom, which is constantly falling and decaying every moment, and which is the birthplace of pain and disease on earth.; प्रेत्य पर-लोके च क्रिया-फलं स्वर्गादि-भोगम् उपासितव्यं न स्पृहयामहे । — We do not desire to worship the fruits of our actions in the next world, such as heaven.; कथं-भूतम् ? — How-ever it happened?; कर्णयो रोचनं रुचि-जनक-मात्रम् । — The ears are only pleasing to the taste buds.; तत्र गतस्य स्पर्धाद्य्-अनपगमेन सुखाभावाद् इत्य् अर्थः ॥१४॥ — This means that there is no happiness in the absence of competition and other things that have gone there.",
+    "translation": "That is why we do not desire to be worshiped and served by the body, which is like a deer-thirsty kingdom, which is constantly falling and decaying every moment, and which is the birthplace of pain and disease on earth. We do not desire to worship the fruits of our actions in the next world, such as heaven. How-ever it happened? The ears are only pleasing to the taste buds. This means that there is no happiness in the absence of competition and other things that have gone there."
   },
   "15": {
-    "word_for_word": "yady — yady; evaṃ — thus; in this way; bhūtā — the 14th day of the dark half of the lunar onth; yūyaṃ — yūyaṃ; tarhi — then; mama — my; of me; caraṇau — the two foots; smarata — smarata; tato'nāyāsena — tato'nāyāsena; muktir — muktir; bhaviṣyatīti — bhaviṣyatīti; kiṃ — what; mad — base of the irst pers. in the sg. umber; apekṣayeti — apekṣayeti; ced — ‘and’; ata — ata; āhuḥ — they say; taṃ — the 1st dental consonant; na — not; iti — thus; tvac — to cover; caraṇa — foot; smṛtir — smṛtir; api — also; tvat — in comp. or 2; prasāda — grace; favor; phalam — fruit; result; eva — only; indeed; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "00611d15d26bb44e7533e0decac1c9ffb925a9f4176a150f23b39b2300b37ca2",
+    "word_for_word": "यद्य् एवं-भूता यूयं तर्हि मम चरणौ स्मरत, ततोऽनायासेन मुक्तिर् भविष्यतीति किं मद्-अपेक्षयेति चेद् अत आहुः, तं न इति । — If you are thus-being, then remember My feet, and then you will be freed without difficulty.; त्वच्-चरण-स्मृतिर् अपि त्वत्-प्रसाद-फलम् एवेत्य् अर्थः ॥१६-१७॥ — This means that even the remembrance of Thy feet is the fruit of Thy grace.16-1",
+    "translation": "If you are thus-being, then remember My feet, and then you will be freed without difficulty. This means that even the remembrance of Thy feet is the fruit of Thy grace.16-1"
   },
   "16": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "17": {
-    "word_for_word": "ślakṣṇayā — by/with of a river; mañjulayā — by/with of a river."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0a3ca9034fb7c9204d4606735f44663128dee0eeb51322de53247fee1df2cb81",
+    "word_for_word": "श्लक्ष्णया मञ्जुलया । — with a slightly rounded floor.",
+    "translation": "with a slightly rounded floor."
   },
   "18": {
-    "word_for_word": "yathā — as; just as; bhavadbhir — bhavadbhir; āśaṃsitaṃ — hoped; tathā — so; in that way; bāḍhaṃ — or , (√; niścitaṃ — one who has come to a conclusion or ormed a certain opinion; vo — vo; mayi — mayi; bhaktir — bhaktir; jāyate — is born; jāyatām — jāyatām; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "400c9bd19ff383172c0306fde7e217375d33678a851b33d280125c3e80ed0760",
+    "word_for_word": "यथा भवद्भिर् आशंसितं तथा बाढं निश्चितं वो मयि भक्तिर् जायते जायताम् इत्य् अर्थः । — This means that you will certainly develop devotion to Me as you have hoped.",
+    "translation": "This means that you will certainly develop devotion to Me as you have hoped."
   },
   "19": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; bhūpāḥ — ‘earth-protector’s; mad — base of the irst pers. in the sg. umber; bhajanam — of a prince; eva — only; indeed; kartavyam — and to be done or ade or accomplished; iti — thus; bhavadbhir — bhavadbhir; vyavasitaṃ — inished; saṅkalpitaṃ — saṅkalpitaṃ; diṣṭyā — diṣṭyā; bhadram — happily; bhavadbhir — bhavadbhir; uktaṃ — stated; ca — and; satyam — true; eva — only; indeed; ity — thus; āha — says; bhavanta — time; iti — thus; śrīś — śrīś; ca — and; aiśvaryaṃ — lordship; opulence; ca — and; tābhyāṃ — tābhyāṃ; madas — madas; tena — by him; by that; unna — wetted; aham — I; udbandhanaṃ — serving or hanging up; svairācāram — of unrestrained conduct or behaviour; ity — thus; arthaḥ — meaning; purpose; paśye — in/on seeing; paśyāmi — paśyāmi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "9998257924b350152a3aa8aa4fb1f89611583cc0c38b6f7e7e0ce434ee6839cc",
+    "word_for_word": "हे भूपाः, मद्-भजनम् एव कर्तव्यम् इति भवद्भिर् व्यवसितं सङ्कल्पितं दिष्ट्या भद्रम् । — O kings, it is fortunate that you have resolved to worship Me alone.; भवद्भिर् उक्तं च सत्यम् एवेत्य् आह---भवन्त इति । — And what you have said is true, he argues, and you are.; श्रीश् च ऐश्वर्यं च ताभ्यां मदस् तेनोन्नाहम् उद्बन्धनं स्वैराचारम् इत्य् अर्थः । — Opulence and wealth are intoxication with them, and therefore I am not bound by them, but by selfish conduct.; पश्ये पश्यामि । — I’ll see, I’ll see.",
+    "translation": "O kings, it is fortunate that you have resolved to worship Me alone. And what you have said is true, he argues, and you are. Opulence and wealth are intoxication with them, and therefore I am not bound by them, but by selfish conduct. I’ll see, I’ll see."
   },
   "20": {
-    "word_for_word": "tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; evāha — evāha; haihaya — of a race (said to have been descendants of; iti — thus; haihayaḥ — of a race (said to have been descendants of; kārta — relating to or treating of the suffixes; vīryāś — vīryāś; cakravartī — cakravartī; nareśvaraḥ — id; pituḥ — of the father; kāma — desire; dhenu — ilch; haraṇāt — from carrying; paraśurāmeṇa — paraśurāmeṇa; sa — the last of the three sibilants; putro — putro; hataḥ — killed; nahuṣo — nahuṣo; deva — deity; god; indratā — power and dignity of; aṃ — not; prāpta — attained; unmattaḥ — unmattaḥ; śacī — the rendering of powerful or ighty help; saṅgāya — to/for {{Lbody=228458}}; brāhmaṇān — brāhmaṇas; śibika — of a king; aṃ — not; vāhayaṃs — vāhayaṃs; tair — tair; eva — only; indeed; tato — in comp. or; bhraṃśito'jagaratvam — bhraṃśito'jagaratvam; ava — avour; apa — away; veno'py — veno'py; unmatto — unmatto; brāhmaṇānadhikṣipaṃs — brāhmaṇānadhikṣipaṃs; tair — tair; eva — only; indeed; huṅ — huṅ; kṛtair — kṛtair; hataḥ — killed; rāvaṇo — rāvaṇo; rākṣaseśvaraḥ — ‘ -king’; sītām — (less correctly written; abhilaṣan — abhilaṣan; rāghaveṇa — rāghaveṇa; hataḥ — killed; narako — narako; daityeśvaro'diti — daityeśvaro'diti; kuṇḍalādy — kuṇḍalādy; āharaṇān — ifc. taking aways; mayaiva — mayaiva; hataḥ — killed; apare'pi — apare'pi; śrī — Śrī; sacred; glorious; madāt — from hilarity; sthaṇād — sthaṇād; bhraṃśitāḥ — ade to alls."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8d5c42a27f41c10b0ad433bcc97f3a3135b5505ca72fb8ca55aa108fe0e4d170",
+    "word_for_word": "तद् एवाह---हैहय इति । — That is what he said, Haihaya.; हैहयः कार्त-वीर्याश् चक्रवर्ती नरेश्वरः पितुः काम-धेनु-हरणात् परशुरामेण स-पुत्रो हतः । — Haihaya, the son of Karta-virya, the emperor of the kings, was killed by Parasurama for stealing his father’s cow of desire.; नहुषो देवेन्द्रतां प्राप्त उन्मत्तः शची-सङ्गाय ब्राह्मणान् शिबिकां वाहयंस् तैर् एव ततो भ्रंशितोऽजगरत्वम् अवाप । — Nahusha, who had become the lord of the gods, went mad and drove the chariot to the brāhmaṇas to meet Sachi.; वेनोऽप्य् उन्मत्तो ब्राह्मणानधिक्षिपंस् तैर् एव हुङ्-कृतैर् हतः । — Vena, too, went mad and threw the brāhmaṇas at him, but he was killed by the same hooks.; रावणो राक्षसेश्वरः सीताम् अभिलषन् राघवेण हतः । — Ravana the lord of the demons who desired Sita was killed by Rama; नरको दैत्येश्वरोऽदिति-कुण्डलाद्य्-आहरणान् मयैव हतः । — I killed Naraka, the lord of the demons, by taking away the earrings of the sun and other objects.; अपरेऽपि श्री-मदात् स्थणाद् भ्रंशिताः ॥२०॥ — Others, too, were dethroned from their positions by the pride of prosperity.",
+    "translation": "That is what he said, Haihaya. Haihaya, the son of Karta-virya, the emperor of the kings, was killed by Parasurama for stealing his father’s cow of desire. Nahusha, who had become the lord of the gods, went mad and drove the chariot to the brāhmaṇas to meet Sachi. Vena, too, went mad and threw the brāhmaṇas at him, but he was killed by the same hooks. Ravana the lord of the demons who desired Sita was killed by Rama I killed Naraka, the lord of the demons, by taking away the earrings of the sun and other objects. Others, too, were dethroned from their positions by the pride of prosperity."
   },
   "21": {
-    "word_for_word": "yad — who; utpādyaṃ — to be produced or brought orth; deha — body; ādi — beginning; and so on; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; antavat — having an end or term; evaṃ — thus; in this way; vijñāya — recognizable; yuktā — of a plant; apramattā — apramattā; rakṣatha — rakṣatha; rakṣatety — rakṣatety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "36110f021ac0f2fb4464300f6844c0e0d4469769e2aea77009a45b753891248b",
+    "word_for_word": "यद् उत्पाद्यं देहादि तद् अन्तवत् । — Whatever is produced, such as the body, is the end.; एवं विज्ञाय युक्ता अप्रमत्ता रक्षथ रक्षतेत्य् अर्थः ॥२१॥ — Thus understanding, being steadfast and careless, you protect, that is, you protect.",
+    "translation": "Whatever is produced, such as the body, is the end. Thus understanding, being steadfast and careless, you protect, that is, you protect."
   },
   "22": {
-    "word_for_word": "prajā — prajā; tantūn — a threads; putrādi — putrādi; santatīḥ — santatīḥ; prāptaṃ — attained; prāptaṃ — attained; samatvena — by/with equality with; sevam — an apple; anāḥ — {{Lbody=4781}}s."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5eb8b63aff7defeed297d8bd9c1d0e981f2715abbf434c60d7523ba62bc24a9a",
+    "word_for_word": "प्रजा-तन्तून् पुत्रादि-सन्ततीः । — They are the fibers of the people, the sons and other descendants.; प्राप्तं प्राप्तं समत्वेन सेवमानाः । — They served what they had received equally.",
+    "translation": "They are the fibers of the people, the sons and other descendants. They served what they had received equally."
   },
   "23": {
-    "word_for_word": "māṃ — do not; brahma — Brahman; Absolute; yāsyatha — yāsyatha."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b6cfda2a4b9936423623536601510f5657bc6b8b5decce8f092105ab7d31e0b2",
+    "word_for_word": "मां ब्रह्म यास्यथ ॥२३॥ — You will go to Me, the Brahman.",
+    "translation": "You will go to Me, the Brahman."
   },
   "24": {
-    "word_for_word": "striyāś — striyāś; ca — and; teṣāṃ — teṣāṃ; maj — maj; jana — person; people; karmaṇy — karmaṇy; abhyaṅga — rubbing with unctuous substances; snānādau — snānādau; nyayuṅkta — nyayuṅkta."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6b9900c68070b43249a367ccce6b6935941799a6ebd553886a1a1de26422f080",
+    "word_for_word": "स्त्रियाश् च तेषां मज्-जन-कर्मण्य् अभ्यङ्ग-स्नानादौ न्ययुङ्क्त ॥२४-२५॥ — He also engaged the women in the rituals of bathing and washing their hands. 24-2",
+    "translation": "He also engaged the women in the rituals of bathing and washing their hands. 24-2"
   },
   "25": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "26": {
-    "word_for_word": "susnātān — well purified by bathings; samyag — in comp. or; alaṅkṛtān — alaṅkṛtān; bhogaiś — bhogaiś; ca — and; yuktā — of a plant; an — not; vareṇa — a wasp; annena — by/with eaten; bhojayitvā — having caused to eat; punas — in comp. or; teṣāṃ — teṣāṃ; saparya — to serve attentively; aṃ — not; saha — with; devena — by/with deity; god; kārayā — by/with a prison; am — quickly; āsa — seat."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ec9441d58e917f37fd689e7912d42b6a8ca06d143546dee6023609502537c719",
+    "word_for_word": "सुस्नातान् सम्यग् अलङ्कृतान् भोगैश् च युक्तान् वरेणान्नेन भोजयित्वा पुनस् तेषां सपर्यां सह-देवेन कारयाम् आस ॥२६॥ — They were well bathed and thoroughly decorated and endowed with all kinds of pleasures and fed them with excellent food and again he arranged for their worship along with the gods.",
+    "translation": "They were well bathed and thoroughly decorated and endowed with all kinds of pleasures and fed them with excellent food and again he arranged for their worship along with the gods."
   },
   "27": {
-    "word_for_word": "graha — (; aś — Ā. ( aor. 3. pl; candrādayo — candrādayo; yathā — as; just as."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "80e8356ca9ded69341f2d121883f760e5a443fb156aabd654a8ba15edb956aaf",
+    "word_for_word": "ग्रहाश् चन्द्रादयो यथा ॥२७॥ — The planets, such as the moon and others.",
+    "translation": "The planets, such as the moon and others."
   },
   "28": {
-    "word_for_word": "prīṇayya — prīṇayya; nandayitvā — nandayitvā."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4a8be500e58d1df30193f42a8b8fa01b3d9a8268a27675f6bca49cce3f3efc57",
+    "word_for_word": "प्रीणय्य नन्दयित्वा ॥२८-२९॥ — pleasing and delighting.28-2",
+    "translation": "pleasing and delighting.28-2"
   },
   "29": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "30": {
-    "word_for_word": "jagaduḥ — jagaduḥ; ūcuḥ — they said."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ef406baa19f8241c2a2653643f520551dfa283de35c76dab64dbdb90bf37837f",
+    "word_for_word": "जगदुः ऊचुः ॥३०-३१॥ — They spoke and said.30-3",
+    "translation": "They spoke and said.30-3"
   },
   "31": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "32": {
-    "word_for_word": "khāṇḍava — sugar-candy; prastham — going on a arch or journey; indra — ( or etym. as given by ative authorities See; prastham — going on a arch or journey."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "aeb4da851b7673cf24f2898bca5c08089ec90b11f898b7394b7d75e7dcc46bbe",
+    "word_for_word": "खाण्डव-प्रस्थम् इन्द्र-प्रस्थम् — Khandava-prastha and Indra-prastha",
+    "translation": "Khandava-prastha and Indra-prastha"
   },
   "33": {
-    "word_for_word": "śāntaṃ — =; mṛtam — dead; āpta — reached; manoratho — manoratho; babhūva — became; was."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4b83e925941d0e0a8c09cc48417a01ecca6b3e02fb2be2a6fef4189f22a3682e",
+    "word_for_word": "शान्तं मृतम् । — It’s dead quiet.; आप्त-मनोरथो बभूव ॥३३-३५॥ — He became a fulfilled desire.33-3",
+    "translation": "It’s dead quiet. He became a fulfilled desire.33-3"
   },
   "34": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "35": {
-    "word_for_word": "iti — thus; śrīdhara — ‘bearer or possessor of ortune’; svāmiviracitabhāvārtha — svāmiviracitabhāvārtha; dīpikāyāṃ — dīpikāyāṃ; daśama — tenth; skandhottarārdhe — skandhottarārdhe; trisaptatitamo\\'dhyāyaḥ — trisaptatitamo\\'dhyāyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a5eeea0dafb5789f8be44c730c859aaa805bf3744ede4b6c429c369ad585a144",
+    "word_for_word": "इति श्रीधर-स्वामिविरचितभावार्थ-दीपिकायां दशम-स्कन्धोत्तरार्धे त्रिसप्ततितमो\\ऽध्यायः ॥७३॥ — This is the seventy-third chapter in the second half of the tenth skanda in the Bhavartha-dipika compiled by Śrīdhara-svāmi.",
+    "translation": "This is the seventy-third chapter in the second half of the tenth skanda in the Bhavartha-dipika compiled by Śrīdhara-svāmi."
   }
 }

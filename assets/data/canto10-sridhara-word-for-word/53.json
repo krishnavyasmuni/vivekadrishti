@@ -1,29 +1,114 @@
 {
   "1": {
-    "word_for_word": "tripañcāśattame — in/on the 53rd; gatvā — having gone; vidarbhā — of the capital city of; an — not; adbhuta — extraordinary; īhitaḥ — sought; rukmiṇīm — a species of plant; aharat — aharat; kṛṣṇo — kṛṣṇo; miṣatāṃ — miṣatāṃ; dviṣatāṃ — hostility; balāt — in comp."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1f14e1d8d410882e955854d12f82eb954ef1535a66526a0c689a0937faa71539",
+    "word_for_word": "त्रिपञ्चाशत्तमे गत्वा विदर्भान् अद्भुतेहितः । — In the fifty-third year he went to Vidarbha with wonderful intentions.; रुक्मिणीम् अहरत् कृष्णो मिषतां द्विषतां बलात् ॥१॥ — Krishna forcibly abducted Rukmini while the enemies looked on.",
+    "translation": "In the fifty-third year he went to Vidarbha with wonderful intentions. Krishna forcibly abducted Rukmini while the enemies looked on."
   },
   "2": {
-    "word_for_word": "nidrā — √ 1. P. Ā. , (; ayā — in this anner; alābhe — in/on on-acquirement; kāraṇāntaram — kāraṇāntaram; veda — knowledge; iti — thus; tayā — tayā; akathitam — akathitam; apy — apy; ahaṃ — I; jānāmīti — jānāmīti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fe37e757b7698afb3b69dfb25e25620817da70cf542145966f821b37801d6428",
+    "word_for_word": "निद्राया अलाभे कारणान्तरम्---वेद इति । — Another reason for the lack of sleep is the Vedas.; तया अकथितम् अप्य् अहं जानामीति ॥२॥ — I know what she didn’t tell me.",
+    "translation": "Another reason for the lack of sleep is the Vedas. I know what she didn’t tell me."
+  },
+  "3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c0359fea6b90999c793493a1a0900c73b5e741f72a0c66b00e3eda53b9357b70",
+    "word_for_word": "आनयिष्यामि । — I’ll bring it.; राजन्यापसदान् राजसु हीनान् । — They were devoid of royalty and were devoid of kings.; उन्मथ्य आनयने दृष्टान्तः--एधस इति ॥३॥ — The illustration of bringing madness is that of Edhasa.",
+    "translation": "I’ll bring it. They were devoid of royalty and were devoid of kings. The illustration of bringing madness is that of Edhasa."
+  },
+  "4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a437c95f1bd15c61550d6163f2849b3671d5d299ded6d1b41f47dcc84f4229ec",
+    "word_for_word": "उद्वाह-र्क्षम् इति । — It is the wedding-arksha.; परश्वो रात्रौ विवाह-नक्षत्रम् इति विज्ञाय तस्यां रात्र्यां प्रस्थाय प्रातर् विदर्भ-देशानगमात् । — The next night, knowing that it was the constellation of the wedding, he set out that night and in the morning reached Vidarbha.; श्वो-भाविनि त्वम् अजितोद्वहने विदर्भान् गुप्तः समेत्य [भा।पु १०.५२.४१] इति रुक्मिणी-सन्देशात् ॥४॥ — Tomorrow, in the future, you will meet the Vidarbhas in the carrying of Ajit [Bh.pu 10.52.41], according to the message of Rukmini.",
+    "translation": "It is the wedding-arksha. The next night, knowing that it was the constellation of the wedding, he set out that night and in the morning reached Vidarbha. Tomorrow, in the future, you will meet the Vidarbhas in the carrying of Ajit [Bh.pu 10.52.41], according to the message of Rukmini."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cbe53f17da442ff03b7fa089c66ceef6ea7c9671737942b6cb134b27750bb98e",
+    "word_for_word": "शैव्य- इत्य्-आदीनि चत्वार्य् अश्व-नामानि ॥५-६॥ — The four names of the horses, beginning with Shaivya, are 5-6",
+    "translation": "The four names of the horses, beginning with Shaivya, are 5-6"
   },
   "6": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "7": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f6b42c29b23a713d61f3fb01ef18b951903d3d3d7024655a1ed61a2fe74e930e",
+    "word_for_word": "पुत्रस्य रुक्मिणः स्नेहेन तद्-वशम् अनुगच्छति इति तथा । — and that he follows his son Rukmi, who is affectionately submissive to him.; अनेन शिशुपाले\\ऽनभिरुचिं द्योतयति । — This indicates a lack of interest in the babysitter.; कर्माणि पुरालङ्कार-पितृ-देवार्चनादीनि ॥७॥ — The rituals of decorating the ancients, worshiping the ancestors and the gods and so on.",
+    "translation": "and that he follows his son Rukmi, who is affectionately submissive to him. This indicates a lack of interest in the babysitter. The rituals of decorating the ancients, worshiping the ancestors and the gods and so on."
   },
   "8-9": {
-    "word_for_word": "tāny — tāny; evāha — evāha; puram — city; ity — thus; ādi — beginning; and so on; caturbhiḥ — by/with fours; saṃmṛṣṭāḥ — saṃmṛṣṭāḥ; saṃsikta — well sprinkled or oistened; aś — Ā. ( aor. 3. pl; ca — and; mārgādayo — mārgādayo; yasmin — in whom; in which; tat — that; citrā — Spica virginis; dhvajeṣu — in/among ( onlys; patākāḥ — a lag or banners; tābhiḥ — tābhiḥ; samalaṅkṛtam — samalaṅkṛtam; akārayat — akārayat; srag — in comp. or; gandha — smell; mālyābharaṇair — mālyābharaṇair; ity — thus; atra — here; matv — matv; artho — artho; draṣṭavyaḥ — to be seen; yad — who; vā — or; srag — in comp. or; gandha — smell; mālyāny — mālyāny; ābibhrati — ābibhrati; iti — thus; tathā — so; in that way; taiḥ — by/with the 1st dental consonants; tathā — so; in that way; virajo\\'mbarair — virajo\\'mbarair; bhūṣitaiś — bhūṣitaiś; ca — and; strī — (perhaps or; puruṣair — puruṣair; juṣṭam — (; tathā — so; in that way; śrīmadbhir — śrīmadbhir; gṛhaiś — gṛhaiś; ca — and; juṣṭam — (."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c6dd0da570d71ce7cd615b838762ba3e5a0eecae81b7580a2651003382f814a5",
+    "word_for_word": "तान्य् एवाह--पुरम् इत्य्-आदि-चतुर्भिः । — He called them the same, with the four, beginning with the city.; संमृष्टाः संसिक्ताश् च मार्गादयो यस्मिन्, तत् । — That in which the paths and other things are wiped and soaked.; चित्रा ध्वजेषु पताकाः, ताभिः समलङ्कृतम् अकारयत् ॥८॥ — There were colorful banners on the flags and he made it decorated with them; स्रग्-गन्ध-माल्याभरणैर् इत्य् अत्र मत्व्-अर्थो द्रष्टव्यः । — The meaning of matv should be seen here as garlands, perfumes, garlands and ornaments.; यद् वा, स्रग्-गन्ध-माल्यान्य् आबिभ्रति इति तथा तैः । — or, that he wears garlands of garlands and perfumes, and so they do.; तथा विरजो\\ऽम्बरैर् भूषितैश् च स्त्री-पुरुषैर् जुष्टम् । — It was also filled with men and women dressed in immaculate clothes; तथा श्रीमद्भिर् गृहैश् च जुष्टम् ॥९॥ — and it is endowed with opulent houses.",
+    "translation": "He called them the same, with the four, beginning with the city. That in which the paths and other things are wiped and soaked. There were colorful banners on the flags and he made it decorated with them The meaning of matv should be seen here as garlands, perfumes, garlands and ornaments. or, that he wears garlands of garlands and perfumes, and so they do. It was also filled with men and women dressed in immaculate clothes and it is endowed with opulent houses."
   },
   "10": {
-    "word_for_word": "kṛtaṃ — done; made; kautukena — by/with ( r; vivāhasūtreṇa — vivāhasūtreṇa; maṅgalaṃ — happiness; yasya — whose; of which; astām — a issile; ahataṃ — unhurt; navīnam — resh; bhūṣaṇottamaiś — bhūṣaṇottamaiś; ca — and; bhūṣitām — bhūṣitām."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "198599c7dc9b19f87d512b62d0b8cd5b8c07b3b07c96aa435345225fa87eca6b",
+    "word_for_word": "यथा-न्यायम् [अन्यांश्]{।मर्क्} च कन्यां प्रति मङ्गलं वाचयामास ॥१०॥ — In accordance with the law [others]{.Mark} also recited auspicious words to the girl.",
+    "translation": "In accordance with the law [others]{.Mark} also recited auspicious words to the girl."
   },
   "17": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "18-19": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8d69e0f24d0f4d9b57d69b2167f9ba8dfccd264753baf031ce4dc96597440982",
+    "word_for_word": "यदि श्री-कृष्णो हरेद् इति शङ्किताः । — If they suspected that Lord Kṛṣṇa might steal it.; कन्यां साधयितुम् इत्य् अर्थः ॥१८-२१॥ — to achieve a daughter, that is, to achieve.18-2",
+    "translation": "If they suspected that Lord Kṛṣṇa might steal it. to achieve a daughter, that is, to achieve.18-2"
   },
   "20-22": {
-    "word_for_word": "sūryodayāt — from id; pūrvam — before; evautsukyena — evautsukyena; rukmiṇy — rukmiṇy; aciñtayad — aciñtayad; ity — thus; āha — says; bhīṣma — terrible; kanyā — by/with a girl; iti — thus; pratyāpattiṃ — return; pratyāgamanam — coming back."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f170a558bf3444651ae2f33a8dae992fca0ef624717162506b52751552711cac",
+    "word_for_word": "सूर्योदयात् पूर्वम् एवौत्सुक्येन रुक्मिण्य् अचिञ्तयद् इत्य् आह---भीष्म-कन्या इति । — Before sunrise, he thought of Rukmiṇī with curiosity, saying that she was the daughter of Bhīṣma.; प्रत्यापत्तिं प्रत्यागमनम् ॥२२॥ — Pratyapatim pratyagamanam.",
+    "translation": "Before sunrise, he thought of Rukmiṇī with curiosity, saying that she was the daughter of Bhīṣma. Pratyapatim pratyagamanam."
+  },
+  "23": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0efd4c9f2ecffb33609e72a03434afc43a3e7d47eee3425e51ba7405e2e3e8de",
+    "word_for_word": "त्रियामा रात्रिस् तावन्-मात्रेण अन्तरितः । — The three-hour night passed by in a matter of minutes.; अल्प-राधसो मन्द-भाग्यायाः ॥२३॥ — They are of little rage and of slow fortune.",
+    "translation": "The three-hour night passed by in a matter of minutes. They are of little rage and of slow fortune."
+  },
+  "24": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "58cab64384f8843b72b3033c6be6f47fa1bfbc8b9590ee5086ba31590e0c4d3e",
+    "word_for_word": "जुगुप्सितं धार्ष्ट्यादि । — despicable, arrogant, etc.; अपि इति शङ्कायाम् । — Even in doubt.; नायाति हि कृतोद्यम इति । — It doesn’t come because you’ve made an effort.; अयम् अर्थः---आदौ कृतोद्यमत्वात् तं न प्रस्थापितवान् । — This means that he did not send him away because he had made an effort in the beginning.; प्रस्थानावसरे च किञ्चिन् मयि जुगुप्सितं मत्वा प्रत्याचष्ट । — When he was about to leave, he thought something disgusting about me and replied.; अतः सो\\ऽपि द्विजो नूनं नायाति इति ॥२४॥ — Therefore that\\'s also a twin, he surely doesn't come.",
+    "translation": "despicable, arrogant, etc. Even in doubt. It doesn’t come because you’ve made an effort. This means that he did not send him away because he had made an effort in the beginning. When he was about to leave, he thought something disgusting about me and replied. Therefore that\\'s also a twin, he surely doesn't come."
   },
   "25": {
-    "word_for_word": "yad — who; vā — or; tato — in comp. or; nirgato\\'pi — nirgato\\'pi; śrī — Śrī; sacred; glorious; kṛṣṇo — kṛṣṇo; mad — base of the irst pers. in the sg. umber; eva — only; indeed; vaimukhyāt — from the act of averting the ace; kacit — kacit; pratibaddho — pratibaddho; bhava — worldly existence; becoming; id — Ved. (probably the eut. orm of the om. base See 3; ity — thus; āha — says; durbhagāyā — durbhagāyā; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "286a8b74a4d4eac171cd13821f5ea2462dd9cd1a427c4a2a864e20d5755d5cb4",
+    "word_for_word": "यद् वा, ततो निर्गतो\\ऽपि श्री-कृष्णो मद् एव वैमुख्यात् कचित् प्रतिबद्धो भवेद् इत्य् आह---दुर्भगाया इति ॥२५॥ — Or else, even though Lord Kṛṣṇa, having departed from it, may sometimes be bound by His aversion to Me, he argues that it is for the unfortunate.",
+    "translation": "Or else, even though Lord Kṛṣṇa, having departed from it, may sometimes be bound by His aversion to Me, he argues that it is for the unfortunate."
   },
   "26": {
-    "word_for_word": "kālajñā — kālajñā; nādhunāpi — nādhunāpi; govindāgamanakāla — govindāgamanakāla; iti — thus; manv — in comp. or; anā — hereby; kiñcidāśvastacittā — kiñcidāśvastacittā; satī — satī; cita — piled up; astabdhe — in/on ‘ ot ixed’; locane — in/on illuminating; nimīlitavatīty — nimīlitavatīty; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c9d15a145feb6e980a51ee7c1834426104b41de6f56026d42fd35efcf5954a06",
+    "word_for_word": "कालज्ञा नाधुनापि गोविन्दागमनकाल इति मन्वाना किञ्चिदाश्वस्तचित्ता सती चितास्तब्धे लोचने निमीलितवतीत्य् अर्थः ॥२६॥ — This means that the chaste lady who knew the time and thought that it was not yet the time for Govinda's arrival was somewhat relieved and closed her eyes in a stunned state of mind.",
+    "translation": "This means that the chaste lady who knew the time and thought that it was not yet the time for Govinda's arrival was somewhat relieved and closed her eyes in a stunned state of mind."
   }
 }

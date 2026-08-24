@@ -1,71 +1,289 @@
 {
   "1-2": {
-    "word_for_word": "tato — in comp. or; dvi — two; saptatitame — in/on the 70th; rājñā — rājñā; kārye — in/on to be ade or done or practised or performed; nivedite — in/on ade known; durjayaṃ — d to be conquered or won; māgadhaṃ — relating to or born in or living in or customary among the s or the country; buddhvā — buddhvā; bhīmenāghātayad — bhīmenāghātayad; dhariḥ — dhariḥ; āsthitaḥ — staying or sitting on; āsanam — sitting; iti — thus; śeṣaḥ — remaining; remainder; śṛṇvatām — śṛṇvatām; eva — only; indeed; iti — thus; yat — which; that which; prasannaḥ — clear; kṛṣṇaḥ — Kṛṣṇa; karoti — does; makes; na — not; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; anyaḥ — other; kaścid — kaścid; api — also; kartuṃ — kartuṃ; samartha — having a similar or suitable aim or object; iti — thus; niścitya — having ascertained or decided; sarvān — alls; eva — only; indeed; tān — them; those; anādṛtya — p. without respecting; kṛṣṇam — Kṛṣṇa; uvāca — said; ity — thus; arthaḥ — meaning; purpose; ābhāṣya — to be addressed; bho — bho; bho — bho; kṛṣṇa — Kṛṣṇa; bhakta — devotee; vatsala — child-loving; ity — thus; evaṃ — thus; in this way; sambodhya — to be enlightened or instructed."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1cc5cfad4ecef9c02ef436a71b6d6038861cc731a40f721cf68118cfaae2f539",
+    "word_for_word": "ततो द्वि-सप्ततितमे राज्ञा कार्ये निवेदिते । — Then, on the seventy-second day, the king reported to the work.; दुर्जयं मागधं बुद्ध्वा भीमेनाघातयद् धरिः ॥ — Realizing that Magadha was invincible, the earth struck him with Bhīma.; आस्थितः, आसनम् इति शेषः ॥१॥ — seated, seated, the rest.; शृण्वताम् एवेति । — It’s just listening.; यत् प्रसन्नः कृष्णः करोति न तद् अन्यः कश्चिद् अपि कर्तुं समर्थ इति निश्चित्य सर्वान् एव तान् अनादृत्य कृष्णम् उवाचेत्य् अर्थः । — This means that he ignored all of them and spoke to Kṛṣṇa, deciding that no one else was capable of doing what the pleased Kṛṣṇa was doing.; आभाष्य ?भो भो कृष्ण भक्त-वत्सल !\\\" इत्य् एवं सम्बोध्य ॥२॥ — Addressing him, ?O, O Krishna, devotee-compassionate!\\\" thus addressing him.",
+    "translation": "Then, on the seventy-second day, the king reported to the work. Realizing that Magadha was invincible, the earth struck him with Bhīma. seated, seated, the rest. It’s just listening. This means that he ignored all of them and spoke to Kṛṣṇa, deciding that no one else was capable of doing what the pleased Kṛṣṇa was doing. Addressing him, ?O, O Krishna, devotee-compassionate!\\\" thus addressing him."
+  },
+  "3": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fd66776215c1e9df66a79e16aa6e83f35e6e57e7bdc3021dcaa6bb59319a8ef3",
+    "word_for_word": "विभूतीर् अंशान् ॥३॥ — Vibhutir parts.",
+    "translation": "Vibhutir parts."
   },
   "4": {
-    "word_for_word": "eṣa — gliding; cakra — disc; wheel; vartināṃ — vartināṃ; mano — in comp. or; rathaḥ — chariot; kathaṃ — (in comp. or; tvayā — by you; kriyate — the sign Ariess; iti — thus; ced — ‘and’; ata — ata; āha — says; tvat — in comp. or 2; pāduke — in/on going on oot or with eet; iti — thus; pari — round; ye — those who; caranti — they rarely ( Subj; iti — thus; yac — in comp. or; chabda — chabda; vyavadhānam — intervening; ārṣam — relating or belonging to or derived rom s; ye — those who; paricaranti — they to ove or walk about; dehena — by/with body; dhyā — by/with cl. 3. Ā. , , ( cf. √; ayanti — they only supposed to be a separate root on account of such orms of √; manasā — in the; abhadrasya — of inauspicious; naśane — in/on disappearing; nāśake — in/on destroying; gṛṇanti — gṛṇanti; vācā — speech; te — they; those; bhavasyāpavargaṃ — bhavasyāpavargaṃ; mokṣaṃ — liberation; vindanti — they P. See √ 3; yady — yady; āśāsate — Ā. to desires; tarhy — tarhy; āśiṣo'pi — āśiṣo'pi; ta — the 1st dental consonant; eva — only; indeed; vindanti — they P. See √ 3; nānye — nānye; cakravartino'pi — cakravartino'pi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e010e2fd37f14ae9ea6f4a816e26be77df6049c445df61a38123690afd29cb21",
+    "word_for_word": "एष चक्र-वर्तिनां मनो-रथः कथं त्वया क्रियते ? — How do you make this chariot of the mind of the wheel-drivers?; इति चेद् अत आह---त्वत्-पादुके इति । — If so, then he argues that it is in your shoes.; परि ये चरन्ति इति यच्-छब्द-व्यवधानम् आर्षम् । — The interruption of the word yach, which means those who walk around, is an Ārṣa.; ये परिचरन्ति देहेन । — Those who serve with their bodies.; ध्यायन्ति मनसा । — They meditate with their minds.; अभद्रस्य नशने नाशके । — In the destruction of the rude, in the destroyer.; गृणन्ति वाचा । — They sing with their voices.; ते भवस्यापवर्गं मोक्षं विन्दन्ति । — They attain liberation from material existence and attain liberation.; यद्य् आशासते तर्ह्य् आशिषोऽपि त एव विन्दन्ति, नान्ये चक्रवर्तिनोऽपि ॥४॥ — If they hope, they alone obtain the blessings, and not others, not even the rulers of the wheel.",
+    "translation": "How do you make this chariot of the mind of the wheel-drivers? If so, then he argues that it is in your shoes. The interruption of the word yach, which means those who walk around, is an Ārṣa. Those who serve with their bodies. They meditate with their minds. In the destruction of the rude, in the destroyer. They sing with their voices. They attain liberation from material existence and attain liberation. If they hope, they alone obtain the blessings, and not others, not even the rulers of the wheel."
+  },
+  "5": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1f19e60b0a187dcd1168fe98da803dc32bcd0c7e2333d0d823cd6fb59b63cf35",
+    "word_for_word": "भगवतो भक्त-पक्ष-पातम् आविष्कारयन्न् आह---तद् देव-देव ! — Discovering the devotee-side of the Lord, he said, “That is God, God!; इति । — It is.; तत् तस्मात् पश्यतु साक्षात् । — Let’s see that from him directly.; एवं निश्चितेऽपि ये कर्मादि-प्रधानाः । — Even if it is thus determined, those who are predominant in action and other things.; केचित् कुरु-सृञ्जया भगवद्-भक्तिं न बहु मन्यन्ते तेषां मोह-निवृत्तये ये त्वां भजन्ति यदि वा न भजन्ति, तेषाम् उभयेषां निष्ठां स्थितिं प्रदर्शय ॥५॥ — For the dispelling of delusion of some Kurus who do not regard devotion to the Supreme Personality of Godhead as great, show them the fixed position of both those who worship You and those who do not.",
+    "translation": "Discovering the devotee-side of the Lord, he said, “That is God, God! It is. Let’s see that from him directly. Even if it is thus determined, those who are predominant in action and other things. For the dispelling of delusion of some Kurus who do not regard devotion to the Supreme Personality of Godhead as great, show them the fixed position of both those who worship You and those who do not."
   },
   "6": {
-    "word_for_word": "nanu — but surely; indeed; rāgādi — rāgādi; rahite — in secret; mayi — mayi; katham — how; idaṃ — idaṃ; vaiṣamyaṃ — unevenness; syāt — may be; tatrāha — tatrāha; na — not; iti — thus; svaḥ — in comp. or 3. below; para — higher; other; iti — thus; bheda — difference; division; matis — matis; tava — your; of you; na — not; syād — in comp. or; eva — only; indeed; kutaḥ — from where; why; brahmaṇo — brahmaṇo; nirupādheḥ — of and; kiṃ — what; ca — and; sarvasyātmano'taḥ — sarvasyātmano'taḥ; sama — (connected with 7. and with 2. and; dṛśaḥ — look; kiṃ — what; ca — and; sva — own; self; sukhānubhūteḥ — sukhānubhūteḥ; ato — ato; rāgādy — rāgādy; abhāvād — abhāvād; iti — thus; bhāvaḥ — sense; purport; tathāpi — nevertheless; saṃsevamānānām — saṃsevamānānām; eva — only; indeed; tvat — in comp. or 2; prasādo — prasādo; nānyeṣām — nānyeṣām; tatra — there; in that; api — also; sevā'nurūpam — sevā'nurūpam; udayaḥ — col. 1; phalaṃ — fruit; result; na — not; tv — tv; atra — here; viparyayo'nyathā — viparyayo'nyathā; bhāvaḥ — sense; purport; yathā — as; just as; kapila — (√; drumasya — of a tree; rāgādi — rāgādi; rāhitye'pi — rāhitye'pi; sevakeṣv — sevakeṣv; eva — only; indeed; phala — fruit; result; janakatvaṃ — generativeness; nānyeṣu — nānyeṣu."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "3f6fd2e468f7a372784969da2f62e964db5f94ad9ef710ae2abb263ddfe4e585",
+    "word_for_word": "ननु रागादि-रहिते मयि कथम् इदं वैषम्यं स्यात् ? — Indeed, how can there be this inequality in me without passion and others?; तत्राह---न इति । — There he argues that it is not.; स्वः पर इति भेद-मतिस् तव न स्याद् एव । — You will not have the distinction between yourself and others.; कुतः ? — Where is it from?; ब्रह्मणो निरुपाधेः । — of the Brahman, the unconditioned.; किं च, सर्वस्यात्मनोऽतः सम-दृशः । — Moreover, he is therefore equal to the whole self.; किं च, स्व-सुखानुभूतेः । — What’s more, of feeling self-pleasure.; अतो रागाद्य्-अभावाद् इति भावः । — Therefore, it is because of the absence of passion and others.; तथापि संसेवमानानाम् एव त्वत्-प्रसादो, नान्येषाम् । — Yet Your grace is only for those who serve You, and not for others.; तत्रापि सेवाऽनुरूपम् उदयः फलं न त्व् अत्र विपर्ययोऽन्यथा-भावः । — Even in this case, the rise is the fruit according to the service, but the opposite is not true.; यथा कपिल-द्रुमस्य रागादि-राहित्येऽपि सेवकेष्व् एव फल-जनकत्वं, नान्येषु ॥६॥ — Just as the Kapila tree, even in the absence of passion and other desires, bears fruit only in its servants and not in others.",
+    "translation": "Indeed, how can there be this inequality in me without passion and others? There he argues that it is not. You will not have the distinction between yourself and others. Where is it from? of the Brahman, the unconditioned. Moreover, he is therefore equal to the whole self. What’s more, of feeling self-pleasure. Therefore, it is because of the absence of passion and others. Yet Your grace is only for those who serve You, and not for others. Even in this case, the rise is the fruit according to the service, but the opposite is not true. Just as the Kapila tree, even in the absence of passion and other desires, bears fruit only in its servants and not in others."
   },
   "7-8": {
-    "word_for_word": "satyaṃ — true; truth; mad — base of the irst pers. in the sg. umber; bhaktānām — of devotees; eva — only; indeed; kaivalya — isolation; ādi — beginning; and so on; nānyeṣām — nānyeṣām; ity — thus; anumodam — a subsequent pleasure; ana — {{Lbody=4781}}; āha — says; samyag — in comp. or; iti — thus; śatru — enemy; karśaneti — karśaneti; sambodhayan — sambodhayan; sarva — all; rāja — a king; vijaya — contest or victory; śaktiṃ — power; sañcārayati — sañcārayati; anubhaviṣyati — anubhaviṣyati; drakṣyati — drakṣyati; sarva — all; loka — world; vyāptā — vyāptā; bhaviṣyatīty — bhaviṣyatīty; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7d0840fc921dd0f5eb7428055b7bc37c9cc6e5e6eb95ad306659d02be7d10dba",
+    "word_for_word": "सत्यं मद्-भक्तानाम् एव कैवल्यादि नान्येषाम् इत्य् अनुमोदमान आह---सम्यग् इति । — Acknowledging that the truth is that Kaivalya and other things are only for My devotees and not for anyone else, he says, “It is right.”; शत्रु-कर्शनेति सम्बोधयन् सर्व-राज-विजय-शक्तिं सञ्चारयति । — Addressing him as the puller of the enemy, he conveys the power to conquer all kings.; अनुभविष्यति द्रक्ष्यति । — He will experience and see.; सर्व-लोक-व्याप्ता भविष्यतीत्य् अर्थः । — This means that it will pervade all the worlds.",
+    "translation": "Acknowledging that the truth is that Kaivalya and other things are only for My devotees and not for anyone else, he says, “It is right.” Addressing him as the puller of the enemy, he conveys the power to conquer all kings. He will experience and see. This means that it will pervade all the worlds."
   },
   "9": {
-    "word_for_word": "kim — what; atra — here; maya — of an; anyena — by/with other; vā — or; saṃpādanīyaṃ — saṃpādanīyaṃ; tava — your; of you; tu — but; sukara — easy to be done; eva — only; indeed; rājasūyaḥ — a great sacrifice performed at the coronation of a k (by himself and his…; ity — thus; āha — says; vijitya — vijitya; iti — thus; jagatīṃ — a emale animal; sarva — all; aṃ — not; pṛthvīm — pṛthvīm; sambhārān — bringing togethers; yajña — worship; upaskara — any utensil; an — not; sambhṛtya — to be collected or arranged or prepared; sampādya — to be brought about or accomplished; āharasva — āharasva; anutiṣṭha — anutiṣṭha; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d0aa71d8a09eabdf6824771bf44b31adacd4b3caf37092fd5c8cc2daeced94c0",
+    "word_for_word": "किम् अत्र मयान्येन वा संपादनीयं, तव तु सुकर एव राजसूयः ? — What can I or anyone else do here, but yours is an easy Rajasuya?; इत्य् आह---विजित्य इति । — It is argued that he has conquered.; जगतीं सर्वां पृथ्वीम् । — The whole world, the earth.; सम्भारान् यज्ञोपस्करान् सम्भृत्य सम्पाद्य आहरस्व अनुतिष्ठ इत्य् अर्थः ॥९॥ — This means that you should gather the paraphernalia and the utensils of the sacrifice and prepare them and eat them and follow them.",
+    "translation": "What can I or anyone else do here, but yours is an easy Rajasuya? It is argued that he has conquered. The whole world, the earth. This means that you should gather the paraphernalia and the utensils of the sacrifice and prepare them and eat them and follow them."
   },
   "10": {
-    "word_for_word": "nanu — but surely; indeed; nṛpati — ‘lord of en’; vijayādi — vijayādi; kathaṃ — (in comp. or; śakyaṃ — able; syāt — may be; ata — ata; āha — says; eta — come ear; iti — thus; kiṃ — what; ca — and; ātmavatā — by/with having a soul; jitendriyeṇa — jitendriyeṇa; te — they; those; tvayā — by you; ahaṃ — I; ca — and; jito'smi — jito'smi; vaśī — in; kṛto'smi — kṛto'smi; akṛtātmabhir — akṛtātmabhir; ajitendriyaiḥ — by/with having unsubdued passionss."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "2e9e73d4b6de79ec979e0eef331dea8073224996f84f833b32d3c930c46aa5b3",
+    "word_for_word": "ननु नृपति-विजयादि कथं शक्यं स्यात् ? — How, then, is it possible to conquer the king?; अत आह---एत इति । — Therefore, he argues, it is.; किं च, आत्मवता जितेन्द्रियेण ते त्वया अहं च जितोऽस्मि वशी-कृतोऽस्मि । — What’s more, because you have conquered your senses by being self-controlled, you and I have been conquered and subdued.; अकृतात्मभिर् अजितेन्द्रियैः ॥१०॥ — They are not self-controlled and have not conquered their senses.",
+    "translation": "How, then, is it possible to conquer the king? Therefore, he argues, it is. What’s more, because you have conquered your senses by being self-controlled, you and I have been conquered and subdued. They are not self-controlled and have not conquered their senses."
   },
   "11": {
-    "word_for_word": "āstāṃ — āstāṃ; tāvad — in comp. or; evaṃ — thus; in this way; bhūtasya — of become; tava — your; of you; parair — parair; abhibhava — abhibhava; śaṅkā — śaṅkā; akiñcanam — without anything; api — also; mat — mat; paraṃ — higher; other; ko'pi — ko'pi; nābhibhavituṃ — nābhibhavituṃ; prabhavatīty — prabhavatīty; āha — says; na — not; kaścid — kaścid; iti — thus; tejasā — tejasā; prabhāveṇa — by eans or in consequence of; vibhūtibhiḥ — by/with penetratings; sainyādi — sainyādi; sāmagrībhiḥ — by/with totalitys."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "efa1deb289dd9233b7f227b4449bdcfcfd377ec12d54def80411073ffcb20ed7",
+    "word_for_word": "आस्तां तावद् एवं-भूतस्य तव परैर् अभिभव-शङ्का अकिञ्चनम् अपि मत्-परं कोऽपि नाभिभवितुं प्रभवतीत्य् आह---न कश्चिद् इति । — Let there be no doubt that you will be attacked by others, even if you are in this state.; तेजसा प्रभावेण । — By the influence of the effulgence.; विभूतिभिः सैन्यादि-सामग्रीभिः ॥११॥ — with glories, army and other equipment.",
+    "translation": "Let there be no doubt that you will be attacked by others, even if you are in this state. By the influence of the effulgence. with glories, army and other equipment."
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a1c8c425242234907da661dac81f0042ebfecf0883acc4003753f91972937355",
+    "word_for_word": "अयुङ्क्त नियुक्तवान् । — He did not appoint and appointed.; विष्णोस् तेजसोपबृंहितान् संवर्धितान् । — They were enhanced and enhanced by the effulgence of Lord Viṣṇu.; तेजोपबृंहितान् इति सन्धिर् आर्षः ॥१२॥ — The conjunction Ārṣa says that they are enriched with splendour.",
+    "translation": "He did not appoint and appointed. They were enhanced and enhanced by the effulgence of Lord Viṣṇu. The conjunction Ārṣa says that they are enriched with splendour."
+  },
+  "13": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4413ec83091995b34712bf7aecb84b7399b6a433a5c0c14ad31c80295cf907af",
+    "word_for_word": "नकुलादीनां मत्स्यादिभिः सहायैर् यथा-सङ्ख्येन सम्बन्धः ॥१३॥ — Nakula and others are related to the help of fish and others in accordance with their number.",
+    "translation": "Nakula and others are related to the help of fish and others in accordance with their number."
   },
   "14": {
-    "word_for_word": "kathaṃ — (in comp. or; bhūtāya — to/for become; yakṣyate — is being to be quick; yāgaṃ — an offering; kariṣyate — to be dones."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ea99f28ec40432cb56531c05adbcf4c136f71e54a1aeb7b4582a4eedfead74d6",
+    "word_for_word": "कथं-भूताय ? — How-to-be?; यक्ष्यते यागं करिष्यते ॥१४॥ — It will be sacrificed and the sacrifice will be performed.",
+    "translation": "How-to-be? It will be sacrificed and the sacrifice will be performed."
+  },
+  "15": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e4ca1e71fcea50d070764b88d31070cebeb171cf35c2f9f8d9edd98aaaf09c4d",
+    "word_for_word": "आद्यो हरिः श्री-कृष्णः ॥१५॥ — The first Hari is Sri-Krishna.",
+    "translation": "The first Hari is Sri-Krishna."
+  },
+  "16": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "03f153565835a2ca5e43e29fc00840108c79fc101c45ee9dc3e6998cab9a29ea",
+    "word_for_word": "ब्रह्म-लिङ्ग-धरा ब्राह्मण-लिङ्ग-धारिणः । — They are the bearers of the Brahma-lingam and the Brahmana-lingam.; यतो यत्र बृहद्रथ-सुतो जरासन्धः ॥१६॥ — From wherever Jarasandha, the son of Brihadratha, came.",
+    "translation": "They are the bearers of the Brahma-lingam and the Brahmana-lingam. From wherever Jarasandha, the son of Brihadratha, came."
+  },
+  "17": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "aa110d96bf47eaf703a062ae4a84e010fef4c201bc332cb16d332ca46a96ef69",
+    "word_for_word": "गृहेषु वर्तमानं समयाचेरन् सम्यग् अयाचन्त इत्य् अर्थः ॥१७-१८॥ — This means that they did not properly ask for the presence of the time in the houses (17-18).",
+    "translation": "This means that they did not properly ask for the presence of the time in the houses (17-18)."
   },
   "19": {
-    "word_for_word": "nanv — but surely; idaṃ — idaṃ; kāmayāmaha — kāmayāmaha; iti — thus; viśeṣo — viśeṣo; nirdiśyatām — nirdiśyatām; anyathā — otherwise; yasya — whose; of which; svayaṃ — in comp. or; kalpaḥ — practicable; putra — son; ada — chiefly ifc; ir — cl. 6. P. , to go; viyogo — viyogo; duḥsahaḥ — d to be borne; sa — the last of the three sibilants; kathaṃ — (in comp. or; deyaḥ — to be given or presented or granted or shown; tathā — so; in that way; rāja — a king; maṇḍanaṃ — adorning; kirīṭādy — kirīṭādy; adeyaṃ — improper or unfit to be given; yat — which; that which; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; bhikṣubhyaḥ — from/for a beggars; kathaṃ — (in comp. or; deyam — to be given or presented or granted or shown; tathātiramyaṃ — tathātiramyaṃ; ratna — a gift; ābharaṇa — decorating; ādi — beginning; and so on; putrādi — putrādi; yogyaṃ — yogyaṃ; kathaṃ — (in comp. or; parasmai — dat; deyam — to be given or presented or granted or shown; iti — thus; ced — ‘and’; ata — ata; āhuḥ — they say; kiṃ — what; durmarṣam — ot easily to be orgotten; ity-ādi — and so on; atha — now; then; dṛṣṭāntatvenārthāntaram — dṛṣṭāntatvenārthāntaram; āhuḥ — they say; kim — what; akāryam — ot to be done; iti — thus; yathā — as; just as; asa — ot he; ādhūnām — of {{Lbody=24195}}s; akāryaṃ — ot to be done; nāsti — does not exist; tathā — so; in that way; titikṣūṇāṃ — titikṣūṇāṃ; durmarṣaṃ — ot easily to be orgotten; duḥsahaṃ — d to be borne; nāsti — does not exist; vadānyānām — of bountifuls; atyudāra — very liberal; aṇ — to sound; am — quickly; adeyaṃ — improper or unfit to be given; nāsti — does not exist; sama — (connected with 7. and with 2. and; darśināṃ — darśināṃ; paraś — in comp. or; ca — and; nāsti — does not exist; ataḥ — therefore; from this; kiṃ — what; viśeṣa — specific distinction; nirdeśenety — nirdeśenety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1892f04883b86cf1849a1823d7ee28d61d8b57de4c7002704d9d03de360ad73f",
+    "word_for_word": "नन्व् इदं कामयामह इति विशेषो निर्दिश्यताम्, अन्यथा यस्य स्वयं-कल्पः पुत्रादेर् वियोगो दुःसहः स कथं देयः, तथा राज-मण्डनं किरीटाद्य्-अदेयं यत् तद् भिक्षुभ्यः कथं देयम् ? — Now, let the distinction be specified that we desire this, otherwise how can it be given to one whose self-determined separation from sons and others is unbearable, and how can the royal adornment, crown and others, which are not to be given, be given to monks?; तथातिरम्यं रत्नाभरणादि पुत्रादि-योग्यं कथं परस्मै देयम् ? — How can such a beautiful jewelry ornament, worthy of a son or other things, be given to another?; इति चेद् अत आहुः---किं दुर्मर्षम् इत्य्-आदि । — If so, then they say, \"What is it that is unbearable?\"; अथ दृष्टान्तत्वेनार्थान्तरम् आहुः---किम् अकार्यम् इति । — Then, as an illustration, they argue for a different meaning: what is not to be done?; यथा असाधूनाम् अकार्यं नास्ति, तथा तितिक्षूणां दुर्मर्षं दुःसहं नास्ति । — Just as there is nothing wrong with the unrighteous, there is nothing unbearable for the patient.; वदान्यानाम् अत्युदाराणाम् अदेयं नास्ति । — There is nothing that cannot be paid to the generous and the most generous.; सम-दर्शिनां परश् च नास्ति । — There is no one beyond the equal-minded.; अतः किं विशेष-निर्देशेनेत्य् अर्थः ॥१९॥ — Therefore, what is the meaning of the special instruction?",
+    "translation": "Now, let the distinction be specified that we desire this, otherwise how can it be given to one whose self-determined separation from sons and others is unbearable, and how can the royal adornment, crown and others, which are not to be given, be given to monks? How can such a beautiful jewelry ornament, worthy of a son or other things, be given to another? If so, then they say, \"What is it that is unbearable?\" Then, as an illustration, they argue for a different meaning: what is not to be done? Just as there is nothing wrong with the unrighteous, there is nothing unbearable for the patient. There is nothing that cannot be paid to the generous and the most generous. There is no one beyond the equal-minded. Therefore, what is the meaning of the special instruction?"
   },
   "20": {
-    "word_for_word": "kiṃ — what; ca — and; arthine — arthine; dhīreṇa — dhīreṇa; mudgalādivat — mudgalādivat; prāṇā — prāṇā; api — also; na — not; vañcanīyā — vañcanīyā; ity — thus; āśayenāhuḥ — āśayenāhuḥ; yo'nityena — yo'nityena; iti — thus; nācinoti — nācinoti; na — not; sampādayati — sampādayati; sa — the last of the three sibilants; vācyaḥ — Sch; sa — the last of the three sibilants; nindyaḥ — =."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "836ebc46a46c1f5d202700636dd3f09c6d214a041f6b92dee508fb02a41d273a",
+    "word_for_word": "किं च, अर्थिने धीरेण मुद्गलादिवत्-प्राणा अपि न वञ्चनीया इत्य् आशयेनाहुः---योऽनित्येन इति । — Moreover, they say, with the intention that even the life of the seeker should not be deceived by slowness, like that of a hammer and other objects.; नाचिनोति न सम्पादयति स वाच्यः स निन्द्यः ॥२०॥ — He who does not choose and does not accomplish is to be spoken of and he is to be condemned.",
+    "translation": "Moreover, they say, with the intention that even the life of the seeker should not be deceived by slowness, like that of a hammer and other objects. He who does not choose and does not accomplish is to be spoken of and he is to be condemned."
   },
   "21": {
-    "word_for_word": "viśva — universe; all; amitra — an enemy; artha — meaning; purpose; ānṛṇyāya — to/for acquittance of debt or obligation; hariścandro — hariścandro; bhāryātmajādi — bhāryātmajādi; sarvaṃ — all; vikrīya — vikrīya; svayaṃ — in comp. or; cāṇḍālatāṃ — cāṇḍālatāṃ; prāpto'py — prāpto'py; anirviṇṇaḥ — ot downcast; sahāyodhyā — sahāyodhyā; vasibhir — vasibhir; janaiḥ — by/with person; peoples; svargaṃ — svargaṃ; gataḥ — gone; rantidevaḥ — of; sa — the last of the three sibilants; kuṭumbo'ṣṭa — kuṭumbo'ṣṭa; catvāriṃśad — catvāriṃśad; ahāny — ahāny; alabdhodako'pi — alabdhodako'pi; kathañcil — kathañcil; labdhvānnaudakādy — labdhvānnaudakādy; arthibhyo — arthibhyo; dattvā — having given; brahma — Brahman; Absolute; lokaṃ — world; gataḥ — gone; uñcha — gleaning; vṛttir — vṛttir; mudgalaḥ — of a with the patr; ṣaṇ — in comp. or; māsaṃ — the oon; sīdat — sīdat; kuṭumbo'py — kuṭumbo'py; ātithya — proper or a guest; dānena — by/with the act of giving; brahma — Brahman; Absolute; lokaṃ — world; gataḥ — gone; śibiḥ — of a; śaraṇāgata — come or pr; kapota — (√; rakṣaṇāya — to/for ‘protector’; sva — own; self; māṃsaṃ — sg. and pl. lesh; śyenāya — to/for a hawk; dattvā — having given; divaṃ — heaven; gataḥ — gone; baliḥ — tribute; sarvasvaṃ — the whole of a person's property or possessions; brāhmaṇa — brāhmaṇa; veṣa — ( ifc. . cf; dhāriṇe — dhāriṇe; haraye — to/for Hari; dattvā — having given; tam — him; that; eva — only; indeed; ātma — (in comp. or; sāc — strong orm of 2; cakāra — did; made; kapotaś — kapotaś; cātithaye — cātithaye; vyādhāya — to become or be like a hunter; kapotyā — by/with the emale of a pigeon; sahātma — sahātma; māṃsaṃ — sg. and pl. lesh; dattvā — having given; vimānena — by/with devoid of honour; divaṃ — heaven; gataḥ — gone; vya — a coverer; adhas — below; tayoḥ — of the two the 1st dental consonants; sattvaṃ — sattvaṃ; vīkṣya — =; svayam — himself; oneself; atinirviṇṇo — atinirviṇṇo; mahā — great; prasthāne — in/on setting out; vanāgni — =; dagdha — burnt; deho — deho; niṣkalmaṣo — niṣkalmaṣo; divam — heaven; āruroha — āruroha; evam — thus; in this way; anye — in/on other; ca — and; bahavo'dhruveṇa — bahavo'dhruveṇa; śarīreṇa — śarīreṇa; dhruvaṃ — ixed; lokaṃ — world; gatā — gatā; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "85dfb8cab02a7e6078f9cfc095fb5fc9d56d9322c67d0742e92d99e5dd7d83ab",
+    "word_for_word": "विश्वामित्रार्थानृण्याय हरिश्चन्द्रो भार्यात्मजादि-सर्वं विक्रीय स्वयं चाण्डालतां प्राप्तोऽप्य् अनिर्विण्णः सहायोध्या-वसिभिर् जनैः स्वर्गं गतः । — Hariścandra, who had sold his wife, children and other possessions to pay off his debt to Vishvāmitra, and although he himself had become a chandala, remained undeterred and went to heaven with the people of Ayodhya.; रन्तिदेवः स-कुटुम्बोऽष्ट-चत्वारिंशद् अहान्य् अलब्धोदकोऽपि कथञ्चिल् लब्ध्वान्नौदकाद्य्-अर्थिभ्यो दत्त्वा ब्रह्म-लोकं गतः । — Rantideva and his family, having been without water for forty-eight days, somehow obtained it and gave it to those who asked for it, and went to the Brahmaloka.; उञ्छ-वृत्तिर् मुद्गलः षण्-मासं सीदत्-कुटुम्बोऽप्य् आतिथ्य-दानेन ब्रह्म-लोकं गतः । — Mudgal, whose occupation was high, and whose family had been suffering for six months, went to the Brahmaloka by giving hospitality.; शिबिः शरणागत-कपोत-रक्षणाय स्व-मांसं श्येनाय दत्त्वा दिवं गतः । — Shibi gave his flesh to the fox to protect the pigeons who had taken refuge in him and went to heaven; बलिः सर्वस्वं ब्राह्मण-वेष-धारिणे हरये दत्त्वा तम् एव आत्म-साच् चकार । — Bali gave all his possessions to Hari, who was disguised as a brāhmaṇa, and made him his own self.; कपोतश् चातिथये व्याधाय कपोत्या सहात्म-मांसं दत्त्वा विमानेन दिवं गतः । — The pigeon hunted down the guest and gave him his own meat along with the pigeon and flew to heaven in an airplane; व्याधस् तयोः सत्त्वं वीक्ष्य स्वयम् अतिनिर्विण्णो महा-प्रस्थाने वनाग्नि-दग्ध-देहो निष्कल्मषो दिवम् आरुरोह । — Seeing the strength of the two demigods the wolf himself became very disappointed and on his great departure his body burnt by the forest fire and immaculately ascended to heaven; एवम् अन्ये च बहवोऽध्रुवेण शरीरेण ध्रुवं लोकं गता इति ॥२१॥ — Thus many others have attained the eternal world with their impermanent bodies.",
+    "translation": "Hariścandra, who had sold his wife, children and other possessions to pay off his debt to Vishvāmitra, and although he himself had become a chandala, remained undeterred and went to heaven with the people of Ayodhya. Rantideva and his family, having been without water for forty-eight days, somehow obtained it and gave it to those who asked for it, and went to the Brahmaloka. Mudgal, whose occupation was high, and whose family had been suffering for six months, went to the Brahmaloka by giving hospitality. Shibi gave his flesh to the fox to protect the pigeons who had taken refuge in him and went to heaven Bali gave all his possessions to Hari, who was disguised as a brāhmaṇa, and made him his own self. The pigeon hunted down the guest and gave him his own meat along with the pigeon and flew to heaven in an airplane Seeing the strength of the two demigods the wolf himself became very disappointed and on his great departure his body burnt by the forest fire and immaculately ascended to heaven Thus many others have attained the eternal world with their impermanent bodies."
+  },
+  "22": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "69d8995411a51b14beaddb72d0006dfab44d3c9aac1c7d32d15298e9cece3586",
+    "word_for_word": "ज्या-हतैर् ज्या-घात-किणाङ्कितैः दृष्ट-पूर्वान् द्रौपदी-स्वयंवरादिषु ॥२२-२३॥ — They were seen before in the case of Draupadi, Svayamvara and others, who were struck by bows and marked with bowstrings. 22-2",
+    "translation": "They were seen before in the case of Draupadi, Svayamvara and others, who were struck by bows and marked with bowstrings. 22-2"
   },
   "23": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "24-25": {
-    "word_for_word": "indrasya — of ( or etym. as given by ative authorities See; śriyaṃ — śriyaṃ; jihīrṣatā — jihīrṣatā; vipra — stirred or excited; vyājena — by/with (rarely ifc; viṣṇunā — by/with Viṣṇu; bhraṃśitasya — of ade to all; api — also; baleḥ — of tribute; nu — (in also; aho — aho; na — not; iti — thus; pāṭhe — in/on recitation; na — not; śrūyate — śrūyate; kiṃ — what; api — also; tu — but; śrūyata — śrūyata; iti — thus; taṃ — the 1st dental consonant; ślāghate — cl. 1. Ā. ( ep. alsos; viṣṇava — viṣṇava; iti — thus; śukreṇa — śukreṇa; vāryamāṇo'pi — vāryamāṇo'pi; ata — ata; eva — only; indeed; viṣṇur — viṣṇur; iti — thus; jānann — jānann; api — also."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c1fa449a1a62aa1b0dfb762744c33c65673061d725d21fa47018df5ee92a6f89",
+    "word_for_word": "इन्द्रस्य श्रियं जिहीर्षता विप्र-व्याजेन विष्णुना भ्रंशितस्यापि बलेः । — Bali, who wanted to take away the opulence of Indra, was defeated by Lord Viṣṇu in the interest of a brāhmaṇa.; नु अहो । — Nu Oh.; \\\"न\\\" इति पाठे न श्रूयते किं, अपि तु श्रूयत इति । — What is not heard in the text \\\"no\\\" is, but it is heard.; तं श्लाघते---विष्णव इति । — He praises him as Vishnu.; शुक्रेण वार्यमाणोऽपि । — Even when prevented by Venus.; अत एव विष्णुर् इति जानन्न् अपि ॥२४-२५॥ — That is why even knowing that he is Vishnu.24-2",
+    "translation": "Bali, who wanted to take away the opulence of Indra, was defeated by Lord Viṣṇu in the interest of a brāhmaṇa. Nu Oh. What is not heard in the text \\\"no\\\" is, but it is heard. He praises him as Vishnu. Even when prevented by Venus. That is why even knowing that he is Vishnu.24-2"
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ef94f2200716dbeca717c4b877b22395e9e989e76173abf241c3ce2798e217b4",
+    "word_for_word": "पतमानेन पतता क्षत्र-बन्धुना देहेन ब्राह्मणार्थाय विपुलं यशो नेहता नेहमानेन असंपादयता को न्व् अर्थः ? — What is the point of not achieving abundant fame for the sake of the Brahmins with the body of a Kshatriya-friend who is falling down?; न कोऽपीत्य् अर्थः ॥२६॥ — No one, that is, no one.",
+    "translation": "What is the point of not achieving abundant fame for the sake of the Brahmins with the body of a Kshatriya-friend who is falling down? No one, that is, no one."
   },
   "27": {
-    "word_for_word": "evaṃ — thus; in this way; niścityāha — niścityāha; he — a vocative icle (‘oh!’ ‘ho!’; viprā — to ill completely; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1d98d676efd40bfe600211999855c898032f9354ab7cdd26e330e3da4e9a3cb4",
+    "word_for_word": "एवं निश्चित्याह---हे विप्रा इति ॥२७-२८॥ — Having thus decided, he said, \"O Brāhmaṇas.",
+    "translation": "Having thus decided, he said, \"O Brāhmaṇas."
   },
   "28": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "29": {
-    "word_for_word": "rājanyatām — rājanyatām; eva — only; indeed; prapañcayati — expands; elaborates; asāv — asāv; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b874bc3db6a80cbaf6b69cc6ba6200bbd09db6f69878e3fa6703d121fa72c5e5",
+    "word_for_word": "राजन्यताम् एव प्रपञ्चयति---असाव् इति ॥२९-३०॥ — He only argues for royalty: Asav.29-3",
+    "translation": "He only argues for royalty: Asav.29-3"
   },
   "30": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "31": {
-    "word_for_word": "yato — in comp. or; mad — base of the irst pers. in the sg. umber; bhiyā — ear; samudraṃ — ocean; śaraṇaṃ — shelter; gataḥ — gone."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "97b55b46397cef86c372f8860569382ddfcf8dbe3a2a936fe603e20fa75ab838",
+    "word_for_word": "यतो मद्-भिया समुद्रं शरणं गतः ॥३१॥ — Because of my fear he took refuge in the ocean.",
+    "translation": "Because of my fear he took refuge in the ocean."
+  },
+  "32": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "529cffa822bff167a0fd14a3bda415eb1e6048728362fd6f457cbeeb9ae3fdb2",
+    "word_for_word": "वयसाप्य् अतुल्यो नाति-सत्त्वो नातिबलश् च न च देहेन मय समोऽतोऽर्जुनो योद्धा न भवेत् । — He is incomparable in age, not very strong, not very strong, and not equal to me in body, so Arjuna should not be a warrior.; भीमस् तु भवेत् । — Bhima, however, should be.; यतो मम तुल्य-बलः ॥३२॥ — Because I have equal strength.",
+    "translation": "He is incomparable in age, not very strong, not very strong, and not equal to me in body, so Arjuna should not be a warrior. Bhima, however, should be. Because I have equal strength."
   },
   "33": {
-    "word_for_word": "pra — before; adāya — to/for chiefly ifc; dattvety — dattvety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f102c0e53bd4f55d515a932f0df26bcc4f0c091ec830e10ef6bb03ddaaa0921b",
+    "word_for_word": "प्रादाय दत्त्वेत्य् अर्थः ॥३३॥ — giving and giving means.",
+    "translation": "giving and giving means."
+  },
+  "34": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bd01c8ff548f10dc02d301bed2605242844c9c0367faf463661c26c6f5c2099f",
+    "word_for_word": "समेखले युद्धाङ्गणे ॥३४॥ — in the battlefield of Samekhale.",
+    "translation": "in the battlefield of Samekhale."
+  },
+  "35": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "61bb3144c71c4a136c027b4ca3c58fc0acfb9dc5415e7f55a7d9dbe01fac9044",
+    "word_for_word": "मण्डलानि गदा-युद्ध-गति-भेदान् । — The circles distinguish between clubs and fighting movements.; सव्यं दक्षिणं च यथा भवति,x\\ऽ तथा । — Left and right are as they are,x\\'; रङ्गिणो रङ्ग-गतयोर् नटयोर् इव इति निर्भयत्वेनोपमा ॥३५॥ — The analogy is that the actors are like two actors in the arena because they are fearless.",
+    "translation": "The circles distinguish between clubs and fighting movements. Left and right are as they are,x\\' The analogy is that the actors are like two actors in the arena because they are fearless."
+  },
+  "36": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ca41beb851b0cf20d00d14fb6a875007deca354fe774f880ba5858dc772b0de5",
+    "word_for_word": "चट-चटा इति गदयोः परस्पराघात-शब्दानुकरणम् । — Chat-chata is an imitation of the sound of two donkeys hitting each other.; वज्रस्य निष्पेषः पातस् तत्-सदृशः । — The fall of a thunderbolt is similar to that.; युध्यतोर् दन्तिनोर् दन्ताघात-शब्द इव शुशुभे ॥३६॥ — It sounded like the sound of the teeth clashing as they fought.",
+    "translation": "Chat-chata is an imitation of the sound of two donkeys hitting each other. The fall of a thunderbolt is similar to that. It sounded like the sound of the teeth clashing as they fought."
+  },
+  "37": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "7f971b20aac19b0c353df5e3f81a9f77064eccfcbd87564dfac96f7a3e98ee56",
+    "word_for_word": "अंस-कट्य्-आदीन् उपेत्य । — Approaching the shoulders and waist.; दीप्तो मन्युर् ययोस् तयोर् द्विरदयोर् गजयोर् अर्क-शाखाभ्यां समं युध्यतोस् ते यथा चूर्णी-भवतस् तद्वत् ॥३७॥ — The anger of the two elephants who fought equally with the branches of the sun was as if they were crushed to powder.",
+    "translation": "Approaching the shoulders and waist. The anger of the two elephants who fought equally with the branches of the sun was as if they were crushed to powder."
+  },
+  "38": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "a0de7381ffbe7826a7b61244ff0f5cd39974d0c5a266383f453adea3fe6282d4",
+    "word_for_word": "अपिष्टां चूर्णी-चक्रतुः ॥३८॥ — They made the flour into powder.",
+    "translation": "They made the flour into powder."
+  },
+  "39": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "00ab0cd46c7077d7121bcc3c80d9d6da2dc50305da3ccbf326bba0a14053049d",
+    "word_for_word": "शिक्षा अभ्यासः, बलं सत्त्वम्, ओजः प्रभावः, समानि तानि ययोस् तयोः ॥३९-४१॥ — Education, practice, strength, virtue, energy and influence are the same things in the two.39-4",
+    "translation": "Education, practice, strength, virtue, energy and influence are the same things in the two.39-4"
   },
   "42": {
-    "word_for_word": "janma — birth; śakala — a chip; rūpaṃ — form; mṛtiḥ — death; punaḥ — again; śakalī — in comp. or; bhāvas — bhāvas; te — they; those; vidvān — learned person; jānan — jānan; jarā — the act of becoming old; nāma — name; namely; rākṣasī — a or emale demon; tat — that; kṛtam — done; made; acintayat — acintayat; katham — how; asau — and; śakalī — in comp. or; bhavet — may be; becomes; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8a78d9784b6443c0b4f7b5cc2cd16c553a634d7be918f0c7c60ca8ad875835d0",
+    "word_for_word": "जन्म शकल-रूपं, मृतिः पुनः शकली-भावस् ते विद्वान् जानन् । — The learned knew that birth is in the form of Shakal, and death is again in the form of Shakal.; जरा नाम राक्षसी, तत्-कृतम् । — Jara is a demon, and that’s what she did.; अचिन्तयत् \\\"कथम् असौ शकली-भवेत् ?\\\" इति ॥४२॥ — He thought, \\\"How can he be Shakali?\\\"",
+    "translation": "The learned knew that birth is in the form of Shakal, and death is again in the form of Shakal. Jara is a demon, and that’s what she did. He thought, \\\"How can he be Shakali?\\\""
+  },
+  "43": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d21960a4dd6d6194ec4ab5e6a953e48b6a858c9582be20fe0ffad1276243ed71",
+    "word_for_word": "विटपं शाखाम् । — A branch is a branch.; करेण विटपं गृहीत्वा हरिर् भीमस्य \\\"यथाहं विटपं पाटयामि तथा त्वम् एनं विषाटय\\\" इति संज्ञया सङ्केतेन अरि-वधोपायं दर्शयामास इत्य् अर्थः ॥४३-४५॥ — This means that the Supreme Personality of Godhead, holding a branch in His hand, showed Bhima the means of killing the enemy by signaling to him, \"As I cut down the branch, so you cut him down.",
+    "translation": "A branch is a branch. This means that the Supreme Personality of Godhead, holding a branch in His hand, showed Bhima the means of killing the enemy by signaling to him, \"As I cut down the branch, so you cut him down."
   },
   "45": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "46": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e279c20b9f697ec4c7331ed4a5aebf47a827f9cda3b92a5236debb4031a45260",
+    "word_for_word": "एकैकः पादादिर् ययोस् ते शकले ॥४६-४७॥ — Each of the feet and the others of which they are in the shackle.46-4",
+    "translation": "Each of the feet and the others of which they are in the shackle.46-4"
   },
   "47": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "48": {
-    "word_for_word": "durvṛttatvā — having bad conduct; ad — to eat; asau — and; hato — hato; na — not; tu — but; rājyābhilāṣeṇeti — rājyābhilāṣeṇeti; darśayann — darśayann; āha — says; sahadevam — with the gods; iti — thus; iti — thus; śrīdhara — ‘bearer or possessor of ortune’; svāmi — in comp. or; vicaracitāyāṃ — vicaracitāyāṃ; bhāvārtha — the simple or obvious eaning; dīpikāyāṃ — dīpikāyāṃ; dvisaptatitamo\\'dhyāyaḥ — dvisaptatitamo\\'dhyāyaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fd39d1ee3f7ceea13c3ddfdcd3ea076bcdfa65506b93fbf7904afe38c32a7624",
+    "word_for_word": "दुर्वृत्तत्वाद् असौ हतो न तु राज्याभिलाषेणेति दर्शयन्न् आह---सहदेवम् इति ॥४८॥ — Showing that he was killed because of his misconduct and not because of his desire for the kingdom he said: \"Sahadeva\"; इति श्रीधर-स्वामि-विचरचितायां भावार्थ-दीपिकायां द्विसप्ततितमो\\ऽध्यायः ॥७२॥ — This is the seventy-second chapter of the Bhavartha-dipika compiled by Śrīdhara-svāmi.",
+    "translation": "Showing that he was killed because of his misconduct and not because of his desire for the kingdom he said: \"Sahadeva\" This is the seventy-second chapter of the Bhavartha-dipika compiled by Śrīdhara-svāmi."
   }
 }

@@ -1,41 +1,198 @@
 {
   "1": {
-    "word_for_word": "dvipañcāśattame — in/on the 52nd; dha — aspirate of the preceding letter; āvan — Ā. (2. sg; bhaya — fear; ad — to eat; iva — like; as if; gataḥ — gone; purīm — a ortress; anvamodata — anvamodata; sandeśaṃ — sandeśaṃ; rukmiṇyā — by/with a species of plant; dvija — dvija; varṇitam — described."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6860f2b798e3825680287cbb4dba550203474dde23a03ac5a716f3012a8e7176",
+    "word_for_word": "द्विपञ्चाशत्तमे धावन् भयाद् इव गतः पुरीम् । — On the fifty-second day he ran to the city as if out of fear; अन्वमोदत सन्देशं रुक्मिण्या द्विज-वर्णितम् ॥ — The brāhmaṇa accepted the message Rukmiṇī had described to him.",
+    "translation": "On the fifty-second day he ran to the city as if out of fear The brāhmaṇa accepted the message Rukmiṇī had described to him."
+  },
+  "2-4": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d5be694258cdbb12947b1e4706cabd91b8a8e9fddc3920690cb6b50e76d840a0",
+    "word_for_word": "क्षुल्लकान् अल्प-प्रमाणान् ॥२॥ — They are small and small in size.; तपसि श्रद्धा-युतः ॥३॥ — with faith in austerities.; तत्र च बदर्य्-आश्रमम् ॥४॥ — There is also the hermitage of Badary.",
+    "translation": "They are small and small in size. with faith in austerities. There is also the hermitage of Badary."
+  },
+  "5-6": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "850ed28ea2ef3f756ff0b6a867d9465b7eb8d820566e4493df8f8a71d4bc376e",
+    "word_for_word": "निन्ये नयन् मार्गे चलति स्म ॥५-६॥ — He took them and walked on the road.5-6",
+    "translation": "He took them and walked on the road.5-6"
+  },
+  "8": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5c8cc910b79bae87a95c5a5ec55177fb8d14d5eafef0f1a45428f824870d28cd",
+    "word_for_word": "भीरु-भीतवद् भीरोर् अपि भीतवत्, अतिभीतवद् इत्य् अर्थः । — It means to be afraid of the timid, to be very afraid of the timid.; चेलतुः पलायेताम् । — Let’s move and run away.; बहु-योजनं देशम् ॥८॥ — It is a place of many yojanas.",
+    "translation": "It means to be afraid of the timid, to be very afraid of the timid. Let’s move and run away. It is a place of many yojanas."
+  },
+  "12-14": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f494ad1afdc2e5b74aa1825b71ae4467c3e459a8f160a8ee470f0a6ae3a351e1",
+    "word_for_word": "ततो गिरेः दश चैकं च योजनानि तावद् उत्तुङ्गान् मागध-संरोध-देशम् अतिक्रम्य परतोऽधो निपेततुः ॥१२-१४॥ — Then they crossed the region of Magadha Sanrodha which was ten and one yojanas high from the mountain and fell down on the other side (12-14).",
+    "translation": "Then they crossed the region of Magadha Sanrodha which was ten and one yojanas high from the mountain and fell down on the other side (12-14)."
   },
   "15": {
-    "word_for_word": "śrī-kṛṣṇasya — of Śrī Kṛṣṇa; vivāhān — leading aways; nirūpayituṃ — nirūpayituṃ; baladeva — Baladeva; vivāhaṃ — leading away; navama — ninth; skandhoktam — skandhoktam; anusmārayati — anusmārayati; ānarta — ānarta; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6a3f7bb0afc40d45c2b3bfcd27bcb3fba0d3846103f6863ba518a164333f948a",
+    "word_for_word": "श्री-कृष्णस्य विवाहान् निरूपयितुं बलदेव-विवाहं नवम-स्कन्धोक्तम् अनुस्मारयति---आनर्त इति ॥१५॥ — To describe the marriages of Lord Kṛṣṇa, he recalls the marriage of Baladeva mentioned in the ninth Skanda, namely, Ānarta.",
+    "translation": "To describe the marriages of Lord Kṛṣṇa, he recalls the marriage of Baladeva mentioned in the ninth Skanda, namely, Ānarta."
+  },
+  "16-17": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ee363101152056300650345bc227d4e439af3a2ed4870adff801cd7241d5be15",
+    "word_for_word": "मात्रां कलाम् । — The volume is the art.; गरुडो यथा देवान् प्रमथ्य सुधाम् अहरत्, तथेति ॥१६-१७॥ — Just as Garuda defeated the gods and took away the nectar, so it is.16-1",
+    "translation": "The volume is the art. Just as Garuda defeated the gods and took away the nectar, so it is.16-1"
   },
   "18-19": {
-    "word_for_word": "rākṣaso — rākṣaso; yuddha — battle; haraṇāt — from carrying; iti — thus; smṛteḥ — of remembered scripture; remembrance; rājñaḥ — rājñaḥ; pramathyeti — pramathyeti; ca — and; tvad — =; uktyā — uktyā; rākṣasena — by/with belonging to or like a; vidhānena — by/with disposing; upayeme — upayeme; pariṇītavān — pariṇītavān; iti — thus; śrutam — heard; pūrvam — before; eva — only; indeed; vā — or; sāmānyata — sāmānyata; eva — only; indeed; śrutam — heard; viśeṣaṃ — specific distinction; tu — but; śrotum — hearing; icchāmi — icchāmi."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "70a77d5bedccb6de4c07193a172ef1bfab29e69f00f5a7d1d162e5bfde3cae63",
+    "word_for_word": "राक्षसो युद्ध-हरणात् इति स्मृतेः । — The demon is from the battle-harness, according to the memory.; राज्ञः प्रमथ्येति च त्वद्-उक्त्या राक्षसेन विधानेन उपयेमे परिणीतवान् इति श्रुतम् । — I have heard that at your behest the king Pramathy married the demon in accordance with the prescribed rituals; पूर्वम् एव वा । — Or already in the past.; सामान्यत एव श्रुतम् । — I’ve heard it in general.; विशेषं तु श्रोतुम् इच्छामि ॥१८॥ — I would like to hear something special.",
+    "translation": "The demon is from the battle-harness, according to the memory. I have heard that at your behest the king Pramathy married the demon in accordance with the prescribed rituals Or already in the past. I’ve heard it in general. I would like to hear something special."
   },
   "20-22": {
-    "word_for_word": "śravaṇautsukyam — śravaṇautsukyam; āviṣkaroti — āviṣkaroti; brahmann — brahmann; iti — thus; puṇyā — holy basil; mahā — great; phalāḥ — fruit; results; mādhvīḥ — sweet; śruti — scripture; hearing; sukhāḥ — happinesss; lokasya — of world; mala — (in later language also; apaha — ifc. keeping back; aś — Ā. ( aor. 3. pl; ca — and; śṛṇvānaḥ — śṛṇvānaḥ; śṛṇvann — śṛṇvann; ity — thus; arthaḥ — meaning; purpose; śruta — heard; jñaḥ — or 1. . See; śruta — heard; sāra — course; vit — vit; nitya — ( r; nūtanāḥ — belonging to ‘ ow’ or the present days; pratikṣanam — pratikṣanam; āścaryavat — āścaryavat; pratīyamānāḥ — pratīyamānāḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "be1a6801819a9e1ad7abae6a65d30a5e99108e2e7e1484242a2b35f9ae7820c8",
+    "word_for_word": "श्रवणौत्सुक्यम् आविष्करोति---ब्रह्मन्न् इति । — He discovers the curiosity to hear: Brahman.; पुण्या महा-फलाः, माध्वीः श्रुति-सुखाः, लोकस्य मलापहाश् च, शृण्वानः शृण्वन्न् इत्य् अर्थः । — They are pious and have great fruits, are sweet and pleasant to the ears, and remove the impurities of the world, and they are heard by those who hear them.; श्रुत-ज्ञः श्रुत-सार-वित् । — He who knows what he has heard knows the essence of what he has heard.; नित्य-नूतनाः प्रतिक्षनम् आश्चर्यवत् प्रतीयमानाः ॥२०॥ — Ever-new every moment they seemed to be wonderful.",
+    "translation": "He discovers the curiosity to hear: Brahman. They are pious and have great fruits, are sweet and pleasant to the ears, and remove the impurities of the world, and they are heard by those who hear them. He who knows what he has heard knows the essence of what he has heard. Ever-new every moment they seemed to be wonderful."
   },
   "23-24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "25": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1a028b155be2d2e1f83b16a8f16dee4a1a767b89509528cf44357651761d05e4",
+    "word_for_word": "चैद्यम् अमन्यत तस्या वरम् इत्य् अर्थः । — This means that she considered Chaidya to be her husband.",
+    "translation": "This means that she considered Chaidya to be her husband."
+  },
+  "26": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "968558d55a80878ec62aa6bd7bec4abe03b13578029533a73844885ad3092898",
+    "word_for_word": "अवेत्य ज्ञात्वा । — Avetya knowing.; असितापाङ्गी सुनील-कटाक्षा । — Asitapangi Sunil-glance.; कृष्णाय कृष्णम् आनेतुं प्रेषयामास ॥२६॥ — He sent for Krishna to fetch Krishna.",
+    "translation": "Avetya knowing. Asitapangi Sunil-glance. He sent for Krishna to fetch Krishna."
+  },
+  "28": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "64ae7d4cc66c2974cc94587471fc799f94c13e772e633573a7505fc79de8c342",
+    "word_for_word": "आत्मानं श्री-कृष्णम् ॥२८॥ — The Self is Sri-Krishna.",
+    "translation": "The Self is Sri-Krishna."
+  },
+  "29-30": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "70d00b9a021cf02778b1e0d6c8ea4fad91bb134c04eb6abbb8d0ffeb367ed8fc",
+    "word_for_word": "अभिमृशन् शनैः संमर्दयन् ॥२९॥ — Rubbing it together and gently rubbing it.",
+    "translation": "Rubbing it together and gently rubbing it."
+  },
+  "31": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cfa4e3287f3799a374771ea143b1f42900b8f03e9134b2f202520e5745fd5eac",
+    "word_for_word": "स धर्मोऽस्य ब्राह्मणस्य अखिल-काम-दोग्धा भवति । — That religion is the milk of all the desires of this brāhmaṇa.; यद् वा, स ब्राह्मणोऽस्य विश्वस्य अखिल-काम-धुग् इति ॥३१॥ — That is, he is the Brahman, the source of all desires of this universe.",
+    "translation": "That religion is the milk of all the desires of this brāhmaṇa. That is, he is the Brahman, the source of all desires of this universe."
+  },
+  "32": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f3cf4cd2ad50398d72381e6aac305129831ee6c52daef07dd1a5bceca2da031f",
+    "word_for_word": "लोकान् आप्नोति लोकाल् लोकान्तरं पर्यटति नैकत्र निर्वृतस् तिष्ठतीत्य् अर्थः । — This means that he attains the worlds, travels from one world to another, and does not remain satisfied in one place.; \\\"नाप्नोति\\\" इति पाठे सुरेश्वरोऽपि भूत्वा लोकान् नाप्नोत्य् उत्तम-लोकान् प्राप्तो\\ऽप्य् अप्राप्त इव क्लिश्यतीत्य् अर्थः । — In the text \\\"does not attain\\\" it means that even though he is the Lord of the gods, he does not attain the worlds, and even though he has attained the best worlds, he suffers as if he has not attained them.; शेते सुखम् आस्ते इत्य् अर्थः । — It means that he lies down and stays comfortable.; तद् एवाह---सर्वेष्व् अङ्गेषु वाक्-पाण्य्-आदिषु विज्वरस् ताप-रहितः ॥३२॥ — That very thing he said: He is free from fever and pain in all his limbs, speech, hands and so on.",
+    "translation": "This means that he attains the worlds, travels from one world to another, and does not remain satisfied in one place. In the text \\\"does not attain\\\" it means that even though he is the Lord of the gods, he does not attain the worlds, and even though he has attained the best worlds, he suffers as if he has not attained them. It means that he lies down and stays comfortable. That very thing he said: He is free from fever and pain in all his limbs, speech, hands and so on."
+  },
+  "33": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f3eadebadb780ce68468f520cd7f70c89f8833f4f9404c2cc5639f06b93337be",
+    "word_for_word": "स्व-लाभः स्वत एव प्राप्तो लाभ आत्म-लाभो वा, तेन सन्तुष्टान् पूर्णान् साधून् स्व-धर्म-निष्ठान् ॥३३॥ — Self-gain is the gain obtained by oneself or self-gain, by which one is satisfied, perfect, saintly and devoted to one's own duty.",
+    "translation": "Self-gain is the gain obtained by oneself or self-gain, by which one is satisfied, perfect, saintly and devoted to one's own duty."
+  },
+  "34": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "95bdfb84ea01ba254b263b665b1023920cf9368fd75da85d58c1cf79fd069826",
+    "word_for_word": "यस्य राज्ञो विषये देशे । — whose king is in the country.",
+    "translation": "whose king is in the country."
+  },
+  "35": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c51df97f97a14fa77cc7730330e41f118fc028062391fc055b08a0dffdffed55",
+    "word_for_word": "यतः स्थानात् । — From the place where.; यद्-इच्छया यत्-कार्येच्छया दुर्गं समुद्रम् ॥३५॥ — Whatever you desire and whatever you desire to do, the fortress is the sea.",
+    "translation": "From the place where. Whatever you desire and whatever you desire to do, the fortress is the sea."
+  },
+  "36": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "4b134078241ab85ec488b70caa3adbad1ce70c054b67ddea1fbf2b296f5fbe65",
+    "word_for_word": "संप्रश्नः प्रष्टव्योऽर्थो\\ऽयं, सः । — This is the meaning of the question to be asked, that is.; परमेष्ठिना परेश्वरेण । — By the Supreme Lord, the Supreme Lord.; बन्धूनाम् अनभिप्रेतं रुक्मिणश् चेष्टितम् इत्य्-आदि सर्वम् ॥३६॥ — Rukmi's behavior was unintentional towards his relatives and so on.",
+    "translation": "This is the meaning of the question to be asked, that is. By the Supreme Lord, the Supreme Lord. Rukmi's behavior was unintentional towards his relatives and so on."
   },
   "37": {
-    "word_for_word": "rukmiṇyā — by/with a species of plant; svayam — himself; oneself; ekānte — in a lonely or solitary place; likhitvā — having cl. 6. P. (rarely Ā; datta — protected; patrikām — patrikām; mudra — joyous; am — quickly; unmucya — unmucya; kṛṣṇāya — to represent; prema — love; cihnām — cihnām; adarśayat — adarśayat; brāhmaṇaḥ — brāhmaṇa; śrī — Śrī; sacred; glorious; kṛṣṇānujñayā — kṛṣṇānujñayā; vācayati — vācayati; śrutvā — having heard; iti — thus; ayam — this; he; arthaḥ — meaning; purpose; he — a vocative icle (‘oh!’ ‘ho!’; acyuta — ot allen; he — a vocative icle (‘oh!’ ‘ho!’; bhuvana — a being; sundara — (perhaps or =; ity — thus; autsukyaṃ — anxiety; dyotayati — dyotayati; kva — ( r. 1; tava — your; of you; mahimā — greatness; kva — ( r. 1; cāhaṃ — cāhaṃ; rūpa — form; kula — family; śīlādi — śīlādi; yuktāpi — yuktāpi; tathāpy — tathāpy; apagatā — apagatā; trapā — perplexity; yasmāt — because; from which; tan — in comp. or; me — cl. 1. Ā. ( ep. also P; cittaṃ — mind; consciousness; tvayy — tvayy; āviśaty — āviśaty; āsajjate — āsajjate; tat — that; kutaḥ — from where; why; tatrāha — tatrāha; śṛṇvatāṃ — śṛṇvatāṃ; karṇa — ear; vivarair — vivarair; antaḥ — within; praviśya — praviśya; aṅga — limb; body; tāpam — (√ 2; aṅga — limb; body; iti — thus; pṛthak — widely apart; sambodhanaṃ — awaking; vā — or; haratas — haratas; tava — your; of you; guṇān — qualitys; śrutvā — having heard; tathā — so; in that way; dṛśimatā — by/with seeing; aṃ — not; cakṣuṣmatā — by/with endowed with the aculty of sight; aṃ — not; dṛśām — the eye; akhilārtha — akhilārtha; lābhātmakaṃ — lābhātmakaṃ; rūpaṃ — form; ca — and; śrutvā — having heard; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ae16646b3bbc92495613621c278db6c1b4056d0d02b6f1f722a51c98abdffdcc",
+    "word_for_word": "रुक्मिण्या स्वयम् एकान्ते लिखित्वा दत्त-पत्रिकाम् । — Rukmiṇī herself wrote a letter in solitude and gave it to him; मुद्राम् उन्मुच्य कृष्णाय प्रेम-चिह्नाम् अदर्शयत् ॥ — She released her seal and showed Lord Kṛṣṇa a sign of love.; ब्राह्मणः श्री-कृष्णानुज्ञया वाचयति---श्रुत्वा इति । — The brāhmaṇa, with the permission of Śrī Kṛṣṇa, reads: Having heard.; अयम् अर्थः---हे अच्युत ! — This means: O Acyuta!; हे भुवन-सुन्दर ! — O Bhuvan-sundar!; इत्य् औत्सुक्यं द्योतयति, \\\"क्व तव महिमा, क्व चाहं रूप-कुल-शीलादि-युक्तापि ? — It signifies curiosity, \\\"Where is your glory, where am I, even though I am endowed with form, family, virtue, etc. ?; तथाप्य् अपगता त्रपा यस्मात्, तन् मे चित्तं त्वय्य् आविशत्य् आसज्जते । — Yet, since I have lost my shame, my mind is fixed on You and is attached to You.; तत् कुतः ? — Where is that from?; तत्राह---शृण्वतां कर्ण-विवरैर् अन्तः प्रविश्य अङ्ग-तापम्, अङ्ग इति पृथक् सम्बोधनं वा, हरतस् तव गुणान् श्रुत्वा, तथा दृशिमतां चक्षुष्मतां दृशाम् अखिलार्थ-लाभात्मकं रूपं च श्रुत्वा इति ॥३७॥ — There he says: Hearing through the holes of the ears the pain of the limbs, or the separate address of the limbs, hearing of the qualities of the taker away, and hearing of the form of the sight which is the beneficiary of all meanings of the sighted.",
+    "translation": "Rukmiṇī herself wrote a letter in solitude and gave it to him She released her seal and showed Lord Kṛṣṇa a sign of love. The brāhmaṇa, with the permission of Śrī Kṛṣṇa, reads: Having heard. This means: O Acyuta! O Bhuvan-sundar! It signifies curiosity, \\\"Where is your glory, where am I, even though I am endowed with form, family, virtue, etc. ? Yet, since I have lost my shame, my mind is fixed on You and is attached to You. Where is that from? There he says: Hearing through the holes of the ears the pain of the limbs, or the separate address of the limbs, hearing of the qualities of the taker away, and hearing of the form of the sight which is the beneficiary of all meanings of the sighted."
   },
   "38": {
-    "word_for_word": "aho — aho; kula — family; kanyānām — of the smallests; idam — this; atidhārṣṭyam — atidhārṣṭyam; iti — thus; mā — do not; śaṅkīr — śaṅkīr; ity — thus; āha — says; kā — who; which; tvā — tvā; iti — thus; he — a vocative icle (‘oh!’ ‘ho!’; mukunda — of; he — a vocative icle (‘oh!’ ‘ho!’; nṛsiṃha — ‘ an-lion’; nara — a ale; śreṣṭha — ost splendid or beautiful; kā — who; which; nāma — name; namely; kanyā — by/with a girl; kulavatī — kulavatī; tathā — so; in that way; mahatī — the egg-plant; puru — uch; guṇodārā — guṇodārā; tathā — so; in that way; dhīrā — of sev. edic. plants; dhṛtimatī — of a river; tvā — tvā; tvāṃ — tvāṃ; patiṃ — husband; lord; na — not; vṛṇīta — vṛṇīta; mayy — mayy; eva — only; indeed; keyaṃ — keyaṃ; doṣa — fault; śaṅkā — śaṅkā; iti — thus; bhāvaḥ — sense; purport; kathaṃ — (in comp. or; bhūtam — become; kula — family; śīlādibhir — śīlādibhir; ātmanā — ātmanā; eva — only; indeed; tulyaṃ — equal; like; nirupamam — peerless; ity — thus; arthaḥ — meaning; purpose; draviṇaṃ — ovable property; dravya — a substance; saṃpat — saṃpat; dhāma — pl. of a class of superhuman beings; prabhā — to shine orth; avaḥ — avour; tathā — so; in that way; nara — a ale; lokasya — of world; manasām — in the; abhirāmo'bhiramaṇaṃ — abhirāmo'bhiramaṇaṃ; yasmāt — because; from which; tam — him; that; kiṃ — what; ca — and; kāle — loc. in time; viva — riding on a bird; aha — surely; avasare — at the right oment."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "24120d11581e43f9490bf6546560c089545813516f4f89c0becdccc51381108b",
+    "word_for_word": "अहो कुल-कन्यानाम् इदम् अतिधार्ष्ट्यम् इति मा शङ्कीर् इत्य् आह---का त्वा इति । — Oh, don’t doubt that this is too rude for the daughters of the family.” “Who are you?” he asked.; हे मुकुन्द ! — O Mukunda!; हे नृसिंह ! — O Nrishimha!; नर-श्रेष्ठ ! — Nar-shrestha!; का नाम कन्या कुलवती तथा महती पुरु-गुणोदारा तथा धीरा धृतिमती त्वा त्वां पतिं न वृणीत ? — What girl of noble birth, so great, so generous, so patient, and so patient, would not ask you for a husband?; मय्य् एव केयं दोष-शङ्का? — What is this suspicion of fault in me?; इति भावः । — This is the sense.; कथं-भूतम् ? — How-ever it happened?; कुल-शीलादिभिर् आत्मना एव तुल्यं निरुपमम् इत्य् अर्थः । — This means that he is equal and incomparable to himself in terms of family, character and so on.; द्रविणं द्रव्य-संपत्, धाम प्रभावः, तथा नर-लोकस्य मनसाम् अभिरामोऽभिरमणं यस्मात् तम् । — Wealth is the wealth of material things, the abode of influence, and the delight of the minds of men.; किं च, काले विवाहावसरे ॥३८॥ — What is more, at the time of marriage.",
+    "translation": "Oh, don’t doubt that this is too rude for the daughters of the family.” “Who are you?” he asked. O Mukunda! O Nrishimha! Nar-shrestha! What girl of noble birth, so great, so generous, so patient, and so patient, would not ask you for a husband? What is this suspicion of fault in me? This is the sense. How-ever it happened? This means that he is equal and incomparable to himself in terms of family, character and so on. Wealth is the wealth of material things, the abode of influence, and the delight of the minds of men. What is more, at the time of marriage."
   },
   "39": {
-    "word_for_word": "he — a vocative icle (‘oh!’ ‘ho!’; vibho — vibho; tasm — to ade away; an — not; me — cl. 1. Ā. ( ep. also P; mayā — by me; bhavān — worldly existence; becomings; khalu — indeed; patir — patir; vṛtaḥ — concealed; ātmā — self; ca — and; bhavato'rpitaḥ — bhavato'rpitaḥ; atas — rom this; tvam — you; atra — here; āgatya — having come; māṃ — do not; bhavato — bhavato; jāyāṃ — ‘bringing orth ’; vidhehi — vidhehi; vipakṣe — vipakṣe; bādhakaṃ — oppressing; dyotayanty — dyotayanty; āha — says; mā — do not; vīra — a brave or eminent an; bhāgam — portion; iti — thus; vīrasya — of a brave or eminent an; tava — your; of you; bhāgaṃ — portion; mām — me; ārāc — ārāc; chīghram — chīghram; etya — p. having come ear; āgatya — having come; caidyo — caidyo; mābhimarśatu — mābhimarśatu; mā — do not; spṛśatu — spṛśatu; mṛga — a orest animal or wild beast; pater — pater; baliṃ — tribute; gomāyuvat — gomāyuvat; gomāyuḥ — aking sounds like cattle; sṛgāla — (also written; iva — like; as if; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "fded0f2488c3d41279acc1bedac97f2a79d059e70a02f2a641c4b349b4bb7298",
+    "word_for_word": "हे विभो, तस्मान् मे मया भवान् खलु पतिर् वृतः, आत्मा च भवतोऽर्पितः, अतस् त्वम् अत्रागत्य मां भवतो जायां विधेहि । — O Lord, therefore I have chosen You as my husband, and I have given my soul to You. Please come here and make me Your wife.; विपक्षे बाधकं द्योतयन्त्य् आह---मा वीर-भागम् इति । — Pointing to the obstacle in the opposition, he argues that it is not the heroic part.; वीरस्य तव भागं माम् आराच् छीघ्रम् एत्य आगत्य चैद्यो माभिमर्शतु, मा स्पृशतु । — I’m your part of the hero, and I’m going to come quickly and let Chaidya come and rub me, don’t touch me.; मृग-पतेर् बलिं गोमायुवत् गोमायुः सृगाल इवेति ॥३९॥ — The sacrifice of the deer-master is like the life of a cow, and the life of a cow is like that of a jackal.",
+    "translation": "O Lord, therefore I have chosen You as my husband, and I have given my soul to You. Please come here and make me Your wife. Pointing to the obstacle in the opposition, he argues that it is not the heroic part. I’m your part of the hero, and I’m going to come quickly and let Chaidya come and rub me, don’t touch me. The sacrifice of the deer-master is like the life of a cow, and the life of a cow is like that of a jackal."
   },
   "40": {
-    "word_for_word": "aneka — ot one; janma — birth; kṛtaiḥ — by/with done; mades; sukṛtair — sukṛtair; idam — this; eva — only; indeed; bhūya — becoming; ad — to eat; iti — thus; prārthayate — is being eager or ready to set out on a journey; pūrta — illed; iti — thus; pūrtaṃ — illed; kūpa — ( r. 1. and ?; ādi — beginning; and so on; iṣṭam — voluntarily; agni — fire; hotrādi — hotrādi; dattaṃ — protected; hiraṇyādi — hiraṇyādi; dānam — the act of giving; niyamas — niyamas; tīrtha — a passage; aṭana — roaming about; ādiḥ — beginning; vrataṃ — ( ifc; kṛcchra — causing trouble or pain; ādi — beginning; and so on."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c4f037e2c5b56821c4b4f2fe21cfa7e633d5d3180796d826fc2235b7f016b35a",
+    "word_for_word": "अनेक-जन्म-कृतैः सुकृतैर् इदम् एव भूयाद् इति प्रार्थयते---पूर्त- इति । — He prays that this may be the case with the good deeds he has done in many births.; पूर्तं कूपादि । — Purtam wells and so on.; इष्टम् अग्नि-होत्रादि । — Ishtam agni-hotradi.; दत्तं हिरण्यादि-दानम् । — Given deer and other gifts.; नियमस् तीर्थाटनादिः । — The rules are pilgrimages and so on.; व्रतं कृच्छ्रादि ॥४०॥ — Vrata, trouble, etc.",
+    "translation": "He prays that this may be the case with the good deeds he has done in many births. Purtam wells and so on. Ishtam agni-hotradi. Given deer and other gifts. The rules are pilgrimages and so on. Vrata, trouble, etc."
   },
   "41": {
-    "word_for_word": "nanu — but surely; indeed; caidyāya — to/for patr. r; bandhubhir — bandhubhir; arpita — or inserted; ayāṃ — in this anner; tvayi — tvayi; kim — what; adhunā — at this time; karaṇīyam — to be done or ade or effected; ity — thus; apekṣāyām — in/on looking round or about; āha — says; śvo — in comp. or 2; bhāvini — in/on becoming; iti — thus; he — a vocative icle (‘oh!’ ‘ho!’; ajita — ot conquered; śvo — in comp. or 2; bhāvini — in/on becoming; udvahane — in/on the act of lifting or bringing up; vivāhe — in/on leading away; prathamaṃ — first; gupto'lakṣita — gupto'lakṣita; eva — only; indeed; āgatya — having come; paścāt — afterwards; pṛtanā — pṛtanā; patibhiḥ — by/with husband; lords; parivṛtaḥ — id; saṃś — saṃś; caidyādi — caidyādi; balaṃ — strength; nirmathya — to be excited by riction; prasahya — to be conquered or resisted; bala — strength; ad — to eat; vīryaṃ — heroic deed; potency; prabhāva — prabhāva; darśanam — seeing; vision; eva — only; indeed; śulkaṃ — price; vaivāhikaṃ — uptial; deyaṃ — to be given or presented or granted or shown; yasya — whose; of which; as — be; tāṃ — tāṃ; mām — me; anena — by this; rākṣasa — belonging to or like a; vidhinodvaha — vidhinodvaha; ity — thus; upadeśa — pointing out to; rahasyam — in secret."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d01847df43a5848954f0700f7ebbacb7a0d52a5fe83a8e0c316de72863534da6",
+    "word_for_word": "ननु चैद्याय बन्धुभिर् अर्पितायां त्वयि किम् अधुना करणीयम् इत्य् अपेक्षायाम् आह---श्वो भाविनि इति । — Indeed, when Chaidya was offered to him by his relatives, he replied, “What should I do with you now?” He replied, “Tomorrow, in the future.”; हे अजित, श्वो भाविनि उद्वहने विवाहे प्रथमं गुप्तोऽलक्षित एव आगत्य पश्चात् पृतना-पतिभिः परिवृतः संश् चैद्यादि-बलं निर्मथ्य प्रसह्य बलाद् वीर्यं प्रभाव-दर्शनम् एव शुल्कं वैवाहिकं देयं यस्यास् तां माम् । — O Ajit, at the wedding of the future marriage tomorrow, first come secretly and unnoticed, and then, surrounded by the chiefs of the army, defeat the forces of Sanschaidya and others, and forcibly defeat the forces of the semen and show me the marriage fee.; अनेन राक्षस-विधिनोद्वह इत्य् उपदेश-रहस्यम् ॥४०॥ — This is the mystery of the instruction that he should be married in the manner of a demon.",
+    "translation": "Indeed, when Chaidya was offered to him by his relatives, he replied, “What should I do with you now?” He replied, “Tomorrow, in the future.” O Ajit, at the wedding of the future marriage tomorrow, first come secretly and unnoticed, and then, surrounded by the chiefs of the army, defeat the forces of Sanschaidya and others, and forcibly defeat the forces of the semen and show me the marriage fee. This is the mystery of the instruction that he should be married in the manner of a demon."
   },
   "42": {
-    "word_for_word": "nanu — but surely; indeed; bhavatu — bhavatu; śiśupālādi — śiśupālādi; bala — strength; pramathanam — harassing; antaḥ — within; pura — city; madhya — middle; gatāyās — gatāyās; tava — your; of you; haraṇe — in/on carrying; tvad — =; bandhu — connection; vadho'pi — vadho'pi; prasajjetety — prasajjetety; ata — ata; āha — says; antaḥ — within; pura — city; iti — thus; pura — city; ad — to eat; bahir — in comp. or; vartamānāṃ — the terminations of the present tense; girija — ‘ ountain-born’; am — quickly; ambikām — other; ambikā — other; gṛhād — gṛhād; eva — only; indeed; mama — my; of me; haraṇaṃ — carrying; sukaram — easy to be done; iti — thus; bhāvaḥ — sense; purport."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8208deca42d85560d97dc40834e0f0b7338343ad390bff862fc3a30781459f03",
+    "word_for_word": "ननु भवतु शिशुपालादि-बल-प्रमथनम् । — Indeed, let it be the crushing of the forces of Shishupala and others.; अन्तः-पुर-मध्य-गतायास् तव हरणे त्वद्-बन्धु-वधोऽपि प्रसज्जेतेत्य् अत आह---अन्तः-पुर- इति । — If you have gone into the middle of the inner city, the killing of your relative will also apply to your abduction.; पुराद् बहिर् वर्तमानां गिरिजाम् अम्बिकाम् । — The city is outside the city, and the mountain is called Ambika.; अम्बिका-गृहाद् एव मम हरणं सुकरम् इति भावः ॥४२॥ — This means that it is easy for me to be abducted from the house of Ambika alone.",
+    "translation": "Indeed, let it be the crushing of the forces of Shishupala and others. If you have gone into the middle of the inner city, the killing of your relative will also apply to your abduction. The city is outside the city, and the mountain is called Ambika. This means that it is easy for me to be abducted from the house of Ambika alone."
   },
   "43": {
-    "word_for_word": "nanu — but surely; indeed; kim — what; anenānartha — anenānartha; kāriṇā — kāriṇā; nirbandhena — perseveringly; caidyo'pi — caidyo'pi; tāvat — ( r. 2; prakhyāta — known; guṇa — quality; karmā — karmā; yogya — yogya; eva — only; indeed; vara — ‘environing’; iti — thus; tatrāha — tatrāha; yasya — whose; of which; iti — thus; he — a vocative icle (‘oh!’ ‘ho!’; ambujākṣa — lotus-eyed; yasya — whose; of which; bhavato'ṅghri — bhavato'ṅghri; paṅkaja — ‘ ud-born’; rajobhiḥ — by/with in comp. ors; snapanam — causing to bathe; ātmanas — ātmanas; tamaso'pahatyai — tamaso'pahatyai; umāpatir — umāpatir; iva — like; as if; mahānto — mahānto; vāñchanti — they cl. 1. P. (occurring only in orms rom the present stem; tasya — of him; of that; bhavataḥ — of/from being; prasādaṃ — grace; favor; yarhy — yarhy; ahaṃ — I; na — not; labheya — labheya; na — not; prāpnuyāṃ — prāpnuyāṃ; tarhi — then; vratair — vratair; upavā — to blow upon; asa — ot he; ādibhiḥ — by/with beginning; and so ons; kṛśān — leans; asūn — Ved. breaths; prāṇān — life-air; living beings; jahyāṃ — jahyāṃ; tyajetham — tyajetham; tataḥ — then; from that; kim — what; ity — thus; ata — ata; āha — says; śata — (rarely; janmabhir — janmabhir; iti — thus; evam — thus; in this way; eva — only; indeed; vāraṃ — the hair of any animal's tail; vāraṃ — the hair of any animal's tail; jahyāṃ — jahyāṃ; yāvac — in comp. or; chata — chata; janmabhir — janmabhir; api — also; tava — your; of you; prasādaḥ — grace; favor; syād — in comp. or; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "288cb5391079eda7714b1d41480714f6a5bfd11f4c8d19aa35cea55af6dfb218",
+    "word_for_word": "ननु किम् अनेनानर्थ-कारिणा निर्बन्धेन चैद्योऽपि तावत् प्रख्यात-गुण-कर्मा योग्य एव वर इति तत्राह---यस्य इति । — If so, why is it that even Chaidya, who is so well-known for his virtues and deeds, is worthy of a boon by this evil-causing restriction?; हे अम्बुजाक्ष, यस्य भवतोऽङ्घ्रि-पङ्कज-रजोभिः स्नपनम् आत्मनस् तमसोऽपहत्यै उमापतिर् इव महान्तो वाञ्छन्ति तस्य भवतः प्रसादं यर्ह्य् अहं न लभेय न प्राप्नुयां, तर्हि व्रतैर् उपवासादिभिः कृशान् असून् प्राणान् जह्यां त्यजेथम् । — O lotus-eyed one, if I do not obtain or obtain Your grace, which great men like Umapati desire to bathe in the dust of Your lotus feet to dispel the darkness of their souls, then I shall give up my emaciated life by observing vows, fasting and other means.; ततः किम् ? — What's next?; इत्य् अत आह---शत-जन्मभिर् इति । — It is therefore argued that by a hundred births.; एवम् एव वारं वारं जह्यां यावच् छत-जन्मभिर् अपि तव प्रसादः स्याद् इति ॥४३॥ — Thus I shall give up again and again until I may have Your grace even after my rooftop births.",
+    "translation": "If so, why is it that even Chaidya, who is so well-known for his virtues and deeds, is worthy of a boon by this evil-causing restriction? O lotus-eyed one, if I do not obtain or obtain Your grace, which great men like Umapati desire to bathe in the dust of Your lotus feet to dispel the darkness of their souls, then I shall give up my emaciated life by observing vows, fasting and other means. What's next? It is therefore argued that by a hundred births. Thus I shall give up again and again until I may have Your grace even after my rooftop births."
   },
   "44": {
-    "word_for_word": "atra — here; yat — which; that which; kartuṃ — kartuṃ; karaṇīyaṃ — to be done or ade or effected; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; vimṛśya — to be tried or examined; kriyatāṃ — kriyatāṃ; tac — in comp. or; cānantaram — cānantaram; eva — only; indeed; kriyatām — kriyatām; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8e02fe8b7e9ef4fced513a954d724532df9124bfcdd357469d97df0d73f69fbe",
+    "word_for_word": "अत्र यत् कर्तुं करणीयं तद् विमृश्य क्रियतां तच् चानन्तरम् एव क्रियताम् इति ॥४४॥ — Whatever is to be done here should be done after deliberation and that should be done immediately afterwards'",
+    "translation": "Whatever is to be done here should be done after deliberation and that should be done immediately afterwards'"
   }
 }

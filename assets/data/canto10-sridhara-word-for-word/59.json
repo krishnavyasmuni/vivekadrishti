@@ -1,83 +1,261 @@
 {
   "1": {
-    "word_for_word": "ūnaṣaṣṭitame — ūnaṣaṣṭitame; bhaumaṃ — relating or dedicated to the earth; hatvā — having killed; tenāhṛtā — tenāhṛtā; hariḥ — Hari; kanyāḥ — the smallests; sahasraśaḥ — sahasraśaḥ; prāpa — reaching; pārijātaṃ — the coral tree; divo'harat — divo'harat; pariṇīya — pariṇīya; tatas — tatas; tābhis — tābhis; tan — in comp. or; manoratha — ‘heart's joy’; pūraṇaiḥ — by/with illings; ātmārāmo\\'py — ātmārāmo\\'py; asau — and; reme — reme; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; gṛheṣu — in/among houses; gṛhasthavat — gṛhasthavat; yena — by whom; by which; tāḥ — the 1st dental consonants; striyo — striyo; niruddhāḥ — held backs; sa — the last of the three sibilants; bhaumaḥ — relating or dedicated to the earth; ca — and; kārād — kārād; yena — by whom; by which; kāraṇena — by/with cause; hatas — hatas; tad — ( om. and acc. sg. of and base in comp. or 2. rom which latter all the cases of…; ācakṣveti — ācakṣveti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "bbada42b247cfd8412215a71014ce59338a7e6e47e23115101630255e0f9d7c0",
+    "word_for_word": "ऊनषष्टितमे भौमं हत्वा तेनाहृता हरिः । — In the sixty-ninth year, Lord Hari killed Bhūma and took him away.; कन्याः सहस्रशः प्राप पारिजातं दिवोऽहरत् ॥ — He obtained thousands of daughters and took away the pārijāta tree from heaven.; परिणीय ततस् ताभिस् तन्-मनोरथ-पूरणैः । — Then he married her and fulfilled her desires.; आत्मारामो\\ऽप्य् असौ रेमे तद्-गृहेषु गृहस्थवत् ॥ — Although he was self-satisfied, he enjoyed his homes like a householder.; येन ताः स्त्रियो निरुद्धाः स भौमः । — The one who stopped those women was Bhauma.; च-काराद् येन कारणेन हतस् तद् आचक्ष्वेति ॥१॥ — Tell me the reason why he was killed by the f-kara.",
+    "translation": "In the sixty-ninth year, Lord Hari killed Bhūma and took him away. He obtained thousands of daughters and took away the pārijāta tree from heaven. Then he married her and fulfilled her desires. Although he was self-satisfied, he enjoyed his homes like a householder. The one who stopped those women was Bhauma. Tell me the reason why he was killed by the f-kara."
+  },
+  "2": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1f550655d1a838155fe70b7939aa5c3c4516d4950e81590c8afd394d30283edc",
+    "word_for_word": "इन्द्रेण भौम-विचेष्टितं ज्ञापितः सन् प्राग्ज्योतिष-पुरं भौम-नगरं ययाव् इत्य् अन्वयः । — The consequence is that when Indra informed him of Bhouma’s movements, he went to the city of Bhouma, the city of Pragjyotish.; किं-भूतेन ? — What-by-the-ghost?; हृतं छत्रं यस्य तेन । — He whose umbrella has been taken away.; लोकपाल-प्रधानत्वाद् इन्द्रस्य वरुण-च्छत्र-हरणेऽपि तस्यैव मान-भङ्ग इति तथोक्तम् । — Because Indra is the chief guardian of the worlds, it is said that even when Indra took away Varuna’s umbrella, it was a violation of his dignity.; हृते कुण्डले यस्याः सा अदितिर् बन्धुर् माता यस्य तेन । — The woman whose earrings were taken away was Aditi, the friend of the man whose mother was taken away.; हृतम् अमराद्रौ स्थानं मणिपर्वत-लक्षणं यस्य तेन । — He took away the place on the mountain of Amara, which is characterized by the mountain of gems.; सत्यभामाया गृहे भगवन्तम् इन्द्र आगत्य विज्ञापितवांस् तदा तस्याः कौतुकाय तया भार्यया सह ययाव् इति । — Indra came to the house of Satyabhāmā and informed her that he had gone with his wife to curiosity her.; यद् वा, \\\"त्वद्-अनुज्ञयैव त्वत्-पुत्रं हनिष्यामि\\\" इतीतिहासोक्तं भूम्यै वरं दत्तं सत्यं कर्तुं सत्यभामाया भूम्यंशत्वात् तया सह ययौ । — Or rather, to fulfill the boon given to the earth as stated in history, \\\"I shall kill your son with your permission,\\\" he went with Satyabhāmā, who was part of the earth.; यद् वा, नारदानीत-पारिजातैक-कुसुमे रुक्मिण्यै दत्ते सति कुपितां सत्यभामां सान्त्वयता \\\"तुभ्यं पारिजातम् एव दास्यामि\\\" इति श्री-कृष्णेन प्रतिश्रुतम् इति हरि-वंशे प्रसिद्धं तद्-अर्थं तां नीतवान् इति ॥२॥ — Or that it is well known in the Hari dynasty that when Lord Kṛṣṇa consoled the angry Satyabhāmā when He gave her a single parijata flower brought by Nārada to Rukmiṇī, he promised her, \"I shall give you only the parijata flower.",
+    "translation": "The consequence is that when Indra informed him of Bhouma’s movements, he went to the city of Bhouma, the city of Pragjyotish. What-by-the-ghost? He whose umbrella has been taken away. Because Indra is the chief guardian of the worlds, it is said that even when Indra took away Varuna’s umbrella, it was a violation of his dignity. The woman whose earrings were taken away was Aditi, the friend of the man whose mother was taken away. He took away the place on the mountain of Amara, which is characterized by the mountain of gems. Indra came to the house of Satyabhāmā and informed her that he had gone with his wife to curiosity her. Or rather, to fulfill the boon given to the earth as stated in history, \\\"I shall kill your son with your permission,\\\" he went with Satyabhāmā, who was part of the earth. Or that it is well known in the Hari dynasty that when Lord Kṛṣṇa consoled the angry Satyabhāmā when He gave her a single parijata flower brought by Nārada to Rukmiṇī, he promised her, \"I shall give you only the parijata flower."
   },
   "3-4": {
-    "word_for_word": "garuḍena — by/with of a ythical bird (chief of…; yāne — in/on leading; kāraṇam — cause; giri — mountain; durgair — durgair; ity-ādi — and so on; tair — tair; upalakṣitam — beheld; jalāgny — jalāgny; anilaiś — anilaiś; ca — and; sarvato — in comp. or; vartamānair — vartamānair; durgamam — difficult to be traversed or travelled over."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "61050c2236499925d243ea29067c7f2f716cf8feb1790cf2ed5c5ee3316bd16b",
+    "word_for_word": "गरुडेन याने कारणम्, गिरि-दुर्गैर् इत्य्-आदि । — The reason for the eagle in the chariot, the mountains and fortresses, and so on.; तैर् उपलक्षितम् । — They have observed.; जलाग्न्य्-अनिलैश् च सर्वतो वर्तमानैर् दुर्गमम् ॥ — It is difficult to reach because of the water, fire and wind that are present everywhere.; ३-४ ॥ — 3-4",
+    "translation": "The reason for the eagle in the chariot, the mountains and fortresses, and so on. They have observed. It is difficult to reach because of the water, fire and wind that are present everywhere. 3-4"
   },
   "5-6": {
-    "word_for_word": "yugānta — the end of the yoke; aśana — reaching; ir — cl. 6. P. , to go; dhvanivad — dhvanivad; bhīṣaṇam — terrifying; parikhā — a oat; ayā — in this anner; jalāt — from water."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1a29be32668fc1b36651f6d735fc0d99cb8f37ecb9c0c3cb18d9ad88147409c2",
+    "word_for_word": "युगान्ताशनेर् ध्वनिवद् भीषणम् । — It was as terrifying as the sound of the end of the age.; परिखाया जलात् ॥६-७॥ — from the water of the moat.6-7",
+    "translation": "It was as terrifying as the sound of the end of the age. from the water of the moat.6-7"
   },
   "7": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "8": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "64d217970db2b9ed2c9b6a06e6fc06fd4023aa727e3bd86a45bad0d0e40f88ec",
+    "word_for_word": "आविध्य आतोल्य स महान् नाद इत्य् अन्वयः ॥८॥ — That great sound, which was rolled and shaken, is the consequence.",
+    "translation": "That great sound, which was rolled and shaken, is the consequence."
+  },
+  "9": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "ea53c321ea0364162d79a9ca8ffafab89c91fb4f8e8bc0db3897cf53bab72d3c",
+    "word_for_word": "तस्मै श्री-कृष्णाय गदां व्यमुञ्चत व्यक्षिपत् ॥९-१०॥ — He released his club and threw it at that Lord Krishna (9-10).",
+    "translation": "He released his club and threw it at that Lord Krishna (9-10)."
   },
   "10": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
+  },
+  "11": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "dcb7e53dce993d44ff090a72fdbf3df7cd034a55ed8eeb70b1438ea5ecf30638",
+    "word_for_word": "इन्द्र-तेजसा वज्रेण । — By the thunderbolt of Indra’s effulgence.; प्रतिक्रियया हेतु-भूतया अमर्ष-जुषः ॥११॥ — He is enraged by the cause-and-effect reaction.",
+    "translation": "By the thunderbolt of Indra’s effulgence. He is enraged by the cause-and-effect reaction."
+  },
+  "12": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "b6947e7c964e316122460cd11f5610832b4030d6b78164f51de27d570a0d57cd",
+    "word_for_word": "पीठं पीठ-नामानम् । — The seat is called the seat.; निरगन् निरगमन् ॥१२॥ — They went out and went out.",
+    "translation": "The seat is called the seat. They went out and went out."
   },
   "13": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "14": {
-    "word_for_word": "kṛtta — cut; ani — the pin of an axle tree; śīrṣādīni — śīrṣādīni; yeṣ — to boil up; aṃ — not; tān — them; those."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "0dbb232cd54828f39c92cb4c6bb09a4373df89e2ad4a793a9e90f0bfc624e911",
+    "word_for_word": "कृत्तानि शीर्षादीनि येषां तान् ॥१४॥ — Those whose heads and other parts have been cut off.",
+    "translation": "Those whose heads and other parts have been cut off."
+  },
+  "15": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6fa80f91d7ae722b31d251188f655fe2c0e0e707928723d68e502290c00b926d",
+    "word_for_word": "शतघ्नीं शक्ति-विशेषम् ॥१५॥ — Shataghnīm is a special power.",
+    "translation": "Shataghnīm is a special power."
   },
   "16": {
-    "word_for_word": "vicitrā — a white deer; vājāḥ — ( r. √s; patrāṇi — patrāṇi; yeṣ — to boil up; aṃ — not; tair — tair; bāṇair — bāṇair; nikṛttā — nikṛttā; bāhava — the arm; ūravaḥ — ūravaḥ; śirodhrāḥ — =s; kandharā — kandharā; vigrahā — vigrahā; deha — body; aś — Ā. ( aor. 3. pl; ca — and; yasmiṃs — yasmiṃs; tat — that; tarhy — tarhy; eva — only; indeed; taṃ — the 1st dental consonant; yadā — when; vivyadhustasminn — vivyadhustasminn; eva — only; indeed; kṣaṇe — in/on any instantaneous point of time."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f56cd12c8df030c24e2e15f7e99fec28194b535a30b70e481ba26c05a284defd",
+    "word_for_word": "विचित्रा वाजाः पत्राणि येषां तैर् बाणैर् निकृत्ता बाहव ऊरवः शिरोध्राः कन्धरा विग्रहा देहाश् च यस्मिंस् तत् । — The arms, thighs, necks, shoulders, and bodies of the dead were cut off by the arrows of the demigods, whose leaves were of various kinds.; तर्ह्य् एव तं यदा विव्यधुस्तस्मिन्न् एव क्षणे ॥१६॥ — That very moment when they pierced him",
+    "translation": "The arms, thighs, necks, shoulders, and bodies of the dead were cut off by the arrows of the demigods, whose leaves were of various kinds. That very moment when they pierced him"
   },
   "17-19": {
-    "word_for_word": "atya — a courser; āścarye — in/on appearing rarely; kurūdvaheti — kurūdvaheti; sambodhanam — awaking; tathā — so; in that way; hi — indeed; because; tair — tair; yāni — yāni; prayukta — yoked; ani — the pin of an axle tree; śastra — weapon; astra — weapon; aṇi — the point of a eedle or of a sharp stake; tatprāpteḥ — tatprāpteḥ; pūrvam — before; eva — only; indeed; tatsarvaṃ — tatsarvaṃ; sainyaṃ — army; hatvā — having killed; paśca — hinder; attā — a other; ani — the pin of an axle tree; śastrāṇyastrāṇi — śastrāṇyastrāṇi; ca — and; ciccheda — ciccheda; tatrāpy — tatrāpy; ekaikaṃ — one by one; śastram — weapon; astraṃ — weapon; ca — and; tribhiḥ — by/with threes; śarair — śarair; itya — to be gone to or towards; āścaryam — rarely; kiṃ — what; ca — and; garutmateti — garutmateti."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e35102ef4afc5c985fdf8fabb3c4362b229f7474bf0638d2b7d7c0796340d5a4",
+    "word_for_word": "अत्याश्चर्ये कुरूद्वहेति सम्बोधनम् । — In a very surprising way, he was addressed as Kurudvaha.; तथा हि, तैर् यानि प्रयुक्तानि शस्त्रास्त्राणि तत्प्राप्तेः पूर्वम् एव तत्सर्वं सैन्यं हत्वा पश्चात्तानि शस्त्राण्यस्त्राणि च चिच्छेद । — Thus, before they could get the weapons they used, he killed all the army and cut off the weapons and armor that followed.; तत्राप्य् एकैकं शस्त्रम् अस्त्रं च त्रिभिः शरैर् इत्याश्चर्यम् । — It is also surprising that each weapon is fired by three arrows; किं च, गरुत्मतेति ॥१७-१९॥ — What is more, Garutmata.17-1",
+    "translation": "In a very surprising way, he was addressed as Kurudvaha. Thus, before they could get the weapons they used, he killed all the army and cut off the weapons and armor that followed. It is also surprising that each weapon is fired by three arrows What is more, Garutmata.17-1"
   },
   "20": {
-    "word_for_word": "yato — in comp. or; yayā — by/with who; which; śaktyā — śaktyā; vajraḥ — ‘the hard or ighty one’; pratihata — struck or striking against; āsa — seat; garuḍas — garuḍas; tu — but; nākampata — nākampata."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "970a129dfe8a75876dc6e4143c6fcfe9bc883e1e2e3b41789fcae41e353b84ba",
+    "word_for_word": "यतो यया शक्त्या वज्रः प्रतिहत आस । — Because of the force with which the thunderbolt was repulsed.; गरुडस् तु नाकम्पत ॥२०॥ — Garuda, however, did not tremble.",
+    "translation": "Because of the force with which the thunderbolt was repulsed. Garuda, however, did not tremble."
   },
   "21": {
-    "word_for_word": "garuḍe — in/on of a ythical bird (chief of…; vitathodyamaḥ — vitathodyamaḥ; san — in comp. or; śūlaṃ — a sharp iron pin or stake; triśūlam — a trident; ādade — ādade; dhṛtavān — dhṛtavān."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "00ff21b5552f3cbe1c4b84a4b1835d905478ad4f3de00e14f96d211a35ee2bfb",
+    "word_for_word": "गरुडे वितथोद्यमः सन् शूलं त्रिशूलम् आददे धृतवान् ॥२१-२२॥ — Having failed in his attempt at Garuda he took up the trident and held it in his hands (21-22).",
+    "translation": "Having failed in his attempt at Garuda he took up the trident and held it in his hands (21-22)."
   },
   "22": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "23": {
-    "word_for_word": "pratapte — in/on hot; jāmbūnade — in/on coming rom the river; yāni — yāni; ratna — a gift; ani — the pin of an axle tree; tair — tair; bhāsvare — in/on shining; merv — merv; aṃśa — part; portion; bhūtaṃ — become; mandara — slow; śikharaṃ — śikharaṃ; mahā — great; maṇiṃ — ( only; cārpayad — cārpayad; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cf390c1ecfa7b7b9a2a105d3e119c2284afbcfd7e0992e302fcc45f1be60c7fa",
+    "word_for_word": "प्रतप्ते जाम्बूनदे यानि रत्नानि तैर् भास्वरे । — The jewels in the burning golden river shone brightly.; मेर्व्-अंश-भूतं मन्दर-शिखरं महा-मणिं चार्पयद् इति ॥२३-२४॥ — He offered the peak of Mandara which was a part of Merva and the great jewel (23-24).",
+    "translation": "The jewels in the burning golden river shone brightly. He offered the peak of Mandara which was a part of Merva and the great jewel (23-24)."
   },
   "24": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "25": {
-    "word_for_word": "aiśvaryaṃ — lordship; opulence; jñātvā — having know; bhūmiḥ — earth; stauti — stauti; namasta — namasta; iti — thus; paramātman — all the heart; devādyantaryāmin — devādyantaryāmin."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "864be275a06d5e8e79f6ae7917ab5d207abf28d9a6c734fa2f3d33ce1443ed9a",
+    "word_for_word": "ऐश्वर्यं ज्ञात्वा भूमिः स्तौति । — Knowing the wealth, the earth praises it.; नमस्त इति । — Hello, it’s.; परमात्मन् देवाद्यन्तर्यामिन् ॥२५॥ — O Supreme Soul, in the midst of the gods.",
+    "translation": "Knowing the wealth, the earth praises it. Hello, it’s. O Supreme Soul, in the midst of the gods."
   },
   "26": {
-    "word_for_word": "yena — by whom; by which; mantreṇa — mantreṇa; kuntyāḥ — of of (daughter of a prince amed; prasannaḥ — clear; pūrvam — before; āsīt — was; tena — by him; by that; mantreṇa — mantreṇa; namasyati — namasyati; nama — pasture-ground; iti — thus; paṅkajaṃ — ‘ ud-born’; nābhau — the two ifc. =s; yasya — whose; of which; tasmai — tasmai; jagatkāraṇāya — to/for the cause of the universe; ity — thus; arthaḥ — meaning; purpose; ata — ata; eva — only; indeed; satkīrtimayī — satkīrtimayī; paṅkajamālā — paṅkajamālā; vidyate — exists; gasya — of the soft guttural having the sound g in give; tasmai — tasmai; evaṃbhūtaṃ — evaṃbhūtaṃ; dhyā — by/with cl. 3. Ā. , , ( cf. √; āyatāṃ — a icular interval; paṅkajavatsuprasanne — paṅkajavatsuprasanne; tāpa — (√ 2; upaśamane — in/on calming; netre — in/on eye; yasya — whose; of which; tasmai — tasmai; paṅkajavatsusevyau — paṅkajavatsusevyau; paṅkaja — ‘ ud-born’; aṅkitau — the two arkeds; vāṅghrī — vāṅghrī; yasya — whose; of which; tasmai — tasmai; nama — pasture-ground; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "8af7449d86cdd31bfc954e6415e131b91b322e0e2f8f32613ad084abad8b804a",
+    "word_for_word": "येन मन्त्रेण कुन्त्याः प्रसन्नः पूर्वमासीत्, तेन मन्त्रेण नमस्यति---नम इति । — He will bow down to her with the mantra by which he was pleased with Kunti in the past.; पङ्कजं नाभौ यस्य, तस्मै जगत्कारणायेत्य् अर्थः । — The lotus in his navel means that he is the cause of the universe.; अत एव सत्कीर्तिमयी पङ्कजमाला विद्यते गस्य तस्मै । — That is why the cow has a garland of lotuses full of good fame.; एवंभूतं ध्यायतां पङ्कजवत्सुप्रसन्ने तापोपशमने नेत्रे यस्य तस्मै । — Please meditate on the Supreme Personality of Godhead, whose eyes are like lotus flowers, which are very happy and relieve suffering.; पङ्कजवत्सुसेव्यौ पङ्कजाङ्कितौ वाङ्घ्री यस्य तस्मै नम इति ॥२६॥ — I offer my obeisances to Him whose feet are marked with lotuses and are well-served like lotuses.",
+    "translation": "He will bow down to her with the mantra by which he was pleased with Kunti in the past. The lotus in his navel means that he is the cause of the universe. That is why the cow has a garland of lotuses full of good fame. Please meditate on the Supreme Personality of Godhead, whose eyes are like lotus flowers, which are very happy and relieve suffering. I offer my obeisances to Him whose feet are marked with lotuses and are well-served like lotuses."
   },
   "27-28": {
-    "word_for_word": "kiṃ — what; ca — and; bhagavate — bhagavate; niratiśayaiśvaryāya — niratiśayaiśvaryāya; vāsudevāya — to/for Vāsudeva; sarva — all; bhūtāśrayāyāta — bhūtāśrayāyāta; eva — only; indeed; viṣṇave — to/for Viṣṇu; vyāpine — vyāpine; na — not; hi — indeed; because; sarva — all; bhūtāśrayatvaṃ — bhūtāśrayatvaṃ; paricchinnasya — of cut off; sambhavatīti — sambhavatīti; kutaḥ — from where; why; sarva — all; āśrayatvaṃ — the state of above; tatrāha — tatrāha; puruṣāya — to behave or act like a an; sarvasmātkāryāt — sarvasmātkāryāt; pūrvam — before; eva — only; indeed; sate — in/on a kind of sacrificial vessel; pūrvam — before; evāhamihāsam — evāhamihāsam; iti — thus; tatpuruṣasya — of the original or supreme spirit; puruṣatvaṃ — anhood; iti — thus; śruteḥ — of scripture; hearing; etad — this; api — also; kutaḥ — from where; why; ādibījāya — ādibījāya; āderjagatkāraṇasyāpi — āderjagatkāraṇasyāpi; kāraṇāya — to/for cause; evam — thus; in this way; api — also; na — not; mṛdādivajjāḍyam — mṛdādivajjāḍyam; ity — thus; āha — says; pūrṇabodhāyeti — pūrṇabodhāyeti; nanv — but surely; evam — thus; in this way; api — also; svasya — of own; self; kāraṇāt — from cause; pūrvaṃ — previous; sattvaṃ — sattvaṃ; na — not; syādata — syādata; āha — says; ajāyeti — ajāyeti; svayam — himself; oneself; ajāya — to/for a drove; asya — of this; of him; ca — and; jagato — jagato; janayitre — janayitre; ubhayatra — in both places; api — also; krameṇa — gradually; in order; hetudvayam — hetudvayam; brahmaṇe — brahmaṇe; bṛhate — in/on of a son of the 9th; anantaśaktaya — anantaśaktaya; iti — thus; ca — and; bṛhattva — greatness; ad — to eat; ajatvam — the being a goat; anantaśaktitvā — having omnipotent; at — a prefix said to imply ‘surprise’; tajjanayitṛtvam — tajjanayitṛtvam; ity — thus; arthaḥ — meaning; purpose; nanu — but surely; indeed; pitr — in comp. or before vowels; adayaḥ — erciless; putra — son; ādīnāṃ — of √ 2. (3. sg. impfs; janaka — generative; asta — thrown; īṣāṃ — the pole or shafts of a carriage or plough; ca — and; tatpūrve — in/on happening or the irst time; teṣāṃ — teṣāṃ; ca — and; bhūta — become; ani — the pin of an axle tree; teṣāṃ — teṣāṃ; ca — and; svakarmadvāreṇa — svakarmadvāreṇa; jīvāḥ — living beings; kim — what; atra — here; ahaṃ — I; tatrāha — tatrāha; parāvarātmann — parāvarātmann; ity-ādi — and so on; pitr — in comp. or before vowels; adya — today; now; ātmakatvā — having belonging to or orming the ature of; at — a prefix said to imply ‘surprise’; tvam — you; eva — only; indeed; janaka — generative; ity — thus; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "e486280b984a751edf6e68cf09e522a80969b2ec48ccd945152b725eaf2320f0",
+    "word_for_word": "किं च, भगवते निरतिशयैश्वर्याय वासुदेवाय सर्व-भूताश्रयायात एव विष्णवे व्यापिने । — What is more, the Supreme Personality of Godhead, Vāsudeva, who is infinitely opulent, is the shelter of all living entities, and He is the all-pervading Lord Viṣṇu.; न हि सर्व-भूताश्रयत्वं परिच्छिन्नस्य सम्भवतीति कुतः सर्वाश्रयत्वं तत्राह---पुरुषाय सर्वस्मात्कार्यात् पूर्वम् एव सते, पूर्वम् एवाहमिहासम् इति तत्पुरुषस्य पुरुषत्वं इति श्रुतेः । — For it is not possible for a separated person to be dependent on all beings, so why should he be dependent on all things?; एतद् अपि कुतः । — Where is this, too?; आदिबीजाय । — Adibijaya.; आदेर्जगत्कारणस्यापि कारणाय । — For the cause of the universe in the beginning.; एवम् अपि न मृदादिवज्जाड्यम् इत्य् आह---पूर्णबोधायेति ॥२७॥ — Even so, it is not dull like clay and other things, he argues, for the sake of complete enlightenment.; नन्व् एवम् अपि स्वस्य कारणात् पूर्वं सत्त्वं न स्यादत आह---अजायेति । — If, however, there is no existence of existence before its own cause, he argues that it is unborn.; स्वयम् अजाय । — Ajay himself.; अस्य च जगतो जनयित्रे । — And to the originator of this universe.; उभयत्रापि क्रमेण हेतुद्वयम्, ब्रह्मणे बृहते, अनन्तशक्तय इति च । — In both cases, there are two causes in order, namely, the great Brahman and the infinite powers.; बृहत्त्वाद् अजत्वम्, अनन्तशक्तित्वात् तज्जनयितृत्वम् इत्य् अर्थः । — Because of its greatness, it is unborn, and because of its infinite power, it is the cause of it.; ननु पित्रादयः पुत्रादीनां जनकास्तेषां च तत्पूर्वे तेषां च भूतानि तेषां च स्वकर्मद्वारेण जीवाः किम् अत्राहं तत्राह---परावरात्मन्न् इत्य्-आदि । — If, indeed, fathers and others are the fathers of sons and others, and before them, and before them, and through their own actions, they are living beings.; पित्राद्यात्मकत्वात् त्वम् एव जनक इत्य् अर्थः ॥२८॥ — Being composed of fathers and others, it means that You alone are the father.",
+    "translation": "What is more, the Supreme Personality of Godhead, Vāsudeva, who is infinitely opulent, is the shelter of all living entities, and He is the all-pervading Lord Viṣṇu. For it is not possible for a separated person to be dependent on all beings, so why should he be dependent on all things? Where is this, too? Adibijaya. For the cause of the universe in the beginning. Even so, it is not dull like clay and other things, he argues, for the sake of complete enlightenment. If, however, there is no existence of existence before its own cause, he argues that it is unborn. Ajay himself. And to the originator of this universe. In both cases, there are two causes in order, namely, the great Brahman and the infinite powers. Because of its greatness, it is unborn, and because of its infinite power, it is the cause of it. If, indeed, fathers and others are the fathers of sons and others, and before them, and before them, and through their own actions, they are living beings. Being composed of fathers and others, it means that You alone are the father."
   },
   "29": {
-    "word_for_word": "nanu — but surely; indeed; guṇā — Sanseviera Roxburghiana; viśvotpattyādihetavas — viśvotpattyādihetavas; te — they; those; ca — and; pradhānasy — pradhānasy; eva — only; indeed; tasya — of him; of that; ca — and; puruṣaḥ — person; Puruṣa; kṣobhakas — kṣobhakas; tatra — there; in that; ca — and; kālo — kālo; nimittam — cause; occasion; iti — thus; prasiddhaṃ — brought about; kim — what; atra — here; ahaṃ — I; tatrāha — tatrāha; tvaṃ — you; vā — or; iti — thus; tamaso — tamaso; dhāraṇe\\'py — dhāraṇe\\'py; asaṃvṛta — uncovered; eva — only; indeed; sthānāya — to/for the act of standing; pālanāya — to/for guarding; jagataḥ — of the world; sṛṣṭyādyarthamutkaṭaṃ — sṛṣṭyādyarthamutkaṭaṃ; raja — col. 1; ādi — beginning; and so on; tvam — you; eva — only; indeed; bibharṣi — bibharṣi; sṛjasīty — sṛjasīty; arthaḥ — meaning; purpose; kālapradhānapuruṣāś — kālapradhānapuruṣāś; ca — and; tvadvyatiriktā — tvadvyatiriktā; na — not; santi — are; tvaṃ — you; tu — but; paraḥ — in comp. or; sarva — all; vyatiriktaḥ — reaching beyond; atas — rom this; tvam — you; eva — only; indeed; janayitety — janayitety; arthaḥ — meaning; purpose."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "1aafa898b76ddb1200bb652a2eba285992292fc47c1c085380fb1d480e6f5a9f",
+    "word_for_word": "ननु गुणा विश्वोत्पत्त्यादिहेतवस् ते च प्रधानस्य् एव तस्य च पुरुषः क्षोभकस् तत्र च कालो निमित्तम् इति प्रसिद्धं किमत्राहं तत्राह---त्वं वा इति । — Indeed, it is well known that the modes of nature are the causes of the creation of the universe and other things, and that they are the cause of the principal, and that the person is the disturber of it, and that time is the cause of it.; तमसो धारणे\\ऽप्य् असंवृत एव । — Even in the hold of darkness, it is uncovered.; स्थानाय पालनाय । — to take care of the place.; जगतः सृष्ट्याद्यर्थमुत्कटं रजआदि त्वम् एव बिभर्षि सृजसीत्य् अर्थः । — This means that You alone carry and create the dust and other elements that are the cause of the creation of the universe.; कालप्रधानपुरुषाश् च त्वद्व्यतिरिक्ता न सन्ति त्वं तु परः सर्व-व्यतिरिक्तः । — There are no other beings besides You who are the chiefs of time but You are the Supreme Being beyond all others; अतस् त्वम् एव जनयितेत्य् अर्थः ॥२९॥ — Therefore, it means that You alone are the cause.",
+    "translation": "Indeed, it is well known that the modes of nature are the causes of the creation of the universe and other things, and that they are the cause of the principal, and that the person is the disturber of it, and that time is the cause of it. Even in the hold of darkness, it is uncovered. to take care of the place. This means that You alone carry and create the dust and other elements that are the cause of the creation of the universe. There are no other beings besides You who are the chiefs of time but You are the Supreme Being beyond all others Therefore, it means that You alone are the cause."
   },
   "30": {
-    "word_for_word": "kārya — to be ade or done or practised or performed; kāraṇaprapañcasya — kāraṇaprapañcasya; tadavyatirekaṃ — tadavyatirekaṃ; tasya — of him; of that; ca — and; sarva — all; vyatirekamupapādayati — vyatirekamupapādayati; aham — I; iti — thus; ahaṃ — I; bhūmiḥ — earth; mātrāṇīti — mātrāṇīti; devā — Hibiscus utabilis or arsilea Quadrifolia; mana — ian spikenard; indriyāṇīti — indriyāṇīti; ca — and; trividhāhaṅkārakāryāṇi — trividhāhaṅkārakāryāṇi; kartā'haṅkāraḥ — kartā'haṅkāraḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cd8fc838a2b4f6b955d6e2e90688a43829ecfdecbfc9f2f2bef2ef0eeebc1a7e",
+    "word_for_word": "कार्य-कारणप्रपञ्चस्य तदव्यतिरेकं तस्य च सर्व-व्यतिरेकमुपपादयति । — It produces the distinction between the world of cause and effect and the distinction between it and all of it.; अहम् इति । — I’m the one.; अहं भूमिः । — I am the earth.; मात्राणीति देवा मन इन्द्रियाणीति च त्रिविधाहङ्कारकार्याणि । — The senses, the demigods, the mind and the senses are the threefold functions of the ego.; कर्ताऽहङ्कारः ॥३०॥ — The doer is the ego.",
+    "translation": "It produces the distinction between the world of cause and effect and the distinction between it and all of it. I’m the one. I am the earth. The senses, the demigods, the mind and the senses are the threefold functions of the ego. The doer is the ego."
   },
   "31": {
-    "word_for_word": "evaṃ — thus; in this way; stutvā — having praise; prārthayate — is being eager or ready to set out on a journey; tasya — of him; of that; iti — thus; he — a vocative icle (‘oh!’ ‘ho!’; prapannārti — prapannārti; hara — (only ifc; tasya — of him; of that; narakasya — of (; ayaṃ — going; bhagadatto — bhagadatto; nāma — name; namely; bhīto'ta — bhīto'ta; eva — only; indeed; mayā — by me; tava — your; of you; pādapaṅkajam — pādapaṅkajam; upasāditaḥ — caused to come ear."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "852aa5afd7f12b2343e9668de5bb3123ab61850356b63812c55679863ac490dc",
+    "word_for_word": "एवं स्तुत्वा प्रार्थयते, तस्येति । — Thus he praises and prays, saying, 'This is his.; हे प्रपन्नार्ति-हर ! — O Prapannarti-hara!; तस्य नरकस्य अयं भगदत्तो नाम भीतोऽत एव मया तव पादपङ्कजम् उपसादितः ॥३१॥ — This man named Bhagadatta is afraid of that hell and therefore I have come to Thy lotus feet.",
+    "translation": "Thus he praises and prays, saying, 'This is his. O Prapannarti-hara! This man named Bhagadatta is afraid of that hell and therefore I have come to Thy lotus feet."
   },
   "32": {
-    "word_for_word": "abhayaṃ — unfearful; dattvā — having given."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "509d7333049889ffac51d3ea80ef6e605ab742d57877509a1d82da11ac7527b3",
+    "word_for_word": "अभयं दत्त्वा ॥३२॥ — Giving him safety.",
+    "translation": "Giving him safety."
+  },
+  "33": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "6763f496f76a86f418442fc6ad3f70cc81e9d9ab920176032270317b340a7d42",
+    "word_for_word": "शताधिकम् इत्य् अपि ज्ञातव्यम् । — It should also be noted that it is more than a hundred.; यथाह श्री-पराशरः, — As Sri-Parashara says,; > कन्या-पुरे स कन्यानां षोडशातुल-विक्रमः । — > In the city of girls, he was the sixteenth of the girls.; >\n> शताधिकानि ददृशे सहस्राणि महामते ॥ — >\n> O great soul he saw more than a hundred thousand; [वि।पु। — [V.P.; ५.२९.३१] इति । — 5.29.31] is used.; राजभ्य इत्य् उपलक्षणं सिद्धादिभ्यश् चेति । — The sub-characteristic is to the kings, and to the Siddhas and others.; तथा च तेनैवोक्तम्, — And so he said,; > देव-सिद्धासुरादीनां नृपाणां च जनार्दन । — > O Janārdana, among the demigods, Siddhas, asuras and other kings,; >\n> हृत्वा हि सोऽसुरः कन्या रुरोध निज-मन्दिरे ॥ — >\n> The demon took the girl and locked her in his temple.; [वि।पु। — [V.P.; ५.२९.९] > इति ॥३३-३५॥ — 5.29.9] > 33-3",
+    "translation": "It should also be noted that it is more than a hundred. As Sri-Parashara says, > In the city of girls, he was the sixteenth of the girls. >\n> O great soul he saw more than a hundred thousand [V.P. 5.29.31] is used. The sub-characteristic is to the kings, and to the Siddhas and others. And so he said, > O Janārdana, among the demigods, Siddhas, asuras and other kings, >\n> The demon took the girl and locked her in his temple. [V.P. 5.29.9] > 33-3"
   },
   "34-35": {
-    "word_for_word": "na — not; vyākhyātam — explained."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "93aed113a1c0586006cc51893fc0a69d25f04569b9e74d913e32d0ade1fe407b",
+    "word_for_word": "na vyākhyātam — not explained",
+    "translation": "Not explained."
   },
   "36-38": {
-    "word_for_word": "prāhiṇot — prāhiṇot; prastha — going on a arch or journey; apayām — to go away; āsa — seat; sumṛṣṭāḥ — well rubbed or polisheds; kamanīya — to be desired or wished or; aś — Ā. ( aor. 3. pl; ca — and; tā — tā; virajombarāś — virajombarāś; ca — and; tāḥ — the 1st dental consonants; narayānaiḥ — by/with {{Lbody=104108}}s; śibika — of a king; abhiḥ — by/with nots; api — also; ca — and; mahākośān — a large sheaths; iti — thus; sapriyaḥ — sapriyaḥ; satyabhāmāsahitaḥ — satyabhāmāsahitaḥ."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "cd17989a57d76b59f315ec6f988863ac330e1ca4d7cedeb6f9dc7e98d6d30ddd",
+    "word_for_word": "प्राहिणोत् प्रस्थापयाम् आस । — He sent it and was sending it away.; सुमृष्टाः कमनीयाश् च ता विरजोम्बराश् च ताः । — They were well-groomed and beautiful and dressed in spotless clothes; नरयानैः शिबिकाभिः । — by carriages of men.; अपि च महाकोशानिति । — Also, the great cells.; सप्रियः सत्यभामासहितः ॥३६-३८॥ — He was dear to Satyabhama (36-38).",
+    "translation": "He sent it and was sending it away. They were well-groomed and beautiful and dressed in spotless clothes by carriages of men. Also, the great cells. He was dear to Satyabhama (36-38)."
   },
   "39": {
-    "word_for_word": "sa — the last of the three sibilants; priyaḥ — priyaḥ; satyabhāmā — ‘having true lustre’; sahitaḥ — together with."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "561f3b99b99e34f67c848ed21219f22dd7c62afcb332f8b014c9c5443900f691",
+    "word_for_word": "स-प्रियः सत्यभामा-सहितः ॥३९॥ — He was with his beloved Satyabhama.",
+    "translation": "He was with his beloved Satyabhama."
   },
   "40": {
-    "word_for_word": "gṛhodyānaṃ — =; niṣkuṭaṃ — a pleasure-grove ear a house; tadupaśobhayati — tadupaśobhayati; yaḥ — who; which."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "5455da5f52a81798aed30da6a76dff8f14b123cfa1deccae94271e212bfc3da5",
+    "word_for_word": "गृहोद्यानं निष्कुटं तदुपशोभयति यः ॥४०॥ — He who adorns the house and garden without any fence",
+    "translation": "He who adorns the house and garden without any fence"
   },
   "41": {
-    "word_for_word": "sendrān — accompanied by or together withs; vibudhān — destitute of learned ens; nirjitya — nirjitya; itīndra — itīndra; kṛṣṇayoḥ — of the two Kṛṣṇas; saṅgrāma — saṅgrāma; uktas — uktas; tatra — there; in that; nanu — but surely; indeed; kathaṃ — (in comp. or; prasādhita — accomplished; sva — own; self; manorathena — by/with ‘heart's joy’; śrī-kṛṣṇena — by/with Śrī Kṛṣṇa; mahendrasya — of the great; saṅgrāmaḥ — saṅgrāmaḥ; ity — thus; āha — says; yayāca — yayāca; iti — thus; acyutam — ot allen; artha — meaning; purpose; sādhanam — means; practice; iti — thus; ca — and; karma — action; karma; dvayaṃ — twofold; yācati — (usually Ā. in sense of ‘asking or one's self’s; dhātoḥ — of verbal root; vigṛhyate — having stretched out or aparts; vigrahaṃ — reed rom ‘the Seizer’ i.e; karoti — does; makes; mahān — greats; api — also; tamaḥ — in comp. or; krodhaḥ — anger; āḍhyatāṃ — opulence; dhanikatāṃ — wealth; dhig — in comp. or; iti — thus."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c53c56e57be065de65e28a0806f6af6cbf4edb633dce2bec87bae16680a7c897",
+    "word_for_word": "सेन्द्रान् विबुधान् निर्जित्य इतीन्द्र-कृष्णयोः सङ्ग्राम उक्तस् तत्र ननु कथं प्रसाधित-स्व-मनोरथेन श्री-कृष्णेन महेन्द्रस्य सङ्ग्रामः ? — The battle between Indra and Krishna is said to have been defeated by the gods, including Indra.; इत्य् आह---ययाच इति । — It is argued that Yayacha.; अच्युतम् अर्थ-साधनम् इति च कर्म-द्वयं याचति-धातोः । — The infallible is the means of meaning, and the verb begs has two actions.; विगृह्यते विग्रहं करोति महान् अपि । — He fights and fights, even the greatest.; तमः क्रोधः । — Darkness is anger.; आढ्यतां धनिकतां धिग् इति ॥४१॥ — Woe to the rich and the wealthy!",
+    "translation": "The battle between Indra and Krishna is said to have been defeated by the gods, including Indra. It is argued that Yayacha. The infallible is the means of meaning, and the verb begs has two actions. He fights and fights, even the greatest. Darkness is anger. Woe to the rich and the wealthy!"
+  },
+  "42": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "d0ab77dcfbf2aa4b80e0c2f9acb2d8ad554e865c6db14030a31614fa25f197b7",
+    "word_for_word": "यथा यथावत् । — As it is, as it is.; अनेन देवक्य्-आदि-बन्धु-जन-समागमोऽपि प्रतिगृहं यौगपद्येन सूचितः । — This also indicates the simultaneous meeting of Devakī and other relatives in each household.; अव्ययः सर्वत्रापि सम्पूर्ण एव ॥४२॥ — The inexhaustible is complete everywhere.",
+    "translation": "As it is, as it is. This also indicates the simultaneous meeting of Devakī and other relatives in each household. The inexhaustible is complete everywhere."
   },
   "43": {
-    "word_for_word": "aho — aho; bhāgyaṃ — relating to; nārīṇām — nārīṇām; ity — thus; āha — says; tribhiḥ — by/with threes; gṛheṣv — gṛheṣv; iti — thus; atarkya — incomprehensible; aṇi — the point of a eedle or of a sharp stake; karma — action; karma; aṇi — the point of a eedle or of a sharp stake; karoti — does; makes; tathā — so; in that way; saḥ — he; that; nirastaṃ — cast out or off; sāmyam — equality; atiśayaś — atiśayaś; ca — and; yair — yair; anya — other; īṣāṃ — the pole or shafts of a carriage or plough; teṣu — in/among the 1st dental consonants; gṛheṣv — gṛheṣv; anapāyy — anapāyy; avasthitaḥ — standing ear (sometimes with acc; ramābhir — ramābhir; lakṣmyā — by/with rarely; aṃśa — part; portion; bhūtābhiḥ — by/with the 14th day of the dark half of the lunar onths; nija — own; kāma — desire; saṃplutaḥ — saṃplutaḥ; svānanda — delight in one's self; paripūrṇaḥ — quite ull; gārhaka — gārhaka; medhikān — medhikān; gṛhastha — ifc. living or staying in any one's house; dharmān — dharma; dutys."
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "c603604b9e4b87e4b5d50d4fb46535080a683a4c969682ec9888f97dd5e54429",
+    "word_for_word": "अहो भाग्यं नारीणाम् इत्य् आह त्रिभिः---गृहेष्व् इति । — Oh, the luck of women, he said, in three ways: in their homes.; अतर्क्याणि कर्माणि करोति तथा सः । — That’s how he does irrational things.; निरस्तं साम्यम् अतिशयश् च यैर् अन्येषां तेषु गृहेष्व् अनपाय्य् अवस्थितः। — Equality and excess have been rejected and have remained in the houses of others.; रमाभिर् लक्ष्म्या अंश-भूताभिः । — They are part of the beautiful Lakshmi.; निज-काम-संप्लुतः स्वानन्द-परिपूर्णः । — He was overwhelmed with his own desires and full of his own joy.; गार्हक-मेधिकान् गृहस्थ-धर्मान् ॥४३॥ — the householders and the priests and the duties of the householder.",
+    "translation": "Oh, the luck of women, he said, in three ways: in their homes. That’s how he does irrational things. Equality and excess have been rejected and have remained in the houses of others. They are part of the beautiful Lakshmi. He was overwhelmed with his own desires and full of his own joy. the householders and the priests and the duties of the householder."
+  },
+  "44": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "aaa132e92f51b40cbc3241c88c6080b9dc7e64b92aa334f6ce4643d2e97dbabf",
+    "word_for_word": "अनुराग-हास-सहितम् अवलोकं च तत्-पूर्वकं नव-सङ्गमं च तद्-गतं जल्पं च तस्मिन् लज्जां च भेजुः ॥४४॥ — They looked at him with affection and laughter at the new meeting he had had with them and at the conversation he had had with them and felt ashamed of him",
+    "translation": "They looked at him with affection and laughter at the new meeting he had had with them and at the conversation he had had with them and felt ashamed of him"
+  },
+  "45": {
+    "source_aligned": true,
+    "translation_method": "google-sa-en-clause-aligned-2026-08-24",
+    "source_sha256": "f76ef3ce9650747890a64d24ed697ef540a2ecbd0af2ac84a203306a71d254a4",
+    "word_for_word": "विश्रमणं पाद-संवाहनम् । — Relaxation and foot massage.; केश-प्रसारः केश-प्रसाधनम् । — Hair extensions are hair cosmetics.; दासीनां शतानि विद्यन्ते यासां तथा-भूता अपि स्वयं विभोर् दास्यं विदधुः ॥४५॥ — There are hundreds of maidservants who, even those who are so, have themselves become the maidservants of the Lord.",
+    "translation": "Relaxation and foot massage. Hair extensions are hair cosmetics. There are hundreds of maidservants who, even those who are so, have themselves become the maidservants of the Lord."
   }
 }
