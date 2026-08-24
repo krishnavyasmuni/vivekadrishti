@@ -1,66 +1,29 @@
-/* Kena: full encyclopedia layout modelled on the reading architecture shown in the reference screenshots. */
-html.kena-article-open{overflow:hidden}
-.kena-article-backdrop{display:none!important}
-.kena-article-reader{position:fixed!important;inset:0!important;z-index:12021!important;display:flex!important;flex-direction:column!important;background:#fff!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:hidden!important}
-.kena-article-head{display:none!important}
-.kena-article-scroll{padding:0!important;overflow:auto!important;overscroll-behavior:contain;scroll-behavior:smooth;background:#fff!important}
-.kena-article{max-width:none!important;margin:0!important;color:#202122!important;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif!important;font-size:16px!important;line-height:1.62!important}
-.kena-article a{color:#36c!important;text-decoration:none!important}
-.kena-article a:hover{text-decoration:underline!important}
-.kena-wiki-page{width:min(1510px,calc(100% - 42px));margin:0 auto;display:grid;grid-template-columns:235px minmax(0,850px) 310px;gap:36px;align-items:start;padding:30px 0 90px}
-.kena-wiki-main{min-width:0}
-.kena-page-head{margin:0 0 12px}
-.kena-page-head h1{margin:0!important;padding:0 0 3px!important;border-bottom:1px solid #a2a9b1!important;color:#202122!important;text-align:left!important;font:italic 31px/1.18 Georgia,"Times New Roman",serif!important;font-weight:600!important}
-.kena-page-tabs{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;height:34px;border-bottom:1px solid #c8ccd1;font-size:14px}
-.kena-page-tabs>div{display:flex;gap:18px;height:100%;align-items:flex-end}
-.kena-page-tabs span,.kena-page-tabs a{display:flex;align-items:center;height:100%;padding-top:3px;color:#36c!important;text-decoration:none!important}
-.kena-page-tabs .active{color:#202122!important;border-bottom:2px solid #202122}
-.kena-page-tabs button{border:0;background:transparent;color:#36c;font:inherit;padding:0 0 8px;cursor:pointer}
-.kena-page-tabs button:hover{text-decoration:underline}
-.kena-from{padding:10px 0 13px;color:#202122;font-size:14px}
-.kena-lead{margin:0!important;font-size:16.5px!important;line-height:1.65!important}
-.kena-lead p,.kena-wiki-section p{margin:0 0 17px!important;color:#202122!important;font-size:16px!important;line-height:1.64!important}
-.kena-wiki-section{scroll-margin-top:14px;margin:30px 0 0!important;clear:none!important}
-.kena-wiki-section h2{margin:0 0 10px!important;padding:0 0 4px!important;border-bottom:1px solid #a2a9b1!important;color:#202122!important;text-align:left!important;font:26px/1.25 Georgia,"Times New Roman",serif!important;font-weight:400!important}
-.kena-wiki-section h3{scroll-margin-top:14px;margin:24px 0 9px!important;color:#202122!important;text-align:left!important;font:20px/1.28 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif!important;font-weight:600!important}
-.kena-wiki-section b,.kena-lead b{font-weight:700}
-.kena-wiki-toc{position:sticky;top:22px;align-self:start;max-height:calc(100vh - 44px);overflow:auto;padding:12px 15px 18px 6px;color:#202122;font-size:14px;line-height:1.35}
-.kena-wiki-toc-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 0 9px;margin:0 0 10px;border-bottom:1px solid #eaecf0}
-.kena-wiki-toc-head b{font-size:14px}
-.kena-wiki-toc-head button{border:1px solid #c8ccd1;border-radius:2px;background:#f8f9fa;color:#202122;font-size:11px;padding:2px 7px;cursor:pointer}
-.kena-wiki-toc-body{display:flex;flex-direction:column;gap:9px}
-.kena-wiki-toc-body>a,.kena-wiki-toc .toc-group>a{display:block;color:#36c!important}
-.kena-wiki-toc .top{color:#202122!important;font-weight:700}
-.kena-wiki-toc .toc-sub{display:flex;flex-direction:column;gap:7px;margin:7px 0 0 12px;padding-left:0}
-.kena-wiki-toc .toc-sub a{display:block;color:#36c!important;font-size:13.5px;line-height:1.26}
-.kena-wiki-toc.is-collapsed .kena-wiki-toc-body{display:none}
-.kena-wiki-right{position:sticky;top:22px;align-self:start;display:flex;flex-direction:column;gap:13px;margin-top:123px}
-.kena-infobox-wiki{border:1px solid #a2a9b1;background:#f8f9fa;color:#202122;font-size:13.5px;line-height:1.4}
-.kena-infobox-name{padding:5px 8px;background:#ffc56d;text-align:center;font-weight:700;font-size:18px}
-.kena-ms-link{display:block;margin:5px 28px 0!important}
-.kena-ms-link img{display:block;width:100%;height:auto;max-height:165px;object-fit:cover;border:0}
-.kena-infobox-caption{padding:2px 9px 7px;text-align:center;font-size:12.5px;line-height:1.35;font-style:italic}
-.kena-infobox-wiki dl{display:grid;grid-template-columns:94px minmax(0,1fr);gap:0;margin:0;padding:0 8px 7px}
-.kena-infobox-wiki dt,.kena-infobox-wiki dd{margin:0;padding:5px 0;overflow-wrap:anywhere}
-.kena-infobox-wiki dt{font-weight:700;padding-right:8px}
-.kena-seriesbox{border:1px solid #a2a9b1;background:#f8f9fa;text-align:center;font-size:13px}
-.kena-seriesbox .series-top{padding:6px 6px 1px;background:#ffc56d;font-size:13px}
-.kena-seriesbox .series-title{padding:0 6px 5px;background:#ffc56d;color:#36c;font-size:20px;font-weight:700}
-.kena-seriesbox .series-om{font:70px/1.08 Georgia,"Times New Roman",serif;color:#d40000;padding:7px 0 0}
-.kena-seriesbox .series-links{padding:0 8px 10px;color:#36c}
-.kena-seriesbox .series-row{display:grid;grid-template-columns:105px 1fr;text-align:left;border-top:4px solid #f8f9fa;background:#ffc56d}
-.kena-seriesbox .series-row b{padding:4px 5px;color:#36c}
-.kena-seriesbox .series-row span{padding:4px 5px;background:#f8f9fa;color:#202122}
-.kena-reading-box{border:1px solid #c8ccd1;background:#fff;padding:10px 11px;font-size:12.5px;line-height:1.4}
-.kena-reading-box b{display:block;margin-bottom:6px}.kena-reading-box a{display:block;margin:4px 0}
-.kena-verse{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);column-gap:30px;row-gap:4px;margin:18px 14px 22px;padding:0 0 3px;color:#202122}
-.kena-verse-sa{font-family:"Noto Serif Devanagari","Noto Serif Devanagari UI",Georgia,serif;font-size:18px;line-height:1.55;text-align:center}
-.kena-verse-en{font-size:15px;line-height:1.55}.kena-verse-label{grid-column:1/-1;text-align:center;color:#54595d;font-size:12px;font-style:italic;padding-top:5px}
-.kena-wiki-table{width:100%;border-collapse:collapse;margin:14px 0 20px;border:1px solid #a2a9b1;background:#fff;font-size:14px;line-height:1.5}
-.kena-wiki-table th,.kena-wiki-table td{padding:8px 10px;border:1px solid #c8ccd1;vertical-align:top;text-align:left}.kena-wiki-table thead th{background:#eaecf0;font-weight:700}.kena-structure-table td:first-child{white-space:nowrap;font-weight:600}
-.kena-cite{white-space:nowrap;font:11px/1 Arial,Helvetica,sans-serif;vertical-align:super}.kena-cite a{margin-left:1px;color:#36c!important}
-.kena-ref-list{margin:0;padding-left:28px}.kena-ref-list li{margin:0 0 10px;font-size:13.5px;line-height:1.5}.kena-ref-list li:target{background:#fff2ac}.kena-ref-list a{white-space:nowrap}
-.kena-external-list{margin:0;padding-left:28px}.kena-external-list li{margin:0 0 7px;font-size:15px}
-@media(max-width:1320px){.kena-wiki-page{width:min(1180px,calc(100% - 32px));grid-template-columns:205px minmax(0,1fr) 280px;gap:25px}.kena-wiki-right{margin-top:121px}.kena-infobox-wiki dl{grid-template-columns:84px minmax(0,1fr)}}
-@media(max-width:1080px){.kena-wiki-page{width:min(900px,calc(100% - 30px));grid-template-columns:minmax(0,1fr) 280px;gap:28px}.kena-wiki-toc{display:none}.kena-wiki-main{grid-column:1}.kena-wiki-right{grid-column:2;margin-top:121px}}
-@media(max-width:800px){.kena-wiki-page{display:block;width:calc(100% - 28px);padding-top:20px}.kena-page-head h1{font-size:29px!important}.kena-wiki-right{position:relative;top:auto;margin:13px 0 22px;display:block}.kena-infobox-wiki{margin-bottom:12px}.kena-seriesbox,.kena-reading-box{display:none}.kena-page-tabs>div{gap:13px}.kena-page-tabs button{font-size:13px}.kena-verse{grid-template-columns:1fr;margin-left:0;margin-right:0}.kena-verse-sa{text-align:left}.kena-verse-label{grid-column:1;text-align:left}.kena-wiki-section p,.kena-lead p{font-size:15.6px!important;line-height:1.66!important}.kena-wiki-section h2{font-size:24px!important}.kena-wiki-table{font-size:12.5px;display:block;overflow-x:auto}}
+.kena-wiki-toc{clear:none;margin-top:20px;margin-bottom:31px}
+.kena-wiki-toc>ol{margin-bottom:0}
+.kena-wiki-toc ol ol{margin:3px 0 3px 3px;padding-left:19px}
+.kena-wiki-toc ol ol li{font-size:12.8px}
+.kena-text-quote{display:block;margin:22px 0;padding:16px 20px!important;border-left:4px solid #a2a9b1!important;background:#f8f9fa!important;font-style:normal}
+.kena-text-quote .kena-quote-ref{display:block;margin-bottom:8px;color:#54595d;font:700 10.5px/1.35 Merriweather,Georgia,serif;letter-spacing:.05em;text-transform:uppercase}
+.kena-text-quote .kena-quote-sa{display:block;margin-bottom:9px;color:#202122;font-family:"Noto Serif Devanagari","Noto Serif",Georgia,serif;font-size:18px;line-height:1.7}
+.kena-text-quote .kena-quote-en{display:block;color:#3a3a3a;font-size:14.5px;line-height:1.68}
+.kena-wiki-structure{margin-top:18px}
+.kena-wiki-table-wrap{margin:17px 0 24px;overflow-x:auto;border:1px solid #a2a9b1;background:#fff}
+.kena-wiki-table{width:100%;min-width:620px;border-collapse:collapse;color:#202122;font-size:13.5px;line-height:1.6}
+.kena-wiki-table th,.kena-wiki-table td{padding:11px 13px;border-top:1px solid #c8ccd1;border-right:1px solid #c8ccd1;vertical-align:top;text-align:left}
+.kena-wiki-table tr:first-child th{border-top:0}
+.kena-wiki-table th:last-child,.kena-wiki-table td:last-child{border-right:0}
+.kena-wiki-table thead th{background:#eaecf0;font-size:11px;letter-spacing:.035em;text-transform:uppercase}
+.kena-wiki-table tbody td:first-child{width:195px;background:#f8f9fa}
+.kena-section h3[id]{scroll-margin-top:16px}
+.kena-references ol{padding-left:29px}
+.kena-references li{margin:0 0 12px;color:#202122;font-size:13.5px;line-height:1.58}
+.kena-references li:target{background:#fff2ac}
+.kena-references li a{font-size:12px;white-space:nowrap}
+.kena-section p b{font-weight:700}
+@media(max-width:850px){
+  .kena-wiki-toc{width:100%}
+  .kena-text-quote{padding:14px 15px!important}
+  .kena-text-quote .kena-quote-sa{font-size:17px;line-height:1.75}
+  .kena-text-quote .kena-quote-en{font-size:14px}
+  .kena-wiki-table{font-size:13px}
+}
