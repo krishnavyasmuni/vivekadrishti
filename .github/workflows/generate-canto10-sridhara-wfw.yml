@@ -6,6 +6,7 @@ on:
     paths:
       - tools/generate_canto10_sridhara_wfw.py
       - tools/refine_canto10_sridhara_wfw_fast.py
+      - tools/analyze_canto10_unresolved.py
       - .github/workflows/generate-canto10-sridhara-wfw.yml
   workflow_dispatch:
 
@@ -29,6 +30,9 @@ jobs:
       - name: Refine chapters 8 through 90
         run: python3 tools/refine_canto10_sridhara_wfw_fast.py
 
+      - name: Audit unresolved lexical forms
+        run: python3 tools/analyze_canto10_unresolved.py
+
       - name: Commit refined chapter files
         shell: bash
         run: |
@@ -39,5 +43,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/data/canto10-sridhara-word-for-word
-          git commit -m "Refine complete Canto 10 Sridhara word-for-word data"
+          git commit -m "Audit complete Canto 10 Sridhara word-for-word data"
           git push
