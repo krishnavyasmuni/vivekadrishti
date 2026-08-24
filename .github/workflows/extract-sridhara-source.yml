@@ -28,4 +28,5 @@ jobs:
           git add assets/data/canto10-sridhara-source
           git diff --cached --quiet && exit 0
           git commit -m 'Add exact Canto 10 Sridhara source blocks'
+          git pull --rebase origin audit/sridhara-direct-canto2-canto10
           git push origin HEAD:audit/sridhara-direct-canto2-canto10
