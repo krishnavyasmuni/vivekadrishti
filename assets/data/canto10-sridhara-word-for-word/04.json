@@ -335,7 +335,8 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "2e7a7026b064d29986cd77b2ac1d522c50d6ce5254ed92c499e39e78fb0ec5f4",
     "word_for_word": "आरात् समीपम् आगतो मृत्युर् येषां ते ॥४६॥ — Those whose death has come near from the beginning.",
-    "translation": "Those whose death has come near from the beginning."
+    "translation": "Those whose death has come near from the beginning.",
+    "lexical_reviewed": true
   },
   "46": {
     "source_aligned": true,

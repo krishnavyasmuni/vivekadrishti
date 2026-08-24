@@ -103,7 +103,8 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "2c61f7e1c464da5666a5ad3a2695e195ef0ad5f28f289ab6a668e1701937cbbb",
     "word_for_word": "तेभ्यः प्रादात् ॥१५॥ — He gave it to them.; यथोचितम् अन्यान् अप्य् अपूजयत् ॥१६॥ — He also worshiped others as appropriate.",
-    "translation": "He gave it to them. He also worshiped others as appropriate."
+    "translation": "He gave it to them. He also worshiped others as appropriate.",
+    "lexical_reviewed": true
   },
   "17": {
     "source_aligned": true,
@@ -186,7 +187,8 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "afb109cae5ed5614e9bbd77a7d2e3bde273448bf5dc82dda72f11da33e910d93",
     "word_for_word": "भवद्भ्याम् उपलालितः सन् कच्चिद् वर्तते ? — Is he being raised by you?; इति शेषः ॥ — This is the rest.",
-    "translation": "Is he being raised by you? This is the rest."
+    "translation": "Is he being raised by you? This is the rest.",
+    "lexical_reviewed": true
   },
   "28": {
     "source_aligned": true,

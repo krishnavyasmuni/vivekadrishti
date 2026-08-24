@@ -28,7 +28,8 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "3c4021dd322bfacf6e9b80c7ec5fe407afa09c83509cc80f43fe2da5a3c0281d",
     "word_for_word": "उत्थानं शिशोर् अङ्ग-परिवर्तनं तत्र करणीये कौतुकाप्लवे उत्सवाभिषेके तथा तस्मिन्न् एव दिने जन्म-र्क्षस्यापि योगेऽतिमहोत्सवे समवेत-योषितां मिलित-पुरन्ध्रीणां मध्ये वादित्रादिभिः शोभितम् अभिषेचनं सती यशोदा चकार ॥४॥ — The chaste mother Yaśodā performed the ritualistic ceremonies for the rising of the child and the transformation of his body in the festive ceremonies and on the same day for the conjunction of the constellation of his birth",
-    "translation": "The chaste mother Yaśodā performed the ritualistic ceremonies for the rising of the child and the transformation of his body in the festive ceremonies and on the same day for the conjunction of the constellation of his birth"
+    "translation": "The chaste mother Yaśodā performed the ritualistic ceremonies for the rising of the child and the transformation of his body in the festive ceremonies and on the same day for the conjunction of the constellation of his birth",
+    "lexical_reviewed": true
   },
   "5": {
     "source_aligned": true,
@@ -115,21 +116,24 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "5949dff454dd288c450e618ae66c15b2a3923db122c46aa1f186eb3753ad1830",
     "word_for_word": "हुत्वा हावयित्वा ॥१५॥ — Having offered sacrifices.",
-    "translation": "Having offered sacrifices."
+    "translation": "Having offered sacrifices.",
+    "lexical_reviewed": true
   },
   "16": {
     "source_aligned": true,
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "59c6cfa8a8c0fa42042fd69730db9f32172aea93976b3e0588176bc00fc1cbe4",
     "word_for_word": "गावो गाश् च प्रादात् । — He gave me cows and cows.; अन्वयुञ्जत आशिषो युयुजुः ॥१६॥ — They followed him and gave him their blessings.",
-    "translation": "He gave me cows and cows. They followed him and gave him their blessings."
+    "translation": "He gave me cows and cows. They followed him and gave him their blessings.",
+    "lexical_reviewed": true
   },
   "17": {
     "source_aligned": true,
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "e83cb6e6a340a22fe94e2749ed9d55bc7b99a3e2b098941bf05d4167afd22640",
     "word_for_word": "तास् तथैव बभूवुर् इत्य् अर्थः ॥१७॥ — That means they became the same.",
-    "translation": "That means they became the same."
+    "translation": "That means they became the same.",
+    "lexical_reviewed": true
   },
   "18": {
     "source_aligned": true,
@@ -191,7 +195,8 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "247eb2de7d7185f00df11e9abd633fde63e1ba014ec53a8be79132915a7b6f3d",
     "word_for_word": "उपारतः पांसु-वर्षस्य वेगो यस्मिंस् तथा-भूते पवने सति, तत्र तस्या रुदितम् अनुनिशम्य गोप्यो रुरुदुः ॥२५॥ — The cowherd women wept on hearing her cries as the wind blew with the speed of the rain of dust",
-    "translation": "The cowherd women wept on hearing her cries as the wind blew with the speed of the rain of dust"
+    "translation": "The cowherd women wept on hearing her cries as the wind blew with the speed of the rain of dust",
+    "lexical_reviewed": true
   },
   "26": {
     "source_aligned": true,
@@ -244,7 +249,8 @@
     "translation_method": "google-sa-en-clause-aligned-2026-08-24",
     "source_sha256": "d239c0eb74c7c3b2f19ad0ac2aa8bccfd7e8b32e6b28c8112da5f62b9c16b965",
     "word_for_word": "नोऽस्माभिः चीर्णं कृतम् । — We’ve been ripped off.; पूर्तं वापी-कूपादि-निर्माणम्। — Completed construction of wells and wells.; इष्टं पञ्च-यज्ञाग्नि-होत्रादि । — The five sacrifices, such as the Agni-hotra, are desired.; दत्तं दानम् । — The gift given.; यद् यस्मात् तप-आदेः । — Whatever from whatever austerities and so on.; प्रणयन् हर्षयन् ॥३२॥ — loving and cheering.",
-    "translation": "We’ve been ripped off. Completed construction of wells and wells. The five sacrifices, such as the Agni-hotra, are desired. The gift given. Whatever from whatever austerities and so on. loving and cheering."
+    "translation": "We’ve been ripped off. Completed construction of wells and wells. The five sacrifices, such as the Agni-hotra, are desired. The gift given. Whatever from whatever austerities and so on. loving and cheering.",
+    "lexical_reviewed": true
   },
   "33": {
     "source_aligned": true,
