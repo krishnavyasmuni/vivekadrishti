@@ -23,12 +23,16 @@ jobs:
         run: |
           python - <<'PY'
           import json, urllib.parse, urllib.request
-          text = 'भगवन्-मायावि-मोहितस्य नन्दस्याचरितम् आह---उलूखलम् इति'
-          params = urllib.parse.urlencode({'client':'gtx','sl':'sa','tl':'en','dt':'t','q':text})
-          req = urllib.request.Request('https://translate.googleapis.com/translate_a/single?' + params, headers={'User-Agent':'Mozilla/5.0'})
-          with urllib.request.urlopen(req, timeout=30) as r:
-              data = json.loads(r.read().decode('utf-8'))
-          print('TRANSLATION:', ''.join(x[0] for x in data[0] if x and x[0]))
+          def tr(text):
+              params = urllib.parse.urlencode({'client':'gtx','sl':'sa','tl':'en','dt':'t','q':text})
+              req = urllib.request.Request('https://translate.googleapis.com/translate_a/single?' + params, headers={'User-Agent':'Mozilla/5.0'})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  data = json.loads(r.read().decode('utf-8'))
+              return ''.join(x[0] for x in data[0] if x and x[0])
+          prose = 'भगवन्-मायावि-मोहितस्य नन्दस्याचरितम् आह---उलूखलम् इति'
+          words = 'भगवन्-मायावि-मोहितस्य | नन्दस्याचरितम् | आह | उलूखलम् | इति'
+          print('TRANSLATION:', tr(prose))
+          print('WORD LEVEL:', tr(words))
           PY
       - name: Extract exact Vishvasa Sridhara blocks
         run: python tools/extract_canto10_sridhara.py
