@@ -1,6 +1,6 @@
 /* Shastra-first scripture index: names, grouping, interaction. */
 .scripture-page .article-body{width:min(860px,calc(100% - 36px))}
-.scripture-browser{--sattvika:#6f8c72;--rajasa:#b88442;--tamasa:#7b6a87;--both:#8a617d}
+.scripture-browser{--sattvika:#6f8c72;--rajasa:#b88442;--tamasa:#7b6a87;--both:#8a617d;--maha:#b36f38;--upa:#487f87}
 .corpus-nav{justify-content:flex-start;gap:8px;padding-bottom:24px}
 .corpus-button{padding:10px 14px;border-radius:4px;font-size:12px;cursor:pointer}
 .browser-stage{padding-top:30px;min-height:0}
@@ -9,22 +9,36 @@
 .shastra-subnav{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
 .shastra-subnav button{border-radius:4px;padding:8px 10px;font-size:10px;cursor:pointer}
 .shastra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-.shastra-name{appearance:none;position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:100%;min-height:44px;padding:10px 12px;border:1px solid #d3cabd;border-radius:4px;background:rgba(255,255,255,.42);color:#49433d;font-family:Merriweather,Georgia,serif;font-size:11px;line-height:1.35;text-align:left;cursor:pointer;transition:background .15s ease,border-color .15s ease,transform .15s ease}
+.shastra-name{appearance:none;position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:100%;min-height:44px;padding:10px 12px;border:1px solid #d3cabd;border-radius:4px;background:rgba(255,255,255,.42);color:#49433d;font-family:Merriweather,Georgia,serif;font-size:11px;line-height:1.35;text-align:left;cursor:pointer;transition:background .15s ease,border-color .15s ease,transform .15s ease,box-shadow .15s ease}
 .shastra-name>span{display:block;width:100%}
 .shastra-name>small{display:block;width:100%;margin-top:5px;color:#8a8074;font-family:Merriweather,Georgia,serif;font-size:8px;font-weight:400;line-height:1.45;letter-spacing:0}
 .shastra-name:hover{background:#fff;border-color:#9d9182;transform:translateY(-1px)}
 .shastra-name.is-active{border-color:#0b6f72;background:#edf5f3;color:#155456}
 .upanishad-name>small{color:#7b7166}
-.purana-name{min-height:64px;padding-top:11px;padding-bottom:11px}
-.purana-name>small{max-width:100%;color:#82776c}
-.purana-both{box-shadow:inset 0 -3px 0 rgba(138,97,125,.18)}
-.purana-both:not(.guna-sattvika):not(.guna-rajasa):not(.guna-tamasa){border-left:5px solid var(--both);background:rgba(138,97,125,.06)}
-.shastra-name.guna-sattvika{border-left:5px solid var(--sattvika);background:rgba(111,140,114,.07)}
-.shastra-name.guna-rajasa{border-left:5px solid var(--rajasa);background:rgba(184,132,66,.08)}
-.shastra-name.guna-tamasa{border-left:5px solid var(--tamasa);background:rgba(123,106,135,.08)}
-.shastra-name.guna-sattvika.is-active{border-color:var(--sattvika);background:rgba(111,140,114,.17);color:#405b43}
-.shastra-name.guna-rajasa.is-active{border-color:var(--rajasa);background:rgba(184,132,66,.17);color:#715022}
-.shastra-name.guna-tamasa.is-active{border-color:var(--tamasa);background:rgba(123,106,135,.17);color:#554962}
+.purana-name{min-height:64px;padding-top:11px;padding-bottom:11px;border-left-width:7px;box-shadow:inset 0 1px 0 rgba(255,255,255,.48)}
+.purana-name>small{max-width:100%;color:#74695e}
+
+/* Category colour: every Purāṇa is visibly coded even when Padma does not give it a guṇa. */
+.purana-name[data-kind="Mahāpurāṇa"]{border-left-color:var(--maha);background:linear-gradient(90deg,rgba(179,111,56,.20),rgba(179,111,56,.07) 58%,rgba(255,255,255,.30));}
+.purana-name[data-kind="Upapurāṇa"]{border-left-color:var(--upa);background:linear-gradient(90deg,rgba(72,127,135,.19),rgba(72,127,135,.065) 58%,rgba(255,255,255,.30));}
+.purana-name[data-kind="Both"]{border-left-color:var(--both);background:linear-gradient(90deg,rgba(138,97,125,.20),rgba(138,97,125,.07) 58%,rgba(255,255,255,.30));box-shadow:inset 0 -4px 0 rgba(138,97,125,.24),inset 0 1px 0 rgba(255,255,255,.48)}
+
+/* Padma Purāṇa guṇa classification takes visual precedence where the śāstra supplies it. */
+.shastra-name.guna-sattvika{border-left:7px solid var(--sattvika);background:linear-gradient(90deg,rgba(111,140,114,.25),rgba(111,140,114,.09) 58%,rgba(255,255,255,.28))}
+.shastra-name.guna-rajasa{border-left:7px solid var(--rajasa);background:linear-gradient(90deg,rgba(184,132,66,.26),rgba(184,132,66,.095) 58%,rgba(255,255,255,.28))}
+.shastra-name.guna-tamasa{border-left:7px solid var(--tamasa);background:linear-gradient(90deg,rgba(123,106,135,.25),rgba(123,106,135,.09) 58%,rgba(255,255,255,.28))}
+.shastra-name.guna-sattvika.is-active{border-color:var(--sattvika);background:rgba(111,140,114,.24);color:#405b43;box-shadow:0 0 0 1px rgba(111,140,114,.30) inset}
+.shastra-name.guna-rajasa.is-active{border-color:var(--rajasa);background:rgba(184,132,66,.24);color:#715022;box-shadow:0 0 0 1px rgba(184,132,66,.30) inset}
+.shastra-name.guna-tamasa.is-active{border-color:var(--tamasa);background:rgba(123,106,135,.24);color:#554962;box-shadow:0 0 0 1px rgba(123,106,135,.30) inset}
+.purana-name[data-kind="Mahāpurāṇa"]:not(.guna-sattvika):not(.guna-rajasa):not(.guna-tamasa).is-active{border-color:var(--maha);background:rgba(179,111,56,.22);color:#71421e}
+.purana-name[data-kind="Upapurāṇa"].is-active{border-color:var(--upa);background:rgba(72,127,135,.22);color:#315d63}
+.purana-name[data-kind="Both"]:not(.guna-sattvika):not(.guna-rajasa):not(.guna-tamasa).is-active{border-color:var(--both);background:rgba(138,97,125,.22);color:#65445c}
+
+/* Matching tab highlights. */
+.shastra-tab[data-group="puranas"][data-view="Mahāpurāṇa"].is-active{background:rgba(179,111,56,.18);border-color:var(--maha);color:#71421e}
+.shastra-tab[data-group="puranas"][data-view="Upapurāṇa"].is-active{background:rgba(72,127,135,.18);border-color:var(--upa);color:#315d63}
+.shastra-tab[data-group="puranas"][data-view="Both"].is-active{background:rgba(138,97,125,.18);border-color:var(--both);color:#65445c}
+
 .guna-group{margin:0 0 22px;padding:0}
 .guna-group h3{display:inline-block;margin:0 0 9px!important;padding:3px 7px;border-radius:3px;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;letter-spacing:.03em}
 .guna-group.guna-sattvika h3{background:rgba(111,140,114,.17);color:#49634c!important}
