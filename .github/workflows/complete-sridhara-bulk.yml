@@ -6,6 +6,11 @@ on:
       - fix/sridhara-canto2-canto10-complete
     paths:
       - '.github/workflows/complete-sridhara-bulk.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/complete-sridhara-bulk.yml'
 
 permissions:
   contents: write
@@ -16,6 +21,7 @@ concurrency:
 
 jobs:
   complete:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -47,4 +53,5 @@ jobs:
             exit 0
           fi
           git commit -m 'Complete Sridhara English for Cantos 2 and 10'
+          git pull --rebase origin fix/sridhara-canto2-canto10-complete
           git push origin HEAD:fix/sridhara-canto2-canto10-complete
