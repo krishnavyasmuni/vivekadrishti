@@ -1,0 +1,13 @@
+.scripture-research-drawer{width:min(620px,calc(100vw - 44px))}
+.scripture-research-drawer .scripture-drawer-body{padding-bottom:40px}
+.scripture-drawer-section.is-period{margin-top:16px;padding:13px 15px;border:1px solid #d6c7ac;border-left:5px solid #aa7937;border-radius:5px;background:#f7f0e3}
+.scripture-drawer-section.is-period h4{color:#75511f!important}.scripture-drawer-section.is-period p{font-size:11px;font-weight:700;line-height:1.65}
+.scripture-drawer-section.is-overview p{font-size:11px;line-height:1.88}
+.scripture-drawer-section.is-contents,.scripture-drawer-section.is-chapter-map{padding:15px 16px;border:1px solid #c9d8d3;border-left:5px solid #2d7471;border-radius:5px;background:#f4f8f5}
+.scripture-drawer-section.is-contents h4,.scripture-drawer-section.is-chapter-map h4{color:#285f5d!important}
+.scripture-drawer-section.is-contents li,.scripture-drawer-section.is-chapter-map li{margin-bottom:9px;font-size:10.5px;line-height:1.72}
+.scripture-drawer-section.is-scholarship{padding:14px 16px;border:1px solid #d6cfdf;border-left:5px solid #76658c;border-radius:5px;background:#f5f2f7}
+.scripture-drawer-section.is-scholarship h4{color:#675478!important}
+.scripture-drawer-section.is-scholarship p,.scripture-drawer-section.is-scholarship li{font-size:10px;line-height:1.75}
+.scripture-research-drawer .scripture-drawer-witness{background:#f6faf9}
+@media(max-width:700px){.scripture-research-drawer{width:100%;max-height:92vh}.scripture-drawer-section.is-overview p{font-size:10.5px}.scripture-drawer-section.is-contents li,.scripture-drawer-section.is-chapter-map li{font-size:10px}}
