@@ -5,9 +5,103 @@
   const stage = root.querySelector('.browser-stage');
   if (!nav || !stage) return;
 
-  const vedas = ['Ṛgveda','Yajurveda','Sāmaveda','Atharvaveda'];
-  const vedangas = ['Śikṣā','Kalpa','Vyākaraṇa','Nirukta','Chandas','Jyotiṣa'];
-  const itihasa = ['Rāmāyaṇa','Mahābhārata'];
+  const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  const vedaCorpus = [
+    {
+      name: 'Ṛgveda',
+      sections: {
+        'Saṃhitā': [
+          ['Śākala Saṃhitā','Śākala'],
+          ['Bāṣkala Saṃhitā','Bāṣkala']
+        ],
+        'Brāhmaṇa': [
+          ['Aitareya Brāhmaṇa','Aitareya / Śākala'],
+          ['Kauṣītaki (Śāṅkhāyana) Brāhmaṇa','Kauṣītaki / Śāṅkhāyana']
+        ],
+        'Āraṇyaka': [
+          ['Aitareya Āraṇyaka','Aitareya'],
+          ['Kauṣītaki (Śāṅkhāyana) Āraṇyaka','Kauṣītaki / Śāṅkhāyana']
+        ]
+      }
+    },
+    {
+      name: 'Sāmaveda',
+      sections: {
+        'Saṃhitā': [
+          ['Kauthuma Saṃhitā','Kauthuma'],
+          ['Rāṇāyanīya Saṃhitā','Rāṇāyanīya'],
+          ['Jaiminīya (Talavakāra) Saṃhitā','Jaiminīya / Talavakāra']
+        ],
+        'Brāhmaṇa': [
+          ['Tāṇḍya (Pañcaviṃśa) Brāhmaṇa','Kauthuma'],
+          ['Ṣaḍviṃśa Brāhmaṇa','Kauthuma'],
+          ['Sāmavidhāna Brāhmaṇa','Kauthuma'],
+          ['Ārṣeya Brāhmaṇa','Kauthuma'],
+          ['Daivata Brāhmaṇa','Kauthuma'],
+          ['Chāndogya (Mantra) Brāhmaṇa','Kauthuma'],
+          ['Saṃhitopaniṣad Brāhmaṇa','Kauthuma'],
+          ['Vaṃśa Brāhmaṇa','Kauthuma'],
+          ['Jaiminīya Brāhmaṇa','Jaiminīya'],
+          ['Jaiminīya Ārṣeya Brāhmaṇa','Jaiminīya'],
+          ['Jaiminīya Upaniṣad Brāhmaṇa','Jaiminīya / Talavakāra']
+        ],
+        'Āraṇyaka': [
+          ['Talavakāra (Jaiminīya-Upaniṣad) Āraṇyaka','Jaiminīya / Talavakāra'],
+          ['Chāndogya Āraṇyaka','Kauthuma']
+        ]
+      }
+    },
+    {
+      name: 'Śukla Yajurveda',
+      sections: {
+        'Saṃhitā': [
+          ['Vājasaneyi Saṃhitā (Mādhyandina)','Mādhyandina'],
+          ['Vājasaneyi Saṃhitā (Kāṇva)','Kāṇva']
+        ],
+        'Brāhmaṇa': [
+          ['Śatapatha Brāhmaṇa (Mādhyandina)','Mādhyandina'],
+          ['Śatapatha Brāhmaṇa (Kāṇva)','Kāṇva']
+        ],
+        'Āraṇyaka': [
+          ['Śatapatha Āraṇyaka / Bṛhadāraṇyaka layer (Mādhyandina)','Mādhyandina'],
+          ['Śatapatha Āraṇyaka / Bṛhadāraṇyaka layer (Kāṇva)','Kāṇva']
+        ]
+      }
+    },
+    {
+      name: 'Kṛṣṇa Yajurveda',
+      sections: {
+        'Saṃhitā': [
+          ['Taittirīya Saṃhitā','Taittirīya'],
+          ['Maitrāyaṇī Saṃhitā','Maitrāyaṇī'],
+          ['Kāṭhaka Saṃhitā','Kāṭhaka'],
+          ['Kapiṣṭhala-Kaṭha Saṃhitā','Kapiṣṭhala-Kaṭha']
+        ],
+        'Brāhmaṇa': [
+          ['Taittirīya Brāhmaṇa','Taittirīya'],
+          ['Vādhūla Brāhmaṇa / Anvākhyāna','Vādhūla']
+        ],
+        'Āraṇyaka': [
+          ['Taittirīya Āraṇyaka','Taittirīya'],
+          ['Maitrāyaṇīya Āraṇyaka','Maitrāyaṇī']
+        ]
+      }
+    },
+    {
+      name: 'Atharvaveda',
+      sections: {
+        'Saṃhitā': [
+          ['Śaunaka Saṃhitā','Śaunaka'],
+          ['Paippalāda Saṃhitā','Paippalāda']
+        ],
+        'Brāhmaṇa': [
+          ['Gopatha Brāhmaṇa','Atharvaveda']
+        ],
+        'Āraṇyaka': []
+      }
+    }
+  ];
 
   const upanishads = {
     'Mukhya': [
@@ -48,6 +142,16 @@
     ]
   };
 
+  const upanishadGroupClass = {
+    'Mukhya': 'up-mukhya',
+    'Sāmānya Vedānta': 'up-samanya',
+    'Sannyāsa': 'up-sannyasa',
+    'Yoga': 'up-yoga',
+    'Vaiṣṇava': 'up-vaisnava',
+    'Śaiva': 'up-saiva',
+    'Śākta': 'up-sakta'
+  };
+
   const smriti = {
     'Yājñavalkya Smṛti': {
       source: 'Yājñavalkya Smṛti 1.4–5',
@@ -65,12 +169,6 @@
         'Tāmasa': ['Gautama','Bārhaspatya','Sāṃvarta','Yama','Śaṅkha','Auśanasa']
       }
     }
-  };
-
-  const puranaGuna = {
-    'Sāttvika': ['Viṣṇu Purāṇa','Nāradīya Purāṇa','Bhāgavata Purāṇa','Garuḍa Purāṇa','Padma Purāṇa','Varāha Purāṇa'],
-    'Rājasa': ['Brahmāṇḍa Purāṇa','Brahmavaivarta Purāṇa','Mārkaṇḍeya Purāṇa','Brahma Purāṇa','Vāmana Purāṇa','Bhaviṣya Purāṇa'],
-    'Tāmasa': ['Matsya Purāṇa','Kūrma Purāṇa','Liṅga Purāṇa','Śiva Purāṇa','Agni Purāṇa','Skanda Purāṇa']
   };
 
   const mahaWitnesses = [
@@ -102,15 +200,33 @@
     }
   ];
 
+  const sectOrder = ['Vaiṣṇava','Śaiva','Śākta','Saura','Brahmā','Mixed / composite'];
+  const sectMap = {
+    'Vaiṣṇava': ['Padma Purāṇa','Viṣṇu Purāṇa','Bhāgavata Purāṇa','Garuḍa Purāṇa','Nāradīya Purāṇa','Brahmavaivarta Purāṇa','Varāha Purāṇa','Vāmana Purāṇa','Nṛsiṃha Purāṇa','Viṣṇudharmottara Purāṇa','Viṣṇudharma Purāṇa','Kriyāyogasāra Purāṇa','Bṛhannāradīya Purāṇa','Another Nāradīya Purāṇa'],
+    'Śaiva': ['Śiva Purāṇa','Liṅga Purāṇa','Skanda Purāṇa','Śivadharma Purāṇa','Māheśvara Purāṇa','Māheśa Purāṇa','Nandikṛta Purāṇa','Nandīśvara Purāṇa','Bṛhannandīśvara Purāṇa','Kaumāra Purāṇa'],
+    'Śākta': ['Devī Bhāgavata Purāṇa','Mahābhāgavata Purāṇa','Kālikā Purāṇa'],
+    'Saura': ['Saura Purāṇa','Sāmba Purāṇa','Āditya Purāṇa'],
+    'Brahmā': ['Brahma Purāṇa','Brahmāṇḍa Purāṇa','Another Brahmāṇḍa Purāṇa']
+  };
+
+  const sectClass = {
+    'Vaiṣṇava': 'sect-vaisnava',
+    'Śaiva': 'sect-saiva',
+    'Śākta': 'sect-sakta',
+    'Saura': 'sect-saura',
+    'Brahmā': 'sect-brahma',
+    'Mixed / composite': 'sect-mixed'
+  };
+
   const corpusButtons = [
     ['vedas','Vedas'],['upanishads','108 Upaniṣads'],['itihasa','Itihāsa'],['puranas','Purāṇas'],['smriti','Smṛti'],['vedanga','Vedāṅga']
   ];
-
-  const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const itihasa = ['Rāmāyaṇa','Mahābhārata'];
+  const vedangas = ['Śikṣā','Kalpa','Vyākaraṇa','Nirukta','Chandas','Jyotiṣa'];
 
   function buildWitnessMap(witnesses) {
     const map = new Map();
-    witnesses.forEach(({source, items}) => items.forEach(name => {
+    witnesses.forEach(({source,items}) => items.forEach(name => {
       if (!map.has(name)) map.set(name, []);
       if (!map.get(name).includes(source)) map.get(name).push(source);
     }));
@@ -119,23 +235,18 @@
 
   const mahaMap = buildWitnessMap(mahaWitnesses);
   const upaMap = buildWitnessMap(upaWitnesses);
-  const allPuranaNames = [...new Set([...mahaMap.keys(), ...upaMap.keys()])].sort((a,b) => a.localeCompare(b, 'en'));
+  const allPuranaNames = [...new Set([...mahaMap.keys(), ...upaMap.keys()])].sort((a,b) => a.localeCompare(b,'en'));
   const puranaLists = {
     'Mahāpurāṇa': allPuranaNames.filter(name => mahaMap.has(name) && !upaMap.has(name)),
     'Upapurāṇa': allPuranaNames.filter(name => upaMap.has(name) && !mahaMap.has(name)),
     'Both': allPuranaNames.filter(name => mahaMap.has(name) && upaMap.has(name))
   };
 
-  function gunaOf(name) {
-    for (const [guna, names] of Object.entries(puranaGuna)) {
-      if (names.includes(name)) return guna;
+  function sectOf(name) {
+    for (const sect of sectOrder) {
+      if ((sectMap[sect] || []).includes(name)) return sect;
     }
-    return '';
-  }
-
-  function gunaClass(name) {
-    const guna = gunaOf(name);
-    return guna === 'Sāttvika' ? ' guna-sattvika' : guna === 'Rājasa' ? ' guna-rajasa' : guna === 'Tāmasa' ? ' guna-tamasa' : '';
+    return 'Mixed / composite';
   }
 
   function tabs(items, active, group) {
@@ -146,12 +257,36 @@
     return `<div class="shastra-info" aria-live="polite"><strong>${esc(name)}</strong><div class="shastra-info-rows">${rows.filter(Boolean).map(row => `<div class="shastra-info-row">${esc(row)}</div>`).join('')}</div></div>`;
   }
 
-  function simpleButtons(items, kind, source = '') {
+  function genericButtons(items, kind, source = '') {
     return `<div class="shastra-grid">${items.map(name => `<button type="button" class="shastra-name" data-name="${esc(name)}" data-kind="${esc(kind)}" data-source="${esc(source)}"><span>${esc(name)}</span></button>`).join('')}</div>`;
   }
 
-  function upanishadButtons(items, type) {
-    return `<div class="shastra-grid">${items.map(([name, veda]) => `<button type="button" class="shastra-name upanishad-name" data-name="${esc(name)}" data-kind="Upaniṣad" data-type="${esc(type)}" data-veda="${esc(veda)}" data-source="Muktikā Upaniṣad — name and Veda association"><span>${esc(name)}</span><small>${esc(veda)}</small></button>`).join('')}</div>`;
+  function vedaCard([name, branch], veda, type) {
+    return `<button type="button" class="shastra-name veda-text-card veda-${type === 'Saṃhitā' ? 'samhita' : type === 'Brāhmaṇa' ? 'brahmana' : 'aranyaka'}" data-name="${esc(name)}" data-kind="${esc(type)}" data-veda="${esc(veda)}" data-branch="${esc(branch)}"><span>${esc(name)}</span><small>${esc(branch)}</small></button>`;
+  }
+
+  function renderVedas() {
+    const body = vedaCorpus.map(veda => {
+      const sections = Object.entries(veda.sections).map(([type,items]) => {
+        const cards = items.length ? `<div class="shastra-grid">${items.map(item => vedaCard(item,veda.name,type)).join('')}</div>` : `<div class="veda-empty">No extant Āraṇyaka</div>`;
+        return `<section class="veda-type-group veda-type-${type === 'Saṃhitā' ? 'samhita' : type === 'Brāhmaṇa' ? 'brahmana' : 'aranyaka'}"><h4>${esc(type)}</h4>${cards}</section>`;
+      }).join('');
+      return `<section class="veda-family"><h3>${esc(veda.name)}</h3>${sections}</section>`;
+    }).join('');
+    stage.innerHTML = `<h2 class="shastra-title">Vedas</h2><div class="shastra-holder veda-holder">${body}</div>`;
+  }
+
+  function renderUpanishads() {
+    const body = Object.entries(upanishads).map(([group,items]) => {
+      const cls = upanishadGroupClass[group] || 'up-mukhya';
+      const cards = items.map(([name,veda]) => `<button type="button" class="shastra-name upanishad-name ${cls}" data-name="${esc(name)}" data-kind="Upaniṣad" data-type="${esc(group)}" data-veda="${esc(veda)}"><span>${esc(name)}</span><small>${esc(veda)}</small></button>`).join('');
+      return `<section class="upanishad-group ${cls}"><h3>${esc(group)}</h3><div class="shastra-grid">${cards}</div></section>`;
+    }).join('');
+    stage.innerHTML = `<h2 class="shastra-title">108 Upaniṣads</h2><div class="shastra-holder upanishad-holder">${body}</div>`;
+  }
+
+  function puranaLegend() {
+    return `<div class="purana-sect-legend">${sectOrder.map(sect => `<span class="legend-chip ${sectClass[sect]}"><i></i>${esc(sect)}</span>`).join('')}</div>`;
   }
 
   function puranaSourceRows(name, view) {
@@ -161,11 +296,20 @@
     return rows;
   }
 
-  function puranaButtons(view) {
-    return `<div class="shastra-grid purana-grid">${puranaLists[view].map(name => {
-      const rows = puranaSourceRows(name, view);
-      return `<button type="button" class="shastra-name purana-name${gunaClass(name)}${view === 'Both' ? ' purana-both' : ''}" data-name="${esc(name)}" data-kind="${esc(view)}" data-maha="${esc((mahaMap.get(name) || []).join(' · '))}" data-upa="${esc((upaMap.get(name) || []).join(' · '))}" data-guna="${esc(gunaOf(name))}"><span>${esc(name)}</span><small>${rows.map(esc).join('<br>')}</small></button>`;
-    }).join('')}</div>`;
+  function puranaCard(name, view, sect) {
+    const rows = puranaSourceRows(name,view);
+    return `<button type="button" class="shastra-name purana-name ${sectClass[sect]}" data-name="${esc(name)}" data-kind="${esc(view)}" data-sect="${esc(sect)}" data-maha="${esc((mahaMap.get(name)||[]).join(' · '))}" data-upa="${esc((upaMap.get(name)||[]).join(' · '))}"><span>${esc(name)}</span><small>${rows.map(esc).join('<br>')}</small></button>`;
+  }
+
+  function renderPuranas() {
+    const types = ['Mahāpurāṇa','Upapurāṇa','Both'];
+    if (!types.includes(state.view)) state.view = types[0];
+    const sections = sectOrder.map(sect => {
+      const names = puranaLists[state.view].filter(name => sectOf(name) === sect);
+      if (!names.length) return '';
+      return `<section class="purana-sect-group ${sectClass[sect]}"><h3>${esc(sect)}</h3><div class="shastra-grid purana-grid">${names.map(name => puranaCard(name,state.view,sect)).join('')}</div></section>`;
+    }).join('');
+    stage.innerHTML = `<h2 class="shastra-title">Purāṇas</h2>${tabs(types,state.view,'puranas')}${puranaLegend()}<div class="shastra-holder purana-holder">${sections}</div>`;
   }
 
   function smritiButtons(names, source, group = '') {
@@ -173,59 +317,42 @@
     return `<div class="shastra-grid">${names.map(name => `<button type="button" class="shastra-name${cls}" data-name="${esc(name)}" data-kind="Smṛti" data-source="${esc(source)}" data-group="${esc(group)}"><span>${esc(name)}</span><small>${esc(source)}</small></button>`).join('')}</div>`;
   }
 
-  const state = { corpus: null, view: null };
+  function renderSmriti() {
+    const types = Object.keys(smriti);
+    if (!types.includes(state.view)) state.view = types[0];
+    const set = smriti[state.view];
+    let body = '';
+    if (set.items) {
+      body = smritiButtons(set.items,set.source);
+    } else {
+      body = Object.entries(set.groups).map(([group,names]) => {
+        const cls = group === 'Sāttvika' ? 'guna-sattvika' : group === 'Rājasa' ? 'guna-rajasa' : 'guna-tamasa';
+        return `<section class="guna-group ${cls}"><h3>${esc(group)}</h3>${smritiButtons(names,set.source,group)}</section>`;
+      }).join('');
+    }
+    stage.innerHTML = `<h2 class="shastra-title">Smṛti</h2>${tabs(types,state.view,'smriti')}<div class="shastra-holder">${body}</div>`;
+  }
+
+  const state = { corpus:null, view:null };
 
   function render() {
-    nav.innerHTML = corpusButtons.map(([key,label]) => `<button class="corpus-button${state.corpus === key ? ' is-active' : ''}" type="button" data-corpus="${key}" aria-expanded="${state.corpus === key ? 'true' : 'false'}">${label}</button>`).join('');
-
+    nav.innerHTML = corpusButtons.map(([key,label]) => `<button class="corpus-button${state.corpus===key?' is-active':''}" type="button" data-corpus="${key}" aria-expanded="${state.corpus===key?'true':'false'}">${label}</button>`).join('');
     if (!state.corpus) {
       stage.hidden = true;
       stage.innerHTML = '';
       return;
     }
-
     stage.hidden = false;
-
-    if (state.corpus === 'vedas') {
-      stage.innerHTML = `<h2 class="shastra-title">Vedas</h2><div class="shastra-holder">${simpleButtons(vedas, 'Veda', 'Muṇḍaka Upaniṣad 1.1.5')}</div>`;
-      return;
-    }
-
-    if (state.corpus === 'vedanga') {
-      stage.innerHTML = `<h2 class="shastra-title">Vedāṅga</h2><div class="shastra-holder">${simpleButtons(vedangas, 'Vedāṅga', 'Muṇḍaka Upaniṣad 1.1.5')}</div>`;
-      return;
-    }
-
+    if (state.corpus === 'vedas') return renderVedas();
+    if (state.corpus === 'upanishads') return renderUpanishads();
+    if (state.corpus === 'puranas') return renderPuranas();
+    if (state.corpus === 'smriti') return renderSmriti();
     if (state.corpus === 'itihasa') {
-      stage.innerHTML = `<h2 class="shastra-title">Itihāsa</h2><div class="shastra-holder">${simpleButtons(itihasa, 'Itihāsa')}</div>`;
+      stage.innerHTML = `<h2 class="shastra-title">Itihāsa</h2><div class="shastra-holder">${genericButtons(itihasa,'Itihāsa')}</div>`;
       return;
     }
-
-    if (state.corpus === 'upanishads') {
-      const types = Object.keys(upanishads);
-      if (!types.includes(state.view)) state.view = types[0];
-      stage.innerHTML = `<h2 class="shastra-title">108 Upaniṣads</h2>${tabs(types, state.view, 'upanishads')}<div class="shastra-holder">${upanishadButtons(upanishads[state.view], state.view)}</div>`;
-      return;
-    }
-
-    if (state.corpus === 'puranas') {
-      const types = ['Mahāpurāṇa','Upapurāṇa','Both'];
-      if (!types.includes(state.view)) state.view = types[0];
-      stage.innerHTML = `<h2 class="shastra-title">Purāṇas</h2>${tabs(types, state.view, 'puranas')}<div class="shastra-holder">${puranaButtons(state.view)}</div>`;
-      return;
-    }
-
-    if (state.corpus === 'smriti') {
-      const types = Object.keys(smriti);
-      if (!types.includes(state.view)) state.view = types[0];
-      const set = smriti[state.view];
-      let body = '';
-      if (set.items) {
-        body = smritiButtons(set.items, set.source);
-      } else {
-        body = Object.entries(set.groups).map(([group, names]) => `<section class="guna-group ${group === 'Sāttvika' ? 'guna-sattvika' : group === 'Rājasa' ? 'guna-rajasa' : 'guna-tamasa'}"><h3>${esc(group)}</h3>${smritiButtons(names, set.source, group)}</section>`).join('');
-      }
-      stage.innerHTML = `<h2 class="shastra-title">Smṛti</h2>${tabs(types, state.view, 'smriti')}<div class="shastra-holder">${body}</div>`;
+    if (state.corpus === 'vedanga') {
+      stage.innerHTML = `<h2 class="shastra-title">Vedāṅga</h2><div class="shastra-holder">${genericButtons(vedangas,'Vedāṅga','Muṇḍaka Upaniṣad 1.1.5')}</div>`;
     }
   }
 
@@ -240,27 +367,24 @@
     const name = button.dataset.name || button.textContent.trim();
     const kind = button.dataset.kind || '';
     const rows = [];
-
-    if (kind === 'Upaniṣad') {
-      if (button.dataset.type) rows.push(`Type: ${button.dataset.type}`);
-      if (button.dataset.veda) rows.push(`Veda: ${button.dataset.veda}`);
+    if (button.dataset.veda) rows.push(`Veda: ${button.dataset.veda}`);
+    if (button.dataset.type) rows.push(`Type: ${button.dataset.type}`);
+    if (button.dataset.branch) rows.push(`Śākhā / recension: ${button.dataset.branch}`);
+    if (button.dataset.sect) rows.push(`Sect: ${button.dataset.sect}`);
+    if (button.dataset.maha) rows.push(`Mahāpurāṇa: ${button.dataset.maha}`);
+    if (button.dataset.upa) rows.push(`Upapurāṇa: ${button.dataset.upa}`);
+    if (kind === 'Smṛti') {
+      if (button.dataset.group) rows.push(`Class: ${button.dataset.group}`);
       if (button.dataset.source) rows.push(`Source: ${button.dataset.source}`);
-    } else if (kind === 'Mahāpurāṇa' || kind === 'Upapurāṇa' || kind === 'Both') {
-      if (button.dataset.maha) rows.push(`Mahāpurāṇa: ${button.dataset.maha}`);
-      if (button.dataset.upa) rows.push(`Upapurāṇa: ${button.dataset.upa}`);
-      if (button.dataset.guna) rows.push(`Padma guṇa: ${button.dataset.guna}`);
-    } else if (kind === 'Smṛti') {
-      rows.push(button.dataset.group ? `Class: ${button.dataset.group}` : 'Smṛti');
-      if (button.dataset.source) rows.push(`Source: ${button.dataset.source}`);
-    } else {
-      if (kind) rows.push(kind);
-      if (button.dataset.source) rows.push(`Source: ${button.dataset.source}`);
+    } else if (button.dataset.source) {
+      rows.push(`Source: ${button.dataset.source}`);
     }
+    if (!rows.length && kind) rows.push(kind);
 
     const old = stage.querySelector('.shastra-info');
     if (old) old.remove();
     const holder = stage.querySelector('.shastra-holder');
-    if (holder) holder.insertAdjacentHTML('beforeend', infoPanel(name, rows));
+    if (holder) holder.insertAdjacentHTML('beforeend',infoPanel(name,rows));
   }
 
   root.addEventListener('click', event => {
