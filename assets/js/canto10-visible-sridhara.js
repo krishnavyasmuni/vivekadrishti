@@ -105,8 +105,35 @@
     return details;
   }
 
-  function removeProseCommentary(section) {
-    section.querySelectorAll(':scope > .sb-commentary').forEach((node) => node.remove());
+  function sridharaLiteralText(section) {
+    const visible = section.querySelector(':scope > .sb-combined-word-details > .sb-sridhara-layer .sb-sridhara-word-for-word-content');
+    const hidden = section.querySelector(':scope > .sb-sridhara-wfw-details .sb-sridhara-word-for-word, :scope > .sb-sridhara-wfw-details .sb-source-content');
+    return (visible?.textContent || hidden?.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function ensureLiteralCommentary(section) {
+    const literal = sridharaLiteralText(section);
+    let commentary = section.querySelector(':scope > .sb-commentary');
+    if (!literal) {
+      commentary?.remove();
+      return null;
+    }
+
+    if (!commentary) {
+      commentary = document.createElement('p');
+      commentary.className = 'sb-commentary';
+    }
+
+    const current = commentary.querySelector(':scope > .sb-commentary-text')?.textContent || '';
+    if (current !== literal || !commentary.querySelector(':scope > strong:first-child')) {
+      const label = document.createElement('strong');
+      label.textContent = 'Śrīdhara’s Commentary. ';
+      const text = document.createElement('span');
+      text.className = 'sb-commentary-text';
+      text.textContent = literal;
+      commentary.replaceChildren(label, text);
+    }
+    return commentary;
   }
 
   function enforceOrder(section) {
@@ -116,10 +143,10 @@
     mergeSridharaWordForWord(section, word);
     const transliteration = normalizeTransliteration(section);
     const sanskrit = normalizeSanskrit(section);
-    removeProseCommentary(section);
+    const commentary = ensureLiteralCommentary(section);
 
     let anchor = translation;
-    [word, transliteration, sanskrit].filter(Boolean).forEach((node) => {
+    [word, transliteration, sanskrit, commentary].filter(Boolean).forEach((node) => {
       if (anchor.nextElementSibling !== node) anchor.insertAdjacentElement('afterend', node);
       anchor = node;
     });
