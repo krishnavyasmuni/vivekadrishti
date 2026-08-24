@@ -3,91 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A modern, searchable atlas of Hindu scriptural literature: Vedas, 108 Upanishads, Brahmanas, Aranyakas, Itihasa, Puranas, Smritis, Vedangas and more.">
+  <meta name="description" content="A minimal interactive index of Hindu scripture: Vedas, 108 Upanishads, Itihasa, Puranas, Smritis, Vedangas and Agamas.">
   <meta name="color-scheme" content="light">
   <title>An Index of Hindu Scripture — Viveka Dṛṣṭi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/vivekadrishti/assets/css/site.css">
-  <style>
-    .scripture-page .site-main{width:min(1220px,100%);background:#f6f2ea}
-    .scripture-page .article-shell{padding:0 0 100px}
-    .scripture-page .article-heading{width:min(1040px,calc(100% - 40px));margin:0 auto;padding:72px 0 46px}
-    .scripture-page .article-heading h1{max-width:820px;margin:auto;color:#124f52;font-size:clamp(44px,7vw,72px);letter-spacing:-.025em}
-    .scripture-page .article-heading .article-deck{max-width:780px;margin:20px auto 0;color:#62594e;font-size:18px;line-height:1.7}
-    .scripture-page .article-date{margin-top:18px}
-    .scripture-page .article-body{width:min(1080px,calc(100% - 32px));font-size:17px;line-height:1.6}
-    .scripture-atlas{--atlas-paper:#fffdf8;--atlas-ink:#2f2a24;--atlas-muted:#766d61;--atlas-teal:#0b6f72;--atlas-teal-soft:#e5f1ef;--atlas-gold:#b77b2f;--atlas-gold-soft:#f6ead8;--atlas-line:#ddd3c5;--atlas-brown:#78593c;--atlas-shadow:0 12px 34px rgba(72,54,33,.07);color:var(--atlas-ink)}
-    .scripture-atlas *{box-sizing:border-box}
-    .atlas-hero{position:relative;overflow:hidden;margin:0 0 24px;padding:34px;border:1px solid #d9cdbb;border-radius:26px;background:linear-gradient(135deg,#fffaf0 0%,#f1eee6 52%,#e7f1ef 100%);box-shadow:var(--atlas-shadow)}
-    .atlas-hero:after{content:"ॐ";position:absolute;right:28px;top:-28px;color:rgba(11,111,114,.07);font-family:Vollkorn,Georgia,serif;font-size:190px;line-height:1}
-    .atlas-kicker{margin:0 0 10px;color:var(--atlas-gold);font-family:Vollkorn,Georgia,serif;font-size:15px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-    .atlas-hero h2{position:relative;z-index:1;margin:0!important;color:#173f41!important;font-size:clamp(30px,4vw,46px)!important;text-align:left!important}
-    .atlas-hero p{position:relative;z-index:1;max-width:760px;margin:14px 0 0!important;color:#5b544b}
-    .stat-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
-    .stat{padding:15px 16px;border:1px solid rgba(120,89,60,.16);border-radius:16px;background:rgba(255,255,255,.65);backdrop-filter:blur(5px)}
-    .stat strong{display:block;color:#124f52;font-family:Vollkorn,Georgia,serif;font-size:26px;font-weight:600}
-    .stat span{display:block;margin-top:2px;color:var(--atlas-muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
-    .atlas-toolbar{position:sticky;top:84px;z-index:50;display:flex;gap:10px;align-items:center;margin:22px 0;padding:12px;border:1px solid var(--atlas-line);border-radius:18px;background:rgba(255,253,248,.94);box-shadow:0 8px 24px rgba(72,54,33,.06);backdrop-filter:blur(10px)}
-    .atlas-search{flex:1;min-width:180px;padding:12px 14px;border:1px solid #d7ccbd;border-radius:12px;background:white;color:var(--atlas-ink);font:inherit;outline:none}
-    .atlas-search:focus{border-color:var(--atlas-teal);box-shadow:0 0 0 3px rgba(11,111,114,.12)}
-    .tool-btn{border:1px solid #d5c9b8;border-radius:999px;background:#fffaf1;color:#53483c;padding:10px 14px;font:600 13px/1 Merriweather,serif;cursor:pointer}
-    .tool-btn:hover{border-color:#bba787;background:#fff}
-    .result-count{min-width:68px;color:var(--atlas-muted);font-size:12px;text-align:right}
-    .jump-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 34px}
-    .jump-card{display:block;padding:18px;border:1px solid var(--atlas-line);border-radius:18px;background:var(--atlas-paper);box-shadow:0 7px 20px rgba(72,54,33,.045);text-decoration:none!important;transition:transform .16s ease,border-color .16s ease}
-    .jump-card:hover{transform:translateY(-2px);border-color:#b9a98e}
-    .jump-card strong{display:block;color:#164f51;font-family:Vollkorn,Georgia,serif;font-size:22px;font-weight:600}
-    .jump-card span{display:block;margin-top:4px;color:var(--atlas-muted);font-size:13px;line-height:1.45}
-    .atlas-section{scroll-margin-top:160px;margin:46px 0}
-    .section-head{display:flex;gap:20px;justify-content:space-between;align-items:flex-end;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--atlas-line)}
-    .section-head .number{color:#b4854e;font-family:Vollkorn,Georgia,serif;font-size:14px;letter-spacing:.12em}
-    .section-head h3{margin:3px 0 0!important;color:#124f52!important;font-size:34px!important}
-    .section-head p{max-width:580px;margin:0!important;color:var(--atlas-muted);font-size:14px}
-    .corpus-card{margin:12px 0;border:1px solid var(--atlas-line);border-radius:18px;background:var(--atlas-paper);box-shadow:0 6px 18px rgba(72,54,33,.04);overflow:hidden}
-    .corpus-card>summary{display:flex;gap:16px;align-items:center;justify-content:space-between;list-style:none;padding:18px 20px;cursor:pointer}
-    .corpus-card>summary::-webkit-details-marker{display:none}
-    .corpus-card>summary:after{content:"+";flex:0 0 auto;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--atlas-teal-soft);color:var(--atlas-teal);font-size:20px}
-    .corpus-card[open]>summary:after{content:"–"}
-    .summary-copy{display:block;min-width:0}
-    .summary-copy .eyebrow{display:block;color:var(--atlas-muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-    .summary-copy strong{display:block;margin-top:2px;color:#2d3d3d;font-family:Vollkorn,Georgia,serif;font-size:24px;font-weight:600}
-    .count-badge{margin-left:auto;padding:6px 10px;border:1px solid #dacdbd;border-radius:999px;background:#fff9ef;color:#80613f;font-size:12px;white-space:nowrap}
-    .details-body{padding:2px 20px 22px;border-top:1px solid #eee5d9}
-    .veda-layer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
-    .text-group{padding:16px;border:1px solid #e4dacd;border-radius:15px;background:#fff}
-    .text-group h4,.upanishad-block h4{margin:0 0 10px!important;color:#65503a!important;font-family:Vollkorn,Georgia,serif!important;font-size:20px!important;font-weight:600!important}
-    .group-note{margin:-4px 0 10px!important;color:#8a8175;font-size:11px;line-height:1.5}
-    .upanishad-block{margin-top:16px;padding:18px;border:1px solid #d7e3df;border-radius:16px;background:#f9fcfb}
-    .block-heading{display:flex;gap:16px;justify-content:space-between;align-items:center}
-    .block-heading span{color:var(--atlas-muted);font-size:12px}
-    .name-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;margin:0!important;padding:0!important;list-style:none!important}
-    .name-grid li{position:relative;display:flex;gap:8px;align-items:flex-start;justify-content:space-between;margin:0!important;padding:9px 10px 9px 22px!important;border-radius:10px;background:rgba(246,242,234,.72);color:#3d3730;font-size:13px;line-height:1.45}
-    .name-grid li:before{content:"";position:absolute;left:10px;top:15px;width:5px;height:5px;border-radius:50%;background:#b58248}
-    .name-grid small{display:block;color:#81776b;font-size:11px}
-    .mini-badge{flex:0 0 auto;margin-left:6px;padding:3px 6px;border-radius:999px;background:#dceceb;color:#0d6668;font-size:9px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
-    .note-card{margin:14px 0;padding:16px 18px;border-left:4px solid #bb8749;border-radius:10px;background:#f7ecdc;color:#5f5345;font-size:13px;line-height:1.6}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .mini-card{padding:18px;border:1px solid var(--atlas-line);border-radius:17px;background:var(--atlas-paper)}
-    .mini-card h4{margin:0 0 8px!important;color:#164f51!important;font-family:Vollkorn,Georgia,serif!important;font-size:23px!important}
-    .mini-card p{margin:0 0 12px!important;color:var(--atlas-muted);font-size:13px}
-    .epic-card{display:grid;grid-template-columns:88px 1fr;gap:18px;align-items:center;margin:12px 0;padding:20px;border:1px solid var(--atlas-line);border-radius:18px;background:linear-gradient(135deg,#fffdf8,#f3eee5)}
-    .epic-mark{display:grid;place-items:center;width:72px;height:72px;border:1px solid #dccdb7;border-radius:50%;background:#fff;color:#9a6f3e;font-family:Vollkorn,serif;font-size:30px}
-    .epic-card h4{margin:0!important;color:#174f51!important;font-size:26px!important}
-    .epic-card p{margin:5px 0 0!important;color:var(--atlas-muted);font-size:13px}
-    .compact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-    .source-box{padding:18px;border:1px dashed #cdbca4;border-radius:16px;background:#fffbf3;color:#665c51;font-size:12px;line-height:1.65}
-    .source-box a{color:#0b6f72!important;text-decoration:underline}
-    .search-hidden{display:none!important}
-    .no-results{display:none;margin:20px 0;padding:18px;border:1px solid #d8c9b7;border-radius:16px;background:#fff9ef;color:#6e5d49;text-align:center}
-    @media (max-width:820px){
-      .stat-grid{grid-template-columns:repeat(2,1fr)} .jump-grid{grid-template-columns:1fr 1fr} .veda-layer-grid{grid-template-columns:1fr} .two-col,.compact-grid{grid-template-columns:1fr} .atlas-toolbar{top:76px;flex-wrap:wrap} .result-count{margin-left:auto}
-    }
-    @media (max-width:560px){
-      .scripture-page .article-heading{padding-top:48px} .atlas-hero{padding:24px 20px;border-radius:20px} .atlas-hero:after{right:-12px;font-size:140px} .stat-grid{grid-template-columns:1fr 1fr} .jump-grid{grid-template-columns:1fr} .name-grid{grid-template-columns:1fr} .corpus-card>summary{padding:16px} .count-badge{display:none} .details-body{padding:2px 14px 16px} .epic-card{grid-template-columns:1fr} .epic-mark{width:58px;height:58px} .section-head{display:block} .section-head p{margin-top:8px!important}
-    }
-  </style>
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/scripture-index-clean.css?v=2">
 </head>
 <body class="post-page scripture-page">
   <header class="site-header">
@@ -106,328 +29,28 @@
   <main class="site-main">
     <article class="article-shell">
       <header class="article-heading">
-        <p class="atlas-kicker">Viveka Dṛṣṭi · Reference Atlas</p>
         <h1>An Index of Hindu Scripture</h1>
-        <p class="article-deck">A layered map of Vedic revelation, remembered tradition, epic, Purāṇic, legal, philosophical and ritual literature — arranged so the relationships between corpora are visible rather than flattened into one long list.</p>
-        <p class="article-date">Updated 24 August 2026</p>
       </header>
 
       <div class="article-body">
-        <div class="scripture-atlas" id="scripture-atlas">
-          <section class="atlas-hero">
-            <p class="atlas-kicker">A living textual tradition</p>
-            <h2>From Śruti to the great post-Vedic libraries</h2>
-            <p>The boundaries of “Hindu scripture” are not a single closed canon. Some lists are precise — such as the Muktikā’s 108 Upaniṣads — while Smṛti and Upapurāṇa enumerations differ across texts and schools. This atlas shows both the stable cores and the important variants.</p>
-            <div class="stat-grid" aria-label="Index highlights">
-              <div class="stat"><strong>4</strong><span>Vedas</span></div>
-              <div class="stat"><strong>108</strong><span>Muktikā Upaniṣads</span></div>
-              <div class="stat"><strong>18</strong><span>Mahāpurāṇa tradition</span></div>
-              <div class="stat"><strong>20+</strong><span>Major Smṛti authorities</span></div>
-            </div>
-          </section>
-
-          <div class="atlas-toolbar" role="search">
-            <input id="atlas-search" class="atlas-search" type="search" placeholder="Search a text, corpus, sage or Veda…" aria-label="Search scripture index">
-            <button id="expand-all" class="tool-btn" type="button">Expand all</button>
-            <button id="collapse-all" class="tool-btn" type="button">Collapse all</button>
-            <span id="result-count" class="result-count" aria-live="polite">Browse all</span>
-          </div>
-
-          <nav class="jump-grid" aria-label="Jump to a corpus">
-            <a class="jump-card" href="#sruti"><strong>Śruti</strong><span>Vedas · Brāhmaṇas · Āraṇyakas · 108 Upaniṣads</span></a>
-            <a class="jump-card" href="#itihasa"><strong>Itihāsa</strong><span>Rāmāyaṇa · Mahābhārata · Harivaṃśa</span></a>
-            <a class="jump-card" href="#purana"><strong>Purāṇa</strong><span>18 Mahāpurāṇas · variant lists · Upapurāṇas</span></a>
-            <a class="jump-card" href="#smriti"><strong>Dharma & Smṛti</strong><span>Yājñavalkya’s 20 · Padma’s 36 · Upasmṛtis</span></a>
-            <a class="jump-card" href="#vedanga"><strong>Vedāṅga & Darśana</strong><span>Six limbs of Veda · six classical systems</span></a>
-            <a class="jump-card" href="#agama"><strong>Āgama & allied corpora</strong><span>Vaiṣṇava · Śaiva · Śākta ritual-text traditions</span></a>
+        <section id="scripture-browser" class="scripture-browser" aria-label="Interactive Hindu scripture index">
+          <nav class="corpus-nav" aria-label="Scripture corpora">
+            <button class="corpus-button" type="button" data-corpus="vedas" aria-expanded="false">Vedas</button>
+            <button class="corpus-button" type="button" data-corpus="upanishads" aria-expanded="false">108 Upaniṣads</button>
+            <button class="corpus-button" type="button" data-corpus="itihasa" aria-expanded="false">Itihāsa</button>
+            <button class="corpus-button" type="button" data-corpus="puranas" aria-expanded="false">Purāṇas</button>
+            <button class="corpus-button" type="button" data-corpus="smriti" aria-expanded="false">Smṛti</button>
+            <button class="corpus-button" type="button" data-corpus="vedanga" aria-expanded="false">Vedāṅga & Darśana</button>
+            <button class="corpus-button" type="button" data-corpus="agama" aria-expanded="false">Āgama</button>
           </nav>
-
-          <div id="no-results" class="no-results">No matching title is visible. Try a broader spelling or search term.</div>
-
-          <section id="sruti" class="atlas-section corpus-section" data-section-search="sruti veda vedas samhita brahmana aranyaka upanishad">
-            <div class="section-head">
-              <div><span class="number">01 · ŚRUTI</span><h3>Vedic literature</h3></div>
-              <p>Each Veda is shown as a textual family: surviving Saṃhitā recensions, principal Brāhmaṇas, extant Āraṇyakas, and the Upaniṣads assigned to that Veda in the Muktikā canon.</p>
-            </div>
-            <div class="note-card"><strong>About the 108:</strong> the Muktikā tradition distributes them as 10 Ṛgveda, 16 Sāmaveda, 19 Śukla-Yajurveda, 32 Kṛṣṇa-Yajurveda and 31 Atharvaveda. “Principal” badges mark the commonly recognized thirteen major Upaniṣads. Secondary labels such as Yoga, Sannyāsa, Śaiva, Vaiṣṇava and Śākta can vary between modern classifications.</div>
-            
-    <details class="corpus-card veda-card">
-      <summary>
-        <span class="summary-copy"><span class="eyebrow">Vedic branch</span><strong>Ṛgveda</strong></span>
-        <span class="count-badge">10 Upaniṣads</span>
-      </summary>
-      <div class="details-body">
-        <div class="veda-layer-grid">
-          <div class="text-group"><h4>Saṃhitā / surviving recensions</h4><ul class="name-grid searchable-list"><li data-search="śākala saṃhitā — principal complete recension"><span class="item-name">Śākala Saṃhitā — principal complete recension</span></li><li data-search="bāṣkala tradition — partly preserved / known through variants and khila material"><span class="item-name">Bāṣkala tradition — partly preserved / known through variants and khila material</span></li></ul></div>
-          <div class="text-group"><h4>Brāhmaṇas</h4><p class="group-note">Principal surviving or substantially preserved texts; many named Brāhmaṇas are lost or fragmentary.</p><ul class="name-grid searchable-list"><li data-search="aitareya brāhmaṇa"><span class="item-name">Aitareya Brāhmaṇa</span></li><li data-search="kauṣītaki (śāṅkhāyana) brāhmaṇa"><span class="item-name">Kauṣītaki (Śāṅkhāyana) Brāhmaṇa</span></li></ul></div>
-          <div class="text-group"><h4>Āraṇyakas</h4><ul class="name-grid searchable-list"><li data-search="aitareya āraṇyaka"><span class="item-name">Aitareya Āraṇyaka</span></li><li data-search="kauṣītaki / śāṅkhāyana āraṇyaka"><span class="item-name">Kauṣītaki / Śāṅkhāyana Āraṇyaka</span></li></ul></div>
-        </div>
-        <div class="upanishad-block">
-          <div class="block-heading"><h4>Muktikā Upaniṣads</h4><span>10 texts</span></div>
-          <ul class="name-grid searchable-list"><li data-search="aitareya principal"><span class="item-name">Aitareya</span><span class="mini-badge">Principal</span></li><li data-search="kauṣītaki principal"><span class="item-name">Kauṣītaki</span><span class="mini-badge">Principal</span></li><li data-search="nādabindu"><span class="item-name">Nādabindu</span></li><li data-search="ātmabodha"><span class="item-name">Ātmabodha</span></li><li data-search="nirvāṇa"><span class="item-name">Nirvāṇa</span></li><li data-search="mudgala"><span class="item-name">Mudgala</span></li><li data-search="akṣamālikā"><span class="item-name">Akṣamālikā</span></li><li data-search="tripurā"><span class="item-name">Tripurā</span></li><li data-search="saubhāgyalakṣmī"><span class="item-name">Saubhāgyalakṣmī</span></li><li data-search="bahvṛca"><span class="item-name">Bahvṛca</span></li></ul>
-        </div>
-      </div>
-    </details>
-    
-
-    <details class="corpus-card veda-card">
-      <summary>
-        <span class="summary-copy"><span class="eyebrow">Vedic branch</span><strong>Sāmaveda</strong></span>
-        <span class="count-badge">16 Upaniṣads</span>
-      </summary>
-      <div class="details-body">
-        <div class="veda-layer-grid">
-          <div class="text-group"><h4>Saṃhitā / surviving recensions</h4><ul class="name-grid searchable-list"><li data-search="kauthuma saṃhitā"><span class="item-name">Kauthuma Saṃhitā</span></li><li data-search="rāṇāyanīya saṃhitā"><span class="item-name">Rāṇāyanīya Saṃhitā</span></li><li data-search="jaiminīya (talavakāra) saṃhitā"><span class="item-name">Jaiminīya (Talavakāra) Saṃhitā</span></li></ul></div>
-          <div class="text-group"><h4>Brāhmaṇas</h4><p class="group-note">Principal surviving or substantially preserved texts; many named Brāhmaṇas are lost or fragmentary.</p><ul class="name-grid searchable-list"><li data-search="tāṇḍya / pañcaviṃśa brāhmaṇa"><span class="item-name">Tāṇḍya / Pañcaviṃśa Brāhmaṇa</span></li><li data-search="ṣaḍviṃśa brāhmaṇa"><span class="item-name">Ṣaḍviṃśa Brāhmaṇa</span></li><li data-search="sāmavidhāna brāhmaṇa"><span class="item-name">Sāmavidhāna Brāhmaṇa</span></li><li data-search="ārṣeya brāhmaṇa"><span class="item-name">Ārṣeya Brāhmaṇa</span></li><li data-search="daivata (devatādhyāya) brāhmaṇa"><span class="item-name">Daivata (Devatādhyāya) Brāhmaṇa</span></li><li data-search="mantra / chāndogya brāhmaṇa"><span class="item-name">Mantra / Chāndogya Brāhmaṇa</span></li><li data-search="saṃhitopaniṣad brāhmaṇa"><span class="item-name">Saṃhitopaniṣad Brāhmaṇa</span></li><li data-search="vaṃśa brāhmaṇa"><span class="item-name">Vaṃśa Brāhmaṇa</span></li><li data-search="jaiminīya brāhmaṇa"><span class="item-name">Jaiminīya Brāhmaṇa</span></li><li data-search="jaiminīya ārṣeya brāhmaṇa"><span class="item-name">Jaiminīya Ārṣeya Brāhmaṇa</span></li><li data-search="jaiminīya upaniṣad brāhmaṇa"><span class="item-name">Jaiminīya Upaniṣad Brāhmaṇa</span></li></ul></div>
-          <div class="text-group"><h4>Āraṇyakas</h4><ul class="name-grid searchable-list"><li data-search="talavakāra / jaiminīya-upaniṣad āraṇyaka"><span class="item-name">Talavakāra / Jaiminīya-Upaniṣad Āraṇyaka</span></li><li data-search="chāndogya āraṇyaka"><span class="item-name">Chāndogya Āraṇyaka</span></li></ul></div>
-        </div>
-        <div class="upanishad-block">
-          <div class="block-heading"><h4>Muktikā Upaniṣads</h4><span>16 texts</span></div>
-          <ul class="name-grid searchable-list"><li data-search="kena principal"><span class="item-name">Kena</span><span class="mini-badge">Principal</span></li><li data-search="chāndogya principal"><span class="item-name">Chāndogya</span><span class="mini-badge">Principal</span></li><li data-search="āruṇi (āruṇeya)"><span class="item-name">Āruṇi (Āruṇeya)</span></li><li data-search="maitrāyaṇī principal"><span class="item-name">Maitrāyaṇī</span><span class="mini-badge">Principal</span></li><li data-search="maitreya"><span class="item-name">Maitreya</span></li><li data-search="vajrasūcī"><span class="item-name">Vajrasūcī</span></li><li data-search="yogacūḍāmaṇi"><span class="item-name">Yogacūḍāmaṇi</span></li><li data-search="vāsudeva"><span class="item-name">Vāsudeva</span></li><li data-search="mahā"><span class="item-name">Mahā</span></li><li data-search="sannyāsa (bṛhat-sannyāsa)"><span class="item-name">Sannyāsa (Bṛhat-Sannyāsa)</span></li><li data-search="avyakta"><span class="item-name">Avyakta</span></li><li data-search="kuṇḍikā"><span class="item-name">Kuṇḍikā</span></li><li data-search="sāvitrī"><span class="item-name">Sāvitrī</span></li><li data-search="rudrākṣajabāla"><span class="item-name">Rudrākṣajabāla</span></li><li data-search="jābāladarśana"><span class="item-name">Jābāladarśana</span></li><li data-search="jābāli"><span class="item-name">Jābāli</span></li></ul>
-        </div>
-      </div>
-    </details>
-    
-
-    <details class="corpus-card veda-card">
-      <summary>
-        <span class="summary-copy"><span class="eyebrow">Vedic branch</span><strong>Śukla Yajurveda</strong></span>
-        <span class="count-badge">19 Upaniṣads</span>
-      </summary>
-      <div class="details-body">
-        <div class="veda-layer-grid">
-          <div class="text-group"><h4>Saṃhitā / surviving recensions</h4><ul class="name-grid searchable-list"><li data-search="vājasaneyi saṃhitā — mādhyaṃdina"><span class="item-name">Vājasaneyi Saṃhitā — Mādhyaṃdina</span></li><li data-search="vājasaneyi saṃhitā — kāṇva"><span class="item-name">Vājasaneyi Saṃhitā — Kāṇva</span></li></ul></div>
-          <div class="text-group"><h4>Brāhmaṇas</h4><p class="group-note">Principal surviving or substantially preserved texts; many named Brāhmaṇas are lost or fragmentary.</p><ul class="name-grid searchable-list"><li data-search="śatapatha brāhmaṇa — mādhyaṃdina recension"><span class="item-name">Śatapatha Brāhmaṇa — Mādhyaṃdina recension</span></li><li data-search="śatapatha brāhmaṇa — kāṇva recension"><span class="item-name">Śatapatha Brāhmaṇa — Kāṇva recension</span></li></ul></div>
-          <div class="text-group"><h4>Āraṇyakas</h4><ul class="name-grid searchable-list"><li data-search="bṛhadāraṇyaka (forest / concluding layer of the śatapatha tradition)"><span class="item-name">Bṛhadāraṇyaka (forest / concluding layer of the Śatapatha tradition)</span></li></ul></div>
-        </div>
-        <div class="upanishad-block">
-          <div class="block-heading"><h4>Muktikā Upaniṣads</h4><span>19 texts</span></div>
-          <ul class="name-grid searchable-list"><li data-search="īśā principal"><span class="item-name">Īśā</span><span class="mini-badge">Principal</span></li><li data-search="bṛhadāraṇyaka principal"><span class="item-name">Bṛhadāraṇyaka</span><span class="mini-badge">Principal</span></li><li data-search="jābāla"><span class="item-name">Jābāla</span></li><li data-search="haṃsa"><span class="item-name">Haṃsa</span></li><li data-search="paramahaṃsa"><span class="item-name">Paramahaṃsa</span></li><li data-search="subāla"><span class="item-name">Subāla</span></li><li data-search="mantrikā"><span class="item-name">Mantrikā</span></li><li data-search="nirālamba"><span class="item-name">Nirālamba</span></li><li data-search="triśikhi-brāhmaṇa"><span class="item-name">Triśikhi-brāhmaṇa</span></li><li data-search="maṇḍala-brāhmaṇa"><span class="item-name">Maṇḍala-brāhmaṇa</span></li><li data-search="advayatāraka"><span class="item-name">Advayatāraka</span></li><li data-search="paiṅgala"><span class="item-name">Paiṅgala</span></li><li data-search="bhikṣuka"><span class="item-name">Bhikṣuka</span></li><li data-search="turīyātītāvadhūta"><span class="item-name">Turīyātītāvadhūta</span></li><li data-search="adhyātma"><span class="item-name">Adhyātma</span></li><li data-search="yājñavalkya"><span class="item-name">Yājñavalkya</span></li><li data-search="śāṭyāyanīya"><span class="item-name">Śāṭyāyanīya</span></li><li data-search="tārasāra"><span class="item-name">Tārasāra</span></li><li data-search="muktikā"><span class="item-name">Muktikā</span></li></ul>
-        </div>
-      </div>
-    </details>
-    
-
-    <details class="corpus-card veda-card">
-      <summary>
-        <span class="summary-copy"><span class="eyebrow">Vedic branch</span><strong>Kṛṣṇa Yajurveda</strong></span>
-        <span class="count-badge">32 Upaniṣads</span>
-      </summary>
-      <div class="details-body">
-        <div class="veda-layer-grid">
-          <div class="text-group"><h4>Saṃhitā / surviving recensions</h4><ul class="name-grid searchable-list"><li data-search="taittirīya saṃhitā"><span class="item-name">Taittirīya Saṃhitā</span></li><li data-search="maitrāyaṇī saṃhitā"><span class="item-name">Maitrāyaṇī Saṃhitā</span></li><li data-search="kāṭhaka saṃhitā"><span class="item-name">Kāṭhaka Saṃhitā</span></li><li data-search="kapiṣṭhala-kaṭha saṃhitā"><span class="item-name">Kapiṣṭhala-Kaṭha Saṃhitā</span></li></ul></div>
-          <div class="text-group"><h4>Brāhmaṇas</h4><p class="group-note">Principal surviving or substantially preserved texts; many named Brāhmaṇas are lost or fragmentary.</p><ul class="name-grid searchable-list"><li data-search="taittirīya brāhmaṇa"><span class="item-name">Taittirīya Brāhmaṇa</span></li><li data-search="vādhūla anvākhyāna — fragmentary/associated material"><span class="item-name">Vādhūla Anvākhyāna — fragmentary/associated material</span></li></ul></div>
-          <div class="text-group"><h4>Āraṇyakas</h4><ul class="name-grid searchable-list"><li data-search="taittirīya āraṇyaka"><span class="item-name">Taittirīya Āraṇyaka</span></li><li data-search="maitrāyaṇīya āraṇyaka"><span class="item-name">Maitrāyaṇīya Āraṇyaka</span></li></ul></div>
-        </div>
-        <div class="upanishad-block">
-          <div class="block-heading"><h4>Muktikā Upaniṣads</h4><span>32 texts</span></div>
-          <ul class="name-grid searchable-list"><li data-search="kaṭha principal"><span class="item-name">Kaṭha</span><span class="mini-badge">Principal</span></li><li data-search="taittirīya principal"><span class="item-name">Taittirīya</span><span class="mini-badge">Principal</span></li><li data-search="brahma"><span class="item-name">Brahma</span></li><li data-search="kaivalya"><span class="item-name">Kaivalya</span></li><li data-search="śvetāśvatara principal"><span class="item-name">Śvetāśvatara</span><span class="mini-badge">Principal</span></li><li data-search="garbha"><span class="item-name">Garbha</span></li><li data-search="nārāyaṇa"><span class="item-name">Nārāyaṇa</span></li><li data-search="amṛtabindu"><span class="item-name">Amṛtabindu</span></li><li data-search="amṛtanāda"><span class="item-name">Amṛtanāda</span></li><li data-search="kālāgnirudra"><span class="item-name">Kālāgnirudra</span></li><li data-search="kṣurikā"><span class="item-name">Kṣurikā</span></li><li data-search="sarvasāra"><span class="item-name">Sarvasāra</span></li><li data-search="śukarahasya"><span class="item-name">Śukarahasya</span></li><li data-search="tejobindu"><span class="item-name">Tejobindu</span></li><li data-search="dhyānabindu"><span class="item-name">Dhyānabindu</span></li><li data-search="brahmavidyā"><span class="item-name">Brahmavidyā</span></li><li data-search="yogatattva"><span class="item-name">Yogatattva</span></li><li data-search="dakṣiṇāmūrti"><span class="item-name">Dakṣiṇāmūrti</span></li><li data-search="skanda"><span class="item-name">Skanda</span></li><li data-search="śārīraka"><span class="item-name">Śārīraka</span></li><li data-search="yogaśikhā"><span class="item-name">Yogaśikhā</span></li><li data-search="ekākṣara"><span class="item-name">Ekākṣara</span></li><li data-search="akṣi"><span class="item-name">Akṣi</span></li><li data-search="avadhūta"><span class="item-name">Avadhūta</span></li><li data-search="kaṭharudra"><span class="item-name">Kaṭharudra</span></li><li data-search="rudrahṛdaya"><span class="item-name">Rudrahṛdaya</span></li><li data-search="yogakuṇḍalinī"><span class="item-name">Yogakuṇḍalinī</span></li><li data-search="pañcabrahma"><span class="item-name">Pañcabrahma</span></li><li data-search="prāṇāgnihotra"><span class="item-name">Prāṇāgnihotra</span></li><li data-search="varāha"><span class="item-name">Varāha</span></li><li data-search="kali-saṇṭāraṇa"><span class="item-name">Kali-Saṇṭāraṇa</span></li><li data-search="sarasvatī-rahasya"><span class="item-name">Sarasvatī-rahasya</span></li></ul>
-        </div>
-      </div>
-    </details>
-    
-
-    <details class="corpus-card veda-card">
-      <summary>
-        <span class="summary-copy"><span class="eyebrow">Vedic branch</span><strong>Atharvaveda</strong></span>
-        <span class="count-badge">31 Upaniṣads</span>
-      </summary>
-      <div class="details-body">
-        <div class="veda-layer-grid">
-          <div class="text-group"><h4>Saṃhitā / surviving recensions</h4><ul class="name-grid searchable-list"><li data-search="śaunaka saṃhitā"><span class="item-name">Śaunaka Saṃhitā</span></li><li data-search="paippalāda saṃhitā"><span class="item-name">Paippalāda Saṃhitā</span></li></ul></div>
-          <div class="text-group"><h4>Brāhmaṇas</h4><p class="group-note">Principal surviving or substantially preserved texts; many named Brāhmaṇas are lost or fragmentary.</p><ul class="name-grid searchable-list"><li data-search="gopatha brāhmaṇa"><span class="item-name">Gopatha Brāhmaṇa</span></li></ul></div>
-          <div class="text-group"><h4>Āraṇyakas</h4><ul class="name-grid searchable-list"><li data-search="no extant āraṇyaka is known"><span class="item-name">No extant Āraṇyaka is known</span></li></ul></div>
-        </div>
-        <div class="upanishad-block">
-          <div class="block-heading"><h4>Muktikā Upaniṣads</h4><span>31 texts</span></div>
-          <ul class="name-grid searchable-list"><li data-search="praśna principal"><span class="item-name">Praśna</span><span class="mini-badge">Principal</span></li><li data-search="muṇḍaka principal"><span class="item-name">Muṇḍaka</span><span class="mini-badge">Principal</span></li><li data-search="māṇḍūkya principal"><span class="item-name">Māṇḍūkya</span><span class="mini-badge">Principal</span></li><li data-search="atharvaśiras"><span class="item-name">Atharvaśiras</span></li><li data-search="atharvaśikhā"><span class="item-name">Atharvaśikhā</span></li><li data-search="bṛhajjābāla"><span class="item-name">Bṛhajjābāla</span></li><li data-search="nṛsiṃhatāpanī"><span class="item-name">Nṛsiṃhatāpanī</span></li><li data-search="nāradaparivrājaka"><span class="item-name">Nāradaparivrājaka</span></li><li data-search="sītā"><span class="item-name">Sītā</span></li><li data-search="śarabha"><span class="item-name">Śarabha</span></li><li data-search="tripādvibhūti-mahānārāyaṇa"><span class="item-name">Tripādvibhūti-Mahānārāyaṇa</span></li><li data-search="rāmarahasya"><span class="item-name">Rāmarahasya</span></li><li data-search="rāmatāpanī"><span class="item-name">Rāmatāpanī</span></li><li data-search="śāṇḍilya"><span class="item-name">Śāṇḍilya</span></li><li data-search="paramahaṃsa-parivrājaka"><span class="item-name">Paramahaṃsa-Parivrājaka</span></li><li data-search="annapūrṇā"><span class="item-name">Annapūrṇā</span></li><li data-search="sūrya"><span class="item-name">Sūrya</span></li><li data-search="ātma"><span class="item-name">Ātma</span></li><li data-search="pāśupatabrahma"><span class="item-name">Pāśupatabrahma</span></li><li data-search="parabrahma"><span class="item-name">Parabrahma</span></li><li data-search="tripurātāpinī"><span class="item-name">Tripurātāpinī</span></li><li data-search="devī"><span class="item-name">Devī</span></li><li data-search="bhāvanā"><span class="item-name">Bhāvanā</span></li><li data-search="bhasmajābāla"><span class="item-name">Bhasmajābāla</span></li><li data-search="gaṇapati"><span class="item-name">Gaṇapati</span></li><li data-search="mahāvākya"><span class="item-name">Mahāvākya</span></li><li data-search="gopālatāpanī"><span class="item-name">Gopālatāpanī</span></li><li data-search="kṛṣṇa"><span class="item-name">Kṛṣṇa</span></li><li data-search="hayagrīva"><span class="item-name">Hayagrīva</span></li><li data-search="dattātreya"><span class="item-name">Dattātreya</span></li><li data-search="garuḍa"><span class="item-name">Garuḍa</span></li></ul>
-        </div>
-      </div>
-    </details>
-    
-          </section>
-
-          <section id="itihasa" class="atlas-section corpus-section" data-section-search="itihasa ramayana mahabharata harivamsha gita">
-            <div class="section-head">
-              <div><span class="number">02 · ITIHĀSA</span><h3>The epic tradition</h3></div>
-              <p>The two great Itihāsas are narrative, theological and dharma libraries in their own right.</p>
-            </div>
-            <div class="epic-card" data-search="ramayana valmiki itihasa">
-              <div class="epic-mark">R</div>
-              <div><h4>Vālmīki Rāmāyaṇa</h4><p>Traditionally arranged in seven kāṇḍas: Bāla, Ayodhyā, Araṇya, Kiṣkindhā, Sundara, Yuddha and Uttara.</p></div>
-            </div>
-            <div class="epic-card" data-search="mahabharata vyasa bhagavad gita itihasa">
-              <div class="epic-mark">M</div>
-              <div><h4>Mahābhārata</h4><p>Eighteen parvans in the standard architecture. The Bhagavad Gītā occurs within the Bhīṣma-parvan and is one of the epic’s most influential theological texts.</p></div>
-            </div>
-            <div class="epic-card" data-search="harivamsha harivamsa khila mahabharata">
-              <div class="epic-mark">H</div>
-              <div><h4>Harivaṃśa</h4><p>A khila or supplement to the Mahābhārata, especially important for Kṛṣṇa and Yādava genealogical narrative; sometimes loosely grouped with Purāṇic literature.</p></div>
-            </div>
-          </section>
-
-          <section id="purana" class="atlas-section corpus-section" data-section-search="purana puranas mahapurana upapurana">
-            <div class="section-head">
-              <div><span class="number">03 · PURĀṆA</span><h3>Purāṇic libraries</h3></div>
-              <p>The number eighteen is traditional, but the membership of both Mahāpurāṇa and Upapurāṇa lists is not perfectly uniform across sources.</p>
-            </div>
-
-            <details class="corpus-card" open>
-              <summary><span class="summary-copy"><span class="eyebrow">Major Purāṇas</span><strong>The conventional eighteen</strong></span><span class="count-badge">18 titles</span></summary>
-              <div class="details-body">
-                <div class="note-card">A widely transmitted list gives the eighteen below. A major historical variant substitutes the <strong>Vāyu Purāṇa</strong> for the <strong>Śiva Purāṇa</strong>. Śākta traditions may also claim the <strong>Devī Bhāgavata</strong> as a Mahāpurāṇa, while other classifications place it among Upapurāṇas.</div>
-                <ul class="name-grid searchable-list"><li data-search="brahma purāṇa"><span class="item-name">Brahma Purāṇa</span></li><li data-search="padma purāṇa"><span class="item-name">Padma Purāṇa</span></li><li data-search="viṣṇu purāṇa"><span class="item-name">Viṣṇu Purāṇa</span></li><li data-search="śiva purāṇa"><span class="item-name">Śiva Purāṇa</span></li><li data-search="bhāgavata purāṇa"><span class="item-name">Bhāgavata Purāṇa</span></li><li data-search="nārada / nāradīya purāṇa"><span class="item-name">Nārada / Nāradīya Purāṇa</span></li><li data-search="mārkaṇḍeya purāṇa"><span class="item-name">Mārkaṇḍeya Purāṇa</span></li><li data-search="agni purāṇa"><span class="item-name">Agni Purāṇa</span></li><li data-search="bhaviṣya purāṇa"><span class="item-name">Bhaviṣya Purāṇa</span></li><li data-search="brahmavaivarta purāṇa"><span class="item-name">Brahmavaivarta Purāṇa</span></li><li data-search="liṅga purāṇa"><span class="item-name">Liṅga Purāṇa</span></li><li data-search="varāha purāṇa"><span class="item-name">Varāha Purāṇa</span></li><li data-search="skanda purāṇa"><span class="item-name">Skanda Purāṇa</span></li><li data-search="vāmana purāṇa"><span class="item-name">Vāmana Purāṇa</span></li><li data-search="kūrma purāṇa"><span class="item-name">Kūrma Purāṇa</span></li><li data-search="matsya purāṇa"><span class="item-name">Matsya Purāṇa</span></li><li data-search="garuḍa purāṇa"><span class="item-name">Garuḍa Purāṇa</span></li><li data-search="brahmāṇḍa purāṇa"><span class="item-name">Brahmāṇḍa Purāṇa</span></li></ul>
-              </div>
-            </details>
-
-            <details class="corpus-card">
-              <summary><span class="summary-copy"><span class="eyebrow">Secondary Purāṇas</span><strong>One common Upapurāṇa set</strong></span><span class="count-badge">18 titles</span></summary>
-              <div class="details-body">
-                <div class="note-card">Unlike the Mahāpurāṇas, lists of “eighteen Upapurāṇas” frequently disagree. Sanskrit sources collectively preserve far more than eighteen Upapurāṇa names. The set below is one often-cited enumeration, not a universal canon.</div>
-                <ul class="name-grid searchable-list"><li data-search="sanatkumāra purāṇa"><span class="item-name">Sanatkumāra Purāṇa</span></li><li data-search="nṛsiṃha purāṇa"><span class="item-name">Nṛsiṃha Purāṇa</span></li><li data-search="bṛhannāradīya purāṇa"><span class="item-name">Bṛhannāradīya Purāṇa</span></li><li data-search="śivarahasya purāṇa"><span class="item-name">Śivarahasya Purāṇa</span></li><li data-search="durvāsas purāṇa"><span class="item-name">Durvāsas Purāṇa</span></li><li data-search="kapila purāṇa"><span class="item-name">Kapila Purāṇa</span></li><li data-search="vāmana (upapurāṇa tradition)"><span class="item-name">Vāmana (Upapurāṇa tradition)</span></li><li data-search="bhārgava purāṇa"><span class="item-name">Bhārgava Purāṇa</span></li><li data-search="vāruṇa purāṇa"><span class="item-name">Vāruṇa Purāṇa</span></li><li data-search="kālikā purāṇa"><span class="item-name">Kālikā Purāṇa</span></li><li data-search="sāmba purāṇa"><span class="item-name">Sāmba Purāṇa</span></li><li data-search="nandi / nanda purāṇa"><span class="item-name">Nandi / Nanda Purāṇa</span></li><li data-search="sūrya purāṇa"><span class="item-name">Sūrya Purāṇa</span></li><li data-search="parāśara purāṇa"><span class="item-name">Parāśara Purāṇa</span></li><li data-search="vāsiṣṭha purāṇa"><span class="item-name">Vāsiṣṭha Purāṇa</span></li><li data-search="gaṇeśa purāṇa"><span class="item-name">Gaṇeśa Purāṇa</span></li><li data-search="mudgala purāṇa"><span class="item-name">Mudgala Purāṇa</span></li><li data-search="haṃsa purāṇa"><span class="item-name">Haṃsa Purāṇa</span></li></ul>
-              </div>
-            </details>
-
-            <details class="corpus-card">
-              <summary><span class="summary-copy"><span class="eyebrow">Variant & additional titles</span><strong>Other works styled Upapurāṇa</strong></span><span class="count-badge">selected attested titles</span></summary>
-              <div class="details-body">
-                <ul class="name-grid searchable-list"><li data-search="viṣṇudharma purāṇa"><span class="item-name">Viṣṇudharma Purāṇa</span></li><li data-search="viṣṇudharmottara purāṇa"><span class="item-name">Viṣṇudharmottara Purāṇa</span></li><li data-search="śivadharma purāṇa"><span class="item-name">Śivadharma Purāṇa</span></li><li data-search="māheśvara purāṇa"><span class="item-name">Māheśvara Purāṇa</span></li><li data-search="ekāmra purāṇa"><span class="item-name">Ekāmra Purāṇa</span></li><li data-search="devī bhāgavata purāṇa"><span class="item-name">Devī Bhāgavata Purāṇa</span></li><li data-search="devī purāṇa"><span class="item-name">Devī Purāṇa</span></li><li data-search="mahābhāgavata purāṇa"><span class="item-name">Mahābhāgavata Purāṇa</span></li><li data-search="bhagavatī purāṇa"><span class="item-name">Bhagavatī Purāṇa</span></li><li data-search="caṇḍī / caṇḍikā purāṇa"><span class="item-name">Caṇḍī / Caṇḍikā Purāṇa</span></li><li data-search="devīrahasya"><span class="item-name">Devīrahasya</span></li><li data-search="saura purāṇa"><span class="item-name">Saura Purāṇa</span></li><li data-search="ādi purāṇa"><span class="item-name">Ādi Purāṇa</span></li><li data-search="kalki purāṇa"><span class="item-name">Kalki Purāṇa</span></li><li data-search="puruṣottama purāṇa"><span class="item-name">Puruṣottama Purāṇa</span></li><li data-search="kriyāyogasāra"><span class="item-name">Kriyāyogasāra</span></li><li data-search="bhaviṣyottara purāṇa"><span class="item-name">Bhaviṣyottara Purāṇa</span></li><li data-search="bṛhaddharma purāṇa"><span class="item-name">Bṛhaddharma Purāṇa</span></li><li data-search="mānava purāṇa"><span class="item-name">Mānava Purāṇa</span></li><li data-search="auśanasa purāṇa"><span class="item-name">Auśanasa Purāṇa</span></li></ul>
-              </div>
-            </details>
-          </section>
-
-          <section id="smriti" class="atlas-section corpus-section" data-section-search="smriti dharmashastra dharma law manu yajnavalkya parashara upasmriti">
-            <div class="section-head">
-              <div><span class="number">04 · SMṚTI & DHARMAŚĀSTRA</span><h3>Law, conduct and remembered tradition</h3></div>
-              <p>“Eighteen Smṛtis” is a common shorthand, but the textual evidence preserves larger and differing enumerations. This section makes those differences explicit.</p>
-            </div>
-
-            <details class="corpus-card" open>
-              <summary><span class="summary-copy"><span class="eyebrow">Yājñavalkya Smṛti 1.4–5</span><strong>Twenty Dharmaśāstra promulgators</strong></span><span class="count-badge">20 authorities</span></summary>
-              <div class="details-body"><ul class="name-grid searchable-list"><li data-search="manu"><span class="item-name">Manu</span></li><li data-search="atri"><span class="item-name">Atri</span></li><li data-search="viṣṇu"><span class="item-name">Viṣṇu</span></li><li data-search="hārīta"><span class="item-name">Hārīta</span></li><li data-search="yājñavalkya"><span class="item-name">Yājñavalkya</span></li><li data-search="uśanas"><span class="item-name">Uśanas</span></li><li data-search="aṅgiras"><span class="item-name">Aṅgiras</span></li><li data-search="yama"><span class="item-name">Yama</span></li><li data-search="āpastamba"><span class="item-name">Āpastamba</span></li><li data-search="saṃvarta"><span class="item-name">Saṃvarta</span></li><li data-search="kātyāyana"><span class="item-name">Kātyāyana</span></li><li data-search="bṛhaspati"><span class="item-name">Bṛhaspati</span></li><li data-search="parāśara"><span class="item-name">Parāśara</span></li><li data-search="vyāsa"><span class="item-name">Vyāsa</span></li><li data-search="śaṅkha"><span class="item-name">Śaṅkha</span></li><li data-search="likhita"><span class="item-name">Likhita</span></li><li data-search="dakṣa"><span class="item-name">Dakṣa</span></li><li data-search="gautama"><span class="item-name">Gautama</span></li><li data-search="śātātapa"><span class="item-name">Śātātapa</span></li><li data-search="vasiṣṭha"><span class="item-name">Vasiṣṭha</span></li></ul></div>
-            </details>
-
-            <details class="corpus-card">
-              <summary><span class="summary-copy"><span class="eyebrow">Alternative enumeration</span><strong>Parāśara tradition</strong></span><span class="count-badge">variant list</span></summary>
-              <div class="details-body">
-                <div class="note-card">The Parāśara enumeration substantially overlaps Yājñavalkya’s, but replaces <strong>Yama, Bṛhaspati and Vyāsa</strong> with <strong>Kāśyapa, Gārgya and Pracetas</strong>. Editions and secondary summaries differ on how the total is counted.</div>
-                <ul class="name-grid searchable-list"><li data-search="kāśyapa appears in place of yama in this comparison"><span class="item-name">Kāśyapa</span><small>appears in place of Yama in this comparison</small></li><li data-search="gārgya variant authority"><span class="item-name">Gārgya</span><small>variant authority</small></li><li data-search="pracetas variant authority"><span class="item-name">Pracetas</span><small>variant authority</small></li></ul>
-              </div>
-            </details>
-
-            <details class="corpus-card">
-              <summary><span class="summary-copy"><span class="eyebrow">Padma Purāṇa enumeration</span><strong>Additional names in the thirty-six</strong></span><span class="count-badge">17 additional names</span></summary>
-              <div class="details-body">
-                <div class="note-card">A traditional Padma-Purāṇa enumeration reaches thirty-six authorities by omitting Atri from Yājñavalkya’s set and adding the seventeen names below.</div>
-                <ul class="name-grid searchable-list"><li data-search="marīci"><span class="item-name">Marīci</span></li><li data-search="pulastya"><span class="item-name">Pulastya</span></li><li data-search="pracetas"><span class="item-name">Pracetas</span></li><li data-search="bhṛgu"><span class="item-name">Bhṛgu</span></li><li data-search="nārada"><span class="item-name">Nārada</span></li><li data-search="kāśyapa"><span class="item-name">Kāśyapa</span></li><li data-search="viśvāmitra"><span class="item-name">Viśvāmitra</span></li><li data-search="devala"><span class="item-name">Devala</span></li><li data-search="ṛṣyaśṛṅga"><span class="item-name">Ṛṣyaśṛṅga</span></li><li data-search="gārgya"><span class="item-name">Gārgya</span></li><li data-search="baudhāyana"><span class="item-name">Baudhāyana</span></li><li data-search="paiṭhīnasi"><span class="item-name">Paiṭhīnasi</span></li><li data-search="jābāli"><span class="item-name">Jābāli</span></li><li data-search="sumantu"><span class="item-name">Sumantu</span></li><li data-search="pāraskara"><span class="item-name">Pāraskara</span></li><li data-search="lokākṣi"><span class="item-name">Lokākṣi</span></li><li data-search="kuthumi"><span class="item-name">Kuthumi</span></li></ul>
-              </div>
-            </details>
-
-            <details class="corpus-card">
-              <summary><span class="summary-copy"><span class="eyebrow">Commentarial classification</span><strong>Upasmṛtis</strong></span><span class="count-badge">18 names</span></summary>
-              <div class="details-body">
-                <div class="note-card">The Mitākṣarā / Viramitrodaya commentarial material preserves a further list of authors styled Upasmṛti authorities. Many works survive only partially or by quotation.</div>
-                <ul class="name-grid searchable-list"><li data-search="jābāli"><span class="item-name">Jābāli</span></li><li data-search="nāciketa"><span class="item-name">Nāciketa</span></li><li data-search="skanda"><span class="item-name">Skanda</span></li><li data-search="lāṅgākṣi"><span class="item-name">Lāṅgākṣi</span></li><li data-search="kāśyapa"><span class="item-name">Kāśyapa</span></li><li data-search="vyāsa"><span class="item-name">Vyāsa</span></li><li data-search="sanatkumāra"><span class="item-name">Sanatkumāra</span></li><li data-search="sumantu"><span class="item-name">Sumantu</span></li><li data-search="pitāmaha"><span class="item-name">Pitāmaha</span></li><li data-search="vyāghra"><span class="item-name">Vyāghra</span></li><li data-search="kārṣṇājini"><span class="item-name">Kārṣṇājini</span></li><li data-search="jātūkarṇa"><span class="item-name">Jātūkarṇa</span></li><li data-search="kapiñjala"><span class="item-name">Kapiñjala</span></li><li data-search="baudhāyana"><span class="item-name">Baudhāyana</span></li><li data-search="kāṇāda"><span class="item-name">Kāṇāda</span></li><li data-search="viśvāmitra"><span class="item-name">Viśvāmitra</span></li><li data-search="paiṭhīnasi"><span class="item-name">Paiṭhīnasi</span></li><li data-search="gobhila"><span class="item-name">Gobhila</span></li></ul>
-              </div>
-            </details>
-          </section>
-
-          <section id="vedanga" class="atlas-section corpus-section" data-section-search="vedanga darsana darshana mimamsa vedanta nyaya vaisheshika samkhya yoga siksha kalpa vyakarana nirukta chandas jyotisha">
-            <div class="section-head">
-              <div><span class="number">05 · AUXILIARY & PHILOSOPHICAL CORPORA</span><h3>Vedāṅgas and Darśanas</h3></div>
-              <p>Foundational disciplines for preserving, interpreting and philosophically systematizing Vedic tradition.</p>
-            </div>
-            <div class="two-col">
-              <div class="mini-card">
-                <h4>Six Vedāṅgas</h4>
-                <p>The “limbs of the Veda.” Representative texts are shown rather than every work in each discipline.</p>
-                <ul class="name-grid searchable-list"><li data-search="śikṣā — phonetics &amp; recitation pāṇinīya śikṣā and other śikṣā texts"><span class="item-name">Śikṣā — phonetics &amp; recitation</span><small>Pāṇinīya Śikṣā and other śikṣā texts</small></li><li data-search="kalpa — ritual procedure śrauta-, gṛhya-, dharma- and śulba-sūtra traditions"><span class="item-name">Kalpa — ritual procedure</span><small>Śrauta-, Gṛhya-, Dharma- and Śulba-sūtra traditions</small></li><li data-search="vyākaraṇa — grammar pāṇini’s aṣṭādhyāyī"><span class="item-name">Vyākaraṇa — grammar</span><small>Pāṇini’s Aṣṭādhyāyī</small></li><li data-search="nirukta — etymology &amp; explanation yāska’s nirukta"><span class="item-name">Nirukta — etymology &amp; explanation</span><small>Yāska’s Nirukta</small></li><li data-search="chandas — metre piṅgala’s chandaḥsūtra"><span class="item-name">Chandas — metre</span><small>Piṅgala’s Chandaḥsūtra</small></li><li data-search="jyotiṣa — ritual calendrics / astronomy vedāṅga jyotiṣa, traditionally lagadha"><span class="item-name">Jyotiṣa — ritual calendrics / astronomy</span><small>Vedāṅga Jyotiṣa, traditionally Lagadha</small></li></ul>
-              </div>
-              <div class="mini-card">
-                <h4>Six classical āstika Darśanas</h4>
-                <p>Core sūtra or kārikā works conventionally associated with the six systems.</p>
-                <ul class="name-grid searchable-list"><li data-search="pūrva-mīmāṃsā mīmāṃsā sūtras — jaimini"><span class="item-name">Pūrva-Mīmāṃsā</span><small>Mīmāṃsā Sūtras — Jaimini</small></li><li data-search="vedānta / uttara-mīmāṃsā brahma sūtras — bādarāyaṇa"><span class="item-name">Vedānta / Uttara-Mīmāṃsā</span><small>Brahma Sūtras — Bādarāyaṇa</small></li><li data-search="nyāya nyāya sūtras — akṣapāda gautama"><span class="item-name">Nyāya</span><small>Nyāya Sūtras — Akṣapāda Gautama</small></li><li data-search="vaiśeṣika vaiśeṣika sūtras — kaṇāda"><span class="item-name">Vaiśeṣika</span><small>Vaiśeṣika Sūtras — Kaṇāda</small></li><li data-search="sāṃkhya sāṃkhyakārikā — īśvarakṛṣṇa (plus later sāṃkhya-sūtra tradition)"><span class="item-name">Sāṃkhya</span><small>Sāṃkhyakārikā — Īśvarakṛṣṇa (plus later Sāṃkhya-sūtra tradition)</small></li><li data-search="yoga yoga sūtras — patañjali"><span class="item-name">Yoga</span><small>Yoga Sūtras — Patañjali</small></li></ul>
-              </div>
-            </div>
-          </section>
-
-          <section id="agama" class="atlas-section corpus-section" data-section-search="agama tantra pancharatra vaikhānasa shaiva shakta">
-            <div class="section-head">
-              <div><span class="number">06 · ĀGAMA & ALLIED TRADITIONS</span><h3>Temple, mantra and tantric corpora</h3></div>
-              <p>These are enormous, school-specific textual universes and do not reduce to a single all-Hindu list.</p>
-            </div>
-            <div class="compact-grid">
-              <div class="mini-card" data-search="vaishnava agama pancharatra vaikhānasa"><h4>Vaiṣṇava Āgama</h4><p>Pāñcarātra Saṃhitās and Vaikhānasa ritual-text traditions, central to many Vaiṣṇava temple systems.</p></div>
-              <div class="mini-card" data-search="shaiva agama 28"><h4>Śaiva Āgamas</h4><p>The Śaiva Siddhānta tradition famously recognizes a corpus of twenty-eight principal Āgamas, alongside extensive subsidiary material.</p></div>
-              <div class="mini-card" data-search="shakta tantra agama"><h4>Śākta Tantras</h4><p>Large families of Devī-centered Tantras and Āgamas, with different canons in Śrīvidyā, Kaula and other traditions.</p></div>
-              <div class="mini-card" data-search="upaveda ayurveda dhanurveda gandharvaveda sthapatya"><h4>Upavedas</h4><p>Traditional auxiliary sciences commonly include Āyurveda, Dhanurveda, Gāndharvaveda and Sthāpatyaveda/related architectural traditions; Vedic associations vary by source.</p></div>
-            </div>
-          </section>
-
-          <section class="atlas-section">
-            <div class="section-head">
-              <div><span class="number">07 · CANON NOTES</span><h3>How to read this index</h3></div>
-              <p>A map of traditions is more accurate than a single rigid tree.</p>
-            </div>
-            <div class="source-box">
-              <strong>Textual caveats.</strong> Vedic schools once possessed many more śākhās and associated Brāhmaṇas than survive today. The seven Āraṇyakas listed here are the extant set commonly recognized by the Vedic Heritage Portal. The Muktikā’s 108 is a particular traditional Upaniṣad canon, not a claim that only 108 Upaniṣads ever existed. Smṛti and Upapurāṇa lists are explicitly variable, so this page presents named enumerations rather than forcing a false universal total.
-              <br><br>
-              <strong>Reference anchors:</strong>
-              <a href="https://vedicheritage.gov.in/upanishads/" target="_blank" rel="noopener">Vedic Heritage Portal — Upaniṣads</a> ·
-              <a href="https://vedicheritage.gov.in/brahmanas/" target="_blank" rel="noopener">Brāhmaṇas</a> ·
-              <a href="https://vedicheritage.gov.in/aranyakas/" target="_blank" rel="noopener">Āraṇyakas</a> ·
-              <a href="https://www.wisdomlib.org/hinduism/book/yajnavalkya-smriti-with-mitakshara-and-viramitrodaya/d/doc1875969.html" target="_blank" rel="noopener">Yājñavalkya Smṛti 1.4–5</a>.
-            </div>
-          </section>
-        </div>
+          <div class="browser-stage" hidden></div>
+        </section>
       </div>
     </article>
   </main>
 
   <footer class="site-footer"><p>Viveka Dṛṣṭi</p></footer>
   <script src="/vivekadrishti/assets/js/site.js"></script>
-  <script>
-    (() => {
-      const root = document.getElementById('scripture-atlas');
-      const input = document.getElementById('atlas-search');
-      const count = document.getElementById('result-count');
-      const noResults = document.getElementById('no-results');
-      const details = [...root.querySelectorAll('details')];
-      const searchable = [...root.querySelectorAll('[data-search]')];
-      const sections = [...root.querySelectorAll('.corpus-section')];
-
-      document.getElementById('expand-all').addEventListener('click', () => details.forEach(d => d.open = true));
-      document.getElementById('collapse-all').addEventListener('click', () => details.forEach(d => d.open = false));
-
-      const normalize = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-      input.addEventListener('input', () => {
-        const q = normalize(input.value.trim());
-        if (!q) {
-          searchable.forEach(el => el.classList.remove('search-hidden'));
-          sections.forEach(el => el.classList.remove('search-hidden'));
-          noResults.style.display = 'none';
-          count.textContent = 'Browse all';
-          return;
-        }
-
-        let visible = 0;
-        searchable.forEach(el => {
-          const hit = normalize(el.dataset.search || el.textContent).includes(q);
-          el.classList.toggle('search-hidden', !hit);
-          if (hit) visible++;
-        });
-
-        sections.forEach(section => {
-          const own = normalize(section.dataset.sectionSearch || section.textContent).includes(q);
-          const hits = section.querySelectorAll('[data-search]:not(.search-hidden)').length;
-          section.classList.toggle('search-hidden', !own && hits === 0);
-          if (hits > 0) section.querySelectorAll('details').forEach(d => d.open = true);
-        });
-
-        noResults.style.display = visible === 0 ? 'block' : 'none';
-        count.textContent = visible ? `${visible} matches` : 'No matches';
-      });
-    })();
-  </script>
+  <script src="/vivekadrishti/assets/js/scripture-index.js?v=1"></script>
 </body>
 </html>
