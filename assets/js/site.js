@@ -34,6 +34,15 @@
     details.addEventListener('toggle', () => { summary.textContent = details.open ? opened : closed; });
   });
 
+  const isScriptureIndex = /\/articles\/an-index-of-hindu-scripture\/?$/.test(location.pathname);
+  if (isScriptureIndex && !document.querySelector('link[data-scripture-index-clean]')) {
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = '/vivekadrishti/assets/css/scripture-index-clean.css?v=1';
+    css.dataset.scriptureIndexClean = 'true';
+    document.head.appendChild(css);
+  }
+
   const isCanto2 = /srimad-bhagavatam-second-canto-sridhara-svami-rebuild/.test(location.pathname);
   const rebuildRoot = document.querySelector('.empyrean-bhagavatam-rebuild, .empyrean-bhagavatam-rebuild-part');
   if (!rebuildRoot) return;
