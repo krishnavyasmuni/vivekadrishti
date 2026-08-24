@@ -3,7 +3,9 @@
   if (!root) return;
 
   const DATA_BASE = '/vivekadrishti/assets/data/canto10-sridhara-word-for-word/';
+  const OVERRIDE_BASE = '/vivekadrishti/assets/data/canto10-sridhara-literal-overrides/';
   const chapterCache = new Map();
+  const overrideCache = new Map();
 
   function verseIdentity(section) {
     const id = section.querySelector(':scope > .sb-verse')?.id || section.getAttribute('aria-labelledby') || '';
@@ -31,11 +33,21 @@
   async function chapterData(chapter) {
     if (!chapterCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=10`, { cache: 'force-cache' })
+      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=11`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
     return chapterCache.get(chapter);
+  }
+
+  async function literalOverrides(chapter) {
+    if (!overrideCache.has(chapter)) {
+      const file = String(chapter).padStart(2, '0');
+      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=1`, { cache: 'force-cache' })
+        .then((response) => response.ok ? response.json() : {})
+        .catch(() => ({})));
+    }
+    return overrideCache.get(chapter);
   }
 
   function normalizeRecord(value, chapter) {
@@ -70,6 +82,35 @@
       reviewed: true,
       word_for_word: records.map((record) => record.word_for_word).filter(Boolean).join(' ').trim(),
       translation: records.map((record) => record.translation).filter(Boolean).join(' ').trim()
+    };
+  }
+
+  function overrideForRange(data, identity) {
+    const directKey = identity.start === identity.end ? String(identity.start) : `${identity.start}-${identity.end}`;
+    const direct = data?.[directKey];
+    if (direct && typeof direct === 'object' && !Array.isArray(direct)) return direct;
+    if (identity.start === identity.end) return null;
+
+    const records = [];
+    for (let verse = identity.start; verse <= identity.end; verse += 1) {
+      const record = data?.[String(verse)];
+      if (!record || typeof record !== 'object' || Array.isArray(record)) return null;
+      records.push(record);
+    }
+    return {
+      reviewed: true,
+      word_for_word: records.map((record) => String(record.word_for_word || '').trim()).filter(Boolean).join(' ').trim(),
+      translation: records.map((record) => String(record.translation || '').trim()).filter(Boolean).join(' ').trim()
+    };
+  }
+
+  function mergeReviewedRecord(base, override) {
+    if (!base && !override) return null;
+    if (!override) return base;
+    return {
+      reviewed: true,
+      word_for_word: String(override.word_for_word || base?.word_for_word || '').trim(),
+      translation: String(override.translation || base?.translation || '').trim()
     };
   }
 
@@ -126,9 +167,9 @@
 
     const identity = verseIdentity(section);
     if (!identity) return;
-    const data = await chapterData(identity.chapter);
+    const [data, overrides] = await Promise.all([chapterData(identity.chapter), literalOverrides(identity.chapter)]);
     if (!section.isConnected) return;
-    const record = recordForRange(data, identity);
+    const record = mergeReviewedRecord(recordForRange(data, identity), overrideForRange(overrides, identity));
     if (!record) {
       section.dataset.sridharaEnglishStatus = 'awaiting-reviewed-translation';
       section.querySelector(':scope > .sb-commentary')?.remove();
