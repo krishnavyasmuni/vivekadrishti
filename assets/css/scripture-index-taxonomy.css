@@ -1,136 +1,263 @@
-/* Colour taxonomy layer for Purāṇa and Smṛti browsers */
+/* Source-aware taxonomy for Purāṇa and Smṛti browsers */
 .scripture-browser {
-  --tone-vaisnava:#416b9b;
-  --tone-saiva:#6c647c;
-  --tone-sakta:#a04f68;
-  --tone-saura:#b67a2d;
-  --tone-ganapatya:#8f6b37;
-  --tone-brahma:#786247;
-  --tone-mixed:#6f7d6f;
-  --tone-yaj:#2f7a78;
-  --tone-par:#b27a34;
-  --tone-other:#76649a;
-  --tone-upa:#a35c70;
+  --guna-sattvika:#66866d;
+  --guna-rajasa:#b57d42;
+  --guna-tamasa:#75667e;
+  --sect-vaisnava:#3f6f9f;
+  --sect-saiva:#6f657d;
+  --sect-sakta:#9b5267;
+  --sect-saura:#b98536;
+  --sect-ganapatya:#927048;
+  --sect-brahma:#7f654b;
+  --sect-mixed:#718077;
+  --source-yaj:#397977;
+  --source-par:#9a7242;
+  --source-madhava:#6f638d;
+  --source-upa:#8f6172;
+  --source-padma:#7f715a;
+}
+
+.taxonomy-title {
+  margin-bottom: 18px;
+}
+
+.taxonomy-title h2 {
+  letter-spacing: -.01em;
+}
+
+.taxonomy-title p {
+  max-width: 610px;
+}
+
+.taxonomy-tabs {
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.taxonomy-tabs button {
+  position: relative;
+  padding: 8px 10px;
+  border-color: #d3cabd;
+  background: rgba(255,255,255,.28);
+  color: #625a51;
+  font-size: 10px;
+}
+
+.taxonomy-tabs button.is-active {
+  border-color: #7a7065;
+  background: #4f5f5e;
+  color: #fff;
+}
+
+.smriti-tabs [data-sview="yaj"].is-active { background:var(--source-yaj); border-color:var(--source-yaj); }
+.smriti-tabs [data-sview="par"].is-active { background:var(--source-par); border-color:var(--source-par); }
+.smriti-tabs [data-sview="madhava"].is-active { background:var(--source-madhava); border-color:var(--source-madhava); }
+.smriti-tabs [data-sview="upa"].is-active { background:var(--source-upa); border-color:var(--source-upa); }
+.smriti-tabs [data-sview="guna"].is-active {
+  border-color:#84745f;
+  background:linear-gradient(90deg,var(--guna-sattvika) 0 33%,var(--guna-rajasa) 33% 66%,var(--guna-tamasa) 66% 100%);
 }
 
 .taxonomy-note {
   max-width: 680px;
-  margin: 0 0 14px !important;
-  color: var(--muted);
+  margin: 0 0 11px !important;
+  color: #746c62;
   font-size: 11px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
-.taxonomy-legend,
-.smriti-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 14px;
-  margin: 0 0 18px;
+.taxonomy-note strong {
+  color:#4e4841;
+}
+
+.source-line {
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px 8px;
+  align-items:baseline;
+  margin:0 0 16px;
+  padding:8px 0;
+  border-top:1px solid #ded7cd;
+  border-bottom:1px solid #ded7cd;
+  color:#91877a;
+  font-size:9px;
+  line-height:1.5;
+}
+
+.source-line > span {
+  color:#a36e37;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.source-line a {
+  color:#4b6d6c !important;
+  text-decoration:none !important;
+}
+
+.source-line a:hover {
+  text-decoration:underline !important;
+}
+
+.taxonomy-legend {
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 13px;
+  margin:0 0 17px;
 }
 
 .legend-item {
-  position: relative;
-  padding-left: 12px;
-  color: #746c63;
-  font-size: 9px;
-  line-height: 1.4;
-  white-space: nowrap;
+  position:relative;
+  padding-left:12px;
+  color:#777067;
+  font-size:9px;
+  line-height:1.45;
+  white-space:nowrap;
 }
 
 .legend-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #999;
-  transform: translateY(-50%);
+  content:'';
+  position:absolute;
+  left:0;
+  top:50%;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#999;
+  transform:translateY(-50%);
+}
+
+.guna-sattvika::before { background:var(--guna-sattvika); }
+.guna-rajasa::before { background:var(--guna-rajasa); }
+.guna-tamasa::before { background:var(--guna-tamasa); }
+.sect-vaisnava::before { background:var(--sect-vaisnava); }
+.sect-saiva::before { background:var(--sect-saiva); }
+.sect-sakta::before { background:var(--sect-sakta); }
+.sect-saura::before { background:var(--sect-saura); }
+.sect-ganapatya::before { background:var(--sect-ganapatya); }
+.sect-brahma::before { background:var(--sect-brahma); }
+.sect-mixed::before { background:var(--sect-mixed); }
+
+.sect-legend {
+  padding-top:1px;
+  opacity:.9;
+}
+
+.taxonomy-grid {
+  gap:7px 9px;
 }
 
 .taxonomy-button {
-  display: flex;
-  gap: 7px;
-  align-items: center;
-  justify-content: space-between;
-  border-left-width: 3px;
-}
-
-.taxonomy-button > span {
-  min-width: 0;
-}
-
-.taxonomy-button > small {
-  flex: 0 0 auto;
-  max-width: 42%;
-  overflow: hidden;
-  color: #8a8075;
-  font-size: 8px;
-  line-height: 1.2;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  --accent:#7d756c;
+  --wash:rgba(255,255,255,.28);
+  display:flex;
+  gap:8px;
+  align-items:center;
+  justify-content:space-between;
+  min-height:44px;
+  padding:10px 11px 10px 13px;
+  border:1px solid #d6cec2;
+  border-left:3px solid var(--accent);
+  background:var(--wash);
+  color:#443f39;
 }
 
 .taxonomy-button::after {
-  display: none;
+  display:none;
 }
 
-.tone-vaisnava { --tone: var(--tone-vaisnava); }
-.tone-saiva { --tone: var(--tone-saiva); }
-.tone-sakta { --tone: var(--tone-sakta); }
-.tone-saura { --tone: var(--tone-saura); }
-.tone-ganapatya { --tone: var(--tone-ganapatya); }
-.tone-brahma { --tone: var(--tone-brahma); }
-.tone-mixed { --tone: var(--tone-mixed); }
-.tone-yaj { --tone: var(--tone-yaj); }
-.tone-par { --tone: var(--tone-par); }
-.tone-other { --tone: var(--tone-other); }
-.tone-upa { --tone: var(--tone-upa); }
-
-.taxonomy-button[class*='tone-'] {
-  border-left-color: var(--tone);
+.taxonomy-button > span {
+  min-width:0;
+  font-size:11px;
 }
 
-.taxonomy-button[class*='tone-'].is-active {
-  border-color: var(--tone);
-  border-left-color: var(--tone);
-  background: color-mix(in srgb, var(--tone) 8%, white);
-  color: #39342f;
+.taxonomy-button > small {
+  flex:0 0 auto;
+  max-width:48%;
+  overflow:hidden;
+  color:#8b8277;
+  font-size:8px;
+  line-height:1.25;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
-.legend-item[class*='tone-']::before {
-  background: var(--tone);
+.taxonomy-button:hover {
+  border-color:#bdb3a5;
+  border-left-color:var(--accent);
+  background:#fffdfa;
+  transform:translateY(-1px);
 }
 
-.taxonomy-tabs button[class*='tone-'] {
-  border-color: color-mix(in srgb, var(--tone) 45%, #d5cec4);
+.taxonomy-button.is-active {
+  border-color:var(--accent);
+  border-left-color:var(--accent);
+  background:var(--wash);
+  color:#332f2b;
+  box-shadow:0 0 0 1px var(--accent) inset;
 }
 
-.taxonomy-tabs button[class*='tone-'].is-active {
-  border-color: var(--tone);
-  background: var(--tone);
-  color: #fff;
+/* Sectarian orientation: used when sect is the main visual classification. */
+.tone-vaisnava { --accent:var(--sect-vaisnava); --wash:rgba(63,111,159,.07); }
+.tone-saiva { --accent:var(--sect-saiva); --wash:rgba(111,101,125,.07); }
+.tone-sakta { --accent:var(--sect-sakta); --wash:rgba(155,82,103,.07); }
+.tone-saura { --accent:var(--sect-saura); --wash:rgba(185,133,54,.08); }
+.tone-ganapatya { --accent:var(--sect-ganapatya); --wash:rgba(146,112,72,.08); }
+.tone-brahma { --accent:var(--sect-brahma); --wash:rgba(127,101,75,.07); }
+.tone-mixed { --accent:var(--sect-mixed); --wash:rgba(113,128,119,.07); }
+
+/* Padma guṇa views: guṇa overrides the card colour; sect remains written in the small label. */
+.taxonomy-button.guna-sattvika { --accent:var(--guna-sattvika); --wash:rgba(102,134,109,.09); }
+.taxonomy-button.guna-rajasa { --accent:var(--guna-rajasa); --wash:rgba(181,125,66,.09); }
+.taxonomy-button.guna-tamasa { --accent:var(--guna-tamasa); --wash:rgba(117,102,126,.09); }
+
+/* Source colours in Smṛti list views. */
+.tone-source-yaj { --accent:var(--source-yaj); --wash:rgba(57,121,119,.065); }
+.tone-source-par { --accent:var(--source-par); --wash:rgba(154,114,66,.065); }
+.tone-source-madhava { --accent:var(--source-madhava); --wash:rgba(111,99,141,.065); }
+.tone-source-upa { --accent:var(--source-upa); --wash:rgba(143,97,114,.065); }
+.tone-source-padma { --accent:var(--source-padma); --wash:rgba(127,113,90,.065); }
+
+.source-grid .taxonomy-button > small {
+  display:none;
+}
+
+.taxonomy-info {
+  margin-top:20px;
+  padding-top:16px;
+  border-top:1px solid #d8d0c4;
+}
+
+.taxonomy-info .text-info-head strong {
+  font-size:20px;
 }
 
 .taxonomy-info .text-info-head span {
-  font-size: 9px;
+  color:#8a7c6d;
+  font-size:9px;
 }
 
-@supports not (background: color-mix(in srgb, red 10%, white)) {
-  .taxonomy-button[class*='tone-'].is-active {
-    background: #f5f3ef;
-  }
+.taxonomy-info p {
+  max-width:650px;
+  color:#655e56;
 }
 
-@media (max-width: 520px) {
-  .taxonomy-button > small {
-    max-width: 46%;
+@media (max-width:700px) {
+  .taxonomy-tabs {
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    padding-bottom:3px;
+    scrollbar-width:none;
   }
 
-  .taxonomy-legend,
-  .smriti-legend {
-    gap: 7px 12px;
-  }
+  .taxonomy-tabs::-webkit-scrollbar { display:none; }
+  .taxonomy-tabs button { flex:0 0 auto; }
+}
+
+@media (max-width:520px) {
+  .taxonomy-grid { grid-template-columns:1fr; }
+  .taxonomy-button > small { max-width:46%; }
+  .taxonomy-legend { gap:7px 11px; }
+  .source-line { font-size:8px; }
 }
