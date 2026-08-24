@@ -25,8 +25,31 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Preserve existing reviewed chapter files
+        shell: bash
+        run: |
+          mkdir -p /tmp/canto10-existing-wfw
+          cp assets/data/canto10-sridhara-word-for-word/[0-9][0-9].json /tmp/canto10-existing-wfw/ 2>/dev/null || true
+
       - name: Generate literal word-for-word data
         run: python3 tools/generate_canto10_sridhara_wfw.py
+
+      - name: Restore existing reviewed chapter files
+        shell: bash
+        run: |
+          cp /tmp/canto10-existing-wfw/*.json assets/data/canto10-sridhara-word-for-word/ 2>/dev/null || true
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          out = Path('assets/data/canto10-sridhara-word-for-word')
+          manifest_path = out / 'manifest.json'
+          if manifest_path.exists():
+              data = json.loads(manifest_path.read_text(encoding='utf-8'))
+              preserved = sorted(int(p.stem) for p in Path('/tmp/canto10-existing-wfw').glob('[0-9][0-9].json'))
+              data['preserved_existing_chapter_files'] = preserved
+              data['generated_missing_chapter_files'] = [n for n in range(1, 91) if n not in preserved]
+              manifest_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
 
       - name: Commit generated chapter files
         shell: bash
