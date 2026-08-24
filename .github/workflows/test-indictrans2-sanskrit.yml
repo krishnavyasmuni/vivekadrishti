@@ -4,6 +4,9 @@ on:
   push:
     branches: [fix/sridhara-canto2-canto10-complete]
     paths: ['.github/workflows/test-indictrans2-sanskrit.yml']
+  pull_request:
+    branches: [main]
+    paths: ['.github/workflows/test-indictrans2-sanskrit.yml']
   workflow_dispatch:
 
 jobs:
