@@ -31,7 +31,7 @@
   async function chapterData(chapter) {
     if (!chapterCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=11`, { cache: 'force-cache' })
+      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=12`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -41,14 +41,16 @@
   function normalizeRecord(value, chapter) {
     if (!value) return null;
     if (typeof value === 'string') {
-      return chapter <= 7 ? { reviewed: true, word_for_word: value.trim(), translation: '' } : null;
+      return chapter <= 7 ? { reviewed: true, source_aligned: false, word_for_word: value.trim(), translation: '' } : null;
     }
     if (typeof value !== 'object' || Array.isArray(value)) return null;
 
-    const reviewed = value.reviewed === true || (chapter <= 7 && value.generated !== true);
-    if (!reviewed) return null;
+    const reviewed = value.reviewed === true || (chapter <= 7 && value.generated !== true && value.source_aligned !== true);
+    const sourceAligned = value.source_aligned === true;
+    if (!reviewed && !sourceAligned) return null;
     return {
-      reviewed: true,
+      reviewed,
+      source_aligned: sourceAligned,
       word_for_word: String(value.word_for_word || value.wordForWord || '').trim(),
       translation: String(value.translation || value.direct_translation || '').trim()
     };
@@ -67,7 +69,8 @@
       records.push(record);
     }
     return {
-      reviewed: true,
+      reviewed: records.every((record) => record.reviewed),
+      source_aligned: records.some((record) => record.source_aligned),
       word_for_word: records.map((record) => record.word_for_word).filter(Boolean).join(' ').trim(),
       translation: records.map((record) => record.translation).filter(Boolean).join(' ').trim()
     };
@@ -121,6 +124,7 @@
     section.querySelectorAll(':scope > .sb-sridhara-wfw-details').forEach((node) => node.remove());
     if (!hasActualCommentary(section)) {
       section.querySelector(':scope > .sb-commentary')?.remove();
+      section.dataset.sridharaEnglishStatus = 'no-commentary';
       return;
     }
 
@@ -130,14 +134,14 @@
     if (!section.isConnected) return;
     const record = recordForRange(data, identity);
     if (!record) {
-      section.dataset.sridharaEnglishStatus = 'awaiting-reviewed-translation';
+      section.dataset.sridharaEnglishStatus = 'awaiting-direct-translation';
       section.querySelector(':scope > .sb-commentary')?.remove();
       return;
     }
 
     if (record.word_for_word) section.appendChild(makeWordForWordDetails(record.word_for_word));
     setDirectTranslation(section, record.translation);
-    section.dataset.sridharaEnglishStatus = 'reviewed';
+    section.dataset.sridharaEnglishStatus = record.reviewed ? 'reviewed' : 'source-aligned-direct';
   }
 
   function scan(node = root) {
