@@ -1,61 +1,96 @@
-/* Shastra-first scripture index: names, grouping, interaction. */
-.scripture-page .article-body{width:min(860px,calc(100% - 36px))}
-.scripture-browser{--sattvika:#6f8c72;--rajasa:#b88442;--tamasa:#7b6a87;--both:#8a617d;--maha:#b36f38;--upa:#487f87;--sect-vaisnava:#4b78b3;--sect-saiva:#765f91;--sect-sakta:#b65278;--sect-saura:#c9912f;--sect-brahma:#8a6746;--sect-mixed:#6e8178}
+/* Scripture index — grouped library view */
+.scripture-page .article-body{width:min(900px,calc(100% - 36px))}
+.scripture-browser{
+  --sattvika:#6f8c72;--rajasa:#c28334;--tamasa:#7b678e;
+  --sect-vaisnava:#4b78b3;--sect-saiva:#765f91;--sect-sakta:#b65278;--sect-saura:#c9912f;--sect-brahma:#8a6746;--sect-mixed:#6e8178;
+  --up-mukhya:#267c7a;--up-samanya:#718b5d;--up-sannyasa:#b87939;--up-yoga:#6570a8;--up-vaisnava:#4b78b3;--up-saiva:#765f91;--up-sakta:#b65278;
+  --veda-samhita:#b77c2c;--veda-brahmana:#3c7e79;--veda-aranyaka:#765f91;
+}
 .corpus-nav{justify-content:flex-start;gap:8px;padding-bottom:24px}
 .corpus-button{padding:10px 14px;border-radius:4px;font-size:12px;cursor:pointer}
 .browser-stage{padding-top:30px;min-height:0}
 .browser-stage[hidden]{display:none!important}
 .shastra-title{margin:0 0 20px!important;color:#195b5d!important;font-family:Vollkorn,Georgia,serif!important;font-size:31px!important;font-weight:500!important;line-height:1.1!important;text-align:left!important}
-.shastra-subnav{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
+.shastra-subnav{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
 .shastra-subnav button{border-radius:4px;padding:8px 10px;font-size:10px;cursor:pointer}
+.shastra-subnav button.is-active{background:#0f7678!important;border-color:#0f7678!important;color:#fff!important}
+.shastra-holder{display:block}
 .shastra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-.shastra-name{appearance:none;position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:100%;min-height:44px;padding:10px 12px;border:1px solid #d3cabd;border-radius:4px;background:rgba(255,255,255,.42);color:#49433d;font-family:Merriweather,Georgia,serif;font-size:11px;line-height:1.35;text-align:left;cursor:pointer;transition:background .15s ease,border-color .15s ease,transform .15s ease,box-shadow .15s ease}
-.shastra-name>span{display:block;width:100%}
-.shastra-name>small{display:block;width:100%;margin-top:5px;color:#8a8074;font-family:Merriweather,Georgia,serif;font-size:8px;font-weight:400;line-height:1.45;letter-spacing:0}
-.shastra-name:hover{background:#fff;border-color:#9d9182;transform:translateY(-1px)}
-.shastra-name.is-active{border-color:#0b6f72;background:#edf5f3;color:#155456}
-.upanishad-name>small{color:#7b7166}
-.purana-name{min-height:64px;padding:11px 86px 11px 12px;border-left-width:7px;box-shadow:inset 0 1px 0 rgba(255,255,255,.48)}
-.purana-name>small{max-width:100%;color:#74695e}
+.shastra-name{appearance:none;position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:100%;min-height:52px;padding:10px 12px;border:1px solid #d3cabd;border-left-width:7px;border-radius:4px;background:#fbf9f5;color:#49433d;font-family:Merriweather,Georgia,serif;font-size:11px;line-height:1.35;text-align:left;cursor:pointer;transition:background .15s ease,border-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.shastra-name>span{display:block;width:100%;font-weight:400}
+.shastra-name>small{display:block;width:100%;margin-top:5px;color:#82776c;font-family:Merriweather,Georgia,serif;font-size:8px;font-weight:400;line-height:1.45;letter-spacing:0}
+.shastra-name:hover{transform:translateY(-1px);filter:saturate(1.05)}
+.shastra-name.is-active{box-shadow:0 0 0 1px currentColor inset}
 
-/* Smrti guna colouring remains separate from Purana sectarian colouring. */
-.shastra-name.guna-sattvika:not(.purana-name){border-left:7px solid var(--sattvika);background:linear-gradient(90deg,rgba(111,140,114,.25),rgba(111,140,114,.09) 58%,rgba(255,255,255,.28))}
-.shastra-name.guna-rajasa:not(.purana-name){border-left:7px solid var(--rajasa);background:linear-gradient(90deg,rgba(184,132,66,.26),rgba(184,132,66,.095) 58%,rgba(255,255,255,.28))}
-.shastra-name.guna-tamasa:not(.purana-name){border-left:7px solid var(--tamasa);background:linear-gradient(90deg,rgba(123,106,135,.25),rgba(123,106,135,.09) 58%,rgba(255,255,255,.28))}
-.shastra-name.guna-sattvika:not(.purana-name).is-active{border-color:var(--sattvika);background:rgba(111,140,114,.24);color:#405b43}
-.shastra-name.guna-rajasa:not(.purana-name).is-active{border-color:var(--rajasa);background:rgba(184,132,66,.24);color:#715022}
-.shastra-name.guna-tamasa:not(.purana-name).is-active{border-color:var(--tamasa);background:rgba(123,106,135,.24);color:#554962}
+/* Vedas */
+.veda-family{margin:0 0 34px}
+.veda-family>h3{display:inline-block;margin:0 0 13px!important;padding:4px 9px;border-radius:3px;background:#e6efed;color:#2d6866!important;font-family:Vollkorn,Georgia,serif!important;font-size:16px!important;font-weight:600!important;line-height:1.2!important}
+.veda-type-group{margin:0 0 18px}
+.veda-type-group>h4{display:inline-block;margin:0 0 8px!important;padding:3px 7px;border-radius:3px;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;line-height:1.2!important}
+.veda-type-samhita>h4{background:rgba(183,124,44,.16);color:#875a1f!important}
+.veda-type-brahmana>h4{background:rgba(60,126,121,.15);color:#356d69!important}
+.veda-type-aranyaka>h4{background:rgba(118,95,145,.15);color:#66517d!important}
+.veda-samhita{border-left-color:var(--veda-samhita);background:linear-gradient(90deg,rgba(183,124,44,.19),rgba(251,249,245,.88) 62%)}
+.veda-brahmana{border-left-color:var(--veda-brahmana);background:linear-gradient(90deg,rgba(60,126,121,.18),rgba(251,249,245,.88) 62%)}
+.veda-aranyaka{border-left-color:var(--veda-aranyaka);background:linear-gradient(90deg,rgba(118,95,145,.17),rgba(251,249,245,.88) 62%)}
+.veda-samhita.is-active{color:#704a18;background:rgba(183,124,44,.24)}
+.veda-brahmana.is-active{color:#2e625e;background:rgba(60,126,121,.23)}
+.veda-aranyaka.is-active{color:#5c4771;background:rgba(118,95,145,.22)}
+.veda-empty{padding:11px 13px;border:1px dashed #d3cabd;border-radius:4px;color:#958b80;font-family:Merriweather,Georgia,serif;font-size:9px}
 
-/* Purana sectarian coding. Every Purana gets one clear visible tradition colour. */
-.purana-name{--sect-color:var(--sect-mixed);--sect-wash:rgba(110,129,120,.18);--sect-active:rgba(110,129,120,.28);--sect-label:"Mixed";border-left-color:var(--sect-color)!important;background:linear-gradient(90deg,var(--sect-wash),rgba(255,255,255,.34) 72%)!important}
-.purana-name::after{content:var(--sect-label);position:absolute;top:9px;right:9px;padding:3px 6px;border:1px solid var(--sect-color);border-radius:999px;background:rgba(255,255,255,.72);color:var(--sect-color);font-family:Merriweather,Georgia,serif;font-size:7px;font-weight:700;line-height:1;letter-spacing:.02em;white-space:nowrap}
-.purana-name.is-active{border-color:var(--sect-color)!important;background:var(--sect-active)!important;color:#3f3a35!important;box-shadow:0 0 0 1px var(--sect-color) inset}
+/* Upaniṣads — all groups on one page */
+.upanishad-group{margin:0 0 27px}
+.upanishad-group>h3{display:inline-block;margin:0 0 9px!important;padding:3px 8px;border-radius:3px;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;line-height:1.2!important}
+.upanishad-name{min-height:54px}
+.up-mukhya{--up-color:var(--up-mukhya);--up-wash:rgba(38,124,122,.17)}
+.up-samanya{--up-color:var(--up-samanya);--up-wash:rgba(113,139,93,.17)}
+.up-sannyasa{--up-color:var(--up-sannyasa);--up-wash:rgba(184,121,57,.17)}
+.up-yoga{--up-color:var(--up-yoga);--up-wash:rgba(101,112,168,.17)}
+.up-vaisnava{--up-color:var(--up-vaisnava);--up-wash:rgba(75,120,179,.17)}
+.up-saiva{--up-color:var(--up-saiva);--up-wash:rgba(118,95,145,.17)}
+.up-sakta{--up-color:var(--up-sakta);--up-wash:rgba(182,82,120,.17)}
+.upanishad-group>h3{background:var(--up-wash);color:var(--up-color)!important}
+.upanishad-name{border-left-color:var(--up-color);background:linear-gradient(90deg,var(--up-wash),rgba(251,249,245,.9) 62%)}
+.upanishad-name.is-active{color:var(--up-color);background:var(--up-wash)}
 
-/* Vaiṣṇava */
-.purana-name[data-name="Padma Purāṇa"],.purana-name[data-name="Viṣṇu Purāṇa"],.purana-name[data-name="Bhāgavata Purāṇa"],.purana-name[data-name="Garuḍa Purāṇa"],.purana-name[data-name="Nāradīya Purāṇa"],.purana-name[data-name="Brahmavaivarta Purāṇa"],.purana-name[data-name="Varāha Purāṇa"],.purana-name[data-name="Vāmana Purāṇa"],.purana-name[data-name="Nṛsiṃha Purāṇa"],.purana-name[data-name="Viṣṇudharmottara Purāṇa"],.purana-name[data-name="Viṣṇudharma Purāṇa"],.purana-name[data-name="Kriyāyogasāra Purāṇa"],.purana-name[data-name="Bṛhannāradīya Purāṇa"],.purana-name[data-name="Another Nāradīya Purāṇa"]{--sect-color:var(--sect-vaisnava);--sect-wash:rgba(75,120,179,.21);--sect-active:rgba(75,120,179,.31);--sect-label:"Vaiṣṇava"}
+/* Purāṇas — grouped by sect within Mahā / Upa / Both */
+.purana-sect-legend{display:flex;flex-wrap:wrap;gap:7px 10px;margin:0 0 21px;padding:9px 11px;border:1px solid #d9d0c4;border-radius:4px;background:rgba(255,255,255,.48)}
+.legend-chip{display:inline-flex;align-items:center;gap:6px;color:#5f574f;font-family:Merriweather,Georgia,serif;font-size:9px;line-height:1.2;white-space:nowrap}
+.legend-chip i{width:11px;height:11px;border-radius:3px;background:var(--sect-color);box-shadow:0 0 0 1px rgba(0,0,0,.08) inset}
+.purana-sect-group{margin:0 0 27px;--sect-color:var(--sect-mixed);--sect-wash:rgba(110,129,120,.17)}
+.purana-sect-group>h3{display:inline-block;margin:0 0 9px!important;padding:3px 8px;border-radius:3px;background:var(--sect-wash);color:var(--sect-color)!important;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;line-height:1.2!important}
+.purana-name{min-height:67px;padding-right:82px;border-left-color:var(--sect-color);background:linear-gradient(90deg,var(--sect-wash),rgba(251,249,245,.9) 65%)}
+.purana-name::after{content:attr(data-sect);position:absolute;top:9px;right:9px;padding:3px 6px;border:1px solid var(--sect-color);border-radius:999px;background:rgba(255,255,255,.78);color:var(--sect-color);font-family:Merriweather,Georgia,serif;font-size:7px;font-weight:700;line-height:1;white-space:nowrap}
+.purana-name.is-active{color:var(--sect-color);background:var(--sect-wash)}
+.sect-vaisnava{--sect-color:var(--sect-vaisnava);--sect-wash:rgba(75,120,179,.18)}
+.sect-saiva{--sect-color:var(--sect-saiva);--sect-wash:rgba(118,95,145,.18)}
+.sect-sakta{--sect-color:var(--sect-sakta);--sect-wash:rgba(182,82,120,.18)}
+.sect-saura{--sect-color:var(--sect-saura);--sect-wash:rgba(201,145,47,.19)}
+.sect-brahma{--sect-color:var(--sect-brahma);--sect-wash:rgba(138,103,70,.18)}
+.sect-mixed{--sect-color:var(--sect-mixed);--sect-wash:rgba(110,129,120,.18)}
 
-/* Śaiva */
-.purana-name[data-name="Śiva Purāṇa"],.purana-name[data-name="Liṅga Purāṇa"],.purana-name[data-name="Skanda Purāṇa"],.purana-name[data-name="Śivadharma Purāṇa"],.purana-name[data-name="Māheśvara Purāṇa"],.purana-name[data-name="Māheśa Purāṇa"],.purana-name[data-name="Nandikṛta Purāṇa"],.purana-name[data-name="Nandīśvara Purāṇa"],.purana-name[data-name="Bṛhannandīśvara Purāṇa"],.purana-name[data-name="Kaumāra Purāṇa"]{--sect-color:var(--sect-saiva);--sect-wash:rgba(118,95,145,.21);--sect-active:rgba(118,95,145,.31);--sect-label:"Śaiva"}
+/* Smṛti */
+.guna-group{margin:0 0 27px;padding:0}
+.guna-group>h3{display:inline-block;margin:0 0 9px!important;padding:3px 7px;border-radius:3px;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;letter-spacing:.03em}
+.guna-group.guna-sattvika>h3{background:rgba(111,140,114,.17);color:#49634c!important}
+.guna-group.guna-rajasa>h3{background:rgba(194,131,52,.17);color:#765222!important}
+.guna-group.guna-tamasa>h3{background:rgba(123,103,142,.17);color:#5b4d68!important}
+.shastra-name.guna-sattvika{border-left-color:var(--sattvika);background:linear-gradient(90deg,rgba(111,140,114,.20),rgba(251,249,245,.9) 62%)}
+.shastra-name.guna-rajasa{border-left-color:var(--rajasa);background:linear-gradient(90deg,rgba(194,131,52,.20),rgba(251,249,245,.9) 62%)}
+.shastra-name.guna-tamasa{border-left-color:var(--tamasa);background:linear-gradient(90deg,rgba(123,103,142,.19),rgba(251,249,245,.9) 62%)}
+.shastra-name.guna-sattvika.is-active{color:#49634c;background:rgba(111,140,114,.24)}
+.shastra-name.guna-rajasa.is-active{color:#765222;background:rgba(194,131,52,.24)}
+.shastra-name.guna-tamasa.is-active{color:#5b4d68;background:rgba(123,103,142,.23)}
 
-/* Śākta */
-.purana-name[data-name="Devī Bhāgavata Purāṇa"],.purana-name[data-name="Mahābhāgavata Purāṇa"],.purana-name[data-name="Kālikā Purāṇa"]{--sect-color:var(--sect-sakta);--sect-wash:rgba(182,82,120,.20);--sect-active:rgba(182,82,120,.30);--sect-label:"Śākta"}
-
-/* Saura */
-.purana-name[data-name="Saura Purāṇa"],.purana-name[data-name="Sāmba Purāṇa"],.purana-name[data-name="Āditya Purāṇa"]{--sect-color:var(--sect-saura);--sect-wash:rgba(201,145,47,.22);--sect-active:rgba(201,145,47,.32);--sect-label:"Saura"}
-
-/* Brahmā / cosmological */
-.purana-name[data-name="Brahma Purāṇa"],.purana-name[data-name="Brahmāṇḍa Purāṇa"],.purana-name[data-name="Another Brahmāṇḍa Purāṇa"]{--sect-color:var(--sect-brahma);--sect-wash:rgba(138,103,70,.20);--sect-active:rgba(138,103,70,.30);--sect-label:"Brahmā"}
-
-/* Purana category tabs stay neutral so they do not compete with sectarian colours. */
-.shastra-tab[data-group="puranas"].is-active{background:#f3eee6;border-color:#8e8174;color:#5d554d}
-
-.guna-group{margin:0 0 22px;padding:0}
-.guna-group h3{display:inline-block;margin:0 0 9px!important;padding:3px 7px;border-radius:3px;font-family:Merriweather,Georgia,serif!important;font-size:10px!important;font-weight:700!important;letter-spacing:.03em}
-.guna-group.guna-sattvika h3{background:rgba(111,140,114,.17);color:#49634c!important}
-.guna-group.guna-rajasa h3{background:rgba(184,132,66,.18);color:#765222!important}
-.guna-group.guna-tamasa h3{background:rgba(123,106,135,.17);color:#5b4d68!important}
+/* Info panel */
 .shastra-info{margin-top:18px;padding:15px 16px 14px;border:1px solid #d7cec1;border-top:3px solid #246d6d;border-radius:3px;background:#fffdf8}
 .shastra-info>strong{display:block;margin-bottom:8px;color:#244f50;font-family:Vollkorn,Georgia,serif;font-size:19px;font-weight:600;line-height:1.2}
 .shastra-info-rows{display:grid;gap:4px}
 .shastra-info-row{color:#6f665c;font-family:Merriweather,Georgia,serif;font-size:9px;line-height:1.55}
-@media(max-width:700px){.corpus-nav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.corpus-nav::-webkit-scrollbar{display:none}.corpus-button{flex:0 0 auto}.shastra-grid{grid-template-columns:1fr}.shastra-subnav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.shastra-subnav::-webkit-scrollbar{display:none}.shastra-subnav button{flex:0 0 auto}.purana-name{min-height:58px;padding-right:82px}.shastra-info{padding:13px 14px}}
+
+@media(max-width:700px){
+  .corpus-nav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.corpus-nav::-webkit-scrollbar{display:none}.corpus-button{flex:0 0 auto}
+  .shastra-grid{grid-template-columns:1fr}
+  .shastra-subnav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.shastra-subnav::-webkit-scrollbar{display:none}.shastra-subnav button{flex:0 0 auto}
+  .purana-name{padding-right:80px}.shastra-info{padding:13px 14px}
+}
