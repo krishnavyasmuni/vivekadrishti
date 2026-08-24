@@ -80,6 +80,13 @@
       script.dataset.canto2Renderer = 'true';
       document.head.appendChild(script);
     }
+    if (!document.querySelector('script[data-canto2-reviewed-sridhara]')) {
+      const script = document.createElement('script');
+      script.src = '/vivekadrishti/assets/js/canto2-reviewed-sridhara.js?v=1';
+      script.async = false;
+      script.dataset.canto2ReviewedSridhara = 'true';
+      document.head.appendChild(script);
+    }
     return;
   }
 
