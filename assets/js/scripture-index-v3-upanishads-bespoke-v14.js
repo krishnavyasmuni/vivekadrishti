@@ -140,8 +140,8 @@
   function infobox(name,e,i,ss,art){
     const rows=[];rows.push(['Type',roman(groupOf(name))]);
     rows.push(['Muktika no.',String(ORDER.indexOf(name)+1)]);
-    if(i.veda)rows.push(['Veda',roman(i.veda));
-    else if(e.veda)rows.push(['Veda',roman(e.veda));
+    if(i.veda)rows.push(['Veda',roman(i.veda)]);
+    else if(e.veda)rows.push(['Veda',roman(e.veda)]);
     if(e.traditionalAuthor)rows.push(['School / frame',compact(e.traditionalAuthor,80)]);
     if(e.period)rows.push(['Date',compact(e.period,115)]);
     if(e.extent)rows.push(['Structure',compact(e.extent,130)]);
