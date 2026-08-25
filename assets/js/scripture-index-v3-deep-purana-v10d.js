@@ -1,6 +1,17 @@
 (() => {
   const D=window.SCRIPTURE_DETAIL_DATA=window.SCRIPTURE_DETAIL_DATA||{};
-  const put=(name,data)=>{const k=`Purāṇa:${name}`;D[k]=Object.assign({},D[name]||{},D[k]||{},data);};
+  const put=(name,data)=>{
+    const k='Purāṇa:'+name;
+    const base=Object.assign({},D[name]||{},D[k]||{});
+    const prior=Array.isArray(base.articleSections)?base.articleSections:[];
+    const incoming=Array.isArray(data.articleSections)?data.articleSections:[];
+    D[k]=Object.assign({},base,data);
+    if(prior.length||incoming.length){
+      const byTitle=new Map();
+      [...prior,...incoming].forEach((section,i)=>byTitle.set(String(section?.title||('section-'+i)),section));
+      D[k].articleSections=[...byTitle.values()];
+    }
+  };
   const H='R. C. Hazra, Studies in the Upapuranas';
   const R='Ludo Rocher, The Puranas';
   const C='Purana catalogue passages used in this index: Devi Bhagavata 1.3, Kurma Purana 1.1, Padma Purana Patala-khanda 111, and Brihaddharma Purana 1.25';
