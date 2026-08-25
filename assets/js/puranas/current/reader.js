@@ -59,7 +59,7 @@
     'Nṛsiṃha Purāṇa':{file:'Kalighat_Narasimha_avatar.jpg',caption:'A Kalighat image of Nṛsiṃha used in the Wikipedia article on the Nṛsiṃha Purāṇa.',exact:true},
     'Kālikā Purāṇa':{file:'Kamakhya_Temple.jpg',caption:'Kāmākhyā Temple in Assam, central to the Kālikā Purāṇa. The article has no suitable lead image, so this is a representative Commons image.',exact:false},
     'Sāmba Purāṇa':{file:'Konark_Sun_Temple_Statue_of_Sun_God.jpg',caption:'Sūrya at Konark, used in the Wikipedia article on the Sāmba Purāṇa.',exact:true},
-    'Saura Purāṇa':{file:'Vayu_Deva.jpg',caption:'A classical Hindu deity painting. The extant Saura Purāṇa is predominantly Śaiva and has no suitable Wikipedia article image; this representative image marks that absence.',exact:false},
+    'Saura Purāṇa':{file:'The_Creation_of_the_Cosmic_Ocean_and_the_Elements_(detail),_folio_3_from_the_Shiva_Purana,_c._1828.jpg',caption:'A Śiva Purāṇa folio, used here as a representative image because the extant Saura Purāṇa is predominantly Śaiva/Pāśupata and has no suitable Wikipedia article image.',exact:false},
     'Viṣṇudharmottara Purāṇa':{file:'1150_CE_Hoysaleswara_temple_Halebidu_Karnataka,_Inscription,_Dancing_Saraswati_2.jpg',caption:'Dancing Sarasvatī with the arts and a manuscript, representative of the Viṣṇudharmottara Purāṇa’s encyclopedic arts teaching.',exact:false},
     'Bṛhaddharma Purāṇa':{file:'Kalighat_pictures_Indian_gods_f.25.jpg',caption:'A Bengal image of Durgā, representative of the Bṛhaddharma Purāṇa’s eastern and Goddess-oriented setting.',exact:false},
     'Viṣṇudharma Purāṇa':{file:'Vishnu.jpg',caption:'A Pahari painting of Viṣṇu, representative of the Vaiṣṇava Viṣṇudharma Purāṇa.',exact:false},
