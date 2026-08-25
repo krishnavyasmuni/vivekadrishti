@@ -1,6 +1,17 @@
 (() => {
   const D=window.SCRIPTURE_DETAIL_DATA=window.SCRIPTURE_DETAIL_DATA||{};
-  const put=(name,data)=>{const k=`Purāṇa:${name}`;D[k]=Object.assign({},D[name]||{},D[k]||{},data);};
+  const put=(name,data)=>{
+    const k='Purāṇa:'+name;
+    const base=Object.assign({},D[name]||{},D[k]||{});
+    const prior=Array.isArray(base.articleSections)?base.articleSections:[];
+    const incoming=Array.isArray(data.articleSections)?data.articleSections:[];
+    D[k]=Object.assign({},base,data);
+    if(prior.length||incoming.length){
+      const byTitle=new Map();
+      [...prior,...incoming].forEach((section,i)=>byTitle.set(String(section?.title||('section-'+i)),section));
+      D[k].articleSections=[...byTitle.values()];
+    }
+  };
   const merge=(a,b)=>[...new Map([...(a||[]),...b].map(x=>[typeof x==='string'?x:(x.title||JSON.stringify(x)),x])).values()];
   const R='Ludo Rocher, The Puranas (Wiesbaden, 1986)';
   const H='R. C. Hazra, Studies in the Puranic Records on Hindu Rites and Customs and related Purana studies';
