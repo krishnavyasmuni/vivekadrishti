@@ -5,7 +5,7 @@
   if (!root || !host) return;
 
   const PRABHUPADA_BASE = 'https://raw.githubusercontent.com/vishvAsa/purANam_vaiShNavam/content/bhAgavatam/gauDIyo_abhaya-charaNaH/10/';
-  const SRIDHARA_BASE = 'https://raw.githubusercontent.com/vishvAsa/purANam_vaiShNavam/content/bhAgavatam/gauDIya-prastutiH/10/';
+  const SRIDHARA_BASE = '/vivekadrishti/assets/data/canto10-sridhara-source/';
   const textCache = new Map();
   const chapterFile = (chapter) => String(chapter).padStart(2, '0');
   const prabhupadaUrl = (chapter) => `${PRABHUPADA_BASE}${chapterFile(chapter)}.md`;
@@ -16,30 +16,7 @@
     return chapter >= 1 && chapter <= 90 ? chapter : 1;
   }
 
-  function sridharaPath(chapter) {
-    if (chapter <= 11) return `01-11/${chapterFile(chapter)}.md`;
-    if (chapter <= 17) return `12-17/${chapterFile(chapter)}.md`;
-    if (chapter <= 28) return `18-28/${chapterFile(chapter)}.md`;
-    if (chapter === 29) return '29-33_rasa-panchAdhyAya/29.md';
-    if (chapter === 30) return '29-33_rasa-panchAdhyAya/30_atha-triMshodhyAyaH_unnumbered.md';
-    if (chapter === 31) return '29-33_rasa-panchAdhyAya/31_athaikatriMshodhyAyaH_unnumbered.md';
-    if (chapter === 32) return '29-33_rasa-panchAdhyAya/32_atha-dvAtriMshodhyAyaH_unnumbered.md';
-    if (chapter === 33) return '29-33_rasa-panchAdhyAya/33_atha-trayastriMshodhyAyaH_unnumbered.md';
-    if (chapter <= 49) return `34-49/${chapterFile(chapter)}.md`;
-    if (chapter <= 59) return `50-59/${chapterFile(chapter)}.md`;
-    if (chapter <= 69) return `60-69/${chapterFile(chapter)}.md`;
-    if (chapter <= 79) return `70-79/${chapterFile(chapter)}.md`;
-    if (chapter >= 80 && chapter <= 84) return '80-86/70_athAshItitamo-dhyayaH.md';
-    if (chapter === 85) return '80-86/72_bhagavatA_devakI-prArthanayA_tadIya-mRta-putrAN.md';
-    if (chapter === 86) return '80-86/74_10_86_1.md';
-    if (chapter === 87) return '87.md';
-    if (chapter === 88) return '88-90/70.md';
-    if (chapter === 89) return '88-90/71.md';
-    if (chapter === 90) return '88-90/72.md';
-    throw new Error(`No Śrīdhara source mapping for Chapter ${chapter}`);
-  }
-
-  const sridharaUrl = (chapter) => `${SRIDHARA_BASE}${sridharaPath(chapter)}`;
+  const sridharaUrl = (chapter) => `${SRIDHARA_BASE}${chapterFile(chapter)}.json?v=1`;
 
   async function fetchText(url) {
     if (!textCache.has(url)) {
@@ -52,6 +29,12 @@
       }));
     }
     return textCache.get(url);
+  }
+
+  async function fetchJson(url) {
+    const response = await fetch(url, { cache: 'force-cache' });
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    return response.json();
   }
 
   const devaDigits = new Map(Object.entries({'०':'0','१':'1','२':'2','३':'3','४':'4','५':'5','६':'6','७':'7','८':'8','९':'9'}));
@@ -165,6 +148,16 @@
     return entries;
   }
 
+  function parseLocalSridhara(data) {
+    return Object.values(data?.entries || {}).filter((entry) => (
+      entry && entry.source_available && String(entry.sanskrit || '').trim()
+    )).map((entry) => ({
+      start: Number(entry.start),
+      end: Number(entry.end),
+      text: String(entry.sanskrit).trim()
+    }));
+  }
+
   function sridharaForRange(entries, start, end, chapter) {
     return entries.filter((entry) => entry.end >= start && entry.start <= end).map((entry) => {
       const label = entry.start === entry.end ? `10.${chapter}.${entry.start}` : `10.${chapter}.${entry.start}–${entry.end}`;
@@ -269,12 +262,12 @@
     if (status) status.textContent = `Loading Canto 10, Chapter ${chapter}…`;
 
     try {
-      const [prabhupadaMarkdown, sridharaMarkdown] = await Promise.all([
+      const [prabhupadaMarkdown, sridharaData] = await Promise.all([
         fetchText(prabhupadaUrl(chapter)),
-        fetchText(sridharaUrl(chapter))
+        fetchJson(sridharaUrl(chapter))
       ]);
       const entries = parsePrabhupada(prabhupadaMarkdown);
-      const sridharaEntries = parseSridhara(sridharaMarkdown, chapter);
+      const sridharaEntries = parseLocalSridhara(sridharaData);
       if (!entries.length) throw new Error('No Prabhupāda verse entries found');
       loading.remove();
       entries.forEach((entry) => shell.appendChild(renderVerse(chapter, entry, sridharaEntries)));

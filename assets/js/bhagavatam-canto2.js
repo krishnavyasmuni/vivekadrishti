@@ -128,6 +128,39 @@
     return commentary;
   }
 
+  function replaceCommentaryWithLiteralGloss(section, commentary, wordNodes) {
+    if (!commentary) {
+      commentary = document.createElement('p');
+      commentary.className = 'sb-commentary';
+    }
+    commentary.replaceChildren();
+    const label = document.createElement('strong');
+    label.className = 'sb-commentary-label';
+    label.textContent = 'Śrīdhara’s Commentary. ';
+    commentary.appendChild(label);
+
+    const usable = wordNodes.filter((node) => !node.matches?.('.sb-sridhara-wfw-missing'));
+    if (!usable.length) {
+      const missing = document.createElement('span');
+      missing.className = 'sb-commentary-text sb-sridhara-wfw-missing';
+      missing.textContent = 'A verified literal word-for-word English gloss has not yet been completed for this passage.';
+      commentary.appendChild(missing);
+      commentary.dataset.verified = 'false';
+      return commentary;
+    }
+
+    usable.forEach((node, index) => {
+      const clone = node.cloneNode(true);
+      const oldLabel = clone.querySelector?.(':scope > strong:first-child');
+      if (oldLabel && /^Śrīdhara word-for-word\.?$/i.test((oldLabel.textContent || '').trim())) oldLabel.remove();
+      if (index) commentary.appendChild(document.createTextNode(' '));
+      while (clone.firstChild) commentary.appendChild(clone.firstChild);
+    });
+    commentary.dataset.verified = 'true';
+    section.dataset.sridharaCommentaryFormat = 'literal-word-for-word';
+    return commentary;
+  }
+
   function normalizeCanto2Verse(heading) {
     let section = heading.closest('section[aria-labelledby^="sb-"]');
     if (!section) section = wrapLegacyVerse(heading);
@@ -251,7 +284,11 @@
       details.open = false;
     });
 
-    const commentary = findCommentary(section, translation);
+    const commentary = replaceCommentaryWithLiteralGloss(
+      section,
+      findCommentary(section, translation),
+      sridharaWordNodes
+    );
 
     heading.after(rule);
     let anchor = rule;
