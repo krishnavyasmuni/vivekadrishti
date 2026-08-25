@@ -59,7 +59,7 @@
   async function literalOverrides(chapter) {
     if (!overrideCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=3`, { cache: 'force-cache' })
+      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=4`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
