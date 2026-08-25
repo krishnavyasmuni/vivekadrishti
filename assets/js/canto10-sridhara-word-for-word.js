@@ -59,7 +59,7 @@
   async function literalOverrides(chapter) {
     if (!overrideCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=2`, { cache: 'force-cache' })
+      overrideCache.set(chapter, fetch(`${OVERRIDE_BASE}${file}.json?v=3`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -214,10 +214,7 @@
     }
 
     if (record.word_for_word) section.appendChild(makeWordForWordDetails(record.word_for_word));
-    // The visible commentary line is the same verified literal gloss—not a
-    // separate prose summary.  Older reviewed files store it only in
-    // `word_for_word`; newer overrides may also supply `translation`.
-    setDirectTranslation(section, record.translation || record.word_for_word);
+    setDirectTranslation(section, record.translation);
     section.dataset.sridharaEnglishStatus = 'reviewed';
   }
 
