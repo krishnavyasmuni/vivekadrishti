@@ -69,7 +69,7 @@
   function normalizeRecord(value, chapter) {
     if (!value) return null;
     if (typeof value === 'string') {
-      return chapter <= 7 ? {
+      return chapter <= 13 ? {
         reviewed: true,
         word_for_word: value.trim(),
         translation: '',
@@ -78,7 +78,7 @@
     }
     if (typeof value !== 'object' || Array.isArray(value)) return null;
 
-    const reviewed = value.reviewed === true || (chapter <= 7 && value.generated !== true);
+    const reviewed = value.reviewed === true || (chapter <= 13 && value.generated !== true);
     if (!reviewed) return null;
     const wordForWord = String(value.word_for_word || value.wordForWord || '').trim();
     const translation = String(value.translation || value.direct_translation || '').trim();
