@@ -120,9 +120,28 @@
   async function repairArt(reader){
     if(reader.dataset.upArtV2==='1') return;
     reader.dataset.upArtV2='1';
-    generic(reader); // immediately clears every legacy manuscript disclaimer
+    generic(reader);
     const page=await lookup(reader);
     if(page && reader.isConnected) wiki(reader,page);
+  }
+
+  function cleanDefaultCitationSpam(reader){
+    reader.querySelectorAll('.kena-lead, .kena-section').forEach(block=>{
+      let keptDefault=false;
+      block.querySelectorAll('p').forEach(p=>{
+        const cites=[...p.querySelectorAll('.ch-cite')];
+        if(cites.length!==3) return;
+        const nums=cites.map(c=>Number((c.textContent||'').replace(/\D/g,'')));
+        if(nums[0]!==1 || nums[1]!==2 || nums[2]!==3) return;
+        if(!keptDefault){
+          cites[1].remove();
+          cites[2].remove();
+          keptDefault=true;
+        }else{
+          cites.forEach(c=>c.remove());
+        }
+      });
+    });
   }
 
   function repairCites(reader){
@@ -137,6 +156,7 @@
       if(source){a.href=source.href;a.target='_blank';a.rel='noopener';} else a.href=`#cup-ref-${n}`;
       b.replaceWith(a);
     });
+    cleanDefaultCitationSpam(reader);
   }
 
   function repair(reader){
@@ -167,5 +187,5 @@
       .current-up-generic-art figcaption{display:none!important}
     `;document.head.append(s);
   }
-  window.SCRIPTURE_UPANISHAD_IMAGE_RESOLVER='art-v2-new-file';
+  window.SCRIPTURE_UPANISHAD_IMAGE_RESOLVER='art-v2-citation-cleanup';
 })();
