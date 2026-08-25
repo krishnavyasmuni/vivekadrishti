@@ -1,0 +1,6 @@
+.scripture-wiki-article{max-width:1120px;margin:0 auto;color:#202122;font-family:Merriweather,Georgia,serif;font-size:16px;line-height:1.72}
+.veda-family-name{display:flex!important;flex-direction:column!important;width:100%!important;margin:0 0 13px!important;padding:10px 13px!important;border:1px solid #b9d0cc!important;border-left:7px solid #2d6866!important;border-radius:4px!important;background:#e6efed!important;color:#2d6866!important;font-family:Vollkorn,Georgia,serif!important;font-size:17px!important;font-weight:600!important;line-height:1.2!important;text-align:left!important;cursor:pointer!important}
+.veda-family-name small{margin-top:4px!important;color:#557572!important;font-family:Merriweather,Georgia,serif!important;font-size:8px!important;font-weight:400!important}
+.veda-family-name:hover{background:#dce9e6!important}
+.veda-family-name.is-active{box-shadow:0 0 0 1px #2d6866 inset!important}
+@media(max-width:850px){.scripture-wiki-article{font-size:16px}}
