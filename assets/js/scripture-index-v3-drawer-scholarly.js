@@ -4,7 +4,7 @@
 
   // Exact scope requested for the encyclopedia reader. Kena keeps its bespoke page.
   const ELIGIBLE = new Set([
-    'Saṃhitā', 'Brāhmaṇa', 'Āraṇyaka',
+    'Veda', 'Saṃhitā', 'Brāhmaṇa', 'Āraṇyaka',
     'Upaniṣad',
     'Mahāpurāṇa', 'Upapurāṇa', 'Both',
     'Itihāsa', 'Smṛti'
@@ -30,6 +30,7 @@
     if (kind === 'Upaniṣad') return `Upaniṣad:${name}`;
     if (kind === 'Smṛti') return `Smṛti:${name}`;
     if (kind === 'Itihāsa') return `Itihāsa:${name}`;
+    if (kind === 'Veda') return `Vedic:${name}`;
     if (['Mahāpurāṇa','Upapurāṇa','Both'].includes(kind)) return `Purāṇa:${name}`;
     if (['Saṃhitā','Brāhmaṇa','Āraṇyaka'].includes(kind)) return `Vedic:${name}`;
     return `${kind}:${name}`;
@@ -53,9 +54,6 @@
 
   function resolveEntry(info) {
     const D = window.SCRIPTURE_DETAIL_DATA || {};
-    // Merge the older individual article data with the newer scholarly dossier.
-    // This preserves each text's unique overview, contents and themes while adding
-    // history, dating, manuscript, reception and bibliography fields where present.
     const base = D[info.name] || {};
     const exact = D[keyFor(info.kind, info.name)] || {};
     return Object.assign({}, base, exact);
@@ -83,6 +81,9 @@
   }
 
   function categorySentence(info) {
+    if (info.kind === 'Veda') {
+      return `This page is the overview for the <b>${esc(info.name)}</b> textual tradition. The individual Saṃhitā recensions, Brāhmaṇas and Āraṇyakas belonging to it have their own entries below in the index.`;
+    }
     if (info.kind === 'Saṃhitā') {
       return `This is a <i>Saṃhitā</i>: the collected mantra or liturgical text of a Vedic school.${info.veda ? ` It belongs to the ${esc(info.veda)}.` : ''}${info.branch ? ` The version represented here is the ${esc(info.branch)} tradition.` : ''}`;
     }
@@ -152,7 +153,7 @@
     let body = entry.structure ? p(esc(entry.structure)) : '';
 
     if (info.kind === 'Upaniṣad') body += `<div class="kena-note"><b>Numbering.</b> Words such as <i>khaṇḍa</i>, <i>vallī</i> and <i>adhyāya</i> are traditional names for sections or chapters. The exact system differs from one Upaniṣad to another.</div>`;
-    if (['Saṃhitā','Brāhmaṇa','Āraṇyaka'].includes(info.kind)) body += `<div class="kena-note"><b>Numbering.</b> Vedic books use different names for their divisions—such as <i>maṇḍala</i>, <i>kāṇḍa</i>, <i>prapāṭhaka</i> and <i>adhyāya</i>. They are traditional units, roughly comparable to books, parts, lessons or chapters depending on the work.</div>`;
+    if (['Veda','Saṃhitā','Brāhmaṇa','Āraṇyaka'].includes(info.kind)) body += `<div class="kena-note"><b>Numbering.</b> Vedic books use different names for their divisions—such as <i>maṇḍala</i>, <i>kāṇḍa</i>, <i>prapāṭhaka</i> and <i>adhyāya</i>. They are traditional units, roughly comparable to books, parts, lessons or chapters depending on the work.</div>`;
     if (['Mahāpurāṇa','Upapurāṇa','Both'].includes(info.kind)) body += `<div class="kena-note"><b>Numbering.</b> A Purāṇa may call a major division a <i>skandha</i>, <i>aṃśa</i> or <i>khaṇḍa</i>. In plain English these are books or sections; the terminology varies by text.</div>`;
 
     if (map.length) body += `<h3>How it is arranged</h3><div class="kena-structure">${map.map((x,i) => `<div class="kena-structure-row"><b>Part ${i + 1}</b><span>${esc(x)}</span></div>`).join('')}</div>`;
