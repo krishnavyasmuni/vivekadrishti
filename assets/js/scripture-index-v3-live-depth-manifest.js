@@ -14,4 +14,11 @@
     if(document.querySelector(`script[src="${src}"]`))return;
     const s=document.createElement('script');s.src=src;s.async=false;document.head.appendChild(s);
   });
+
+  // Purāṇa citation cleanup must run after every renderer/citation wrapper is installed.
+  window.addEventListener('load',()=>{
+    const src='/vivekadrishti/assets/js/purana-citation-cleanup.js?build=20260825-2105';
+    if(document.querySelector(`script[src="${src}"]`))return;
+    const s=document.createElement('script');s.src=src;document.body.appendChild(s);
+  },{once:true});
 })();
