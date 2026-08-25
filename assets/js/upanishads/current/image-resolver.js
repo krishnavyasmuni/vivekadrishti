@@ -1,8 +1,14 @@
 (() => {
   const ROOT = '.current-up-reader';
-  const FALLBACK_ANTHOLOGY = 'https://commons.wikimedia.org/w/thumb.php?f=Thirty_minor_Upanishads_%28IA_thirtyminorupani00naraiala%29.pdf&page=1&width=640';
-  const FALLBACK_MANUSCRIPT = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Aitareya_Upanishad%2C_Sanskrit%2C_Rigveda%2C_Devanagari_script%2C_1865_CE_manuscript.jpg';
-  const FALLBACK_GRANTHA = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Katha_Upanishad%2C_Sanskrit%2C_Grantha_script%2C_Whish_Manuscript_Collection_acquired_1836_CE.jpg';
+
+  // Stable Commons JPG witnesses used only when a text-specific image cannot render.
+  // Captions explicitly identify these as representative display images.
+  const FALLBACKS = {
+    paper: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Aitareya_Upanishad%2C_Sanskrit%2C_Rigveda%2C_Devanagari_script%2C_1865_CE_manuscript.jpg',
+    grantha: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Katha_Upanishad%2C_Sanskrit%2C_Grantha_script%2C_Whish_Manuscript_Collection_acquired_1836_CE.jpg',
+    gitaPalm: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Bhagavad_Gita_Grantha_script_Sanskrit.jpg',
+    bhagavataPalm: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Bhagavata_Purana%2C_Sanskrit%2C_Malayalam_script%2C_Whish_manuscript_collection%2C_acquired_1836_CE.jpg'
+  };
 
   const decode = s => { try { return decodeURIComponent(s); } catch { return s; } };
   const fileFromCommons = src => {
@@ -31,13 +37,10 @@
       const id = src.split('/details/')[1].split(/[?#/]/)[0];
       return id ? `https://archive.org/services/img/${id}` : src;
     }
-
     if (/^https:\/\/archive\.org\/download\//i.test(src) && /\.pdf(?:[?#]|$)/i.test(src)) {
-      const parts = src.split('/download/')[1].split('/');
-      const id = parts[0];
+      const id = src.split('/download/')[1].split('/')[0];
       return id ? `https://archive.org/services/img/${id}` : src;
     }
-
     if (/^https:\/\/upload\.wikimedia\.org\//i.test(src) && /\.pdf(?:[?#]|$)/i.test(src)) {
       const last = decode(src.split('/').pop().split(/[?#]/)[0]);
       return commonsRenderable(last);
@@ -46,27 +49,51 @@
   }
 
   function titleFor(img) {
-    return img.closest('.current-up-reader')?.querySelector('.kena-infobox-title')?.textContent?.trim() || 'this Upanishad';
+    return img.closest(ROOT)?.querySelector('.kena-infobox-title')?.textContent?.trim() || 'this Upanishad';
+  }
+
+  function typeFor(img) {
+    const rows = [...(img.closest(ROOT)?.querySelectorAll('.kena-info-row') || [])];
+    const row = rows.find(r => r.querySelector('b')?.textContent?.trim() === 'Type');
+    return row?.querySelector('span')?.textContent?.trim() || '';
+  }
+
+  function categoryFallbacks(img) {
+    const type = typeFor(img);
+    if (/Yoga|Sannyāsa/i.test(type)) return [FALLBACKS.grantha, FALLBACKS.gitaPalm, FALLBACKS.paper];
+    if (/Vaiṣṇava/i.test(type)) return [FALLBACKS.bhagavataPalm, FALLBACKS.grantha, FALLBACKS.paper];
+    if (/Śaiva|Saiva|Śākta|Sakta/i.test(type)) return [FALLBACKS.gitaPalm, FALLBACKS.grantha, FALLBACKS.paper];
+    return [FALLBACKS.paper, FALLBACKS.grantha, FALLBACKS.gitaPalm];
   }
 
   function fallbackList(img) {
     const own = normalize(img.getAttribute('src'));
-    const list = [own];
-    if (!own.includes('Thirty_minor_Upanishads')) list.push(FALLBACK_ANTHOLOGY);
-    if (!own.includes('Aitareya_Upanishad')) list.push(FALLBACK_MANUSCRIPT);
-    if (!own.includes('Katha_Upanishad')) list.push(FALLBACK_GRANTHA);
-    return [...new Set(list.filter(Boolean))];
+    return [...new Set([own, ...categoryFallbacks(img)].filter(Boolean))];
   }
 
-  function setCaption(img, fallbackIndex) {
-    if (fallbackIndex < 1) return;
+  function setFallbackCaption(img) {
     const cap = img.closest('figure')?.querySelector('figcaption');
     if (!cap) return;
-    const title = titleFor(img);
-    if (fallbackIndex === 1) {
-      cap.textContent = `Public-domain Upanishad anthology witness used as a display fallback for ${title}; see the references below for text-specific manuscript and edition sources.`;
-    } else {
-      cap.textContent = `Vedic manuscript witness used as a display fallback for ${title}; the article references identify the text-specific witnesses where available.`;
+    cap.textContent = `Representative Sanskrit manuscript image used as a display placeholder for ${titleFor(img)}; text-specific manuscript and edition evidence is given in the article and references.`;
+  }
+
+  function loadChoice(img, index) {
+    const list = JSON.parse(img.dataset.upImageChoices || '[]');
+    if (index >= list.length) return false;
+    img.dataset.upImageChoice = String(index);
+    if (index > 0) setFallbackCaption(img);
+    img.src = list[index];
+    return true;
+  }
+
+  function advance(img) {
+    if (!img.isConnected) return;
+    const next = Number(img.dataset.upImageChoice || 0) + 1;
+    if (!loadChoice(img, next)) {
+      // The last three choices are known Commons JPGs. If every remote request somehow
+      // fails, keep the figure collapsed rather than leaving a large empty grey box.
+      const figure = img.closest('figure');
+      if (figure) figure.style.display = 'none';
     }
   }
 
@@ -77,8 +104,8 @@
     img.referrerPolicy = 'no-referrer';
     img.decoding = 'async';
 
-    // The reader used to delete the figure immediately on the first failed request.
-    // Remove that legacy handler so the resolver gets a chance to repair/retry it.
+    // The old reader removed figures immediately on first error. Disable that so the
+    // fallback chain always gets a chance to run.
     img.removeAttribute('onerror');
     img.onerror = null;
 
@@ -86,21 +113,19 @@
     img.dataset.upImageChoices = JSON.stringify(choices);
     img.dataset.upImageChoice = '0';
 
-    img.addEventListener('error', () => {
-      const list = JSON.parse(img.dataset.upImageChoices || '[]');
-      const i = Number(img.dataset.upImageChoice || 0) + 1;
-      if (i < list.length) {
-        img.dataset.upImageChoice = String(i);
-        setCaption(img, i);
-        img.src = list[i];
-        return;
-      }
-      const figure = img.closest('figure');
-      if (figure) figure.remove();
+    img.addEventListener('load', () => {
+      if (img.naturalWidth < 40 || img.naturalHeight < 20) advance(img);
     });
+    img.addEventListener('error', () => advance(img));
 
     const normalized = choices[0];
     if (normalized && img.src !== normalized) img.src = normalized;
+
+    // Some remote hosts hang instead of firing error. Never allow a blank infobox.
+    setTimeout(() => {
+      if (!img.isConnected) return;
+      if (!img.complete || img.naturalWidth < 40 || img.naturalHeight < 20) advance(img);
+    }, 3200);
   }
 
   function scan(node = document) {
