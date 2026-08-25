@@ -49,7 +49,7 @@
   async function chapterData(chapter) {
     if (!chapterCache.has(chapter)) {
       const file = String(chapter).padStart(2, '0');
-      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=12`, { cache: 'force-cache' })
+      chapterCache.set(chapter, fetch(`${DATA_BASE}${file}.json?v=13`, { cache: 'force-cache' })
         .then((response) => response.ok ? response.json() : {})
         .catch(() => ({})));
     }
@@ -133,7 +133,10 @@
     for (let verse = identity.start; verse <= identity.end; verse += 1) {
       const base = normalizeRecord(data?.[String(verse)], identity.chapter);
       const override = normalizeOverride(overrides?.[String(verse)]);
-      if (!base && !override) return null;
+      // Śrīdhara often comments on only one member of a combined Bhāgavatam
+      // verse range. Missing members mean “no separate gloss,” not failure of
+      // the entire range.
+      if (!base && !override) continue;
       const record = mergeReviewedRecord(base, override);
       if (!record || record.no_commentary) continue;
       records.push(record);
