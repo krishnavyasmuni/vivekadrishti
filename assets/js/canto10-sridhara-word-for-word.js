@@ -211,7 +211,10 @@
     }
 
     if (record.word_for_word) section.appendChild(makeWordForWordDetails(record.word_for_word));
-    setDirectTranslation(section, record.translation);
+    // The visible commentary line is the same verified literal gloss—not a
+    // separate prose summary.  Older reviewed files store it only in
+    // `word_for_word`; newer overrides may also supply `translation`.
+    setDirectTranslation(section, record.translation || record.word_for_word);
     section.dataset.sridharaEnglishStatus = 'reviewed';
   }
 
