@@ -1,0 +1,59 @@
+(() => {
+  const root=document.getElementById('scripture-browser');
+  if(!root)return;
+  const previousOpen=window.openScriptureEncyclopedia;
+  const C=(...nums)=>nums.map(n=>`<sup class="itihasa-cite"><button type="button" data-note="${n}" aria-label="Source ${n}">${n}</button></sup>`).join('');
+
+  const EXTRA={
+    'Mahābhārata':{
+      before:'#mbh-parvans',
+      html:`
+        <section class="kena-section" id="mbh-witnesses"><h2>Early witnesses and historical setting</h2>
+          <p>The names <i>bhārata</i> and <i>mahābhārata</i> appear in early grammatical and ritual literature, including Pāṇini's <i>Aṣṭādhyāyī</i> and the Āśvalāyana Gṛhyasūtra. Pāṇini's evidence is not by itself proof that the complete surviving epic already existed, since <i>bhārata</i> could have other meanings, but his references to figures known from the epic show that parts of its narrative world were current by the fourth century BCE.${C(1,2)}</p>
+          <p>The epic also preserves material continuous with older Vedic narrative. The sarpasattra frame has close parallels in Brāhmaṇa literature: the Pañcaviṃśa Brāhmaṇa names Dhṛtarāṣṭra, Janamejaya and Takṣaka in connection with a serpent sacrifice. The late-Vedic <i>Suparṇākhyāna</i> is a shorter precursor to the Garuḍa narrative expanded in Āstīka Parva. Such correspondences help explain why the Mahābhārata can look simultaneously like heroic genealogy, ritual memory and a later encyclopedic scripture.${C(2,3)}</p>
+          <p>By the early centuries CE the work was recognizably vast. Dio Chrysostom's report of an enormous Indian poem has often been connected with the Mahābhārata, though the identification is indirect. More securely, a copper-plate inscription of Śarvanātha dated 533–534 CE describes the Mahābhārata as a <i>śata-sāhasrī saṃhitā</i>, a collection of one hundred thousand verses. By that date the traditional idea of the epic on roughly its present enormous scale was established.${C(1)}</p>
+        </section>`,
+      before2:'#mbh-critical',
+      html2:`
+        <section class="kena-section" id="mbh-dharmayuddha"><h2>War, dharma and the rules of combat</h2>
+          <p>The Mahābhārata does not treat victory as proof of righteousness. Before and during the war it repeatedly asks whether violence undertaken for a just claim can remain just in its means. Combat conventions distinguish appropriate opponents, forbid attacks upon the unarmed or incapacitated and regulate weapons and treatment of those outside active combat. The narrative then shows those restraints eroding: Abhimanyu is surrounded after being disarmed, Bhūriśravas is struck during a compromised moment, Droṇa is broken by an ambiguous report, Karṇa is killed while struggling with his chariot and Duryodhana is struck below the waist.${C(1,8,9,10,11)}</p>
+          <p>The point is not a neat list of “themes” but the architecture of the war itself. Each violation becomes precedent for the next, and Kṛṣṇa's arguments repeatedly invoke earlier breaches when ordinary rules are appealed to selectively. The postwar Śānti and Anuśāsana books then force the victors to live inside the ethical consequences of what they have done. In this sense the Mahābhārata's treatment of <i>dharmayuddha</i> is inseparable from its refusal to give Yudhiṣṭhira an uncomplicated triumph.${C(1,13,14,15)}</p>
+        </section>`,
+      before3:'#mbh-reception',
+      html3:`
+        <section class="kena-section" id="mbh-commentaries"><h2>Sanskrit commentaries</h2>
+          <p>At least six known Sanskrit commentators produced works intended to accompany the Mahābhārata across all eighteen parvans, even when their notes are selective rather than glossing every śloka. Vimalabodha's <i>Viṣamaślokī</i> or <i>Durghaṭārthaprakāśinī</i> concentrates on difficult passages; Sarvajña Nārāyaṇa is known in large part through later quotations; Arjuna Miśra wrote the <i>Bhāratārthadīpikā</i>; Ratnagarbha's interpretations likewise survive prominently through citation; Vādirāja Tīrtha composed the Dvaita <i>Lakṣālāṅkāra</i>; and Nīlakaṇṭha Caturdhara's seventeenth-century <i>Bhāratabhāvadīpa</i> became the most influential comprehensive early-modern commentary.${C(1)}</p>
+          <p>The commentarial record is also a textual witness. A commentator's base text may contain verses absent from another manuscript family, and the explanations show how difficult episodes were reconciled with dharma, Vedānta and sectarian theology long before modern critical editing. Nīlakaṇṭha's text was especially important in the printed vulgate, while modern projects can instead follow the reconstructed Critical Edition. The difference between these bases should be visible whenever a modern reader compares chapter or verse numbers.${C(1,2)}</p>
+        </section>
+        <section class="kena-section" id="mbh-transmission"><h2>Translations and regional Mahābhāratas</h2>
+          <p>The epic entered regional literary cultures very early. A partially surviving Tamil <i>Bhārata Veṇbā</i> is associated with Peruntevanar in the ninth century; later Tamil transmission includes Villiputturar's <i>Villi Bhāratam</i> and the continuation associated with Nallapillai. Eight books of an Old Javanese Kawi Mahābhārata survive from the court of Dharmawangsa around the late tenth century, showing that the epic had already become a Southeast Asian court text.${C(1)}</p>
+          <p>In Kannada, Pampa's tenth-century <i>Vikramārjuna Vijaya</i> or <i>Pampa Bhārata</i> re-centred the story around Arjuna, while Kumāravyāsa's later <i>Karṇāṭa Bhārata Kathāmañjarī</i> became another major Kannada Mahābhārata. Nannaya, Tikkana and Errāpragada created the monumental Telugu <i>Āndhra Mahābhāratamu</i> across the eleventh to fourteenth centuries. Sarala Dāsa produced the great Odia Mahābhārata in the fifteenth century; Assamese, Malayalam and Marathi traditions generated further complete or selective recastings.${C(1)}</p>
+          <p>These works are not merely translations in the modern narrow sense. They select, expand and interpret the Sanskrit epic for new literary and religious worlds. The same process is visible in Sanskrit drama—Bhāsa's <i>Ūrubhaṅga</i> and <i>Madhyamavyāyoga</i> reorganize Mahābhārata episodes—and in Javanese <i>Bharatayuddha</i>, performance traditions such as wayang and Yakṣagāna, and later literature focused on individual characters such as Karṇa, Draupadī or Yayāti.${C(1)}</p>
+        </section>`
+    },
+    'Rāmāyaṇa':{
+      before:'#ram-commentaries',
+      html:`
+        <section class="kena-section" id="ram-versions"><h2>Indian and Asian Rāmāyaṇa traditions</h2>
+          <p>The Vālmīki Rāmāyaṇa became a generative scripture rather than a closed story copied unchanged into every language. Rāma narrative is already visible in early Tamil literature, while Kamban's twelfth-century Tamil <i>Rāmāvatāram</i> became a great independent kāvya. Telugu traditions include the <i>Raṅganātha Rāmāyaṇa</i> and Molla's Rāmāyaṇa; Mādhava Kandali produced an early Assamese <i>Saptakāṇḍa Rāmāyaṇa</i>; Kṛttibās composed the celebrated Bengali version; and Tulsīdās's sixteenth-century Awadhi <i>Rāmacaritamānasa</i> transformed North Indian Rāma-bhakti while preserving the fundamental arc of the story.${C(1,8)}</p>
+          <p>Buddhist and Jain traditions also retold Rāma's story according to their own cosmologies and ethical commitments. Outside India the narrative became part of the classical culture of much of Southeast Asia: Old Javanese and Balinese Rāma literature, the Cambodian <i>Reamker</i>, the Thai <i>Ramakien</i>, Lao, Burmese, Malaysian and Philippine forms all preserve recognizable Vālmīkian narrative while changing genealogy, characterization, setting and religious emphasis. The Thai <i>Ramakien</i>, for example, places the story in a thoroughly Thai aesthetic world and substantially expands Hanumān's role.${C(1)}</p>
+          <p>Textual variation and cultural retelling therefore need to be kept distinct. A northern or southern Sanskrit recension is a branch of the Vālmīki textual transmission; Kamban, Tulsīdās or the <i>Ramakien</i> is a new literary work receiving the Rāma story. Both belong to Rāmāyaṇa history, but they answer different questions about how the narrative travelled.${C(1,8)}</p>
+        </section>`,
+      before2:'#ram-reception',
+      html2:`
+        <section class="kena-section" id="ram-influence"><h2>Festivals, performance and cultural life</h2>
+          <p>The Rāmāyaṇa is embedded in Hindu ritual time. Rāmanavamī celebrates Rāma's birth; Vijayadaśamī and Rāmlīlā traditions dramatize the defeat of Rāvaṇa; Dīpāvalī is widely connected with Rāma, Sītā and Lakṣmaṇa's return to Ayodhyā. Sundara Kāṇḍa is frequently read as an independent devotional unit, and complete or selected pāṭha of the Sanskrit Rāmāyaṇa accompanies religious observances including Navarātri.${C(1,8,11)}</p>
+          <p>The epic's visual and performative life is equally old and geographically wide. Rāma, Sītā, Hanumān, Rāvaṇa and the vānaras appear in temple relief, manuscript painting, dance, shadow theatre and public drama from India through Southeast Asia. This is not merely “popular culture” attached after the text: performance and recitation have been major means by which the Rāmāyaṇa has been learned, interpreted and remembered.${C(1)}</p>
+        </section>
+        <section class="kena-section" id="ram-critical-translations"><h2>The Critical Edition and modern translations</h2>
+          <p>The Baroda Critical Edition was assembled in the 1960s and 1970s at the Oriental Institute of Maharaja Sayajirao University using dozens of manuscripts collected across India and surrounding regions. Its editors compared the recensional witnesses rather than privileging one regional manuscript, constituting a research text while documenting significant variants. A complete English translation of that critical text was produced through the long University of California project associated with Robert P. Goldman and collaborators; another complete English translation of the Critical Edition was made by Bibek Debroy.${C(9)}</p>
+          <p>Modern readers therefore encounter several different objects under the name “Rāmāyaṇa”: traditional Sanskrit editions representing particular pāṭhas, the reconstructed Critical Edition, translations based on either of those, and independent regional Rāmāyaṇas. A scholarly citation should identify which one is being used; a history of Hindu reception must also remember that the authority and influence of a passage cannot be measured only by whether a modern critical editor places it in the constituted text.${C(1,8,9)}</p>
+        </section>`
+    }
+  };
+
+  function insertBefore(article,selector,html){const target=article.querySelector(selector);if(target&&html&&!article.querySelector(`#${html.match(/id="([^"]+)/)?.[1]||'__none__'}`))target.insertAdjacentHTML('beforebegin',html);}
+  function enhance(name){const article=document.querySelector('.itihasa-v5-reader .itihasa-human-article')||document.querySelector('.itihasa-human-article');if(!article||article.dataset.contextV7==='1')return;article.dataset.contextV7='1';const x=EXTRA[name];if(!x)return;insertBefore(article,x.before,x.html);insertBefore(article,x.before2,x.html2);insertBefore(article,x.before3,x.html3);}
+
+  window.openScriptureEncyclopedia=function(button){const name=button?.dataset?.name||button?.querySelector?.('span')?.textContent?.trim();const kind=button?.dataset?.kind||'';const result=typeof previousOpen==='function'?previousOpen(button):false;if(result&&kind==='Itihāsa'&&EXTRA[name])enhance(name);return result;};
+})();
