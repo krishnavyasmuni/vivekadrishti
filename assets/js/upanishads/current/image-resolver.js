@@ -23,7 +23,7 @@
 
   function normalize(raw) {
     if (!raw) return '';
-    let src = String(raw).trim();
+    const src = String(raw).trim();
     const cf = fileFromCommons(src);
     if (cf) return commonsRenderable(cf);
 
@@ -77,15 +77,18 @@
     img.referrerPolicy = 'no-referrer';
     img.decoding = 'async';
 
+    // The reader used to delete the figure immediately on the first failed request.
+    // Remove that legacy handler so the resolver gets a chance to repair/retry it.
+    img.removeAttribute('onerror');
+    img.onerror = null;
+
     const choices = fallbackList(img);
     img.dataset.upImageChoices = JSON.stringify(choices);
     img.dataset.upImageChoice = '0';
-    const normalized = choices[0];
-    if (normalized && img.src !== normalized) img.src = normalized;
 
     img.addEventListener('error', () => {
       const list = JSON.parse(img.dataset.upImageChoices || '[]');
-      let i = Number(img.dataset.upImageChoice || 0) + 1;
+      const i = Number(img.dataset.upImageChoice || 0) + 1;
       if (i < list.length) {
         img.dataset.upImageChoice = String(i);
         setCaption(img, i);
@@ -95,6 +98,9 @@
       const figure = img.closest('figure');
       if (figure) figure.remove();
     });
+
+    const normalized = choices[0];
+    if (normalized && img.src !== normalized) img.src = normalized;
   }
 
   function scan(node = document) {
