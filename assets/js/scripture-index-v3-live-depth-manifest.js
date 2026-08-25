@@ -4,6 +4,10 @@
     '/vivekadrishti/assets/js/scripture-index-v3-deep-vedanga-v8.js?v=1',
     '/vivekadrishti/assets/js/scripture-index-v3-deep-smriti-v9a.js?v=1',
     '/vivekadrishti/assets/js/scripture-index-v3-deep-smriti-v9b.js?v=1',
+    '/vivekadrishti/assets/js/scripture-index-v3-deep-purana-v10a.js?v=1',
+    '/vivekadrishti/assets/js/scripture-index-v3-deep-purana-v10b.js?v=1',
+    '/vivekadrishti/assets/js/scripture-index-v3-deep-purana-v10c.js?v=1',
+    '/vivekadrishti/assets/js/scripture-index-v3-deep-purana-v10d.js?v=1',
     '/vivekadrishti/assets/js/scripture-index-v3-handdeep-protect-v10.js?v=1'
   ];
   files.forEach(src=>{
