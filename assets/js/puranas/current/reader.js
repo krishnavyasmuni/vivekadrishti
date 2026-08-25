@@ -167,7 +167,7 @@
     body+=renderBooks(s?.books,refs,sources);
     arr(s?.subsections).forEach((sub,j)=>{
       const st=sub.title||`Subsection ${j+1}`;
-      body+=`<h3>${esc(st)}</h3>${renderParagraphs(sub.paragraphs||sub.text,j===0?refs:[],sources)}${renderBooks(sub.books,refs,sources)}`;
+      body+=`<h3>${esc(st)}</h3>${renderParagraphs(sub.paragraphs||sub.text,refs,sources)}${renderBooks(sub.books,refs,sources)}`;
       const bullets=uniq(arr(sub.bullets)); if(bullets.length) body+=`<ul>${bullets.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
     });
     const bullets=uniq(arr(s?.bullets)); if(bullets.length) body+=`<ul>${bullets.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
@@ -183,7 +183,7 @@
       const refs=sectionSources(title,sources,kind); const ps=uniq(paras); const goodSubs=subs.filter(x=>x&&x.title&&uniq(x.paragraphs||[]).length);
       if(!ps.length&&!goodSubs.length)return;
       let body=renderParagraphs(ps,refs,sources);
-      goodSubs.forEach((s,j)=>{body+=`<h3>${esc(s.title)}</h3>${renderParagraphs(s.paragraphs,j===0?refs:[],sources)}`;});
+      goodSubs.forEach((s,j)=>{body+=`<h3>${esc(s.title)}</h3>${renderParagraphs(s.paragraphs,refs,sources)}`;});
       secs.push({id:`pur-auto-${slug(title)}`,title,html:`<section class="kena-section ch-section purana-full-section" id="pur-auto-${slug(title)}"><h2>${esc(title)}</h2>${body}</section>`});
     };
 
@@ -294,7 +294,7 @@
     const supplied=uniq(arr(e.leadParagraphs));
     const ps=supplied.length?supplied:uniq([e.overview,e.summary,e.significance,e.profile]);
     const refs=[sourceIndex(sources,'wiki'),sourceIndex(sources,kind==='Mahāpurāṇa'?'hazra-rites':'hazra-upa')].filter(Boolean).slice(0,2);
-    return (ps.length?ps:[`${name} is a Purāṇa represented in the traditional scripture index. This article distinguishes the received text, its historical layers, its ritual and theological profile, and the catalogue tradition under which the title is classified.`]).map((x,i)=>p(x,i===0?refs.map(n=>citeLink(n,sources)).join(''):'')).join('');
+    return (ps.length?ps:[`${name} is a Purāṇa represented in the traditional scripture index. This article distinguishes the received text, its historical layers, its ritual and theological profile, and the catalogue tradition under which the title is classified.`]).map(x=>p(x,refs.map(n=>citeLink(n,sources)).join(''))).join('');
   }
 
   function infobox(name,kind,e,button){
