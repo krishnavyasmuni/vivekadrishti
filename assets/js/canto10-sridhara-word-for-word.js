@@ -69,16 +69,13 @@
   function normalizeRecord(value, chapter) {
     if (!value) return null;
     if (typeof value === 'string') {
-      return chapter <= 13 ? {
-        reviewed: true,
-        word_for_word: value.trim(),
-        translation: '',
-        no_commentary: isNoCommentaryText(value)
-      } : null;
+      return null;
     }
     if (typeof value !== 'object' || Array.isArray(value)) return null;
 
-    const reviewed = value.reviewed === true || (chapter <= 13 && value.generated !== true);
+    // Display only records explicitly approved after comparison with the
+    // Sanskrit sources. Chapter position is never evidence of review.
+    const reviewed = value.reviewed === true;
     if (!reviewed) return null;
     const wordForWord = String(value.word_for_word || value.wordForWord || '').trim();
     const translation = String(value.translation || value.direct_translation || '').trim();
