@@ -1,142 +1,148 @@
 (() => {
   const ROOT = '.current-up-reader';
+  const PALM_IMG = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/1836%20CE%20July%20purchase%2C%20Chandogya%20Upanishad%20vivarana%2C%20Whish%20manuscript%20collection%2C%20Kahle-Austin%20Foundation%2C%20Sanskrit%2C%20Grantha%20script.jpg';
+  const PALM_PAGE = 'https://commons.wikimedia.org/wiki/File:1836_CE_July_purchase,_Chandogya_Upanishad_vivarana,_Whish_manuscript_collection,_Kahle-Austin_Foundation,_Sanskrit,_Grantha_script.jpg';
+  const PAPER_IMG = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Chandogya%20Upanishad%20verses%201.1.1-1.1.9%2C%20Samaveda%2C%20Sanskrit%2C%20Devanagari%20script%2C%201849%20CE%20manuscript.jpg';
+  const PAPER_PAGE = 'https://commons.wikimedia.org/wiki/File:Chandogya_Upanishad_verses_1.1.1-1.1.9,_Samaveda,_Sanskrit,_Devanagari_script,_1849_CE_manuscript.jpg';
 
-  // Stable Commons JPG witnesses used only when a text-specific image cannot render.
-  // Captions explicitly identify these as representative display images.
-  const FALLBACKS = {
-    paper: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Aitareya_Upanishad%2C_Sanskrit%2C_Rigveda%2C_Devanagari_script%2C_1865_CE_manuscript.jpg',
-    grantha: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Katha_Upanishad%2C_Sanskrit%2C_Grantha_script%2C_Whish_Manuscript_Collection_acquired_1836_CE.jpg',
-    gitaPalm: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Bhagavad_Gita_Grantha_script_Sanskrit.jpg',
-    bhagavataPalm: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Bhagavata_Purana%2C_Sanskrit%2C_Malayalam_script%2C_Whish_manuscript_collection%2C_acquired_1836_CE.jpg'
-  };
+  const titleFor = reader => reader.querySelector('.kena-infobox-title')?.textContent?.trim() || 'this Upanishad';
+  const fallbackCaption = reader => `Representative Sanskrit palm-leaf manuscript used as a display image for ${titleFor(reader)}. It is not claimed to be a manuscript of this specific Upanishad.`;
 
-  const decode = s => { try { return decodeURIComponent(s); } catch { return s; } };
-  const fileFromCommons = src => {
-    const a = src.match(/commons\.wikimedia\.org\/wiki\/File:(.+?)(?:[?#]|$)/i);
-    if (a) return decode(a[1]).replace(/ /g, '_');
-    const b = src.match(/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/(.+?)(?:[?#]|$)/i);
-    if (b) return decode(b[1]).replace(/ /g, '_');
-    return '';
-  };
-
-  function commonsRenderable(file) {
-    if (!file) return '';
-    if (/\.pdf$/i.test(file)) {
-      return `https://commons.wikimedia.org/w/thumb.php?f=${encodeURIComponent(file)}&page=1&width=720`;
-    }
-    return `https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(file)}`;
+  function reliable(src) {
+    if (!src) return false;
+    if (src.startsWith('/vivekadrishti/')) return true;
+    if (/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\//i.test(src) && /\.(?:jpe?g|png|webp)(?:[?#]|$)/i.test(src)) return true;
+    return false;
   }
 
-  function normalize(raw) {
-    if (!raw) return '';
-    const src = String(raw).trim();
-    const cf = fileFromCommons(src);
-    if (cf) return commonsRenderable(cf);
-
-    if (/^https:\/\/archive\.org\/details\//i.test(src)) {
-      const id = src.split('/details/')[1].split(/[?#/]/)[0];
-      return id ? `https://archive.org/services/img/${id}` : src;
-    }
-    if (/^https:\/\/archive\.org\/download\//i.test(src) && /\.pdf(?:[?#]|$)/i.test(src)) {
-      const id = src.split('/download/')[1].split('/')[0];
-      return id ? `https://archive.org/services/img/${id}` : src;
-    }
-    if (/^https:\/\/upload\.wikimedia\.org\//i.test(src) && /\.pdf(?:[?#]|$)/i.test(src)) {
-      const last = decode(src.split('/').pop().split(/[?#]/)[0]);
-      return commonsRenderable(last);
-    }
-    return src;
+  function setCaption(reader, text) {
+    const cap = reader.querySelector('.current-upanishad-infobox figure figcaption, .kena-infobox figure figcaption');
+    if (cap) cap.textContent = text;
   }
 
-  function titleFor(img) {
-    return img.closest(ROOT)?.querySelector('.kena-infobox-title')?.textContent?.trim() || 'this Upanishad';
-  }
-
-  function typeFor(img) {
-    const rows = [...(img.closest(ROOT)?.querySelectorAll('.kena-info-row') || [])];
-    const row = rows.find(r => r.querySelector('b')?.textContent?.trim() === 'Type');
-    return row?.querySelector('span')?.textContent?.trim() || '';
-  }
-
-  function categoryFallbacks(img) {
-    const type = typeFor(img);
-    if (/Yoga|Sannyāsa/i.test(type)) return [FALLBACKS.grantha, FALLBACKS.gitaPalm, FALLBACKS.paper];
-    if (/Vaiṣṇava/i.test(type)) return [FALLBACKS.bhagavataPalm, FALLBACKS.grantha, FALLBACKS.paper];
-    if (/Śaiva|Saiva|Śākta|Sakta/i.test(type)) return [FALLBACKS.gitaPalm, FALLBACKS.grantha, FALLBACKS.paper];
-    return [FALLBACKS.paper, FALLBACKS.grantha, FALLBACKS.gitaPalm];
-  }
-
-  function fallbackList(img) {
-    const own = normalize(img.getAttribute('src'));
-    return [...new Set([own, ...categoryFallbacks(img)].filter(Boolean))];
-  }
-
-  function setFallbackCaption(img) {
-    const cap = img.closest('figure')?.querySelector('figcaption');
-    if (!cap) return;
-    cap.textContent = `Representative Sanskrit manuscript image used as a display placeholder for ${titleFor(img)}; text-specific manuscript and edition evidence is given in the article and references.`;
-  }
-
-  function loadChoice(img, index) {
-    const list = JSON.parse(img.dataset.upImageChoices || '[]');
-    if (index >= list.length) return false;
-    img.dataset.upImageChoice = String(index);
-    if (index > 0) setFallbackCaption(img);
-    img.src = list[index];
-    return true;
-  }
-
-  function advance(img) {
-    if (!img.isConnected) return;
-    const next = Number(img.dataset.upImageChoice || 0) + 1;
-    if (!loadChoice(img, next)) {
-      // The last three choices are known Commons JPGs. If every remote request somehow
-      // fails, keep the figure collapsed rather than leaving a large empty grey box.
-      const figure = img.closest('figure');
-      if (figure) figure.style.display = 'none';
-    }
-  }
-
-  function prepare(img) {
-    if (!(img instanceof HTMLImageElement) || !img.closest(ROOT)) return;
-    if (img.dataset.upImagePrepared === '1') return;
-    img.dataset.upImagePrepared = '1';
+  function forceFallback(img, reader, usePaper = false) {
+    if (!img || img.dataset.upHardFallback === '1') return;
+    img.dataset.upHardFallback = '1';
+    img.removeAttribute('onerror');
     img.referrerPolicy = 'no-referrer';
     img.decoding = 'async';
+    const figure = img.closest('figure');
+    const anchor = img.closest('a');
+    if (anchor) anchor.href = usePaper ? PAPER_PAGE : PALM_PAGE;
+    if (figure) figure.classList.add('current-up-generic-witness');
+    setCaption(reader, fallbackCaption(reader));
+    img.onerror = () => {
+      if (img.dataset.upPaperFallback === '1') return;
+      img.dataset.upPaperFallback = '1';
+      if (anchor) anchor.href = PAPER_PAGE;
+      img.src = PAPER_IMG;
+      setCaption(reader, `Representative Sanskrit manuscript used as a display image for ${titleFor(reader)}. It is not claimed to be a manuscript of this specific Upanishad.`);
+    };
+    img.src = usePaper ? PAPER_IMG : PALM_IMG;
+  }
 
-    // The old reader removed figures immediately on first error. Disable that so the
-    // fallback chain always gets a chance to run.
+  function ensureImage(reader) {
+    const box = reader.querySelector('.current-upanishad-infobox, .kena-infobox');
+    if (!box) return;
+    let figure = box.querySelector('figure');
+    let img = figure?.querySelector('img');
+
+    if (!figure || !img) {
+      figure = document.createElement('figure');
+      figure.className = 'wiki-infobox-image current-up-generic-witness';
+      figure.innerHTML = `<a href="${PALM_PAGE}" target="_blank" rel="noopener"><img src="${PALM_IMG}" loading="eager" alt="Representative Sanskrit palm-leaf manuscript"></a><figcaption>${fallbackCaption(reader)}</figcaption>`;
+      const dev = box.querySelector('.ch-dev');
+      const title = box.querySelector('.kena-infobox-title');
+      (dev || title)?.insertAdjacentElement('afterend', figure);
+      img = figure.querySelector('img');
+    }
+
     img.removeAttribute('onerror');
-    img.onerror = null;
+    img.referrerPolicy = 'no-referrer';
+    const raw = img.getAttribute('src') || '';
+    if (!reliable(raw)) {
+      forceFallback(img, reader);
+      return;
+    }
 
-    const choices = fallbackList(img);
-    img.dataset.upImageChoices = JSON.stringify(choices);
-    img.dataset.upImageChoice = '0';
+    img.onerror = () => forceFallback(img, reader);
+    const timer = setTimeout(() => {
+      if (!img.complete || img.naturalWidth < 40) forceFallback(img, reader);
+    }, 2200);
+    img.addEventListener('load', () => clearTimeout(timer), { once: true });
+    if (img.complete && img.naturalWidth === 0) forceFallback(img, reader);
+  }
 
-    img.addEventListener('load', () => {
-      if (img.naturalWidth < 40 || img.naturalHeight < 20) advance(img);
+  function repairCitations(reader) {
+    const refs = [...reader.querySelectorAll('.ch-reference-list > li')];
+    refs.forEach((li, i) => { if (!li.id) li.id = `cup-ref-${i + 1}`; });
+
+    reader.querySelectorAll('.ch-cite button[data-current-up-note]').forEach(button => {
+      const n = Number(button.dataset.currentUpNote || 0);
+      if (!n || button.dataset.upCitationFixed === '1') return;
+      const li = refs[n - 1];
+      const sourceLink = li?.querySelector('a[href]');
+      const a = document.createElement('a');
+      a.className = 'current-up-cite-link';
+      a.textContent = `[${n}]`;
+      a.setAttribute('aria-label', `Source ${n}`);
+      a.title = li?.textContent?.trim() || `Source ${n}`;
+      if (sourceLink) {
+        a.href = sourceLink.href;
+        a.target = '_blank';
+        a.rel = 'noopener';
+      } else {
+        a.href = `#cup-ref-${n}`;
+      }
+      button.dataset.upCitationFixed = '1';
+      button.replaceWith(a);
     });
-    img.addEventListener('error', () => advance(img));
-
-    const normalized = choices[0];
-    if (normalized && img.src !== normalized) img.src = normalized;
-
-    // Some remote hosts hang instead of firing error. Never allow a blank infobox.
-    setTimeout(() => {
-      if (!img.isConnected) return;
-      if (!img.complete || img.naturalWidth < 40 || img.naturalHeight < 20) advance(img);
-    }, 3200);
   }
 
-  function scan(node = document) {
-    if (node instanceof HTMLImageElement) prepare(node);
-    node.querySelectorAll?.(`${ROOT} img`).forEach(prepare);
+  function repair(reader) {
+    if (!(reader instanceof Element) || !reader.matches(ROOT)) return;
+    ensureImage(reader);
+    repairCitations(reader);
   }
 
-  const observer = new MutationObserver(muts => {
-    for (const m of muts) for (const n of m.addedNodes) if (n.nodeType === 1) scan(n);
+  const previousOpen = window.openScriptureEncyclopedia;
+  if (typeof previousOpen === 'function' && !window.SCRIPTURE_UPANISHAD_HARD_FIX_WRAPPED) {
+    window.openScriptureEncyclopedia = function(button) {
+      const result = previousOpen(button);
+      const reader = document.querySelector(ROOT);
+      if (reader) {
+        repair(reader);
+        queueMicrotask(() => repair(reader));
+        setTimeout(() => repair(reader), 50);
+      }
+      return result;
+    };
+    window.SCRIPTURE_UPANISHAD_HARD_FIX_WRAPPED = true;
+  }
+
+  const observer = new MutationObserver(mutations => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
+        if (!(node instanceof Element)) continue;
+        if (node.matches?.(ROOT)) repair(node);
+        node.querySelectorAll?.(ROOT).forEach(repair);
+      }
+    }
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
-  scan();
-  window.SCRIPTURE_UPANISHAD_IMAGE_RESOLVER = true;
+  document.querySelectorAll(ROOT).forEach(repair);
+
+  if (!document.getElementById('current-up-hard-fix-style')) {
+    const style = document.createElement('style');
+    style.id = 'current-up-hard-fix-style';
+    style.textContent = `
+      .current-up-cite-link{color:#36c!important;text-decoration:none!important;font:12px/1 Arial,sans-serif!important;margin-left:2px!important;white-space:nowrap!important}
+      .current-up-cite-link:hover{text-decoration:underline!important}
+      .current-up-generic-witness{min-height:0!important;height:auto!important;background:#fff!important}
+      .current-up-generic-witness img{display:block!important;width:100%!important;height:auto!important;max-height:420px!important;object-fit:contain!important;background:#fff!important}
+    `;
+    document.head.append(style);
+  }
+
+  window.SCRIPTURE_UPANISHAD_IMAGE_RESOLVER = 'hard-fallback-v2';
 })();
