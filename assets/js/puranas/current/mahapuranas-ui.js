@@ -18,14 +18,14 @@
   ];
   const SET = new Set(NAMES);
   const SHORT_DATES = {
-    'Brahma Purāṇa':'c. 4th–13th centuries CE','Padma Purāṇa':'c. 4th–15th centuries CE','Viṣṇu Purāṇa':'c. 300–500 CE','Śiva Purāṇa':'c. 10th–14th centuries CE',
+    'Brahma Purāṇa':'main received compilation c. 9th–12th centuries CE','Padma Purāṇa':'c. 4th–15th centuries CE','Viṣṇu Purāṇa':'c. 300–500 CE','Śiva Purāṇa':'c. 10th–14th centuries CE',
     'Liṅga Purāṇa':'c. 5th–10th centuries CE','Garuḍa Purāṇa':'c. 8th–11th centuries CE','Nāradīya Purāṇa':'c. 9th–12th centuries CE','Bhāgavata Purāṇa':'c. 8th–10th centuries CE',
     'Agni Purāṇa':'c. 7th–11th centuries CE','Skanda Purāṇa':'core c. 6th–8th centuries CE','Bhaviṣya Purāṇa':'layers from early medieval to 19th c.','Brahmavaivarta Purāṇa':'received form c. 15th–16th centuries CE',
     'Mārkaṇḍeya Purāṇa':'c. 3rd–6th centuries CE','Vāmana Purāṇa':'c. 7th–11th centuries CE','Varāha Purāṇa':'c. 9th–12th centuries CE','Matsya Purāṇa':'c. 3rd–7th centuries CE',
     'Kūrma Purāṇa':'c. 7th–11th centuries CE','Brahmāṇḍa Purāṇa':'early core; major medieval additions','Vāyu Purāṇa':'early first millennium CE','Devī Bhāgavata Purāṇa':'c. 9th–14th centuries CE','Mahābhāgavata Purāṇa':'late medieval, probably eastern India'
   };
   const STRUCTURE = {
-    'Brahma Purāṇa':'about 245 chapters','Padma Purāṇa':'5- or 6-book recensions','Viṣṇu Purāṇa':'6 books · 126 chapters','Śiva Purāṇa':'7 Samhitas in common recension','Liṅga Purāṇa':'2 parts · 163 chapters','Garuḍa Purāṇa':'2 principal parts; recension varies',
+    'Brahma Purāṇa':'245 chapters in the common recension','Padma Purāṇa':'5- or 6-book recensions','Viṣṇu Purāṇa':'6 books · 126 chapters','Śiva Purāṇa':'7 Samhitas in common recension','Liṅga Purāṇa':'2 parts · 163 chapters','Garuḍa Purāṇa':'2 principal parts; recension varies',
     'Nāradīya Purāṇa':'2 parts · 207 chapters','Bhāgavata Purāṇa':'12 books · 335 chapters','Agni Purāṇa':'382–383 chapters','Skanda Purāṇa':'old core + vast later recensions','Bhaviṣya Purāṇa':'4 principal parts in common recension',
     'Brahmavaivarta Purāṇa':'4 books · about 274 chapters','Mārkaṇḍeya Purāṇa':'137 chapters','Vāmana Purāṇa':'about 95 chapters','Varāha Purāṇa':'about 217–218 chapters','Matsya Purāṇa':'291 chapters','Kūrma Purāṇa':'2 principal parts · about 95 chapters',
     'Brahmāṇḍa Purāṇa':'large multi-part recension','Vāyu Purāṇa':'about 112 chapters','Devī Bhāgavata Purāṇa':'12 books · 318 chapters','Mahābhāgavata Purāṇa':'recensional structure varies'
