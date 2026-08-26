@@ -129,3 +129,18 @@
 
   ALL.filter(n=>n!=='Viṣṇu Purāṇa').forEach(standardize);
 })();
+
+// Preserve the already-expanded dossiers before the dedicated 12 article files override fields.
+(() => {
+  const D=window.SCRIPTURE_DETAIL_DATA=window.SCRIPTURE_DETAIL_DATA||{};
+  const NAMES=['Nāradīya Purāṇa','Bhāgavata Purāṇa','Agni Purāṇa','Skanda Purāṇa','Bhaviṣya Purāṇa','Brahmavaivarta Purāṇa','Mārkaṇḍeya Purāṇa','Vāmana Purāṇa','Varāha Purāṇa','Matsya Purāṇa','Kūrma Purāṇa','Brahmāṇḍa Purāṇa'];
+  const FIELDS=['articleSections','leadParagraphs','chapterMap','rituals','vratas','sacredGeography','pilgrimage','dharma','dependencies','scholarlyPositions','scholarlyDebates','primaryEvidence','bibliography','sources'];
+  const clone=v=>{try{return JSON.parse(JSON.stringify(v));}catch(_){return v;}};
+  const snapshot={};
+  NAMES.forEach(name=>{
+    const e=D[`Purāṇa:${name}`]||D[name]||{};
+    snapshot[name]={};
+    FIELDS.forEach(field=>{if(e[field]!=null)snapshot[name][field]=clone(e[field]);});
+  });
+  window.__MAHAPURANA_EXPANDED_SNAPSHOT__=snapshot;
+})();
