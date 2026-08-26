@@ -1,0 +1,71 @@
+name: Repository privacy false-positive drilldown
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repository-history-privacy-drilldown.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  drilldown:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch all refs
+        run: git fetch --force --prune origin '+refs/heads/*:refs/remotes/origin/*' '+refs/tags/*:refs/tags/*'
+      - name: Classify privacy-pattern matches without printing values
+        shell: python
+        run: |
+          import json,re,subprocess
+          def run(*a): return subprocess.run(a,stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=True).stdout
+          phone=re.compile(r'(?<!\d)(?:\+44\s?\d{4}|0\d{4})[\s-]?\d{3}[\s-]?\d{3}(?!\d)')
+          mac=re.compile(r'/Users/([^/\s]+)/')
+          objs={}
+          for line in run('git','rev-list','--objects','--all').decode('utf-8','replace').splitlines():
+            if not line.strip(): continue
+            oid,*rest=line.split(' ',1); objs.setdefault(oid,rest[0] if rest else '(no path)')
+          out={'phone_json_locations':[],'phone_nonjson_paths':[],'mac_path_classification':{}}
+          def walk(v,p=''):
+            if isinstance(v,dict):
+              for k,x in v.items(): yield from walk(x, f'{p}.{k}' if p else str(k))
+            elif isinstance(v,list):
+              for i,x in enumerate(v): yield from walk(x, f'{p}[{i}]')
+            elif isinstance(v,str): yield p,v
+          mac_users=[]
+          for oid,path in objs.items():
+            if run('git','cat-file','-t',oid).decode().strip()!='blob': continue
+            if int(run('git','cat-file','-s',oid).decode().strip())>8_000_000: continue
+            text=run('git','cat-file','blob',oid).decode('utf-8','ignore')
+            if phone.search(text):
+              if path.endswith('.json'):
+                try:
+                  data=json.loads(text)
+                  locs=[p for p,v in walk(data) if phone.search(v)]
+                except Exception:
+                  locs=['(invalid-json-text)']
+                out['phone_json_locations'].append({'oid':oid[:12],'path':path,'json_paths':locs})
+              else:
+                out['phone_nonjson_paths'].append({'oid':oid[:12],'path':path})
+            mac_users += mac.findall(text)
+          generic={'macbook','runner','user','username','Users','home'}
+          out['mac_path_classification']={
+            'distinct_user_components':len(set(mac_users)),
+            'all_generic':all(x.lower() in {g.lower() for g in generic} for x in set(mac_users)),
+            'generic_labels_present':sorted(set(x.lower() for x in mac_users if x.lower() in {g.lower() for g in generic}))
+          }
+          with open('privacy-drilldown.json','w') as f: json.dump(out,f,indent=2)
+          print('PHONE_JSON_OBJECTS',len(out['phone_json_locations']))
+          print('PHONE_NONJSON_OBJECTS',len(out['phone_nonjson_paths']))
+          print('MAC_DISTINCT_USER_COMPONENTS',out['mac_path_classification']['distinct_user_components'])
+          print('MAC_ALL_GENERIC',out['mac_path_classification']['all_generic'])
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repository-privacy-drilldown
+          path: privacy-drilldown.json
+          retention-days: 1
