@@ -29,23 +29,19 @@
   const data=name=>Object.assign({},D[name]||{},D[`Purāṇa:${name}`]||{});
 
   function renameCards(){
-    document.querySelectorAll('.purana-name[data-name]').forEach(el=>{
-      const name=el.dataset.name;if(!SET.has(name))return;
-      const span=el.querySelector('span');if(span)span.textContent=english(name);
-    });
+    document.querySelectorAll('.purana-name[data-name]').forEach(el=>{const name=el.dataset.name;if(!SET.has(name))return;const span=el.querySelector('span');if(span)span.textContent=english(name);});
     document.querySelectorAll('.shastra-tab').forEach(el=>{if(el.textContent.trim()==='Mahāpurāṇa')el.textContent='Mahapuranas';});
     document.querySelectorAll('.shastra-title').forEach(el=>{if(el.textContent.trim()==='Purāṇas')el.textContent='Puranas';});
   }
 
   function deaccent(root){
-    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){const p=node.parentElement;if(!p||p.closest('[lang^="sa"],.universal-devanagari,.mahapurana-devanagari,script,style'))return NodeFilter.FILTER_REJECT;return /[ĀĪŪṚṜḶṄÑṆṬḌŚṢḤṂāīūṛṝḷḹṅñṇṭḍśṣḥṃṁ]|Purāṇa|aṃś|ślok|adhyāy/.test(node.nodeValue||'')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}});
+    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){const p=node.parentElement;if(!p||p.closest('[lang^="sa"],.universal-devanagari,.mahapurana-devanagari,.vishnu-devanagari,script,style'))return NodeFilter.FILTER_REJECT;return /[ĀĪŪṚṜḶṄÑṆṬḌŚṢḤṂāīūṛṝḷḹṅñṇṭḍśṣḥṃṁ]|Purāṇa|aṃś|ślok|adhyāy/.test(node.nodeValue||'')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}});
     const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(n=>n.nodeValue=english(n.nodeValue));
   }
 
   function simplifyInfobox(root,name){
     [...root.querySelectorAll('.kena-info-row')].forEach(row=>{
-      const b=row.querySelector('b'),v=row.querySelector('span');if(!b||!v)return;
-      const t=norm(b.textContent);
+      const b=row.querySelector('b'),v=row.querySelector('span');if(!b||!v)return;const t=norm(b.textContent);
       if(t.includes('traditional attribution')){b.textContent='Traditional attribution';v.textContent=english(v.textContent).replace(/\s*\(traditional attribution\)/i,'');}
       else if(t.includes('date')||t.includes('textual formation')){b.textContent='Date';v.textContent=SHORT_DATES[name]||english(v.textContent).split(/[.;]/)[0];}
       else if(t.includes('textual status')||t==='status'){b.textContent='Status';v.textContent='Mahapurana';}
@@ -57,8 +53,7 @@
   }
 
   function addTitle(root,name,e){
-    root.querySelector(':scope > .mahapurana-main-title')?.remove();
-    root.querySelector(':scope > .mahapurana-devanagari')?.remove();
+    root.querySelector(':scope > .mahapurana-main-title')?.remove();root.querySelector(':scope > .mahapurana-devanagari')?.remove();root.querySelector(':scope > .vishnu-devanagari')?.remove();
     const title=document.createElement('div');title.className='mahapurana-main-title';title.textContent=english(name);
     const dev=document.createElement('div');dev.className='mahapurana-devanagari';dev.lang='sa-Deva';dev.textContent=e.sanskritTitle||'';
     root.prepend(dev);root.prepend(title);
@@ -67,6 +62,7 @@
   function setOpen(sec,open){const body=sec.querySelector(':scope > .mahapurana-collapse-body'),h=sec.querySelector(':scope > h2');if(!body||!h)return;sec.classList.toggle('is-open',open);body.hidden=!open;h.setAttribute('aria-expanded',open?'true':'false');}
   function makeCollapsible(sec){
     if(sec.classList.contains('mahapurana-collapse-section'))return;const h=sec.querySelector(':scope > h2');if(!h)return;
+    const oldBody=sec.querySelector(':scope > .vishnu-collapse-body');if(oldBody){oldBody.hidden=false;while(oldBody.firstChild)sec.append(oldBody.firstChild);oldBody.remove();sec.classList.remove('vishnu-collapse-section','is-open');}
     const body=document.createElement('div');body.className='mahapurana-collapse-body';[...sec.childNodes].forEach(n=>{if(n!==h)body.append(n)});sec.append(body);sec.classList.add('mahapurana-collapse-section');h.setAttribute('role','button');h.setAttribute('tabindex','0');h.setAttribute('aria-expanded','false');
     const toggle=()=>setOpen(sec,!sec.classList.contains('is-open'));h.addEventListener('click',toggle);h.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();toggle();}});setOpen(sec,false);
   }
@@ -78,8 +74,7 @@
   function apply(button){
     const name=currentName(button);if(!SET.has(name))return;const root=article();if(!root)return;const e=data(name);const reader=root.closest('.purana-full-reader,.universal-wiki-reader,.kena-article-reader');
     reader?.classList.add('mahapurana-wiki-reader');root.classList.add('mahapurana-wiki-article');
-    const head=reader?.querySelector('.kena-article-head h1');if(head)head.textContent=english(name);
-    const eye=reader?.querySelector('.kena-article-head .eyebrow');if(eye)eye.textContent='Mahapurana · encyclopedia article';
+    const head=reader?.querySelector('.kena-article-head h1');if(head)head.textContent=english(name);const eye=reader?.querySelector('.kena-article-head .eyebrow');if(eye)eye.textContent='Mahapurana · encyclopedia article';
     simplifyInfobox(root,name);deaccent(root);addTitle(root,name,e);collapse(root);
   }
 
