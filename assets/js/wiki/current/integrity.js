@@ -188,6 +188,38 @@
     });
   }
 
+  function ensureVishnuStyle() {
+    if (document.getElementById('vishnu-purana-varna-skin')) return;
+    const link=document.createElement('link');
+    link.id='vishnu-purana-varna-skin';
+    link.rel='stylesheet';
+    link.href='/vivekadrishti/assets/css/puranas/current/vishnu-purana.css?build=20260826-1030';
+    document.head.append(link);
+  }
+
+  function curateVishnu(article) {
+    ensureVishnuStyle();
+    const reader=article.closest('.kena-article-reader,.scripture-wiki-reader,.universal-wiki-reader,.purana-full-reader');
+    reader?.classList.add('vishnu-purana-reader');
+    article.classList.add('vishnu-purana-scholarly');
+
+    const allowed=new Set([
+      'date of composition','structure','contents','theology','critical edition',
+      'influences and reception','rites dharma and social history','further reading','references'
+    ]);
+    [...article.querySelectorAll(':scope > section')].forEach(sec=>{
+      const h2=sec.querySelector(':scope > h2');
+      if(!h2)return;
+      const key=norm(h2.textContent);
+      if(!allowed.has(key))sec.remove();
+    });
+
+    const eyebrow=reader?.querySelector('.kena-article-head .eyebrow');
+    if(eyebrow)eyebrow.textContent='Mahāpurāṇa · textual history and contents';
+    rebuildToc(article);
+    article.dataset.vishnuCurated='1';
+  }
+
   function integrity(button) {
     const name=button?.dataset?.name || button?.querySelector?.('span')?.textContent?.trim() || '';
     const kind=button?.dataset?.kind || '';
@@ -200,6 +232,7 @@
     ensureImage(article,name);
     ensureReferences(article,e);
     rebuildToc(article);
+    if(name==='Viṣṇu Purāṇa') curateVishnu(article);
     article.dataset.wikiIntegrity='1';
   }
 
