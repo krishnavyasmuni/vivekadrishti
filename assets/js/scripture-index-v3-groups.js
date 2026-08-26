@@ -84,7 +84,9 @@
   function buildWitnessMap(witnesses){const map=new Map();witnesses.forEach(({source,items})=>items.forEach(name=>{if(!map.has(name))map.set(name,[]);if(!map.get(name).includes(source))map.get(name).push(source);}));return map;}
   const mahaMap=buildWitnessMap(mahaWitnesses), upaMap=buildWitnessMap(upaWitnesses);
   const allPuranaNames=[...new Set([...mahaMap.keys(),...upaMap.keys()])].sort((a,b)=>a.localeCompare(b,'en'));
-  const puranaLists={'Mahāpurāṇa':allPuranaNames.filter(n=>mahaMap.has(n)&&!upaMap.has(n)),'Upapurāṇa':allPuranaNames.filter(n=>upaMap.has(n)&&!mahaMap.has(n)),'Both':allPuranaNames.filter(n=>mahaMap.has(n)&&upaMap.has(n))};
+  // Category tabs are inclusive sets: a title with both kinds of witness must
+  // remain reachable from each canonical category; “Both” is the intersection.
+  const puranaLists={'Mahāpurāṇa':allPuranaNames.filter(n=>mahaMap.has(n)),'Upapurāṇa':allPuranaNames.filter(n=>upaMap.has(n)),'Both':allPuranaNames.filter(n=>mahaMap.has(n)&&upaMap.has(n))};
   const sectOf=name=>sectOrder.find(sect=>(sectMap[sect]||[]).includes(name))||'Mixed / composite';
 
   function tabs(items,active,group){return `<div class="subnav shastra-subnav">${items.map(label=>`<button type="button" class="shastra-tab${label===active?' is-active':''}" data-group="${esc(group)}" data-view="${esc(label)}">${esc(label)}</button>`).join('')}</div>`;}
