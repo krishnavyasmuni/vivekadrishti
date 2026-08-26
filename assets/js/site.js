@@ -1,4 +1,12 @@
 (() => {
+  if (!document.querySelector('link[data-hindupedia-site]')) {
+    const theme = document.createElement('link');
+    theme.rel = 'stylesheet';
+    theme.href = '/vivekadrishti/assets/css/hindupedia-site.css?build=20260826-2145';
+    theme.dataset.hindupediaSite = 'true';
+    document.head.appendChild(theme);
+  }
+
   const sectionPaths = new Map([
     ['/vivekadrishti/introduction-to-hinduism/', '/vivekadrishti/pages/introduction-to-hinduism/'],
     ['/vivekadrishti/indology/', '/vivekadrishti/pages/indology/'],
