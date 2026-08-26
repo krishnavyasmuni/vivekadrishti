@@ -4,281 +4,223 @@
     D[`Purāṇa:${name}`] = Object.assign({}, D[name] || {}, D[`Purāṇa:${name}`] || {}, data);
   };
 
-  const chapterMap = [
-    {
-      title:'Aṃśa 1 — Creation (22 chapters)',
-      bullets:[
-        '1. Maitreya asks Parāśara about the world','2. Parāśara praises Viṣṇu; creation','3. The divisions of time','4. Brahmā creates the world anew','5. Brahmā creates living beings','6. Human society','7. The first patriarchs','8. The eight forms of Rudra','9. Durvāsas curses Indra; the churning of the ocean','10. Descendants of the first patriarchs and Dakṣa’s daughters','11. The birth of Dhruva','12. The trials of Dhruva','13. Dhruva’s descendants','14. Pṛthu’s descendants','15. The Pracetases, Māriṣā, the Ādityas and Prahlāda','16. Maitreya asks about Prahlāda','17. Prahlāda instructs the Daitya boys','18. Prahlāda instructs his teachers','19. Prahlāda’s torments continue','20. Prahlāda attains liberation','21. Kaśyapa’s descendants and the origin of the Maruts','22. Brahmā appoints sovereigns; the nature of the Absolute'
-      ]
-    },
-    {
-      title:'Aṃśa 2 — The World (16 chapters)',
-      bullets:[
-        '1. Priyavrata distributes the continents','2. Jambūdvīpa, the land of the rose-apple tree','3. Bhāratavarṣa','4. Plakṣadvīpa and the other continents','5. The lower realms and the serpent Śeṣa','6. The hell realms','7. The upper spheres and the power of Viṣṇu','8. The movement of the sun, time and the heavenly paths','9. The source of rain','10. The chariot of the sun','11. The sun’s energy','12. The moon and planets','13. The story of Bharata','14. Bharata teaches the highest goal','15. Ṛbhu’s discourse on the highest truth','16. Ṛbhu’s discourse continues'
-      ]
-    },
-    {
-      title:'Aṃśa 3 — Society, Veda and ritual (18 chapters)',
-      bullets:[
-        '1. The past and present Manvantaras','2. The future Manvantaras','3. The Vyāsas arrange the Vedas; the syllable Oṃ','4. The origin and division of the four Vedas','5. The branches of the Yajur Veda','6. The branches of the Sāma and Atharva Vedas; the Purāṇas','7. How to escape the authority of Yama','8. The four varṇas and their duties','9. The four āśramas or stages of life','10. Birth and marriage rites','11. Rituals of the householder','12. The conduct of the wise','13. Rituals relating to birth and death','14. Śrāddha for the ancestors','15. Conducting a Śrāddha','16. Śrāddha offerings','17. Protection afforded by the Vedas; Viṣṇu’s Māyāmoha','18. Māyāmoha confounds the Daityas'
-      ]
-    },
-    {
-      title:'Aṃśa 4 — The Royal Dynasties (24 chapters)',
-      bullets:[
-        '1. The Solar Dynasty: the lineage of Manu','2. Manu’s sons Dhṛṣṭa, Nābhāga and Ikṣvāku','3. The descendants of Ambarīṣa','4. Sagara’s sons excavate the ocean; the story of Rāma','5. The legend of Nimi and the line of Janaka','6. The Lunar Dynasty','7. King Jahnu and the Gaṅgā','8. The descendants of Āyus','9. Raji and Indra','10. Yayāti exchanges old age for youth','11. The line of Yadu','12. Jyāmagha and his descendants','13. Kṛṣṇa and the Syamantaka jewel','14. Vasudeva’s ancestry and Śiśupāla','15. Hiraṇyakaśipu, Rāvaṇa and Śiśupāla','16. The descendants of Turvasu','17. The descendants of Druhyu','18. The descendants of Anu','19. The descendants of Puru','20. The Kaurava and Pāṇḍava lineages','21. Future descendants of Parīkṣit','22. Future descendants of Bṛhadbala','23. Future descendants of Bṛhadratha','24. Future kings and the age of Kali'
-      ]
-    },
-    {
-      title:'Aṃśa 5 — Kṛṣṇa (38 chapters)',
-      bullets:[
-        '1. Vasudeva and Devakī','2. The deities praise Devakī','3. The advent of Kṛṣṇa','4. Kaṃsa plots to kill Kṛṣṇa','5. Kṛṣṇa slays Pūtanā','6. Kṛṣṇa’s childhood','7. Kṛṣṇa subdues Kāliya','8. Balarāma defeats Dhenuka','9. Balarāma destroys Pralamba','10. Autumn in the cattle camp','11. Kṛṣṇa raises Govardhana','12. Indra praises Kṛṣṇa','13. Kṛṣṇa delights the cowherd women','14. Kṛṣṇa slays Ariṣṭa','15. Kaṃsa sends Akrūra','16. Kṛṣṇa slays Keśin','17. Akrūra arrives in Vraja','18. Kṛṣṇa sets out for Mathurā','19. The washerman and garland-maker','20. Mathurā, the wrestling bout and Kaṃsa’s death','21. Ugrasena is reinstated','22. Kṛṣṇa battles Jarāsandha','23. The Yādavas move to Dvārakā','24. Balarāma returns to Vraja','25. Balarāma diverts the Yamunā','26. Kṛṣṇa abducts Rukmiṇī','27. Pradyumna is abducted by a demon','28. Aniruddha; Balarāma slays Rukmin','29. Kṛṣṇa slays Naraka and retrieves Aditi’s earrings','30. Aditi praises Kṛṣṇa','31. The Pārijāta tree is brought to Dvārakā','32. Uṣā dreams of Aniruddha','33. Bāṇa binds Aniruddha and Kṛṣṇa frees him','34. Kṛṣṇa burns Vārāṇasī','35. Balarāma threatens Hastināpura','36. Balarāma defeats Dvivida','37. The destruction of the Yādavas','38. Arjuna leads the women away from Dvārakā'
-      ]
-    },
-    {
-      title:'Aṃśa 6 — Dissolution and liberation (8 chapters)',
-      bullets:[
-        '1. The decline of virtue in Kali-yuga','2. The redeeming virtue of the Kali age','3. The causal dissolution at the end of an aeon','4. Elemental dissolution','5. Final dissolution, suffering and the nature of liberation','6. Khāṇḍikya and Keśidhvaja','7. Keśidhvaja instructs Khāṇḍikya in yoga','8. The benefits of hearing the Viṣṇu Purāṇa'
-      ]
-    }
-  ];
-
   put('Viṣṇu Purāṇa', {
     sanskritTitle:'विष्णुपुराणम्',
-    traditionalAuthor:'Vyāsa (traditional attribution); transmitted as a dialogue of Parāśara and Maitreya',
+    traditionalAuthor:'Vyāsa (traditional attribution); the extant work is cast chiefly as a dialogue between Parāśara and Maitreya',
     language:'Sanskrit',
-    booksCount:'6 aṃśas; 126 adhyāyas (22 + 16 + 18 + 24 + 38 + 8)',
-    verseCount:'Traditional Purāṇa catalogues: 23,000 ślokas; received editions: roughly 6,000–7,000 verses, depending on edition and counting method',
-    period:'Layered Sanskrit Purāṇa; a substantial received form is often placed around the 4th–5th centuries CE, while older scholarship proposed dates from the late BCE centuries to the medieval period',
-    status:'Extant Mahāpurāṇa with a comparatively coherent six-aṃśa structure, multiple manuscript witnesses and a modern critical edition (1997–1999)',
-    extent:'Six aṃśas and 126 chapters. The traditional figure of 23,000 ślokas is much larger than the surviving six-aṃśa text; this discrepancy should not automatically be described as simple textual loss.',
+    booksCount:'6 aṃśas; 126 adhyāyas',
+    verseCount:'23,000 ślokas in traditional Purāṇa catalogues; approximately 6,000–7,000 verses in the extant six-aṃśa text',
+    period:'Composite Purāṇic text. Hazra proposed c. 275–325 CE for an early recension; a 4th–5th-century CE date for a form approaching the received text remains a common working estimate, although individual strata are earlier or later.',
+    status:'Extant Vaiṣṇava Mahāpurāṇa; comparatively stable six-aṃśa organization; critically edited by M. M. Pathak from a large manuscript base (1997–1999).',
+    extent:'Six aṃśas containing 22, 16, 18, 24, 38 and 8 chapters respectively. The traditional total of 23,000 verses does not correspond to the extent of the surviving six-aṃśa text.',
     primaryRecensions:[
-      'The six-aṃśa received text represented by the Baroda critical edition of M. M. Pathak (1997–1999)',
-      'Printed and manuscript recensions related to the six-aṃśa text, with local or late additions in some witnesses',
-      'Traditional notices of a 23,000-verse Viṣṇu Purāṇa, whose relation to the extant text, Bṛhadviṣṇu traditions and Viṣṇudharmottara material has been debated'
+      'The received six-aṃśa text represented by the Baroda critical edition.',
+      'Printed and regional manuscript recensions agreeing in the principal sixfold plan but differing in readings and occasional supplementary matter.',
+      'Traditional notices of a Viṣṇu Purāṇa of 23,000 verses, the precise relation of which to the extant text is uncertain.'
     ],
     leadParagraphs:[
-      'The Viṣṇu Purāṇa is one of the eighteen Mahāpurāṇas and one of the most structurally coherent surviving Purāṇas. Its six aṃśas move from creation and cosmology through geography, cosmic time, Vedic transmission, social and ritual order, royal genealogy and the life of Kṛṣṇa, before ending with Kali-yuga, cosmic dissolution, yoga and liberation. Viṣṇu is the theological centre of this universe: creator, sustainer and destroyer are presented as functions or manifestations within the reality that is Viṣṇu.',
-      'The text is especially important because it comes unusually close to the classical five-character definition of a Purāṇa: sarga (primary creation), pratisarga (re-creation and cosmic cycles), vaṃśa (genealogies), manvantara (ages of the Manus) and vaṃśānucarita (dynastic histories). Yet it is not merely a mythological chronicle. Aṃśa 3 contains Vedic classification, varṇa and āśrama duties, domestic rites and śrāddha; Aṃśa 6 turns to suffering, renunciation, yoga and liberation; and throughout the work hymns and narratives interpret cosmology through devotion to Viṣṇu.',
-      'The received work has 126 chapters. Traditional Purāṇa catalogues assign it 23,000 verses, whereas surviving printed and critically edited forms contain only roughly six to seven thousand. The difference is a problem of textual history, not proof that a fixed sixteen-thousand-verse block simply disappeared. The work circulated in multiple manuscripts and continued to be copied, interpreted and occasionally supplemented for centuries.'
+      'The Viṣṇu Purāṇa is one of the eighteen Mahāpurāṇas and one of the principal Sanskrit authorities of early Vaiṣṇavism. The extant work is arranged in six aṃśas and 126 adhyāyas. Its range is characteristic of the Purāṇic class—cosmogony, cosmography, manvantaras, genealogies, royal history, social and domestic duties, rites for the dead, Kṛṣṇa mythology, yoga and final liberation—but the arrangement is unusually compact and regular.',
+      'Of the major Purāṇas it conforms most closely to the celebrated pañcalakṣaṇa definition: sarga, primary creation; pratisarga, renewed creation and dissolution; vaṃśa, genealogies; manvantara, the periods of the Manus; and vaṃśānucarita, the histories of dynasties. This formal completeness partly explains the importance attached to the work by the older historians of Purāṇic literature.',
+      'The work is thoroughly Vaiṣṇava without being merely a collection of sectarian legends. Viṣṇu is identified with the causal and sustaining principle of the universe, while Brahmā, Rudra, Prakṛti, cosmic time and the elements are placed within an encompassing theology of Viṣṇu. The fifth aṃśa narrates Kṛṣṇa at length; the third treats Vedic transmission, varṇa, āśrama and śrāddha; and the sixth closes with pralaya, yoga and mokṣa.'
     ],
-    overview:'A six-aṃśa Vaiṣṇava Mahāpurāṇa organized around creation, cosmology, world geography, Manvantaras, Vedic transmission, dharma, genealogy, Kṛṣṇa, dissolution and liberation.',
-    profile:'The text combines Purāṇic pañcalakṣaṇa material with Vaiṣṇava theology, brahmanical social and ritual teaching, Sāṃkhya-like cosmological categories, yoga and Vedāntic reflection.',
-    identityProblem:'Traditional catalogues give 23,000 verses, but the received six-aṃśa text is much shorter. Scholars have variously connected the numerical discrepancy with different counting conventions, lost or expanded recensions, Bṛhadviṣṇu traditions and the occasional treatment of related Vaiṣṇava works as supplements; none of these explanations should be stated as certain without specifying the witness.',
-    classificationProblem:'It is securely transmitted and catalogued as a Mahāpurāṇa and is strongly Vaiṣṇava. Later classificatory schemes, including the Padma Purāṇa’s sattva-rajas-tamas grouping, place it among the sattvika Purāṇas. Describing it simply as a “Pāñcarātra text” can be misleading unless one distinguishes broad early Vaiṣṇava/Pāñcarātra affinities from the later technical Pāñcarātra Saṃhitā genre.',
-    milieu:'The received text belongs to the classical/early medieval Sanskrit Purāṇic world in which Vedic authority, emerging temple and devotional religiosity, royal genealogy, domestic dharma and Vaiṣṇava theology were being integrated.',
-    history:'The Viṣṇu Purāṇa did not arise as a modern single-author book. Its materials include Vedic myth, epic traditions, dharma material, genealogical lore and Kṛṣṇa narratives that were transmitted and reshaped over time. The relative coherence of the six-part structure does not erase this layered history.',
-    datingBasis:'Dating arguments have used references to the epics, comparison with the Harivaṃśa and Bhāgavata Purāṇa, dynastic lists, the development of Vaiṣṇava theology, language and style, and citations or reuse in later texts. McComas Taylor judges a fourth–fifth-century CE received extent a reasonable working hypothesis, while emphasizing that it remains an approximation.',
-    hazraNotes:'R. C. Hazra proposed an early centuries-CE date for substantial portions of the text and used its rites and customs as historical evidence. Later scholarship generally retains the need for stratification and is more cautious about assigning one date to all ritual, social and theological chapters.',
-    chapterMap:[
-      'Aṃśa 1 — 22 chapters: creation, cosmic time, Varāha, Brahmā, social origins, Rudra, Lakṣmī and the ocean-churning, Dhruva, Pṛthu, Prahlāda and the nature of the Absolute.',
-      'Aṃśa 2 — 16 chapters: Jambūdvīpa and Bhāratavarṣa, the other continents and oceans, lower and upper worlds, hells, astronomy/cosmology, and the Bharata–Ṛbhu teaching.',
-      'Aṃśa 3 — 18 chapters: Manvantaras, the Vyāsas and Vedic branches, the Purāṇa list, Yama, varṇa and āśrama, household rites, birth/death rites, śrāddha and Māyāmoha.',
-      'Aṃśa 4 — 24 chapters: solar and lunar royal genealogies, Rāma, Nimi and Janaka, Yayāti and his sons, Yadu and Puru, the Kuru-Pāṇḍava lines and future dynasties.',
-      'Aṃśa 5 — 38 chapters: the life of Kṛṣṇa from Devakī and the Vraja childhood through Kaṃsa, Mathurā, Dvārakā, Rukmiṇī, Naraka, Bāṇa and the destruction of the Yādavas.',
-      'Aṃśa 6 — 8 chapters: Kali-yuga, three modes of dissolution, the unsatisfactoriness of worldly existence, Khāṇḍikya and Keśidhvaja, yoga, liberation and praise of the Purāṇa.'
-    ],
-    contents:[
-      'Creation through Pradhāna/Prakṛti, Mahat, Ahaṃkāra, subtle elements, gross elements and the cosmic egg, with Viṣṇu identified with the causal, sustaining and dissolving principles.',
-      'Varāha raises the earth; Brahmā creates beings; the text narrates Dakṣa, Lakṣmī and the churning of the ocean, Dhruva, Pṛthu, the Pracetases and Prahlāda.',
-      'A complete Purāṇic cosmography of Bhāratavarṣa, Jambūdvīpa, the surrounding dvīpas and oceans, Mount Meru, lower worlds, hells, planetary regions, sun, moon and cosmic time.',
-      'Manvantaras and repeated Vyāsas; division of the Vedas into schools; an eighteen-Purāṇa list and accounts of the transmission of Vedic knowledge.',
-      'Varṇa, āśrama, saṃskāra, household conduct, marriage, funerary observances and śrāddha.',
-      'Solar and lunar genealogies joining Purāṇic mythic history to Rāma, the Kurus, Pāṇḍavas and Yādavas, followed by future dynasties and Kali-yuga.',
-      'A long Kṛṣṇa cycle containing Vraja, Govardhana, the cowherd women, Kaṃsa, Mathurā, Dvārakā, Rukmiṇī, Pradyumna, Aniruddha, Naraka, Bāṇa and the Yādava catastrophe.',
-      'Teachings on the defects of saṃsāra, cosmic dissolution, the self, yoga, contemplation and release into the highest reality identified with Viṣṇu.'
-    ],
-    keyContents:[
-      'The Parāśara–Maitreya dialogue is the principal narrative frame.',
-      'The Bharata narrative in Aṃśa 2 embeds the teaching of Ṛbhu and Nidāgha and turns cosmography toward nonattachment and knowledge.',
-      'Aṃśa 3.6 is important for Purāṇic self-definition because it names the eighteen Purāṇas and describes Purāṇic Saṃhitās.',
-      'Aṃśa 3.7 presents the famous instruction that those devoted to Viṣṇu are beyond Yama’s ordinary jurisdiction.',
-      'Aṃśa 6.6–7 contains the Khāṇḍikya–Keśidhvaja dialogue on yoga and liberation.'
-    ],
-    namedFeatures:[
-      'Varāha and the raising of the earth','Durvāsas, Indra and the churning of the ocean; praise of Lakṣmī','Dhruva’s austerity and exaltation','Pṛthu and the ordering of kingship and the earth','Prahlāda’s devotion and conflict with Hiraṇyakaśipu','Śeṣa supporting the lower worlds','Bharata, Ṛbhu and Nidāgha','The repeated Vyāsas and division of the Vedas','Yama’s instruction concerning devotees of Viṣṇu','Māyāmoha and the defeat of the Daityas through rejection of Vedic authority','Rāma in the solar genealogy','Yayāti and the exchange of youth and old age','Syamantaka jewel','Śiśupāla as a rebirth in the Hiraṇyakaśipu–Rāvaṇa cycle','Kṛṣṇa’s Vraja childhood and Govardhana','Kaṃsa’s death','Rukmiṇī, Naraka, Pārijāta, Uṣā and Aniruddha, Bāṇa','Destruction of the Yādavas','Kali-yuga and the ease of devotion','Khāṇḍikya and Keśidhvaja on yoga'
-    ],
-    ritualHistory:'The third aṃśa is one of the work’s most important sources for brahmanical social and ritual history. It moves from Vedic transmission into varṇa and āśrama duties, saṃskāras, household discipline, purity, death rites and śrāddha. These passages should be dated as textual strata rather than assumed to be as old as every cosmological narrative in the work.',
-    rituals:[
-      'Birth and naming-related rites','Marriage and household ritual obligations','Daily duties of the gṛhastha','Purificatory observances','Death and post-cremation rites','Śrāddha for ancestors','Vedic study and sacrificial obligations','Devotional remembrance and worship of Viṣṇu'
-    ],
-    vratas:['The received six-aṃśa text is less dominated by large vrata catalogues than many later Purāṇas; vows occur within broader discussions of dharma and devotion rather than forming an enormous independent vrata-māhātmya corpus.'],
-    sacredGeography:[
-      'Bhāratavarṣa and its mountains, rivers and peoples','Jambūdvīpa and the six other dvīpas','Mount Meru and Lokāloka','The lower worlds and hell realms','Mathurā, Vraja and Dvārakā in the Kṛṣṇa cycle'
-    ],
-    pilgrimage:['Compared with Purāṇas such as Skanda and Padma, the core six-aṃśa Viṣṇu Purāṇa is not organized around a massive tīrtha-māhātmya itinerary. Some manuscripts and related traditions transmit additional temple or pilgrimage material, so such passages must be tied to a specific recension.'],
-    dharma:[
-      'Duties of the four varṇas are differentiated, but the text also states general duties applicable across social divisions: benevolence, truthfulness, non-theft, sexual restraint, absence of malice and avoidance of wrongful violence.',
-      'The four āśramas are brahmacarya, gṛhastha, vānaprastha and sannyāsa, each treated as part of an ordered religious life.',
-      'Devotion to Viṣṇu is presented as compatible with social and ritual duty but ultimately oriented toward liberation beyond rebirth.'
-    ],
-    socialHistory:[
-      'Aṃśa 1 includes a mythic account of the emergence of agriculture, social differentiation and sacrifice.',
-      'Aṃśa 3 preserves normative brahmanical ideals of education, household life, gender, purity, death and ancestor ritual; these are prescriptions, not transparent descriptions of how every community lived.',
-      'The genealogical books construct royal legitimacy through descent, sacrifice, dharma and linkage to epic lineages.'
-    ],
-    reception:'The Viṣṇu Purāṇa became an authoritative source for later Vaiṣṇava theology. Rāmānuja cites it extensively in constructing a Vedāntic account in which Brahman is identified with Viṣṇu/Nārāyaṇa; later Śrī Vaiṣṇava writers and commentators continued to treat it as a major scriptural authority. The text also received important Sanskrit commentaries, including the Viṣṇucittīya tradition and Śrīdhara Svāmin’s interpretation.',
-    significance:'For modern scholarship it is unusually valuable because its six-part architecture is comparatively stable, its pañcalakṣaṇa material is extensive, its Kṛṣṇa cycle can be compared closely with the Harivaṃśa and Bhāgavata Purāṇa, and a full critical edition is available.',
-    scholarlyPositions:[
-      'H. H. Wilson’s nineteenth-century analysis placed the received text relatively late, even while recognizing much older traditional material; his 1840 translation was the first major published English translation of a Purāṇa and strongly shaped early Western ideas about the genre.',
-      'Vincent Smith proposed roughly 400–300 BCE; C. V. Vaidya roughly the ninth century CE; Winternitz an early first-millennium date but warned against precise dating; R. C. Hazra proposed c. 275–325 CE; R. C. Dikshitar argued for a much earlier BCE range; Roy placed it after the ninth century; Wendy Doniger suggested about 450 CE. These are a history of scholarship, not a single modern consensus.',
-      'Ludo Rocher emphasizes that the dating of the Viṣṇu Purāṇa is as contested as that of the Purāṇas generally and that manuscript stratification prevents one date from explaining every passage.',
-      'McComas Taylor, working with the critical edition, treats a fourth–fifth-century CE received form as a plausible working estimate rather than a demonstrable exact date.'
-    ],
-    scholarlyDebates:[
-      'Whether the Viṣṇu Purāṇa borrowed from the Harivaṃśa, shared an intermediate source with it, or preserves an independent reworking of common Kṛṣṇa traditions.',
-      'Whether the Bhāgavata Purāṇa directly expands the Viṣṇu Purāṇa’s Kṛṣṇa narrative or whether both depend on related earlier traditions.',
-      'The direction of borrowing between Purāṇic dharma passages and Dharmaśūtra/Dharmaśāstra literature: Hazra sometimes argued for Purāṇic priority, while later scholars have proposed borrowing into the Purāṇa.',
-      'How to interpret the text’s simultaneous personal devotion to Viṣṇu and its strong language about Viṣṇu as the all-encompassing Absolute; Advaita and Viśiṣṭādvaita readers have drawn different metaphysical conclusions.',
-      'How the traditional 23,000-verse extent relates to the much shorter received text.'
-    ],
-    dependencies:[
-      'Vedic mythology supplies older motifs, including Indra, cosmic sacrifice, Viṣṇu’s cosmic strides and creation language, but these are reworked in a Purāṇic Vaiṣṇava frame.',
-      'The Mahābhārata is known to the text: Vyāsa is praised as its composer, Pāṇḍava genealogies appear, and Kṛṣṇa’s relation to Arjuna is anticipated.',
-      'The relation to the Harivaṃśa is close but not mechanically reducible to one-way borrowing.',
-      'The Brahma Purāṇa preserves strikingly extensive verbal parallels: Taylor notes that the Kaṇḍu–Pramlocā narrative and nearly the whole Kṛṣṇa cycle occur there with very close wording, generally taken to show reuse of Viṣṇu-Purāṇa-like material by the Brahma Purāṇa or a shared source.',
-      'The Bhāgavata Purāṇa develops many of the same Kṛṣṇa traditions with a far more expansive devotional rhetoric.'
-    ],
-    primaryEvidence:[
-      'Pathak critical edition: six aṃśas and 126 adhyāyas','GRETIL electronic text based on the Pathak critical edition','H. H. Wilson’s 1840 translation and later Fitzedward Hall revision','McComas Taylor’s 2021 English translation of the critical text'
-    ],
-    primaryPassages:[
-      'Viṣṇu Purāṇa 1.1–2: Maitreya’s questions, Parāśara’s transmission story and the opening account of Viṣṇu and creation','Viṣṇu Purāṇa 1.9: ocean-churning and Lakṣmī hymn','Viṣṇu Purāṇa 1.16–20: Prahlāda cycle','Viṣṇu Purāṇa 2.13–16: Bharata and the Ṛbhu–Nidāgha teaching','Viṣṇu Purāṇa 3.3–6: repeated Vyāsas, Vedic divisions and Purāṇa classification','Viṣṇu Purāṇa 3.8–16: social duties, āśramas, domestic rites and śrāddha','Viṣṇu Purāṇa 4.1–24: dynastic histories','Viṣṇu Purāṇa 5.1–38: Kṛṣṇa cycle','Viṣṇu Purāṇa 6.1–7: Kali-yuga, dissolution, suffering, yoga and liberation','Viṣṇu Purāṇa 6.8: closing praise and fruits of hearing the text'
-    ],
+
     articleSections:[
       {
-        title:'Date of composition and textual formation',
+        title:'Date of composition',
         paragraphs:[
-          'No single date can be assigned to every layer of the Viṣṇu Purāṇa. The manuscripts are the products of repeated copying, and the work itself incorporates materials of different kinds and ages. Modern dating therefore asks when something close to the received six-aṃśa form existed, not when every myth in it was first told.',
-          'The history of scholarship is unusually wide-ranging. Wilson entertained a late date for the received text; Vincent Smith proposed 400–300 BCE; C. V. Vaidya about the ninth century; Winternitz an early first-millennium setting while warning that precise dating was impossible; Hazra c. 275–325 CE; Dikshitar a much earlier BCE range; Roy a post-ninth-century date; and Wendy Doniger about 450 CE. These estimates reflect very different methods and should not be presented as an eight-way modern consensus.',
-          'A more useful present-day formulation is that substantial portions of the received work are compatible with the Gupta or early post-Gupta world. McComas Taylor regards the fourth–fifth centuries CE as a reasonable estimate for the text reaching approximately its current extent, while still stressing that Purāṇic transmission is layered. References to and reuse by later works establish that the Viṣṇu Purāṇa tradition was securely in circulation long before many surviving manuscripts were copied.',
-          'The physical date of a manuscript is therefore not the date of the composition it transmits. Many surviving Sanskrit manuscripts are comparatively late copies on paper or palm leaf. Copyists could normalize, omit, rearrange or supplement material, which is precisely why a critical edition based on many witnesses is so valuable.'
+          'The age of the Viṣṇu Purāṇa has been variously estimated, and the history of those estimates is itself a useful warning against assigning a single date to a Purāṇa. H. H. Wilson admitted the antiquity of much of its substance but was inclined to place the extant compilation relatively late. Vincent A. Smith proposed 400–300 BCE; C. V. Vaidya a date about the ninth century CE; Winternitz declined to assign a definite date; R. C. Hazra proposed c. 275–325 CE; R. C. Dikshitar argued for a considerably earlier period; and later writers have continued to differ. Rocher consequently observed that the date of the Viṣṇu Purāṇa is as contested as that of any other Purāṇa.',
+          'Hazra’s estimate, c. 275–325 CE, belongs to his wider attempt to establish a relative chronology of the Purāṇas from their rites, customs, sectarian features, quotations and relations to Smṛti literature. The strength of the method is comparative: the age of a rite or doctrine is considered in relation to the growth of the Purāṇic corpus. Its limitation is equally clear. A date inferred for one stratum cannot be transferred without argument to all six aṃśas.',
+          'The extant work contains materials of manifestly different origin. Vedic and epic traditions stand beside developed Vaiṣṇava theology, Purāṇic genealogies, the institutional teaching of the third aṃśa and a Kṛṣṇa cycle closely related to the Harivaṃśa and other Purāṇas. The question is therefore not the date at which one author composed 126 chapters, but the period by which something near the received sixfold text had taken shape.',
+          'McComas Taylor, translating the Baroda critical text, regards the fourth or fifth century CE as a reasonable working date for the work reaching approximately its present extent, while insisting on the provisional character of such a statement. This is broadly compatible with the Gupta-period setting often assigned to the classical Vaiṣṇava synthesis represented in the text.',
+          'The dates of surviving manuscripts are much later than the composition of the material they transmit. The manuscript record is evidence for textual transmission, not a terminus a quo for the myths, doctrines or institutions found in the work.'
         ]
       },
       {
-        title:'Structure and the pañcalakṣaṇa model',
+        title:'Structure',
         paragraphs:[
-          'The extant work has six aṃśas and 126 chapters: 22, 16, 18, 24, 38 and 8 respectively. Aṃśa 5, the Kṛṣṇa book, is the longest; Aṃśa 6 is the shortest.',
-          'More than most large Purāṇas, the Viṣṇu Purāṇa visibly organizes a major share of its material around the five classical characteristics of Purāṇa: sarga (primary creation), pratisarga (re-creation and dissolution), vaṃśa (genealogies), manvantara (cycles ruled by Manus) and vaṃśānucarita (histories of dynasties). The fit is not mathematically perfect because the work also contains dharma, ritual, yoga, theology, hymns and cosmography, but the fivefold model genuinely explains much of its architecture.',
-          'Traditional catalogues attribute 23,000 verses to the Viṣṇu Purāṇa, whereas the received text has roughly six to seven thousand. Rocher notes that older attempts to solve this by identifying a hypothetical longer Bṛhadviṣṇu or by attaching other texts remain uncertain. A modern article should therefore display both figures and explain the problem instead of putting “23,000 verses” in an infobox as though all are extant.'
-        ]
-      },
-      {
-        title:'Narrative frame, authorship and transmission',
-        paragraphs:[
-          'The principal frame is a dialogue in which Maitreya questions the sage Parāśara. Parāśara explains that, after his father was killed by a Rākṣasa, he began a destructive rite against Rākṣasas; Vasiṣṭha persuaded him to stop, and Pulastya rewarded his restraint by granting knowledge of the Purāṇa. Parāśara then transmits that knowledge to Maitreya.',
-          'Like the Mahāpurāṇas generally, tradition ultimately associates the Purāṇa corpus with Vyāsa. This is a statement of sacred authorship and transmission, not evidence that a single historical person wrote the entire surviving text at one moment. The explicit speaking voice of the Viṣṇu Purāṇa is Parāśara, and the work itself also presents a chain of Purāṇic transmission through sages and Sūtas.',
-          'Compared with many Purāṇas, the framing remains unusually easy to follow. Embedded stories do occur, but the main Parāśara–Maitreya dialogue is rarely lost beneath many levels of narration.'
-        ]
-      },
-      {
-        title:'Detailed contents — complete 126-chapter map',
-        paragraphs:[
-          'The following map follows the chapter organization of the modern critical text as represented in McComas Taylor’s 2021 translation. Individual printed recensions may title or divide particular units differently, but the six-part 126-chapter architecture is the standard reference point for the received text.'
+          'The received Viṣṇu Purāṇa consists of six aṃśas comprising 126 chapters: I, 22; II, 16; III, 18; IV, 24; V, 38; VI, 8. The fifth aṃśa, devoted to Kṛṣṇa, is the longest. The sixth, treating Kali-yuga, dissolution and liberation, is the shortest.',
+          'Traditional Purāṇa lists assign 23,000 ślokas to the Viṣṇu Purāṇa. The surviving six-aṃśa text contains only about six to seven thousand, the total varying with edition and the treatment of prose and irregular verses. The discrepancy has sometimes been explained by supposing the loss of a larger recension or by connecting the title with Bṛhadviṣṇu and related Vaiṣṇava texts; the evidence does not permit certainty. The safer procedure is to distinguish the traditional numerical notice from the extent of the extant text.',
+          'The work has often been singled out as the best example of the pañcalakṣaṇa Purāṇa. Sarga occupies much of the first aṃśa; cosmological re-creation and pralaya are distributed through the first and sixth; manvantaras form the opening of the third; the fourth is devoted principally to vaṃśa and vaṃśānucarita; and the dynastic sequence prepares directly for the Kṛṣṇa narrative of the fifth. Its ritual and theological chapters show, however, that the five characteristics never exhausted the actual contents of a Mahāpurāṇa.',
+          'The principal frame is the conversation of Maitreya and Parāśara. Parāśara relates that, after his father had been killed by a Rākṣasa, he began a rite for the destruction of the Rākṣasas; Vasiṣṭha induced him to desist, and Pulastya rewarded his restraint by granting him knowledge of the Purāṇa. The work thus places its own transmission within a genealogy of sages. The conventional attribution to Vyāsa belongs to the broader Purāṇic theory of authorship and redaction.'
         ],
-        subsections:chapterMap
-      },
-      {
-        title:'Aṃśa 1 — Creation, gods and exemplary devotees',
-        paragraphs:[
-          'The first aṃśa establishes the work’s cosmology. Viṣṇu is described as the ground from which the universe emerges, in which it persists and into which it returns. Creation is explained through categories closely related to Sāṃkhya—Pradhāna or Prakṛti, Mahat, Ahaṃkāra, subtle elements, gross elements, senses and the cosmic egg—while the Purāṇa identifies the ultimate causal reality behind them with Viṣṇu.',
-          'The book moves from measures of cosmic time and Varāha’s raising of the earth to Brahmā’s creation of beings and a mythic account of human society. It then narrates Rudra, Dakṣa’s descendants, Durvāsas and Indra, the churning of the ocean and Lakṣmī, Dhruva’s austerities and exaltation, Pṛthu and the Pracetases.',
-          'Chapters 16–20 form the Prahlāda cycle. Prahlāda remains devoted to Viṣṇu despite persecution by Hiraṇyakaśipu and instruction from teachers aligned with his father. The Viṣṇu Purāṇa’s version is an important early Purāṇic form of the story; later Purāṇas elaborate the Nṛsiṃha episode differently. The first aṃśa closes by returning from narrative to metaphysics and the nature of the Absolute.'
+        subsections:[
+          {title:'The six aṃśas',bullets:[
+            'Aṃśa I — 22 chapters: creation, cosmic time, Varāha, Brahmā, Rudra, Lakṣmī and the churning of the ocean, Dhruva, Pṛthu, the Pracetases and Prahlāda.',
+            'Aṃśa II — 16 chapters: Jambūdvīpa and Bhāratavarṣa, the other continents and oceans, the lower worlds, hells, planetary regions, the sun and moon, and the story of Bharata with the teaching of Ṛbhu.',
+            'Aṃśa III — 18 chapters: the Manus, repeated Vyāsas, division of the Vedas, the Purāṇa list, Yama, varṇa, āśrama, domestic rites, śrāddha and the Māyāmoha episode.',
+            'Aṃśa IV — 24 chapters: solar and lunar dynasties, Rāma, Nimi and Janaka, Yayāti, Yadu and Puru, the Kuru and Pāṇḍava lines, and future kings.',
+            'Aṃśa V — 38 chapters: Kṛṣṇa from his birth and Vraja childhood through Kaṃsa, Mathurā and Dvārakā to the destruction of the Yādavas.',
+            'Aṃśa VI — 8 chapters: Kali-yuga, cosmic dissolution, the sufferings of saṃsāra, Khāṇḍikya and Keśidhvaja, yoga, liberation and the phalaśruti.'
+          ]},
+          {title:'Manuscripts and the received text',paragraphs:[
+            'Manuscripts of the Viṣṇu Purāṇa survive in a number of regional copies and exhibit the ordinary variations of a long Sanskrit transmission. The sixfold plan is nevertheless more stable than the organization of many large Purāṇas. The absence, in the core six-aṃśa text, of immense tīrtha-māhātmyas and vrata compilations is one of the features already remarked by Wilson. Supplementary pilgrimage and temple material in particular witnesses must therefore be identified by recension rather than silently treated as part of one invariant text.'
+          ]}
         ]
       },
       {
-        title:'Aṃśa 2 — Earth, heavens, hells and the teaching of Bharata',
+        title:'Contents',
         paragraphs:[
-          'The second aṃśa maps the Purāṇic universe. It describes Jambūdvīpa and Bhāratavarṣa, then Plakṣa, Śālmala, Kuśa, Krauñca, Śāka and Puṣkara, together with concentric oceans traditionally characterized by salt water, sugarcane juice, wine, ghee, curds, milk and fresh water. Mountains, rivers, peoples and the cosmic boundary at Lokāloka make geography part of a theological cosmology rather than a modern cartographic exercise.',
-          'The text then descends through subterranean realms and Narakas and rises through the planetary and celestial regions. The sun, moon, planets, rain cycle and calendrical time are treated as coordinated parts of a living cosmos governed by Viṣṇu.',
-          'Chapters 13–16 change register. King Bharata, after renouncing kingship, becomes attached to a deer and undergoes further births; the narrative culminates in teaching on nonattachment and the highest truth, including the embedded Ṛbhu–Nidāgha discourse. The cosmographic book therefore ends as a philosophical argument about the difference between apparent worldly distinctions and the reality apprehended through knowledge.'
+          'The contents are summarized below according to the six aṃśas of the critical text. Chapter references are given where a section has particular importance for the history of Purāṇic religion or for comparison with other Sanskrit works.'
+        ],
+        subsections:[
+          {
+            title:'First Aṃśa: Cosmology',
+            paragraphs:[
+              'Maitreya’s opening questions concern the origin, duration and dissolution of the world, the genealogies of gods and patriarchs, the Manus and the dynasties of kings. Parāśara’s answer begins with Viṣṇu as the ultimate ground of the universe. The sequence of Pradhāna, Mahat, Ahaṃkāra, tanmātras and gross elements is substantially Sāṃkhyan in terminology, but its theological interpretation is Vaiṣṇava: the whole process proceeds through the power and presence of Viṣṇu.',
+              'The first chapters include the measures of cosmic time, Varāha’s raising of the earth and Brahmā’s renewed creation. The origin of living beings, patriarchs and social orders follows. Rudra appears in eight forms; Dakṣa’s descendants connect the cosmology with the great genealogical web which occupies the later Purāṇa.',
+              'The ninth chapter contains the curse of Durvāsas, Indra’s loss of prosperity, the churning of the ocean and the manifestation of Lakṣmī. The Lakṣmī hymn is theologically important because it joins the goddess to Viṣṇu not merely as a mythological consort but within the order of cosmic prosperity and sovereignty.',
+              'Dhruva occupies chapters 11–13. The boy’s exclusion from his father’s lap leads to austerity and meditation on Viṣṇu; his exaltation as the fixed celestial Dhruva turns a royal and domestic narrative into an example of devotion. Pṛthu and the Pracetases continue the themes of kingship, fertility and cosmic order.',
+              'Chapters 16–20 narrate Prahlāda. His devotion to Viṣṇu resists the authority of Hiraṇyakaśipu and the instruction of the Daitya teachers. The episode is an important witness to the development of the Prahlāda–Nṛsiṃha complex before its fuller elaboration in later Purāṇas. The aṃśa closes with Kaśyapa’s descendants, the Maruts and a return to the nature of the highest reality.'
+            ]
+          },
+          {
+            title:'Second Aṃśa: Earth',
+            paragraphs:[
+              'The second aṃśa is the principal cosmographical book. Priyavrata distributes the continents; Jambūdvīpa is described with Meru at its centre; Bhāratavarṣa receives separate treatment; and six further dvīpas are placed in concentric order with their surrounding oceans. This is religious cosmography, not geographical reportage in the modern sense. Lands, mountains, rivers and peoples are arranged within a universe whose structure is itself an expression of cosmic order.',
+              'The account continues downward through subterranean regions, nāgas and hells and upward through the solar, lunar and planetary spheres. The motions of the sun and moon, calendrical divisions and the production of rain are integrated with ritual time. Viṣṇu is repeatedly made the final principle by which the cosmological machinery is sustained.',
+              'The last four chapters alter the character of the aṃśa. The story of Bharata treats the danger of attachment even after renunciation. Its culmination in the teaching associated with Ṛbhu and Nidāgha relativizes the distinctions elaborated in the cosmographical chapters: names, social identities and spatial divisions belong to empirical existence and are not the final truth apprehended by knowledge.'
+            ]
+          },
+          {
+            title:'Third Aṃśa: Time, Veda and religious institutions',
+            paragraphs:[
+              'The third aṃśa begins with the manvantaras. The present age belongs to Vaivasvata, the seventh Manu, while future Manus and their gods, Indras and seers are enumerated in the regular Purāṇic manner. The doctrine of repeated Vyāsas follows: in each Dvāpara a Vyāsa arranges Vedic revelation; the Vyāsa of the present cycle is Kṛṣṇa Dvaipāyana.',
+              'Chapters 4–6 describe the division of the Ṛg, Yajur, Sāma and Atharva Vedas among pupils and schools. The sixth chapter is of special importance for Purāṇic self-representation, since it names the Purāṇas and describes Purāṇic Saṃhitās. The passage places Purāṇic transmission alongside the organization of Vedic learning rather than outside the learned brahmanical system.',
+              'Chapter 7 gives the discourse concerning those who are beyond the ordinary jurisdiction of Yama: devotion to Viṣṇu is made a distinguishing sign. Chapters 8 and 9 then set out the duties of the four varṇas and the four āśramas. The juxtaposition is characteristic of the text. Bhakti does not abolish the social and ritual order; it is placed above and through it as the religious orientation by which action receives its final end.',
+              'Chapters 10–16 form a compact manual of domestic and ancestral observance: rites at birth and naming, marriage, the daily obligations of the householder, purification, conduct, death rites and several forms of śrāddha. Wilson already observed that this portion has a comparatively sober ritual character and lacks the enormous catalogues of sectarian vows and local māhātmyas found in many later Purāṇas. Hazra consequently treated it as important evidence for the history of Purāṇic rites and customs, although individual prescriptions still require separate chronological examination.',
+              'The Māyāmoha narrative of chapters 17–18 is explicitly polemical. A deluding figure causes the Daityas to reject Vedic authority and they are thereby deprived of the power which had protected them. The descriptions of doctrines labelled Buddhist or Jaina belong to the rhetoric of brahmanical sectarian controversy and cannot be used as impartial accounts of those traditions.'
+            ]
+          },
+          {
+            title:'Fourth Aṃśa: Dynasties',
+            paragraphs:[
+              'The fourth aṃśa contains the dynastic material required by the vaṃśa and vaṃśānucarita characteristics of Purāṇa. The solar line proceeds from Manu and Ikṣvāku through Sagara and other kings; a compressed Rāma narrative is inserted in this genealogy. The line of Nimi and the Janakas of Mithilā is also given.',
+              'The lunar dynasty begins with Soma and passes through Budha and Purūravas. Yayāti and his sons provide the main branching point. The Yadu line leads to the ancestry of Vasudeva and Kṛṣṇa; the Puru line leads through Bharata and Kuru to the Kauravas and Pāṇḍavas. Genealogy thus joins the Purāṇa directly to the historical imagination of the Mahābhārata.',
+              'Among the independent narratives embedded in this section are the Syamantaka jewel and the account of Śiśupāla. The latter is connected with the series Hiraṇyakaśipu–Rāvaṇa–Śiśupāla, a theological device by which repeated enemies of the deity are incorporated into a single history of divine descent.',
+              'The final chapters turn to future dynasties. Such passages have repeatedly been pressed into service for dating the Purāṇas; they are also among the passages most susceptible to extension during transmission. Dynastic notices therefore have evidentiary value only after the text of the particular recension has been established.'
+            ]
+          },
+          {
+            title:'Fifth Aṃśa: Kṛṣṇa',
+            paragraphs:[
+              'The fifth aṃśa, in 38 chapters, is the longest division of the work. It begins with the burden of the earth and the birth of Kṛṣṇa to Devakī and Vasudeva. The child is transferred to the cowherd settlement, where the familiar cycle of Pūtanā, Kāliya, Dhenuka and Pralamba is narrated. The Govardhana episode occupies chapters 11–12 and is followed by Kṛṣṇa’s sport with the cowherd women and the slaying of Ariṣṭa and Keśin.',
+              'Akrūra brings Kṛṣṇa and Balarāma to Mathurā; the royal washerman, the garland-maker, the wrestling arena and the death of Kaṃsa follow. Ugrasena is restored and the Yādavas are subsequently driven by Jarāsandha’s attacks toward Dvārakā.',
+              'The Dvārakā cycle includes Rukmiṇī, Pradyumna, Aniruddha, Naraka, Aditi’s earrings, the Pārijāta tree, Uṣā and Bāṇa. Balarāma’s return to Vraja and the diversion of the Yamunā are also narrated. The aṃśa closes not in triumph but with the destruction of the Yādavas and Arjuna’s attempt to conduct the surviving women away from Dvārakā.',
+              'The relation of this Kṛṣṇa book to the Harivaṃśa is close and has long been discussed. The direction of dependence is not settled by similarity alone. Equally significant is the relation to the Brahma Purāṇa: large portions, including almost the entire Kṛṣṇa cycle, recur there in very close wording but under a different narrative frame. Taylor treats this as clear evidence of large-scale Purāṇic textual reuse.',
+              'Comparison with the Bhāgavata Purāṇa is instructive. The Viṣṇu Purāṇa knows much of the same Kṛṣṇa mythology, but its narration is generally shorter and its devotional rhetoric less expansive. The Bhāgavata develops episodes which are comparatively compressed here into a much more elaborate theology of Kṛṣṇa-bhakti.'
+            ]
+          },
+          {
+            title:'Sixth Aṃśa: Liberation',
+            paragraphs:[
+              'The final aṃśa begins with the conditions of Kali-yuga: diminution of dharma, disorder in social relations and the decline of traditional learning. The description is followed by a familiar Purāṇic paradox. Precisely because the age is corrupt, religious merit may be obtained by means less arduous than those required in earlier ages; devotion to Viṣṇu acquires special efficacy.',
+              'Chapters 3–5 describe dissolution. The cosmological pralaya at the end of an aeon is distinguished from elemental dissolution and from the final release by which the individual is freed from Prakṛti. The exposition is joined to a sustained catalogue of the sufferings inherent in embodied existence, from birth and old age to death and the instability even of heavenly reward.',
+              'The dialogue of Khāṇḍikya and Keśidhvaja occupies chapters 6–7. Keśidhvaja expounds yoga through restraint, observance, posture, breath, withdrawal, concentration and contemplation. The terminology is recognizably that of classical Yoga, but the object of contemplation and the final metaphysical ground are interpreted as Viṣṇu. Liberation therefore results neither from ritual action alone nor from devotion severed from knowledge, but from a synthesis in which knowledge, yoga and devotion converge.',
+              'The eighth chapter is the phalaśruti. Hearing and reciting the Purāṇa are themselves praised as religious acts, and the work closes by returning its encyclopaedic contents to the economy of sacred transmission with which it began.'
+            ]
+          }
         ]
       },
       {
-        title:'Aṃśa 3 — Manvantaras, Vedas, dharma and ritual',
+        title:'Theology',
         paragraphs:[
-          'The third aṃśa begins with the Manus and cosmic cycles. The current age belongs to Vaivasvata, the seventh Manu. The text also explains the repeated appearance of a Vyāsa who divides and arranges Vedic revelation in successive Dvāpara ages; the present Vyāsa is Kṛṣṇa Dvaipāyana.',
-          'Chapters 3–6 are especially important for the history of Hindu textual classification. They describe the division of the four Vedas into branches and teachers, mention four Purāṇic Saṃhitās and give a list of eighteen Purāṇas. This self-conscious placement of Purāṇa alongside Vedic learning is part of the work’s claim to authority.',
-          'The middle of the book turns to normative social and ritual teaching: the duties of varṇa, the four āśramas, saṃskāras, marriage, household conduct, purification, death observances and śrāddha. The text differentiates social duties but also gives common moral norms—truthfulness, benevolence, non-theft, restraint, avoidance of malice and wrongful violence—and connects righteous conduct with worship of Viṣṇu.',
-          'The final chapters narrate Māyāmoha, a deluding manifestation through whom the Daityas are induced to reject Vedic authority and are thereby made vulnerable to the gods. The episode is polemical and reflects brahmanical competition with doctrines portrayed as anti-Vedic; it should be read historically as sectarian literature, not as a neutral description of Buddhists or Jains.'
+          'The theology of the Viṣṇu Purāṇa cannot be reduced to the statement that Viṣṇu is the chief deity. Viṣṇu is repeatedly identified with the principles by which the world is produced, sustained and withdrawn. He is both the personal Lord praised in hymns and the highest reality in which the distinctions of cause and effect, deity and world, are comprehended.',
+          'Brahmā and Rudra are not denied or treated as unreal. They are assigned cosmic functions within the sovereignty of Viṣṇu. In several passages the language is sufficiently comprehensive to admit different later Vedāntic constructions; this is one reason why the work could be employed by commentators of divergent metaphysical commitments.',
+          'Kṛṣṇa is the dominant avatāra of the fifth aṃśa, but the text also gives important forms of the Varāha, Nṛsiṃha, Vāmana/Trivikrama and Rāma traditions. The familiar later scheme of exactly ten avatāras should not be mechanically imposed upon every passage of the Purāṇa.',
+          'Lakṣmī has a conspicuous place in the churning-of-the-ocean narrative and is praised in relation to sovereignty, prosperity and the divine order. Her relation to Viṣṇu anticipates themes which later Vaiṣṇava systems elaborate much more systematically.',
+          'The religious path is similarly synthetic. The third aṃśa preserves Vedic and domestic duties; the stories of Dhruva and Prahlāda exalt devotion; the second and sixth contain strong renunciatory and philosophical material; the sixth sets out yoga. The text does not present these as mutually exclusive religions but as levels and disciplines within a Vaiṣṇava conception of liberation.'
         ]
       },
       {
-        title:'Aṃśa 4 — Solar, lunar and future dynasties',
+        title:'Critical edition',
         paragraphs:[
-          'The fourth aṃśa is the great genealogical book. It begins from Manu and the solar dynasty, passes through Ikṣvāku, Sagara and a compressed Rāma narrative, and includes the line of Nimi and the Janakas of Mithilā. It then turns to the lunar line beginning with Soma, Budha and Purūravas.',
-          'Yayāti and his sons provide the branching structure for later peoples and dynasties. The Yadu line leads to the ancestry of Vasudeva and Kṛṣṇa, while the Puru line leads toward Bharata, Kuru, the Kauravas and Pāṇḍavas. The text thus connects Purāṇic genealogy with the narrative world of the Mahābhārata.',
-          'The closing chapters move into “future” dynasties from the narrator’s perspective: descendants of Parīkṣit and other lines, followed by later kings and the political decline associated with Kali-yuga. Such lists have repeatedly been used for historical dating, but they are among the portions most likely to have been extended or adjusted during transmission.'
+          'The modern textual basis of the Viṣṇu Purāṇa was substantially improved by M. M. Pathak’s Critical Edition of the Viṣṇupurāṇam, published by the Oriental Institute, Vadodara, in two volumes in 1997 and 1999. The editors collected forty-three Sanskrit manuscripts and selected twenty-seven principal witnesses for the constitution of the text and apparatus.',
+          'The importance of this edition is methodological. Earlier printed texts and translations necessarily rested on a smaller and less explicitly controlled manuscript base. A critical edition does not recover an autograph of “Vyāsa”; it records and evaluates the surviving evidence and permits the reader to distinguish the constituted text from important variants.',
+          'GRETIL supplies an electronic Sanskrit text derived from the Pathak edition. McComas Taylor’s 2021 complete English translation, The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes, is based on the critical text and is accompanied by an introduction devoted to chronology, structure, intertextuality, theology and transmission.',
+          'H. H. Wilson’s translation of 1840 nevertheless remains indispensable for the history of scholarship. It was the first major English Purāṇa translation to appear in print and includes extensive notes comparing Purāṇic, epic and Smṛti parallels. Fitzedward Hall later revised and supplemented Wilson’s work. Its textual base is pre-critical, but its philological observations often remain worth consulting.'
         ]
       },
       {
-        title:'Aṃśa 5 — Kṛṣṇa',
+        title:'Influences and reception',
         paragraphs:[
-          'The fifth aṃśa contains 38 chapters and more than a quarter of the work. Kṛṣṇa is presented as a manifestation of Viṣṇu whose descent responds to the burden of the earth and the tyranny of Kaṃsa. The narrative covers Devakī and Vasudeva, the transfer to the cowherd settlement, Pūtanā, Kāliya, Dhenuka and Pralamba, the seasons of Vraja, Govardhana, Indra’s submission and Kṛṣṇa’s relations with the cowherd women.',
-          'The story then moves to Mathurā: Akrūra’s mission, the departure from Vraja, Kaṃsa’s wrestlers and Kaṃsa’s death. Later chapters narrate Jarāsandha’s attacks, the move to Dvārakā, Rukmiṇī, Pradyumna and Aniruddha, Naraka, Aditi’s earrings, the Pārijāta tree, Uṣā and Bāṇa, Balarāma’s exploits, the destruction of the Yādavas and Arjuna’s removal of the surviving women from Dvārakā.',
-          'The Viṣṇu Purāṇa stands between the Harivaṃśa and the Bhāgavata Purāṇa in the history of Sanskrit Kṛṣṇa narrative. The precise direction of borrowing is debated. Taylor notes that the Brahma Purāṇa reproduces nearly the whole Viṣṇu-Purāṇa Kṛṣṇa cycle with extremely close wording but a different frame, powerful evidence for the way Purāṇic authors reused large textual blocks.',
-          'Compared with the Bhāgavata Purāṇa, the narrative is generally more economical and less saturated with explicit devotional commentary, though devotion remains central. That contrast is one reason the two texts are so valuable when studied together.'
+          'The Viṣṇu Purāṇa exercised an influence disproportionate to its length. Its importance to later Vaiṣṇava Vedānta is especially clear in the works of Rāmānuja, who cites the text repeatedly when identifying the Brahman of the Upaniṣads with Viṣṇu-Nārāyaṇa and when explaining the relation of God, selves and the material world. Sucharita Adluri has shown that the Purāṇa is not ornamental evidence in Rāmānuja but part of the textual architecture by which scriptural authority is constructed.',
+          'The text also attracted Sanskrit commentary. Later Vaiṣṇava exegetes, including the Viṣṇucittīya tradition, read its cosmology and bhakti within explicitly sectarian theological systems; Śrīdhara Svāmin likewise commented on the work. The existence of divergent commentary is significant because the Purāṇa’s metaphysical vocabulary cannot simply be equated with one later school.',
+          'The Purāṇa’s influence on other Purāṇic texts is visible at the level of wording as well as theme. The Brahma Purāṇa contains extensive passages closely corresponding to the Viṣṇu Purāṇa, including the Kaṇḍu–Pramlocā story and nearly the entire Kṛṣṇa cycle. The Bhāgavata Purāṇa shares major narrative sequences but transforms them by expansion, theological reaccentuation and the development of Kṛṣṇa-bhakti.',
+          'The work also preserves and reshapes older material. Vedic cosmogony and myth, epic genealogy, Dharmaśāstra-like social teaching and classical Yoga are all absorbed into a Vaiṣṇava Purāṇic synthesis. “Influence” is therefore not a one-directional process: the Viṣṇu Purāṇa is both recipient and transmitter.'
+        ],
+        subsections:[
+          {title:'Film adaptation',paragraphs:[
+            'The 2025 animated film Mahavatar Narsimha drew upon the Viṣṇu Purāṇa together with the Nṛsiṃha Purāṇa and Bhāgavata Purāṇa. Its use belongs to the modern reception of the Prahlāda–Nṛsiṃha cycle and should be distinguished from evidence for the chronology or formation of the Sanskrit text.'
+          ]}
         ]
       },
       {
-        title:'Aṃśa 6 — Kali-yuga, dissolution, yoga and liberation',
+        title:'Rites, dharma and social history',
         paragraphs:[
-          'The final aṃśa first describes Kali-yuga as an age of declining social and religious order. It immediately adds a paradoxical advantage: practices that were difficult in earlier ages can bear fruit through comparatively accessible devotion to Viṣṇu. This theme later became important in bhakti traditions.',
-          'Chapters 3–5 distinguish modes of cosmic dissolution and turn from cosmic catastrophe to the existential problem of saṃsāra: suffering in birth, youth, old age, death, hell and even the impermanence of heavenly reward. Liberation requires knowledge of the self and freedom from identification with Prakṛti.',
-          'The Khāṇḍikya–Keśidhvaja dialogue in chapters 6–7 presents a disciplined yoga involving ethical restraints and observances, posture and breath, withdrawal of the senses, concentration and contemplation. The goal is absorption in the supreme reality identified with Viṣṇu. The final chapter praises hearing and transmitting the Viṣṇu Purāṇa itself.'
+          'For the history of Hindu rites the third aṃśa deserves treatment apart from the mythological books. Chapters 8–9 set out varṇa and āśrama; chapters 10–12 treat birth, marriage, the householder and sadācāra; chapters 13–16 treat śrāddha and ancestral observance. Hazra repeatedly used this kind of material to establish a relative chronology of Purāṇic practices.',
+          'The text distinguishes the occupations and duties of the four varṇas while also listing obligations common to them, including truthfulness, benevolence, restraint, non-theft and avoidance of wrongful violence. These passages are normative śāstric statements. They are evidence for ideals articulated by a learned textual tradition; they cannot by themselves be taken as a statistical description of social life in a particular century.',
+          'The āśrama material presents brahmacarya, householdership, forest life and renunciation as successive or coordinated forms of religious discipline. The householder is given particular ritual weight because sacrifice, hospitality and ancestral rites depend upon him.',
+          'The śrāddha chapters are unusually detailed for so compact a Purāṇa. They discuss occasions, officiants, eligibility, offerings, prohibited foods, monthly rites, sapinḍīkaraṇa and the relation of the deceased to the ancestral group. Comparison with Manu and other Smṛti texts was already made by Wilson and became central to Hazra’s use of Purāṇic ritual chapters as historical evidence.',
+          'The relatively restrained character of these chapters is noteworthy. Wilson stressed the absence from the core text of large bodies of sectarian vows, festival calendars and temple māhātmyas. This observation cannot by itself date the work, but it remains an important feature when the Viṣṇu Purāṇa is compared with the accretional ritual corpora of the Padma, Skanda and other later Purāṇas.'
         ]
       },
       {
-        title:'Theology: Viṣṇu, Brahman, Kṛṣṇa and the other gods',
-        paragraphs:[
-          'The Purāṇa repeatedly identifies Viṣṇu not merely as one god among others but with the underlying reality of the cosmos. He is spoken of as cause and effect, manifest and unmanifest, the inner self of beings and the reality in which creation, preservation and dissolution occur. Brahmā and Rudra/Śiva are honoured but are situated within this Viṣṇu-centred metaphysics.',
-          'The text can therefore sound simultaneously personal and metaphysical. Wilson described it in “pantheistic” terms; later interpreters have read its language through Advaita, Viśiṣṭādvaita and other Vedāntic frameworks. The Purāṇa itself does not map neatly onto the later boundaries of any single Vedānta school.',
-          'Kṛṣṇa is the central avatāra of the fifth aṃśa, but the work also knows Varāha, Nṛsiṃha, Vāmana/Trivikrama, Rāma and other manifestations. Its avatāra theology is less standardized than later popular lists of exactly ten forms.',
-          'Lakṣmī receives a major hymn in the ocean-churning narrative and is paired with Viṣṇu through complementary theological imagery. Devotion, refuge in Viṣṇu, correct action, knowledge and yoga are not isolated systems in the work; they are repeatedly brought into relation with one another.'
-        ]
-      },
-      {
-        title:'Manuscripts, editions and translations',
-        paragraphs:[
-          'The text survives in many manuscripts and printed recensions. Because manuscripts were repeatedly recopied, a nineteenth-century or later physical witness can preserve much older wording while also containing scribal interventions. The manuscript tradition is therefore evidence to be compared, not a single pristine archetype.',
-          'H. H. Wilson published his English translation in 1840, the first major published English translation of a Purāṇa. Fitzedward Hall later revised and annotated it. Wilson’s work remains historically important and is still useful for its notes, but it predates modern manuscript collation.',
-          'M. M. Pathak’s Critical Edition of the Viṣṇupurāṇam was published by the Oriental Institute, Vadodara, in two volumes in 1997 and 1999. The project gathered 43 Sanskrit manuscripts and selected 27 for constructing the critical text and apparatus. GRETIL provides an electronic version based on this edition.',
-          'McComas Taylor’s The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes (ANU Press, 2021) is a complete modern English translation based on the critical edition and is available open access. It is the best convenient English starting point for readers who want a modern translation tied to the critical Sanskrit text.'
-        ]
-      },
-      {
-        title:'Relationship to other texts and later influence',
-        paragraphs:[
-          'The Viṣṇu Purāṇa is saturated with older Sanskrit traditions. It reworks Vedic myths, knows the Mahābhārata, alludes to the Rāmāyaṇa world, shares Kṛṣṇa material with the Harivaṃśa and stands in a close but debated relationship with the Bhāgavata Purāṇa.',
-          'Its didactic chapters likewise overlap with Dharmaśūtra and Dharmaśāstra concerns. Older scholarship sometimes argued that dharma texts borrowed from the Purāṇa; later scholars have often reversed the direction or proposed common traditions. The safest conclusion is that the relationship must be argued passage by passage.',
-          'The work became especially influential in Śrī Vaiṣṇava intellectual history. Rāmānuja cites the Viṣṇu Purāṇa frequently in his Vedāntic works to connect Upaniṣadic Brahman with Viṣṇu/Nārāyaṇa and to articulate the relation of God, selves and world. This reception makes the Purāṇa important not only for mythology but for the history of systematic Vedānta.',
-          'Other readers found different possibilities in the same text. Śrīdhara Svāmin and later interpreters could emphasize renunciation and nondual knowledge, while Vaiṣṇava commentators read the same metaphysical language through a theistic framework. The reception history is therefore evidence of the text’s theological range.'
-        ]
-      },
-      {
-        title:'Modern cultural adaptation',
-        paragraphs:[
-          'The 2025 animated film Mahavatar Narsimha drew on the Viṣṇu Purāṇa together with the Nṛsiṃha Purāṇa and Bhāgavata Purāṇa. Director Ashwin Kumar has specifically described reading these Purāṇic sources while developing the film. The adaptation belongs to the modern reception of the Prahlāda–Nṛsiṃha cycle rather than to the textual history of the Sanskrit Purāṇa itself.'
+        title:'Further reading',
+        bullets:[
+          'M. M. Pathak (ed.), The Critical Edition of the Viṣṇupurāṇam, 2 vols., Oriental Institute, Vadodara, 1997–1999.',
+          'McComas Taylor, The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes, ANU Press, 2021.',
+          'H. H. Wilson, The Vishnu Purana: A System of Hindu Mythology and Tradition, 1840; later revised by Fitzedward Hall.',
+          'Ludo Rocher, The Purāṇas, A History of Indian Literature II.3, Wiesbaden, 1986.',
+          'R. C. Hazra, Studies in the Purāṇic Records on Hindu Rites and Customs.',
+          'Sucharita Adluri, Textual Authority in Classical Indian Thought: Ramanuja and the Vishnu Purana, Routledge, 2015.',
+          'Cornelia Dimmitt and J. A. B. van Buitenen, Classical Hindu Mythology: A Reader in the Sanskrit Purāṇas.'
         ]
       }
     ],
+
+    chapterMap:[
+      'I.1–22 — Creation, cosmic time, Varāha, Brahmā, Rudra, Lakṣmī, Dhruva, Pṛthu, Pracetases, Prahlāda.',
+      'II.1–16 — Jambūdvīpa, Bhāratavarṣa, concentric continents and oceans, lower worlds, hells, sun, moon, Bharata and Ṛbhu.',
+      'III.1–18 — Manvantaras, Vyāsas, Vedic schools, Purāṇa list, Yama, varṇa, āśrama, domestic rites, śrāddha, Māyāmoha.',
+      'IV.1–24 — Solar and lunar dynasties, Rāma, Janaka, Yayāti, Yadu, Puru, Kuru-Pāṇḍava genealogy, future kings.',
+      'V.1–38 — Kṛṣṇa from Devakī and Vraja through Kaṃsa and Dvārakā to the destruction of the Yādavas.',
+      'VI.1–8 — Kali-yuga, pralaya, saṃsāra, Khāṇḍikya–Keśidhvaja, yoga, liberation, phalaśruti.'
+    ],
+    ritualHistory:'The principal institutional and ritual dossier is III.8–16: varṇa, āśrama, birth and marriage rites, householder conduct, death rites and śrāddha. Hazra used these chapters comparatively in his chronology of Purāṇic rites and customs.',
+    rituals:['Saṃskāras connected with birth and marriage','Daily rites and obligations of the householder','Purification and sadācāra','Death rites','Ekoddiṣṭa and other śrāddhas','Sapiṇḍīkaraṇa and ancestral offerings'],
+    sacredGeography:['Bhāratavarṣa','Jambūdvīpa','Meru','The six other dvīpas','Lower worlds and Narakas','Vraja, Mathurā and Dvārakā in the Kṛṣṇa book'],
+    dharma:['Varṇa duties in III.8','Āśrama duties in III.9','Birth, marriage and household conduct in III.10–12','Śrāddha in III.13–16'],
+    reception:'Cited extensively by Rāmānuja and later Vaiṣṇava theologians; commented upon in Sanskrit; influential for later Purāṇic Kṛṣṇa narrative and Vaiṣṇava doctrinal synthesis.',
+    scholarlyPositions:[
+      'Hazra: c. 275–325 CE for an early recension or substantial form of the text.',
+      'Rocher: the date remains contested and no single date should be made to cover every stratum.',
+      'Taylor: a fourth–fifth-century CE date for something approaching the received extent is a reasonable working estimate, not an exact demonstrable terminus.'
+    ],
+    dependencies:[
+      'Vedic cosmogonic and mythic material is recast within a Vaiṣṇava theology.',
+      'Epic genealogy and Kṛṣṇa narrative connect the text closely with the Mahābhārata and Harivaṃśa.',
+      'Large verbal correspondences with the Brahma Purāṇa demonstrate extensive Purāṇic textual reuse.',
+      'The Bhāgavata Purāṇa shares and greatly expands important parts of the Kṛṣṇa cycle.',
+      'The institutional chapters stand in close relation to Dharmaśāstra and Gṛhya-style ritual traditions.'
+    ],
+    primaryEvidence:[
+      'M. M. Pathak critical edition, 1997–1999.','GRETIL electronic text based on the critical edition.','H. H. Wilson translation, 1840, with later Hall revision.','McComas Taylor complete translation of the critical text, 2021.'
+    ],
     sources:[
-      {title:'McComas Taylor — The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes (ANU Press, 2021)',detail:'Modern complete translation based on the critical edition; introduction discusses date, authorship, audience, intertextuality, theology and the six-book structure.',url:'https://press.anu.edu.au/publications/textbooks/visnu-purana'},
-      {title:'M. M. Pathak (ed.) — The Critical Edition of the Viṣṇupurāṇam, 2 vols. (Oriental Institute, 1997–1999)',detail:'Critical Sanskrit edition based on extensive manuscript collation.',url:'https://books.google.com/books/about/The_critical_edition_of_the_Vi%E1%B9%A3%E1%B9%87upur.html?id=BjwqAAAAYAAJ'},
-      {title:'GRETIL — Viṣṇupurāṇa critical text',detail:'Electronic Sanskrit text based on Pathak’s critical edition.',url:'https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_viSNupurANa-crit.htm'},
-      {title:'H. H. Wilson — The Vishnu Purana (1840)',detail:'Historic English translation with extensive comparative notes.',url:'https://books.google.com/books?id=dNNCAAAAcAAJ'},
-      {title:'Wisdomlib — Taylor translation contents',detail:'Convenient online chapter-by-chapter index of the 2021 translation.',url:'https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor'},
-      {title:'Wikipedia — Vishnu Purana',detail:'Used as a coverage checklist for the public-facing article; claims were cross-checked against stronger sources rather than copied.',url:'https://en.wikipedia.org/wiki/Vishnu_Purana'},
-      {title:'Ludo Rocher — The Purāṇas (1986)',detail:'Standard modern survey for Purāṇic classification, dating, verse counts and textual history.',url:'https://books.google.com/books?id=n0-4RJh5FgoC'},
-      {title:'Sucharita Adluri — Textual Authority in Classical Indian Thought: Ramanuja and the Vishnu Purana (2015)',detail:'Study of the Viṣṇu Purāṇa’s role in Rāmānuja’s Vedānta and Śrī Vaiṣṇava textual authority.',url:'https://www.routledge.com/Textual-Authority-in-Classical-Indian-Thought-Ramanuja-and-the-Visnu-Purana/Adluri/p/book/9780415695756'},
-      {title:'Ashwin Kumar interview on Mahavatar Narsimha source texts (2025)',detail:'Modern reception evidence for use of the Viṣṇu Purāṇa in the animated film.',url:'https://www.ottplay.com/news/mahavatar-narsimha-maker-ashwin-kumar-on-why-he-chose-to-start-with-the-fourth-avatar/4ecdc5e0d2422'}
+      {key:'taylor',title:'McComas Taylor — The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes (ANU Press, 2021)',detail:'Complete translation based on the Baroda critical text; introduction and notes on date, structure, textual relations, theology and transmission.',url:'https://press.anu.edu.au/publications/textbooks/visnu-purana'},
+      {key:'pathak',title:'M. M. Pathak (ed.) — The Critical Edition of the Viṣṇupurāṇam, 2 vols. (Oriental Institute, 1997–1999)',detail:'Critical Sanskrit edition based on extensive manuscript collation.',url:'https://books.google.com/books/about/The_critical_edition_of_the_Vi%E1%B9%A3%E1%B9%87upur.html?id=BjwqAAAAYAAJ'},
+      {key:'gretil',title:'GRETIL — Viṣṇupurāṇa, critical text',detail:'Electronic Sanskrit text based on the Pathak edition.',url:'https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_viSNupurANa-crit.htm'},
+      {key:'wilson',title:'H. H. Wilson — The Vishnu Purana (1840)',detail:'First major English Purāṇa translation; valuable historical introduction and comparative notes, though pre-critical.',url:'https://www.sacred-texts.com/hin/vp/'},
+      {key:'adluri',title:'Sucharita Adluri — Textual Authority in Classical Indian Thought: Ramanuja and the Vishnu Purana (2015)',detail:'Study of the Purāṇa as scriptural authority in Rāmānuja and Śrī Vaiṣṇava Vedānta.',url:'https://www.routledge.com/Textual-Authority-in-Classical-Indian-Thought-Ramanuja-and-the-Visnu-Purana/Adluri/p/book/9780415695756'},
+      {key:'dimmitt',title:'Cornelia Dimmitt and J. A. B. van Buitenen — Classical Hindu Mythology',detail:'Comparative study and translations from the Sanskrit Purāṇas.',url:'https://books.google.com/books?id=TmU8EAAAQBAJ'}
     ],
     bibliography:[
-      'Ludo Rocher, The Purāṇas (Wiesbaden: Harrassowitz, 1986)',
       'R. C. Hazra, Studies in the Purāṇic Records on Hindu Rites and Customs',
-      'Cornelia Dimmitt and J. A. B. van Buitenen, Classical Hindu Mythology: A Reader in the Sanskrit Purāṇas',
-      'Sucharita Adluri, Textual Authority in Classical Indian Thought: Ramanuja and the Vishnu Purana',
-      'McComas Taylor, The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes (2021)'
+      'Ludo Rocher, The Purāṇas (Wiesbaden: Harrassowitz, 1986)',
+      'H. H. Wilson, The Vishnu Purana (1840)',
+      'M. M. Pathak (ed.), The Critical Edition of the Viṣṇupurāṇam (1997–1999)',
+      'McComas Taylor, The Viṣṇu Purāṇa: Ancient Annals of the God with Lotus Eyes (2021)',
+      'Sucharita Adluri, Textual Authority in Classical Indian Thought: Ramanuja and the Vishnu Purana (2015)'
     ]
   });
 })();
