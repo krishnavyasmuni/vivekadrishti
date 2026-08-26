@@ -1,0 +1,38 @@
+/* Hindupedia-inspired directory treatment for the Scripture Index landing page. */
+.scripture-page .article-body{width:min(1040px,calc(100% - 32px));max-width:none}
+.wiki-index-directory{font-family:Arial,Helvetica,sans-serif;color:#242424;font-size:16px;line-height:1.45}
+.wiki-index-directory[hidden]{display:none!important}
+.wiki-index-intro{max-width:100%;margin:0 0 22px;padding:0 2px;color:#272727;font-size:16px;line-height:1.5}
+.wiki-index-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 12px;align-items:start}
+.wiki-index-column{min-width:0}
+.wiki-index-block{margin:0 0 20px}
+.wiki-index-heading{margin:0 0 2px!important;padding:4px 8px!important;border:1px solid #a9c8bb;background:#ccecdf;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:19px!important;font-weight:700!important;line-height:1.25!important;text-align:left!important}
+.wiki-index-list{margin:0;padding:0 8px 0 30px;color:#777;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.48}
+.wiki-index-list li{margin:0;padding:0 0 1px 0}
+.wiki-index-list ul{margin:2px 0 2px;padding-left:30px}
+.wiki-index-list a,.wiki-index-link{appearance:none;border:0;background:none;padding:0;color:#0b55a3;font:inherit;line-height:inherit;text-decoration:none;text-align:left;cursor:pointer}
+.wiki-index-list a:hover,.wiki-index-link:hover{text-decoration:underline;color:#083f7b}
+.wiki-index-list a:focus-visible,.wiki-index-link:focus-visible{outline:2px solid #5e8fbf;outline-offset:2px;border-radius:2px}
+.wiki-index-quote{position:relative;margin:0;padding:2px 24px 2px 30px;color:#303030;font-size:16px;line-height:1.5}
+.wiki-index-quote::before,.wiki-index-quote::after{position:absolute;color:#b4b5f2;font-family:Georgia,serif;font-size:39px;font-weight:700;line-height:1}
+.wiki-index-quote::before{content:'“';left:3px;top:-1px}
+.wiki-index-quote::after{content:'”';right:4px;bottom:17px}
+.wiki-index-quote p{margin:0 0 8px}
+.wiki-index-quote cite{display:block;text-align:right;font-size:14px;font-style:normal}
+.wiki-index-directory + .corpus-nav{margin:0 0 14px;padding:0}
+.wiki-index-directory + .corpus-nav[hidden]{display:none!important}
+.wiki-index-back{display:inline-block;margin:0 0 16px;padding:5px 0;border:0;background:transparent;color:#0b55a3;font-family:Arial,Helvetica,sans-serif;font-size:15px;cursor:pointer}
+.wiki-index-back:hover{text-decoration:underline}
+.wiki-index-back[hidden]{display:none!important}
+/* When reading a corpus, keep the old controls but make them visually closer to the index. */
+.scripture-page .corpus-nav:not([hidden]){display:flex;flex-wrap:wrap;gap:6px;padding-bottom:13px;border-bottom:1px solid #d8e3de}
+.scripture-page .corpus-nav:not([hidden]) .corpus-button{border:1px solid #a9c8bb;border-radius:0;background:#e4f4ed;color:#174d70;font-family:Arial,Helvetica,sans-serif;font-size:13px;padding:7px 10px}
+.scripture-page .corpus-nav:not([hidden]) .corpus-button.is-active{background:#ccecdf;color:#111;font-weight:700}
+@media(max-width:760px){
+  .scripture-page .article-body{width:min(100%,calc(100% - 24px))}
+  .wiki-index-grid{grid-template-columns:1fr;gap:0}
+  .wiki-index-heading{font-size:18px!important}
+  .wiki-index-directory,.wiki-index-list{font-size:15px}
+  .wiki-index-block{margin-bottom:17px}
+  .wiki-index-quote{padding-right:18px}
+}
