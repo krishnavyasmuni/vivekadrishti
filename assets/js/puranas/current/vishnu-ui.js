@@ -92,11 +92,12 @@
     setOpen(section, false);
   }
 
-  function collapseBelowContents(root) {
+  // The lead and the Wikipedia-style Contents box stay visible. Every actual
+  // article section beneath that box is collapsed: Date, Structure, Contents,
+  // Theology, Critical edition, reception, rites, further reading, references, etc.
+  function collapseArticleSections(root) {
     const sections = [...root.querySelectorAll(':scope > section')].filter(sec => sec.querySelector(':scope > h2'));
-    const contentsIndex = sections.findIndex(sec => norm(sec.querySelector(':scope > h2')?.textContent) === 'contents');
-    if (contentsIndex < 0) return;
-    sections.slice(contentsIndex + 1).forEach(makeCollapsible);
+    sections.forEach(makeCollapsible);
 
     root.querySelectorAll('.kena-toc a[href^="#"]').forEach(link => {
       if (link.dataset.vishnuCollapseBound === '1') return;
@@ -117,7 +118,7 @@
     reader?.classList.add('vishnu-purana-reader');
     root.classList.add('vishnu-purana-scholarly');
     simplifyInfobox(root);
-    collapseBelowContents(root);
+    collapseArticleSections(root);
   }
 
   window.openScriptureEncyclopedia = function(button) {
