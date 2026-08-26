@@ -1,5 +1,29 @@
 (() => {
-  if (!document.querySelector('link[data-hindupedia-site]')) {
+  const legacyVivekaStyle = [
+    /^\/vivekadrishti\/(?:pages\/)?indology\/?$/,
+    /^\/vivekadrishti\/articles\/a-shashtric-lens-of-varna-part-one\/?$/,
+    /^\/vivekadrishti\/articles\/a-vaishnava-lens-on-vishnu-as-the-supreme-deity\/?$/
+  ].some((pattern) => pattern.test(location.pathname));
+
+  if (legacyVivekaStyle) {
+    document.body.classList.add('legacy-viveka-style');
+    document.querySelectorAll('link[href*="/assets/css/hindupedia-site.css"]').forEach((link) => link.remove());
+
+    if (!document.querySelector('link[href*="fonts.googleapis.com/css2?family=Merriweather"]')) {
+      const fonts = document.createElement('link');
+      fonts.rel = 'stylesheet';
+      fonts.href = 'https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Vollkorn:wght@400;500&display=swap';
+      document.head.appendChild(fonts);
+    }
+
+    if (!document.querySelector('link[data-legacy-viveka-style]')) {
+      const legacy = document.createElement('link');
+      legacy.rel = 'stylesheet';
+      legacy.href = '/vivekadrishti/assets/css/legacy-viveka-articles.css?v=1';
+      legacy.dataset.legacyVivekaStyle = 'true';
+      document.head.appendChild(legacy);
+    }
+  } else if (!document.querySelector('link[data-hindupedia-site]')) {
     const theme = document.createElement('link');
     theme.rel = 'stylesheet';
     theme.href = '/vivekadrishti/assets/css/hindupedia-site.css?build=20260826-2145';
