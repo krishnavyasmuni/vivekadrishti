@@ -2,15 +2,15 @@
   const D = window.SCRIPTURE_DETAIL_DATA = window.SCRIPTURE_DETAIL_DATA || {};
   const key = 'Purāṇa:Viṣṇu Purāṇa';
 
-  // Keep the infobox concise: traditional identification first, then a simple
-  // working historical range. The long discussion belongs in the article body.
+  // Keep the visible metadata plain-English and traditional-first. Detailed
+  // philology remains in the article itself, not in the infobox.
   if (D[key]) {
     Object.assign(D[key], {
-      traditionalAuthor: 'Vyāsa; narrated by Parāśara to Maitreya',
-      period: 'c. 300–500 CE (received form)',
-      status: 'Extant Mahāpurāṇa',
-      booksCount: '6 aṃśas · 126 chapters',
-      verseCount: 'Traditionally 23,000 ślokas; extant text c. 6,000–7,000'
+      traditionalAuthor: 'Vyasa; narrated by Parashara to Maitreya',
+      period: 'c. 300–500 CE',
+      status: 'Extant Mahapurana',
+      booksCount: '6 books · 126 chapters',
+      verseCount: '23,000 verses traditionally; c. 6,000–7,000 extant'
     });
   }
 
@@ -36,24 +36,77 @@
       const t = norm(label.textContent);
       if (t === 'traditional attribution') {
         label.textContent = 'Traditional attribution';
-        value.textContent = 'Vyāsa; Parāśara → Maitreya';
+        value.textContent = 'Vyasa; Parashara → Maitreya';
       } else if (t === 'date / textual formation') {
         label.textContent = 'Date';
         value.textContent = 'c. 300–500 CE';
       } else if (t === 'textual status') {
         label.textContent = 'Status';
-        value.textContent = 'Extant Mahāpurāṇa';
+        value.textContent = 'Extant Mahapurana';
       } else if (t === 'major divisions') {
         label.textContent = 'Structure';
-        value.textContent = '6 aṃśas · 126 chapters';
+        value.textContent = '6 books · 126 chapters';
       } else if (t === 'verse count') {
         value.textContent = '23,000 traditionally; c. 6,000–7,000 extant';
-      } else if (t === 'extent') {
-        row.remove();
-      } else if (t === 'recensions') {
+      } else if (t === 'extent' || t === 'recensions') {
         row.remove();
       }
     });
+  }
+
+  const plainMap = [
+    [/Viṣṇu/g,'Vishnu'],[/viṣṇu/g,'vishnu'],
+    [/Kṛṣṇa/g,'Krishna'],[/kṛṣṇa/g,'krishna'],
+    [/Śrī/g,'Shri'],[/śrī/g,'shri'],
+    [/Śiva/g,'Shiva'],[/śiva/g,'shiva'],
+    [/Vaiṣṇava/g,'Vaishnava'],[/vaiṣṇava/g,'vaishnava'],
+    [/Bhāgavata/g,'Bhagavata'],[/bhāgavata/g,'bhagavata'],
+    [/Rāmānuja/g,'Ramanuja'],[/rāmānuja/g,'ramanuja'],
+    [/Parāśara/g,'Parashara'],[/parāśara/g,'parashara'],
+    [/Vyāsa/g,'Vyasa'],[/vyāsa/g,'vyasa'],
+    [/Purāṇa/g,'Purana'],[/purāṇa/g,'purana'],
+    [/Mahāpurāṇa/g,'Mahapurana'],[/mahāpurāṇa/g,'mahapurana'],
+    [/Smṛti/g,'Smriti'],[/smṛti/g,'smriti'],
+    [/Śrāddha/g,'Shraddha'],[/śrāddha/g,'shraddha'],
+    [/Dharmaśāstra/g,'Dharmashastra'],[/dharmaśāstra/g,'dharmashastra'],
+    [/śāstra/g,'shastra'],[/Śāstra/g,'Shastra'],
+    [/aṃśas/g,'books'],[/aṃśa/g,'book'],[/Aṃśas/g,'Books'],[/Aṃśa/g,'Book'],
+    [/adhyāyas/g,'chapters'],[/adhyāya/g,'chapter'],
+    [/ślokas/g,'verses'],[/śloka/g,'verse']
+  ];
+
+  function plainEnglish(text) {
+    let out = String(text || '');
+    plainMap.forEach(([re, value]) => { out = out.replace(re, value); });
+    const chars = {
+      'ā':'a','ī':'i','ū':'u','ṛ':'ri','ṝ':'ri','ḷ':'l','ḹ':'l','ṅ':'n','ñ':'n','ṇ':'n','ṭ':'t','ḍ':'d','ś':'sh','ṣ':'sh','ḥ':'h','ṃ':'m','ṁ':'m',
+      'Ā':'A','Ī':'I','Ū':'U','Ṛ':'Ri','Ṝ':'Ri','Ḷ':'L','Ṅ':'N','Ñ':'N','Ṇ':'N','Ṭ':'T','Ḍ':'D','Ś':'Sh','Ṣ':'Sh','Ḥ':'H','Ṃ':'M'
+    };
+    out = out.replace(/[āīūṛṝḷḹṅñṇṭḍśṣḥṃṁĀĪŪṚṜḶṄÑṆṬḌŚṢḤṂ]/g, c => chars[c] || c);
+    return out.normalize('NFD').replace(/[\u0300-\u036f]/g,'').normalize('NFC');
+  }
+
+  function deaccentVisibleRomanText(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent) return NodeFilter.FILTER_REJECT;
+        if (parent.closest('[lang^="sa"], .universal-devanagari, .vishnu-devanagari, script, style')) return NodeFilter.FILTER_REJECT;
+        return /[ĀĪŪṚṜḶṄÑṆṬḌŚṢḤṂāīūṛṝḷḹṅñṇṭḍśṣḥṃṁ]|aṃś|ślok|adhyāy|Viṣṇu|Kṛṣṇa|Purāṇa/.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => { node.nodeValue = plainEnglish(node.nodeValue); });
+  }
+
+  function addDevanagariTitle(root) {
+    if (root.querySelector(':scope > .vishnu-devanagari')) return;
+    const dev = document.createElement('div');
+    dev.className = 'vishnu-devanagari';
+    dev.lang = 'sa-Deva';
+    dev.textContent = 'विष्णुपुराणम्';
+    root.prepend(dev);
   }
 
   function setOpen(section, open) {
@@ -92,9 +145,6 @@
     setOpen(section, false);
   }
 
-  // The lead and the Wikipedia-style Contents box stay visible. Every actual
-  // article section beneath that box is collapsed: Date, Structure, Contents,
-  // Theology, Critical edition, reception, rites, further reading, references, etc.
   function collapseArticleSections(root) {
     const sections = [...root.querySelectorAll(':scope > section')].filter(sec => sec.querySelector(':scope > h2'));
     sections.forEach(makeCollapsible);
@@ -117,7 +167,11 @@
     const reader = root.closest('.purana-full-reader, .universal-wiki-reader, .kena-article-reader');
     reader?.classList.add('vishnu-purana-reader');
     root.classList.add('vishnu-purana-scholarly');
+    const readerTitle = reader?.querySelector('.kena-article-head h1');
+    if (readerTitle) readerTitle.textContent = 'Vishnu Purana';
     simplifyInfobox(root);
+    deaccentVisibleRomanText(root);
+    addDevanagariTitle(root);
     collapseArticleSections(root);
   }
 
