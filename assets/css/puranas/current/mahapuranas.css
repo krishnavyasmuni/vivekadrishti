@@ -6,6 +6,7 @@
 .mahapurana-wiki-reader .kena-article-close{color:#202122!important;border-color:#a2a9b1!important;background:#fff!important}
 .mahapurana-wiki-reader .kena-article-scroll{background:#fff!important;padding:0 0 48px!important}
 .mahapurana-wiki-reader .mahapurana-wiki-article{box-sizing:border-box!important;width:1040px!important;max-width:calc(100% - 32px)!important;margin:0 auto!important;padding:22px 8px 70px!important;background:#fff!important;color:#202122!important;font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:1.6!important}
+.mahapurana-wiki-reader .mahapurana-wiki-article.vishnu-purana-scholarly::before{display:none!important;content:none!important}
 .mahapurana-wiki-reader .mahapurana-main-title{display:block;margin:0 0 2px!important;color:#202122!important;font-family:Georgia,'Times New Roman',serif!important;font-size:38px!important;font-weight:400!important;line-height:1.2!important;text-align:left!important}
 .mahapurana-wiki-reader .mahapurana-devanagari{margin:0 0 20px!important;padding:0 0 10px!important;border-bottom:1px solid #a2a9b1!important;color:#54595d!important;font-family:Georgia,'Noto Serif Devanagari',serif!important;font-size:18px!important;line-height:1.4!important}
 .mahapurana-wiki-reader .mahapurana-wiki-article p,.mahapurana-wiki-reader .mahapurana-wiki-article li{color:#202122!important;font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:1.6!important;letter-spacing:normal!important}
