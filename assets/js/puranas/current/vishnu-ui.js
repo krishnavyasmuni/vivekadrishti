@@ -19,6 +19,15 @@
 
   const norm = s => String(s || '').trim().toLowerCase();
 
+  function renameIndexLabels() {
+    document.querySelectorAll('[data-name="Viṣṇu Purāṇa"]').forEach(el => {
+      const direct = [...el.childNodes].find(n => n.nodeType === Node.TEXT_NODE && n.nodeValue.trim());
+      const label = el.querySelector('.scripture-name,.name,.label,span');
+      if (label && /Viṣṇu Purāṇa/.test(label.textContent || '')) label.textContent = 'Vishnu Purana';
+      else if (direct && /Viṣṇu Purāṇa/.test(direct.nodeValue || '')) direct.nodeValue = direct.nodeValue.replace('Viṣṇu Purāṇa','Vishnu Purana');
+    });
+  }
+
   function currentName(button) {
     return button?.dataset?.name || button?.querySelector?.('span')?.textContent?.trim() || '';
   }
@@ -174,6 +183,10 @@
     addDevanagariTitle(root);
     collapseArticleSections(root);
   }
+
+  renameIndexLabels();
+  setTimeout(renameIndexLabels, 250);
+  setTimeout(renameIndexLabels, 900);
 
   window.openScriptureEncyclopedia = function(button) {
     const result = previousOpen(button);
