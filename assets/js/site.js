@@ -1,28 +1,23 @@
 (() => {
-  const legacyVivekaStyle = [
-    /^\/vivekadrishti\/(?:pages\/)?indology\/?$/,
-    /^\/vivekadrishti\/articles\/a-shashtric-lens-of-varna-part-one\/?$/,
-    /^\/vivekadrishti\/articles\/a-vaishnava-lens-on-vishnu-as-the-supreme-deity\/?$/
-  ].some((pattern) => pattern.test(location.pathname));
+  const path = location.pathname;
 
-  if (legacyVivekaStyle) {
-    document.body.classList.add('legacy-viveka-style');
+  // Keep the new Hindupedia-style treatment on navigation/directory pages only.
+  // Real articles and scripture chapters should retain their original Viveka Dṛṣṭi
+  // typography, colours and article-specific CSS.
+  const articleDirectoryPaths = [
+    /^\/vivekadrishti\/articles\/?$/,
+    /^\/vivekadrishti\/articles\/scripture\/?$/,
+    /^\/vivekadrishti\/articles\/scripture-index-version-3\/?$/,
+    /^\/vivekadrishti\/articles\/an-index-of-hindu-scripture\/?$/
+  ];
+  const isArticleDirectory = articleDirectoryPaths.some((pattern) => pattern.test(path));
+  const isActualArticle = document.body.classList.contains('post-page') ||
+    (/^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory);
+
+  if (isActualArticle) {
+    // Some pages may have received the encyclopedia stylesheet before this script
+    // runs. Remove it so the original site.css / article CSS wins again.
     document.querySelectorAll('link[href*="/assets/css/hindupedia-site.css"]').forEach((link) => link.remove());
-
-    if (!document.querySelector('link[href*="fonts.googleapis.com/css2?family=Merriweather"]')) {
-      const fonts = document.createElement('link');
-      fonts.rel = 'stylesheet';
-      fonts.href = 'https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Vollkorn:wght@400;500&display=swap';
-      document.head.appendChild(fonts);
-    }
-
-    if (!document.querySelector('link[data-legacy-viveka-style]')) {
-      const legacy = document.createElement('link');
-      legacy.rel = 'stylesheet';
-      legacy.href = '/vivekadrishti/assets/css/legacy-viveka-articles.css?v=1';
-      legacy.dataset.legacyVivekaStyle = 'true';
-      document.head.appendChild(legacy);
-    }
   } else if (!document.querySelector('link[data-hindupedia-site]')) {
     const theme = document.createElement('link');
     theme.rel = 'stylesheet';
