@@ -245,6 +245,49 @@
   color:#6731fb!important;
 }
 
+/* Wikipedia-mobile style disclosure rows after Contents. */
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section{
+  border-top:1px solid rgba(60,54,46,.22)!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section:last-of-type{
+  border-bottom:1px solid rgba(60,54,46,.22)!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section > h2{
+  position:relative!important;
+  margin:0!important;
+  padding:18px 42px 18px 0!important;
+  border:0!important;
+  cursor:pointer!important;
+  user-select:none!important;
+  font-size:28px!important;
+  line-height:1.2!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section > h2::after{
+  content:'›';
+  position:absolute;
+  right:7px;
+  top:50%;
+  transform:translateY(-50%) rotate(90deg);
+  color:#625b52;
+  font-family:Georgia,serif;
+  font-size:29px;
+  font-weight:400;
+  transition:transform .14s ease;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section.is-open > h2::after{
+  transform:translateY(-50%) rotate(-90deg);
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section > h2:focus-visible{
+  outline:2px solid #6731fb!important;
+  outline-offset:4px!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-body{
+  padding:8px 0 30px!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-body[hidden]{
+  display:none!important;
+}
+
 /* References read like a bibliography, not a set of cards. */
 .vishnu-purana-reader .vishnu-purana-scholarly .universal-references ol{
   padding-left:1.55em!important;
@@ -294,5 +337,9 @@
   .vishnu-purana-reader .vishnu-purana-scholarly .kena-section h3,
   .vishnu-purana-reader .vishnu-purana-scholarly .purana-book h3{
     font-size:24px!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly .vishnu-collapse-section > h2{
+    padding:16px 38px 16px 0!important;
+    font-size:25px!important;
   }
 }
