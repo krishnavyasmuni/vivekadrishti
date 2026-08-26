@@ -19,11 +19,17 @@
     'Brahmavaivarta Purāṇa':'4 books · about 274 chapters','Mārkaṇḍeya Purāṇa':'137 chapters','Vāmana Purāṇa':'about 95 chapters','Varāha Purāṇa':'about 217–218 chapters','Matsya Purāṇa':'291 chapters','Kūrma Purāṇa':'2 principal parts · about 95 chapters',
     'Brahmāṇḍa Purāṇa':'large multi-part recension','Vāyu Purāṇa':'about 112 chapters','Devī Bhāgavata Purāṇa':'12 books · 318 chapters','Mahābhāgavata Purāṇa':'recensional structure varies'
   };
+  const ALLOWED = new Set([
+    'date of composition','structure','contents','theology','critical edition','manuscripts and editions',
+    'influences and reception','rites dharma and social history','further reading','references'
+  ]);
 
   const chars={'ā':'a','ī':'i','ū':'u','ṛ':'ri','ṝ':'ri','ḷ':'l','ḹ':'l','ṅ':'n','ñ':'n','ṇ':'n','ṭ':'t','ḍ':'d','ś':'sh','ṣ':'sh','ḥ':'h','ṃ':'m','ṁ':'m','Ā':'A','Ī':'I','Ū':'U','Ṛ':'Ri','Ṝ':'Ri','Ḷ':'L','Ṅ':'N','Ñ':'N','Ṇ':'N','Ṭ':'T','Ḍ':'D','Ś':'Sh','Ṣ':'Sh','Ḥ':'H','Ṃ':'M'};
   const replacements=[[/Purāṇa/g,'Purana'],[/purāṇa/g,'purana'],[/Mahāpurāṇa/g,'Mahapurana'],[/mahāpurāṇa/g,'mahapurana'],[/aṃśas/g,'books'],[/aṃśa/g,'book'],[/Aṃśas/g,'Books'],[/Aṃśa/g,'Book'],[/adhyāyas/g,'chapters'],[/adhyāya/g,'chapter'],[/ślokas/g,'verses'],[/śloka/g,'verse']];
   function english(s){let out=String(s||'');replacements.forEach(([r,v])=>out=out.replace(r,v));out=out.replace(/[āīūṛṝḷḹṅñṇṭḍśṣḥṃṁĀĪŪṚṜḶṄÑṆṬḌŚṢḤṂ]/g,c=>chars[c]||c);return out.normalize('NFD').replace(/[\u0300-\u036f]/g,'').normalize('NFC');}
   const norm=s=>english(s).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  const slug=s=>norm(s).replace(/\s+/g,'-')||'section';
+  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const article=()=>document.querySelector('.purana-full-article, .universal-wiki-article');
   const currentName=button=>button?.dataset?.name || button?.querySelector?.('span')?.textContent?.trim() || '';
   const data=name=>Object.assign({},D[name]||{},D[`Purāṇa:${name}`]||{});
@@ -59,6 +65,29 @@
     root.prepend(dev);root.prepend(title);
   }
 
+  function pruneGeneratedSections(root){
+    [...root.querySelectorAll(':scope > section')].forEach(sec=>{
+      const h=sec.querySelector(':scope > h2');if(!h)return;
+      const key=norm(h.textContent);
+      const keep=ALLOWED.has(key)||key.includes('references');
+      if(!keep)sec.remove();
+    });
+  }
+
+  function rebuildToc(root){
+    const toc=root.querySelector('.kena-toc,.ch-toc,.universal-toc,.wiki-toc');if(!toc)return;
+    let ol=toc.querySelector(':scope > ol');if(!ol){ol=document.createElement('ol');toc.append(ol);}ol.innerHTML='';
+    const used=new Set();
+    [...root.querySelectorAll(':scope > section')].forEach((sec,i)=>{
+      const h=sec.querySelector(':scope > h2');if(!h)return;
+      if(!sec.id){let id=`maha-${slug(h.textContent)}`,n=2;while(used.has(id)||document.getElementById(id))id=`maha-${slug(h.textContent)}-${n++}`;sec.id=id;}used.add(sec.id);
+      const li=document.createElement('li');li.innerHTML=`<a href="#${esc(sec.id)}">${esc(english(h.textContent.trim()))}</a>`;
+      const h3s=[...sec.querySelectorAll(':scope > h3, :scope > .purana-book > h3')];
+      if(h3s.length){const sub=document.createElement('ol');h3s.forEach((h3,j)=>{if(!h3.id)h3.id=`${sec.id}-${j+1}`;const sli=document.createElement('li');sli.innerHTML=`<a href="#${esc(h3.id)}">${esc(english(h3.textContent.trim()))}</a>`;sub.append(sli);});li.append(sub);}
+      ol.append(li);
+    });
+  }
+
   function setOpen(sec,open){const body=sec.querySelector(':scope > .mahapurana-collapse-body'),h=sec.querySelector(':scope > h2');if(!body||!h)return;sec.classList.toggle('is-open',open);body.hidden=!open;h.setAttribute('aria-expanded',open?'true':'false');}
   function makeCollapsible(sec){
     if(sec.classList.contains('mahapurana-collapse-section'))return;const h=sec.querySelector(':scope > h2');if(!h)return;
@@ -75,7 +104,7 @@
     const name=currentName(button);if(!SET.has(name))return;const root=article();if(!root)return;const e=data(name);const reader=root.closest('.purana-full-reader,.universal-wiki-reader,.kena-article-reader');
     reader?.classList.add('mahapurana-wiki-reader');root.classList.add('mahapurana-wiki-article');
     const head=reader?.querySelector('.kena-article-head h1');if(head)head.textContent=english(name);const eye=reader?.querySelector('.kena-article-head .eyebrow');if(eye)eye.textContent='Mahapurana · encyclopedia article';
-    simplifyInfobox(root,name);deaccent(root);addTitle(root,name,e);collapse(root);
+    simplifyInfobox(root,name);pruneGeneratedSections(root);deaccent(root);addTitle(root,name,e);rebuildToc(root);collapse(root);
   }
 
   renameCards();setTimeout(renameCards,200);setTimeout(renameCards,900);
