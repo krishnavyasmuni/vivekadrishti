@@ -1,0 +1,298 @@
+/* Viṣṇu Purāṇa — scholarly article skin
+   Uses the Varṇa article's typography/palette while retaining a Wikipedia-like
+   encyclopaedia layout: compact lead, floated infobox, restrained TOC, left-led
+   section hierarchy and dense references. */
+
+.vishnu-purana-reader{
+  background:#2b261f!important;
+  font-family:Merriweather,Georgia,serif!important;
+}
+.vishnu-purana-reader .kena-article-head{
+  width:920px!important;
+  max-width:calc(100% - 48px)!important;
+  margin:0 auto!important;
+  padding:28px 0 20px!important;
+  border:0!important;
+  background:#2b261f!important;
+  color:#f4f4f4!important;
+}
+.vishnu-purana-reader .kena-article-head .eyebrow{
+  color:#c9c0b5!important;
+  font-family:Merriweather,Georgia,serif!important;
+  font-size:13px!important;
+  font-weight:400!important;
+  letter-spacing:.04em!important;
+  text-transform:none!important;
+}
+.vishnu-purana-reader .kena-article-head h1{
+  margin:4px 0 0!important;
+  color:#f4f4f4!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:34px!important;
+  font-weight:400!important;
+  line-height:1.15!important;
+}
+.vishnu-purana-reader .kena-article-close{
+  color:#f4f4f4!important;
+  border-color:rgba(244,244,244,.28)!important;
+  background:transparent!important;
+}
+.vishnu-purana-reader .kena-article-scroll{
+  background:#2b261f!important;
+  padding:0 0 76px!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly{
+  box-sizing:border-box!important;
+  width:920px!important;
+  max-width:calc(100% - 48px)!important;
+  margin:0 auto!important;
+  padding:64px 76px 90px!important;
+  background:#f4f4f4!important;
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,serif!important;
+  font-size:20px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly::before{
+  content:'Viṣṇu Purāṇa';
+  display:block;
+  margin:0 0 12px!important;
+  color:#00787a!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:50px!important;
+  font-weight:400!important;
+  line-height:1.125!important;
+  text-align:left!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly p,
+.vishnu-purana-reader .vishnu-purana-scholarly li{
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,serif!important;
+  font-size:20px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+  letter-spacing:normal!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly p{
+  margin:0 0 26px!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly a{
+  color:#6731fb!important;
+  text-decoration:none!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly a:hover{
+  text-decoration:underline!important;
+}
+
+/* Infobox: encyclopaedic rather than card-like. */
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-infobox{
+  float:right!important;
+  width:286px!important;
+  max-width:42%!important;
+  margin:0 0 28px 34px!important;
+  padding:0!important;
+  border:1px solid rgba(60,54,46,.20)!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:#eeeae4!important;
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,serif!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-infobox-title{
+  padding:12px 14px 7px!important;
+  color:#00787a!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:25px!important;
+  font-weight:400!important;
+  line-height:1.15!important;
+  text-align:center!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-devanagari{
+  padding:0 14px 11px!important;
+  color:#3c362e!important;
+  font-size:16px!important;
+  text-align:center!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-infobox-image{
+  margin:0!important;
+  border:0!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-infobox-image img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:330px!important;
+  object-fit:cover!important;
+  border-radius:0!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-infobox-image figcaption{
+  padding:8px 10px 10px!important;
+  color:#625b52!important;
+  font-size:12px!important;
+  line-height:1.35!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-info-row{
+  display:grid!important;
+  grid-template-columns:42% 58%!important;
+  gap:0!important;
+  padding:8px 10px!important;
+  border-top:1px solid rgba(60,54,46,.12)!important;
+  background:transparent!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-info-row b,
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-info-row span{
+  color:#3c362e!important;
+  font-family:Merriweather,Georgia,serif!important;
+  font-size:13px!important;
+  line-height:1.35!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-info-row b{
+  font-weight:700!important;
+}
+
+/* Lead and contents. */
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-lead{
+  margin:0!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-toc{
+  display:table!important;
+  clear:left!important;
+  width:auto!important;
+  max-width:470px!important;
+  margin:34px 0 54px!important;
+  padding:16px 22px 14px!important;
+  border:1px solid rgba(60,54,46,.18)!important;
+  border-radius:0!important;
+  background:#eeeae4!important;
+  box-shadow:none!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-toc-title{
+  margin:0 0 8px!important;
+  color:#3c362e!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:22px!important;
+  font-weight:400!important;
+  text-align:left!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-toc ol{
+  margin:0!important;
+  padding-left:1.4em!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-toc li,
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-toc a{
+  font-size:15px!important;
+  line-height:1.45!important;
+}
+
+/* Wikipedia-like hierarchy in the Varṇa palette. */
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-section{
+  clear:both!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-section > h2{
+  margin:58px 0 24px!important;
+  padding:0 0 7px!important;
+  border-bottom:2px solid rgba(119,119,119,.10)!important;
+  color:#00787a!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:34px!important;
+  font-weight:400!important;
+  line-height:1.125!important;
+  text-align:left!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .kena-section h3,
+.vishnu-purana-reader .vishnu-purana-scholarly .purana-book h3{
+  margin:38px 0 18px!important;
+  padding:0!important;
+  color:#00787a!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:27px!important;
+  font-weight:400!important;
+  line-height:1.2!important;
+  text-align:left!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .purana-book{
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly ul,
+.vishnu-purana-reader .vishnu-purana-scholarly ol{
+  margin:0 0 26px!important;
+  padding-left:1.55em!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly li{
+  margin:0 0 9px!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .purana-source-cite{
+  margin-left:2px!important;
+  font-size:12px!important;
+  vertical-align:super!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .purana-source-cite a{
+  color:#6731fb!important;
+}
+
+/* References read like a bibliography, not a set of cards. */
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-references ol{
+  padding-left:1.55em!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-references li{
+  margin:0 0 14px!important;
+  font-size:15px!important;
+  line-height:1.45!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-references li b:first-child{
+  display:none!important;
+}
+.vishnu-purana-reader .vishnu-purana-scholarly .universal-references a{
+  font-size:14px!important;
+}
+
+@media (max-width:760px){
+  .vishnu-purana-reader .kena-article-head{
+    max-width:calc(100% - 32px)!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly{
+    max-width:calc(100% - 24px)!important;
+    padding:42px 24px 64px!important;
+    font-size:18px!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly::before{
+    font-size:40px!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly p,
+  .vishnu-purana-reader .vishnu-purana-scholarly li{
+    font-size:18px!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly .universal-infobox{
+    float:none!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:18px 0 32px!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly .kena-toc{
+    display:block!important;
+    width:auto!important;
+    max-width:none!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly .kena-section > h2{
+    font-size:30px!important;
+  }
+  .vishnu-purana-reader .vishnu-purana-scholarly .kena-section h3,
+  .vishnu-purana-reader .vishnu-purana-scholarly .purana-book h3{
+    font-size:24px!important;
+  }
+}
