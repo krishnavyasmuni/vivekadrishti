@@ -42,17 +42,39 @@ Do not replace these with older date-stamped or experimental branch files unless
 
 The live loader currently includes dedicated modules for Viṣṇu, Brahma, Padma, Śiva, Liṅga and Garuḍa Purāṇas, together with the shared Mahāpurāṇa reader/audit/UI modules. Treat the files under `assets/js/puranas/current/` as authoritative unless a later live loader says otherwise.
 
-## Branch policy
+## Branch policy and archived work
 
-Target state: `main` is the only long-lived branch.
+`main` is the repository's only branch.
 
-Before deleting a temporary branch, either:
+Two unfinished bodies of work that were not safe to throw away were preserved as archival tags before their temporary branches were removed:
 
-- confirm it was merged; or
-- confirm all unique work has been superseded elsewhere.
+- `archive/sridhara-canto2-canto10-complete-2026-08-24` → `0a1c114701b2d936072fad454f329dae7e31a807`
+- `archive/purana-rebuild-2026-08-26` → `651b344cc5ef713a353116137e3dd4e81bf8c39f`
 
-Never delete an unmerged branch solely to reduce the branch count if it still contains unique work.
+These tags are recovery points, not active website branches.
+
+## Privacy / credential audit — 26 August 2026
+
+A one-run full-history audit fetched every branch and tag that existed at audit time and scanned all reachable Git history.
+
+- 9 refs scanned.
+- 4,415 reachable object entries enumerated.
+- 1,318 text blobs scanned.
+- 692 commit metadata records checked.
+- 0 large blobs skipped.
+- 0 non-GitHub-noreply commit identities found.
+- No GitHub PAT, GitHub token, AWS access key, Google API key, OpenAI-style key, private-key PEM, Slack token or Stripe live-key pattern was found.
+- Apparent UK-phone-number matches were traced to SHA-256 hash data (`source_sha256`) / translation-cache hash material, not contact details.
+- Apparent macOS-user-path matches were either the audit regex matching itself or the generic historical path `/Users/macbook/...`; no personal local username was identified.
+
+Normal public GitHub attribution still exists in Git metadata (repository owner/account, public commit display name, and GitHub noreply email). Searches of the current website source did not find the commit display name, repository username, or GitHub noreply address embedded as site content.
+
+This was a technical privacy/credential audit, not a legal opinion or a copyright/defamation review of every article.
 
 ## Cleanup policy
 
 For a static-site cleanup, prefer deleting genuinely unreferenced experiments over renaming/moving live assets. Moving live assets creates needless link risk. Git history itself remains recoverable from prior commits unless history is intentionally rewritten.
+
+The 26 August 2026 cleanup removed 26 verified orphan scripture-index JS/CSS files from the current tree. The live index loader and the authoritative `current/` scripture folders were left unchanged.
+
+Do not rewrite repository history solely to reduce the GitHub size number without first removing any old-commit-pinned asset URLs from the live site and confirming that no recovery tag is still needed.
