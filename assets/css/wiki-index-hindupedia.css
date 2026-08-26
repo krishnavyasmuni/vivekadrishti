@@ -1,31 +1,59 @@
-/* Purāṇa-only Hindupedia-inspired treatment. The main Scripture Index keeps its original corpus buttons. */
+/* Purāṇa-only minimal wiki treatment. Main Scripture Index corpus buttons stay unchanged. */
 
-/* Keep the ordinary corpus navigation intact. */
+/* Keep the ordinary corpus navigation exactly as the site uses it. */
 .scripture-page .corpus-nav{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:24px}
 .scripture-page .corpus-button{padding:10px 14px;border-radius:4px;font-size:12px;cursor:pointer}
 
-/* Only the Purāṇa view gets the compact encyclopedia treatment. */
-.scripture-page .browser-stage .shastra-subnav .shastra-tab[data-view="Both"]{display:none!important}
+/* Purāṇa selector: only the two useful classifications. */
+.scripture-page .browser-stage .shastra-tab[data-view="Both"]{display:none!important}
+.scripture-page .shastra-subnav:has(.shastra-tab[data-group="puranas"]){
+  display:flex;
+  gap:6px;
+  max-width:420px;
+  margin:0 0 18px;
+}
+.scripture-page .shastra-subnav .shastra-tab[data-group="puranas"]{
+  flex:1 1 0;
+  padding:7px 10px;
+  border:1px solid #a9c8bb;
+  border-radius:0;
+  background:#fff;
+  color:#0b55a3;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+}
+.scripture-page .shastra-subnav .shastra-tab[data-group="puranas"].is-active{
+  background:#ccecdf!important;
+  border-color:#9dbfae!important;
+  color:#111!important;
+}
 
+/* No dashboard legend: the section headings already organize the material. */
+.scripture-page .purana-sect-legend{display:none!important}
+
+/* Hindupedia/Wikipedia-like two-column directory. */
 .scripture-page .purana-holder{
   column-count:2;
   column-gap:16px;
   column-fill:balance;
+  font-family:Arial,Helvetica,sans-serif;
 }
 .scripture-page .purana-sect-group{
   display:inline-block;
   width:100%;
-  margin:0 0 18px;
+  margin:0 0 16px;
   break-inside:avoid;
   -webkit-column-break-inside:avoid;
   page-break-inside:avoid;
 }
 .scripture-page .purana-sect-group>h3{
   display:block;
-  width:100%;
   box-sizing:border-box;
-  margin:0 0 5px!important;
-  padding:5px 8px!important;
+  width:100%;
+  margin:0 0 3px!important;
+  padding:4px 8px!important;
   border:1px solid #a9c8bb;
   border-radius:0;
   background:#ccecdf!important;
@@ -34,81 +62,87 @@
   font-size:17px!important;
   font-weight:700!important;
   line-height:1.2!important;
+  text-align:left!important;
 }
+
+/* Plain wiki list: buttons keep all existing JS behavior but look like links. */
 .scripture-page .purana-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:3px;
+  display:block;
+  margin:0;
+  padding:1px 0 2px;
 }
 .scripture-page .purana-name{
+  appearance:none;
+  position:relative;
+  display:block;
+  width:100%;
   min-height:0;
-  padding:7px 9px 7px 12px;
-  border:1px solid #d5dfdb;
-  border-left:4px solid var(--sect-color);
-  border-radius:2px;
-  background:#fff!important;
-  box-shadow:none;
-  color:#0b55a3;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:14px;
-  line-height:1.3;
-  transition:background .12s ease,border-color .12s ease;
+  margin:0;
+  padding:2px 4px 2px 18px;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:#0b55a3!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:15px!important;
+  font-weight:400!important;
+  line-height:1.42!important;
+  text-align:left;
+  cursor:pointer;
+  transform:none!important;
+}
+.scripture-page .purana-name::before{
+  content:'•';
+  position:absolute;
+  left:5px;
+  top:2px;
+  color:#777;
+  font-size:15px;
+  line-height:1.42;
 }
 .scripture-page .purana-name::after{display:none!important}
-.scripture-page .purana-name>span{color:#0b55a3;font-weight:400}
-.scripture-page .purana-name>small{
-  margin-top:2px;
-  color:#777;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:10px;
-  line-height:1.35;
+.scripture-page .purana-name>span{
+  display:inline;
+  width:auto;
+  color:#0b55a3!important;
+  font:inherit!important;
+  font-weight:400!important;
 }
-.scripture-page .purana-name:hover{
-  transform:none;
-  background:#f3faf7!important;
-  border-color:#b8d0c6;
+.scripture-page .purana-name>small{display:none!important}
+.scripture-page .purana-name:hover,
+.scripture-page .purana-name:focus-visible{
+  background:transparent!important;
+  color:#083f7b!important;
+  filter:none!important;
 }
+.scripture-page .purana-name:hover>span,
+.scripture-page .purana-name:focus-visible>span{
+  color:#083f7b!important;
+  text-decoration:underline;
+}
+.scripture-page .purana-name:focus-visible{outline:1px dotted #0b55a3;outline-offset:1px}
 .scripture-page .purana-name.is-active{
-  background:#eef8f4!important;
-  box-shadow:0 0 0 1px #9fc7b7 inset;
+  background:transparent!important;
+  color:#083f7b!important;
+  box-shadow:none!important;
 }
+.scripture-page .purana-name.is-active>span{color:#083f7b!important;text-decoration:underline}
 
-/* Make Mahāpurāṇa / Upapurāṇa the clear split. */
-.scripture-page .shastra-subnav:has(.shastra-tab[data-group="puranas"]){
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:8px;
-  max-width:520px;
-}
-.scripture-page .shastra-subnav .shastra-tab[data-group="puranas"]{
-  padding:9px 12px;
-  border:1px solid #a9c8bb;
-  border-radius:0;
-  background:#eaf6f1;
-  color:#174d70;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:13px;
-  font-weight:600;
-}
-.scripture-page .shastra-subnav .shastra-tab[data-group="puranas"].is-active{
-  background:#ccecdf!important;
-  border-color:#92b9a9!important;
-  color:#111!important;
-}
-
-/* Keep the traditional classification key, but make it quieter. */
-.scripture-page .purana-sect-legend{
-  margin:0 0 16px;
-  padding:7px 9px;
+/* The information panel can still appear after a click, but remains understated. */
+.scripture-page .purana-holder .shastra-info{
+  margin:10px 0 0;
+  padding:9px 10px;
   border:1px solid #d9e4df;
   border-radius:0;
+  border-top-width:1px;
   background:#fafdfc;
+  font-family:Arial,Helvetica,sans-serif;
 }
-.scripture-page .legend-chip{font-family:Arial,Helvetica,sans-serif;font-size:10px}
 
 @media(max-width:760px){
   .scripture-page .purana-holder{column-count:1}
   .scripture-page .purana-sect-group>h3{font-size:16px!important}
-  .scripture-page .purana-name{font-size:14px}
-  .scripture-page .shastra-subnav:has(.shastra-tab[data-group="puranas"]){grid-template-columns:1fr 1fr;max-width:none}
+  .scripture-page .purana-name{font-size:15px!important}
+  .scripture-page .shastra-subnav:has(.shastra-tab[data-group="puranas"]){max-width:none}
 }
