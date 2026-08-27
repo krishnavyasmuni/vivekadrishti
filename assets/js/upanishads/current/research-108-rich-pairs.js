@@ -29,11 +29,9 @@
       if(/ritual|dharma|social|yoga|renunc|practice|conduct|initiation|mantra/i.test(title))add(research.sections.social,paragraphs);
       if(/theolog|philosoph|doctrine|brahman|ātman|atman|conscious|self|prāṇa|prana|liberation|bhakti/i.test(title))add(research.sections.theology,paragraphs);
       if(/structure|division|chapter|book|section|khaṇḍa|khanda|valli|prapath/i.test(title))add(research.sections.structure,[title]);
-      if(!/date|chronolog|manuscript|recension|edition|transmission|commentar|reception|influence|legacy|scholar/i.test(title)){
-        add(research.sections.contents,[title,...paragraphs]);
-      }
+      if(!/date|chronolog|manuscript|recension|edition|transmission|commentar|reception|influence|legacy|scholar/i.test(title))add(research.sections.contents,[title,...paragraphs]);
     });
-    add(research.sections.theology,[rich.famous,rich.characteristic,richer=>richer]);
+    add(research.sections.theology,[rich.famous,rich.characteristic,rich.profile,rich.philosophy,rich.theology]);
     if(research.audit){
       Object.assign(research.audit,{
         date:research.sections.date.length,structure:research.sections.structure.length,contents:research.sections.contents.length,theology:research.sections.theology.length,
