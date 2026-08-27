@@ -4,7 +4,7 @@
   if(!root)return;
   const stage=root.querySelector('.browser-stage');
   if(!stage)return;
-  const BUILD='20260827-upapurana39-v4';
+  const BUILD='20260827-upapurana39-v5';
   const MAHA=[["Brahma Purāṇa", "brahma-purana"], ["Padma Purāṇa", "padma-purana"], ["Viṣṇu Purāṇa", "vishnu-purana"], ["Śiva Purāṇa", "shiva-purana"], ["Liṅga Purāṇa", "linga-purana"], ["Garuḍa Purāṇa", "garuda-purana"], ["Nāradīya Purāṇa", "naradiya-purana"], ["Bhāgavata Purāṇa", "bhagavata-purana"], ["Agni Purāṇa", "agni-purana"], ["Skanda Purāṇa", "skanda-purana"], ["Bhaviṣya Purāṇa", "bhavishya-purana"], ["Brahmavaivarta Purāṇa", "brahmavaivarta-purana"], ["Mārkaṇḍeya Purāṇa", "markandeya-purana"], ["Vāmana Purāṇa", "vamana-purana"], ["Varāha Purāṇa", "varaha-purana"], ["Matsya Purāṇa", "matsya-purana"], ["Kūrma Purāṇa", "kurma-purana"], ["Brahmāṇḍa Purāṇa", "brahmanda-purana"]];
   const OTHER=[["Vāyu Purāṇa", "vayu-purana"], ["Devī Bhāgavata Purāṇa", "devi-bhagavata-purana"], ["Mahābhāgavata Purāṇa", "mahabhagavata-purana"]];
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
