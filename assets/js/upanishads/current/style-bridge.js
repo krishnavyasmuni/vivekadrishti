@@ -34,39 +34,129 @@
     if(node && node.textContent!==value) node.textContent=value;
   }
 
+  function setPuranaSectionOpen(section,open){
+    if(!section)return;
+    const body=section.querySelector(':scope > .mahapurana-collapse-body');
+    const h2=section.querySelector(':scope > h2');
+    if(!body||!h2)return;
+    section.classList.toggle('is-open',open);
+    body.hidden=!open;
+    h2.setAttribute('aria-expanded',open?'true':'false');
+  }
+
   function enforceExactUpanishadTemplate(reader){
     if(!reader || !reader.classList.contains('up-research-reader')) return;
     setExactText(reader.querySelector('.up-research-toc > summary'),'Contents');
+    setExactText(reader.querySelector('.up-research-toc > .kena-toc-title'),'Contents');
 
-    const sectionLabels=[...reader.querySelectorAll('.up-research-section > summary > span:first-child')];
-    EXACT_UPANISHAD_TEMPLATE.forEach((label,i)=>setExactText(sectionLabels[i],label));
+    const oldLabels=[...reader.querySelectorAll('.up-research-section > summary > span:first-child')];
+    const puranaLabels=[...reader.querySelectorAll('.mahapurana-collapse-section > h2')];
+    const labels=puranaLabels.length?puranaLabels:oldLabels;
+    EXACT_UPANISHAD_TEMPLATE.forEach((label,i)=>setExactText(labels[i],label));
 
     const tocLinks=[...reader.querySelectorAll('.up-research-toc > ol > li > a')];
     EXACT_UPANISHAD_TEMPLATE.forEach((label,i)=>setExactText(tocLinks[i],label));
-
     reader.dataset.exactUpanishadTemplate='1';
   }
 
-  const obs=new MutationObserver(()=>{
-    document.querySelectorAll('.kena-article-reader').forEach(styleKena);
-    document.querySelectorAll('.up-research-reader').forEach(enforceExactUpanishadTemplate);
-  });
-  obs.observe(document.body,{childList:true,subtree:true});
+  function applyMahapuranaTemplate(reader){
+    if(!reader || !reader.classList.contains('up-research-reader'))return;
+    if(reader.dataset.mahapuranaTemplate==='1'){enforceExactUpanishadTemplate(reader);return;}
 
-  document.querySelectorAll('.up-research-reader').forEach(enforceExactUpanishadTemplate);
+    reader.classList.add('kena-article-reader','purana-full-reader','mahapurana-wiki-reader');
+    document.documentElement.classList.add('kena-article-open');
+
+    const backdrop=document.querySelector('.up-research-backdrop');
+    backdrop?.classList.add('kena-article-backdrop','scripture-wiki-backdrop','purana-full-backdrop');
+
+    const head=reader.querySelector('.up-research-head');
+    head?.classList.add('kena-article-head');
+    const eyebrow=head?.querySelector('.up-research-eyebrow');
+    if(eyebrow){eyebrow.classList.add('eyebrow');eyebrow.textContent='Upaniṣad · encyclopedia article';}
+    head?.querySelector('.up-research-close')?.classList.add('kena-article-close');
+    reader.querySelector('.up-research-scroll')?.classList.add('kena-article-scroll');
+
+    const article=reader.querySelector('.upanishad-research-article');
+    if(!article)return;
+    article.classList.add('purana-full-article','universal-wiki-article','mahapurana-wiki-article');
+
+    if(!article.querySelector(':scope > .mahapurana-main-title')){
+      const main=document.createElement('div');
+      main.className='mahapurana-main-title';
+      main.textContent=head?.querySelector('h1')?.textContent?.trim()||'Upaniṣad';
+      article.prepend(main);
+      const sourceDev=head?.querySelector('.up-research-dev');
+      if(sourceDev?.textContent?.trim()){
+        const dev=document.createElement('div');dev.className='mahapurana-devanagari';dev.lang='sa-Deva';dev.textContent=sourceDev.textContent.trim();main.insertAdjacentElement('afterend',dev);
+      }
+    }
+
+    const infobox=article.querySelector('.up-research-infobox');
+    if(infobox){
+      infobox.classList.add('kena-infobox','universal-infobox','purana-full-infobox');
+      infobox.querySelector('.up-research-infobox-title')?.classList.add('kena-infobox-title');
+      infobox.querySelector('figure')?.classList.add('universal-infobox-image');
+      infobox.querySelectorAll('.up-research-info-row').forEach(row=>row.classList.add('kena-info-row'));
+    }
+    article.querySelector('.up-research-lead')?.classList.add('kena-lead');
+    article.querySelector('.up-research-method-note')?.remove();
+
+    const oldToc=article.querySelector('details.up-research-toc');
+    if(oldToc){
+      const nav=document.createElement('nav');
+      nav.className='kena-toc up-research-toc';nav.setAttribute('aria-label','Contents');
+      const title=document.createElement('div');title.className='kena-toc-title';title.textContent='Contents';nav.append(title);
+      const ol=oldToc.querySelector(':scope > ol');if(ol)nav.append(ol);
+      oldToc.replaceWith(nav);
+    }
+
+    const oldSections=[...article.querySelectorAll('details.up-research-section')];
+    oldSections.forEach((old,i)=>{
+      const section=document.createElement('section');
+      section.id=old.id;section.className='kena-section purana-full-section mahapurana-collapse-section up-research-section';
+      if(i===EXACT_UPANISHAD_TEMPLATE.length-1||old.classList.contains('up-research-references'))section.classList.add('universal-references','up-research-references');
+      const h2=document.createElement('h2');h2.setAttribute('role','button');h2.setAttribute('tabindex','0');h2.setAttribute('aria-expanded','false');h2.textContent=EXACT_UPANISHAD_TEMPLATE[i]||old.querySelector('summary span')?.textContent||'Section';
+      const body=document.createElement('div');body.className='mahapurana-collapse-body';body.hidden=true;
+      const oldBody=old.querySelector(':scope > .up-research-section-body');
+      if(oldBody)while(oldBody.firstChild)body.append(oldBody.firstChild);
+      section.append(h2,body);old.replaceWith(section);
+    });
+
+    reader.dataset.mahapuranaTemplate='1';
+    enforceExactUpanishadTemplate(reader);
+  }
+
+  function syncReaders(){
+    document.querySelectorAll('.kena-article-reader:not(.up-research-reader)').forEach(styleKena);
+    const research=[...document.querySelectorAll('.up-research-reader')];
+    research.forEach(applyMahapuranaTemplate);
+    if(!research.length)document.documentElement.classList.remove('kena-article-open');
+  }
+
+  const obs=new MutationObserver(syncReaders);
+  obs.observe(document.body,{childList:true,subtree:true});
+  syncReaders();
 
   window.addEventListener('click',e=>{
     const button=e.target.closest?.('#scripture-browser .shastra-name[data-kind="Upaniṣad"]');
     if(!button)return;
     const open=window.openScriptureEncyclopedia;
     if(typeof open!=='function')return;
-    e.preventDefault();
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-    open(button);
+    e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();open(button);
   },true);
 
   document.addEventListener('click',e=>{
+    const tocLink=e.target.closest?.('.up-research-reader.mahapurana-wiki-reader .kena-toc a[data-up-open]');
+    if(tocLink){
+      e.preventDefault();e.stopImmediatePropagation();
+      const section=document.getElementById(tocLink.dataset.upOpen||'');
+      if(section?.classList.contains('mahapurana-collapse-section'))setPuranaSectionOpen(section,true);
+      const anchor=document.getElementById((tocLink.getAttribute('href')||'').replace(/^#/,''))||section;
+      anchor?.scrollIntoView({behavior:'smooth',block:'start'});return;
+    }
+    const h2=e.target.closest?.('.up-research-reader.mahapurana-wiki-reader .mahapurana-collapse-section > h2');
+    if(h2){e.preventDefault();const section=h2.parentElement;setPuranaSectionOpen(section,!section.classList.contains('is-open'));return;}
+
     const a=e.target.closest?.('.kena-universal-reader .kena-cite a');if(!a)return;
     const m=(a.getAttribute('href')||'').match(/#kena-ref-(\d+)/);if(!m)return;
     e.preventDefault();e.stopImmediatePropagation();
@@ -76,6 +166,12 @@
     const link=li.querySelector('a[href]');const copy=li.cloneNode(true);copy.querySelectorAll('a').forEach(x=>x.remove());
     card.innerHTML=`<button class="itihasa-source-close" type="button" aria-label="Close source">×</button><div class="itihasa-source-num">Source ${n}</div><p>${copy.innerHTML}</p>${link?`<a href="${link.href}" target="_blank" rel="noopener">Open source ↗</a>`:''}`;
     document.body.append(card);card.querySelector('.itihasa-source-close')?.addEventListener('click',()=>card.remove());
+  },true);
+
+  document.addEventListener('keydown',e=>{
+    const h2=e.target.closest?.('.up-research-reader.mahapurana-wiki-reader .mahapurana-collapse-section > h2');
+    if(!h2||(e.key!=='Enter'&&e.key!==' '))return;
+    e.preventDefault();const section=h2.parentElement;setPuranaSectionOpen(section,!section.classList.contains('is-open'));
   },true);
 
   if(!document.getElementById('kena-universal-v11-style')){
