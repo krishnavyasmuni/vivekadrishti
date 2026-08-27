@@ -30,36 +30,60 @@
 
   const item = (name, kind) => `<li><button type="button" class="shastra-name purana-wiki-link" data-name="${esc(name)}" data-kind="${esc(kind)}"><span>${esc(name)}</span></button></li>`;
 
+  const group = ({id, title, note, items, kind, open = false}) => `
+    <details class="purana-index-group" id="${esc(id)}"${open ? ' open' : ''}>
+      <summary>
+        <span class="purana-index-group-title">${esc(title)}</span>
+        <span class="purana-index-group-meta">${esc(note)}</span>
+      </summary>
+      <div class="purana-index-group-body">
+        <ul class="purana-wiki-list">${items.map(name => item(name, kind)).join('')}</ul>
+      </div>
+    </details>`;
+
   function renderPureWiki() {
     if (stage.hidden) return;
     const title = stage.querySelector('.shastra-title');
-    if (!title || title.textContent.trim() !== 'Purāṇas') return;
+    if (!title || !/^Purā?nas$/i.test(title.textContent.trim().replace('ā','a'))) return;
     if (stage.querySelector('.purana-wiki-directory')) return;
 
     stage.innerHTML = `
-      <h2 class="shastra-title">Purāṇas</h2>
-      <div class="shastra-holder purana-wiki-directory">
-        <section class="purana-wiki-column">
-          <h3>Mahāpurāṇas</h3>
-          <ul class="purana-wiki-list">${maha.map(name => item(name, 'Mahāpurāṇa')).join('')}</ul>
-          <h3 class="purana-wiki-secondary-heading">Other Mahāpurāṇa attestations</h3>
-          <ul class="purana-wiki-list purana-wiki-short-list">${otherMaha.map(name => item(name, 'Mahāpurāṇa')).join('')}</ul>
-        </section>
-        <section class="purana-wiki-column">
-          <h3>Upapurāṇas</h3>
-          <ul class="purana-wiki-list">${upa.map(name => item(name, 'Upapurāṇa')).join('')}</ul>
-        </section>
-      </div>`;
+      <article class="purana-index-article" aria-labelledby="purana-index-title">
+        <header class="purana-index-heading">
+          <h2 class="shastra-title" id="purana-index-title">Purāṇas</h2>
+        </header>
+        <div class="purana-index-lead">
+          <p>The <i>Purāṇas</i> are a large and textually stratified body of Sanskrit and vernacular religious literature. The traditional category of eighteen Mahāpurāṇas coexists with alternative enumerations, regional recensions, extensive accretion, and a much larger body of Upapurāṇas. Select a title below to open its research article.</p>
+          <p>Dates in the individual articles distinguish proposed textual strata, the formation of a received recension, and the dates of surviving manuscripts or printed editions; these are not treated as interchangeable evidence.</p>
+        </div>
+        <nav class="purana-index-toc" aria-label="Contents">
+          <div class="purana-index-toc-title">Contents</div>
+          <ol>
+            <li><a href="#mahapuranas">Mahāpurāṇas</a></li>
+            <li><a href="#other-mahapurana-attestations">Other Mahāpurāṇa attestations</a></li>
+            <li><a href="#upapuranas">Upapurāṇas</a></li>
+          </ol>
+        </nav>
+        <div class="shastra-holder purana-wiki-directory">
+          ${group({id:'mahapuranas', title:'Mahāpurāṇas', note:'18-text traditional enumeration', items:maha, kind:'Mahāpurāṇa', open:true})}
+          ${group({id:'other-mahapurana-attestations', title:'Other Mahāpurāṇa attestations', note:'alternative and sectarian enumerations', items:otherMaha, kind:'Mahāpurāṇa'})}
+          ${group({id:'upapuranas', title:'Upapurāṇas', note:'secondary Purāṇic corpus', items:upa, kind:'Upapurāṇa'})}
+        </div>
+      </article>`;
   }
 
-  const observer = new MutationObserver(() => requestAnimationFrame(renderPureWiki));
-  observer.observe(stage, {childList:true, attributes:true, attributeFilter:['hidden']});
-
   root.addEventListener('click', event => {
+    const tocLink = event.target.closest('.purana-index-toc a[href^="#"]');
+    if (tocLink) {
+      const target = stage.querySelector(tocLink.getAttribute('href'));
+      if (target instanceof HTMLDetailsElement) target.open = true;
+    }
     if (event.target.closest('.corpus-button[data-corpus="puranas"]')) {
       requestAnimationFrame(() => requestAnimationFrame(renderPureWiki));
     }
   });
 
+  const observer = new MutationObserver(() => requestAnimationFrame(renderPureWiki));
+  observer.observe(stage, {childList:true, attributes:true, attributeFilter:['hidden']});
   renderPureWiki();
 })();
