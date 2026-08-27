@@ -59,8 +59,33 @@
     reader.dataset.exactUpanishadTemplate='1';
   }
 
+  function ensureMahapuranaModalOverride(){
+    if(document.getElementById('upanishad-mahapurana-modal-override'))return;
+    const style=document.createElement('style');
+    style.id='upanishad-mahapurana-modal-override';
+    style.textContent=`
+      .up-research-reader.mahapurana-wiki-reader{
+        position:fixed!important;z-index:12021!important;inset:12px 18px!important;
+        max-width:none!important;margin:0!important;overflow:hidden!important;
+        border:1px solid #b9b9b9!important;border-radius:4px!important;
+        box-shadow:0 22px 70px rgba(0,0,0,.3)!important;background:#fff!important;
+      }
+      .up-research-backdrop.kena-article-backdrop{z-index:12020!important;background:rgba(24,23,22,.48)!important;backdrop-filter:blur(2px)!important}
+      .up-research-reader.mahapurana-wiki-reader .up-research-head{flex:0 0 auto!important}
+      .up-research-reader.mahapurana-wiki-reader .up-research-scroll{flex:1 1 auto!important;min-height:0!important;overflow:auto!important}
+      @media(max-width:850px){
+        .up-research-reader.mahapurana-wiki-reader{
+          inset:auto 0 0 0!important;max-height:96vh!important;
+          border-radius:8px 8px 0 0!important;border-left:0!important;border-right:0!important;border-bottom:0!important;
+        }
+      }
+    `;
+    document.head.append(style);
+  }
+
   function applyMahapuranaTemplate(reader){
     if(!reader || !reader.classList.contains('up-research-reader'))return;
+    ensureMahapuranaModalOverride();
     if(reader.dataset.mahapuranaTemplate==='1'){enforceExactUpanishadTemplate(reader);return;}
 
     reader.classList.add('kena-article-reader','purana-full-reader','mahapurana-wiki-reader');
