@@ -1,0 +1,23 @@
+/* Standalone Wikipedia-style Upapurāṇa research reader. */
+(()=>{
+const host=document.getElementById('upapurana-standalone');if(!host)return;
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const data=window.UPAPURANA_RESEARCH_39||{};
+const slug=String(location.pathname).replace(/\/$/,'').split('/').pop();
+const d=Object.values(data).find(x=>x.slug===slug);
+if(!d){host.innerHTML='<p class="article-error">No Upapurāṇa research dossier was found for this route. <a href="/vivekadrishti/articles/scripture/">Return to the Scripture Index</a>.</p>';return;}
+document.title=`${d.name} — Upapurāṇa Research | Viveka Dṛṣṭi`;
+const labels=[['date','Date of composition'],['structure','Structure'],['contents','Contents'],['theology','Theology'],['critical','Critical edition'],['reception','Influences and reception'],['social','Rites, dharma and social history'],['further','Further reading'],['references','References']];
+const refIndex={};d.references.forEach((r,i)=>refIndex[r.id]=i+1);
+const cites=ids=>{const nums=[...new Set((ids||[]).map(id=>refIndex[id]).filter(Boolean))];return nums.length?`<sup class="upap-cite">${nums.map(n=>`<a href="#upap-ref-${n}">[${n}]</a>`).join('')}</sup>`:''};
+const paras=items=>(items||[]).map(x=>`<p>${esc(x.text||x)}${cites(x.refs)}</p>`).join('');
+const sections=[];
+labels.slice(0,7).forEach(([key,label],i)=>sections.push({id:`upap-section-${i+1}`,label,html:paras(d.sections[key])}));
+sections.push({id:'upap-section-8',label:'Further reading',html:`<ul>${(d.further||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`});
+sections.push({id:'upap-section-9',label:'References',html:`<ol>${(d.references||[]).map((r,i)=>`<li id="upap-ref-${i+1}">${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>`:esc(r.title)}${r.detail?` — ${esc(r.detail)}`:''}</li>`).join('')}</ol>`});
+const info=[['Corpus','Upapurāṇa'],['Textual status',d.status],['Research classification',d.sect],['Traditional-list witnesses',`${d.witnesses.length} of 4`],['Witnesses',d.witnesses.join(' · ')||'—']];
+host.innerHTML=`<div class="mahapurana-wiki-reader upapurana-static-reader"><header class="kena-article-head"><div><span class="eyebrow">Upapurāṇa · encyclopedia article</span><h1>${esc(d.name)}</h1></div></header><div class="kena-article-scroll"><article class="mahapurana-wiki-article"><div class="mahapurana-main-title">${esc(d.name)}</div><aside class="kena-infobox universal-infobox purana-full-infobox"><div class="kena-infobox-title">${esc(d.name)}</div>${info.map(([k,v])=>`<div class="kena-info-row"><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join('')}</aside><div class="kena-lead"><p>${esc(d.identity||`${d.name} is represented in the site’s comparative Upapurāṇa witness corpus.`)}</p><p>This dossier distinguishes traditional classification, textual identity, composition/redaction, manuscript transmission and modern editions. Where the text is lost or identity-disputed, uncertainty is treated as a research result rather than filled with material from a similarly named Purāṇa.</p></div><nav class="kena-toc" aria-label="Contents"><div class="kena-toc-title">Contents</div><ol>${sections.map(s=>`<li><a href="#${s.id}" data-upap-target="${s.id}">${esc(s.label)}</a></li>`).join('')}</ol></nav>${sections.map(s=>`<section class="kena-section mahapurana-collapse-section${s.label==='References'?' universal-references':''}" id="${s.id}"><h2 role="button" tabindex="0" aria-expanded="false">${esc(s.label)}</h2><div class="mahapurana-collapse-body" hidden>${s.html}</div></section>`).join('')}</article></div></div>`;
+const setOpen=(sec,state)=>{const body=sec?.querySelector(':scope > .mahapurana-collapse-body'),h=sec?.querySelector(':scope > h2');if(!body||!h)return;sec.classList.toggle('is-open',state);body.hidden=!state;h.setAttribute('aria-expanded',state?'true':'false');};
+host.addEventListener('click',e=>{const a=e.target.closest('.kena-toc a[data-upap-target]');if(a){e.preventDefault();const sec=document.getElementById(a.dataset.upapTarget);setOpen(sec,true);sec?.scrollIntoView({behavior:'smooth',block:'start'});return;}const h=e.target.closest('.mahapurana-collapse-section>h2');if(h){e.preventDefault();const sec=h.parentElement;setOpen(sec,!sec.classList.contains('is-open'));}});
+host.addEventListener('keydown',e=>{const h=e.target.closest('.mahapurana-collapse-section>h2');if(h&&(e.key==='Enter'||e.key===' ')){e.preventDefault();const sec=h.parentElement;setOpen(sec,!sec.classList.contains('is-open'));}});
+})();
