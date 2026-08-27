@@ -1,0 +1,30 @@
+/* Static-page adapter for the approved Mahāpurāṇa Wikipedia reader. */
+html,body{background:#fff!important}
+body.upapurana-static-page{margin:0;color:#202122;background:#fff}
+.upapurana-static-main{padding:0!important}
+#upapurana-standalone{min-height:60vh}
+#upapurana-standalone.is-loaded>.article-loading{display:none}
+.upapurana-static-reader.kena-article-reader{
+  position:static!important;inset:auto!important;z-index:auto!important;width:100%!important;max-width:none!important;
+  max-height:none!important;display:block!important;border:0!important;border-radius:0!important;box-shadow:none!important;
+  overflow:visible!important;background:#fff!important
+}
+.upapurana-static-reader .kena-article-scroll{overflow:visible!important;max-height:none!important}
+.upapurana-static-reader .mahapurana-main-title{display:none!important}
+.upapurana-static-reader .kena-article-head{position:static!important}
+.upapurana-static-reader .upapurana-witness-box{padding:8px;border-top:1px solid #eaecf0;font:12px/1.4 Arial,Helvetica,sans-serif}
+.upapurana-static-reader .upapurana-witness-box>b{display:block;margin:0 0 5px}
+.upapurana-static-reader .upapurana-witness-box ul{margin:0!important;padding-left:18px!important}
+.upapurana-static-reader .upapurana-witness-box li{margin:0 0 4px!important;font-size:12px!important;line-height:1.4!important}
+.upapurana-static-reader .upapurana-source-cluster{display:inline-block;margin-left:5px;white-space:normal;font:11px/1.4 Arial,Helvetica,sans-serif;vertical-align:super}
+.upapurana-static-reader .upapurana-source-cluster a{margin-right:2px}
+.upapurana-static-reader .upapurana-reading-list li{margin-bottom:9px!important}
+.upapurana-static-reader .upapurana-editorial-note{margin-top:22px!important;padding:12px 14px;border:1px solid #a2a9b1;background:#f8f9fa;font-size:13px!important}
+.article-loading,.article-error{width:1040px;max-width:calc(100% - 32px);margin:30px auto;color:#54595d;font:14px/1.6 Arial,Helvetica,sans-serif}
+.upapurana-route-nav{width:1040px;max-width:calc(100% - 32px);margin:18px auto 0;font:13px/1.4 Arial,Helvetica,sans-serif}
+.upapurana-route-nav a{color:#36c;text-decoration:none}.upapurana-route-nav a:hover{text-decoration:underline}
+@media(max-width:760px){
+  .upapurana-route-nav{max-width:calc(100% - 24px)}
+  .upapurana-static-reader.kena-article-reader{max-height:none!important;border-radius:0!important}
+  .upapurana-static-reader .kena-article-scroll{padding:0!important}
+}
