@@ -44,7 +44,7 @@
   function renderPureWiki() {
     if (stage.hidden) return;
     const title = stage.querySelector('.shastra-title');
-    if (!title || !/^Purā?nas$/i.test(title.textContent.trim().replace('ā','a'))) return;
+    if (!title || !['Purāṇas','Puranas'].includes(title.textContent.trim())) return;
     if (stage.querySelector('.purana-wiki-directory')) return;
 
     stage.innerHTML = `
