@@ -55,6 +55,17 @@
 
   document.querySelectorAll('.up-research-reader').forEach(enforceExactUpanishadTemplate);
 
+  window.addEventListener('click',e=>{
+    const button=e.target.closest?.('#scripture-browser .shastra-name[data-kind="Upaniṣad"]');
+    if(!button)return;
+    const open=window.openScriptureEncyclopedia;
+    if(typeof open!=='function')return;
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    open(button);
+  },true);
+
   document.addEventListener('click',e=>{
     const a=e.target.closest?.('.kena-universal-reader .kena-cite a');if(!a)return;
     const m=(a.getAttribute('href')||'').match(/#kena-ref-(\d+)/);if(!m)return;
