@@ -18,8 +18,42 @@
     nodes.forEach(node=>{const p=node.parentElement;if(!p||p.closest('[lang="sa"],[lang="sa-Deva"],.kena-references,.itihasa-source-card,.kena-universal-dev'))return;node.nodeValue=roman(node.nodeValue);});
   }
 
-  const obs=new MutationObserver(()=>document.querySelectorAll('.kena-article-reader').forEach(styleKena));
+  const EXACT_UPANISHAD_TEMPLATE=[
+    'Date of composition',
+    'Structure',
+    'Contents',
+    'Theology',
+    'Critical edition',
+    'Influences and reception',
+    'Rites, dharma and social history',
+    'Further reading',
+    'References'
+  ];
+
+  function setExactText(node,value){
+    if(node && node.textContent!==value) node.textContent=value;
+  }
+
+  function enforceExactUpanishadTemplate(reader){
+    if(!reader || !reader.classList.contains('up-research-reader')) return;
+    setExactText(reader.querySelector('.up-research-toc > summary'),'Contents');
+
+    const sectionLabels=[...reader.querySelectorAll('.up-research-section > summary > span:first-child')];
+    EXACT_UPANISHAD_TEMPLATE.forEach((label,i)=>setExactText(sectionLabels[i],label));
+
+    const tocLinks=[...reader.querySelectorAll('.up-research-toc > ol > li > a')];
+    EXACT_UPANISHAD_TEMPLATE.forEach((label,i)=>setExactText(tocLinks[i],label));
+
+    reader.dataset.exactUpanishadTemplate='1';
+  }
+
+  const obs=new MutationObserver(()=>{
+    document.querySelectorAll('.kena-article-reader').forEach(styleKena);
+    document.querySelectorAll('.up-research-reader').forEach(enforceExactUpanishadTemplate);
+  });
   obs.observe(document.body,{childList:true,subtree:true});
+
+  document.querySelectorAll('.up-research-reader').forEach(enforceExactUpanishadTemplate);
 
   document.addEventListener('click',e=>{
     const a=e.target.closest?.('.kena-universal-reader .kena-cite a');if(!a)return;
