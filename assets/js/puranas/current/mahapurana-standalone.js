@@ -4,7 +4,7 @@
   const name=root.dataset.purana||'';
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const arr=v=>Array.isArray(v)?v.filter(Boolean):(v?[v]:[]);
-  const plain=x=>typeof x==='string'?x:(x?.claim||x?.text||x?.full||x?.short||x?.summary||'');
+  const plain=x=>typeof x==='string'?x:(x?.claim||x?.text||x?.full||x?.short||x?.summary||x?.description||x?.note||x?.title||'');
   const slug=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const load=src=>new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>reject(new Error('Failed to load '+src));document.head.appendChild(s)});
   const wanted=src=>{
@@ -13,6 +13,16 @@
   };
   const books=xs=>{const a=arr(xs);return a.length?'<div class="mahapurana-book-list">'+a.map((b,i)=>typeof b==='string'?'<div class="mahapurana-book"><b>'+(i+1)+'</b><div>'+esc(b)+'</div></div>':'<div class="mahapurana-book"><b>'+esc(b.number??i+1)+'</b><div>'+(b.title||b.name?'<strong>'+esc(b.title||b.name)+'</strong>':'')+(plain(b.summary||b.text)?'<p>'+esc(plain(b.summary||b.text))+'</p>':'')+'</div></div>').join('')+'</div>':''};
   const renderSection=(s,i)=>{let body='';arr(s.paragraphs||s.text).forEach(p=>body+='<p>'+esc(plain(p))+'</p>');if(s.books)body+=books(s.books);if(arr(s.bullets).length)body+='<ul>'+arr(s.bullets).map(x=>'<li>'+esc(plain(x))+'</li>').join('')+'</ul>';if(s.note)body+='<aside class="research-note">'+esc(plain(s.note))+'</aside>';arr(s.subsections).forEach(sub=>{body+='<h3>'+esc(sub.title||'')+'</h3>';arr(sub.paragraphs||sub.text).forEach(p=>body+='<p>'+esc(plain(p))+'</p>');if(sub.books)body+=books(sub.books);if(arr(sub.bullets).length)body+='<ul>'+arr(sub.bullets).map(x=>'<li>'+esc(plain(x))+'</li>').join('')+'</ul>'});const id=slug(s.title)||('section-'+(i+1));return{id,title:s.title||('Section '+(i+1)),html:'<section class="mahapurana-section" id="'+id+'"><h2>'+esc(s.title||('Section '+(i+1)))+'</h2>'+body+'</section>'}};
+  const safeUrl=u=>/^https?:\/\//i.test(String(u||''))?String(u):'';
+  const sourceKey=s=>typeof s==='string'?s:String(s?.key||s?.title||s?.url||s?.detail||'');
+  const renderSource=s=>{
+    if(typeof s==='string')return '<li>'+esc(s)+'</li>';
+    const title=plain(s?.title)||'Source';
+    const detail=plain(s?.detail);
+    const url=safeUrl(s?.url);
+    const head=url?'<a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(title)+'</a>':esc(title);
+    return '<li>'+head+(detail?' — '+esc(detail):'')+'</li>';
+  };
 
   function setOpen(sec,open){
     const button=sec.querySelector(':scope > h2 .mahapurana-section-toggle');
@@ -64,9 +74,10 @@
       const e=Object.assign({},D[name]||{},D['Purāṇa:'+name]||{});
       if(!e.articleSections)throw new Error('No article data found for '+name);
       const secs=arr(e.articleSections).map(renderSection);
-      const refs=[...new Set([...arr(e.sources),...arr(e.bibliography)].map(plain).filter(Boolean))];
+      const refs=[];const refSeen=new Set();
+      [...arr(e.sources),...arr(e.bibliography)].forEach(s=>{const key=sourceKey(s).trim().toLowerCase();if(key&&!refSeen.has(key)){refSeen.add(key);refs.push(s)}});
       const info=[['Sanskrit',e.sanskritTitle],['Traditional attribution',e.traditionalAuthor],['Language',e.language],['Date / textual formation',e.period],['Structure',e.booksCount||e.structure],['Extent',e.extent],['Verse count',e.verseCount]].filter(x=>x[1]);
-      root.innerHTML=(info.length?'<aside class="mahapurana-infobox"><div class="infobox-title">'+esc(name)+'</div>'+info.map(([k,v])=>'<div class="info-row"><b>'+esc(k)+'</b><span>'+esc(plain(v))+'</span></div>').join('')+'</aside>':'')+'<div class="article-lead">'+arr(e.leadParagraphs).map(p=>'<p>'+esc(plain(p))+'</p>').join('')+'</div><details class="article-toc" open><summary>Contents</summary><ol>'+secs.map(s=>'<li><a href="#'+s.id+'">'+esc(s.title)+'</a></li>').join('')+'<li><a href="#references">References</a></li></ol></details>'+secs.map(s=>s.html).join('')+'<section class="mahapurana-section references" id="references"><h2>References</h2><ol>'+refs.map(r=>'<li>'+esc(r)+'</li>').join('')+'</ol></section>';
+      root.innerHTML=(info.length?'<aside class="mahapurana-infobox"><div class="infobox-title">'+esc(name)+'</div>'+info.map(([k,v])=>'<div class="info-row"><b>'+esc(k)+'</b><span>'+esc(plain(v))+'</span></div>').join('')+'</aside>':'')+'<div class="article-lead">'+arr(e.leadParagraphs).map(p=>'<p>'+esc(plain(p))+'</p>').join('')+'</div><details class="article-toc" open><summary>Contents</summary><ol>'+secs.map(s=>'<li><a href="#'+s.id+'">'+esc(s.title)+'</a></li>').join('')+'<li><a href="#references">References</a></li></ol></details>'+secs.map(s=>s.html).join('')+'<section class="mahapurana-section references" id="references"><h2>References</h2><ol>'+refs.map(renderSource).join('')+'</ol></section>';
       root.querySelectorAll(':scope > .mahapurana-section').forEach(makeCollapsible);
       bindToc();
       root.classList.add('is-loaded');
