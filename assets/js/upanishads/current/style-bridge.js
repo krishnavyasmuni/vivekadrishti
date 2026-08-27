@@ -1,4 +1,12 @@
 (() => {
+  if(!window.__UPANISHAD_MAHAPURANA_TEMPLATE_REQUESTED__){
+    window.__UPANISHAD_MAHAPURANA_TEMPLATE_REQUESTED__=true;
+    const finalReader=document.createElement('script');
+    finalReader.src='/vivekadrishti/assets/js/upanishads/current/mahapurana-template-live.js?build=20260827-1045';
+    finalReader.async=false;
+    document.head.appendChild(finalReader);
+  }
+
   const roman = s => String(s ?? '')
     .replace(/Ś/g,'Sh').replace(/ś/g,'sh').replace(/Ṣ/g,'Sh').replace(/ṣ/g,'sh')
     .replace(/Ṛ/g,'Ri').replace(/ṛ/g,'ri').replace(/Ṝ/g,'Ri').replace(/ṝ/g,'ri')
@@ -18,7 +26,7 @@
     nodes.forEach(node=>{const p=node.parentElement;if(!p||p.closest('[lang="sa"],[lang="sa-Deva"],.kena-references,.itihasa-source-card,.kena-universal-dev'))return;node.nodeValue=roman(node.nodeValue);});
   }
 
-  const obs=new MutationObserver(()=>document.querySelectorAll('.kena-article-reader').forEach(styleKena));
+  const obs=new MutationObserver(()=>document.querySelectorAll('.kena-article-reader:not(.upanishad-mahapurana-reader)').forEach(styleKena));
   obs.observe(document.body,{childList:true,subtree:true});
 
   document.addEventListener('click',e=>{
