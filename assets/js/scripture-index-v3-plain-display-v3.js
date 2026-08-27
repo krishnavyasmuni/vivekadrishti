@@ -10,6 +10,7 @@
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'').normalize('NFC');
   function apply(){
     root.querySelectorAll('.shastra-name > span,.shastra-title,.veda-family > h3,.veda-family > h3 .veda-family-name,.upanishad-group > h3,.purana-sect-group > h3,.guna-group > h3,.corpus-button,.shastra-tab').forEach(el=>{
+      if(el.closest('.purana-index-article,.purana-wiki-directory,.mahapurana-wiki-article'))return;
       if(el.dataset.plainDisplay==='1')return;
       const text=el.textContent;
       const clean=roman(text);
