@@ -1,7 +1,7 @@
 /* Complete 39-title Upapurāṇa research corpus loader. */
 (() => {
   if (window.UPAPURANA_READY) return;
-  const BUILD='20260827-upapurana39-v4';
+  const BUILD='20260827-upapurana39-v5';
   const loadScript=src=>new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>reject(new Error('Failed to load '+src));document.head.appendChild(s)});
   window.UPAPURANA_READY=(async()=>{
     const base='/vivekadrishti/assets/data/upapuranas/';
@@ -15,7 +15,9 @@
     const bytes=Uint8Array.from(binary,c=>c.charCodeAt(0));
     if(typeof DecompressionStream!=='function')throw new Error('Compressed Upapurāṇa corpus is unsupported in this browser.');
     const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-    window.UPAPURANA_RAW=JSON.parse(await new Response(stream).text());
+    const payload=JSON.parse(await new Response(stream).text());
+    window.UPAPURANA_RAW=payload.research||payload;
+    if(payload.sources)window.UPAPURANA_SOURCE_PAYLOAD=payload.sources;
     await loadScript(`/vivekadrishti/assets/js/puranas/current/upapurana-research-core.js?build=${BUILD}`);
     return window.UPAPURANA_RESEARCH||{};
   })();
