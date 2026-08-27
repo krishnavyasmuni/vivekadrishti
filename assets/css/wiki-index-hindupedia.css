@@ -1,59 +1,131 @@
 @import url('/vivekadrishti/assets/css/hindupedia-site.css?build=20260826-2145');
 
-/* Purāṇa-only pure wiki directory. Main Scripture corpus buttons remain unchanged. */
-
-.scripture-page .corpus-nav{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:24px}
-.scripture-page .corpus-button{padding:10px 14px;border-radius:4px;font-size:12px;cursor:pointer}
-
-/* The Purāṇa renderer replaces the old tabs/cards with two plain encyclopedia columns. */
-.scripture-page .purana-wiki-directory{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:0 14px;
-  align-items:start;
-  width:100%;
+/* Purāṇa research index: Wikipedia/Vector-inspired encyclopedia treatment. */
+.scripture-page .corpus-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  padding:0 0 18px;
+  border-bottom:1px solid #eaecf0;
+}
+.scripture-page .corpus-button{
+  padding:7px 10px;
+  border:1px solid #a2a9b1;
+  border-radius:2px;
+  background:#f8f9fa;
+  color:#202122;
   font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;
+  cursor:pointer;
 }
-.scripture-page .purana-wiki-column{
-  min-width:0;
+.scripture-page .corpus-button:hover,
+.scripture-page .corpus-button:focus-visible{background:#fff;border-color:#72777d}
+
+.scripture-page .purana-index-article{
+  width:min(100%,1040px);
   margin:0;
-  padding:0;
-}
-.scripture-page .purana-wiki-column>h3{
-  display:block;
-  box-sizing:border-box;
-  width:100%;
-  margin:0 0 2px!important;
-  padding:4px 8px!important;
-  border:1px solid #a9c8bb;
-  border-radius:0;
-  background:#ccecdf!important;
-  color:#111!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:18px!important;
-  font-weight:700!important;
-  line-height:1.25!important;
-  text-align:left!important;
-}
-.scripture-page .purana-wiki-column>h3.purana-wiki-secondary-heading{
-  margin-top:19px!important;
-  font-size:16px!important;
-}
-.scripture-page .purana-wiki-list{
-  margin:0;
-  padding:1px 8px 0 30px;
-  color:#7b7b7b;
-  list-style:disc outside;
+  color:#202122;
+  background:#fff;
   font-family:Arial,Helvetica,sans-serif;
   font-size:16px;
-  line-height:1.5;
+  line-height:1.6;
 }
-.scripture-page .purana-wiki-list li{
-  margin:0;
-  padding:0;
+.scripture-page .purana-index-heading{
+  margin:0 0 12px;
+  border-bottom:1px solid #a2a9b1;
 }
+.scripture-page .purana-index-heading .shastra-title{
+  margin:0!important;
+  padding:18px 0 7px!important;
+  border:0!important;
+  background:transparent!important;
+  color:#202122!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:38px!important;
+  font-weight:400!important;
+  line-height:1.2!important;
+  text-align:left!important;
+}
+.scripture-page .purana-index-lead{max-width:860px;margin:0 0 18px}
+.scripture-page .purana-index-lead p{margin:0 0 12px!important;color:#202122!important;font-size:16px!important;line-height:1.6!important}
 
-/* Visually these are ordinary wiki links; semantically they remain buttons so the existing research reader still opens. */
+.scripture-page .purana-index-toc{
+  display:table;
+  width:auto;
+  min-width:250px;
+  max-width:100%;
+  margin:18px 0 28px;
+  padding:9px 13px;
+  border:1px solid #a2a9b1;
+  background:#f8f9fa;
+  box-sizing:border-box;
+}
+.scripture-page .purana-index-toc-title{margin:0 0 4px;color:#202122;font-size:15px;font-weight:700}
+.scripture-page .purana-index-toc ol{margin:0!important;padding-left:1.6em!important}
+.scripture-page .purana-index-toc li{margin:1px 0!important;font-size:14px!important;line-height:1.45!important}
+.scripture-page .purana-index-toc a{color:#36c!important;text-decoration:none!important}
+.scripture-page .purana-index-toc a:hover{text-decoration:underline!important}
+
+.scripture-page .purana-wiki-directory{
+  display:block;
+  width:100%;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+}
+.scripture-page .purana-index-group{
+  display:block;
+  margin:0;
+  border-top:1px solid #a2a9b1;
+  background:#fff;
+}
+.scripture-page .purana-index-group:last-child{border-bottom:1px solid #a2a9b1}
+.scripture-page .purana-index-group>summary{
+  position:relative;
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  margin:0;
+  padding:11px 36px 11px 0;
+  color:#202122;
+  cursor:pointer;
+  list-style:none;
+  user-select:none;
+}
+.scripture-page .purana-index-group>summary::-webkit-details-marker{display:none}
+.scripture-page .purana-index-group>summary::after{
+  content:'›';
+  position:absolute;
+  right:8px;
+  top:50%;
+  transform:translateY(-50%) rotate(90deg);
+  color:#54595d;
+  font-size:22px;
+  line-height:1;
+  transition:transform .14s ease;
+}
+.scripture-page .purana-index-group[open]>summary::after{transform:translateY(-50%) rotate(-90deg)}
+.scripture-page .purana-index-group>summary:focus-visible{outline:2px solid #36c;outline-offset:2px}
+.scripture-page .purana-index-group-title{
+  color:#202122;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:23px;
+  font-weight:400;
+  line-height:1.25;
+}
+.scripture-page .purana-index-group-meta{color:#72777d;font-size:12px;line-height:1.4}
+.scripture-page .purana-index-group-body{padding:4px 0 18px}
+.scripture-page .purana-wiki-list{
+  columns:3 220px;
+  column-gap:34px;
+  margin:0!important;
+  padding:0 0 0 22px!important;
+  color:#72777d;
+  list-style:disc outside;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:15px;
+  line-height:1.55;
+}
+.scripture-page .purana-wiki-list li{break-inside:avoid;margin:0!important;padding:1px 0!important}
 .scripture-page .purana-wiki-link,
 .scripture-page .purana-wiki-link.shastra-name{
   appearance:none!important;
@@ -67,9 +139,9 @@
   border-radius:0!important;
   background:none!important;
   box-shadow:none!important;
-  color:#0b55a3!important;
+  color:#36c!important;
   font-family:Arial,Helvetica,sans-serif!important;
-  font-size:16px!important;
+  font-size:15px!important;
   font-weight:400!important;
   line-height:inherit!important;
   text-align:left!important;
@@ -79,38 +151,23 @@
 }
 .scripture-page .purana-wiki-link::before,
 .scripture-page .purana-wiki-link::after{display:none!important;content:none!important}
-.scripture-page .purana-wiki-link>span{
-  display:inline!important;
-  width:auto!important;
-  color:inherit!important;
-  font:inherit!important;
-  font-weight:400!important;
-}
+.scripture-page .purana-wiki-link>span{display:inline!important;width:auto!important;color:inherit!important;font:inherit!important;font-weight:400!important}
 .scripture-page .purana-wiki-link>small{display:none!important}
 .scripture-page .purana-wiki-link:hover,
-.scripture-page .purana-wiki-link:focus-visible{
-  background:none!important;
-  color:#083f7b!important;
-  text-decoration:underline;
-  outline:none;
-}
-.scripture-page .purana-wiki-link.is-active{
-  background:none!important;
-  box-shadow:none!important;
-  color:#0b55a3!important;
-  text-decoration:underline;
-}
+.scripture-page .purana-wiki-link:focus-visible,
+.scripture-page .purana-wiki-link.is-active{color:#3056a9!important;text-decoration:underline;outline:none;background:none!important;box-shadow:none!important}
 
-/* Detail material opened from a name sits below the two lists, not inside a card grid. */
-.scripture-page .purana-wiki-directory>.shastra-info{
-  grid-column:1/-1;
-  margin-top:20px;
-}
+/* Detail material opened from a title remains below the directory. */
+.scripture-page .purana-wiki-directory>.shastra-info{margin-top:20px}
 
 @media(max-width:760px){
-  .scripture-page .purana-wiki-directory{grid-template-columns:1fr;gap:20px 0}
-  .scripture-page .purana-wiki-column>h3{font-size:17px!important}
-  .scripture-page .purana-wiki-list{font-size:15px;line-height:1.55}
+  .scripture-page .purana-index-heading .shastra-title{font-size:32px!important}
+  .scripture-page .purana-index-lead p{font-size:15px!important}
+  .scripture-page .purana-index-toc{display:block;width:100%;margin-bottom:22px}
+  .scripture-page .purana-index-group>summary{display:block;padding:10px 34px 10px 0}
+  .scripture-page .purana-index-group-title{display:block;font-size:21px}
+  .scripture-page .purana-index-group-meta{display:block;margin-top:2px}
+  .scripture-page .purana-wiki-list{columns:1;font-size:15px;line-height:1.58}
   .scripture-page .purana-wiki-link,
   .scripture-page .purana-wiki-link.shastra-name{font-size:15px!important}
 }
