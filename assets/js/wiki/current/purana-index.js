@@ -1,82 +1,65 @@
-/* Wikipedia-style Purāṇa directory: Mahāpurāṇas + the 39 distinct Upapurāṇa witness-labels. */
+/* Final Wikipedia-style Purāṇa directory. Runs after the legacy index and does not depend on accented stage-title text or research-data downloads. */
 (() => {
   const root=document.getElementById('scripture-browser');
   if(!root)return;
   const stage=root.querySelector('.browser-stage');
   if(!stage)return;
-  const BUILD='20260827-upapurana39-v5';
-  const MAHA=[["Brahma Purāṇa", "brahma-purana"], ["Padma Purāṇa", "padma-purana"], ["Viṣṇu Purāṇa", "vishnu-purana"], ["Śiva Purāṇa", "shiva-purana"], ["Liṅga Purāṇa", "linga-purana"], ["Garuḍa Purāṇa", "garuda-purana"], ["Nāradīya Purāṇa", "naradiya-purana"], ["Bhāgavata Purāṇa", "bhagavata-purana"], ["Agni Purāṇa", "agni-purana"], ["Skanda Purāṇa", "skanda-purana"], ["Bhaviṣya Purāṇa", "bhavishya-purana"], ["Brahmavaivarta Purāṇa", "brahmavaivarta-purana"], ["Mārkaṇḍeya Purāṇa", "markandeya-purana"], ["Vāmana Purāṇa", "vamana-purana"], ["Varāha Purāṇa", "varaha-purana"], ["Matsya Purāṇa", "matsya-purana"], ["Kūrma Purāṇa", "kurma-purana"], ["Brahmāṇḍa Purāṇa", "brahmanda-purana"]];
-  const OTHER=[["Vāyu Purāṇa", "vayu-purana"], ["Devī Bhāgavata Purāṇa", "devi-bhagavata-purana"], ["Mahābhāgavata Purāṇa", "mahabhagavata-purana"]];
+
+  const MAHA=['Brahma Purāṇa','Padma Purāṇa','Viṣṇu Purāṇa','Śiva Purāṇa','Liṅga Purāṇa','Garuḍa Purāṇa','Nāradīya Purāṇa','Bhāgavata Purāṇa','Agni Purāṇa','Skanda Purāṇa','Bhaviṣya Purāṇa','Brahmavaivarta Purāṇa','Mārkaṇḍeya Purāṇa','Vāmana Purāṇa','Varāha Purāṇa','Matsya Purāṇa','Kūrma Purāṇa','Brahmāṇḍa Purāṇa'];
+  const OTHER=['Vāyu Purāṇa','Devī Bhāgavata Purāṇa','Mahābhāgavata Purāṇa'];
+  const UPA=['Ādi Purāṇa','Āditya Purāṇa','Ādya / Sanatkumāra Purāṇa','Āṇḍa Purāṇa','Another Brahmāṇḍa Purāṇa','Another Nāradīya Purāṇa','Auśanasa Purāṇa','Bhāgavata Purāṇa','Bhārgava Purāṇa','Brahmāṇḍa Purāṇa','Bṛhaddharma Purāṇa','Bṛhannandīśvara Purāṇa','Bṛhannāradīya Purāṇa','Daurvāsasa Purāṇa','Dharma Purāṇa','Kālikā Purāṇa','Kapila Purāṇa','Kaumāra Purāṇa','Kriyāyogasāra Purāṇa','Māheśa Purāṇa','Māheśvara Purāṇa','Mānava Purāṇa','Mārīca Purāṇa','Nandikṛta Purāṇa','Nandīśvara Purāṇa','Nāradīya Purāṇa','Nṛsiṃha Purāṇa','Parāśara Purāṇa','Sāmba Purāṇa','Sanatkumāra Purāṇa','Saura Purāṇa','Śiva Purāṇa','Śivadharma Purāṇa','Skanda Purāṇa','Vāmana Purāṇa','Varuṇa Purāṇa','Vāsiṣṭha Purāṇa','Viṣṇudharma Purāṇa','Viṣṇudharmottara Purāṇa'];
+  const W={
+    'Devī Bhāgavata 1.3.13–16':['Sanatkumāra Purāṇa','Nṛsiṃha Purāṇa','Nāradīya Purāṇa','Śiva Purāṇa','Daurvāsasa Purāṇa','Kapila Purāṇa','Mānava Purāṇa','Auśanasa Purāṇa','Varuṇa Purāṇa','Kālikā Purāṇa','Sāmba Purāṇa','Nandikṛta Purāṇa','Saura Purāṇa','Parāśara Purāṇa','Āditya Purāṇa','Māheśvara Purāṇa','Bhāgavata Purāṇa','Vāsiṣṭha Purāṇa'],
+    'Kūrma Purāṇa 1.1.17–20':['Sanatkumāra Purāṇa','Nṛsiṃha Purāṇa','Skanda Purāṇa','Śivadharma Purāṇa','Daurvāsasa Purāṇa','Nāradīya Purāṇa','Kapila Purāṇa','Vāmana Purāṇa','Auśanasa Purāṇa','Brahmāṇḍa Purāṇa','Varuṇa Purāṇa','Kālikā Purāṇa','Māheśvara Purāṇa','Sāmba Purāṇa','Saura Purāṇa','Parāśara Purāṇa','Mārīca Purāṇa','Bhārgava Purāṇa'],
+    'Padma Purāṇa, Pātāla-khaṇḍa 111.94b–98':['Ādya / Sanatkumāra Purāṇa','Nṛsiṃha Purāṇa','Āṇḍa Purāṇa','Daurvāsasa Purāṇa','Another Nāradīya Purāṇa','Kapila Purāṇa','Mānava Purāṇa','Auśanasa Purāṇa','Another Brahmāṇḍa Purāṇa','Varuṇa Purāṇa','Kālikā Purāṇa','Māheśa Purāṇa','Sāmba Purāṇa','Saura Purāṇa','Parāśara Purāṇa','Mārīca Purāṇa','Bhārgava Purāṇa','Kaumāra Purāṇa'],
+    'Bṛhaddharma Purāṇa 1.25.23–26':['Ādi Purāṇa','Āditya Purāṇa','Bṛhannāradīya Purāṇa','Nāradīya Purāṇa','Nandīśvara Purāṇa','Bṛhannandīśvara Purāṇa','Sāmba Purāṇa','Kriyāyogasāra Purāṇa','Kālikā Purāṇa','Dharma Purāṇa','Viṣṇudharmottara Purāṇa','Śivadharma Purāṇa','Viṣṇudharma Purāṇa','Vāmana Purāṇa','Varuṇa Purāṇa','Nṛsiṃha Purāṇa','Bhārgava Purāṇa','Bṛhaddharma Purāṇa']
+  };
+  const EXTANT=new Set(['Ādi Purāṇa','Bṛhaddharma Purāṇa','Bṛhannāradīya Purāṇa','Kālikā Purāṇa','Kapila Purāṇa','Kriyāyogasāra Purāṇa','Nṛsiṃha Purāṇa','Sāmba Purāṇa','Saura Purāṇa','Śivadharma Purāṇa','Viṣṇudharma Purāṇa','Viṣṇudharmottara Purāṇa']);
+  const LOST=new Set(['Āditya Purāṇa','Āṇḍa Purāṇa','Another Brahmāṇḍa Purāṇa','Another Nāradīya Purāṇa','Auśanasa Purāṇa','Daurvāsasa Purāṇa','Mārīca Purāṇa','Nandikṛta Purāṇa','Nandīśvara Purāṇa']);
+
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const loadOne=src=>new Promise(resolve=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=resolve;document.head.append(s);});
-  const loadResearch=async()=>{
-    if(window.UPAPURANA_RESEARCH)return;
-    if(window.__UPAPURANA_LOADING__){await window.__UPAPURANA_LOADING__;return;}
-    window.__UPAPURANA_LOADING__=(async()=>{
-      await loadOne(`/vivekadrishti/assets/js/puranas/current/upapurana-research.js?build=${BUILD}`);
-      if(window.UPAPURANA_READY) await window.UPAPURANA_READY;
-    })();
-    await window.__UPAPURANA_LOADING__;
+  const slug=v=>String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  const count=name=>Object.values(W).filter(xs=>xs.includes(name)).length;
+  const normal=v=>String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'');
+  const puranaActive=()=>{
+    const active=root.querySelector('.corpus-button[data-corpus="puranas"].is-active,.corpus-button[data-corpus="puranas"][aria-pressed="true"],.corpus-button[data-corpus="puranas"][aria-current="true"]');
+    if(active)return true;
+    return normal(stage.querySelector('.shastra-title')?.textContent)==='puranas';
   };
-  const statusClass=status=>{
-    const s=String(status||'').toLowerCase();
-    if(s.includes('extant')&&!s.includes('lost'))return'extant';
-    if(s.includes('lost')||s.includes('fragment'))return'lost';
-    return'uncertain';
-  };
-  function style(){
-    if(document.getElementById('purana-wiki-directory-v2-style'))return;
-    const s=document.createElement('style');s.id='purana-wiki-directory-v2-style';s.textContent=`
-      .purana-wiki-research-intro{margin:0 0 18px;padding:12px 14px;border:1px solid #a2a9b1;background:#f8f9fa;color:#202122;font:14px/1.55 Arial,Helvetica,sans-serif}
-      .purana-wiki-research-intro p{margin:0 0 8px!important;color:#202122!important;font:inherit!important}.purana-wiki-research-intro p:last-child{margin-bottom:0!important}
-      .purana-wiki-directory-v2{border-top:1px solid #a2a9b1;background:#fff}
-      .purana-wiki-corpus{margin:0;border-bottom:1px solid #a2a9b1;background:#fff}
-      .purana-wiki-corpus>summary{list-style:none;position:relative;display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:13px 38px 13px 4px;cursor:pointer;color:#202122;font:400 23px/1.25 Georgia,'Times New Roman',serif}
-      .purana-wiki-corpus>summary::-webkit-details-marker{display:none}.purana-wiki-corpus>summary::after{content:'›';position:absolute;right:8px;top:50%;transform:translateY(-50%) rotate(90deg);color:#54595d;font:22px/1 Arial,sans-serif}.purana-wiki-corpus[open]>summary::after{transform:translateY(-50%) rotate(-90deg)}
-      .purana-wiki-corpus>summary small{color:#54595d;font:12px/1.35 Arial,Helvetica,sans-serif}
-      .purana-wiki-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #eaecf0}
-      .purana-wiki-entry{display:block;padding:10px 12px;border-bottom:1px solid #eaecf0;background:#fff;text-decoration:none!important}.purana-wiki-entry:nth-child(odd){border-right:1px solid #eaecf0}.purana-wiki-entry:hover{background:#f8f9fa}
-      .purana-wiki-title{display:block;color:#36c;font:15px/1.35 Arial,Helvetica,sans-serif}.purana-wiki-entry:hover .purana-wiki-title{text-decoration:underline}
-      .purana-wiki-meta{display:block;margin-top:3px;color:#54595d;font:11px/1.4 Arial,Helvetica,sans-serif;text-decoration:none!important}
-      .purana-status{display:inline-block;margin-right:5px;padding:1px 5px;border:1px solid #a2a9b1;background:#f8f9fa;color:#54595d;font:10px/1.4 Arial,sans-serif}
-      .purana-status.extant{border-color:#7ba77b}.purana-status.lost{border-color:#b78a8a}.purana-status.uncertain{border-color:#b6a56d}
-      .purana-upa-note{padding:11px 12px;border-top:1px solid #eaecf0;background:#f8f9fa;color:#54595d;font:12px/1.5 Arial,Helvetica,sans-serif}
-      @media(max-width:700px){.purana-wiki-corpus>summary{font-size:21px}.purana-wiki-list{grid-template-columns:1fr}.purana-wiki-entry:nth-child(odd){border-right:0}}
+
+  function installStyle(){
+    if(document.getElementById('purana-wiki-directory-v3-style'))return;
+    const s=document.createElement('style');s.id='purana-wiki-directory-v3-style';s.textContent=`
+      .purana-wiki-v3{background:#fff;color:#202122;font-family:Arial,Helvetica,sans-serif}.purana-wiki-v3 .purana-intro{margin:0 0 16px;padding:12px 14px;border:1px solid #a2a9b1;background:#f8f9fa;font-size:14px;line-height:1.55}.purana-wiki-v3 .purana-intro p{margin:0 0 7px!important;color:#202122!important;font:inherit!important}.purana-wiki-v3 .purana-intro p:last-child{margin-bottom:0!important}
+      .purana-wiki-v3 details{margin:0;border-top:1px solid #a2a9b1;background:#fff}.purana-wiki-v3 details:last-child{border-bottom:1px solid #a2a9b1}.purana-wiki-v3 summary{list-style:none;position:relative;padding:13px 40px 13px 4px;cursor:pointer;color:#202122;font:400 23px/1.25 Georgia,'Times New Roman',serif}.purana-wiki-v3 summary::-webkit-details-marker{display:none}.purana-wiki-v3 summary::after{content:'›';position:absolute;right:10px;top:50%;transform:translateY(-50%) rotate(90deg);color:#54595d}.purana-wiki-v3 details[open]>summary::after{transform:translateY(-50%) rotate(-90deg)}.purana-wiki-v3 summary small{float:right;margin-top:7px;color:#72777d;font:11px/1.3 Arial,Helvetica,sans-serif}
+      .purana-wiki-v3 .purana-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #eaecf0}.purana-wiki-v3 .purana-entry{display:block;padding:10px 12px;border-bottom:1px solid #eaecf0;text-decoration:none!important;background:#fff}.purana-wiki-v3 .purana-entry:nth-child(odd){border-right:1px solid #eaecf0}.purana-wiki-v3 .purana-entry:hover{background:#f8f9fa}.purana-wiki-v3 .purana-name{display:block;color:#36c;font-size:15px;line-height:1.35}.purana-wiki-v3 .purana-entry:hover .purana-name{text-decoration:underline}.purana-wiki-v3 .purana-meta{display:block;margin-top:3px;color:#54595d;font-size:11px;line-height:1.4}.purana-wiki-v3 .purana-status{display:inline-block;margin-right:5px;padding:1px 5px;border:1px solid #a2a9b1;background:#f8f9fa;font-size:10px}.purana-wiki-v3 .purana-note{padding:10px 12px;border-top:1px solid #eaecf0;background:#f8f9fa;color:#54595d;font-size:12px;line-height:1.5}
+      @media(max-width:700px){.purana-wiki-v3 summary{font-size:21px}.purana-wiki-v3 .purana-list{grid-template-columns:1fr}.purana-wiki-v3 .purana-entry:nth-child(odd){border-right:0}}
     `;document.head.append(s);
   }
-  const mahaEntry=([name,slug])=>`<a class="purana-wiki-entry" href="/vivekadrishti/articles/scripture/${slug}/"><span class="purana-wiki-title">${esc(name)}</span><span class="purana-wiki-meta">Mahāpurāṇa research article</span></a>`;
-  const upaEntry=p=>{
-    const ws=(p.witnesses||[]);
-    const sc=statusClass(p.status);
-    return `<a class="purana-wiki-entry" href="/vivekadrishti/articles/scripture/upapuranas/${esc(p.slug)}/"><span class="purana-wiki-title">${esc(p.name)}</span><span class="purana-wiki-meta"><span class="purana-status ${sc}">${sc==='extant'?'extant / transmitted':sc==='lost'?'lost / fragmentary':'identity / status disputed'}</span>${esc(p.orientation||'')} · ${ws.length} of 4 list witnesses</span></a>`;
+  const mahaEntry=name=>`<a class="purana-entry" href="/vivekadrishti/articles/scripture/${slug(name)}/"><span class="purana-name">${esc(name)}</span><span class="purana-meta">Mahāpurāṇa encyclopedia article</span></a>`;
+  const upaEntry=name=>{
+    const status=EXTANT.has(name)?'extant / transmitted':LOST.has(name)?'lost / fragmentary':'identity / preservation disputed';
+    return `<a class="purana-entry" href="/vivekadrishti/articles/scripture/upapuranas/${slug(name)}/"><span class="purana-name">${esc(name)}</span><span class="purana-meta"><span class="purana-status">${status}</span>${count(name)} of 4 traditional list witnesses</span></a>`;
   };
-  async function render(){
-    if(stage.hidden)return;
-    const title=stage.querySelector('.shastra-title');
-    if(!title||title.textContent.trim()!=='Purāṇas')return;
-    if(stage.dataset.puranaWikiV2==='1')return;
-    await loadResearch();
-    if(stage.hidden)return;
-    const data=Object.values(window.UPAPURANA_RESEARCH||{}).sort((a,b)=>a.name.localeCompare(b.name,'en'));
-    style();
-    stage.innerHTML=`
-      <h2 class="shastra-title">Purāṇas</h2>
-      <div class="purana-wiki-research-intro">
-        <p><b>Research directory.</b> Mahāpurāṇa and Upapurāṇa are historical classification traditions, not simple measures of textual size or age.</p>
-        <p>The Upapurāṇa directory contains <b>${data.length} distinct witness-labels</b> produced by the union of four traditional eighteen-title lists represented in this index. Because those lists disagree, a list attestation is reported separately from the date, survival and identity of the work.</p>
-      </div>
-      <div class="purana-wiki-directory-v2">
-        <details class="purana-wiki-corpus" open><summary><span>Mahāpurāṇas</span><small>${MAHA.length} principal entries</small></summary><div class="purana-wiki-list">${MAHA.map(mahaEntry).join('')}</div></details>
-        <details class="purana-wiki-corpus"><summary><span>Upapurāṇas</span><small>${data.length} witness-labels · 4 traditional lists</small></summary>
-          <div class="purana-upa-note">Each article distinguishes list attestation, composition/redaction, manuscript survival, printed editions and genuinely critical editions. Lost or homonymous titles are treated as evidence dossiers rather than reconstructed with invented chapter summaries.</div>
-          <div class="purana-wiki-list">${data.map(upaEntry).join('')}</div>
-        </details>
-        <details class="purana-wiki-corpus"><summary><span>Other Mahāpurāṇa attestations</span><small>${OTHER.length} titles</small></summary><div class="purana-wiki-list">${OTHER.map(mahaEntry).join('')}</div></details>
-      </div>`;
-    stage.dataset.puranaWikiV2='1';
+  function markup(){return `
+    <h2 class="shastra-title">Purāṇas</h2>
+    <div class="purana-wiki-v3">
+      <div class="purana-intro"><p><b>Purāṇa research directory.</b> This index separates Mahāpurāṇa and Upapurāṇa classification from questions of date, textual identity and manuscript survival.</p><p>The Upapurāṇa section contains <b>39 distinct witness-labels</b>, the union of four traditional eighteen-title lists. Because those lists disagree, each article treats list attestation separately from composition, recensions and survival.</p></div>
+      <details open><summary>Mahāpurāṇas <small>18 principal entries</small></summary><div class="purana-list">${MAHA.map(mahaEntry).join('')}</div></details>
+      <details><summary>Upapurāṇas <small>39 witness-labels · 4 lists</small></summary><div class="purana-note">Wikipedia-style research articles with the same nine-section template as the Mahāpurāṇas. Lost and homonymous titles are presented as textual-history dossiers rather than given invented contents.</div><div class="purana-list">${UPA.map(upaEntry).join('')}</div></details>
+      <details><summary>Other Mahāpurāṇa attestations <small>${OTHER.length} titles</small></summary><div class="purana-list">${OTHER.map(mahaEntry).join('')}</div></details>
+    </div>`;}
+  let rendering=false;
+  function render(force=false){
+    if(rendering||stage.hidden)return;
+    if(!force&&!puranaActive())return;
+    if(stage.querySelector('.purana-wiki-v3'))return;
+    rendering=true;installStyle();stage.innerHTML=markup();rendering=false;
   }
-  const observer=new MutationObserver(()=>requestAnimationFrame(render));
-  observer.observe(stage,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});
-  root.addEventListener('click',e=>{if(e.target.closest('.corpus-button[data-corpus="puranas"]'))requestAnimationFrame(()=>requestAnimationFrame(render));});
-  render();
+  function schedule(force=false){requestAnimationFrame(()=>requestAnimationFrame(()=>render(force)));setTimeout(()=>render(force),0);setTimeout(()=>render(force),80);}
+  const obs=new MutationObserver(()=>{if(!rendering&&puranaActive()&&!stage.querySelector('.purana-wiki-v3'))schedule(false);});
+  obs.observe(stage,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});
+  root.addEventListener('click',e=>{if(e.target.closest('.corpus-button[data-corpus="puranas"]'))schedule(true);});
+  document.addEventListener('click',e=>{if(e.target.closest('#scripture-browser .corpus-button[data-corpus="puranas"]'))schedule(true);},true);
+  render(false);
 })();
