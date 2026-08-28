@@ -31,7 +31,7 @@
       'Konark Sun Temple','Vaishnavism','Shaivism','Shaktism','Brahmottara Purana','Surya'
     ].sort((a,b) => b.length - a.length);
     const facts = [
-      /\b245 chapters\b/gi,/\b10,000 verses\b/gi,/\bchapters?\s+\d+[–-]\d+\b/gi,
+      /\b245 chapters\b/gi,/\b10,000 verses\b/gi,/\b13,783 verses\b/gi,/\bchapters?\s+\d+[–-]\d+\b/gi,
       /\b(?:9th|10th|11th|12th|13th) century\b/gi,
       /\b(?:ninth|tenth|eleventh|twelfth|thirteenth) centur(?:y|ies)\b/gi
     ];
@@ -110,34 +110,30 @@
       ['Further reading','Further reading'],
       ['References','References']
     ];
-
     const sections = [...root.querySelectorAll('.brahma-article-section')];
-    if (!sections.length) return;
-    const parent = sections[0].parentElement;
-    const byTitle = new Map();
-    sections.forEach(section => {
-      const h = section.querySelector(':scope > h2');
-      if (h) byTitle.set(h.textContent.trim(), {section, h});
-    });
-
-    desired.forEach(([oldTitle,newTitle]) => {
-      const found = byTitle.get(oldTitle);
-      if (!found) return;
-      found.h.textContent = newTitle;
-      parent.appendChild(found.section);
-    });
-
-    const toc = root.querySelector('.kena-toc');
-    const ol = toc?.querySelector('ol');
+    if (sections.length) {
+      const parent = sections[0].parentElement;
+      const byTitle = new Map();
+      sections.forEach(section => {
+        const h = section.querySelector(':scope > h2');
+        if (h) byTitle.set(h.textContent.trim(), {section,h});
+      });
+      desired.forEach(([oldTitle,newTitle]) => {
+        const found = byTitle.get(oldTitle);
+        if (!found) return;
+        found.h.textContent = newTitle;
+        parent.appendChild(found.section);
+      });
+    }
+    const ol = root.querySelector('.kena-toc ol');
     if (!ol) return;
-    const items = [...ol.querySelectorAll(':scope > li')];
-    const byLinkText = new Map();
-    items.forEach(li => {
+    const byText = new Map();
+    [...ol.querySelectorAll(':scope > li')].forEach(li => {
       const a = li.querySelector('a');
-      if (a) byLinkText.set(a.textContent.trim(), {li,a});
+      if (a) byText.set(a.textContent.trim(), {li,a});
     });
     desired.forEach(([oldTitle,newTitle]) => {
-      const found = byLinkText.get(oldTitle);
+      const found = byText.get(oldTitle);
       if (!found) return;
       found.a.textContent = newTitle;
       ol.appendChild(found.li);
@@ -163,15 +159,14 @@
       if (cap) cap.textContent = 'Lead image from Wikipedia’s Brahma Purana article.';
       figure.classList.add('has-image');
     } catch (err) {
-      console.warn('Brahma Purana Wikipedia image unavailable', err);
       figure.classList.remove('has-image');
     }
   }
 
   function refine(){
     if (!root.classList.contains('is-loaded')) return false;
-
     document.title = 'Brahma Purana — Viveka Drishti';
+
     const eyebrow = root.querySelector('.kena-article-head .eyebrow');
     if (eyebrow) eyebrow.textContent = 'Purana · encyclopedia article';
     const heading = root.querySelector('.kena-article-head h1');
@@ -185,14 +180,15 @@
       </figure>
       <div class="kena-infobox-title">Brahma Purana</div>
       <div class="universal-devanagari" lang="sa-Deva">ब्रह्मपुराणम्</div>
-      <div class="kena-info-row"><b>Tradition</b><span>Attributed to Vyasa</span></div>
+      <div class="kena-info-row"><b>Religion</b><span>Hinduism</span></div>
+      <div class="kena-info-row"><b>Classification</b><span>Mahapurana</span></div>
+      <div class="kena-info-row"><b>Traditional author</b><span>Vyasa</span></div>
       <div class="kena-info-row"><b>Language</b><span>Sanskrit</span></div>
-      <div class="kena-info-row"><b>Dating</b><span>Layered text; main received compilation broadly <strong>10th–12th century CE</strong>, with older material preserved</span></div>
-      <div class="kena-info-row"><b>Textual character</b><span>Layered Puranic compilation with distinct regional and pilgrimage strata</span></div>
-      <div class="kena-info-row"><b>Key regions</b><span>Odisha / Purushottama and the Godavari sacred landscape</span></div>
-      <div class="kena-info-row"><b>Main themes</b><span>Cosmology, pilgrimage, Krishna traditions, ritual, dharma, Samkhya, Yoga and liberation</span></div>
-      <div class="kena-info-row"><b>Received text</b><span><strong>245 chapters</strong></span></div>
-      <div class="kena-info-row"><b>Traditional count</b><span><strong>10,000 verses</strong></span></div>`;
+      <div class="kena-info-row"><b>Period</b><span>Main received compilation broadly <strong>10th–12th century CE</strong>; older material survives</span></div>
+      <div class="kena-info-row"><b>Chapters</b><span><strong>245</strong></span></div>
+      <div class="kena-info-row"><b>Verses</b><span><strong>10,000</strong> traditionally; <strong>13,783</strong> in the Anandashrama text</span></div>
+      <div class="kena-info-row"><b>Major regions</b><span>Odisha / Purushottama; Godavari</span></div>
+      <div class="kena-info-row"><b>Main subjects</b><span>Cosmology, pilgrimage, Krishna traditions, ritual, dharma, Samkhya, Yoga, liberation</span></div>`;
 
     cleanLatinText();
     highlightKeyTerms();
@@ -200,9 +196,7 @@
     reorderArticleAndToc();
     applyExactWikipediaImage();
 
-    if (location.hash) {
-      requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
-    }
+    if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
     return true;
   }
 
