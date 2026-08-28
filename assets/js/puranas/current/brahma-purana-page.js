@@ -11,6 +11,10 @@
     .replace(/[Ḥḥ]/g, c => c === c.toUpperCase() ? 'H' : 'h')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+  function removeAllImages(){
+    root.querySelectorAll('img, picture, figure, .purana-wiki-image, .brahma-infobox-image').forEach(node => node.remove());
+  }
+
   function cleanLatinText(){
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     const nodes = [];
@@ -144,6 +148,7 @@
 
   function refine(){
     if (!root.classList.contains('is-loaded')) return false;
+    removeAllImages();
     document.title = 'Brahma Purana — Viveka Drishti';
 
     const eyebrow = root.querySelector('.kena-article-head .eyebrow');
@@ -169,14 +174,16 @@
     highlightKeyTerms();
     makeContinuousArticle();
     reorderArticleAndToc();
+    removeAllImages();
 
     if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
     return true;
   }
 
-  if (refine()) return;
   const observer = new MutationObserver(() => {
-    if (refine()) observer.disconnect();
+    removeAllImages();
+    refine();
   });
   observer.observe(root, {childList:true, subtree:true, attributes:true});
+  refine();
 })();
