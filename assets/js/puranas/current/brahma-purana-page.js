@@ -33,6 +33,7 @@
     const facts = [/\b245 chapters\b/gi,/\b10,000 verses\b/gi,/\bchapters?\s+\d+[–-]\d+\b/gi,/\b(?:10th|11th|12th|13th) century\b/gi,/\b(?:tenth|eleventh|twelfth|thirteenth) centur(?:y|ies)\b/gi];
     const escaped = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
     const termRe = new RegExp('\\b(' + escaped.join('|') + ')\\b','gi');
+
     root.querySelectorAll('.kena-lead p, .mahapurana-collapse-body p, .mahapurana-collapse-body li').forEach(el => {
       const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
       const nodes = [];
@@ -75,26 +76,51 @@
     });
   }
 
-  function makeTopLayout(){
-    const article = root.querySelector('.mahapurana-wiki-article');
-    const lead = root.querySelector('.kena-lead');
-    const toc = root.querySelector('.kena-toc');
-    const box = root.querySelector('.universal-infobox');
-    if (!article || !lead || !toc || !box || article.querySelector('.brahma-top-grid')) return;
-    const grid = document.createElement('div');
-    grid.className = 'brahma-top-grid';
-    const main = document.createElement('div');
-    main.className = 'brahma-top-main';
-    const side = document.createElement('div');
-    side.className = 'brahma-top-side';
-    article.insertBefore(grid, article.firstChild);
-    grid.append(main, side);
-    main.append(lead, toc);
-    side.append(box);
+  function makeContinuousArticle(){
+    root.querySelectorAll('.mahapurana-collapse-section').forEach(section => {
+      section.classList.remove('mahapurana-collapse-section','is-open');
+      section.classList.add('brahma-article-section');
+      const h = section.querySelector(':scope > h2');
+      const body = section.querySelector(':scope > .mahapurana-collapse-body');
+      if (h) {
+        h.removeAttribute('role');
+        h.removeAttribute('tabindex');
+        h.removeAttribute('aria-expanded');
+      }
+      if (body) {
+        body.hidden = false;
+        body.removeAttribute('hidden');
+      }
+    });
+  }
+
+  async function applyExactWikipediaImage(){
+    const figure = root.querySelector('.brahma-infobox-image');
+    const img = figure?.querySelector('img');
+    const link = figure?.querySelector('a');
+    const cap = figure?.querySelector('figcaption');
+    if (!figure || !img || !link) return;
+    try {
+      const api = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&titles=Brahma_Purana&prop=pageimages|info&inprop=url&pithumbsize=1200';
+      const response = await fetch(api, {mode:'cors', cache:'no-cache'});
+      if (!response.ok) throw new Error('Wikipedia image request failed');
+      const json = await response.json();
+      const page = Object.values(json?.query?.pages || {})[0];
+      if (!page || ('missing' in page) || !page.thumbnail?.source) throw new Error('No Brahma Purana page image');
+      img.src = page.thumbnail.source;
+      img.alt = 'Lead image from the Wikipedia article on the Brahma Purana';
+      link.href = page.fullurl || 'https://en.wikipedia.org/wiki/Brahma_Purana';
+      if (cap) cap.textContent = 'Lead image from Wikipedia’s Brahma Purana article.';
+      figure.classList.add('has-image');
+    } catch (err) {
+      console.warn('Brahma Purana Wikipedia image unavailable', err);
+      figure.classList.remove('has-image');
+    }
   }
 
   function refine(){
     if (!root.classList.contains('is-loaded')) return false;
+
     document.title = 'Brahma Purana — Viveka Drishti';
     const eyebrow = root.querySelector('.kena-article-head .eyebrow');
     if (eyebrow) eyebrow.textContent = 'Purana · encyclopedia article';
@@ -104,10 +130,10 @@
     const box = root.querySelector('.universal-infobox');
     if (box) box.innerHTML = `
       <figure class="brahma-infobox-image">
-        <a href="https://commons.wikimedia.org/wiki/File:6th_century_Brahma_on_Cave_3_ceiling,_Badami_Hindu_cave_temple_Karnataka_3.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/6th%20century%20Brahma%20on%20Cave%203%20ceiling%2C%20Badami%20Hindu%20cave%20temple%20Karnataka%203.jpg?width=1000" alt="Sixth-century sculpture of Brahma from Cave 3 at Badami">
+        <a href="https://en.wikipedia.org/wiki/Brahma_Purana" target="_blank" rel="noopener noreferrer">
+          <img alt="">
         </a>
-        <figcaption>6th-century sculpture of Brahma from Cave 3 at Badami — the image used on Wikipedia's Brahma article.</figcaption>
+        <figcaption>Lead image from Wikipedia’s Brahma Purana article.</figcaption>
       </figure>
       <div class="kena-infobox-title">Brahma Purana</div>
       <div class="universal-devanagari" lang="sa-Deva">ब्रह्मपुराणम्</div>
@@ -118,7 +144,12 @@
 
     cleanLatinText();
     highlightKeyTerms();
-    makeTopLayout();
+    makeContinuousArticle();
+    applyExactWikipediaImage();
+
+    if (location.hash) {
+      requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
+    }
     return true;
   }
 
