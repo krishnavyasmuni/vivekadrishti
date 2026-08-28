@@ -140,23 +140,25 @@
     });
   }
 
-  async function applyExactWikipediaImage(){
+  async function applyBrahmaManuscriptImage(){
     const figure = root.querySelector('.brahma-infobox-image');
     const img = figure?.querySelector('img');
     const link = figure?.querySelector('a');
     const cap = figure?.querySelector('figcaption');
     if (!figure || !img || !link) return;
     try {
-      const api = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&titles=Brahma_Purana&prop=pageimages|info&inprop=url&pithumbsize=1400';
+      const title = 'File:Bali-lontar-brahma-purana-300ppi.pdf';
+      const api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&titles=' + encodeURIComponent(title) + '&prop=imageinfo&iiprop=url&iiurlwidth=1400';
       const response = await fetch(api, {mode:'cors', cache:'no-store'});
-      if (!response.ok) throw new Error('Wikipedia image request failed');
+      if (!response.ok) throw new Error('Commons image request failed');
       const json = await response.json();
       const page = Object.values(json?.query?.pages || {})[0];
-      if (!page || ('missing' in page) || !page.thumbnail?.source) throw new Error('No Brahma Purana page image');
-      img.src = page.thumbnail.source;
-      img.alt = 'Lead image from the Wikipedia article on the Brahma Purana';
-      link.href = page.fullurl || 'https://en.wikipedia.org/wiki/Brahma_Purana';
-      if (cap) cap.textContent = 'Lead image from Wikipedia’s Brahma Purana article.';
+      const info = page?.imageinfo?.[0];
+      if (!info?.thumburl) throw new Error('No manuscript preview');
+      img.src = info.thumburl;
+      img.alt = 'Brahma Purana palm-leaf manuscript from Bali';
+      link.href = info.descriptionurl || 'https://commons.wikimedia.org/wiki/File:Bali-lontar-brahma-purana-300ppi.pdf';
+      if (cap) cap.textContent = 'Brahma Purana palm-leaf manuscript from Bali. Wikimedia Commons.';
       figure.classList.add('has-image');
     } catch (err) {
       figure.classList.remove('has-image');
@@ -175,8 +177,8 @@
     const box = root.querySelector('.universal-infobox');
     if (box) box.innerHTML = `
       <figure class="brahma-infobox-image">
-        <a href="https://en.wikipedia.org/wiki/Brahma_Purana" target="_blank" rel="noopener noreferrer"><img alt=""></a>
-        <figcaption>Lead image from Wikipedia’s Brahma Purana article.</figcaption>
+        <a href="https://commons.wikimedia.org/wiki/File:Bali-lontar-brahma-purana-300ppi.pdf" target="_blank" rel="noopener noreferrer"><img alt=""></a>
+        <figcaption>Brahma Purana palm-leaf manuscript from Bali. Wikimedia Commons.</figcaption>
       </figure>
       <div class="kena-infobox-title">Brahma Purana</div>
       <div class="universal-devanagari" lang="sa-Deva">ब्रह्मपुराणम्</div>
@@ -187,14 +189,13 @@
       <div class="kena-info-row"><b>Period</b><span>Main received compilation broadly <strong>10th–12th century CE</strong>; older material survives</span></div>
       <div class="kena-info-row"><b>Chapters</b><span><strong>245</strong></span></div>
       <div class="kena-info-row"><b>Verses</b><span><strong>10,000</strong> traditionally; <strong>13,783</strong> in the Anandashrama text</span></div>
-      <div class="kena-info-row"><b>Major regions</b><span>Odisha / Purushottama; Godavari</span></div>
-      <div class="kena-info-row"><b>Main subjects</b><span>Cosmology, pilgrimage, Krishna traditions, ritual, dharma, Samkhya, Yoga, liberation</span></div>`;
+      <div class="kena-info-row"><b>Major regions</b><span>Odisha / Purushottama; Godavari</span></div>`;
 
     cleanLatinText();
     highlightKeyTerms();
     makeContinuousArticle();
     reorderArticleAndToc();
-    applyExactWikipediaImage();
+    applyBrahmaManuscriptImage();
 
     if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
     return true;
