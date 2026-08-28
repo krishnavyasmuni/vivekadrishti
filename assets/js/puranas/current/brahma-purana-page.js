@@ -30,7 +30,11 @@
       'Mahabharata','Krishna','Balarama','Subhadra','Samkhya','Yoga','Purvabhaga','Uttarabhaga',
       'Konark Sun Temple','Vaishnavism','Shaivism','Shaktism','Brahmottara Purana','Surya'
     ].sort((a,b) => b.length - a.length);
-    const facts = [/\b245 chapters\b/gi,/\b10,000 verses\b/gi,/\bchapters?\s+\d+[–-]\d+\b/gi,/\b(?:10th|11th|12th|13th) century\b/gi,/\b(?:tenth|eleventh|twelfth|thirteenth) centur(?:y|ies)\b/gi];
+    const facts = [
+      /\b245 chapters\b/gi,/\b10,000 verses\b/gi,/\bchapters?\s+\d+[–-]\d+\b/gi,
+      /\b(?:9th|10th|11th|12th|13th) century\b/gi,
+      /\b(?:ninth|tenth|eleventh|twelfth|thirteenth) centur(?:y|ies)\b/gi
+    ];
     const escaped = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
     const termRe = new RegExp('\\b(' + escaped.join('|') + ')\\b','gi');
 
@@ -94,6 +98,52 @@
     });
   }
 
+  function reorderArticleAndToc(){
+    const desired = [
+      ['Date of composition','Date'],
+      ['Structure','Structure'],
+      ['Contents','Contents'],
+      ['Theology','Theology'],
+      ['Influences and reception','Influence'],
+      ['Rites, dharma and social history','Rites'],
+      ['Critical edition','Critical edition'],
+      ['Further reading','Further reading'],
+      ['References','References']
+    ];
+
+    const sections = [...root.querySelectorAll('.brahma-article-section')];
+    if (!sections.length) return;
+    const parent = sections[0].parentElement;
+    const byTitle = new Map();
+    sections.forEach(section => {
+      const h = section.querySelector(':scope > h2');
+      if (h) byTitle.set(h.textContent.trim(), {section, h});
+    });
+
+    desired.forEach(([oldTitle,newTitle]) => {
+      const found = byTitle.get(oldTitle);
+      if (!found) return;
+      found.h.textContent = newTitle;
+      parent.appendChild(found.section);
+    });
+
+    const toc = root.querySelector('.kena-toc');
+    const ol = toc?.querySelector('ol');
+    if (!ol) return;
+    const items = [...ol.querySelectorAll(':scope > li')];
+    const byLinkText = new Map();
+    items.forEach(li => {
+      const a = li.querySelector('a');
+      if (a) byLinkText.set(a.textContent.trim(), {li,a});
+    });
+    desired.forEach(([oldTitle,newTitle]) => {
+      const found = byLinkText.get(oldTitle);
+      if (!found) return;
+      found.a.textContent = newTitle;
+      ol.appendChild(found.li);
+    });
+  }
+
   async function applyExactWikipediaImage(){
     const figure = root.querySelector('.brahma-infobox-image');
     const img = figure?.querySelector('img');
@@ -101,8 +151,8 @@
     const cap = figure?.querySelector('figcaption');
     if (!figure || !img || !link) return;
     try {
-      const api = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&titles=Brahma_Purana&prop=pageimages|info&inprop=url&pithumbsize=1200';
-      const response = await fetch(api, {mode:'cors', cache:'no-cache'});
+      const api = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&titles=Brahma_Purana&prop=pageimages|info&inprop=url&pithumbsize=1400';
+      const response = await fetch(api, {mode:'cors', cache:'no-store'});
       if (!response.ok) throw new Error('Wikipedia image request failed');
       const json = await response.json();
       const page = Object.values(json?.query?.pages || {})[0];
@@ -130,22 +180,24 @@
     const box = root.querySelector('.universal-infobox');
     if (box) box.innerHTML = `
       <figure class="brahma-infobox-image">
-        <a href="https://en.wikipedia.org/wiki/Brahma_Purana" target="_blank" rel="noopener noreferrer">
-          <img alt="">
-        </a>
+        <a href="https://en.wikipedia.org/wiki/Brahma_Purana" target="_blank" rel="noopener noreferrer"><img alt=""></a>
         <figcaption>Lead image from Wikipedia’s Brahma Purana article.</figcaption>
       </figure>
       <div class="kena-infobox-title">Brahma Purana</div>
       <div class="universal-devanagari" lang="sa-Deva">ब्रह्मपुराणम्</div>
       <div class="kena-info-row"><b>Tradition</b><span>Attributed to Vyasa</span></div>
       <div class="kena-info-row"><b>Language</b><span>Sanskrit</span></div>
-      <div class="kena-info-row"><b>Dating</b><span>Layered text; main received compilation broadly <strong>10th–12th century CE</strong>, with older material preserved within it</span></div>
+      <div class="kena-info-row"><b>Dating</b><span>Layered text; main received compilation broadly <strong>10th–12th century CE</strong>, with older material preserved</span></div>
+      <div class="kena-info-row"><b>Textual character</b><span>Layered Puranic compilation with distinct regional and pilgrimage strata</span></div>
+      <div class="kena-info-row"><b>Key regions</b><span>Odisha / Purushottama and the Godavari sacred landscape</span></div>
+      <div class="kena-info-row"><b>Main themes</b><span>Cosmology, pilgrimage, Krishna traditions, ritual, dharma, Samkhya, Yoga and liberation</span></div>
       <div class="kena-info-row"><b>Received text</b><span><strong>245 chapters</strong></span></div>
       <div class="kena-info-row"><b>Traditional count</b><span><strong>10,000 verses</strong></span></div>`;
 
     cleanLatinText();
     highlightKeyTerms();
     makeContinuousArticle();
+    reorderArticleAndToc();
     applyExactWikipediaImage();
 
     if (location.hash) {
