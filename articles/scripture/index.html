@@ -9,53 +9,77 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krishnavyasmuni/vivekadrishti@cc1b960259fd026aa37df72d8723fc7a0dea102d/assets/css/scripture-index-clean.css">
   <link rel="stylesheet" href="/vivekadrishti/assets/css/scripture-index-v3-generic-wiki.css?v=1">
   <style>
-    .scripture-page .scripture-flat{margin:0!important;padding:12px 0 50px!important;color:#202020!important;font-family:Arial,Helvetica,sans-serif!important}
-    .scripture-page .scripture-flat-title{display:block;margin:0 0 10px!important;padding:4px 8px!important;border:1px solid #a8cabb!important;background:#cfeee2!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:20px!important;font-weight:700!important;line-height:1.2!important}
-    .scripture-page .scripture-flat-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px;margin:0;padding:0;list-style:none}
-    .scripture-page .scripture-flat-list li{margin:0;padding:8px 12px;border-bottom:1px solid #eaecf0;color:#0645ad;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35}
-    .scripture-page .scripture-flat-list li:nth-child(odd){border-right:1px solid #eaecf0}
-    @media(max-width:700px){.scripture-page .scripture-flat-list{grid-template-columns:1fr}.scripture-page .scripture-flat-list li:nth-child(odd){border-right:0}}
+    .scripture-page .scripture-groups{margin:0!important;padding:12px 0 50px!important;color:#202020!important;font-family:Arial,Helvetica,sans-serif!important}
+    .scripture-page .scripture-main-title,.scripture-page .scripture-group h2{display:block;margin:0!important;padding:4px 8px!important;border:1px solid #a8cabb!important;background:#cfeee2!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:20px!important;font-weight:700!important;line-height:1.2!important}
+    .scripture-page .scripture-main-title{margin-bottom:10px!important}
+    .scripture-page .scripture-group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px;align-items:start}
+    .scripture-page .scripture-group.puranas{grid-column:1/-1}
+    .scripture-page .scripture-group-list{margin:14px 0 0;padding:0 0 0 30px;columns:1;column-gap:30px}
+    .scripture-page .scripture-group-list li{margin:0 0 7px;padding:0;color:#0645ad;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;break-inside:avoid}
+    .scripture-page .scripture-group.puranas .scripture-group-list{columns:2}
+    @media(max-width:700px){
+      .scripture-page .scripture-group-grid{grid-template-columns:1fr}
+      .scripture-page .scripture-group.puranas{grid-column:auto}
+      .scripture-page .scripture-group.puranas .scripture-group-list{columns:1}
+    }
   </style>
 </head>
 <body class="post-page scripture-page">
 <header class="site-header"><div class="nav-wrap"><a class="brand" href="/vivekadrishti/">Viveka Dṛṣṭi</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="/vivekadrishti/">Home</a><a href="/vivekadrishti/introduction-to-hinduism/">Introduction to Hinduism</a><a href="/vivekadrishti/indology/">Indology</a><a href="/vivekadrishti/purana-library/">Purāṇa Library</a></nav></div></header>
 <main class="site-main"><article class="article-shell"><header class="article-heading"><h1>An Index of Hindu Scripture</h1></header><div class="article-body">
-<section class="scripture-flat" aria-label="Hindu scripture index">
-  <h2 class="scripture-flat-title">Hindu Scripture</h2>
-  <ul class="scripture-flat-list">
-    <li>Īśa Upaniṣad</li>
-    <li>Kena Upaniṣad</li>
-    <li>Kaṭha Upaniṣad</li>
-    <li>Praśna Upaniṣad</li>
-    <li>Muṇḍaka Upaniṣad</li>
-    <li>Māṇḍūkya Upaniṣad</li>
-    <li>Taittirīya Upaniṣad</li>
-    <li>Aitareya Upaniṣad</li>
-    <li>Chāndogya Upaniṣad</li>
-    <li>Bṛhadāraṇyaka Upaniṣad</li>
-    <li>Rāmāyaṇa</li>
-    <li>Mahābhārata</li>
-    <li>Brahma Purāṇa</li>
-    <li>Padma Purāṇa</li>
-    <li>Viṣṇu Purāṇa</li>
-    <li>Vāyu Purāṇa</li>
-    <li>Śiva Purāṇa</li>
-    <li>Bhāgavata Purāṇa</li>
-    <li>Devī Bhāgavata Purāṇa</li>
-    <li>Nārada Purāṇa</li>
-    <li>Mārkaṇḍeya Purāṇa</li>
-    <li>Agni Purāṇa</li>
-    <li>Bhaviṣya Purāṇa</li>
-    <li>Brahmavaivarta Purāṇa</li>
-    <li>Varāha Purāṇa</li>
-    <li>Liṅga Purāṇa</li>
-    <li>Skanda Purāṇa</li>
-    <li>Vāmana Purāṇa</li>
-    <li>Kūrma Purāṇa</li>
-    <li>Matsya Purāṇa</li>
-    <li>Garuḍa Purāṇa</li>
-    <li>Brahmāṇḍa Purāṇa</li>
-  </ul>
+<section class="scripture-groups" aria-label="Hindu scripture index">
+  <h2 class="scripture-main-title">Hindu Scripture</h2>
+  <div class="scripture-group-grid">
+    <section class="scripture-group upanishads">
+      <h2>Upaniṣads</h2>
+      <ul class="scripture-group-list">
+        <li>Īśa Upaniṣad</li>
+        <li>Kena Upaniṣad</li>
+        <li>Kaṭha Upaniṣad</li>
+        <li>Praśna Upaniṣad</li>
+        <li>Muṇḍaka Upaniṣad</li>
+        <li>Māṇḍūkya Upaniṣad</li>
+        <li>Taittirīya Upaniṣad</li>
+        <li>Aitareya Upaniṣad</li>
+        <li>Chāndogya Upaniṣad</li>
+        <li>Bṛhadāraṇyaka Upaniṣad</li>
+      </ul>
+    </section>
+
+    <section class="scripture-group itihasa">
+      <h2>Itihāsa</h2>
+      <ul class="scripture-group-list">
+        <li>Rāmāyaṇa</li>
+        <li>Mahābhārata</li>
+      </ul>
+    </section>
+
+    <section class="scripture-group puranas">
+      <h2>Purāṇas</h2>
+      <ul class="scripture-group-list">
+        <li>Brahma Purāṇa</li>
+        <li>Padma Purāṇa</li>
+        <li>Viṣṇu Purāṇa</li>
+        <li>Vāyu Purāṇa</li>
+        <li>Śiva Purāṇa</li>
+        <li>Bhāgavata Purāṇa</li>
+        <li>Devī Bhāgavata Purāṇa</li>
+        <li>Nārada Purāṇa</li>
+        <li>Mārkaṇḍeya Purāṇa</li>
+        <li>Agni Purāṇa</li>
+        <li>Bhaviṣya Purāṇa</li>
+        <li>Brahmavaivarta Purāṇa</li>
+        <li>Varāha Purāṇa</li>
+        <li>Liṅga Purāṇa</li>
+        <li>Skanda Purāṇa</li>
+        <li>Vāmana Purāṇa</li>
+        <li>Kūrma Purāṇa</li>
+        <li>Matsya Purāṇa</li>
+        <li>Garuḍa Purāṇa</li>
+        <li>Brahmāṇḍa Purāṇa</li>
+      </ul>
+    </section>
+  </div>
 </section>
 </div></article></main>
 <footer class="site-footer"><p>Viveka Dṛṣṭi</p></footer>
