@@ -110,6 +110,7 @@
       ['Further reading','Further reading'],
       ['References','References']
     ];
+
     const sections = [...root.querySelectorAll('.brahma-article-section')];
     if (sections.length) {
       const parent = sections[0].parentElement;
@@ -125,6 +126,7 @@
         parent.appendChild(found.section);
       });
     }
+
     const ol = root.querySelector('.kena-toc ol');
     if (!ol) return;
     const byText = new Map();
@@ -140,46 +142,18 @@
     });
   }
 
-  async function applyBrahmaManuscriptImage(){
-    const figure = root.querySelector('.brahma-infobox-image');
-    const img = figure?.querySelector('img');
-    const link = figure?.querySelector('a');
-    const cap = figure?.querySelector('figcaption');
-    if (!figure || !img || !link) return;
-    try {
-      const title = 'File:Bali-lontar-brahma-purana-300ppi.pdf';
-      const api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&titles=' + encodeURIComponent(title) + '&prop=imageinfo&iiprop=url&iiurlwidth=1400';
-      const response = await fetch(api, {mode:'cors', cache:'no-store'});
-      if (!response.ok) throw new Error('Commons image request failed');
-      const json = await response.json();
-      const page = Object.values(json?.query?.pages || {})[0];
-      const info = page?.imageinfo?.[0];
-      if (!info?.thumburl) throw new Error('No manuscript preview');
-      img.src = info.thumburl;
-      img.alt = 'Brahma Purana palm-leaf manuscript from Bali';
-      link.href = info.descriptionurl || 'https://commons.wikimedia.org/wiki/File:Bali-lontar-brahma-purana-300ppi.pdf';
-      if (cap) cap.textContent = 'Brahma Purana palm-leaf manuscript from Bali. Wikimedia Commons.';
-      figure.classList.add('has-image');
-    } catch (err) {
-      figure.classList.remove('has-image');
-    }
-  }
-
   function refine(){
     if (!root.classList.contains('is-loaded')) return false;
     document.title = 'Brahma Purana — Viveka Drishti';
 
     const eyebrow = root.querySelector('.kena-article-head .eyebrow');
     if (eyebrow) eyebrow.textContent = 'Purana · encyclopedia article';
+
     const heading = root.querySelector('.kena-article-head h1');
     if (heading) heading.innerHTML = 'Brahma Purana <span class="brahma-devanagari-title" lang="sa-Deva">ब्रह्मपुराणम्</span>';
 
     const box = root.querySelector('.universal-infobox');
     if (box) box.innerHTML = `
-      <figure class="brahma-infobox-image">
-        <a href="https://commons.wikimedia.org/wiki/File:Bali-lontar-brahma-purana-300ppi.pdf" target="_blank" rel="noopener noreferrer"><img alt=""></a>
-        <figcaption>Brahma Purana palm-leaf manuscript from Bali. Wikimedia Commons.</figcaption>
-      </figure>
       <div class="kena-infobox-title">Brahma Purana</div>
       <div class="universal-devanagari" lang="sa-Deva">ब्रह्मपुराणम्</div>
       <div class="kena-info-row"><b>Religion</b><span>Hinduism</span></div>
@@ -195,7 +169,6 @@
     highlightKeyTerms();
     makeContinuousArticle();
     reorderArticleAndToc();
-    applyBrahmaManuscriptImage();
 
     if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
     return true;
