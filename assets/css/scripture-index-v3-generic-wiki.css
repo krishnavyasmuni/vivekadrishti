@@ -1,95 +1,85 @@
-.scripture-wiki-article{max-width:1120px;margin:0 auto;color:#202122;font-family:Merriweather,Georgia,serif;font-size:16px;line-height:1.72}
-.veda-family-name{display:flex!important;flex-direction:column!important;width:100%!important;margin:0 0 13px!important;padding:10px 13px!important;border:1px solid #b9d0cc!important;border-left:7px solid #2d6866!important;border-radius:4px!important;background:#e6efed!important;color:#2d6866!important;font-family:Vollkorn,Georgia,serif!important;font-size:17px!important;font-weight:600!important;line-height:1.2!important;text-align:left!important;cursor:pointer!important}
-.veda-family-name small{margin-top:4px!important;color:#557572!important;font-family:Merriweather,Georgia,serif!important;font-size:8px!important;font-weight:400!important}
+.scripture-wiki-article{max-width:1120px;margin:0 auto;color:#202122;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5}
+.veda-family-name{display:flex!important;flex-direction:column!important;width:100%!important;margin:0 0 13px!important;padding:10px 13px!important;border:1px solid #b9d0cc!important;border-left:7px solid #2d6866!important;border-radius:0!important;background:#e6efed!important;color:#2d6866!important;font-family:Arial,Helvetica,sans-serif!important;font-size:17px!important;font-weight:700!important;line-height:1.2!important;text-align:left!important;cursor:pointer!important}
+.veda-family-name small{margin-top:4px!important;color:#557572!important;font-family:Arial,Helvetica,sans-serif!important;font-size:8px!important;font-weight:400!important}
 .veda-family-name:hover{background:#dce9e6!important}
 .veda-family-name.is-active{box-shadow:0 0 0 1px #2d6866 inset!important}
-@media(max-width:850px){.scripture-wiki-article{font-size:16px}}
 
-/* Scripture index — Hindupedia-inspired, but cleaner and more contemporary. */
-.scripture-page{background:#fff!important;color:#202122!important}
-.scripture-page .article-shell{width:min(1180px,calc(100% - 34px))!important;max-width:none!important;margin:0 auto!important}
-.scripture-page .article-heading{width:min(1120px,100%)!important;margin:0 auto!important;padding:34px 0 12px!important;border-bottom:1px solid #a2a9b1!important;text-align:left!important}
-.scripture-page .article-heading h1{margin:0!important;color:#202122!important;font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(34px,4.4vw,48px)!important;font-weight:400!important;line-height:1.08!important;letter-spacing:-.015em!important;text-align:left!important}
-.scripture-page .article-heading::after{content:'From Viveka Dṛṣṭi, the Hindu encyclopedia';display:block;margin-top:8px;color:#72777d;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:12px;line-height:1.4}
-.scripture-page .article-body{width:min(1120px,100%)!important;margin:0 auto!important}
-.scripture-page #scripture-browser{margin:0!important;padding:24px 0 70px!important;color:#202122!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important}
+/* Scripture index — Hindupedia HOME-PAGE portal treatment. */
+.scripture-page{background:#fff!important;color:#202020!important}
+.scripture-page .article-shell{width:min(1040px,calc(100% - 28px))!important;max-width:none!important;margin:0 auto!important;padding:20px 0 56px!important}
+.scripture-page .article-heading{width:100%!important;margin:0 0 10px!important;padding:0 0 8px!important;border-bottom:1px solid #c8c8c8!important}
+.scripture-page .article-heading h1{margin:0!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:30px!important;font-weight:600!important;line-height:1.2!important;letter-spacing:0!important;text-align:left!important}
+.scripture-page .article-heading::after{content:'From Viveka Dṛṣṭi, the Hindu Encyclopedia';display:block;margin-top:5px;color:#777;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4}
+.scripture-page .article-body{width:100%!important;margin:0!important;font-family:Arial,Helvetica,sans-serif!important}
+.scripture-page #scripture-browser{margin:0!important;padding:12px 0 50px!important;color:#202020!important;font-family:Arial,Helvetica,sans-serif!important}
 
-/* The Vedas family is intentionally omitted from this landing index. */
+/* Vedas intentionally omitted. */
 .scripture-page #scripture-browser .corpus-button[data-corpus='vedas']{display:none!important}
 
-/* Hindupedia-like portal directory. */
-.scripture-page #scripture-browser .corpus-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px 30px!important;overflow:visible!important;margin:0!important;padding:0 0 30px!important;border-bottom:1px solid #c8ccd1!important}
-.scripture-page #scripture-browser .corpus-nav::before{content:'Scripture and textual traditions';grid-column:1/-1;display:block;margin:0 0 -4px;padding:0 0 7px;border-bottom:1px solid #a2a9b1;color:#202122;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;line-height:1.2}
-.scripture-page #scripture-browser .corpus-button{appearance:none!important;display:block!important;min-height:0!important;margin:0!important;padding:0 0 13px!important;border:0!important;border-bottom:1px solid #eaecf0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#3366cc!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:16px!important;font-weight:600!important;line-height:1.25!important;text-align:left!important;cursor:pointer!important;transform:none!important}
-.scripture-page #scripture-browser .corpus-button::before{display:none!important}
-.scripture-page #scripture-browser .corpus-button::after{display:block!important;margin-top:5px!important;color:#54595d!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:11px!important;font-weight:400!important;line-height:1.45!important}
-.scripture-page #scripture-browser .corpus-button[data-corpus='upanishads']::after{content:'Principal and minor Upaniṣadic texts arranged by traditional group.'!important}
-.scripture-page #scripture-browser .corpus-button[data-corpus='itihasa']::after{content:'The Rāmāyaṇa and Mahābhārata epic traditions.'!important}
-.scripture-page #scripture-browser .corpus-button[data-corpus='puranas']::after{content:'Mahāpurāṇas and Upapurāṇas with traditional classifications.'!important}
-.scripture-page #scripture-browser .corpus-button[data-corpus='smriti']::after{content:'Smṛti and Dharma literature from traditional textual lists.'!important}
-.scripture-page #scripture-browser .corpus-button[data-corpus='vedanga']::after{content:'The six auxiliary disciplines of scriptural study and transmission.'!important}
-.scripture-page #scripture-browser .corpus-button:hover{background:transparent!important;color:#254a9a!important;text-decoration:underline!important}
-.scripture-page #scripture-browser .corpus-button.is-active{padding-left:10px!important;border-left:3px solid #a36a00!important;background:#f8f9fa!important;color:#202122!important;text-decoration:none!important}
+/* Hindupedia homepage = two columns of simple green-headed sections with blue-link lists. */
+.scripture-page #scripture-browser .corpus-nav{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:0 14px!important;align-items:start!important;overflow:visible!important;margin:0!important;padding:0!important;border:0!important}
+.scripture-page #scripture-browser .corpus-nav::before{content:'Hindu Scripture';grid-column:1/-1;display:block;margin:0 0 6px!important;padding:4px 8px!important;border:1px solid #a8cabb!important;background:#cfeee2!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:20px!important;font-weight:700!important;line-height:1.2!important}
 
-/* Open corpus reads like a reference article section. */
-.scripture-page #scripture-browser .browser-stage{min-height:0!important;margin:0!important;padding:30px 0 0!important}
-.scripture-page #scripture-browser .shastra-title{margin:0 0 14px!important;padding:0 0 6px!important;border-bottom:1px solid #a2a9b1!important;color:#202122!important;font-family:Georgia,'Times New Roman',serif!important;font-size:30px!important;font-weight:400!important;line-height:1.15!important;text-align:left!important}
-.scripture-page #scripture-browser .shastra-subnav{display:flex!important;flex-wrap:wrap!important;gap:7px 10px!important;margin:0 0 20px!important;padding:8px 10px!important;border:1px solid #c8ccd1!important;border-radius:0!important;background:#f8f9fa!important;overflow:visible!important}
-.scripture-page #scripture-browser .shastra-subnav button{flex:none!important;margin:0!important;padding:2px 0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#3366cc!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:10px!important;font-weight:600!important;line-height:1.4!important;cursor:pointer!important}
-.scripture-page #scripture-browser .shastra-subnav button::after{content:' ·';color:#72777d;margin-left:10px}
-.scripture-page #scripture-browser .shastra-subnav button:last-child::after{content:''}
-.scripture-page #scripture-browser .shastra-subnav button:hover{text-decoration:underline!important;color:#254a9a!important}
-.scripture-page #scripture-browser .shastra-subnav button.is-active{background:transparent!important;color:#202122!important;text-decoration:none!important}
+/* Each corpus button is styled as an entire Hindupedia homepage section. */
+.scripture-page #scripture-browser .corpus-button{appearance:none!important;position:relative!important;display:block!important;width:100%!important;min-height:185px!important;margin:0 0 18px!important;padding:38px 12px 12px 28px!important;border:0!important;border-radius:0!important;background:#fff!important;box-shadow:none!important;color:#16539b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:1.45!important;text-align:left!important;cursor:pointer!important;white-space:pre-line!important;overflow:hidden!important;transform:none!important}
+.scripture-page #scripture-browser .corpus-button::before{content:attr(data-home-title)!important;position:absolute!important;left:0!important;right:0!important;top:0!important;display:block!important;margin:0!important;padding:4px 8px!important;border:1px solid #a8cabb!important;background:#cfeee2!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;line-height:1.25!important;white-space:normal!important}
+.scripture-page #scripture-browser .corpus-button::after{display:block!important;margin:0!important;color:#16539b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:1.5!important;white-space:pre-line!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='upanishads']::before{content:'Upaniṣads'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='upanishads']::after{content:'• Mukhya Upaniṣads\A• Sāmānya Vedānta\A• Sannyāsa\A• Yoga\A• Vaiṣṇava\A• Śaiva\A• Śākta'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='itihasa']::before{content:'Itihāsa'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='itihasa']::after{content:'• Rāmāyaṇa\A• Mahābhārata'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='puranas']::before{content:'Purāṇas'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='puranas']::after{content:'• Mahāpurāṇas\A• Upapurāṇas\A• Vaiṣṇava Purāṇas\A• Śaiva Purāṇas\A• Śākta Purāṇas\A• Other classifications'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='smriti']::before{content:'Smṛti'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='smriti']::after{content:'• Yājñavalkya Smṛti\A• Parāśara Smṛti\A• Traditional Dharma lists\A• Guṇa classifications'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='vedanga']::before{content:'Vedāṅga'!important}
+.scripture-page #scripture-browser .corpus-button[data-corpus='vedanga']::after{content:'• Śikṣā\A• Kalpa\A• Vyākaraṇa\A• Nirukta\A• Chandas\A• Jyotiṣa'!important}
+.scripture-page #scripture-browser .corpus-button:hover{background:#fff!important;color:#0b55a3!important;text-decoration:underline!important}
+.scripture-page #scripture-browser .corpus-button.is-active{background:#f8fbfa!important;color:#0b55a3!important;box-shadow:none!important;text-decoration:none!important}
+.scripture-page #scripture-browser .corpus-button.is-active::before{background:#c4e7da!important}
 
-/* Compact encyclopedia lists. */
-.scripture-page #scripture-browser .shastra-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0 30px!important;border:0!important}
-.scripture-page #scripture-browser .shastra-name{appearance:none!important;position:relative!important;display:block!important;min-height:0!important;margin:0!important;padding:7px 8px 7px 18px!important;border:0!important;border-bottom:1px dotted #c8ccd1!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#3366cc!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:11px!important;line-height:1.4!important;text-align:left!important;cursor:pointer!important;transform:none!important;filter:none!important}
-.scripture-page #scripture-browser .shastra-name::before{content:'•';position:absolute;left:4px;top:7px;color:#72777d;font-size:10px;line-height:1.4}
-.scripture-page #scripture-browser .shastra-name>span{display:block!important;font-weight:600!important}
-.scripture-page #scripture-browser .shastra-name>small{display:block!important;margin-top:2px!important;color:#72777d!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:8px!important;font-weight:400!important;line-height:1.4!important}
-.scripture-page #scripture-browser .shastra-name:hover{background:#f8f9fa!important;color:#254a9a!important;text-decoration:none!important;transform:none!important;filter:none!important}
+/* Opened corpus: keep the same Hindupedia reference language. */
+.scripture-page #scripture-browser .browser-stage{min-height:0!important;margin:0 0 22px!important;padding:8px 0 0!important;border-top:1px solid #ddd!important}
+.scripture-page #scripture-browser .shastra-title{margin:16px 0 3px!important;padding:4px 8px!important;border:1px solid #a8cabb!important;border-radius:0!important;background:#cfeee2!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:20px!important;font-weight:700!important;line-height:1.2!important;text-align:left!important}
+.scripture-page #scripture-browser .shastra-subnav{display:flex!important;flex-wrap:wrap!important;gap:0 12px!important;margin:0 0 12px!important;padding:4px 8px!important;border:0!important;border-bottom:1px solid #ddd!important;border-radius:0!important;background:#fff!important}
+.scripture-page #scripture-browser .shastra-subnav button{flex:none!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#16539b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;font-weight:400!important;line-height:1.5!important;cursor:pointer!important}
+.scripture-page #scripture-browser .shastra-subnav button:hover{text-decoration:underline!important}
+.scripture-page #scripture-browser .shastra-subnav button.is-active{background:transparent!important;color:#111!important;font-weight:700!important}
+
+.scripture-page #scripture-browser .shastra-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0 18px!important;border:0!important}
+.scripture-page #scripture-browser .shastra-name{appearance:none!important;position:relative!important;display:block!important;min-height:0!important;margin:0!important;padding:1px 0 1px 18px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#16539b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px!important;font-weight:400!important;line-height:1.5!important;text-align:left!important;cursor:pointer!important;transform:none!important;filter:none!important}
+.scripture-page #scripture-browser .shastra-name::before{content:'•'!important;position:absolute!important;left:2px!important;top:1px!important;color:#777!important;font-size:13px!important}
+.scripture-page #scripture-browser .shastra-name>span{display:inline!important;width:auto!important;font-weight:400!important}
+.scripture-page #scripture-browser .shastra-name>small{display:none!important}
+.scripture-page #scripture-browser .shastra-name:hover{background:transparent!important;color:#0b55a3!important;transform:none!important;filter:none!important}
 .scripture-page #scripture-browser .shastra-name:hover>span{text-decoration:underline!important}
-.scripture-page #scripture-browser .shastra-name.is-active{background:#eaecf0!important;color:#202122!important;box-shadow:none!important}
+.scripture-page #scripture-browser .shastra-name.is-active{background:transparent!important;color:#0b55a3!important;box-shadow:none!important;text-decoration:underline!important}
 .scripture-page #scripture-browser .upanishad-name,
 .scripture-page #scripture-browser .purana-name,
 .scripture-page #scripture-browser .shastra-name.guna-sattvika,
 .scripture-page #scripture-browser .shastra-name.guna-rajasa,
 .scripture-page #scripture-browser .shastra-name.guna-tamasa{background:transparent!important}
-.scripture-page #scripture-browser .upanishad-name:hover,
-.scripture-page #scripture-browser .purana-name:hover,
-.scripture-page #scripture-browser .shastra-name.guna-sattvika:hover,
-.scripture-page #scripture-browser .shastra-name.guna-rajasa:hover,
-.scripture-page #scripture-browser .shastra-name.guna-tamasa:hover{background:#f8f9fa!important}
-.scripture-page #scripture-browser .purana-name{padding-right:90px!important}
-.scripture-page #scripture-browser .purana-name::after{content:attr(data-sect)!important;position:absolute!important;top:8px!important;right:4px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#72777d!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:7px!important;font-weight:600!important;line-height:1.3!important}
+.scripture-page #scripture-browser .purana-name{padding-right:0!important}
+.scripture-page #scripture-browser .purana-name::after{display:none!important;content:none!important}
 
-/* Section headings in the classic encyclopedia rhythm. */
 .scripture-page #scripture-browser .upanishad-group,
 .scripture-page #scripture-browser .purana-sect-group,
-.scripture-page #scripture-browser .guna-group{margin:0 0 27px!important}
+.scripture-page #scripture-browser .guna-group{margin:0 0 18px!important}
 .scripture-page #scripture-browser .upanishad-group>h3,
 .scripture-page #scripture-browser .purana-sect-group>h3,
-.scripture-page #scripture-browser .guna-group>h3{display:block!important;margin:0 0 4px!important;padding:0 0 5px!important;border:0!important;border-bottom:1px solid #c8ccd1!important;border-radius:0!important;background:transparent!important;color:#202122!important;font-family:Georgia,'Times New Roman',serif!important;font-size:20px!important;font-weight:400!important;line-height:1.2!important}
-.scripture-page #scripture-browser .purana-sect-legend{display:flex!important;flex-wrap:wrap!important;gap:7px 14px!important;margin:0 0 20px!important;padding:8px 10px!important;border:1px solid #c8ccd1!important;border-radius:0!important;background:#f8f9fa!important}
-.scripture-page #scripture-browser .legend-chip{color:#54595d!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:8px!important}
-.scripture-page #scripture-browser .legend-chip i{width:7px!important;height:7px!important;border-radius:50%!important}
+.scripture-page #scripture-browser .guna-group>h3{display:block!important;margin:0 0 3px!important;padding:4px 8px!important;border:1px solid #a8cabb!important;border-radius:0!important;background:#cfeee2!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;line-height:1.25!important}
+.scripture-page #scripture-browser .purana-sect-legend{display:none!important}
 
-/* Detail note behaves like a small wiki information box. */
-.scripture-page #scripture-browser .shastra-info{margin:22px 0 0!important;padding:12px 14px!important;border:1px solid #a2a9b1!important;border-radius:0!important;background:#f8f9fa!important;box-shadow:none!important}
-.scripture-page #scripture-browser .shastra-info>strong{display:block!important;margin-bottom:6px!important;color:#202122!important;font-family:Georgia,'Times New Roman',serif!important;font-size:18px!important;font-weight:400!important;line-height:1.25!important}
-.scripture-page #scripture-browser .shastra-info-row{color:#54595d!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif!important;font-size:9px!important;line-height:1.5!important}
+.scripture-page #scripture-browser .shastra-info{margin:18px 0 0!important;padding:9px 12px!important;border:1px solid #c7c7c7!important;border-radius:0!important;background:#f8f8f8!important;box-shadow:none!important}
+.scripture-page #scripture-browser .shastra-info>strong{display:block!important;margin-bottom:5px!important;color:#111!important;font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;font-weight:700!important;line-height:1.3!important}
+.scripture-page #scripture-browser .shastra-info-row{color:#555!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:1.45!important}
 
 @media(max-width:760px){
-  .scripture-page .article-shell{width:min(100% - 22px,1180px)!important}
-  .scripture-page .article-heading{padding:26px 0 10px!important}
-  .scripture-page .article-heading h1{font-size:35px!important}
-  .scripture-page .article-heading::after{font-size:11px}
-  .scripture-page #scripture-browser{padding-top:19px!important}
-  .scripture-page #scripture-browser .corpus-nav{grid-template-columns:1fr!important;gap:12px!important}
-  .scripture-page #scripture-browser .corpus-nav::before{font-size:20px!important}
-  .scripture-page #scripture-browser .browser-stage{padding-top:25px!important}
-  .scripture-page #scripture-browser .shastra-title{font-size:27px!important}
-  .scripture-page #scripture-browser .shastra-grid{grid-template-columns:1fr!important;gap:0!important}
+  .scripture-page .article-shell{width:calc(100% - 20px)!important}
+  .scripture-page .article-heading h1{font-size:26px!important}
+  .scripture-page #scripture-browser .corpus-nav{grid-template-columns:1fr!important;gap:0!important}
+  .scripture-page #scripture-browser .corpus-button{min-height:0!important;padding-bottom:16px!important}
+  .scripture-page #scripture-browser .shastra-grid{grid-template-columns:1fr!important}
   .scripture-page #scripture-browser .shastra-subnav{overflow-x:auto!important;flex-wrap:nowrap!important;white-space:nowrap!important;scrollbar-width:none!important}
   .scripture-page #scripture-browser .shastra-subnav::-webkit-scrollbar{display:none!important}
 }
