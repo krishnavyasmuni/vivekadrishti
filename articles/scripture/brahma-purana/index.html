@@ -9,15 +9,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/vivekadrishti/assets/css/site.css?build=20260828-brahma-wiki-v10">
-  <link rel="stylesheet" href="/vivekadrishti/assets/css/puranas/current/mahapurana-static.css?build=20260828-brahma-wiki-v10">
-  <link rel="stylesheet" href="/vivekadrishti/assets/css/puranas/current/brahma-purana-page.css?build=20260828-brahma-wiki-v10">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/site.css?build=20260828-brahma-wiki-v11">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/puranas/current/mahapurana-static.css?build=20260828-brahma-wiki-v11">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/puranas/current/brahma-purana-page.css?build=20260828-brahma-wiki-v11">
+  <style>
+    .brahma-page-nav{padding:12px 0 8px!important;gap:12px!important}
+    .brahma-back-button{
+      display:inline-block!important;
+      padding:8px 12px!important;
+      border:1px solid #a2a9b1!important;
+      background:#f8f9fa!important;
+      color:#202122!important;
+      font-weight:700!important;
+      text-decoration:none!important;
+    }
+    .brahma-back-button:hover{background:#eaecf0!important;text-decoration:none!important}
+    .brahma-home-link{font-weight:600!important}
+    .brahma-return-nav{
+      box-sizing:border-box;
+      width:1600px;
+      max-width:calc(100% - 20px);
+      margin:0 auto;
+      padding:18px 0 34px;
+      border-top:1px solid #c8ccd1;
+      font:600 14px/1.4 Merriweather,Georgia,serif;
+    }
+    .brahma-return-nav a{color:#36c;text-decoration:none}
+    .brahma-return-nav a:hover{text-decoration:underline}
+  </style>
 </head>
 <body class="post-page mahapurana-static-page brahma-purana-page">
   <nav class="brahma-page-nav" aria-label="Brahma Purana navigation">
-    <a href="/vivekadrishti/articles/scripture/">← Scripture Index</a>
-    <span class="nav-separator" aria-hidden="true">·</span>
-    <a href="/vivekadrishti/">Home</a>
+    <a class="brahma-back-button" href="/vivekadrishti/articles/scripture/">← Back to Scripture Index</a>
+    <a class="brahma-home-link" href="/vivekadrishti/">Home</a>
   </nav>
   <main class="site-main">
     <article class="mahapurana-static-article">
@@ -26,7 +50,10 @@
       </div>
     </article>
   </main>
-  <script src="/vivekadrishti/assets/js/puranas/current/mahapurana-standalone.js?build=20260828-brahma-wiki-v10"></script>
-  <script src="/vivekadrishti/assets/js/puranas/current/brahma-purana-page.js?build=20260828-brahma-wiki-v10"></script>
+  <nav class="brahma-return-nav" aria-label="Return to Scripture Index">
+    <a href="/vivekadrishti/articles/scripture/">← Back to Scripture Index</a>
+  </nav>
+  <script src="/vivekadrishti/assets/js/puranas/current/mahapurana-standalone.js?build=20260828-brahma-wiki-v11"></script>
+  <script src="/vivekadrishti/assets/js/puranas/current/brahma-purana-page.js?build=20260828-brahma-wiki-v11"></script>
 </body>
 </html>
