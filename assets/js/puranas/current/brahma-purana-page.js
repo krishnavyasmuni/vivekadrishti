@@ -139,6 +139,7 @@
       <div class="universal-devanagari" lang="sa-Deva">ब्रह्मपुराणम्</div>
       <div class="kena-info-row"><b>Tradition</b><span>Attributed to Vyasa</span></div>
       <div class="kena-info-row"><b>Language</b><span>Sanskrit</span></div>
+      <div class="kena-info-row"><b>Dating</b><span>Layered text; main received compilation broadly <strong>10th–12th century CE</strong>, with older material preserved within it</span></div>
       <div class="kena-info-row"><b>Received text</b><span><strong>245 chapters</strong></span></div>
       <div class="kena-info-row"><b>Traditional count</b><span><strong>10,000 verses</strong></span></div>`;
 
