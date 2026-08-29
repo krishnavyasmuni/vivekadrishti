@@ -1,0 +1,39 @@
+name: Scripture depth audit
+on:
+  push:
+    paths:
+      - '.github/workflows/scripture-depth-audit.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Count live substantive scripture words
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs'),vm=require('vm'),path=require('path');
+          const read=x=>fs.readFileSync(path.join(process.cwd(),x),'utf8');
+          const wc=t=>(String(t||'').match(/[\p{L}\p{N}]+(?:[’'\-][\p{L}\p{N}]+)*/gu)||[]).length;
+          const ctx=()=>{const c={window:{SCRIPTURE_DETAIL_DATA:{},UPANISHAD_RESEARCH_108:{}},console};vm.createContext(c);return c};
+          const run=(files,c)=>{for(const f of files){if(fs.existsSync(f))try{vm.runInContext(read(f),c,{filename:f})}catch(e){console.log('ERR',f,e.message)}}return c};
+          const strs=(v,ign=new Set(['title','name','label','url','href','key','id','className']))=>{let o=[];const w=(x,k='')=>{if(x==null)return;if(typeof x==='string'){if(!ign.has(k))o.push(x);return}if(Array.isArray(x)){x.forEach(y=>w(y,k));return}if(typeof x==='object')for(const [q,y]of Object.entries(x))w(y,q)};w(v);return o};
+          const pwords=e=>{if(!e)return 0;let t=[];if(Array.isArray(e.leadParagraphs))t.push(...e.leadParagraphs);else{if(e.overview)t.push(e.overview);if(e.summary)t.push(e.summary)}if(Array.isArray(e.articleSections))t.push(...strs(e.articleSections));return wc(t.join(' '))};
+          const uwords=e=>{if(!e)return 0;let t=[];if(Array.isArray(e.lead))t.push(...e.lead);else if(Array.isArray(e.leadParagraphs))t.push(...e.leadParagraphs);if(e.sections)t.push(...strs(e.sections));else if(Array.isArray(e.articleSections))t.push(...strs(e.articleSections));return wc(t.join(' '))};
+          const idx=read('articles/scripture/index.html');
+          const pfiles=[...idx.matchAll(/<script\s+src="\/vivekadrishti\/(assets\/js\/puranas\/current\/[^"]+\.js)(?:\?[^\"]*)?"/g)].map(m=>m[1]);
+          const pc=run(pfiles,ctx());
+          const pnames=['Brahma Purāṇa','Padma Purāṇa','Viṣṇu Purāṇa','Vāyu Purāṇa','Śiva Purāṇa','Bhāgavata Purāṇa','Devī Bhāgavata Purāṇa','Nāradīya Purāṇa','Mārkaṇḍeya Purāṇa','Agni Purāṇa','Bhaviṣya Purāṇa','Brahmavaivarta Purāṇa','Varāha Purāṇa','Liṅga Purāṇa','Skanda Purāṇa','Vāmana Purāṇa','Kūrma Purāṇa','Matsya Purāṇa','Garuḍa Purāṇa','Brahmāṇḍa Purāṇa'];
+          console.log('TARGET\t8303');
+          for(const n of pnames){const e=pc.window.SCRIPTURE_DETAIL_DATA['Purāṇa:'+n]||pc.window.SCRIPTURE_DETAIL_DATA[n];console.log('PURANA\t'+n+'\t'+pwords(e))}
+          const shell=read('assets/templates/upanishad-unified-shell.html');
+          const ufiles=[...shell.matchAll(/<script\s+src="\/vivekadrishti\/(assets\/js\/upanishads\/current\/[^"]+\.js)(?:\?[^\"]*)?"/g)].map(m=>m[1]);
+          const uc=run(ufiles,ctx());
+          const unames=['Īśāvāsya','Kena','Kaṭha','Praśna','Muṇḍaka','Māṇḍūkya','Taittirīya','Aitareya','Chāndogya','Bṛhadāraṇyaka'];
+          for(const n of unames)console.log('UPANISHAD\t'+n+'\t'+uwords(uc.window.UPANISHAD_RESEARCH_108[n]));
+          function htmlWords(file){const h=read(file);const chunks=[];const lead=h.match(/<div class="kena-lead">([\s\S]*?)<\/div>/i);if(lead)chunks.push(lead[1]);for(let i=1;i<=12;i++){const re=new RegExp(`<section[^>]*id="section-${i}"[^>]*>([\\s\\S]*?)<\\/section>`,'i');const m=h.match(re);if(m)chunks.push(m[1])}return wc(chunks.join(' ').replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<h[1-6][^>]*>[\s\S]*?<\/h[1-6]>/gi,' ').replace(/<[^>]+>/g,' '))}
+          console.log('ITIHASA\tRāmāyaṇa\t'+htmlWords('articles/scripture/ramayana/index.html'));
+          console.log('ITIHASA\tMahābhārata\t'+htmlWords('articles/scripture/mahabharata/index.html'));
+          NODE
