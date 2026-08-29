@@ -1,4 +1,4 @@
-# audit pass 4 — deep-v5 completion including runtime Itihasa
+# audit pass 5 — final deep-v5 completion verification
 name: Scripture depth audit
 on:
   push:
