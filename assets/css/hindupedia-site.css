@@ -312,6 +312,14 @@ body{margin:0!important}
   text-decoration:none!important;
 }
 .hp-link-list a:hover{text-decoration:underline!important}
+.hp-itihasa-list>li{margin:5px 0 12px!important}
+.hp-sub-link-list{
+  margin:3px 0 7px!important;
+  padding:0 0 0 22px!important;
+  color:#777;
+}
+.hp-sub-link-list li{margin:0!important;font-size:14px!important;line-height:1.38!important}
+.hp-sub-link-list a{font-size:14px!important}
 .hp-note{margin:5px 0 0;color:#555;font-size:13px;line-height:1.4}
 
 /* Landing-page chapter lists should look like a reference index, not cards. */
