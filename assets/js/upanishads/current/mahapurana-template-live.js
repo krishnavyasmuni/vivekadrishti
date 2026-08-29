@@ -10,7 +10,9 @@
   const D = window.SCRIPTURE_DETAIL_DATA || {};
   const R = window.SCRIPTURE_PRINCIPAL_RICH || {};
   const U = window.SCRIPTURE_UPANISHAD_UNITS || {};
-  const TITLES = ['Date','Structure','Contents','Theology','Influence','Rites','Critical edition','Further reading','References'];
+  const PRINCIPAL_CRITICAL_TEXTS = new Set([
+    'Īśāvāsya','Kena','Kaṭha','Praśna','Muṇḍaka','Māṇḍūkya','Taittirīya','Aitareya','Chāndogya','Bṛhadāraṇyaka'
+  ]);
 
   const PRINCIPAL_NAMES = {
     'Īśāvāsya':'Isha','Kena':'Kena','Kaṭha':'Katha','Praśna':'Prashna','Muṇḍaka':'Mundaka',
@@ -26,6 +28,72 @@
     'Praśna':'प्रश्नोपनिषद्','Muṇḍaka':'मुण्डकोपनिषद्','Māṇḍūkya':'माण्डूक्योपनिषद्',
     'Taittirīya':'तैत्तिरीयोपनिषद्','Aitareya':'ऐतरेयोपनिषद्',
     'Chāndogya':'छान्दोग्योपनिषद्','Bṛhadāraṇyaka':'बृहदारण्यकोपनिषद्'
+  };
+  const PRINCIPAL_CONTENT_UNITS = {
+    'Īśāvāsya':[
+      ['Mantras 1–2 — world and action','The opening places the moving world within the Lord, rejects possessive grasping and immediately asks how a person may live a full life while acting.'],
+      ['Mantras 3–8 — death, Self and vision','The poem contrasts self-destructive darkness with the vision that sees the unmoving Self in all beings and all beings in the Self.'],
+      ['Mantras 9–14 — paired kinds of knowledge','Vidya and avidya, then sambhuti and asambhuti, are presented in deliberately paired verses; Madhyandina and Kanva orderings must be identified when interpreting the sequence.'],
+      ['Mantras 15–18 — the final prayer','The speaker asks the sun to uncover truth, remembers deeds at death and appeals to Agni for guidance along the good path.']
+    ],
+    'Kena':[
+      ['Khandas 1–2 — “By whom?”','The metrical half asks what impels mind, breath, speech, sight and hearing. Brahman is approached as the condition of every faculty, not as one more object known by them.'],
+      ['Khandas 3–4 — the Yaksha and Uma','The prose half tells how Agni, Vayu and Indra fail before a mysterious Yaksha; Uma Haimavati reveals that the gods’ victory belonged to Brahman.']
+    ],
+    'Kaṭha':[
+      ['1.1 — Nachiketas reaches Death','Given to Yama by his father, Nachiketas waits three nights and receives three boons: reconciliation, knowledge of the fire sacrifice and an answer about death.'],
+      ['1.2 — Shreyas and preyas','Yama distinguishes the good from the merely pleasant and begins teaching the subtle, deathless Self.'],
+      ['1.3 — chariot and discipline','Body, senses, mind, intellect and Self are arranged through the chariot image; disciplined integration makes the highest journey possible.'],
+      ['2.1 — the inward Self','The senses turn outward, but the wise seek the inner Self. The valli develops the contrast between changing objects and the witnessing person.'],
+      ['2.2 — the one fire and the inner ruler','Images of fire, sun and the person in the heart describe one reality appearing through many forms without being exhausted by them.'],
+      ['2.3 — tree, yoga and release','The inverted ashvattha, the hierarchy beyond the unmanifest and the stilling of the senses lead to the loosening of the knots of the heart.']
+    ],
+    'Praśna':[
+      ['Question 1 — origin of living beings','Kabandhin asks whence creatures arise; Prajapati, food, breath, sun and moon organize the reply.'],
+      ['Question 2 — powers that sustain the person','Bhargava asks how many deities support a living being, and Prana demonstrates its primacy among the faculties.'],
+      ['Question 3 — the course of Prana','Kaushalya asks where Prana comes from, how it divides within the body and how it connects person and cosmos.'],
+      ['Question 4 — sleep and the witnessing person','Gargya asks what sleeps, dreams and remains awake; the answer moves from the faculties to the seer who experiences their states.'],
+      ['Question 5 — meditation on Om','Satyakama asks about Om, and the response differentiates the fruits associated with its one, two and three measures.'],
+      ['Question 6 — the person of sixteen parts','Sukesha asks about the sixteen-part person; the parts arise from and return to the imperishable person like rivers entering the sea.']
+    ],
+    'Muṇḍaka':[
+      ['1.1 — two kinds of knowledge','A teacher lineage introduces higher knowledge of the imperishable and lower knowledge comprising the Vedas and auxiliary disciplines.'],
+      ['1.2 — sacrifice and its limits','Vedic rites receive their proper sphere, but fragile ritual results cannot by themselves reach the imperishable.'],
+      ['2.1 — the imperishable source','Cosmos, gods, beings and faculties proceed from the imperishable as sparks from fire.'],
+      ['2.2 — the bow of Om','Om is the bow, the self the arrow and Brahman the target; concentrated knowledge crosses the field of ignorance.'],
+      ['3.1 — the two birds','Two birds share one tree: one eats its fruit while the other watches, an inherited Vedic image recast as a teaching about bondage and vision.'],
+      ['3.2 — knowledge and release','Truth, austerity and knowledge culminate in the knower’s release, while desire is identified as the force that carries ordinary rebirth.']
+    ],
+    'Māṇḍūkya':[
+      ['Mantras 1–2 — Om and the Self','Om is identified with all time and the whole field of experience; the Self is said to have four quarters.'],
+      ['Mantras 3–6 — waking, dream and deep sleep','The first three quarters are mapped as outward cognition, inward cognition and undifferentiated deep sleep.'],
+      ['Mantra 7 — turiya','The fourth is described apophatically: neither inward nor outward cognition, peaceful, auspicious and non-dual.'],
+      ['Mantras 8–12 — A, U, M and the measureless','The states are correlated with the measures of Om, ending with the measureless sound and entry into the Self.']
+    ],
+    'Taittirīya':[
+      ['Shiksha Valli — recitation and formation','Phonetics, sacred correspondences, teacher–student discipline, ethical injunctions and the convocation address define the learned life that precedes inquiry into Brahman.'],
+      ['Brahmananda Valli — Brahman, person and bliss','The text moves through food, breath, mind, understanding and bliss, then measures human and divine bliss before returning to fearlessness in Brahman.'],
+      ['Bhrigu Valli — inquiry by stages','Bhrigu investigates food, breath, mind, understanding and bliss through repeated austerity, turning received instruction into progressive realization.']
+    ],
+    'Aitareya':[
+      ['Chapter 1 — creation and entry','The Self creates worlds, guardians, faculties and food, then enters the embodied person through the opening in the head.'],
+      ['Chapter 2 — three births','Embryonic generation, birth into family continuity and rebirth through the son organize a historically specific account of human reproduction.'],
+      ['Chapter 3 — consciousness','The inquiry asks which Self is worshipped and culminates in the identification prajnanam brahma, later received as a mahavakya.']
+    ],
+    'Chāndogya':[
+      ['Prapathakas 1–2 — chant and correspondence','Meditations on Udgitha and Saman connect sound, breath, sun, ritual performance and cosmic order.'],
+      ['Prapathaka 3 — cosmic meditations','Madhu-vidya, Gayatri, the person in the sun and other correspondences broaden chant exegesis into a map of reality.'],
+      ['Prapathaka 4 — teachers and students','Satyakama, Upakosala, Raikva and Janashruti show knowledge moving through students, householders, marginal figures and unexpected teachers.'],
+      ['Prapathaka 5 — afterlife and the five fires','The five-fire teaching, two paths after death, Prana’s primacy and Vaishvanara join cosmology to human destiny.'],
+      ['Prapathaka 6 — Uddalaka and Shvetaketu','Through clay, rivers, salt and the seed, Uddalaka teaches sat and repeats tat tvam asi across a staged dialogue.'],
+      ['Prapathaka 7 — Narada and Sanatkumara','A ladder of increasingly comprehensive realities carries Narada from names and learning toward bhuman, the unbounded.'],
+      ['Prapathaka 8 — the city of Brahman','Dahara-vidya and the long Indra–Prajapati dialogue examine the Self through waking, dream, sleep and embodied appearance.']
+    ],
+    'Bṛhadāraṇyaka':[
+      ['Adhyayas 1–2 — Madhu Kanda','Horse-sacrifice cosmology, creation, speech and breath, Gargya, Ajatashatru and the first Maitreyi dialogue move from ritual totality toward the Self.'],
+      ['Adhyayas 3–4 — Yajnavalkya Kanda','The Janaka court debates bring Yajnavalkya into exchanges with Gargi, Ushasta, Kahola and others before the second Maitreyi teaching and the language of neti neti.'],
+      ['Adhyayas 5–6 — Khila Kanda','Supplementary meditations, ethical triads, genealogies, the five-fire teaching and rites concerning household continuity close the received work.']
+    ]
   };
 
   const englishize = value => String(value || '')
@@ -51,6 +119,15 @@
       const k=norm(v); if(!k || seen.has(k)) return false; seen.add(k); return true;
     });
   };
+  const brief = (value, sentences = 2, max = 420) => {
+    const source=String(txt(value)||'').replace(/\s+/g,' ').trim();
+    if(!source)return '';
+    const parts=source.match(/[^.!?]+[.!?]?/g)||[source];
+    let out=parts.slice(0,sentences).join(' ').trim();
+    if(out.length>max)out=out.slice(0,max).replace(/\s+\S*$/,'')+'…';
+    return out;
+  };
+  const concise=(values,limit,sentences=2,max=420)=>uniq(values).map(v=>brief(v,sentences,max)).filter(Boolean).slice(0,limit);
 
   const dataFor = name => Object.assign({},D[name]||{},D[`Upaniṣad:${name}`]||{});
   function nested(obj,name){
@@ -125,15 +202,37 @@
     const e=dataFor(name),r=richFor(name);
     const research=window.UPANISHAD_RESEARCH_108?.[name] || fallbackResearch(name,e,r);
     const s=research.sections || {};
-    const sectionData=[s.date,s.structure,s.contents,s.theology,s.reception,s.social,s.critical,s.further];
-    const sectionHtml=sectionData.map((items,i)=>{
-      const vals=uniq(items);
-      const body=(vals.length?vals:[`Research note: the current dossier does not yet support a more precise claim under ${TITLES[i]}.`]).map(paragraph).join('');
-      return `<section class="kena-section purana-full-section mahapurana-article-section" id="up-live-${i+1}"><h2>${TITLES[i]}</h2><div class="mahapurana-collapse-body">${body}</div></section>`;
-    }).join('');
+    const rawUnits=PRINCIPAL_CONTENT_UNITS[name] || arr(U[name]).map((unit,i)=>Array.isArray(unit)?[unit[0]||`Part ${i+1}`,unit[1]||'']:[unit.title||`Part ${i+1}`,unit.summary||unit.text||unit.note||'']);
+    const units=rawUnits.map(([title,text])=>({title,paragraphs:concise([text],1,2,390)})).filter(x=>x.paragraphs.length);
+    const date={paragraphs:concise(s.date,5,2,430),subs:[]};
+    const structure={paragraphs:concise([s.structure,e.structure,e.extent,e.primaryRecensions],3,2,390),subs:[]};
+    const contents={paragraphs:[`This walkthrough follows the received order of the text. It separates literary sequence from later doctrinal summaries and does not assume that every unit belongs to one date.`],subs:units};
+    if(!units.length)contents.paragraphs.push(...concise(s.contents,4,2,390));
+    const synthesis={paragraphs:[],subs:[
+      {title:'Theology and philosophy',paragraphs:concise(s.theology,3,2,400)},
+      {title:'Reception and influence',paragraphs:concise(s.reception,2,2,400)},
+      {title:'Ritual, discipline and historical practice',paragraphs:concise(s.social,2,2,400)}
+    ].filter(x=>x.paragraphs.length)};
+    const critical={paragraphs:concise(s.critical,4,2,420),subs:[]};
+    const further={paragraphs:concise([s.further,arr(research.references).map(x=>x?.title||x)],10,1,300),subs:[]};
+    const sections=[
+      {title:'Date and textual history',body:date},
+      {title:'Structure and recensions',body:structure},
+      {title:'Contents',body:contents},
+      {title:'Theology, influence and practice',body:synthesis}
+    ];
+    if(PRINCIPAL_CRITICAL_TEXTS.has(name)&&critical.paragraphs.length)sections.push({title:'Critical edition and textual criticism',body:critical});
+    sections.push({title:'Further reading',body:further});
+    const renderBody=part=>{
+      let html=arr(part.paragraphs).map(paragraph).join('');
+      arr(part.subs).forEach(sub=>{html+=`<h3>${esc(englishize(sub.title))}</h3>${arr(sub.paragraphs).map(paragraph).join('')}`;});
+      return html;
+    };
+    const sectionHtml=sections.map((section,i)=>`<section class="kena-section purana-full-section mahapurana-article-section" id="up-live-${i+1}"><h2>${esc(section.title)}</h2><div class="mahapurana-collapse-body">${renderBody(section.body)}</div></section>`).join('');
     const refs=arr(research.references);
-    const refsHtml=`<section class="kena-section purana-full-section mahapurana-article-section universal-references" id="up-live-9"><h2>References</h2><div class="mahapurana-collapse-body"><ol>${refs.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(englishize(s.title||'Source'))}</a>`:esc(englishize(s.title||'Source'))}${s.detail?` — ${esc(englishize(s.detail))}`:''}</li>`).join('')}</ol></div></section>`;
-    const toc=`<nav class="kena-toc" aria-label="Contents"><div class="kena-toc-title">Contents</div><ol>${TITLES.map((t,i)=>`<li><a href="#up-live-${i+1}" data-up-target="up-live-${i+1}">${esc(t)}</a></li>`).join('')}</ol></nav>`;
+    const refsId=sections.length+1;
+    const refsHtml=`<section class="kena-section purana-full-section mahapurana-article-section universal-references" id="up-live-${refsId}"><h2>References</h2><div class="mahapurana-collapse-body"><ol>${refs.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(englishize(s.title||'Source'))}</a>`:esc(englishize(s.title||'Source'))}${s.detail?` — ${esc(englishize(s.detail))}`:''}</li>`).join('')}</ol></div></section>`;
+    const toc=`<nav class="kena-toc" aria-label="Contents"><div class="kena-toc-title">Contents</div><ol>${sections.map((section,i)=>`<li><a href="#up-live-${i+1}" data-up-target="up-live-${i+1}">${esc(section.title)}</a></li>`).join('')}<li><a href="#up-live-${refsId}" data-up-target="up-live-${refsId}">References</a></li></ol></nav>`;
     return `<article class="purana-full-article universal-wiki-article mahapurana-wiki-article upanishad-research-complete">${makeInfobox(name,button,e,r,research)}<div class="kena-lead">${makeLead(name,e,r)}</div>${toc}${sectionHtml}${refsHtml}</article>`;
   }
 

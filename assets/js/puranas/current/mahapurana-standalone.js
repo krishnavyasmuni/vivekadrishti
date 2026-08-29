@@ -35,8 +35,10 @@
 
   document.body.classList.add('mahapurana-unified-page');
 
-  const TITLES = ['Date','Structure','Contents','Theology','Influence','Rites','Critical edition','Further reading'];
-  const KEYS = ['date','structure','contents','theology','reception','social','critical','further'];
+  const TRUE_CRITICAL_EDITIONS = new Set([
+    'Vāmana Purāṇa','Kūrma Purāṇa','Varāha Purāṇa','Bhāgavata Purāṇa',
+    'Viṣṇu Purāṇa','Mārkaṇḍeya Purāṇa','Skanda Purāṇa'
+  ]);
 
   const englishize = value => String(value || '')
     .replace(/[ŚśṢṣ]/g, c => c === c.toUpperCase() ? 'Sh' : 'sh')
@@ -172,51 +174,170 @@
     return {paragraphs,bullets,subs};
   };
 
-  function buildSections(e, sources) {
-    const buckets = Object.fromEntries(KEYS.map(k => [k,{paragraphs:[],bullets:[],subs:[]} ]));
+  const brief = (value, sentences = 2, max = 420) => {
+    const source = String(plain(value) || '').replace(/\s+/g,' ').trim();
+    if (!source) return '';
+    const parts = source.match(/[^.!?]+[.!?]?/g) || [source];
+    let out = parts.slice(0,sentences).join(' ').trim();
+    if (out.length > max) out = out.slice(0,max).replace(/\s+\S*$/,'') + '…';
+    return out;
+  };
 
-    arr(e.articleSections).forEach(s => {
-      const key = classify(s?.title);
-      const p = sectionParts(s);
-      buckets[key].paragraphs.push(...p.paragraphs);
-      buckets[key].bullets.push(...p.bullets);
-      buckets[key].subs.push(...p.subs);
-    });
+  const concise = (values, limit, sentences = 2, max = 420) =>
+    uniq(values).map(x => brief(x,sentences,max)).filter(Boolean).slice(0,limit);
 
-    buckets.date.paragraphs.push(...uniq([e.period,e.date,e.dating,e.history,e.datingBasis,e.hazraNotes,e.milieu,e.textualSetting]));
-    buckets.structure.paragraphs.push(...uniq([e.structure,e.extent,e.booksCount,e.verseCount]));
-    buckets.structure.bullets.push(...uniq([e.primaryRecensions,e.chapterMap]));
-    buckets.contents.paragraphs.push(...uniq([e.overview,e.summary]));
-    buckets.contents.bullets.push(...uniq([e.contents,e.keyContents,e.namedFeatures,e.primaryPassages]));
-    buckets.theology.paragraphs.push(...uniq([e.profile,e.theology,e.philosophy,e.themes,e.teachings]));
-    buckets.reception.paragraphs.push(...uniq([e.reception,e.significance]));
-    buckets.reception.bullets.push(...uniq([e.dependencies,e.scholarlyPositions,e.scholarlyDebates,e.commentaries]));
-    buckets.social.paragraphs.push(...uniq([e.ritualHistory,e.socialHistory,e.dharma]));
-    buckets.social.bullets.push(...uniq([e.rituals,e.vratas,e.sacredGeography,e.pilgrimage]));
-    buckets.critical.paragraphs.push(...uniq([e.manuscripts,e.criticalEdition,e.edition,e.textualHistory]));
-    buckets.critical.bullets.push(...uniq([e.primaryEvidence,e.primaryRecensions]));
-    buckets.further.bullets.push(...uniq([sources.map(s => s.title),e.bibliography]));
+  const conciseSubs = (subs, limit = 12) => {
+    const seen = new Set(), out = [];
+    for (const sub of subs) {
+      const title = String(sub?.title || '').trim();
+      const key = norm(title);
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      const paragraphs = concise([sub?.paragraphs,sub?.text,sub?.summary,sub?.note],2,2,390);
+      const bullets = concise([sub?.bullets],4,1,260);
+      if (paragraphs.length || bullets.length) out.push({title,paragraphs,bullets});
+      if (out.length >= limit) break;
+    }
+    return out;
+  };
 
-    const generic = {
-      date:[`The ${englishize(name)} is a composite Puranic textual tradition rather than a work that can safely be assigned to one author and one year. Dates here therefore distinguish proposed strata from surviving manuscripts, quotations and printed editions.`],
-      structure:[`The structure of the ${englishize(name)} must be reported recension by recension. Chapter, khanda, samhita or skandha counts in one printed edition are not automatically the architecture of every manuscript witness.`],
-      contents:[`The contents below describe the received text while preserving major differences between recensions and independently circulating sections.`],
-      theology:[`The theological profile of the ${englishize(name)} is described from its individual strata and narrative settings rather than being reduced to one later sectarian label.`],
-      reception:[`Reception is traced through quotation, commentary, later literature, ritual use, regional transmission and modern scholarship.`],
-      social:[`Puranic prescriptions concerning ritual, pilgrimage, gift, social order, kingship and temple practice are normative sources and are not treated as direct demographic descriptions without corroborating evidence.`],
-      critical:[`A printed Sanskrit edition is not automatically a critical edition. This section distinguishes manuscript witnesses, recensions, editorial collation and genuinely critical editions.`],
-      further:[`For textual history and bibliography, consult the specialist works in References alongside the Sanskrit edition or critical edition identified for this Purana.`]
-    };
+  const romanNumber = value => {
+    const numerals = {i:1,v:5,x:10,l:50,c:100,d:500,m:1000};
+    const chars = String(value || '').toLowerCase().split('');
+    if (!chars.length || chars.some(c => !numerals[c])) return 0;
+    return chars.reduce((total,c,i) => total + (numerals[c] < (numerals[chars[i+1]] || 0) ? -numerals[c] : numerals[c]),0);
+  };
 
-    KEYS.forEach(k => {
-      buckets[k].paragraphs = uniq(buckets[k].paragraphs);
-      buckets[k].bullets = uniq(buckets[k].bullets);
-      if (!buckets[k].paragraphs.length && !buckets[k].bullets.length && !buckets[k].subs.length) {
-        buckets[k].paragraphs = generic[k];
+  const divisionNumber = title => {
+    const t = norm(title);
+    const words = {first:1,one:1,second:2,two:2,third:3,three:3,fourth:4,four:4,fifth:5,five:5,sixth:6,six:6,seventh:7,seven:7,eighth:8,eight:8,ninth:9,nine:9,tenth:10,ten:10,eleventh:11,eleven:11,twelfth:12,twelve:12};
+    const unit = '(?:skandha|amsha|amsa|book|part)';
+    let m = t.match(new RegExp(`\\b${unit}\\s+(\\d+|[ivxlcdm]+|${Object.keys(words).join('|')})\\b`));
+    if (!m) m = t.match(new RegExp(`\\b(${Object.keys(words).join('|')})\\s+${unit}\\b`));
+    if (!m) return 0;
+    return Number(m[1]) || words[m[1]] || romanNumber(m[1]);
+  };
+
+  const divisionLabel = title => /(?:\bchapters?\s+\d|skandhas?\b|amshas?\b|amsas?\b|khandas?\b|samhitas?\b|parvans?\b|parvas?\b|bhagas?\b|padas?\b|\bbooks?\s+\d|\bparts?\s+\d)/i.test(englishize(title));
+
+  const expandedSubs = part => {
+    const out = [];
+    part.subs.forEach(sub => {
+      const generic = /^(?:contents|further reading|overview)$/i.test(englishize(sub.title).trim());
+      if (!generic) out.push(sub);
+      if (sub.bullets.length >= 4 && /(?:map|recension|books?|parts?|architecture)/i.test(englishize(sub.title))) {
+        sub.bullets.forEach((bullet,i) => {
+          const bits = String(bullet).split(/\s+[—–]\s+/,2);
+          out.push({title:bits[0] || `Part ${i+1}`,paragraphs:bits[1] ? [bits[1]] : [],bullets:[]});
+        });
       }
     });
+    return out;
+  };
 
-    return buckets;
+  const bestContentSubs = articleSections => {
+    const candidates = articleSections.map((section,index) => ({
+      index,
+      kind:classify(section?.title),
+      subs:expandedSubs(sectionParts(section))
+    })).filter(x => (x.kind === 'contents' || x.kind === 'structure') && x.subs.length);
+    if (!candidates.length) return [];
+
+    if (norm(name) === norm('Bhāgavata Purāṇa')) {
+      const exact = candidates.flatMap(x => x.subs).filter(sub => {
+        const t = norm(sub.title);
+        return divisionNumber(t) && /\bskandha\b/.test(t) && !/\bskandhas\b/.test(t);
+      }).sort((a,b) => {
+        const aStarts = /^skandha\s+(?:\d+|[ivxlcdm]+)\b/.test(norm(a.title)) ? 0 : 1;
+        const bStarts = /^skandha\s+(?:\d+|[ivxlcdm]+)\b/.test(norm(b.title)) ? 0 : 1;
+        return divisionNumber(a.title)-divisionNumber(b.title) || aStarts-bStarts;
+      });
+      const byNumber = new Map();
+      exact.forEach(sub => {
+        const n = divisionNumber(sub.title);
+        const current = byNumber.get(n);
+        const startsCleanly = /^skandha\s+(?:\d+|[ivxlcdm]+)\b/.test(norm(sub.title));
+        const currentStartsCleanly = current && /^skandha\s+(?:\d+|[ivxlcdm]+)\b/.test(norm(current.title));
+        if (!current || (startsCleanly && !currentStartsCleanly)) byNumber.set(n,sub);
+      });
+      if ([...byNumber.keys()].filter(n => n >= 1 && n <= 12).length === 12) {
+        return conciseSubs([...byNumber.entries()].sort((a,b)=>a[0]-b[0]).map(([,sub])=>sub),12);
+      }
+    }
+
+    const latestByKind = candidates.filter((candidate,i) =>
+      !candidates.slice(i+1).some(later => later.kind === candidate.kind)
+    );
+    const scored = latestByKind.map(candidate => {
+      const labelled = candidate.subs.filter(sub => divisionLabel(sub.title)).length;
+      const numbered = candidate.subs.filter(sub => divisionNumber(sub.title)).length;
+      const allLabelled = labelled === candidate.subs.length ? 12 : 0;
+      const score = candidate.subs.length + labelled*3 + numbered*5 + allLabelled + candidate.index*2;
+      return {...candidate,score};
+    }).sort((a,b) => b.score-a.score || b.index-a.index);
+    return conciseSubs(scored[0].subs,12);
+  };
+
+  function buildSections(e, sources) {
+    const grouped = {date:[],structure:[],contents:[],theology:[],reception:[],social:[],critical:[],further:[]};
+    arr(e.articleSections).forEach(s => grouped[classify(s?.title)].push(s));
+    const parts = key => grouped[key].map(sectionParts);
+    const paragraphs = key => parts(key).flatMap(x => x.paragraphs);
+    const bullets = key => parts(key).flatMap(x => x.bullets);
+
+    const date = {
+      paragraphs:concise([
+        e.period,e.date,e.dating,e.history,e.datingBasis,e.hazraNotes,e.milieu,e.textualSetting,
+        ...paragraphs('date')
+      ],6,2,440), bullets:[], subs:[]
+    };
+    if (!date.paragraphs.length) date.paragraphs.push(`The ${englishize(name)} is a layered Puranic tradition. Its inherited materials, redactional strata, quotations and surviving manuscripts must be dated separately.`);
+
+    const structureParts = parts('structure');
+    const structure = {
+      paragraphs:concise([e.structure,e.extent,e.booksCount,e.verseCount,...structureParts.flatMap(x=>x.paragraphs)],3,2,390),
+      bullets:concise([e.primaryRecensions],5,1,300),
+      subs:[]
+    };
+    if (!structure.paragraphs.length) structure.paragraphs.push(`The received structure is reported by recension; chapter, khanda, samhita and skandha counts in one edition are not assumed for every witness.`);
+
+    const contentSubs = bestContentSubs(arr(e.articleSections));
+    const contents = {
+      paragraphs:[`This is a compact map of the received book, arranged by its own major divisions. It describes sequence without implying that every block was composed at the same date.`],
+      bullets:contentSubs.length ? [] : concise([e.chapterMap,e.contents,e.keyContents,e.namedFeatures,e.primaryPassages,...bullets('contents')],12,1,280),
+      subs:contentSubs
+    };
+    if (!contents.subs.length && !contents.bullets.length) contents.paragraphs.push(...concise(paragraphs('contents'),4,2,390));
+
+    const theology = concise([e.profile,e.theology,e.philosophy,e.themes,e.teachings,...paragraphs('theology')],2,2,400);
+    const reception = concise([e.reception,e.significance,...paragraphs('reception'),...bullets('reception'),e.dependencies,e.commentaries],2,2,400);
+    const practice = concise([e.ritualHistory,e.socialHistory,e.dharma,...paragraphs('social'),...bullets('social'),e.rituals,e.vratas,e.sacredGeography,e.pilgrimage],2,2,400);
+    const synthesis = {paragraphs:[],bullets:[],subs:[
+      {title:'Theology and philosophy',paragraphs:theology.length?theology:[`The text's theology is read block by block rather than reduced to one later sectarian label.`],bullets:[]},
+      {title:'Reception and influence',paragraphs:reception.length?reception:[`Reception is traced through quotation, commentary, regional transmission and later literature.`],bullets:[]},
+      {title:'Rites and historical practice',paragraphs:practice.length?practice:[`Ritual prescriptions are evidence for normative history, not direct demographic descriptions of every community that transmitted the text.`],bullets:[]}
+    ]};
+
+    const critical = {
+      paragraphs:concise([e.criticalEdition,e.edition,...paragraphs('critical')],4,2,430),
+      bullets:concise([e.primaryEvidence,...bullets('critical')],5,1,300),subs:[]
+    };
+    const further = {
+      paragraphs:[],
+      bullets:concise([sources.map(s=>s.title),e.bibliography,...bullets('further')],10,1,300),subs:[]
+    };
+
+    const sections = [
+      {key:'date',title:'Date and textual history',body:date},
+      {key:'structure',title:'Structure and recensions',body:structure},
+      {key:'contents',title:'Contents',body:contents},
+      {key:'synthesis',title:'Theology, influence and practice',body:synthesis}
+    ];
+    if (TRUE_CRITICAL_EDITIONS.has(name)) {
+      sections.push({key:'critical',title:name === 'Skanda Purāṇa' ? 'Critical edition of the early Skandapurana' : 'Critical edition',body:critical});
+    }
+    sections.push({key:'further',title:'Further reading',body:further});
+    return sections;
   }
 
   const renderText = value => esc(englishize(value));
@@ -403,19 +524,19 @@
       const toc = `<nav class="kena-toc" aria-label="Contents">
         <div class="kena-toc-title">Contents</div>
         <ol>
-          ${TITLES.map((t,i) => `<li><a href="#section-${i+1}">${esc(t)}</a></li>`).join('')}
-          <li><a href="#section-9">References</a></li>
+          ${sections.map((s,i) => `<li><a href="#section-${i+1}">${esc(s.title)}</a></li>`).join('')}
+          <li><a href="#section-${sections.length+1}">References</a></li>
         </ol>
       </nav>`;
 
-      const sectionHtml = KEYS.map((k,i) => `
+      const sectionHtml = sections.map((section,i) => `
         <section class="kena-section purana-full-section mahapurana-article-section" id="section-${i+1}">
-          <h2>${esc(TITLES[i])}</h2>
-          <div class="mahapurana-collapse-body">${renderBody(sections[k])}</div>
+          <h2>${esc(section.title)}</h2>
+          <div class="mahapurana-collapse-body">${renderBody(section.body)}</div>
         </section>`).join('');
 
       const references = `
-        <section class="kena-section purana-full-section mahapurana-article-section universal-references" id="section-9">
+        <section class="kena-section purana-full-section mahapurana-article-section universal-references" id="section-${sections.length+1}">
           <h2>References</h2>
           <div class="mahapurana-collapse-body">
             <ol>${refs.map(renderRef).join('')}</ol>
