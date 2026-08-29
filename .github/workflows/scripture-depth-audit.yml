@@ -1,4 +1,4 @@
-# audit pass 2 — deep-v4 Purana bundles
+# audit pass 3 — final published state with Upanishad deep-v4
 name: Scripture depth audit
 on:
   push:
