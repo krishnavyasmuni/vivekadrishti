@@ -122,10 +122,7 @@
   const brief = (value, sentences = 2, max = 420) => {
     const source=String(txt(value)||'').replace(/\s+/g,' ').trim();
     if(!source)return '';
-    const parts=source.match(/[^.!?]+[.!?]?/g)||[source];
-    let out=parts.slice(0,sentences).join(' ').trim();
-    if(out.length>max)out=out.slice(0,max).replace(/\s+\S*$/,'')+'…';
-    return out;
+    return source;
   };
   const concise=(values,limit,sentences=2,max=420)=>uniq(values).map(v=>brief(v,sentences,max)).filter(Boolean).slice(0,limit);
 
@@ -179,7 +176,7 @@
   }
 
   function makeLead(name,e,r){
-    const lines=uniq([...arr(r.lead),e.overview,e.summary,r.overview,r.summary,e.significance,r.significance]).slice(0,2);
+    const lines=uniq([...arr(r.lead),e.overview,e.summary,r.overview,r.summary,e.significance,r.significance]).slice(0,3);
     if(lines.length) return lines.map(paragraph).join('');
     return `<p>${esc(`${displayName(name)} Upanishad is part of the received Upanishadic corpus. This article separates traditional classification from historical composition, textual transmission, doctrine and reception.`)}</p>`;
   }
@@ -203,18 +200,18 @@
     const research=window.UPANISHAD_RESEARCH_108?.[name] || fallbackResearch(name,e,r);
     const s=research.sections || {};
     const rawUnits=PRINCIPAL_CONTENT_UNITS[name] || arr(U[name]).map((unit,i)=>Array.isArray(unit)?[unit[0]||`Part ${i+1}`,unit[1]||'']:[unit.title||`Part ${i+1}`,unit.summary||unit.text||unit.note||'']);
-    const units=rawUnits.map(([title,text])=>({title,paragraphs:concise([text],1,2,390)})).filter(x=>x.paragraphs.length);
-    const date={paragraphs:concise(s.date,5,2,430),subs:[]};
-    const structure={paragraphs:concise([s.structure,e.structure,e.extent,e.primaryRecensions],3,2,390),subs:[]};
+    const units=rawUnits.map(([title,text])=>({title,paragraphs:concise([text],3,8,1800)})).filter(x=>x.paragraphs.length);
+    const date={paragraphs:concise(s.date,10,8,2200),subs:[]};
+    const structure={paragraphs:concise([s.structure,e.structure,e.extent,e.primaryRecensions],7,8,1800),subs:[]};
     const contents={paragraphs:[`This walkthrough follows the received order of the text. It separates literary sequence from later doctrinal summaries and does not assume that every unit belongs to one date.`],subs:units};
-    if(!units.length)contents.paragraphs.push(...concise(s.contents,4,2,390));
+    if(!units.length)contents.paragraphs.push(...concise(s.contents,10,8,1800));
     const synthesis={paragraphs:[],subs:[
-      {title:'Theology and philosophy',paragraphs:concise(s.theology,3,2,400)},
-      {title:'Reception and influence',paragraphs:concise(s.reception,2,2,400)},
-      {title:'Ritual, discipline and historical practice',paragraphs:concise(s.social,2,2,400)}
+      {title:'Theology and philosophy',paragraphs:concise(s.theology,7,8,1800)},
+      {title:'Reception and influence',paragraphs:concise(s.reception,6,8,1800)},
+      {title:'Ritual, discipline and historical practice',paragraphs:concise(s.social,6,8,1800)}
     ].filter(x=>x.paragraphs.length)};
-    const critical={paragraphs:concise(s.critical,4,2,420),subs:[]};
-    const further={paragraphs:concise([s.further,arr(research.references).map(x=>x?.title||x)],10,1,300),subs:[]};
+    const critical={paragraphs:concise(s.critical,10,8,2200),subs:[]};
+    const further={paragraphs:concise([s.further,arr(research.references).map(x=>x?.title||x)],20,4,1200),subs:[]};
     const sections=[
       {title:'Date and textual history',body:date},
       {title:'Structure and recensions',body:structure},
