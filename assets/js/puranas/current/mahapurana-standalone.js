@@ -177,24 +177,21 @@
   const brief = (value, sentences = 2, max = 420) => {
     const source = String(plain(value) || '').replace(/\s+/g,' ').trim();
     if (!source) return '';
-    const parts = source.match(/[^.!?]+[.!?]?/g) || [source];
-    let out = parts.slice(0,sentences).join(' ').trim();
-    if (out.length > max) out = out.slice(0,max).replace(/\s+\S*$/,'') + '…';
-    return out;
+    return source;
   };
 
   const concise = (values, limit, sentences = 2, max = 420) =>
     uniq(values).map(x => brief(x,sentences,max)).filter(Boolean).slice(0,limit);
 
-  const conciseSubs = (subs, limit = 12) => {
+  const conciseSubs = (subs, limit = 36) => {
     const seen = new Set(), out = [];
     for (const sub of subs) {
       const title = String(sub?.title || '').trim();
       const key = norm(title);
       if (!key || seen.has(key)) continue;
       seen.add(key);
-      const paragraphs = concise([sub?.paragraphs,sub?.text,sub?.summary,sub?.note],2,2,390);
-      const bullets = concise([sub?.bullets],4,1,260);
+      const paragraphs = concise([sub?.paragraphs,sub?.text,sub?.summary,sub?.note],6,8,1800);
+      const bullets = concise([sub?.bullets],10,4,1000);
       if (paragraphs.length || bullets.length) out.push({title,paragraphs,bullets});
       if (out.length >= limit) break;
     }
@@ -275,7 +272,7 @@
       const score = candidate.subs.length + labelled*3 + numbered*5 + allLabelled + candidate.index*2;
       return {...candidate,score};
     }).sort((a,b) => b.score-a.score || b.index-a.index);
-    return conciseSubs(scored[0].subs,12);
+    return conciseSubs(scored[0].subs,36);
   };
 
   function buildSections(e, sources) {
@@ -289,14 +286,14 @@
       paragraphs:concise([
         e.period,e.date,e.dating,e.history,e.datingBasis,e.hazraNotes,e.milieu,e.textualSetting,
         ...paragraphs('date')
-      ],6,2,440), bullets:[], subs:[]
+      ],12,8,2200), bullets:[], subs:[]
     };
     if (!date.paragraphs.length) date.paragraphs.push(`The ${englishize(name)} is a layered Puranic tradition. Its inherited materials, redactional strata, quotations and surviving manuscripts must be dated separately.`);
 
     const structureParts = parts('structure');
     const structure = {
-      paragraphs:concise([e.structure,e.extent,e.booksCount,e.verseCount,...structureParts.flatMap(x=>x.paragraphs)],3,2,390),
-      bullets:concise([e.primaryRecensions],5,1,300),
+      paragraphs:concise([e.structure,e.extent,e.booksCount,e.verseCount,...structureParts.flatMap(x=>x.paragraphs)],8,8,1800),
+      bullets:concise([e.primaryRecensions],10,4,1000),
       subs:[]
     };
     if (!structure.paragraphs.length) structure.paragraphs.push(`The received structure is reported by recension; chapter, khanda, samhita and skandha counts in one edition are not assumed for every witness.`);
@@ -304,14 +301,14 @@
     const contentSubs = bestContentSubs(arr(e.articleSections));
     const contents = {
       paragraphs:[`This is a compact map of the received book, arranged by its own major divisions. It describes sequence without implying that every block was composed at the same date.`],
-      bullets:contentSubs.length ? [] : concise([e.chapterMap,e.contents,e.keyContents,e.namedFeatures,e.primaryPassages,...bullets('contents')],12,1,280),
+      bullets:contentSubs.length ? [] : concise([e.chapterMap,e.contents,e.keyContents,e.namedFeatures,e.primaryPassages,...bullets('contents')],24,6,1400),
       subs:contentSubs
     };
-    if (!contents.subs.length && !contents.bullets.length) contents.paragraphs.push(...concise(paragraphs('contents'),4,2,390));
+    if (!contents.subs.length && !contents.bullets.length) contents.paragraphs.push(...concise(paragraphs('contents'),10,8,1800));
 
-    const theology = concise([e.profile,e.theology,e.philosophy,e.themes,e.teachings,...paragraphs('theology')],2,2,400);
-    const reception = concise([e.reception,e.significance,...paragraphs('reception'),...bullets('reception'),e.dependencies,e.commentaries],2,2,400);
-    const practice = concise([e.ritualHistory,e.socialHistory,e.dharma,...paragraphs('social'),...bullets('social'),e.rituals,e.vratas,e.sacredGeography,e.pilgrimage],2,2,400);
+    const theology = concise([e.profile,e.theology,e.philosophy,e.themes,e.teachings,...paragraphs('theology')],6,8,1800);
+    const reception = concise([e.reception,e.significance,...paragraphs('reception'),...bullets('reception'),e.dependencies,e.commentaries],6,8,1800);
+    const practice = concise([e.ritualHistory,e.socialHistory,e.dharma,...paragraphs('social'),...bullets('social'),e.rituals,e.vratas,e.sacredGeography,e.pilgrimage],6,8,1800);
     const synthesis = {paragraphs:[],bullets:[],subs:[
       {title:'Theology and philosophy',paragraphs:theology.length?theology:[`The text's theology is read block by block rather than reduced to one later sectarian label.`],bullets:[]},
       {title:'Reception and influence',paragraphs:reception.length?reception:[`Reception is traced through quotation, commentary, regional transmission and later literature.`],bullets:[]},
@@ -319,12 +316,12 @@
     ]};
 
     const critical = {
-      paragraphs:concise([e.criticalEdition,e.edition,...paragraphs('critical')],4,2,430),
-      bullets:concise([e.primaryEvidence,...bullets('critical')],5,1,300),subs:[]
+      paragraphs:concise([e.criticalEdition,e.edition,...paragraphs('critical')],10,8,2200),
+      bullets:concise([e.primaryEvidence,...bullets('critical')],12,4,1200),subs:[]
     };
     const further = {
       paragraphs:[],
-      bullets:concise([sources.map(s=>s.title),e.bibliography,...bullets('further')],10,1,300),subs:[]
+      bullets:concise([sources.map(s=>s.title),e.bibliography,...bullets('further')],20,4,1200),subs:[]
     };
 
     const sections = [
