@@ -571,7 +571,7 @@
           "lacking offerings to the officiants"
         ],
         [
-          "śraddhā-vira hitam",
+          "śraddhā-virahitam",
           "lacking faith"
         ],
         [
@@ -669,6 +669,136 @@
         [
           "ucyate",
           "is called"
+        ]
+      ]
+    },
+    "16": {
+      "reviewed": true,
+      "translation": "Serenity of mind, gentleness, silence, self-control, and purity of intention—this is called mental austerity. Śrīdhara explains silence as the state of a sage, self-control as withdrawing the mind from objects, and purity as freedom from deceit in conduct.",
+      "word_for_word": [
+        [
+          "manaḥ-prasādaḥ",
+          "serenity of mind"
+        ],
+        [
+          "saumyatvam",
+          "gentleness"
+        ],
+        [
+          "maunam",
+          "silence"
+        ],
+        [
+          "ātma-vinigrahaḥ",
+          "self-control"
+        ],
+        [
+          "bhāva-saṃśuddhiḥ",
+          "purity of intention"
+        ],
+        [
+          "etat",
+          "this"
+        ],
+        [
+          "tapaḥ mānasam",
+          "mental austerity"
+        ],
+        [
+          "ucyate",
+          "is called"
+        ]
+      ]
+    },
+    "17": {
+      "reviewed": true,
+      "translation": "That threefold austerity, practiced with supreme faith by disciplined people who desire none of its fruit, is called sattvic.",
+      "word_for_word": [
+        [
+          "śraddhayā parayā",
+          "with supreme faith"
+        ],
+        [
+          "taptam",
+          "practiced"
+        ],
+        [
+          "tapaḥ tri-vidham",
+          "the threefold austerity"
+        ],
+        [
+          "naraiḥ",
+          "by people"
+        ],
+        [
+          "a-phala-ākāṅkṣibhiḥ",
+          "by those without desire for fruit"
+        ],
+        [
+          "yuktaiḥ",
+          "by disciplined people"
+        ],
+        [
+          "sāttvikam",
+          "sattvic"
+        ],
+        [
+          "paricakṣate",
+          "they call"
+        ]
+      ]
+    },
+    "18": {
+      "reviewed": true,
+      "translation": "That austerity which is performed for honor, respect, and worship, and also with hypocrisy, is called rajasic here; it is unstable and impermanent.",
+      "word_for_word": [
+        [
+          "satkāra",
+          "honor, favorable regard"
+        ],
+        [
+          "māna",
+          "respect"
+        ],
+        [
+          "pūjā-artham",
+          "for the sake of worship"
+        ],
+        [
+          "tapaḥ",
+          "austerity"
+        ],
+        [
+          "dambhena",
+          "with hypocrisy"
+        ],
+        [
+          "kriyate",
+          "is performed"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "iha",
+          "here"
+        ],
+        [
+          "proktam",
+          "is called"
+        ],
+        [
+          "rājasam",
+          "rajasic"
+        ],
+        [
+          "calam",
+          "unstable"
+        ],
+        [
+          "adhruvam",
+          "impermanent"
         ]
       ]
     }
