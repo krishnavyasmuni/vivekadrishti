@@ -1,0 +1,268 @@
+{
+  "_meta": {
+    "chapter": 3,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Thus, first, with “you grieve for those who are not to be grieved,” discrimination between the body and the Self was taught as a means to liberation. Immediately afterward, with “this understanding has been taught to you in Sāṅkhya; hear this one in yoga,” action was also taught. Yet the relation of primary and secondary between the two was not clearly shown. Because the person endowed with understanding—the sthitaprajña—is described as desireless, with controlled senses, without ego, and the teaching is praised in the conclusion “this is the Brahmī state,” Arjuna supposes that the Lord regards understanding as superior between understanding and action. He says: “If understanding is superior to action, being more inwardly connected with liberation, and is approved by you, then why do you repeatedly tell me ‘fight’ and ‘therefore rise,’ and make me engage in this terrible, violent action?”",
+      "word_for_word": [
+        [
+          "evam tāvat",
+          "thus, first"
+        ],
+        [
+          "aśocyān anuśocaḥ tvam iti ādinā",
+          "with “you grieve for those who are not to be grieved” and the like"
+        ],
+        [
+          "prathamaṃ mokṣa-sādhanatvena",
+          "first, as a means to liberation"
+        ],
+        [
+          "deha-ātma-viveka-buddhiḥ uktā",
+          "discrimination between body and Self was taught"
+        ],
+        [
+          "tad-anantaram",
+          "immediately afterward"
+        ],
+        [
+          "eṣā te abhihitā sāṃkhye buddhiḥ yoge tu imām śṛṇu iti ādinā",
+          "with “this understanding was told to you in Sāṅkhya; hear this one in yoga” and the like"
+        ],
+        [
+          "karma ca uktam",
+          "action was also taught"
+        ],
+        [
+          "na ca tayoḥ guṇa-pradhāna-bhāvaḥ spaṣṭam darśitaḥ",
+          "the relation of primary and secondary between the two was not clearly shown"
+        ],
+        [
+          "buddhi-yuktasya sthita-prajñasya",
+          "of the person endowed with understanding, the person of steady wisdom"
+        ],
+        [
+          "niṣkāmatva-nitānta-indriyatva-nirahaṃkāratva-ādi-abhidhānāt",
+          "because desirelessness, complete sense-control, absence of ego, and the like are stated"
+        ],
+        [
+          "eṣā brāhmī sthitiḥ iti sa-praśaṃsam upasaṃhārāt",
+          "because it is concluded with praise, “this is the Brahmī state”"
+        ],
+        [
+          "buddhi-karmaṇoḥ madhye buddheḥ śraiṣṭhyam",
+          "the superiority of understanding between understanding and action"
+        ],
+        [
+          "bhagavataḥ abhimatam manvānaḥ",
+          "supposing it to be approved by the Lord"
+        ],
+        [
+          "arjunaḥ uvāca",
+          "Arjuna said"
+        ],
+        [
+          "karmaṇaḥ sakāśāt mokṣa-antar-aṅgatvena buddhiḥ jyāyasī",
+          "understanding is superior to action as more inwardly connected with liberation"
+        ],
+        [
+          "tava saṃmatā cet",
+          "if it is approved by you"
+        ],
+        [
+          "kim-artham tat yudhyasva iti",
+          "why do you say “fight”"
+        ],
+        [
+          "uttiṣṭha iti ca vāram-vāram vadan",
+          "and repeatedly say “rise”"
+        ],
+        [
+          "ghore hiṃsā-ātmike karmaṇi māṃ niyojayasi pravartayasi",
+          "do you make me engage in terrible, violent action"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "One may object: “In ‘for a kṣatriya there is nothing higher than a righteous battle’ and the like, the superiority of action was already taught.” He answers with “by mixed speech.” A statement that praises action in one place and knowledge in another, seeming to produce doubt, makes my understanding waver between the two, as though you were deluding me. You, who are supremely compassionate, cannot actually be a deluder; nevertheless, because of my confusion it appears to me as though you were. Therefore, determining and stating one beneficial course between the two is what I ask. Alternatively, determine and tell me that one practice by which, when performed, I may attain the good—liberation.",
+      "word_for_word": [
+        [
+          "nanu dharmyāt hi yuddhāt śreyaḥ anyat kṣatriyasya na vidyate iti ādinā",
+          "but with “for a kṣatriya there is nothing higher than a righteous battle” and the like"
+        ],
+        [
+          "karmaṇaḥ api śreṣṭhatvam uktam eva",
+          "the superiority of action too was already taught"
+        ],
+        [
+          "āha vyāmiśreṇa iti",
+          "he answers with “by mixed speech”"
+        ],
+        [
+          "kvacit karma-praśaṃsā",
+          "in one place praise of action"
+        ],
+        [
+          "kvacit jñāna-praśaṃsā",
+          "in another place praise of knowledge"
+        ],
+        [
+          "ubhayatra dolāyitām buddhiṃ kurvan",
+          "making the understanding waver between the two"
+        ],
+        [
+          "moha-yasi iva",
+          "as though you were deluding me"
+        ],
+        [
+          "parama-kāruṇikasya tava moha-kartṛtvam na asti eva",
+          "you, who are supremely compassionate, cannot actually be a deluder"
+        ],
+        [
+          "tathā api bhrāntyā mama evam bhāti",
+          "nevertheless, because of confusion, it appears so to me"
+        ],
+        [
+          "ubhayayoḥ madhye yat bhadram",
+          "what is beneficial between the two"
+        ],
+        [
+          "tat ekam niścitya vada",
+          "determine and state that one"
+        ],
+        [
+          "yad vā",
+          "or alternatively"
+        ],
+        [
+          "idam eva śreyaḥ-sādhanam iti niścitya",
+          "determining “this alone is the means to the good”"
+        ],
+        [
+          "yena anuṣṭhitena śreyaḥ mokṣam aham āpnuyām",
+          "by which, when practiced, I may attain the good, liberation"
+        ],
+        [
+          "tat eva ekam niścitya vada",
+          "determine and tell me that one"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "The Blessed Lord answers: “In this world.” The meaning is this. If I had taught two mutually independent steadfast paths, knowledge-yoga and karma-yoga, both as means to liberation, then your question—“Tell me one beneficial course between the two”—would be appropriate. But I did not teach them in that way. I taught only one steadfastness in Brahman, expressed in two forms according to differences in qualification, since the two cannot properly exist independently as primary and secondary. Among qualified persons whose inner instruments are respectively pure and impure, the steadfastness directed to liberation is of two kinds. He specifies the two forms. For those of Sāṅkhya—those with pure inner instruments who have ascended the ground of knowledge—steadfastness through knowledge-yoga, meditation and the like, was taught for the ripening of knowledge, as in “having restrained all those senses, sit joined and intent on Me.” For the yogīs who wish to ascend the ground of Sāṅkhya, whose inner instruments are impure and who are qualified for karma-yoga, steadfastness through karma-yoga was taught for the purification of the inner instrument and their ascent to that ground, as in “for a kṣatriya there is nothing higher than a righteous battle.” Therefore both forms of steadfastness were taught solely on the basis of the differing condition—purity or impurity—of the mind: “this understanding has been told to you in Sāṅkhya; hear this one in yoga.”",
+      "word_for_word": [
+        [
+          "atra uttaram śrībhagavān uvāca",
+          "here the Blessed Lord answered"
+        ],
+        [
+          "loke asmin",
+          "in this world"
+        ],
+        [
+          "ayam arthaḥ",
+          "the meaning is this"
+        ],
+        [
+          "yadi mayā paraspara-nirapekṣam",
+          "if by Me, mutually independent"
+        ],
+        [
+          "mokṣa-sādhanatvena karma-jñāna-yoga-rūpam niṣṭhā-dvayam uktam syāt",
+          "two steadfast paths in the form of karma-yoga and knowledge-yoga had been taught as means to liberation"
+        ],
+        [
+          "tarhi dvayoḥ madhye yat bhadram tat ekam vada",
+          "then “tell me one beneficial course between the two”"
+        ],
+        [
+          "tvadīyaḥ praśnaḥ saṅgacchet",
+          "your question would be appropriate"
+        ],
+        [
+          "na tu mayā tathā uktam",
+          "but I did not teach them in that way"
+        ],
+        [
+          "dvābhyām ekaiva brahma-niṣṭhā uktā",
+          "only one steadfastness in Brahman was taught in two forms"
+        ],
+        [
+          "guṇa-pradhāna-bhūtayoḥ tayoḥ svātantrya-anupapatteḥ",
+          "because the two cannot properly exist independently as primary and secondary"
+        ],
+        [
+          "śuddha-aśuddha-antaḥkaraṇatayā dvi-vidhe loke adhikāri-jane",
+          "among qualified persons whose inner instruments are pure and impure"
+        ],
+        [
+          "dve vidhe prakārau yasyāḥ",
+          "of which there are two forms"
+        ],
+        [
+          "sā dvi-vidhā niṣṭhā",
+          "that steadfastness is twofold"
+        ],
+        [
+          "mokṣa-paratā",
+          "directed toward liberation"
+        ],
+        [
+          "purā pūrva-adhyāye mayā sarvajñena proktā",
+          "was previously taught by Me, the omniscient one"
+        ],
+        [
+          "sāṃkhyānām śuddha-antaḥkaraṇānām",
+          "for those of Sāṅkhya, those with pure inner instruments"
+        ],
+        [
+          "jñāna-bhūmikām ārūḍhānām",
+          "who have ascended the ground of knowledge"
+        ],
+        [
+          "jñāna-paripāka-artham",
+          "for the ripening of knowledge"
+        ],
+        [
+          "jñāna-yogena dhyāna-ādinā niṣṭhā",
+          "steadfastness through knowledge-yoga, meditation, and the like"
+        ],
+        [
+          "sāṃkhya-bhūmikām āruru kṣūṇām",
+          "for those wishing to ascend the ground of Sāṅkhya"
+        ],
+        [
+          "antaḥkaraṇa-śuddhi-dvārā tad-āroha-artham",
+          "for their ascent through purification of the inner instrument"
+        ],
+        [
+          "tad-upāya-bhūta-karma-yoga-adhikāriṇām yoginām",
+          "for yogīs qualified for karma-yoga, which is the means to that"
+        ],
+        [
+          "karma-yogena niṣṭhā",
+          "steadfastness through karma-yoga"
+        ],
+        [
+          "citta-śuddhi-aśuddhi-rūpa-avasthā-bhedena",
+          "through the difference of condition in the form of purity or impurity of the mind"
+        ],
+        [
+          "dvi-vidhā api niṣṭhā uktā",
+          "both forms of steadfastness were taught"
+        ],
+        [
+          "eṣā te abhihitā sāṃkhye buddhiḥ yoge tu imām śṛṇu",
+          "this understanding was told to you in Sāṅkhya; hear this one in yoga"
+        ]
+      ]
+    }
+  }
+}
