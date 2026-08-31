@@ -16,14 +16,14 @@
     const wordMeaning = meanings[key] || 'Word-for-word meaning unavailable in the source record.';
     const commentary = d.srid && d.srid.sc ? lines(d.srid.sc) : 'No separate Sanskrit commentary is recorded for this verse in the source data.';
     return '<article class="gita-verse" id="gita-' + chapter + '-' + n + '">' +
-      '<h2><span>Bhagavad Gītā</span> ' + chapter + '.' + n + '</h2>' +
+      '<h2><span>BG</span> ' + chapter + '.' + n + '</h2><hr class="gita-verse-rule">' +
       '<div class="gita-sanskrit" lang="sa-Deva">' + rootLines + '</div>' +
       '<p class="gita-translation">' + english + '</p>' +
       '<div class="gita-controls">' +
       '<details class="gita-details"><summary>Word-for-word</summary><div class="gita-reveal"><p>' + lines(wordMeaning) + '</p></div></details>' +
       '<details class="gita-details"><summary>Transliteration</summary><div class="gita-reveal"><p><em>' + lines(d.transliteration) + '</em></p></div></details>' +
       '<details class="gita-details"><summary>Śrīdhara Sanskrit</summary><div class="gita-reveal"><p lang="sa">' + commentary + '</p></div></details>' +
-      '</div><section class="gita-commentary"><h3>Śrīdhara’s English translation</h3><p>' + (d.srid && d.srid.et ? lines(d.srid.et) : 'The source repository supplies Śrīdhara Svāmī’s commentary in Sanskrit; no English translation field is supplied there.') + '</p></section></article>';
+      '</div><section class="gita-commentary"><h3>Śrīdhara’s Commentary.</h3><p>' + (d.srid && d.srid.et ? lines(d.srid.et) : 'The source repository supplies Śrīdhara Svāmī’s commentary in Sanskrit; no English translation field is supplied there.') + '</p></section></article>';
   };
   const load = async () => {
     root.innerHTML = '<p class="gita-loading">Loading chapter text…</p>';
