@@ -5,183 +5,402 @@
       "analysis": [
         {
           "surface_slp1": "etezAm",
-          "lemma_slp1": "etad"
+          "lemma_slp1": "etad",
+          "tags": [
+            "bahuvacanam",
+            "puMlliNgam",
+            "zazWIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "eva",
-          "lemma_slp1": "eva"
+          "lemma_slp1": "eva",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
           "surface_slp1": "sarvakarma",
-          "lemma_slp1": "sarvakarman"
+          "lemma_slp1": "sarvakarman",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "napuMsakaliNgam"
+          ]
         },
         {
           "surface_slp1": "hetutvam",
-          "lemma_slp1": "hetutva"
+          "lemma_slp1": "hetutva",
+          "tags": [
+            "ekavacanam",
+            "napuMsakaliNgam",
+            "praTamAviBaktiH"
+          ]
         },
         {
           "surface_slp1": "Aha",
-          "lemma_slp1": "ah"
-        },
-        {
-          "surface_slp1": "SarIrA",
-          "lemma_slp1": "SarIra"
-        },
-        {
-          "surface_slp1": "Iti",
-          "lemma_slp1": "Iti"
-        },
-        {
-          "surface_slp1": "yaToktEH",
-          "lemma_slp1": "yaToktEH"
-        },
-        {
-          "surface_slp1": "paYcaBiH",
-          "lemma_slp1": "paYcaBiH"
-        },
-        {
-          "surface_slp1": "prAs",
-          "lemma_slp1": "prA"
-        },
-        {
-          "surface_slp1": "raByamARam",
-          "lemma_slp1": "raByamARa"
-        },
-        {
-          "surface_slp1": "karma",
-          "lemma_slp1": "karman"
-        },
-        {
-          "surface_slp1": "trizu",
-          "lemma_slp1": "tri"
-        },
-        {
-          "surface_slp1": "evA",
-          "lemma_slp1": "eva"
-        },
-        {
-          "surface_slp1": "antar",
-          "lemma_slp1": "antar"
-        },
-        {
-          "surface_slp1": "BAvi",
-          "lemma_slp1": "BU"
-        },
-        {
-          "surface_slp1": "aSarIra",
-          "lemma_slp1": "aSarIra"
-        },
-        {
-          "surface_slp1": "vANmanoBis",
-          "lemma_slp1": "vANmanas"
-        },
-        {
-          "surface_slp1": "ityuktam",
-          "lemma_slp1": "ityukta"
-        },
-        {
-          "surface_slp1": "SArIram",
-          "lemma_slp1": "SArIra"
-        },
-        {
-          "surface_slp1": "vAcikam",
-          "lemma_slp1": "vAcika"
-        },
-        {
-          "surface_slp1": "mAnasam",
-          "lemma_slp1": "mAnasa"
-        },
-        {
-          "surface_slp1": "ca",
-          "lemma_slp1": "ca"
-        },
-        {
-          "surface_slp1": "triviDam",
-          "lemma_slp1": "triviDa"
-        },
-        {
-          "surface_slp1": "karmA",
-          "lemma_slp1": "karman"
-        },
-        {
-          "surface_slp1": "Iti",
-          "lemma_slp1": "Iti"
-        },
-        {
-          "surface_slp1": "prasidDeH",
-          "lemma_slp1": "prasidDeH"
+          "lemma_slp1": "ah",
+          "tags": [
+            "ekavacanam",
+            "liw",
+            "parasmEpadam",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
         },
         {
           "surface_slp1": "SarIs",
-          "lemma_slp1": "SarI"
+          "lemma_slp1": "SarI",
+          "tags": [
+            "bahuvacanam",
+            "dvitIyAviBaktiH",
+            "strIliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "eti",
+          "lemma_slp1": "i",
+          "tags": [
+            "ekavacanam",
+            "kartari",
+            "law",
+            "parasmEpadam",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
+        },
+        {
+          "surface_slp1": "yaToktEH",
+          "lemma_slp1": "yaToktEH",
+          "tags": []
+        },
+        {
+          "surface_slp1": "paYcaBiH",
+          "lemma_slp1": "paYcaBiH",
+          "tags": []
+        },
+        {
+          "surface_slp1": "pras",
+          "lemma_slp1": "prA",
+          "tags": [
+            "bahuvacanam",
+            "dvitIyAviBaktiH",
+            "puMlliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "raByamARam",
+          "lemma_slp1": "raByamARa",
+          "tags": [
+            "SAnac",
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "karmaRi",
+            "kfdantaH",
+            "prATamikaH",
+            "puMlliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "karma",
+          "lemma_slp1": "karman",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "napuMsakaliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "trizu",
+          "lemma_slp1": "tri",
+          "tags": [
+            "bahuvacanam",
+            "puMlliNgam",
+            "saptamIviBaktiH"
+          ]
+        },
+        {
+          "surface_slp1": "evA",
+          "lemma_slp1": "eva",
+          "tags": [
+            "ekavacanam",
+            "praTamAviBaktiH",
+            "strIliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "antar",
+          "lemma_slp1": "antar",
+          "tags": [
+            "avyayam",
+            "karmapravacanIyaH"
+          ]
+        },
+        {
+          "surface_slp1": "BAvya",
+          "lemma_slp1": "BU",
+          "tags": [
+            "RijantaH",
+            "avyaya",
+            "avyayaDAturUpa",
+            "lyap"
+          ]
+        },
+        {
+          "surface_slp1": "SarIra",
+          "lemma_slp1": "SarIra",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
+        },
+        {
+          "surface_slp1": "vANmanoBis",
+          "lemma_slp1": "vANmanas",
+          "tags": [
+            "bahuvacanam",
+            "napuMsakaliNgam",
+            "tftIyAviBaktiH"
+          ]
+        },
+        {
+          "surface_slp1": "ityuktam",
+          "lemma_slp1": "ityukta",
+          "tags": [
+            "ekavacanam",
+            "napuMsakaliNgam",
+            "praTamAviBaktiH"
+          ]
+        },
+        {
+          "surface_slp1": "SArIram",
+          "lemma_slp1": "SArIra",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "vAcikam",
+          "lemma_slp1": "vAcika",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "mAnasam",
+          "lemma_slp1": "mAnasa",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "ca",
+          "lemma_slp1": "ca",
+          "tags": [
+            "avyayam",
+            "saMyojakaH"
+          ]
+        },
+        {
+          "surface_slp1": "triviDam",
+          "lemma_slp1": "triviDa",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "karma",
+          "lemma_slp1": "karman",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "napuMsakaliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "Iti",
+          "lemma_slp1": "Iti",
+          "tags": [
+            "samAsapUrvapadanAmapadam",
+            "strIliNgam"
+          ]
+        },
+        {
+          "surface_slp1": "prasidDeH",
+          "lemma_slp1": "prasidDeH",
+          "tags": []
+        },
+        {
+          "surface_slp1": "SarIra",
+          "lemma_slp1": "SarIra",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
           "surface_slp1": "AdiBis",
-          "lemma_slp1": "Adi"
+          "lemma_slp1": "Adi",
+          "tags": [
+            "bahuvacanam",
+            "strIliNgam",
+            "tftIyAviBaktiH"
+          ]
         },
         {
-          "surface_slp1": "yadI",
-          "lemma_slp1": "yad"
+          "surface_slp1": "yadi",
+          "lemma_slp1": "yadi",
+          "tags": [
+            "avyayam",
+            "saMyojakaH"
+          ]
         },
         {
           "surface_slp1": "at",
-          "lemma_slp1": "ad"
+          "lemma_slp1": "ad",
+          "tags": [
+            "ekavacanam",
+            "praTamAviBaktiH",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "karma",
-          "lemma_slp1": "karman"
+          "lemma_slp1": "karman",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "napuMsakaliNgam"
+          ]
         },
         {
           "surface_slp1": "Darmya",
-          "lemma_slp1": "Darmya"
+          "lemma_slp1": "Darmya",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
           "surface_slp1": "vAs",
-          "lemma_slp1": "U"
+          "lemma_slp1": "U",
+          "tags": [
+            "ekavacanam",
+            "paYcamIviBaktiH",
+            "strIliNgam"
+          ]
         },
         {
           "surface_slp1": "Darmyam",
-          "lemma_slp1": "Darmya"
+          "lemma_slp1": "Darmya",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "vA",
-          "lemma_slp1": "vA"
+          "lemma_slp1": "vA",
+          "tags": [
+            "avyayam",
+            "saMyojakaH"
+          ]
         },
         {
           "surface_slp1": "karoti",
-          "lemma_slp1": "kf"
+          "lemma_slp1": "kf",
+          "tags": [
+            "ekavacanam",
+            "kartari",
+            "law",
+            "parasmEpadam",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
         },
         {
-          "surface_slp1": "naras",
-          "lemma_slp1": "nara"
+          "surface_slp1": "nar",
+          "lemma_slp1": "nf",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
-          "surface_slp1": "tasya",
-          "lemma_slp1": "tad"
+          "surface_slp1": "astasya",
+          "lemma_slp1": "asta",
+          "tags": [
+            "ekavacanam",
+            "karmaRi",
+            "kfdantaH",
+            "kta",
+            "napuMsakaliNgam",
+            "prATamikaH",
+            "zazWIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "sarvasya",
-          "lemma_slp1": "sarva"
+          "lemma_slp1": "sarva",
+          "tags": [
+            "ekavacanam",
+            "napuMsakaliNgam",
+            "zazWIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "karma",
-          "lemma_slp1": "karman"
+          "lemma_slp1": "karman",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "napuMsakaliNgam"
+          ]
         },
         {
           "surface_slp1": "Ra",
-          "lemma_slp1": "Ra"
+          "lemma_slp1": "Ra",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
           "surface_slp1": "ete",
-          "lemma_slp1": "etad"
+          "lemma_slp1": "etad",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "dvivacanam",
+            "napuMsakaliNgam"
+          ]
         },
         {
           "surface_slp1": "paYca",
-          "lemma_slp1": "paYcan"
+          "lemma_slp1": "paYcan",
+          "tags": [
+            "samAsapUrvapadanAmapadam"
+          ]
         },
         {
           "surface_slp1": "hetavaH",
-          "lemma_slp1": "hetavaH"
+          "lemma_slp1": "hetavaH",
+          "tags": []
         }
       ]
     },
@@ -190,147 +409,333 @@
       "analysis": [
         {
           "surface_slp1": "tataH",
-          "lemma_slp1": "tataH"
+          "lemma_slp1": "tataH",
+          "tags": []
         },
         {
           "surface_slp1": "kim",
-          "lemma_slp1": "kim"
+          "lemma_slp1": "kim",
+          "tags": [
+            "samAsapUrvapadanAmapadam"
+          ]
         },
         {
           "surface_slp1": "ata",
-          "lemma_slp1": "at"
+          "lemma_slp1": "at",
+          "tags": [
+            "ekavacanam",
+            "kartari",
+            "low",
+            "maDyamapuruzaH",
+            "parasmEpadam",
+            "prATamikaH"
+          ]
         },
         {
           "surface_slp1": "Aha",
-          "lemma_slp1": "ah"
+          "lemma_slp1": "ah",
+          "tags": [
+            "ekavacanam",
+            "liw",
+            "parasmEpadam",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
+        },
+        {
+          "surface_slp1": "tatre",
+          "lemma_slp1": "trE",
+          "tags": [
+            "Atmanepadam",
+            "ekavacanam",
+            "liw",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
+        },
+        {
+          "surface_slp1": "ati",
+          "lemma_slp1": "ati",
+          "tags": [
+            "avyayam",
+            "karmapravacanIyaH"
+          ]
         },
         {
           "surface_slp1": "tatra",
-          "lemma_slp1": "tatra"
-        },
-        {
-          "surface_slp1": "iti",
-          "lemma_slp1": "iti"
-        },
-        {
-          "surface_slp1": "tatra",
-          "lemma_slp1": "tatra"
+          "lemma_slp1": "tatra",
+          "tags": [
+            "avyayam",
+            "kriyAviSezaRam"
+          ]
         },
         {
           "surface_slp1": "sarvasmin",
-          "lemma_slp1": "sarva"
+          "lemma_slp1": "sarva",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saptamIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "karmaRi",
-          "lemma_slp1": "karman"
+          "lemma_slp1": "karman",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saptamIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "ete",
-          "lemma_slp1": "etad"
+          "lemma_slp1": "etad",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "dvivacanam",
+            "napuMsakaliNgam"
+          ]
         },
         {
           "surface_slp1": "paYca",
-          "lemma_slp1": "paYcan"
+          "lemma_slp1": "paYcan",
+          "tags": [
+            "samAsapUrvapadanAmapadam"
+          ]
         },
         {
           "surface_slp1": "he",
-          "lemma_slp1": "as"
+          "lemma_slp1": "as",
+          "tags": [
+            "Atmanepadam",
+            "ekavacanam",
+            "kartari",
+            "law",
+            "prATamikaH",
+            "uttamapuruzaH"
+          ]
         },
         {
           "surface_slp1": "tava",
-          "lemma_slp1": "yuzmad"
+          "lemma_slp1": "yuzmad",
+          "tags": [
+            "ekavacanam",
+            "triliNgam",
+            "zazWIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "itye",
-          "lemma_slp1": "itya"
+          "lemma_slp1": "itya",
+          "tags": [
+            "dvivacanam",
+            "karmaRi",
+            "kfdantaH",
+            "kftya",
+            "prATamikaH",
+            "praTamAviBaktiH",
+            "strIliNgam"
+          ]
         },
         {
           "surface_slp1": "vam",
-          "lemma_slp1": "U"
+          "lemma_slp1": "U",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "sati",
-          "lemma_slp1": "sat"
+          "lemma_slp1": "sat",
+          "tags": [
+            "ekavacanam",
+            "saptamIviBaktiH",
+            "strIliNgam"
+          ]
         },
         {
           "surface_slp1": "kevalam",
-          "lemma_slp1": "kevala"
+          "lemma_slp1": "kevala",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "nirupADikam",
-          "lemma_slp1": "nirupADika"
+          "lemma_slp1": "nirupADika",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "asaNgam",
-          "lemma_slp1": "asaNga"
+          "lemma_slp1": "asaNga",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "AtmAnam",
-          "lemma_slp1": "Atman"
+          "lemma_slp1": "Atman",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "tu",
-          "lemma_slp1": "tu"
+          "lemma_slp1": "tu",
+          "tags": [
+            "avyayam",
+            "saMyojakaH"
+          ]
         },
         {
           "surface_slp1": "yaH",
-          "lemma_slp1": "yaH"
+          "lemma_slp1": "yaH",
+          "tags": []
         },
         {
           "surface_slp1": "kartAram",
-          "lemma_slp1": "kartf"
+          "lemma_slp1": "kartf",
+          "tags": [
+            "dvitIyAviBaktiH",
+            "ekavacanam",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "paSyati",
-          "lemma_slp1": "paS"
+          "lemma_slp1": "paS",
+          "tags": [
+            "ekavacanam",
+            "kartari",
+            "law",
+            "parasmEpadam",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
         },
         {
           "surface_slp1": "SAstrA",
-          "lemma_slp1": "SAstf"
+          "lemma_slp1": "SAstf",
+          "tags": [
+            "ekavacanam",
+            "napuMsakaliNgam",
+            "tftIyAviBaktiH"
+          ]
         },
         {
           "surface_slp1": "cAryas",
-          "lemma_slp1": "cArya"
+          "lemma_slp1": "cArya",
+          "tags": [
+            "Bavizyat",
+            "ekavacanam",
+            "karmaRi",
+            "kftya",
+            "praTamAviBaktiH",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "apadeSa",
-          "lemma_slp1": "apadeSa"
+          "lemma_slp1": "apadeSa",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
           "surface_slp1": "tyAgena",
-          "lemma_slp1": "tyAga"
+          "lemma_slp1": "tyAga",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "tftIyAviBaktiH"
+          ]
         },
         {
           "surface_slp1": "asaMskfta",
-          "lemma_slp1": "asaMskfta"
+          "lemma_slp1": "asaMskfta",
+          "tags": [
+            "napuMsakaliNgam",
+            "samAsapUrvapadanAmapadam"
+          ]
         },
         {
           "surface_slp1": "budDi",
-          "lemma_slp1": "budDi"
+          "lemma_slp1": "budDi",
+          "tags": [
+            "samAsapUrvapadanAmapadam",
+            "strIliNgam"
+          ]
         },
         {
           "surface_slp1": "tvAt",
-          "lemma_slp1": "tva"
+          "lemma_slp1": "tva",
+          "tags": [
+            "ekavacanam",
+            "paYcamIviBaktiH",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "durmatis",
-          "lemma_slp1": "durmati"
+          "lemma_slp1": "durmati",
+          "tags": [
+            "ekavacanam",
+            "praTamAviBaktiH",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "asO",
-          "lemma_slp1": "asi"
+          "lemma_slp1": "asi",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saptamIviBaktiH"
+          ]
         },
         {
           "surface_slp1": "samyaN",
-          "lemma_slp1": "samyac"
+          "lemma_slp1": "samyac",
+          "tags": [
+            "ekavacanam",
+            "praTamAviBaktiH",
+            "puMlliNgam"
+          ]
         },
         {
           "surface_slp1": "na",
-          "lemma_slp1": "na"
+          "lemma_slp1": "na",
+          "tags": [
+            "ekavacanam",
+            "puMlliNgam",
+            "saMboDanaviBaktiH"
+          ]
         },
         {
           "surface_slp1": "paSyati",
-          "lemma_slp1": "paS"
+          "lemma_slp1": "paS",
+          "tags": [
+            "ekavacanam",
+            "kartari",
+            "law",
+            "parasmEpadam",
+            "prATamikaH",
+            "praTamapuruzaH"
+          ]
         }
       ]
     }
