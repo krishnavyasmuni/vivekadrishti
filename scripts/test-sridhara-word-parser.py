@@ -8,13 +8,13 @@ from pathlib import Path
 from indic_transliteration import sanscript
 from indic_transliteration.sanscript import transliterate
 from sanskrit_parser.api import Parser
-from sanskrit_parser.base.sanskrit_base import SanskritObject, SLP1
+from sanskrit_parser.base.sanskrit_base import SanskritObject
 from sanskrit_parser.parser.sandhi_analyzer import LexicalSandhiAnalyzer
 
 SOURCE = Path('assets/data/bhagavad-gita-sridhara-source/chapter-18.json')
 OUT = Path('assets/data/bhagavad-gita-sridhara-source/parser-test-18.json')
 
-parser = Parser(input_encoding='SLP1', output_encoding='SLP1', score=True, replace_ending_visarga='s')
+parser = Parser(input_encoding='SLP1', output_encoding='SLP1', score=False, replace_ending_visarga='s')
 analyzer = LexicalSandhiAnalyzer()
 
 
@@ -27,7 +27,7 @@ def clean_to_slp(text: str) -> list[str]:
 
 
 def base_for(unit: str) -> str:
-    obj = SanskritObject(unit, encoding=SLP1)
+    obj = SanskritObject(unit, encoding='SLP1')
     tags = analyzer.getMorphologicalTags(obj)
     if not tags:
         return unit
