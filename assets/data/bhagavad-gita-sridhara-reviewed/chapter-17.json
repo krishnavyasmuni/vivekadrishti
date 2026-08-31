@@ -423,6 +423,132 @@
           "producing pain, sorrow, and disease"
         ]
       ]
+    },
+    "10": {
+      "reviewed": true,
+      "translation": "Food that is stale, tasteless, foul, kept over from the previous day, leftover, or unfit to offer is dear to the tamasic.",
+      "word_for_word": [
+        [
+          "yāta-yāmam",
+          "stale, kept beyond the proper time"
+        ],
+        [
+          "gata-rasam",
+          "tasteless, with its essence gone"
+        ],
+        [
+          "pūti",
+          "foul"
+        ],
+        [
+          "paryuṣitam",
+          "kept from a previous day"
+        ],
+        [
+          "ucchiṣṭam",
+          "leftover after another has eaten"
+        ],
+        [
+          "amedhyam",
+          "unfit to offer or eat"
+        ],
+        [
+          "bhojanam",
+          "food"
+        ],
+        [
+          "tāmasa-priyam",
+          "dear to the tamasic"
+        ]
+      ]
+    },
+    "11": {
+      "reviewed": true,
+      "translation": "The sacrifice prescribed by rule, performed by people without desire for its fruit, with the mind settled in the thought “sacrifice must indeed be performed,” is sattvic.",
+      "word_for_word": [
+        [
+          "a-phala-ākāṅkṣibhiḥ",
+          "by those without desire for fruit"
+        ],
+        [
+          "yajñaḥ",
+          "sacrifice"
+        ],
+        [
+          "vidhi-dṛṣṭaḥ",
+          "prescribed by rule"
+        ],
+        [
+          "yaḥ",
+          "which"
+        ],
+        [
+          "ijyate",
+          "is performed"
+        ],
+        [
+          "yajṭavyam eva",
+          "sacrifice alone must be performed"
+        ],
+        [
+          "iti",
+          "thus"
+        ],
+        [
+          "manaḥ samādhāya",
+          "settling the mind"
+        ],
+        [
+          "saḥ sāttvikaḥ",
+          "that is sattvic"
+        ]
+      ]
+    },
+    "12": {
+      "reviewed": true,
+      "translation": "But know that sacrifice to be rajasic which is performed with an intended fruit and also for the sake of hypocrisy or self-display, O best of the Bharatas.",
+      "word_for_word": [
+        [
+          "abhisandhāya",
+          "having intended"
+        ],
+        [
+          "phalam",
+          "the fruit"
+        ],
+        [
+          "dambha-artham",
+          "for the sake of hypocrisy or self-display"
+        ],
+        [
+          "api",
+          "also"
+        ],
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "ijyate",
+          "is performed"
+        ],
+        [
+          "bharata-śreṣṭha",
+          "O best of the Bharatas"
+        ],
+        [
+          "tam yajñam",
+          "that sacrifice"
+        ],
+        [
+          "viddhi",
+          "know"
+        ],
+        [
+          "rājasam",
+          "rajasic"
+        ]
+      ]
     }
   }
 }
