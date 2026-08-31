@@ -10,10 +10,17 @@
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const slug=v=>String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const arr=v=>Array.isArray(v)?v.filter(Boolean):(v?[v]:[]);
+  const polish=v=>String(v??'')
+    .replace(/\bthe following map follows\b/gi,'The sequence follows')
+    .replace(/\bthis contents map follows\b/gi,'The sequence follows')
+    .replace(/\bso this article keeps later fame distinct from the passage’s role in the received epic\b/gi,'Later fame and the passage’s function within the received epic are therefore distinct questions')
+    .replace(/\bthis article (?:keeps|uses|treats|should|must)\b[^.]*\.?/gi,'')
+    .replace(/\ba responsible citation\b/gi,'Precise citation')
+    .replace(/\s{2,}/g,' ').trim();
   const valueOf=v=>{
     if(v==null)return '';
-    if(typeof v==='string'||typeof v==='number')return String(v);
-    return String(v.text||v.summary||v.description||v.detail||v.claim||v.title||v.citation||'');
+    if(typeof v==='string'||typeof v==='number')return polish(v);
+    return polish(v.text||v.summary||v.description||v.detail||v.claim||v.title||v.citation||'');
   };
   const hasText=v=>arr(v).map(valueOf).join(' ').trim().length>0;
   const paragraphs=values=>arr(values).map(valueOf).filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('');
@@ -29,9 +36,20 @@
     return;
   }
 
+  /* The data files deliberately put a reusable corpus-level paragraph first.
+     When book-specific history exists, lead with that evidence instead of the template. */
+  const history=arr(book.history);
+  const specificHistory=history.length>1?history.slice(1):history;
+  const structure=arr(book.structure);
+  const specificStructure=structure.length>1?[...structure.slice(1),structure[0]]:structure;
+  const reception=arr(book.reception);
+  const specificReception=reception.length>1?reception.slice(0,-1):reception;
+  const textualHistory=arr(book.textualHistory);
+  const specificTextualHistory=textualHistory.length>1?[...textualHistory.slice(1),textualHistory[0]]:textualHistory;
+
   document.title=String(book.title)+' — Viveka Dṛṣṭi';
   const meta=document.querySelector('meta[name="description"]');
-  if(meta)meta.content=book.description||String(book.title)+': scholarly guide to structure, contents, textual history and interpretation.';
+  if(meta)meta.content=book.description||String(book.title)+': guide to structure, contents, textual history and interpretation.';
 
   const units=arr(book.units);
   const unitToc=units.map((unit,i)=>'<li><a href="#'+unitId(unit,i)+'">'+esc(valueOf(unit.title||('Part '+(i+1))))+'</a></li>').join('');
@@ -50,24 +68,24 @@
 
   const criticalExtent=valueOf(book.criticalExtent);
   const sectionDefs=[
-    {id:'date-text',title:'Date and textual position',html:paragraphs(book.history)},
-    {id:'structure',title:'Structure and numbering',html:paragraphs(book.structure)+(book.numberingNote?'<p class="itihasa-note"><b>Numbering note.</b> '+esc(book.numberingNote)+'</p>':'')},
-    {id:'contents',title:'Contents',html:paragraphs(book.contentsIntro)+unitHtml},
+    {id:'date-text',title:'Date and textual position',html:paragraphs(specificHistory)},
+    {id:'structure',title:'Structure and numbering',html:paragraphs(specificStructure)+(book.numberingNote?'<p class="itihasa-note"><b>Numbering.</b> '+esc(valueOf(book.numberingNote))+'</p>':'')},
+    {id:'contents',title:'Contents',html:unitHtml},
     {id:'interpretation',title:'Interpretation and significance',html:interpretationHtml},
-    {id:'reception',title:'Reception and influence',html:paragraphs(book.reception)}
+    {id:'reception',title:'Reception and influence',html:paragraphs(specificReception)}
   ];
 
   if(criticalExtent){
-    let criticalHtml=paragraphs(book.textualHistory);
+    let criticalHtml=paragraphs(specificTextualHistory);
     if(criticalHtml.indexOf(criticalExtent)===-1)criticalHtml='<p><b>Critical-edition scope.</b> '+esc(criticalExtent)+'</p>'+criticalHtml;
     sectionDefs.push({id:'textual-history',title:'Critical edition and transmission',html:criticalHtml});
-  }else if(hasText(book.textualHistory)){
-    sectionDefs.push({id:'textual-history',title:'Textual transmission',html:paragraphs(book.textualHistory)});
+  }else if(hasText(specificTextualHistory)){
+    sectionDefs.push({id:'textual-history',title:'Textual transmission',html:paragraphs(specificTextualHistory)});
   }
 
   const refs=arr(book.sources).map(s=>({source:s,title:sourceTitle(s)})).filter(x=>x.title);
   const refsHtml=refs.length
-    ?'<ol class="itihasa-reference-list">'+refs.map((x,i)=>'<li id="itihasa-ref-'+(i+1)+'">'+link(x.source)+(x.source.detail?' — '+esc(x.source.detail):'')+'</li>').join('')+'</ol>'
+    ?'<ol class="itihasa-reference-list">'+refs.map((x,i)=>'<li id="itihasa-ref-'+(i+1)+'">'+link(x.source)+(x.source.detail?' — '+esc(valueOf(x.source.detail)):'')+'</li>').join('')+'</ol>'
     :'<p>No external references have been recorded for this entry.</p>';
   sectionDefs.push({
     id:'references',
@@ -91,9 +109,8 @@
 
   root.innerHTML=
     '<header class="kena-article-head">'+
-      '<span class="eyebrow">'+esc(book.work)+' · standalone scholarly article</span>'+
+      '<span class="eyebrow">'+esc(book.work)+' · '+esc(book.position||'book guide')+'</span>'+
       '<h1>'+esc(book.title)+(book.devanagari?'<span class="purana-devanagari-title" lang="sa-Deva">'+esc(book.devanagari)+'</span>':'')+'</h1>'+
-      '<span class="itihasa-book-number">'+esc(book.position||'')+'</span>'+
     '</header>'+
     '<aside class="kena-infobox universal-infobox purana-full-infobox" aria-label="Article facts">'+
       '<div class="kena-infobox-title">'+esc(book.title)+'</div>'+
