@@ -1,0 +1,140 @@
+{
+  "_meta": {
+    "chapter": 13,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Arjuna said: I wish to know Nature, the Person, the field, the knower of the field, knowledge, and the object of knowledge, O Keśava.",
+      "word_for_word": [
+        [
+          "prakṛtim",
+          "Nature"
+        ],
+        [
+          "puruṣam",
+          "the Person"
+        ],
+        [
+          "kṣetram",
+          "the field"
+        ],
+        [
+          "kṣetra-jñam",
+          "the knower of the field"
+        ],
+        [
+          "etad",
+          "these"
+        ],
+        [
+          "veditum icchāmi",
+          "I wish to know"
+        ],
+        [
+          "jñānam",
+          "knowledge"
+        ],
+        [
+          "jñeyam",
+          "the object of knowledge"
+        ],
+        [
+          "keśava",
+          "O Keśava"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: This body is called the field, O son of Kuntī; one who knows this is called the knower of the field by those who know this subject. Śrīdhara explains “field” as the body, the ground from which worldly existence sprouts, and “knower” as the one who regards it as “I” and “mine” and experiences its results.",
+      "word_for_word": [
+        [
+          "idam śarīram",
+          "this body"
+        ],
+        [
+          "kṣetram",
+          "the field"
+        ],
+        [
+          "iti",
+          "thus"
+        ],
+        [
+          "abhidhīyate",
+          "is called"
+        ],
+        [
+          "etat yaḥ vetti",
+          "one who knows this"
+        ],
+        [
+          "tam prāhuḥ",
+          "they call that one"
+        ],
+        [
+          "kṣetra-jñaḥ",
+          "the knower of the field"
+        ],
+        [
+          "tad-vidaḥ",
+          "those who know that subject"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Know Me also as the knower of the field in all fields, O Bhārata. The knowledge of the field and the knower of the field—that is what I regard as knowledge. Śrīdhara says that other learning, when it does not produce this discrimination, is merely empty scholarship because it remains a cause of bondage.",
+      "word_for_word": [
+        [
+          "kṣetra-jñam",
+          "the knower of the field"
+        ],
+        [
+          "ca api",
+          "also"
+        ],
+        [
+          "mām",
+          "Me"
+        ],
+        [
+          "viddhi",
+          "know"
+        ],
+        [
+          "sarva-kṣetreṣu",
+          "in all fields"
+        ],
+        [
+          "bhārata",
+          "O Bhārata"
+        ],
+        [
+          "kṣetra-kṣetra-jñayoḥ",
+          "of the field and the knower of the field"
+        ],
+        [
+          "jñānam",
+          "knowledge"
+        ],
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "tat jñānam",
+          "that is knowledge"
+        ],
+        [
+          "matam mama",
+          "my view"
+        ]
+      ]
+    }
+  }
+}
