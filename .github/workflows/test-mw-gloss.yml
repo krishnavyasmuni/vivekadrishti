@@ -1,0 +1,36 @@
+name: Test MW Literal Glosses
+
+on:
+  push:
+    paths:
+      - 'scripts/test-mw-gloss.py'
+      - '.github/workflows/test-mw-gloss.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Fetch Monier-Williams SQLite
+        run: |
+          curl -L --fail https://sanskrit-lexicon.github.io/csl-sqlite/mw.zip -o /tmp/mw.zip
+          unzip -o /tmp/mw.zip -d /tmp/mw
+          find /tmp/mw -maxdepth 2 -type f -print
+      - name: Inspect literal gloss entries
+        run: |
+          DB=$(find /tmp/mw -name 'mw.sqlite' -print -quit)
+          python scripts/test-mw-gloss.py "$DB" > assets/data/bhagavad-gita-sridhara-source/mw-gloss-test.json
+      - name: Commit test output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/bhagavad-gita-sridhara-source/mw-gloss-test.json
+          git commit -m "Inspect MW gloss data for Sridhara literal translation"
+          git push
