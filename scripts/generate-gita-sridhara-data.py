@@ -46,9 +46,9 @@ def split_sentences(text: str, max_words: int = 34) -> list[str]:
         words = sentence.split()
         if len(words) <= max_words:
             result.append(sentence)
-            continue
-        for i in range(0, len(words), max_words):
-            result.append(" ".join(words[i : i + max_words]))
+        else:
+            for i in range(0, len(words), max_words):
+                result.append(" ".join(words[i : i + max_words]))
     return result or ([text] if text else [])
 
 
@@ -93,13 +93,7 @@ class Translator:
         out_all: list[str] = []
         for start in range(0, len(items), batch_size):
             batch = items[start : start + batch_size]
-            encoded = self.tokenizer(
-                batch,
-                truncation=True,
-                padding=True,
-                max_length=256,
-                return_tensors="pt",
-            )
+            encoded = self.tokenizer(batch, truncation=True, padding=True, max_length=256, return_tensors="pt")
             encoded = {k: v.to(self.device) for k, v in encoded.items()}
             with torch.inference_mode():
                 generated = self.model.generate(
@@ -135,13 +129,18 @@ def read_source(source: Path, chapter: int, verse: int) -> str:
     return clean_commentary(((data.get("srid") or {}).get("sc") or ""))
 
 
-def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict:
+def generate_chapter(translator: Translator, source: Path, chapter: int, only_verses: set[int] | None = None) -> dict:
+    verse_numbers = list(range(1, COUNTS[chapter - 1] + 1))
+    if only_verses:
+        verse_numbers = [v for v in verse_numbers if v in only_verses]
+
     records: dict[int, dict] = {}
     all_sentences: list[str] = []
     all_phrases: list[str] = []
 
-    for verse in range(1, COUNTS[chapter - 1] + 1):
+    for verse in verse_numbers:
         sanskrit = read_source(source, chapter, verse)
+        print(f"SOURCE {chapter}.{verse}: {sanskrit}", flush=True)
         if no_commentary(sanskrit):
             records[verse] = {"no_commentary": True}
             continue
@@ -159,12 +158,11 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
         all_sentences.extend(sentence_units)
         all_phrases.extend(phrase_units)
 
-    print(f"chapter {chapter}: {len(all_sentences)} sentence units, {len(all_phrases)} phrase units", flush=True)
     sentence_english = translator.batch(all_sentences, batch_size=8)
     phrase_english = translator.batch(all_phrases, batch_size=12)
 
     verses: dict[str, dict] = {}
-    for verse in range(1, COUNTS[chapter - 1] + 1):
+    for verse in verse_numbers:
         record = records[verse]
         if record["no_commentary"]:
             verses[str(verse)] = {"translation": "No commentary.", "word_for_word": []}
@@ -184,7 +182,8 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
                 pairs.append([deva_to_iast(src).strip(" |।॥"), gloss])
 
         verses[str(verse)] = {"translation": translation, "word_for_word": pairs}
-        print(f"{chapter}.{verse}: {record['sentence_count']} sentence units, {len(pairs)} phrase glosses", flush=True)
+        print(f"RESULT {chapter}.{verse}: {translation}", flush=True)
+        print(f"WFW {chapter}.{verse}: {json.dumps(pairs, ensure_ascii=False)}", flush=True)
 
     return {
         "_meta": {
@@ -204,15 +203,17 @@ def main() -> None:
     parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--output", type=Path, default=Path("assets/data/bhagavad-gita-sridhara"))
     parser.add_argument("--chapters", nargs="*", type=int, default=list(range(2, 19)))
+    parser.add_argument("--verses", nargs="*", type=int, default=None)
     args = parser.parse_args()
 
     args.output.mkdir(parents=True, exist_ok=True)
     translator = Translator()
+    only_verses = set(args.verses) if args.verses else None
 
     for chapter in args.chapters:
         if chapter < 2 or chapter > 18:
             raise SystemExit(f"Unsupported chapter: {chapter}")
-        payload = generate_chapter(translator, args.source, chapter)
+        payload = generate_chapter(translator, args.source, chapter, only_verses)
         target = args.output / f"chapter-{chapter}.json"
         target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"wrote {target}", flush=True)
