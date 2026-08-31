@@ -1925,6 +1925,144 @@
           "born from nature"
         ]
       ]
+    },
+    "43": {
+      "reviewed": true,
+      "translation": "Heroism, vigor, fortitude, skill, not fleeing in battle, generosity, and lordliness are the duties born of nature for a kṣatriya.",
+      "word_for_word": [
+        [
+          "śauryam",
+          "heroism"
+        ],
+        [
+          "tejaḥ",
+          "vigor, boldness"
+        ],
+        [
+          "dhṛtiḥ",
+          "fortitude"
+        ],
+        [
+          "dākṣyam",
+          "skill"
+        ],
+        [
+          "yuddhe",
+          "in battle"
+        ],
+        [
+          "a-palāyanam",
+          "not fleeing"
+        ],
+        [
+          "dānam",
+          "generosity"
+        ],
+        [
+          "īśvara-bhāvaḥ",
+          "lordliness, power to govern"
+        ],
+        [
+          "kṣātram karma",
+          "the duty of a kṣatriya"
+        ],
+        [
+          "svabhāva-jam",
+          "born of nature"
+        ]
+      ]
+    },
+    "44": {
+      "reviewed": true,
+      "translation": "Agriculture, protection of cows, and trade are the duties born of nature for a vaiśya; service is the duty born of nature for a śūdra.",
+      "word_for_word": [
+        [
+          "kṛṣi",
+          "agriculture"
+        ],
+        [
+          "go-rakṣya",
+          "protection of cows"
+        ],
+        [
+          "vāṇijyam",
+          "trade"
+        ],
+        [
+          "vaiśya-karma",
+          "the duty of a vaiśya"
+        ],
+        [
+          "svabhāva-jam",
+          "born of nature"
+        ],
+        [
+          "paricaryā-ātmakam",
+          "having the nature of service"
+        ],
+        [
+          "karma",
+          "duty"
+        ],
+        [
+          "śūdrasya",
+          "of a śūdra"
+        ],
+        [
+          "api",
+          "also"
+        ],
+        [
+          "svabhāva-jam",
+          "born of nature"
+        ]
+      ]
+    },
+    "45": {
+      "reviewed": true,
+      "translation": "A person devoted to his own duty attains perfection. Hear how one devoted to his own duty attains perfection. The supplied Śrīdhara note nearby emphasizes dedicating action to Brahman and relinquishing attachment to its fruit as the means by which action does not bind.",
+      "word_for_word": [
+        [
+          "sve sve",
+          "in one’s own respective"
+        ],
+        [
+          "karmaṇi",
+          "duty"
+        ],
+        [
+          "abhirataḥ",
+          "devoted, engaged"
+        ],
+        [
+          "saṃsiddhim",
+          "perfection"
+        ],
+        [
+          "labhate",
+          "attains"
+        ],
+        [
+          "naraḥ",
+          "a person"
+        ],
+        [
+          "sva-karma-nirataḥ",
+          "devoted to one’s own duty"
+        ],
+        [
+          "yathā",
+          "how"
+        ],
+        [
+          "vindati",
+          "attains"
+        ],
+        [
+          "tat śṛṇu",
+          "hear that"
+        ]
+      ]
     }
   }
 }
