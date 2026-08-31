@@ -80,6 +80,22 @@
     document.head.appendChild(css);
   }
 
+  // Bhagavad Gītā Chapter 1 has a hand-reviewed helper. Chapters 2–18 use the
+  // generated Śrīdhara data helper. Loading it here means every existing chapter
+  // page receives the same dual word-for-word/transliteration treatment without
+  // duplicating script tags across seventeen HTML files.
+  const gitaRoot = document.querySelector('[data-gita-chapter]');
+  if (gitaRoot) {
+    const gitaChapter = Number(gitaRoot.dataset.gitaChapter);
+    if (gitaChapter >= 2 && gitaChapter <= 18 && !document.querySelector('script[data-gita-sridhara-all]')) {
+      const helper = document.createElement('script');
+      helper.src = '/vivekadrishti/assets/js/bhagavad-gita-sridhara-all.js?v=20260831-all';
+      helper.async = false;
+      helper.dataset.gitaSridharaAll = 'true';
+      document.head.appendChild(helper);
+    }
+  }
+
   const isCanto2 = /srimad-bhagavatam-second-canto-sridhara-svami-rebuild/.test(location.pathname);
   const rebuildRoot = document.querySelector('.empyrean-bhagavatam-rebuild, .empyrean-bhagavatam-rebuild-part');
   if (!rebuildRoot) return;
