@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "chapter": 16,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: Fearlessness, purity of mind, steadfastness in the Yoga of knowledge, charity, self-restraint, sacrifice, self-study, austerity, and straightforwardness.",
+      "word_for_word": [
+        [
+          "abhayam",
+          "fearlessness"
+        ],
+        [
+          "sattva-saṃśuddhiḥ",
+          "purity of mind"
+        ],
+        [
+          "jñāna-yoga-vyavasthitiḥ",
+          "steadfastness in the Yoga of knowledge"
+        ],
+        [
+          "dānam",
+          "charity"
+        ],
+        [
+          "damaḥ",
+          "self-restraint"
+        ],
+        [
+          "yajñaḥ",
+          "sacrifice"
+        ],
+        [
+          "svādhyāyaḥ",
+          "self-study"
+        ],
+        [
+          "tapaḥ",
+          "austerity"
+        ],
+        [
+          "ārjavam",
+          "straightforwardness"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "Nonviolence, truthfulness, absence of anger, generosity, tranquility, absence of slander, compassion toward beings, absence of greed, gentleness, modesty, and absence of fickleness. Śrīdhara glosses nonviolence as not harming others, truth as speaking what is real, and modesty as shame before doing what should not be done.",
+      "word_for_word": [
+        [
+          "ahiṃsā",
+          "nonviolence"
+        ],
+        [
+          "satyam",
+          "truthfulness"
+        ],
+        [
+          "akrodhaḥ",
+          "absence of anger"
+        ],
+        [
+          "tyāgaḥ",
+          "generosity, renunciation"
+        ],
+        [
+          "śāntiḥ",
+          "tranquility"
+        ],
+        [
+          "apa iśunam",
+          "absence of slander"
+        ],
+        [
+          "dayā",
+          "compassion"
+        ],
+        [
+          "bhūteṣu",
+          "toward beings"
+        ],
+        [
+          "aloluptvam",
+          "absence of greed"
+        ],
+        [
+          "mārdavam",
+          "gentleness"
+        ],
+        [
+          "hrīḥ",
+          "modesty"
+        ],
+        [
+          "acāpalam",
+          "absence of fickleness"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Vigor, forgiveness, fortitude, purity, absence of hatred, and absence of excessive pride—these belong to one born with the divine wealth, O Bhārata. These twenty-six qualities are the sattvic endowments suited to one oriented toward future welfare.",
+      "word_for_word": [
+        [
+          "tejaḥ",
+          "vigor, boldness"
+        ],
+        [
+          "kṣamā",
+          "forgiveness"
+        ],
+        [
+          "dhṛtiḥ",
+          "fortitude"
+        ],
+        [
+          "śaucam",
+          "purity"
+        ],
+        [
+          "adrohaḥ",
+          "absence of hatred"
+        ],
+        [
+          "na atimānitā",
+          "absence of excessive pride"
+        ],
+        [
+          "bhavanti",
+          "are"
+        ],
+        [
+          "sampadam daivīm",
+          "the divine wealth"
+        ],
+        [
+          "abhijātasya",
+          "of one born with"
+        ],
+        [
+          "bhārata",
+          "O Bhārata"
+        ]
+      ]
+    }
+  }
+}
