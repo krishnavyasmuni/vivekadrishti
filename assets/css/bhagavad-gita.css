@@ -143,6 +143,15 @@
   max-width: 100%;
   text-align: left;
 }
+.gita-details[open] {
+  flex: 1 1 100%;
+}
+.gita-details[open] .gita-reveal {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
 .gita-details summary {
   display: inline-block;
   padding: 4px 12px;
@@ -256,7 +265,7 @@ a.gita-chapter-card:hover {
   text-transform: uppercase;
 }
 @media (max-width: 680px) {
-  .gita-content { width: min(100% - 28px, 652px); }
+  .gita-content { width: min(calc(100% - 28px), 652px); }
   .gita-chapter-grid { grid-template-columns: 1fr; }
   .gita-chapter-card { min-height: 0; }
   .gita-sanskrit { font-size: 19px; }
