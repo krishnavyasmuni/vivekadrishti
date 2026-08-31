@@ -89,7 +89,7 @@
     const gitaChapter = Number(gitaRoot.dataset.gitaChapter);
     if (gitaChapter >= 2 && gitaChapter <= 18 && !document.querySelector('script[data-gita-sridhara-all]')) {
       const helper = document.createElement('script');
-      helper.src = '/vivekadrishti/assets/js/bhagavad-gita-sridhara-all.js?v=20260831-all';
+      helper.src = '/vivekadrishti/assets/js/bhagavad-gita-sridhara-all.js?v=20260831-all2';
       helper.async = false;
       helper.dataset.gitaSridharaAll = 'true';
       document.head.appendChild(helper);
