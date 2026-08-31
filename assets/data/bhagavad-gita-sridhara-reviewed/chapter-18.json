@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "chapter": 18,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "15": {
+      "reviewed": true,
+      "translation": "He states that these alone are the causes of all action, with the verse beginning ‘śarīra.’ Action being undertaken by the five already stated is subsumed within just three; thus it is said ‘by body, speech, and mind,’ because action is well known as threefold—bodily, verbal, and mental. Whatever action, righteous or unrighteous, a man performs by the body and the others, these five are the causes of all that action.",
+      "word_for_word": [
+        ["eteṣām", "of these"],
+        ["eva", "alone; indeed"],
+        ["sarva-karma-hetutvam", "being the causes of all action"],
+        ["āha", "he states"],
+        ["śarīra iti", "with the verse beginning ‘śarīra’"],
+        ["yathoktaiḥ", "by those already stated"],
+        ["pañcabhiḥ", "by the five"],
+        ["prārabhyamāṇam", "being undertaken"],
+        ["karma", "action"],
+        ["triṣu eva", "within these three alone"],
+        ["antarbhāvya", "including; subsuming"],
+        ["śarīra-vāṅ-manobhiḥ", "by body, speech, and mind"],
+        ["iti uktam", "thus it is said"],
+        ["śārīram", "bodily"],
+        ["vācikam", "verbal"],
+        ["mānasam", "mental"],
+        ["ca", "and"],
+        ["trividham karma", "threefold action"],
+        ["iti prasiddheḥ", "because it is well known thus"],
+        ["śarīrādibhiḥ", "by the body and the others"],
+        ["yat yat karma", "whatever action"],
+        ["dharmyam vā", "whether righteous"],
+        ["adharmyam vā", "or unrighteous"],
+        ["karoti", "does; performs"],
+        ["naraḥ", "a man"],
+        ["tasya sarvasya karmaṇaḥ", "of all that action"],
+        ["ete pañca hetavaḥ", "these five are the causes"]
+      ]
+    },
+    "16": {
+      "reviewed": true,
+      "translation": "Then what follows? On this he says, with the verse beginning ‘tatra.’ Since in every action these five are the causes, this being so, one who nevertheless sees the Self—which is absolute, without limiting adjuncts, and unattached—as the agent, because his understanding is unrefined through abandoning the teaching of scripture and teacher, is of wrong understanding; that person does not see correctly.",
+      "word_for_word": [
+        ["tataḥ", "then; from that"],
+        ["kim", "what?"],
+        ["ataḥ āha", "on this he says"],
+        ["tatra iti", "with the verse beginning ‘tatra’"],
+        ["tatra", "in that case; there"],
+        ["sarvasmin karmaṇi", "in every action"],
+        ["ete pañca hetavaḥ", "these five are the causes"],
+        ["iti", "thus"],
+        ["evam sati", "this being so"],
+        ["kevalam", "absolute; alone"],
+        ["nirupādhikam", "without limiting adjuncts"],
+        ["asaṅgam", "unattached"],
+        ["ātmānam tu", "but the Self"],
+        ["yaḥ", "who"],
+        ["kartāram", "as the agent; as the doer"],
+        ["paśyati", "sees"],
+        ["śāstra-ācārya-upadeśa-tyāgena", "through abandoning the teaching of scripture and teacher"],
+        ["asaṃskṛta-buddhitvāt", "because his understanding is unrefined; untrained"],
+        ["durmatiḥ", "of wrong understanding"],
+        ["asau", "that person"],
+        ["samyak na paśyati", "does not see correctly"]
+      ]
+    }
+  }
+}
