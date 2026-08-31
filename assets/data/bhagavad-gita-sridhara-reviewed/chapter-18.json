@@ -690,91 +690,135 @@
     },
     "16": {
       "reviewed": true,
-      "translation": "Then what follows? On this he says, with the verse beginning ‘tatra.’ Since in every action these five are the causes, this being so, one who nevertheless sees the Self—which is absolute, without limiting adjuncts, and unattached—as the agent, because his understanding is unrefined through abandoning the teaching of scripture and teacher, is of wrong understanding; that person does not see correctly.",
+      "translation": "Therefore, one who, this being so, sees the Self alone as the doer, because his understanding is untrained, does not see correctly and is of wrong understanding. Śrīdhara explains that scripture and the teacher must train the understanding to recognize the five causes.",
       "word_for_word": [
         [
-          "tataḥ",
-          "then; from that"
-        ],
-        [
-          "kim",
-          "what?"
-        ],
-        [
-          "ataḥ āha",
-          "on this he says"
-        ],
-        [
-          "tatra iti",
-          "with the verse beginning ‘tatra’"
-        ],
-        [
           "tatra",
-          "in that case; there"
-        ],
-        [
-          "sarvasmin karmaṇi",
-          "in every action"
-        ],
-        [
-          "ete pañca hetavaḥ",
-          "these five are the causes"
-        ],
-        [
-          "iti",
-          "thus"
+          "in that case"
         ],
         [
           "evam sati",
           "this being so"
         ],
         [
+          "kartāram",
+          "as the doer"
+        ],
+        [
+          "ātmānam",
+          "the Self"
+        ],
+        [
           "kevalam",
-          "absolute; alone"
-        ],
-        [
-          "nirupādhikam",
-          "without limiting adjuncts"
-        ],
-        [
-          "asaṅgam",
-          "unattached"
-        ],
-        [
-          "ātmānam tu",
-          "but the Self"
+          "alone"
         ],
         [
           "yaḥ",
           "who"
         ],
         [
-          "kartāram",
-          "as the agent; as the doer"
-        ],
-        [
           "paśyati",
           "sees"
         ],
         [
-          "śāstra-ācārya-upadeśa-tyāgena",
-          "through abandoning the teaching of scripture and teacher"
+          "akṛta-buddhitvāt",
+          "because of an untrained understanding"
         ],
         [
-          "asaṃskṛta-buddhitvāt",
-          "because his understanding is unrefined; untrained"
+          "na saḥ paśyati",
+          "that one does not see"
         ],
         [
           "durmatiḥ",
           "of wrong understanding"
+        ]
+      ]
+    },
+    "17": {
+      "reviewed": true,
+      "translation": "One whose sense of “I am the doer” is absent, whose understanding is not tainted, does not kill even by killing these people and is not bound. Śrīdhara explains that such a person sees the body and its instruments as the agents, and therefore is not bound by the action’s fruit.",
+      "word_for_word": [
+        [
+          "yasya",
+          "whose"
         ],
         [
-          "asau",
-          "that person"
+          "na ahaṅkṛtaḥ bhāvaḥ",
+          "sense of “I am the doer” is absent"
         ],
         [
-          "samyak na paśyati",
-          "does not see correctly"
+          "buddhiḥ",
+          "understanding"
+        ],
+        [
+          "na lipyate",
+          "is not tainted"
+        ],
+        [
+          "hatvā api",
+          "even by killing"
+        ],
+        [
+          "saḥ",
+          "that one"
+        ],
+        [
+          "imān lokān",
+          "these people"
+        ],
+        [
+          "na hanti",
+          "does not kill"
+        ],
+        [
+          "na nibadhyate",
+          "is not bound"
+        ]
+      ]
+    },
+    "18": {
+      "reviewed": true,
+      "translation": "Knowledge, the object of knowledge, and the knower are the threefold impulse to action; the instrument, the action, and the doer are the threefold basis of action. Śrīdhara explains the first triad as what prompts action and the second as what directly supports its performance.",
+      "word_for_word": [
+        [
+          "jñānam",
+          "knowledge"
+        ],
+        [
+          "jñeyam",
+          "the object of knowledge"
+        ],
+        [
+          "parijñātā",
+          "the knower"
+        ],
+        [
+          "tri-vidhā",
+          "threefold"
+        ],
+        [
+          "karma-codanā",
+          "impulse or prompting to action"
+        ],
+        [
+          "karaṇam",
+          "the instrument"
+        ],
+        [
+          "karma",
+          "action"
+        ],
+        [
+          "kartā",
+          "the doer"
+        ],
+        [
+          "tri-vidhaḥ",
+          "threefold"
+        ],
+        [
+          "karma-saṅgrahaḥ",
+          "the aggregate or basis of action"
         ]
       ]
     }
