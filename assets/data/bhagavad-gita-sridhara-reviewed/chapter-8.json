@@ -1,0 +1,188 @@
+{
+  "_meta": {
+    "chapter": 8,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "At the end of the previous chapter the Lord mentioned seven subjects—Brahman, adhyātma, and the rest—and Arjuna wishes to know their truth: “What is that Brahman? What is adhyātma? What is action, O Supreme Person? What is called adhibhūta, and what is called adhidaiva?”",
+      "word_for_word": [
+        [
+          "pūrva-adhyāya-ante",
+          "at the end of the previous chapter"
+        ],
+        [
+          "bhagavatā upakṣiptānām",
+          "of the subjects mentioned by the Lord"
+        ],
+        [
+          "brahma-adhyātma-ādi-saptānām",
+          "of the seven beginning with Brahman and adhyātma"
+        ],
+        [
+          "tattvam jijñāsuḥ",
+          "desiring to know the truth"
+        ],
+        [
+          "kim tat brahma",
+          "what is that Brahman"
+        ],
+        [
+          "kim adhyātmam",
+          "what is adhyātma"
+        ],
+        [
+          "kim karma",
+          "what is action"
+        ],
+        [
+          "puruṣa-uttama",
+          "O Supreme Person"
+        ],
+        [
+          "adhibhūtam",
+          "what is adhibhūta"
+        ],
+        [
+          "adhidaivam",
+          "what is adhidaiva"
+        ],
+        [
+          "kim ucyate",
+          "what is called"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "“Who is adhiyajña here in this body, O Madhusūdana? How does he abide in this body and preside over the sacrifice? And how are You to be known at the time of departure by people whose minds are disciplined?” Śrīdhara explains that “sacrifice” stands for all action; Arjuna asks who presides over it, impels it, and gives its fruit, and by what means that Lord is known at death.",
+      "word_for_word": [
+        [
+          "adhiyajñaḥ",
+          "who is the presiding Lord of sacrifice"
+        ],
+        [
+          "katham",
+          "how"
+        ],
+        [
+          "kaḥ atra dehe asmin",
+          "who here in this body"
+        ],
+        [
+          "adhisṭhātā",
+          "the presider"
+        ],
+        [
+          "prayojakaḥ",
+          "the impeller"
+        ],
+        [
+          "phala-dātā",
+          "the giver of the fruit"
+        ],
+        [
+          "madhusūdana",
+          "O Madhusūdana"
+        ],
+        [
+          "prayāṇa-kāle",
+          "at the time of departure"
+        ],
+        [
+          "niyata-cittaiḥ puruṣaiḥ",
+          "by people whose minds are disciplined"
+        ],
+        [
+          "katham kena upāyena",
+          "how, by what means"
+        ],
+        [
+          "jñeyaḥ asi",
+          "are You to be known"
+        ],
+        [
+          "yajña-grahaṇam",
+          "the mention of sacrifice"
+        ],
+        [
+          "sarva-karmāṇām upalakṣaṇam",
+          "is an indication of all actions"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "The Blessed Lord answered in the order of the questions: “The imperishable Supreme is Brahman; one’s own nature is called adhyātma; the outpouring that causes the coming-into-being and growth of beings is called action.” Śrīdhara explains that “imperishable” means not moving or decaying; although the individual living being may also be called imperishable, the word “supreme” identifies the root cause of the world, Brahman. The Lord’s own nature becoming the living being and abiding in a body as its enjoyer is called adhyātma. “Outpouring” is sacrifice, the giving of material substance to a deity, and by extension all action that causes the origin and development of beings.",
+      "word_for_word": [
+        [
+          "akṣaram",
+          "the imperishable"
+        ],
+        [
+          "na kṣarati na calati",
+          "does not decay or move"
+        ],
+        [
+          "paramam",
+          "supreme"
+        ],
+        [
+          "jagataḥ mūla-kāraṇam",
+          "the root cause of the world"
+        ],
+        [
+          "tat brahma",
+          "that is Brahman"
+        ],
+        [
+          "sva-bhāvaḥ",
+          "one’s own nature"
+        ],
+        [
+          "brahmaṇaḥ aṃśataḥ jīva-rūpeṇa bhavanam",
+          "Brahman’s becoming in the form of the living being"
+        ],
+        [
+          "ātmānam deham adhikṛtya",
+          "presiding over the body as the Self"
+        ],
+        [
+          "bhoktṛtvena vartamānaḥ",
+          "existing as the enjoyer"
+        ],
+        [
+          "adhyātma-śabdena ucyate",
+          "is called by the word adhyātma"
+        ],
+        [
+          "bhūta-bhāva-udbhava-karaḥ",
+          "causing the coming-into-being of beings"
+        ],
+        [
+          "udbhavaḥ",
+          "arising / growth"
+        ],
+        [
+          "visargaḥ",
+          "outpouring / sacrifice"
+        ],
+        [
+          "devatā-uddeśena dravya-tyāgaḥ",
+          "giving material substance for a deity"
+        ],
+        [
+          "sarva-karmāṇām upalakṣaṇam",
+          "an indication of all actions"
+        ],
+        [
+          "karma-saṃjñitaḥ",
+          "called action"
+        ]
+      ]
+    }
+  }
+}
