@@ -1,4 +1,5 @@
-:root{--gita-paper:#f4f4f4;--gita-ink:#3c362e;--gita-teal:#00787a;--gita-red:#a92727;--gita-purple:#6731fb;--gita-line:rgba(119,119,119,.16)}
+:root{--gita-paper:#f7f6f4;--gita-ink:#3c362e;--gita-teal:#00787a;--gita-red:#a92727;--gita-purple:#6731fb;--gita-line:rgba(119,119,119,.16)}
+.gita-page .site-header{border-bottom:0!important;box-shadow:none!important}
 .gita-page .site-main{width:min(1120px,100%);max-width:none;margin:0 auto;padding:0;background:#2b261f}
 .gita-page .article-shell{width:100%;max-width:none;margin:0;padding:0;background:transparent}
 .gita-page .article-body{width:min(920px,100%);max-width:none;margin:0 auto;padding:0 0 70px;background:var(--gita-paper);color:var(--gita-ink);font-family:Merriweather,Georgia,serif}
@@ -28,7 +29,7 @@
 .gita-details summary{list-style:none;user-select:none}.gita-details summary::-webkit-details-marker{display:none}.gita-details summary::marker{display:none}
 .gita-reveal{margin-top:8px;padding:10px 13px;border:1px solid var(--gita-line);background:rgba(255,255,255,.56);color:var(--gita-ink);font-size:13px;line-height:1.55;overflow-wrap:anywhere}
 .gita-reveal p{margin:0}.gita-reveal em{color:#514a41}
-.gita-commentary{display:block!important;margin:14px 0 0;padding:0;border:0;background:transparent;color:var(--gita-ink);font-size:16px;line-height:1.48;text-align:left}
+.gita-commentary{display:block!important;margin:14px 0 0;padding:0;border:0;background:transparent;color:var(--gita-ink);font-size:16px;line-height:1.55;text-align:left}
 .gita-commentary h3{display:inline;margin:0;color:#2f7f82;font-family:Vollkorn,Georgia,serif;font-size:17px;font-weight:700;line-height:1.25}
 .gita-commentary p{display:inline;margin:0}.gita-commentary p:before{content:" "}
 .gita-commentary .gita-no-source{color:#6e665c;font-style:italic}
