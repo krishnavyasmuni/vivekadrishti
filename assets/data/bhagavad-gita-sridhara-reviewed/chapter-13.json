@@ -135,6 +135,152 @@
           "my view"
         ]
       ]
+    },
+    "4": {
+      "reviewed": true,
+      "translation": "Hear briefly from Me what that field is, of what nature it is, what its changes are, from what it arises, and who the knower is and what his power is.",
+      "word_for_word": [
+        [
+          "tat kṣetram",
+          "that field"
+        ],
+        [
+          "yat",
+          "what it is"
+        ],
+        [
+          "yādṛk",
+          "of what nature"
+        ],
+        [
+          "ca",
+          "and"
+        ],
+        [
+          "yad-vikāri",
+          "what its changes are"
+        ],
+        [
+          "yataḥ",
+          "from what"
+        ],
+        [
+          "ca",
+          "and"
+        ],
+        [
+          "yat",
+          "it arises"
+        ],
+        [
+          "saḥ",
+          "that one"
+        ],
+        [
+          "yaḥ",
+          "who"
+        ],
+        [
+          "yat-prabhāvaḥ",
+          "of what power"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "samāsena",
+          "briefly, in summary"
+        ],
+        [
+          "me śṛṇu",
+          "hear from Me"
+        ]
+      ]
+    },
+    "5": {
+      "reviewed": true,
+      "translation": "This field and its subject have been sung in many ways by sages, separately in various Vedic meters, and also in the reasoned and decisive statements of the Brahma-sūtras. Śrīdhara includes both the Upaniṣadic sentences that establish Brahman’s characteristics and the aphorisms that establish it through reasoning.",
+      "word_for_word": [
+        [
+          "ṛṣibhiḥ",
+          "by sages"
+        ],
+        [
+          "bahudhā",
+          "in many ways"
+        ],
+        [
+          "gītam",
+          "sung, taught"
+        ],
+        [
+          "chandobhiḥ",
+          "by Vedic meters or the Vedas"
+        ],
+        [
+          "vividhaiḥ",
+          "various"
+        ],
+        [
+          "pṛthak",
+          "separately"
+        ],
+        [
+          "brahma-sūtra-padaiḥ",
+          "by the statements or aphorisms of the Brahma-sūtras"
+        ],
+        [
+          "hetumadbhiḥ",
+          "with reasoning"
+        ],
+        [
+          "vinicitaiḥ",
+          "decisive, ascertained"
+        ]
+      ]
+    },
+    "6": {
+      "reviewed": true,
+      "translation": "The five great elements, ego, intellect, the Unmanifest, the ten senses, the one mind, and the five objects of the senses.",
+      "word_for_word": [
+        [
+          "mahā-bhūtāni",
+          "the five great elements"
+        ],
+        [
+          "ahaṅkāraḥ",
+          "ego"
+        ],
+        [
+          "buddhiḥ",
+          "intellect"
+        ],
+        [
+          "avyaktam",
+          "the Unmanifest, primordial Nature"
+        ],
+        [
+          "indriyāṇi daśa",
+          "the ten senses"
+        ],
+        [
+          "ekam",
+          "one"
+        ],
+        [
+          "manaḥ",
+          "the mind"
+        ],
+        [
+          "pañca",
+          "five"
+        ],
+        [
+          "indriya-gocarāḥ",
+          "objects of the senses"
+        ]
+      ]
     }
   }
 }
