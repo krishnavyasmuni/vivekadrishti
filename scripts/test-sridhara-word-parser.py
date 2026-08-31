@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import re
+from functools import lru_cache
 from pathlib import Path
 
 from indic_transliteration import sanscript
@@ -14,7 +15,8 @@ from sanskrit_parser.parser.sandhi_analyzer import LexicalSandhiAnalyzer
 SOURCE = Path('assets/data/bhagavad-gita-sridhara-source/chapter-18.json')
 OUT = Path('assets/data/bhagavad-gita-sridhara-source/parser-test-18.json')
 
-parser = Parser(input_encoding=sanscript.SLP1, output_encoding=sanscript.SLP1, score=False, replace_ending_visarga='s')
+# Lexical scoring ranks plausible Sanskrit splits above merely possible ones.
+parser = Parser(input_encoding=sanscript.SLP1, output_encoding=sanscript.SLP1, score=True, replace_ending_visarga='s')
 analyzer = LexicalSandhiAnalyzer()
 
 
@@ -26,41 +28,45 @@ def clean_to_slp(text: str) -> list[str]:
     return [x for x in re.split(r'\s+', slp) if x]
 
 
+@lru_cache(maxsize=None)
 def tags_for(unit: str):
     obj = SanskritObject(unit, encoding=sanscript.SLP1)
     try:
         raw = analyzer.getMorphologicalTags(obj) or []
     except Exception:
-        return []
-    return [
-        {
-            'lemma': str(base).split('#', 1)[0],
-            'tags': sorted(str(tag) for tag in tags),
-        }
+        return ()
+    return tuple(
+        (
+            str(base).split('#', 1)[0],
+            tuple(sorted(str(tag) for tag in tags)),
+        )
         for base, tags in raw
-    ]
+    )
 
 
-def split_if_needed(raw: str) -> list[str]:
-    # A valid inflected word is already a word: do not split it merely because
-    # some lower-ranked sandhi analysis can manufacture smaller pieces.
+@lru_cache(maxsize=None)
+def split_if_needed(raw: str) -> tuple[str, ...]:
+    # If the supplied orthographic unit is already a valid inflected Sanskrit
+    # word, preserve it. Split only units that require sandhi resolution.
     if tags_for(raw):
-        return [raw]
+        return (raw,)
     try:
-        candidates = list(parser.split(raw, limit=20))
+        candidates = list(parser.split(raw, limit=20) or [])
     except Exception:
-        return [raw]
-    ranked = []
+        return (raw,)
+
+    # Parser output is already lexical-score ranked. Reject obvious junk and
+    # take the first plausible candidate rather than inventing our own ranking.
     for candidate in candidates:
-        pieces = [str(x) for x in candidate.split]
+        pieces = tuple(str(x) for x in candidate.split)
         if not pieces:
             continue
-        # Prefer the fewest sensible lexical pieces. Strongly reject the
-        # one-letter junk splits that ruined the first experiment.
-        penalty = len(pieces) * 10 + sum(80 for x in pieces if len(x) <= 1)
-        penalty += sum(20 for x in pieces if not tags_for(x))
-        ranked.append((penalty, pieces))
-    return min(ranked, default=(0, [raw]), key=lambda x: x[0])[1]
+        if any(len(x) <= 1 for x in pieces):
+            continue
+        if sum(1 for x in pieces if not tags_for(x)) > max(1, len(pieces) // 3):
+            continue
+        return pieces
+    return (raw,)
 
 
 def analyse(text: str):
@@ -68,11 +74,11 @@ def analyse(text: str):
     for raw in clean_to_slp(text):
         for piece in split_if_needed(raw):
             analyses = tags_for(piece)
-            first = analyses[0] if analyses else {'lemma': piece, 'tags': []}
+            lemma, tags = analyses[0] if analyses else (piece, ())
             out.append({
                 'surface_slp1': piece,
-                'lemma_slp1': first['lemma'],
-                'tags': first['tags'],
+                'lemma_slp1': lemma,
+                'tags': list(tags),
             })
     return out
 
