@@ -1,0 +1,192 @@
+{
+  "_meta": {
+    "chapter": 6,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Śrīdhara opens the meditation teaching by preventing an excessive rush into renunciation: even with a purified mind, liberation does not come from renunciation alone without meditation. The person who performs the action that ought to be performed, without relying on or expecting its fruit, is the true renouncer and yogī—not the person who merely gives up fire-based rites, nor the inactive person who gives up rites not based on fire.",
+      "word_for_word": [
+        [
+          "citte śuddhe api",
+          "even when the mind is purified"
+        ],
+        [
+          "dhyānam vinā",
+          "without meditation"
+        ],
+        [
+          "saṃnyāsa-mātrataḥ",
+          "merely from renunciation"
+        ],
+        [
+          "muktiḥ syāt",
+          "liberation would occur"
+        ],
+        [
+          "yogaṃ prapañcayitum",
+          "to elaborate yoga"
+        ],
+        [
+          "karma-phalam anāśritaḥ",
+          "not relying on the fruit of action"
+        ],
+        [
+          "anapekṣamāṇaḥ",
+          "not expecting"
+        ],
+        [
+          "avaśyaṃ kartavyatayā vihitam karma",
+          "action prescribed as necessarily to be done"
+        ],
+        [
+          "yaḥ karoti",
+          "whoever performs"
+        ],
+        [
+          "saḥ saṃnyāsī ca yogī ca",
+          "that person is both a renouncer and a yogī"
+        ],
+        [
+          "na niragniḥ",
+          "not one without fire"
+        ],
+        [
+          "agni-sādhya-iṣṭa-ākhyā-karma-tyāgī",
+          "one who has abandoned rites called offerings accomplished by fire"
+        ],
+        [
+          "na ca akriyaḥ",
+          "nor one who is inactive"
+        ],
+        [
+          "anagni-sādhya-pūrta-ākhyā-karma-tyāgī",
+          "one who has abandoned rites called works of public merit not accomplished by fire"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "Śrīdhara makes karma-yoga itself take the form of renunciation: “Know what they call renunciation to be yoga.” The reason indicated by the word “for” applies to yoga as well. No person who has not renounced the resolve concerning the fruit of action can be a yogī. Because karma-yoga and renunciation share the abandonment of fruit-oriented resolve, the same person is a renouncer; and because that abandonment removes mental distraction, he is also a yogī.",
+      "word_for_word": [
+        [
+          "kutaḥ",
+          "for what reason"
+        ],
+        [
+          "yam saṃnyāsam iti prāhuḥ",
+          "what they call renunciation"
+        ],
+        [
+          "yogam tam viddhi",
+          "know that to be yoga"
+        ],
+        [
+          "saṃnyāsa eva atyarecayat",
+          "renunciation alone excelled"
+        ],
+        [
+          "kevalāt phala-saṃnyasanāt",
+          "because of merely giving up the fruit"
+        ],
+        [
+          "yogaḥ",
+          "yoga"
+        ],
+        [
+          "na saṃnyastaḥ phala-saṅkalpaḥ yena",
+          "by whom the resolve concerning the fruit has not been renounced"
+        ],
+        [
+          "karmaniṣṭhaḥ vā jñānaniṣṭhaḥ vā",
+          "whether established in action or established in knowledge"
+        ],
+        [
+          "kaścit api na hi yogī bhavati",
+          "no one at all becomes a yogī"
+        ],
+        [
+          "phala-saṅkalpa-tyāga-sāmyāt",
+          "because of the common abandonment of fruit-oriented resolve"
+        ],
+        [
+          "citta-vikṣepa-abhāva",
+          "absence of mental distraction"
+        ],
+        [
+          "saṃnyāsī ca yogī ca",
+          "both a renouncer and a yogī"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Śrīdhara gives the limit of karma-yoga, answering the thought that action must be practiced for the whole of life. For the sage who wishes to ascend to knowledge-yoga, action is said to be the cause, because it purifies the mind. But for that same person once established in yoga—steadfast in knowledge—tranquility, samādhi, and the cessation of distracting action are said to be the cause of the maturation of knowledge.",
+      "word_for_word": [
+        [
+          "tad avadhim",
+          "its limit"
+        ],
+        [
+          "āruruḳṣoḥ",
+          "of one who wishes to ascend"
+        ],
+        [
+          "muner yogam",
+          "of the sage’s yoga"
+        ],
+        [
+          "jñāna-yogam āroḍhum",
+          "to ascend to knowledge-yoga"
+        ],
+        [
+          "prāptum icchoḥ",
+          "of one who wishes to attain"
+        ],
+        [
+          "puṃsaḥ",
+          "of a person"
+        ],
+        [
+          "karma kāraṇam ucyate",
+          "action is said to be the cause"
+        ],
+        [
+          "citta-śuddhi-karatvāt",
+          "because it purifies the mind"
+        ],
+        [
+          "yoga-ārūḍhasya",
+          "of one established in yoga"
+        ],
+        [
+          "tasya eva",
+          "of that same person"
+        ],
+        [
+          "jñāna-niṣṭhasya",
+          "steadfast in knowledge"
+        ],
+        [
+          "śamaḥ",
+          "tranquility / cessation"
+        ],
+        [
+          "samādhiḥ",
+          "samādhi"
+        ],
+        [
+          "citta-vikṣepaka-karma-uparamaḥ",
+          "cessation of action that distracts the mind"
+        ],
+        [
+          "jñāna-paripāka-kāraṇam",
+          "the cause of the maturation of knowledge"
+        ]
+      ]
+    }
+  }
+}
