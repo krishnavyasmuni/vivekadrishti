@@ -2,10 +2,9 @@
 """Generate candidate English data for Śrīdhara Svāmī's Bhagavad Gītā commentary.
 
 The Sanskrit source is the open vedicscriptures/bhagavad-gita dataset already used
-by the site. Candidate English is generated from that Sanskrit with AI4Bharat's
-official MIT-licensed IndicTrans2 Indic-to-English model. Generated files remain
-unreviewed and the live site refuses to display them until they are explicitly
-reviewed and marked as such.
+by the site. Candidate English is generated from that Sanskrit with Meta's public
+NLLB-200 model, which includes Sanskrit (san_Deva). Generated files remain
+unreviewed and the live site refuses to display them until explicitly reviewed.
 """
 
 from __future__ import annotations
@@ -17,13 +16,12 @@ from pathlib import Path
 from typing import Iterable
 
 import torch
-from IndicTransToolkit.processor import IndicProcessor
 from indic_transliteration import sanscript
 from indic_transliteration.sanscript import transliterate
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 COUNTS = [47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 34, 27, 20, 24, 28, 78]
-MODEL_NAME = "ai4bharat/indictrans2-indic-en-dist-200M"
+MODEL_NAME = "facebook/nllb-200-distilled-600M"
 SRC_LANG = "san_Deva"
 TGT_LANG = "eng_Latn"
 
@@ -32,6 +30,7 @@ def clean_commentary(text: str) -> str:
     text = (text or "").replace("\u00a0", " ").strip()
     text = re.sub(r"^\s*[।॥]{1,2}\s*\d+\s*[.]\s*\d+\s*[।॥]{0,2}\s*", "", text)
     text = re.sub(r"^\s*[।॥]{1,2}\s*\d+\s*[।॥]{0,2}\s*", "", text)
+    text = re.sub(r"^\s*Sanskrit Commentary By Sri Sridhara Swami\s*", "", text, flags=re.I)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -39,8 +38,7 @@ def no_commentary(text: str) -> bool:
     return not text or bool(re.fullmatch(r"no commentary\.?", text, flags=re.I))
 
 
-def split_sentences(text: str, max_words: int = 42) -> list[str]:
-    """Split prose at Sanskrit punctuation, then cap very long pieces."""
+def split_sentences(text: str, max_words: int = 34) -> list[str]:
     text = re.sub(r"([।॥])", r"\1\n", text)
     raw = [x.strip() for x in re.split(r"[\n]+", text) if x.strip()]
     result: list[str] = []
@@ -55,9 +53,8 @@ def split_sentences(text: str, max_words: int = 42) -> list[str]:
 
 
 def split_phrases(text: str, target_words: int = 5) -> list[str]:
-    """Create compact phrase units for the site's word-for-word presentation."""
     phrases: list[str] = []
-    for sentence in split_sentences(text, max_words=32):
+    for sentence in split_sentences(text, max_words=28):
         sentence = sentence.strip(" ।॥")
         if not sentence:
             continue
@@ -66,11 +63,11 @@ def split_phrases(text: str, target_words: int = 5) -> list[str]:
             words = piece.split()
             if len(words) <= target_words + 2:
                 phrases.append(piece)
-                continue
-            for i in range(0, len(words), target_words):
-                chunk = " ".join(words[i : i + target_words]).strip()
-                if chunk:
-                    phrases.append(chunk)
+            else:
+                for i in range(0, len(words), target_words):
+                    chunk = " ".join(words[i : i + target_words]).strip()
+                    if chunk:
+                        phrases.append(chunk)
     return phrases
 
 
@@ -84,21 +81,20 @@ def deva_to_iast(text: str) -> str:
 class Translator:
     def __init__(self, model_name: str = MODEL_NAME) -> None:
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-        self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name, trust_remote_code=True).to(self.device).eval()
-        self.processor = IndicProcessor(inference=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, src_lang=SRC_LANG)
+        self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(self.device).eval()
+        self.forced_bos_token_id = self.tokenizer.convert_tokens_to_ids(TGT_LANG)
         print(f"translation device: {self.device}", flush=True)
 
-    def batch(self, sentences: Iterable[str], batch_size: int = 16) -> list[str]:
+    def batch(self, sentences: Iterable[str], batch_size: int = 8) -> list[str]:
         items = [s.strip() for s in sentences if s and s.strip()]
         if not items:
             return []
         out_all: list[str] = []
         for start in range(0, len(items), batch_size):
             batch = items[start : start + batch_size]
-            prepared = self.processor.preprocess_batch(batch, src_lang=SRC_LANG, tgt_lang=TGT_LANG)
             encoded = self.tokenizer(
-                prepared,
+                batch,
                 truncation=True,
                 padding=True,
                 max_length=256,
@@ -108,13 +104,13 @@ class Translator:
             with torch.inference_mode():
                 generated = self.model.generate(
                     **encoded,
-                    num_beams=1,
+                    forced_bos_token_id=self.forced_bos_token_id,
+                    num_beams=3,
                     do_sample=False,
-                    max_length=256,
+                    max_new_tokens=256,
                     no_repeat_ngram_size=3,
                 )
             decoded = self.tokenizer.batch_decode(generated, skip_special_tokens=True)
-            decoded = self.processor.postprocess_batch(decoded, lang=TGT_LANG)
             out_all.extend(re.sub(r"\s+", " ", x).strip() for x in decoded)
             print(f"translated {min(start + len(batch), len(items))}/{len(items)} units", flush=True)
         return out_all
@@ -164,18 +160,14 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
         all_phrases.extend(phrase_units)
 
     print(f"chapter {chapter}: {len(all_sentences)} sentence units, {len(all_phrases)} phrase units", flush=True)
-    sentence_english = translator.batch(all_sentences, batch_size=16)
-    phrase_english = translator.batch(all_phrases, batch_size=24)
+    sentence_english = translator.batch(all_sentences, batch_size=8)
+    phrase_english = translator.batch(all_phrases, batch_size=12)
 
     verses: dict[str, dict] = {}
     for verse in range(1, COUNTS[chapter - 1] + 1):
         record = records[verse]
         if record["no_commentary"]:
-            verses[str(verse)] = {
-                "translation": "No commentary.",
-                "word_for_word": [],
-            }
-            print(f"{chapter}.{verse}: no commentary", flush=True)
+            verses[str(verse)] = {"translation": "No commentary.", "word_for_word": []}
             continue
 
         sentence_start = record["sentence_start"]
@@ -188,14 +180,10 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
         pairs = []
         for src, gloss in zip(record["phrase_units"], phrase_glosses):
             gloss = re.sub(r"\s+", " ", gloss).strip().rstrip(".")
-            if not gloss:
-                continue
-            pairs.append([deva_to_iast(src).strip(" |।॥"), gloss])
+            if gloss:
+                pairs.append([deva_to_iast(src).strip(" |।॥"), gloss])
 
-        verses[str(verse)] = {
-            "translation": translation,
-            "word_for_word": pairs,
-        }
+        verses[str(verse)] = {"translation": translation, "word_for_word": pairs}
         print(f"{chapter}.{verse}: {record['sentence_count']} sentence units, {len(pairs)} phrase glosses", flush=True)
 
     return {
@@ -205,7 +193,7 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
             "source_field": "srid.sc",
             "translation_model": MODEL_NAME,
             "reviewed": False,
-            "method": "candidate machine-assisted literal rendering from public-domain Sanskrit; blocked from live display until reviewed",
+            "method": "candidate machine-assisted rendering from public-domain Sanskrit; blocked from live display until reviewed",
         },
         "verses": verses,
     }
@@ -213,7 +201,7 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source", required=True, type=Path, help="Path to a clone of vedicscriptures/bhagavad-gita")
+    parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--output", type=Path, default=Path("assets/data/bhagavad-gita-sridhara"))
     parser.add_argument("--chapters", nargs="*", type=int, default=list(range(2, 19)))
     args = parser.parse_args()
