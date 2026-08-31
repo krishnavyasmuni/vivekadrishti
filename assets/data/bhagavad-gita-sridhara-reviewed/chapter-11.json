@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "chapter": 11,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "For my benefit you have spoken the supreme secret called spiritual teaching; by that word of Yours my delusion has departed.",
+      "word_for_word": [
+        [
+          "mad-anugrahāya",
+          "for my benefit, for Your favor toward me"
+        ],
+        [
+          "paramam guhyam",
+          "the supreme secret"
+        ],
+        [
+          "adhyātma-saṃjñitam",
+          "called spiritual teaching"
+        ],
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "tvayā uktam vacaḥ",
+          "word spoken by You"
+        ],
+        [
+          "tena",
+          "by that"
+        ],
+        [
+          "mohaḥ",
+          "delusion"
+        ],
+        [
+          "ayam",
+          "this"
+        ],
+        [
+          "vigataḥ",
+          "has departed"
+        ],
+        [
+          "mama",
+          "of me"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "I have heard from You in detail about the creation and dissolution of beings, O lotus-eyed one, and also about Your imperishable greatness.",
+      "word_for_word": [
+        [
+          "bhava-apyayau",
+          "creation and dissolution"
+        ],
+        [
+          "hi",
+          "indeed"
+        ],
+        [
+          "bhūtānām",
+          "of beings"
+        ],
+        [
+          "śrutau",
+          "heard"
+        ],
+        [
+          "vistaraśaḥ",
+          "in detail"
+        ],
+        [
+          "mayā",
+          "by me"
+        ],
+        [
+          "tvattaḥ",
+          "from You"
+        ],
+        [
+          "kamala-patra-akṣa",
+          "O lotus-eyed one"
+        ],
+        [
+          "māhātmyam",
+          "greatness"
+        ],
+        [
+          "avyayam",
+          "imperishable"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "It is exactly as You say, O Supreme Lord. Yet I desire to see Your sovereign form, O Supreme Person.",
+      "word_for_word": [
+        [
+          "evam etat",
+          "so it is exactly"
+        ],
+        [
+          "yathā āttha",
+          "as You have said"
+        ],
+        [
+          "tvam",
+          "You"
+        ],
+        [
+          "ātmānam",
+          "Yourself"
+        ],
+        [
+          "parama-īśvara",
+          "O Supreme Lord"
+        ],
+        [
+          "draṣṭum icchāmi",
+          "I desire to see"
+        ],
+        [
+          "te rūpam",
+          "Your form"
+        ],
+        [
+          "aiśvaram",
+          "sovereign, majestic"
+        ],
+        [
+          "puruṣa-uttama",
+          "O Supreme Person"
+        ]
+      ]
+    }
+  }
+}
