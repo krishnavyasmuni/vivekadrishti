@@ -663,6 +663,128 @@
           "is born"
         ]
       ]
+    },
+    "16": {
+      "reviewed": true,
+      "translation": "The fruit of good action is said to be sattvic and pure; the fruit of rajas is pain, while the fruit of tamas is ignorance. Śrīdhara notes that “good action” here means action dominated by sattva.",
+      "word_for_word": [
+        [
+          "karmaṇaḥ",
+          "of action"
+        ],
+        [
+          "sukṛtasya",
+          "of good action"
+        ],
+        [
+          "sāttvikam",
+          "sattvic"
+        ],
+        [
+          "nirmalam phalam",
+          "pure fruit"
+        ],
+        [
+          "āhuḥ",
+          "they say"
+        ],
+        [
+          "rajasaḥ",
+          "of rajas"
+        ],
+        [
+          "duḥkham",
+          "pain"
+        ],
+        [
+          "ajñānam",
+          "ignorance"
+        ],
+        [
+          "tamasaḥ",
+          "of tamas"
+        ]
+      ]
+    },
+    "17": {
+      "reviewed": true,
+      "translation": "From sattva knowledge arises; from rajas, greed alone; from tamas arise negligence and delusion, and also ignorance.",
+      "word_for_word": [
+        [
+          "sattvāt",
+          "from sattva"
+        ],
+        [
+          "sañjāyate",
+          "arises"
+        ],
+        [
+          "jñānam",
+          "knowledge"
+        ],
+        [
+          "rajasaḥ",
+          "from rajas"
+        ],
+        [
+          "lobhaḥ",
+          "greed"
+        ],
+        [
+          "pramāda",
+          "negligence"
+        ],
+        [
+          "moha",
+          "delusion"
+        ],
+        [
+          "tamasaḥ",
+          "from tamas"
+        ],
+        [
+          "bhavataḥ",
+          "arise"
+        ],
+        [
+          "ajñānam",
+          "ignorance"
+        ]
+      ]
+    },
+    "18": {
+      "reviewed": true,
+      "translation": "Those established in sattva go upward; the rajasic remain in the middle; those established in the lowest guṇa and its activity go downward, the tamasic.",
+      "word_for_word": [
+        [
+          "ūrdhvam gacchanti",
+          "go upward"
+        ],
+        [
+          "sattva-sthāḥ",
+          "those established in sattva"
+        ],
+        [
+          "madhye tiṣṭhanti",
+          "remain in the middle"
+        ],
+        [
+          "rājasāḥ",
+          "the rajasic"
+        ],
+        [
+          "jaghanya-guṇa-vṛtti-sthāḥ",
+          "those established in the activity of the lowest guṇa"
+        ],
+        [
+          "adhaḥ gacchanti",
+          "go downward"
+        ],
+        [
+          "tāmasāḥ",
+          "the tamasic"
+        ]
+      ]
     }
   }
 }
