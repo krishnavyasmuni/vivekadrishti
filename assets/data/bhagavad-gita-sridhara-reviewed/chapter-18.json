@@ -821,6 +821,144 @@
           "the aggregate or basis of action"
         ]
       ]
+    },
+    "19": {
+      "reviewed": true,
+      "translation": "Knowledge, action, and the doer are each declared to be threefold according to the distinction of the guṇas in the Sāṅkhya teaching. Hear them as they are. Śrīdhara notes that this threefoldness denies independent agency to the Self apart from the limiting influence of the guṇas.",
+      "word_for_word": [
+        [
+          "jñānam",
+          "knowledge"
+        ],
+        [
+          "karma",
+          "action"
+        ],
+        [
+          "kartā",
+          "the doer"
+        ],
+        [
+          "tri-dhā eva",
+          "threefold indeed"
+        ],
+        [
+          "guṇa-bhedataḥ",
+          "according to the distinction of the guṇas"
+        ],
+        [
+          "procyate",
+          "is declared"
+        ],
+        [
+          "guṇa-saṅkhyāne",
+          "in the Sāṅkhya teaching"
+        ],
+        [
+          "yathā-vat",
+          "as they are"
+        ],
+        [
+          "śṛṇu",
+          "hear"
+        ],
+        [
+          "tāni",
+          "them also"
+        ]
+      ]
+    },
+    "20": {
+      "reviewed": true,
+      "translation": "Know as sattvic the knowledge by which one sees a single, imperishable reality, undivided among the divided beings.",
+      "word_for_word": [
+        [
+          "sarva-bhūteṣu",
+          "in all beings"
+        ],
+        [
+          "yena",
+          "by which"
+        ],
+        [
+          "ekam bhāvam",
+          "a single reality"
+        ],
+        [
+          "avyayam",
+          "imperishable"
+        ],
+        [
+          "īkṣate",
+          "one sees"
+        ],
+        [
+          "avibhaktam",
+          "undivided"
+        ],
+        [
+          "vibhakteṣu",
+          "among the divided"
+        ],
+        [
+          "tat jñānam",
+          "that knowledge"
+        ],
+        [
+          "sāttvikam",
+          "sattvic"
+        ],
+        [
+          "viddhi",
+          "know"
+        ]
+      ]
+    },
+    "21": {
+      "reviewed": true,
+      "translation": "But know as rajasic the knowledge by which one sees, in all beings, many distinct realities as separate from one another.",
+      "word_for_word": [
+        [
+          "pṛthaktvena",
+          "as separate"
+        ],
+        [
+          "tu",
+          "but"
+        ],
+        [
+          "yat jñānam",
+          "the knowledge which"
+        ],
+        [
+          "nānā-bhāvān",
+          "many realities"
+        ],
+        [
+          "pṛthag-vidhān",
+          "distinct, separate"
+        ],
+        [
+          "vetti",
+          "knows"
+        ],
+        [
+          "sarveṣu bhūteṣu",
+          "in all beings"
+        ],
+        [
+          "tat jñānam",
+          "that knowledge"
+        ],
+        [
+          "rājasam",
+          "rajasic"
+        ],
+        [
+          "viddhi",
+          "know"
+        ]
+      ]
     }
   }
 }
