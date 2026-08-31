@@ -245,7 +245,7 @@
           "the son of Subhadrā, Abhimanyu"
         ],
         [
-          "drau pade yāḥ",
+          "draupadeyāḥ",
           "the sons of Draupadī"
         ],
         [
@@ -393,7 +393,7 @@
       "translation": "Our force, though protected by Bhīṣma, appears insufficient, while this force of theirs, protected by Bhīma, appears sufficient. Śrīdhara explains this as Duryodhana’s anxious judgment: Bhīṣma is favorable to both sides, whereas Bhīma is wholly devoted to his own side.",
       "word_for_word": [
         [
-          "apar yāptam",
+          "aparyāptam",
           "insufficient"
         ],
         [
@@ -527,7 +527,7 @@
           "conches"
         ],
         [
-          "bher yaḥ",
+          "bheryaḥ",
           "kettledrums"
         ],
         [
@@ -547,7 +547,7 @@
           "that sound"
         ],
         [
-          "tumul aḥ",
+          "tumulaḥ",
           "tumultuous"
         ]
       ]
@@ -561,7 +561,7 @@
           "then"
         ],
         [
-          "śvetaiḥ hayaiḥ yukt e",
+          "śvetair hayair yukte",
           "yoked with white horses"
         ],
         [
@@ -585,7 +585,7 @@
           "and indeed"
         ],
         [
-          "div yau śaṅkhau",
+          "divyau śaṅkhau",
           "divine conches"
         ],
         [
@@ -721,7 +721,7 @@
           "Drupada"
         ],
         [
-          "drau pade yāḥ",
+          "draupadeyāḥ",
           "the sons of Draupadī"
         ],
         [
@@ -783,7 +783,7 @@
           "and indeed"
         ],
         [
-          "tumul aḥ",
+          "tumulaḥ",
           "tumultuous"
         ],
         [
@@ -1045,7 +1045,7 @@
           "standing"
         ],
         [
-          "pitr̄n",
+          "pitṝn",
           "fathers, paternal uncles"
         ],
         [
@@ -1429,7 +1429,7 @@
           "teachers"
         ],
         [
-          "p itaraḥ",
+          "pitaraḥ",
           "fathers"
         ],
         [
@@ -1799,6 +1799,116 @@
         [
           "lupta-piṇḍa-udaka-kriyāḥ",
           "whose rites of piṇḍa and water have ceased"
+        ]
+      ]
+    },
+    "43": {
+      "reviewed": true,
+      "translation": "By these faults, which cause mixture among the social orders, the enduring duties of communities and the family duties of the destroyers of family are destroyed.",
+      "word_for_word": [
+        [
+          "doṣaiḥ etaiḥ",
+          "by these faults"
+        ],
+        [
+          "kulaghnānām",
+          "of the destroyers of the family"
+        ],
+        [
+          "varṇasaṅkarakārakaiḥ",
+          "causing mixture among the social orders"
+        ],
+        [
+          "utsādyante",
+          "are destroyed"
+        ],
+        [
+          "jātidharmāḥ",
+          "the duties of communities and social orders"
+        ],
+        [
+          "kuladharmāḥ ca",
+          "and the family duties"
+        ],
+        [
+          "śāśvatāḥ",
+          "enduring, eternal"
+        ]
+      ]
+    },
+    "44": {
+      "reviewed": true,
+      "translation": "For people whose family duties are destroyed, O Janārdana, we have heard that residence in hell is certain.",
+      "word_for_word": [
+        [
+          "utsanna-kula-dharmāṇām",
+          "of those whose family duties are destroyed"
+        ],
+        [
+          "manuṣyāṇām",
+          "of people"
+        ],
+        [
+          "janārdana",
+          "O Janārdana"
+        ],
+        [
+          "narake",
+          "in hell"
+        ],
+        [
+          "niyatam",
+          "certainly, inevitably"
+        ],
+        [
+          "vāsaḥ",
+          "residence, dwelling"
+        ],
+        [
+          "bhavati iti",
+          "becomes, is"
+        ],
+        [
+          "anuśuśruma",
+          "we have heard traditionally"
+        ]
+      ]
+    },
+    "45": {
+      "reviewed": true,
+      "translation": "Alas, what a great sin we are resolved to commit: driven by greed for kingdom and pleasure, we are prepared to kill our own people.",
+      "word_for_word": [
+        [
+          "aho bata",
+          "alas"
+        ],
+        [
+          "mahat pāpam",
+          "a great sin"
+        ],
+        [
+          "kartum vyavasitāḥ vayam",
+          "we are resolved to commit"
+        ],
+        [
+          "yat",
+          "since, because"
+        ],
+        [
+          "rājya-sukha-lobhena",
+          "from greed for kingdom and pleasure"
+        ],
+        [
+          "hantum",
+          "to kill"
+        ],
+        [
+          "sva-janam",
+          "our own people"
+        ],
+        [
+          "udyatāḥ",
+          "prepared, intent"
         ]
       ]
     }
