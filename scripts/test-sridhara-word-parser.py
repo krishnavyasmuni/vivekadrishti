@@ -14,7 +14,7 @@ from sanskrit_parser.parser.sandhi_analyzer import LexicalSandhiAnalyzer
 SOURCE = Path('assets/data/bhagavad-gita-sridhara-source/chapter-18.json')
 OUT = Path('assets/data/bhagavad-gita-sridhara-source/parser-test-18.json')
 
-parser = Parser(input_encoding='SLP1', output_encoding='SLP1', score=False, replace_ending_visarga='s')
+parser = Parser(input_encoding=sanscript.SLP1, output_encoding=sanscript.SLP1, score=False, replace_ending_visarga='s')
 analyzer = LexicalSandhiAnalyzer()
 
 
@@ -27,7 +27,7 @@ def clean_to_slp(text: str) -> list[str]:
 
 
 def base_for(unit: str) -> str:
-    obj = SanskritObject(unit, encoding='SLP1')
+    obj = SanskritObject(unit, encoding=sanscript.SLP1)
     tags = analyzer.getMorphologicalTags(obj)
     if not tags:
         return unit
