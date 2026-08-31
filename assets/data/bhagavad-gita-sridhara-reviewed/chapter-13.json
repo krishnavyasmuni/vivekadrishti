@@ -501,6 +501,116 @@
           "what is contrary to this"
         ]
       ]
+    },
+    "13": {
+      "reviewed": true,
+      "translation": "I will declare what is to be known, knowing which one attains immortality: the beginningless, supreme Brahman, said to be neither being nor non-being. Śrīdhara explains that it lies beyond both the manifest object of affirmative knowledge and the unmanifest object of negation.",
+      "word_for_word": [
+        [
+          "jñeyam",
+          "what is to be known"
+        ],
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "tat pravakṣyāmi",
+          "that I will declare"
+        ],
+        [
+          "yat jñātvā",
+          "knowing which"
+        ],
+        [
+          "amṛtam aśnute",
+          "one attains immortality"
+        ],
+        [
+          "anādi-mat",
+          "beginningless"
+        ],
+        [
+          "param brahma",
+          "supreme Brahman"
+        ],
+        [
+          "na sat",
+          "not being, the affirmatively known"
+        ],
+        [
+          "na asat",
+          "not non-being, the negatively known"
+        ]
+      ]
+    },
+    "14": {
+      "reviewed": true,
+      "translation": "It has hands and feet everywhere, eyes, heads, and mouths everywhere; it has ears everywhere, pervades everything in the world, and stands after enveloping all.",
+      "word_for_word": [
+        [
+          "sarvataḥ pāṇi-pādam",
+          "having hands and feet everywhere"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "sarvataḥ akṣi-śiraḥ-mukham",
+          "having eyes, heads, and mouths everywhere"
+        ],
+        [
+          "sarvataḥ śrutimat",
+          "having ears everywhere"
+        ],
+        [
+          "loke",
+          "in the world"
+        ],
+        [
+          "sarvam āvṛtya",
+          "having enveloped all"
+        ],
+        [
+          "tiṣṭhati",
+          "stands, abides"
+        ]
+      ]
+    },
+    "15": {
+      "reviewed": true,
+      "translation": "It appears through the qualities of all the senses, yet is free from all the senses; unattached, it supports all; without the guṇas, it is also the experiencer and sustainer of the guṇas.",
+      "word_for_word": [
+        [
+          "sarva-indriya-guṇa-ābhāsam",
+          "appearing through the qualities of all the senses"
+        ],
+        [
+          "sarva-indriya-vivarjitam",
+          "free from all the senses"
+        ],
+        [
+          "asaktam",
+          "unattached"
+        ],
+        [
+          "sarva-bhṛt",
+          "supporting all"
+        ],
+        [
+          "nir-guṇam",
+          "without the guṇas"
+        ],
+        [
+          "guṇa-bhoktṛ",
+          "the experiencer or sustainer of the guṇas"
+        ],
+        [
+          "ca",
+          "and"
+        ]
+      ]
     }
   }
 }
