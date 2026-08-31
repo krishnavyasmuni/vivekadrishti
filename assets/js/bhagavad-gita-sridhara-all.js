@@ -120,16 +120,20 @@
   observer.observe(root, {childList:true, subtree:true});
   refresh();
 
-  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara/chapter-' + chapter + '.json?v=20260831-all2')
+  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara/chapter-' + chapter + '.json?v=20260831-all3')
     .then((response) => {
-      if (!response.ok) throw new Error('Śrīdhara chapter data not generated yet');
+      if (!response.ok) throw new Error('Śrīdhara chapter data unavailable');
       return response.json();
     })
     .then((data) => {
+      if (!data || !data._meta || data._meta.reviewed !== true) {
+        throw new Error('Śrīdhara English data is not reviewed; refusing to display it');
+      }
       chapterData = data;
       enhanceAll();
     })
     .catch((error) => {
+      chapterData = null;
       hideFallbacks();
       console.warn('Śrīdhara English data unavailable for chapter ' + chapter + ':', error);
     });
