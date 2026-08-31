@@ -749,6 +749,120 @@
           "separately"
         ]
       ]
+    },
+    "19": {
+      "reviewed": true,
+      "translation": "That tumultuous sound, reverberating through the sky and earth, tore the hearts of Dhṛtarāṣṭra’s sons.",
+      "word_for_word": [
+        [
+          "saḥ ghoṣaḥ",
+          "that sound"
+        ],
+        [
+          "dhārtarāṣṭrāṇām",
+          "of the sons of Dhṛtarāṣṭra"
+        ],
+        [
+          "hṛdayāni",
+          "hearts"
+        ],
+        [
+          "vyadārayat",
+          "tore apart"
+        ],
+        [
+          "nabhaḥ",
+          "the sky"
+        ],
+        [
+          "pṛthivīm",
+          "the earth"
+        ],
+        [
+          "ca eva",
+          "and indeed"
+        ],
+        [
+          "tumul aḥ",
+          "tumultuous"
+        ],
+        [
+          "abhy anunādayan",
+          "reverberating"
+        ]
+      ]
+    },
+    "20": {
+      "reviewed": true,
+      "translation": "Then, seeing the sons of Dhṛtarāṣṭra arrayed and the clash of weapons about to begin, the Pāṇḍava whose banner bore a monkey lifted his bow and spoke these words to Hṛṣīkeśa, O King.",
+      "word_for_word": [
+        [
+          "atha",
+          "then"
+        ],
+        [
+          "vyavasthitān",
+          "arrayed"
+        ],
+        [
+          "dṛṣṭvā",
+          "having seen"
+        ],
+        [
+          "dhārtarāṣṭrān",
+          "the sons of Dhṛtarāṣṭra"
+        ],
+        [
+          "kapi-dhvajaḥ",
+          "the one with a monkey-banner"
+        ],
+        [
+          "pravṛtte",
+          "having begun"
+        ],
+        [
+          "śastra-sampāte",
+          "the clash of weapons"
+        ],
+        [
+          "dhanuḥ udyamya",
+          "having lifted the bow"
+        ],
+        [
+          "pāṇḍavaḥ",
+          "the son of Pāṇḍu"
+        ],
+        [
+          "vākyam āha",
+          "spoke words"
+        ]
+      ]
+    },
+    "21": {
+      "reviewed": true,
+      "translation": "Arjuna said: Place my chariot between the two armies, O Acyuta.",
+      "word_for_word": [
+        [
+          "senayoḥ ubhayoḥ madhye",
+          "between the two armies"
+        ],
+        [
+          "ratham",
+          "the chariot"
+        ],
+        [
+          "sthāpaya",
+          "place"
+        ],
+        [
+          "me",
+          "my"
+        ],
+        [
+          "acyuta",
+          "O Acyuta"
+        ]
+      ]
     }
   }
 }
