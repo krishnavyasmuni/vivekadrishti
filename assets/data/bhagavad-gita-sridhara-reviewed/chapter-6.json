@@ -1329,6 +1329,184 @@
           "yoga should be practiced"
         ]
       ]
+    },
+    "25": {
+      "reviewed": true,
+      "translation": "If the mind wanders because of impressions from past actions, Śrīdhara says to steady it through dhāraṇā: using the intellect held by fortitude, make the mind properly and firmly established in the Self, and withdraw it. This withdrawal is to be practiced little by little, through the sequence of practice, not all at once. Withdrawal means not thinking of anything else; when the mind is still, it takes on the self-luminous form of supreme bliss and does not turn away even from meditation on the Self.",
+      "word_for_word": [
+        [
+          "prāk-tana-karma-saṃskāreṇa",
+          "through impressions of past actions"
+        ],
+        [
+          "manaḥ vicalet",
+          "the mind should wander"
+        ],
+        [
+          "dhṛtiḥ",
+          "fortitude"
+        ],
+        [
+          "dhāraṇā",
+          "concentration / holding"
+        ],
+        [
+          "tāṃ gṛhītayā",
+          "through that which has been taken up"
+        ],
+        [
+          "vaśīkṛtayā",
+          "made subject / controlled"
+        ],
+        [
+          "buddhyā",
+          "through the intellect"
+        ],
+        [
+          "ātma-saṃstham",
+          "established in the Self"
+        ],
+        [
+          "manas kṛtvā",
+          "having made the mind"
+        ],
+        [
+          "uparamet",
+          "one should withdraw / come to rest"
+        ],
+        [
+          "śanaiḥ śanaiḥ",
+          "little by little"
+        ],
+        [
+          "abhyāsa-krameṇa",
+          "through the sequence of practice"
+        ],
+        [
+          "na sahasā",
+          "not suddenly"
+        ],
+        [
+          "na kiñcit api cintayet",
+          "one should not think of anything at all"
+        ]
+      ]
+    },
+    "26": {
+      "reviewed": true,
+      "translation": "If even then the mind moves because of the power of rajas, one should bring it under control again through withdrawal. Though naturally restless and unstable even while being held, the mind should be withdrawn from each object toward which it runs and made steady in the Self alone.",
+      "word_for_word": [
+        [
+          "evam api",
+          "even thus"
+        ],
+        [
+          "rajo-guṇa-vaśāt",
+          "through the power of the quality of rajas"
+        ],
+        [
+          "manaḥ pracalet",
+          "if the mind moves"
+        ],
+        [
+          "punaḥ",
+          "again"
+        ],
+        [
+          "pratyāhāreṇa",
+          "through withdrawal"
+        ],
+        [
+          "vaśī-kuryāt",
+          "one should bring under control"
+        ],
+        [
+          "svabhāvataḥ cañcalam",
+          "naturally restless"
+        ],
+        [
+          "dhāryamāṇam api",
+          "even while being held"
+        ],
+        [
+          "asthiram manas",
+          "the unstable mind"
+        ],
+        [
+          "yam yam viṣayam prati nirgacchati",
+          "whatever object it goes toward"
+        ],
+        [
+          "tataḥ tataḥ pratyāhṛtya",
+          "withdrawing it from each one"
+        ],
+        [
+          "ātmani eva sthiram kuryāt",
+          "one should make it steady in the Self alone"
+        ]
+      ]
+    },
+    "27": {
+      "reviewed": true,
+      "translation": "By bringing the mind under control again and again through withdrawal and the other practices, and as rajas becomes quiet, the happiness of yoga is attained. The highest happiness of samādhi itself comes to this yogī whose mind is peaceful, whose rajas is pacified, who is stainless, and who has attained Brahman.",
+      "word_for_word": [
+        [
+          "pratyāhāra-ādibhiḥ",
+          "through withdrawal and the like"
+        ],
+        [
+          "punaḥ punaḥ",
+          "again and again"
+        ],
+        [
+          "manaḥ vaśī-kurvantam",
+          "bringing the mind under control"
+        ],
+        [
+          "rajo-guṇa-kṣaye sati",
+          "when the quality of rajas has diminished"
+        ],
+        [
+          "yoga-sukham",
+          "the happiness of yoga"
+        ],
+        [
+          "prāpnoti",
+          "one attains"
+        ],
+        [
+          "praśānta-manasaḥ",
+          "whose mind is peaceful"
+        ],
+        [
+          "śānta-rajasam",
+          "whose rajas is pacified"
+        ],
+        [
+          "niṣkalmaṣam",
+          "stainless"
+        ],
+        [
+          "brahma-bhūtam",
+          "having attained Brahman"
+        ],
+        [
+          "enam yoginam",
+          "this yogī"
+        ],
+        [
+          "sukham uttamam",
+          "the highest happiness"
+        ],
+        [
+          "samādhi-sukham",
+          "the happiness of samādhi"
+        ],
+        [
+          "svayam upaiti",
+          "comes of itself"
+        ]
+      ]
     }
   }
 }
