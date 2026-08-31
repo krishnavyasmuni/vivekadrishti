@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "chapter": 2,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Then, when [Dhṛtarāṣṭra] was awaiting the answer to “What happened?”, Sañjaya said: “Him in that condition”—him whose eyes were full and agitated with tears. To Arjuna, grieving in the manner just described, Madhusūdana spoke these words.",
+      "word_for_word": [
+        [
+          "tataḥ kim vṛttam iti apekṣāyām",
+          "when the answer to “what happened then?” was awaited"
+        ],
+        [
+          "sañjaya uvāca",
+          "Sañjaya said"
+        ],
+        [
+          "tam tathā iti",
+          "“him thus”; him in that condition"
+        ],
+        [
+          "aśrubhiḥ pūrṇe ākule īkṣaṇe yasya",
+          "whose eyes were full and agitated with tears"
+        ],
+        [
+          "tam",
+          "him"
+        ],
+        [
+          "tathā ukta-prakāreṇa",
+          "in the manner just described"
+        ],
+        [
+          "viṣīdantam arjunam prati",
+          "toward grieving Arjuna"
+        ],
+        [
+          "madhusūdanaḥ",
+          "Madhusūdana"
+        ],
+        [
+          "idam vākyam uvāca",
+          "spoke these words"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "He states that very speech: “Why?”—for what reason? “You” means you. In this crisis, this confusion and delusion has arisen and come upon you, although it is not resorted to by the noble, does not lead to heaven, is unrighteous, and brings infamy.",
+      "word_for_word": [
+        [
+          "tad eva vākyam āha",
+          "he states that very speech"
+        ],
+        [
+          "śrībhagavān uvāca",
+          "the Blessed Lord said"
+        ],
+        [
+          "kuta iti",
+          "“why?”"
+        ],
+        [
+          "kutaḥ hetoḥ",
+          "for what reason"
+        ],
+        [
+          "tvā iti tvām",
+          "“you” means “you”"
+        ],
+        [
+          "viṣame saṅkaṭe",
+          "in a crisis; in a difficult situation"
+        ],
+        [
+          "idam kaśmalam",
+          "this confusion; this dejection"
+        ],
+        [
+          "samupasthitam",
+          "having arisen; having come upon"
+        ],
+        [
+          "ayam mohaḥ prāptaḥ",
+          "this delusion has come"
+        ],
+        [
+          "yataḥ āryaiḥ asevitam",
+          "because it is not resorted to by the noble"
+        ],
+        [
+          "asvargyam",
+          "not leading to heaven"
+        ],
+        [
+          "adharmyam",
+          "unrighteous"
+        ],
+        [
+          "ayaśaskaram",
+          "bringing infamy"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Therefore, [he says] with “cowardice”: O Pārtha, do not yield to cowardice—do not enter into it—for this does not befit you. Abandoning this petty weakness of heart, this cowardice, rise for battle, O scorcher of enemies.",
+      "word_for_word": [
+        [
+          "tasmāt",
+          "therefore"
+        ],
+        [
+          "klaibyam iti",
+          "with the word “cowardice”"
+        ],
+        [
+          "he pārtha",
+          "O Pārtha"
+        ],
+        [
+          "klaibyam",
+          "cowardice; impotence"
+        ],
+        [
+          "mā sma gamaḥ",
+          "do not go; do not yield"
+        ],
+        [
+          "yataḥ tvayi etat na upapadyate",
+          "because this is not fitting for you"
+        ],
+        [
+          "kṣudraṃ hṛdaya-daurbalyam",
+          "petty weakness of heart"
+        ],
+        [
+          "kātaryam",
+          "cowardice"
+        ],
+        [
+          "tyaktvā",
+          "having abandoned"
+        ],
+        [
+          "yuddhāya uttiṣṭha",
+          "rise for battle"
+        ],
+        [
+          "he parantapa",
+          "O scorcher of enemies"
+        ]
+      ]
+    }
+  }
+}
