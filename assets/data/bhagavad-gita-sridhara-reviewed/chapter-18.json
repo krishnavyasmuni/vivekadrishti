@@ -1673,6 +1673,128 @@
           "one reaches"
         ]
       ]
+    },
+    "37": {
+      "reviewed": true,
+      "translation": "That happiness is sattvic which is like poison at first but like nectar in its result, and which arises from the clarity of self-understanding. Śrīdhara explains that it initially feels difficult because it depends on mastery of the mind, but becomes nectar when rajas and tamas have been cleansed.",
+      "word_for_word": [
+        [
+          "yat tat",
+          "that which"
+        ],
+        [
+          "agre",
+          "at first"
+        ],
+        [
+          "viṣam iva",
+          "like poison"
+        ],
+        [
+          "pariṇāme",
+          "in the result"
+        ],
+        [
+          "amṛta-upamam",
+          "like nectar"
+        ],
+        [
+          "tat sukham",
+          "that happiness"
+        ],
+        [
+          "sāttvikam",
+          "sattvic"
+        ],
+        [
+          "ātma-buddhi-prasāda-jam",
+          "arising from the clarity of self-understanding"
+        ]
+      ]
+    },
+    "38": {
+      "reviewed": true,
+      "translation": "That happiness which arises from the contact of the senses with their objects, like nectar at first but like poison in its result, is remembered as rajasic.",
+      "word_for_word": [
+        [
+          "viṣaya-indriya-saṃyogāt",
+          "from contact of sense objects and senses"
+        ],
+        [
+          "yat tat",
+          "that which"
+        ],
+        [
+          "agre",
+          "at first"
+        ],
+        [
+          "amṛta-upamam",
+          "like nectar"
+        ],
+        [
+          "pariṇāme",
+          "in the result"
+        ],
+        [
+          "viṣam iva",
+          "like poison"
+        ],
+        [
+          "tat sukham",
+          "that happiness"
+        ],
+        [
+          "rājasam",
+          "rajasic"
+        ],
+        [
+          "smṛtam",
+          "is remembered"
+        ]
+      ]
+    },
+    "39": {
+      "reviewed": true,
+      "translation": "That happiness which deludes the self at first and in its consequence, arising from sleep, laziness, and negligence, is declared tamasic.",
+      "word_for_word": [
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "agre",
+          "at first"
+        ],
+        [
+          "anubandhe",
+          "in its consequence"
+        ],
+        [
+          "sukham",
+          "happiness"
+        ],
+        [
+          "mohanam ātmanaḥ",
+          "deluding the self"
+        ],
+        [
+          "nidrā-ālasya-pramāda-uttham",
+          "arising from sleep, laziness, and negligence"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "tāmasam",
+          "tamasic"
+        ],
+        [
+          "udāhṛtam",
+          "is declared"
+        ]
+      ]
     }
   }
 }
