@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "chapter": 1,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Dhṛtarāṣṭra said: On the field of dharma, the field of the Kurus, gathered and eager for battle, what did my sons and the sons of Pāṇḍu do, O Sañjaya?",
+      "word_for_word": [
+        [
+          "dhṛtarāṣṭraḥ uvāca",
+          "Dhṛtarāṣṭra said"
+        ],
+        [
+          "dharma-kṣetre",
+          "on the field of dharma"
+        ],
+        [
+          "kuru-kṣetre",
+          "on the field of the Kurus"
+        ],
+        [
+          "samavetāḥ",
+          "having gathered"
+        ],
+        [
+          "yuyutsavaḥ",
+          "eager to fight"
+        ],
+        [
+          "māmakāḥ",
+          "my sons"
+        ],
+        [
+          "pāṇḍavāḥ",
+          "the sons of Pāṇḍu"
+        ],
+        [
+          "ca eva",
+          "and indeed"
+        ],
+        [
+          "kim akurvata",
+          "what did they do"
+        ],
+        [
+          "sañjaya",
+          "O Sañjaya"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "Sañjaya said: Having seen the army of the Pāṇḍavas arranged in battle formation, King Duryodhana then approached his teacher and spoke these words.",
+      "word_for_word": [
+        [
+          "dṛṣṭvā",
+          "having seen"
+        ],
+        [
+          "tu",
+          "but"
+        ],
+        [
+          "pāṇḍava-anīkam",
+          "the army of the Pāṇḍavas"
+        ],
+        [
+          "vyūḍham",
+          "arranged in battle formation"
+        ],
+        [
+          "tadā",
+          "then"
+        ],
+        [
+          "duryodhanaḥ",
+          "Duryodhana"
+        ],
+        [
+          "ācāryam",
+          "the teacher"
+        ],
+        [
+          "upasaṅgamya",
+          "having approached"
+        ],
+        [
+          "rājā",
+          "the king"
+        ],
+        [
+          "vacanam abravīt",
+          "spoke words"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Behold this great army of the sons of Pāṇḍu, O teacher, arranged by your wise disciple, the son of Drupada.",
+      "word_for_word": [
+        [
+          "paśya",
+          "behold"
+        ],
+        [
+          "etām",
+          "this"
+        ],
+        [
+          "pāṇḍu-putrāṇām",
+          "of the sons of Pāṇḍu"
+        ],
+        [
+          "ācārya",
+          "O teacher"
+        ],
+        [
+          "mahatīm camūm",
+          "the great army"
+        ],
+        [
+          "vyūḍhām",
+          "arranged in battle formation"
+        ],
+        [
+          "drupada-putreṇa",
+          "by the son of Drupada"
+        ],
+        [
+          "tava śiṣyeṇa",
+          "by your disciple"
+        ],
+        [
+          "dhīmatā",
+          "wise"
+        ]
+      ]
+    }
+  }
+}
