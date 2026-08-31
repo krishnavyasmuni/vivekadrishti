@@ -12,6 +12,7 @@ from indic_transliteration.sanscript import transliterate
 SOURCE = Path('assets/data/bhagavad-gita-sridhara-source/chapter-18.json')
 OUT = Path('assets/data/bhagavad-gita-sridhara-source/dharmamitra-test-18.json')
 API = 'https://dharmamitra.org/api/tagging/'
+MODE = 'segmentation-lemma-morphosyntax'
 
 
 def clean_deva(text: str) -> str:
@@ -22,7 +23,6 @@ def clean_deva(text: str) -> str:
 
 def sentence_chunks(text: str, max_chars: int = 180) -> list[str]:
     text = clean_deva(text)
-    # First respect Sanskrit sentence/verse boundaries.
     pieces = [p.strip() for p in re.split(r'[।॥]+', text) if p.strip()]
     out: list[str] = []
     for piece in pieces:
@@ -30,7 +30,6 @@ def sentence_chunks(text: str, max_chars: int = 180) -> list[str]:
         if len(iast) <= max_chars:
             out.append(iast)
             continue
-        # Long prose sentences: split at existing whitespace, never inside a word.
         words = iast.split()
         current: list[str] = []
         size = 0
@@ -55,13 +54,13 @@ flat = [(v, i, text) for v in verses for i, text in enumerate(verse_chunks[v])]
 inputs = [x[2] for x in flat]
 resp = requests.post(API, json={
     'texts': inputs,
-    'mode': 'unsandhied-lemma-morphosyntax',
+    'mode': MODE,
     'human_readable_tags': True,
 }, timeout=180)
 resp.raise_for_status()
 results = resp.json().get('results', [])
 
-payload = {'endpoint': API, 'mode': 'unsandhied-lemma-morphosyntax', 'verses': {}}
+payload = {'endpoint': API, 'mode': MODE, 'verses': {}}
 for verse in verses:
     payload['verses'][verse] = {'chunks': []}
 for (verse, index, inp), raw in zip(flat, results):
