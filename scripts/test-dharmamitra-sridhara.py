@@ -14,15 +14,45 @@ OUT = Path('assets/data/bhagavad-gita-sridhara-source/dharmamitra-test-18.json')
 API = 'https://dharmamitra.org/api/tagging/'
 
 
-def to_iast(text: str) -> str:
+def clean_deva(text: str) -> str:
     text = re.sub(r'Sanskrit Commentary By Sri Sridhara Swami', ' ', text, flags=re.I)
-    text = re.sub(r'\s+', ' ', text).strip()
-    return transliterate(text, sanscript.DEVANAGARI, sanscript.IAST)
+    text = text.replace('--', ' ').replace('?', ' ')
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def sentence_chunks(text: str, max_chars: int = 180) -> list[str]:
+    text = clean_deva(text)
+    # First respect Sanskrit sentence/verse boundaries.
+    pieces = [p.strip() for p in re.split(r'[।॥]+', text) if p.strip()]
+    out: list[str] = []
+    for piece in pieces:
+        iast = transliterate(piece, sanscript.DEVANAGARI, sanscript.IAST)
+        if len(iast) <= max_chars:
+            out.append(iast)
+            continue
+        # Long prose sentences: split at existing whitespace, never inside a word.
+        words = iast.split()
+        current: list[str] = []
+        size = 0
+        for word in words:
+            extra = len(word) + (1 if current else 0)
+            if current and size + extra > max_chars:
+                out.append(' '.join(current))
+                current = [word]
+                size = len(word)
+            else:
+                current.append(word)
+                size += extra
+        if current:
+            out.append(' '.join(current))
+    return out
 
 
 data = json.loads(SOURCE.read_text(encoding='utf-8'))
 verses = ['15', '16']
-inputs = [to_iast(data['verses'][v]) for v in verses]
+verse_chunks = {v: sentence_chunks(data['verses'][v]) for v in verses}
+flat = [(v, i, text) for v in verses for i, text in enumerate(verse_chunks[v])]
+inputs = [x[2] for x in flat]
 resp = requests.post(API, json={
     'texts': inputs,
     'mode': 'unsandhied-lemma-morphosyntax',
@@ -30,13 +60,12 @@ resp = requests.post(API, json={
 }, timeout=180)
 resp.raise_for_status()
 results = resp.json().get('results', [])
-payload = {
-    'endpoint': API,
-    'mode': 'unsandhied-lemma-morphosyntax',
-    'verses': {
-        v: {'input': inp, 'raw': raw}
-        for v, inp, raw in zip(verses, inputs, results)
-    },
-}
+
+payload = {'endpoint': API, 'mode': 'unsandhied-lemma-morphosyntax', 'verses': {}}
+for verse in verses:
+    payload['verses'][verse] = {'chunks': []}
+for (verse, index, inp), raw in zip(flat, results):
+    payload['verses'][verse]['chunks'].append({'index': index, 'input': inp, 'raw': raw})
+
 OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(OUT)
