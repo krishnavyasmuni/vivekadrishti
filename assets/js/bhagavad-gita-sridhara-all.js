@@ -120,7 +120,7 @@
   observer.observe(root, {childList:true, subtree:true});
   refresh();
 
-  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260831-literal1')
+  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260831-literal3')
     .then((response) => {
       if (!response.ok) throw new Error('No reviewed Śrīdhara literal data for this chapter yet');
       return response.json();
