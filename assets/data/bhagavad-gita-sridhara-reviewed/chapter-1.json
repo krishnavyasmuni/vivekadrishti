@@ -387,6 +387,132 @@
           "skilled in battle"
         ]
       ]
+    },
+    "10": {
+      "reviewed": true,
+      "translation": "Our force, though protected by Bhīṣma, appears insufficient, while this force of theirs, protected by Bhīma, appears sufficient. Śrīdhara explains this as Duryodhana’s anxious judgment: Bhīṣma is favorable to both sides, whereas Bhīma is wholly devoted to his own side.",
+      "word_for_word": [
+        [
+          "apar yāptam",
+          "insufficient"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "asmākam balam",
+          "our force"
+        ],
+        [
+          "bhīṣma-abhirakṣitam",
+          "protected by Bhīṣma"
+        ],
+        [
+          "paryāptam",
+          "sufficient"
+        ],
+        [
+          "tu",
+          "but"
+        ],
+        [
+          "idam",
+          "this"
+        ],
+        [
+          "eteṣām balam",
+          "force of theirs"
+        ],
+        [
+          "bhīma-abhirakṣitam",
+          "protected by Bhīma"
+        ]
+      ]
+    },
+    "11": {
+      "reviewed": true,
+      "translation": "Therefore, stationed in all the battle entrances according to your respective positions, all of you must protect Bhīṣma alone on every side.",
+      "word_for_word": [
+        [
+          "ayaneṣu",
+          "at the entrances or positions"
+        ],
+        [
+          "sarveṣu",
+          "in all"
+        ],
+        [
+          "yathā-bhāgam",
+          "according to each one’s position"
+        ],
+        [
+          "avasthitāḥ",
+          "stationed"
+        ],
+        [
+          "bhīṣmam eva",
+          "Bhīṣma alone"
+        ],
+        [
+          "abhirakṣantu",
+          "must protect"
+        ],
+        [
+          "bhavantaḥ",
+          "you all"
+        ],
+        [
+          "sarve",
+          "all"
+        ],
+        [
+          "hi",
+          "indeed"
+        ]
+      ]
+    },
+    "12": {
+      "reviewed": true,
+      "translation": "Then the powerful grandsire Bhīṣma, bringing joy to that king, roared loudly like a lion and blew his conch.",
+      "word_for_word": [
+        [
+          "tasya",
+          "of that king"
+        ],
+        [
+          "sañjanayan harṣam",
+          "bringing joy"
+        ],
+        [
+          "kuru-vṛddhaḥ",
+          "the elder of the Kurus"
+        ],
+        [
+          "pitāmahaḥ",
+          "the grandsire"
+        ],
+        [
+          "siṃha-nādam",
+          "a lion’s roar"
+        ],
+        [
+          "vinadya uccaiḥ",
+          "having sounded loudly"
+        ],
+        [
+          "śaṅkham",
+          "the conch"
+        ],
+        [
+          "dadhmau",
+          "blew"
+        ],
+        [
+          "pratāpavān",
+          "the powerful"
+        ]
+      ]
     }
   }
 }
