@@ -74,7 +74,7 @@
 
     const verse = Number(match[1]);
     const verseData = chapterData.verses && chapterData.verses[String(verse)];
-    if (!verseData) return;
+    if (!verseData || verseData.reviewed !== true) return;
 
     const details = article.querySelectorAll('.gita-details');
     if (details.length < 3) return;
@@ -88,7 +88,7 @@
     const gitaWfw = wfwReveal.innerHTML;
     const gitaTrans = transReveal.innerHTML;
     const sridRaw = cleanSrid(sridTextNode.textContent);
-    const noCommentary = /^no commentary\.?$/i.test(sridRaw) || /^no commentary\.?$/i.test(String(verseData.translation || ''));
+    const noCommentary = verseData.no_commentary === true || /^no commentary\.?$/i.test(sridRaw);
 
     const sridTrans = noCommentary
       ? '<p class="gita-dual-empty">No commentary.</p>'
@@ -120,21 +120,18 @@
   observer.observe(root, {childList:true, subtree:true});
   refresh();
 
-  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara/chapter-' + chapter + '.json?v=20260831-all3')
+  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260831-literal1')
     .then((response) => {
-      if (!response.ok) throw new Error('Śrīdhara chapter data unavailable');
+      if (!response.ok) throw new Error('No reviewed Śrīdhara literal data for this chapter yet');
       return response.json();
     })
     .then((data) => {
-      if (!data || !data._meta || data._meta.reviewed !== true) {
-        throw new Error('Śrīdhara English data is not reviewed; refusing to display it');
-      }
       chapterData = data;
       enhanceAll();
     })
     .catch((error) => {
       chapterData = null;
       hideFallbacks();
-      console.warn('Śrīdhara English data unavailable for chapter ' + chapter + ':', error);
+      console.warn('Reviewed Śrīdhara English unavailable for chapter ' + chapter + ':', error);
     });
 })();
