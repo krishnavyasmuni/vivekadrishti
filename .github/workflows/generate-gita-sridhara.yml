@@ -10,10 +10,18 @@ on:
 permissions:
   contents: write
 
+env:
+  TOKENIZERS_PARALLELISM: 'false'
+
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 75
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        chapter: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
     steps:
       - uses: actions/checkout@v4
 
@@ -30,11 +38,32 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/vedicscriptures/bhagavad-gita.git /tmp/bhagavad-gita-source
 
-      - name: Generate Chapters 2-18
-        env:
-          TOKENIZERS_PARALLELISM: 'false'
+      - name: Generate chapter ${{ matrix.chapter }}
         run: |
-          python scripts/generate-gita-sridhara-data.py --source /tmp/bhagavad-gita-source
+          python scripts/generate-gita-sridhara-data.py --source /tmp/bhagavad-gita-source --chapters ${{ matrix.chapter }}
+
+      - name: Upload chapter ${{ matrix.chapter }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: gita-sridhara-${{ matrix.chapter }}
+          path: assets/data/bhagavad-gita-sridhara/chapter-${{ matrix.chapter }}.json
+          if-no-files-found: error
+          retention-days: 1
+
+  commit:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Download generated chapters
+        uses: actions/download-artifact@v4
+        with:
+          pattern: gita-sridhara-*
+          path: assets/data/bhagavad-gita-sridhara
+          merge-multiple: true
 
       - name: Commit generated chapter data
         run: |
