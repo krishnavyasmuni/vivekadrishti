@@ -883,6 +883,116 @@
           "is said"
         ]
       ]
+    },
+    "22": {
+      "reviewed": true,
+      "translation": "The Person, abiding in Nature, indeed experiences the guṇas born of Nature; attachment to the guṇas is the cause of his births in good and bad wombs. Śrīdhara explains that the Person seems to experience because he identifies with the body produced by Nature.",
+      "word_for_word": [
+        [
+          "puruṣaḥ",
+          "the Person"
+        ],
+        [
+          "prakṛti-sthaḥ",
+          "abiding in Nature"
+        ],
+        [
+          "bhunkte",
+          "experiences"
+        ],
+        [
+          "prakṛti-jān guṇān",
+          "the guṇas born of Nature"
+        ],
+        [
+          "kāraṇam",
+          "the cause"
+        ],
+        [
+          "guṇa-saṅgaḥ",
+          "attachment to the guṇas"
+        ],
+        [
+          "asya",
+          "of him"
+        ],
+        [
+          "sat-asat-yoni-janmasu",
+          "in births in good and bad wombs"
+        ]
+      ]
+    },
+    "23": {
+      "reviewed": true,
+      "translation": "The Person within this body is said to be the witness, the consenter, the supporter, the experiencer, the great Lord, and the Supreme Self—the transcendent Person. Śrīdhara explains the witness as standing apart, the consenter as helping by mere presence, and the supporter as the inner ruler.",
+      "word_for_word": [
+        [
+          "upadraṣṭā",
+          "the witness, standing near and apart"
+        ],
+        [
+          "anumantā",
+          "the consenter"
+        ],
+        [
+          "bhartā",
+          "the supporter"
+        ],
+        [
+          "bhoktā",
+          "the experiencer"
+        ],
+        [
+          "mahā-īśvaraḥ",
+          "the great Lord"
+        ],
+        [
+          "paramātmā",
+          "the Supreme Self"
+        ],
+        [
+          "iti api uktaḥ",
+          "is also called"
+        ],
+        [
+          "dehe asmin",
+          "in this body"
+        ],
+        [
+          "puruṣaḥ paraḥ",
+          "the transcendent Person"
+        ]
+      ]
+    },
+    "24": {
+      "reviewed": true,
+      "translation": "One who thus knows the Person and Nature together with the guṇas, however he may live, is not born again. He is liberated.",
+      "word_for_word": [
+        [
+          "yaḥ evam vetti",
+          "who knows thus"
+        ],
+        [
+          "puruṣam",
+          "the Person"
+        ],
+        [
+          "prakṛtim",
+          "Nature"
+        ],
+        [
+          "guṇaiḥ saha",
+          "together with the guṇas"
+        ],
+        [
+          "sarvathā vartamānaḥ api",
+          "even while living in any manner"
+        ],
+        [
+          "na saḥ bhūyaḥ abhijāyate",
+          "that one is not born again"
+        ]
+      ]
     }
   }
 }
