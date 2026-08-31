@@ -281,6 +281,128 @@
           "O Pārtha"
         ]
       ]
+    },
+    "7": {
+      "reviewed": true,
+      "translation": "The demonic do not know what to do and what not to do; neither purity, proper conduct, nor truth is found in them.",
+      "word_for_word": [
+        [
+          "pravṛttim",
+          "what should be done, activity"
+        ],
+        [
+          "nivṛttim",
+          "what should not be done, withdrawal"
+        ],
+        [
+          "jānanti",
+          "know"
+        ],
+        [
+          "janāḥ āsurāḥ",
+          "the demonic people"
+        ],
+        [
+          "na śaucam",
+          "not purity"
+        ],
+        [
+          "na ācāraḥ",
+          "not proper conduct"
+        ],
+        [
+          "na satyam",
+          "not truth"
+        ],
+        [
+          "teṣu",
+          "in them"
+        ],
+        [
+          "vidyate",
+          "is found"
+        ]
+      ]
+    },
+    "8": {
+      "reviewed": true,
+      "translation": "They say that the world is unreal, without foundation, without a Lord, and born from one another; what else could be its cause? They say that desire alone is its cause. Śrīdhara explains that they reject the authority of the Vedas and the Lord as creator and orderer, and regard sexual desire as the only cause of the world’s flow.",
+      "word_for_word": [
+        [
+          "asatyam",
+          "unreal, without truth"
+        ],
+        [
+          "apratiṣṭham",
+          "without foundation or order"
+        ],
+        [
+          "anīśvaram",
+          "without a Lord"
+        ],
+        [
+          "jagat",
+          "the world"
+        ],
+        [
+          "āhuḥ",
+          "they say"
+        ],
+        [
+          "aparaspara-sambhūtam",
+          "born from one another"
+        ],
+        [
+          "kim anyat",
+          "what else"
+        ],
+        [
+          "kāma-hetukam",
+          "having desire as its cause"
+        ]
+      ]
+    },
+    "9": {
+      "reviewed": true,
+      "translation": "Holding this view, these ruined selves, of little understanding, fierce in action and hostile, arise for the destruction of the world.",
+      "word_for_word": [
+        [
+          "etām dṛṣṭim",
+          "this view"
+        ],
+        [
+          "avaṣṭabhya",
+          "holding"
+        ],
+        [
+          "naṣṭa-ātmānaḥ",
+          "ruined selves"
+        ],
+        [
+          "alpa-buddhayaḥ",
+          "of little understanding"
+        ],
+        [
+          "prabhavanti",
+          "arise, become powerful"
+        ],
+        [
+          "ugra-karmāṇaḥ",
+          "fierce in action"
+        ],
+        [
+          "ahitāḥ",
+          "hostile"
+        ],
+        [
+          "kṣayāya",
+          "for destruction"
+        ],
+        [
+          "jagataḥ",
+          "of the world"
+        ]
+      ]
     }
   }
 }
