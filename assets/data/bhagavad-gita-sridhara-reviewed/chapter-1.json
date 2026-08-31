@@ -1419,6 +1419,144 @@
           "having abandoned"
         ]
       ]
+    },
+    "34": {
+      "reviewed": true,
+      "translation": "Teachers, fathers, sons, and likewise grandfathers; maternal uncles, fathers-in-law, grandsons, brothers-in-law, and other relatives—",
+      "word_for_word": [
+        [
+          "ācāryāḥ",
+          "teachers"
+        ],
+        [
+          "p itaraḥ",
+          "fathers"
+        ],
+        [
+          "putrāḥ",
+          "sons"
+        ],
+        [
+          "tathā eva",
+          "and likewise"
+        ],
+        [
+          "pitāmahāḥ",
+          "grandfathers"
+        ],
+        [
+          "mātulāḥ",
+          "maternal uncles"
+        ],
+        [
+          "śvaśurāḥ",
+          "fathers-in-law"
+        ],
+        [
+          "pautrāḥ",
+          "grandsons"
+        ],
+        [
+          "śyālāḥ",
+          "brothers-in-law"
+        ],
+        [
+          "sambandhinaḥ",
+          "relatives"
+        ]
+      ]
+    },
+    "35": {
+      "reviewed": true,
+      "translation": "I do not wish to kill these, O Madhusūdana, even if they kill me, not even for the sake of the kingdom of the three worlds—how much less for the sake of the earth.",
+      "word_for_word": [
+        [
+          "etān",
+          "these"
+        ],
+        [
+          "na hantum icchāmi",
+          "I do not wish to kill"
+        ],
+        [
+          "ghnataḥ api",
+          "even though they kill"
+        ],
+        [
+          "madhusūdana",
+          "O Madhusūdana"
+        ],
+        [
+          "api",
+          "even"
+        ],
+        [
+          "tri-lokya-rājyasya hetoḥ",
+          "for the sake of the kingdom of the three worlds"
+        ],
+        [
+          "kim nu",
+          "how much less"
+        ],
+        [
+          "mahī-kṛte",
+          "for the sake of the earth"
+        ]
+      ]
+    },
+    "36": {
+      "reviewed": true,
+      "translation": "What pleasure could be ours from killing the sons of Dhṛtarāṣṭra, O Janārdana? Sin alone would seize us after killing these aggressors. Śrīdhara notes that the rule permitting the killing of aggressors is a weaker legal consideration here than the general dharma-rule, so the killing would still be sinful and would not bring happiness.",
+      "word_for_word": [
+        [
+          "nihatya",
+          "having killed"
+        ],
+        [
+          "dhārtarāṣṭrān",
+          "the sons of Dhṛtarāṣṭra"
+        ],
+        [
+          "naḥ",
+          "for us"
+        ],
+        [
+          "kā prītiḥ",
+          "what pleasure"
+        ],
+        [
+          "syāt",
+          "could there be"
+        ],
+        [
+          "janārdana",
+          "O Janārdana"
+        ],
+        [
+          "pāpam",
+          "sin"
+        ],
+        [
+          "āśrayet",
+          "would seize, take refuge in"
+        ],
+        [
+          "asmān",
+          "us"
+        ],
+        [
+          "hatvā",
+          "having killed"
+        ],
+        [
+          "etān",
+          "these"
+        ],
+        [
+          "ātatāyinaḥ",
+          "aggressors"
+        ]
+      ]
     }
   }
 }
