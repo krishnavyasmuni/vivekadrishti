@@ -553,6 +553,128 @@
           "Mine"
         ]
       ]
+    },
+    "13": {
+      "reviewed": true,
+      "translation": "Entering the earth, I sustain beings by My strength; becoming the moon, whose nature is sap, I nourish all the plants.",
+      "word_for_word": [
+        [
+          "gām āviśya",
+          "entering the earth"
+        ],
+        [
+          "bhūtāni",
+          "beings"
+        ],
+        [
+          "dhārayāmi",
+          "I sustain"
+        ],
+        [
+          "ojasā",
+          "by strength"
+        ],
+        [
+          "poṣṇāmi",
+          "I nourish"
+        ],
+        [
+          "auṣadhīḥ sarvāḥ",
+          "all plants"
+        ],
+        [
+          "somaḥ bhūtvā",
+          "becoming the moon"
+        ],
+        [
+          "rasa-ātmakaḥ",
+          "whose nature is sap"
+        ]
+      ]
+    },
+    "14": {
+      "reviewed": true,
+      "translation": "Becoming the digestive fire Vaiśvānara and abiding in the bodies of living beings, joined with the upward and downward breaths, I digest the four kinds of food: chewed, swallowed, licked, and sucked.",
+      "word_for_word": [
+        [
+          "aham",
+          "I"
+        ],
+        [
+          "vaiśvānaraḥ bhūtvā",
+          "becoming Vaiśvānara, the digestive fire"
+        ],
+        [
+          "prāṇinām deham āśritaḥ",
+          "abiding in the bodies of living beings"
+        ],
+        [
+          "prāṇa-apāna-samāyuktaḥ",
+          "joined with the upward and downward breaths"
+        ],
+        [
+          "pacāmi",
+          "I digest"
+        ],
+        [
+          "annam",
+          "food"
+        ],
+        [
+          "catur-vidham",
+          "of four kinds"
+        ]
+      ]
+    },
+    "15": {
+      "reviewed": true,
+      "translation": "I am seated in the heart of everyone; from Me arise memory, knowledge, and their removal. I alone am to be known through all the Vedas; I am the author of Vedānta and indeed the knower of the Veda. Śrīdhara explains memory as arising from past experience, knowledge from contact between senses and their objects, and “removal” as the loss of either.",
+      "word_for_word": [
+        [
+          "sarvasya",
+          "of everyone"
+        ],
+        [
+          "hṛdi",
+          "in the heart"
+        ],
+        [
+          "sanniviṣṭaḥ",
+          "seated, entered"
+        ],
+        [
+          "mattāḥ",
+          "from Me"
+        ],
+        [
+          "smṛtiḥ",
+          "memory"
+        ],
+        [
+          "jñānam",
+          "knowledge"
+        ],
+        [
+          "apohanam",
+          "removal, forgetting"
+        ],
+        [
+          "vedaiḥ sarvaiḥ",
+          "through all the Vedas"
+        ],
+        [
+          "aham eva vedyaḥ",
+          "I alone am to be known"
+        ],
+        [
+          "vedānta-kṛt",
+          "the author or source of Vedānta"
+        ],
+        [
+          "veda-vit",
+          "the knower of the Veda"
+        ]
+      ]
     }
   }
 }
