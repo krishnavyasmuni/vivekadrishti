@@ -549,6 +549,128 @@
           "rajasic"
         ]
       ]
+    },
+    "13": {
+      "reviewed": true,
+      "translation": "A sacrifice lacking scriptural rule, lacking distribution of food, lacking mantras, lacking offerings to the officiants, and lacking faith is called tamasic by the wise.",
+      "word_for_word": [
+        [
+          "vidhi-hīnam",
+          "lacking scriptural rule"
+        ],
+        [
+          "asṛṣṭa-annam",
+          "lacking distribution of food"
+        ],
+        [
+          "mantra-hīnam",
+          "lacking mantras"
+        ],
+        [
+          "a-dakṣiṇam",
+          "lacking offerings to the officiants"
+        ],
+        [
+          "śraddhā-vira hitam",
+          "lacking faith"
+        ],
+        [
+          "yajñam",
+          "sacrifice"
+        ],
+        [
+          "tāmasam",
+          "tamasic"
+        ],
+        [
+          "paricakṣate",
+          "they call, declare"
+        ]
+      ]
+    },
+    "14": {
+      "reviewed": true,
+      "translation": "Worship of the gods, the twice-born, the teachers, and the wise; purity, straightforwardness, celibacy, and nonviolence—this is called bodily austerity.",
+      "word_for_word": [
+        [
+          "deva",
+          "of gods"
+        ],
+        [
+          "dvija",
+          "of the twice-born"
+        ],
+        [
+          "guru",
+          "of teachers"
+        ],
+        [
+          "prājña pūjanam",
+          "worship of the wise"
+        ],
+        [
+          "śaucam",
+          "purity"
+        ],
+        [
+          "ārjavam",
+          "straightforwardness"
+        ],
+        [
+          "brahmacaryam",
+          "celibacy"
+        ],
+        [
+          "ahiṃsā",
+          "nonviolence"
+        ],
+        [
+          "śārīram tapaḥ",
+          "bodily austerity"
+        ]
+      ]
+    },
+    "15": {
+      "reviewed": true,
+      "translation": "Speech that causes no agitation, is truthful, pleasing, and beneficial, together with practice of self-study—this is called verbal austerity.",
+      "word_for_word": [
+        [
+          "an-udvega-karam",
+          "causing no agitation"
+        ],
+        [
+          "vākyam",
+          "speech"
+        ],
+        [
+          "satyam",
+          "truthful"
+        ],
+        [
+          "priya-hitam",
+          "pleasing and beneficial"
+        ],
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "svādhyāya-abhyasanam",
+          "practice of self-study"
+        ],
+        [
+          "vāṅ-mayam",
+          "verbal"
+        ],
+        [
+          "tapaḥ",
+          "austerity"
+        ],
+        [
+          "ucyate",
+          "is called"
+        ]
+      ]
     }
   }
 }
