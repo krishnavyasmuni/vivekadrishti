@@ -31,12 +31,22 @@
     ['/vivekadrishti/indology/', '/vivekadrishti/pages/indology/'],
     ['/vivekadrishti/purana-library/', '/vivekadrishti/pages/purana-library/'],
     ['/vivekadrishti/bhagavatam-with-sridhara-bhasya/', '/vivekadrishti/pages/bhagavatam-with-sridhara-bhasya/'],
-    ['/vivekadrishti/bhavishya-purana-brahmaparvan/', '/vivekadrishti/pages/bhavishya-purana-brahmaparvan/']
+    ['/vivekadrishti/bhavishya-purana-brahmaparvan/', '/vivekadrishti/pages/bhavishya-purana-brahmaparvan/'],
+    ['/vivekadrishti/bhagavad-gita/', '/vivekadrishti/pages/bhagavad-gita/']
   ]);
 
   document.querySelectorAll('a[href]').forEach((link) => {
     const replacement = sectionPaths.get(link.getAttribute('href'));
     if (replacement) link.setAttribute('href', replacement);
+  });
+
+  document.querySelectorAll('.site-nav').forEach((nav) => {
+    if (nav.querySelector('a[href="/vivekadrishti/bhagavad-gita/"], a[href="/vivekadrishti/pages/bhagavad-gita/"]')) return;
+    const link = document.createElement('a');
+    link.href = '/vivekadrishti/pages/bhagavad-gita/';
+    link.textContent = 'Bhagavad Gītā';
+    link.dataset.bhagavadGitaNav = 'true';
+    nav.appendChild(link);
   });
 
   const menuButton = document.querySelector('.menu-toggle');
