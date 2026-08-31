@@ -2047,6 +2047,96 @@
           "with the words “if you”"
         ]
       ]
+    },
+    "34": {
+      "reviewed": true,
+      "translation": "Moreover, with “infamy”: it is imperishable, everlasting. For one who has been esteemed and honored, infamy is greater—even more painful—than death.",
+      "word_for_word": [
+        [
+          "kiṃ ca",
+          "moreover"
+        ],
+        [
+          "akīrtim",
+          "infamy"
+        ],
+        [
+          "avyayām",
+          "imperishable"
+        ],
+        [
+          "śāśvatīm",
+          "everlasting"
+        ],
+        [
+          "saṃbhāvitasya bahu-mānitasya",
+          "for one who has been esteemed and greatly honored"
+        ],
+        [
+          "akīrtiḥ maraṇāt atiricyate",
+          "infamy exceeds death"
+        ],
+        [
+          "adhikatarā bhavati",
+          "becomes greater"
+        ]
+      ]
+    },
+    "35": {
+      "reviewed": true,
+      "translation": "Moreover, with “because of fear”: those who formerly regarded you highly because of your many virtues will think that you withdrew from battle out of fear. Consequently, after having been greatly honored, you will fall into disgrace and lose your standing.",
+      "word_for_word": [
+        [
+          "kiṃ ca bhayāt iti",
+          "moreover, with “because of fear”"
+        ],
+        [
+          "yeṣām bahu-guṇatvena tvam pūrvam saṃmataḥ abhūḥ",
+          "those who formerly regarded you highly because of your many virtues"
+        ],
+        [
+          "te eva bhayena saṅgrāmāt tvām nivṛttam manyeran",
+          "they would think that you withdrew from battle out of fear"
+        ],
+        [
+          "tataḥ ca",
+          "and then"
+        ],
+        [
+          "pūrvam bahu-mataḥ bhūtvā",
+          "having previously been greatly honored"
+        ],
+        [
+          "lāghavam yāsyasi",
+          "you will fall into disgrace; lose your standing"
+        ]
+      ]
+    },
+    "36": {
+      "reviewed": true,
+      "translation": "Moreover, with “unutterable”: your enemies will speak words that ought not to be spoken—words unfit to be uttered—against you.",
+      "word_for_word": [
+        [
+          "kiṃ ca",
+          "moreover"
+        ],
+        [
+          "avācyān vādān",
+          "unutterable words"
+        ],
+        [
+          "vacana-an-arhān śabdān",
+          "words unfit to be spoken"
+        ],
+        [
+          "tava ahitāḥ tvat-śatravaḥ",
+          "your enemies, those hostile to you"
+        ],
+        [
+          "vadiṣyanti",
+          "will speak"
+        ]
+      ]
     }
   }
 }
