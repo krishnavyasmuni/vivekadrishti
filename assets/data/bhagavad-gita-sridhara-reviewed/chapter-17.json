@@ -801,6 +801,140 @@
           "impermanent"
         ]
       ]
+    },
+    "19": {
+      "reviewed": true,
+      "translation": "Austerity performed with foolish obstinacy, causing torment to oneself or for the purpose of destroying another, is declared tamasic.",
+      "word_for_word": [
+        [
+          "mūḍha-grāheṇa",
+          "with foolish obstinacy"
+        ],
+        [
+          "ātmanaḥ pīḍayā",
+          "with torment of oneself"
+        ],
+        [
+          "yat",
+          "which"
+        ],
+        [
+          "tapaḥ",
+          "austerity"
+        ],
+        [
+          "kriyate",
+          "is performed"
+        ],
+        [
+          "parasya utsādanārtham",
+          "for the purpose of destroying another"
+        ],
+        [
+          "vā",
+          "or"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "tāmasam",
+          "tamasic"
+        ],
+        [
+          "udāhṛtam",
+          "is declared"
+        ]
+      ]
+    },
+    "20": {
+      "reviewed": true,
+      "translation": "The gift given with the conviction “it must be given,” to one who cannot repay, in the proper place, at the proper time, and to a worthy recipient, is remembered as sattvic. Śrīdhara explains “worthy recipient” as a learned brāhmaṇa, or one who protects the giver from danger.",
+      "word_for_word": [
+        [
+          "dātavyam iti",
+          "“it must be given”"
+        ],
+        [
+          "yat dānam",
+          "the gift which"
+        ],
+        [
+          "dīyate",
+          "is given"
+        ],
+        [
+          "anupakāriṇe",
+          "to one unable to repay"
+        ],
+        [
+          "deśe",
+          "in the proper place"
+        ],
+        [
+          "kāle",
+          "at the proper time"
+        ],
+        [
+          "pātre",
+          "to a worthy recipient"
+        ],
+        [
+          "tat dānam",
+          "that gift"
+        ],
+        [
+          "sāttvikam",
+          "sattvic"
+        ],
+        [
+          "smṛtam",
+          "is remembered"
+        ]
+      ]
+    },
+    "21": {
+      "reviewed": true,
+      "translation": "But the gift given for the sake of return, or with a fruit in view, and given reluctantly, is remembered as rajasic.",
+      "word_for_word": [
+        [
+          "yat tu",
+          "but that which"
+        ],
+        [
+          "pratyupakāra-artham",
+          "for the sake of return"
+        ],
+        [
+          "phalam uddiśya",
+          "with a fruit in view"
+        ],
+        [
+          "vā",
+          "or"
+        ],
+        [
+          "dīyate",
+          "is given"
+        ],
+        [
+          "parikliṣṭam",
+          "reluctantly, with mental distress"
+        ],
+        [
+          "tat dānam",
+          "that gift"
+        ],
+        [
+          "rājasam",
+          "rajasic"
+        ],
+        [
+          "smṛtam",
+          "is remembered"
+        ]
+      ]
     }
   }
 }
