@@ -1,0 +1,212 @@
+{
+  "_meta": {
+    "chapter": 5,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Arjuna said: “Kṛṣṇa, You praise the renunciation of action, and again You praise yoga. Since these two cannot be practiced by one person at the same time, their forms being opposed, tell me one of them with certainty—the one that is better for me.” Śrīdhara explains that Arjuna sees a conflict between the teaching of renunciation to the knower and the repeated instruction to cut doubt with the sword of knowledge and practice yoga.",
+      "word_for_word": [
+        [
+          "karmasaṃnyāsa-yogayoḥ",
+          "of renunciation of action and of karma-yoga"
+        ],
+        [
+          "pūrvāpara-virodham",
+          "a conflict between what was taught before and after"
+        ],
+        [
+          "manyamānaḥ",
+          "thinking"
+        ],
+        [
+          "arjunaḥ uvāca",
+          "Arjuna said"
+        ],
+        [
+          "jñāninaḥ karma-saṃnyāsam kathayasi",
+          "You speak of renunciation of action for the person of knowledge"
+        ],
+        [
+          "saṃnyāsam",
+          "renunciation"
+        ],
+        [
+          "yogam ca kathayasi",
+          "and You speak of yoga"
+        ],
+        [
+          "ekasmin anutiṣṭhātavye sati",
+          "when one of them must be practiced"
+        ],
+        [
+          "yad śreyaḥ",
+          "that which is better"
+        ],
+        [
+          "tat ekam",
+          "that one"
+        ],
+        [
+          "me brūhi",
+          "tell me"
+        ],
+        [
+          "suniścitam",
+          "with certainty"
+        ],
+        [
+          "jñitendriyasya yateḥ",
+          "of the disciplined person whose senses are conquered"
+        ],
+        [
+          "muktiṃ abravīt",
+          "he spoke of liberation"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: “Both renunciation and karma-yoga bring the highest good; but of the two, karma-yoga is superior to renunciation of action.” Śrīdhara clarifies that the instruction to practice karma-yoga is addressed to one who identifies the Self with the body, such as Arjuna, after cutting the grief and delusion arising from the apparent killing of relatives. When karma-yoga has purified the mind and knowledge of the Self has arisen, renunciation is practiced as an aid to steadfastness in knowledge. Thus, according to the practitioner’s stage, the two together lead to the highest good, while karma-yoga is the better choice here.",
+      "word_for_word": [
+        [
+          "uttaram śrī-bhagavān uvāca",
+          "the Blessed Lord gave the answer"
+        ],
+        [
+          "saṃnyāsaḥ",
+          "renunciation"
+        ],
+        [
+          "karma-yogaḥ ca",
+          "and karma-yoga"
+        ],
+        [
+          "niḥśreyasa-karau ubhau",
+          "both produce the highest good"
+        ],
+        [
+          "vedānta-vedya-ātma-tattva-vidam prati",
+          "toward one who knows the truth of the Self known through Vedānta"
+        ],
+        [
+          "deha-ātma-abhimāninam",
+          "one who identifies the Self with the body"
+        ],
+        [
+          "bandhu-vadha-ādi-nimitta",
+          "arising from the apparent killing of relatives and the like"
+        ],
+        [
+          "śoka-moha-ādikṛtam saṃśayam",
+          "doubt produced by grief, delusion, and the like"
+        ],
+        [
+          "jñāna-asina chittvā",
+          "having cut with the sword of knowledge"
+        ],
+        [
+          "paramātma-jñāna-upāya-bhūtam karma-yogam",
+          "karma-yoga, the means to knowledge of the Supreme Self"
+        ],
+        [
+          "ātīṣṭha",
+          "take up / practice"
+        ],
+        [
+          "citta-śuddhasya",
+          "of one whose mind has become pure"
+        ],
+        [
+          "ātma-tattva-jñāne jāte sati",
+          "when knowledge of the truth of the Self has arisen"
+        ],
+        [
+          "jñāna-niṣṭhā-aṅgatvena",
+          "as a limb of steadfastness in knowledge"
+        ],
+        [
+          "bhūmikā-bhedena",
+          "according to difference of stage"
+        ],
+        [
+          "samucitau",
+          "combined / brought together"
+        ],
+        [
+          "karma-yogāt viśiṣyate",
+          "is superior to karma-yoga"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Śrīdhara praises karma-yoga by showing its superiority through its status as renunciation: “Know as a constant renouncer the person who neither hates nor desires.” One who performs action for the Supreme Lord, free from attraction and aversion, is a renouncer even while continually performing action. He is free from duality and has a purified mind; therefore, through knowledge, he is released from bondage easily and happily.",
+      "word_for_word": [
+        [
+          "kutaḥ",
+          "why / from what reason"
+        ],
+        [
+          "saḥ nitya-saṃnyāsī jñeyaḥ",
+          "he should be known as a constant renouncer"
+        ],
+        [
+          "yaḥ na dveṣṭi",
+          "who does not hate"
+        ],
+        [
+          "na kāṅkṣati",
+          "does not desire"
+        ],
+        [
+          "rāga-dveṣa-ādi-rahitena",
+          "being free from attraction, aversion, and the like"
+        ],
+        [
+          "parameśvara-artham karmāṇi",
+          "actions for the sake of the Supreme Lord"
+        ],
+        [
+          "anutiṣṭhati",
+          "performs"
+        ],
+        [
+          "karma-anusthāna-kāle api",
+          "even at the time of performing action"
+        ],
+        [
+          "nir-dvandvaḥ",
+          "free from duality"
+        ],
+        [
+          "rāga-dveṣa-ādi-śūnyaḥ",
+          "devoid of attraction, aversion, and the like"
+        ],
+        [
+          "śuddha-cittaḥ",
+          "whose mind is pure"
+        ],
+        [
+          "jñāna-dvārā",
+          "through knowledge"
+        ],
+        [
+          "sukham",
+          "happily / easily"
+        ],
+        [
+          "anāyāsena",
+          "without difficulty"
+        ],
+        [
+          "bandhāt pramucyate",
+          "is released from bondage"
+        ]
+      ]
+    }
+  }
+}
