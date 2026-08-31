@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "chapter": 17,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Arjuna said: Those who, endowed with faith, worship after setting aside the scriptural rule—what is their standing, O Kṛṣṇa? Is it sattva, rajas, or tamas? Śrīdhara takes the question to concern people who follow inherited custom with faith but, from discomfort or laziness, have not sought to understand the scriptural meaning.",
+      "word_for_word": [
+        [
+          "ye",
+          "those who"
+        ],
+        [
+          "śāstra-vidhim",
+          "the scriptural rule"
+        ],
+        [
+          "utsṛjya",
+          "having set aside"
+        ],
+        [
+          "yajante",
+          "worship"
+        ],
+        [
+          "śraddhayā anvitāḥ",
+          "endowed with faith"
+        ],
+        [
+          "teṣām",
+          "of them"
+        ],
+        [
+          "niṣṭhā",
+          "standing, established position"
+        ],
+        [
+          "kā",
+          "what"
+        ],
+        [
+          "kṛṣṇa",
+          "O Kṛṣṇa"
+        ],
+        [
+          "sattvam",
+          "sattva"
+        ],
+        [
+          "āho",
+          "or"
+        ],
+        [
+          "rajaḥ tamaḥ",
+          "rajas and tamas"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: The faith of embodied beings is threefold, born from their nature: sattvic, rajasic, and tamasic. Hear about that faith.",
+      "word_for_word": [
+        [
+          "tri-vidhā",
+          "threefold"
+        ],
+        [
+          "bhavati",
+          "becomes"
+        ],
+        [
+          "śraddhā",
+          "faith"
+        ],
+        [
+          "dehinām",
+          "of embodied beings"
+        ],
+        [
+          "sā",
+          "that"
+        ],
+        [
+          "svabhāva-jā",
+          "born from nature"
+        ],
+        [
+          "sāttvikī",
+          "sattvic"
+        ],
+        [
+          "rājasī",
+          "rajasic"
+        ],
+        [
+          "tāmasī",
+          "tamasic"
+        ],
+        [
+          "tām śṛṇu",
+          "hear that"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "The faith of each person follows his inner disposition, O Bhārata; a person is made of faith—whatever his faith, he is exactly that. Śrīdhara explains that faith follows the relative strength of sattva, rajas, and tamas in the person.",
+      "word_for_word": [
+        [
+          "sattva-anurūpā",
+          "according to the inner disposition"
+        ],
+        [
+          "sarvasya",
+          "of everyone"
+        ],
+        [
+          "śraddhā",
+          "faith"
+        ],
+        [
+          "bhavati",
+          "is"
+        ],
+        [
+          "śraddhā-mayaḥ",
+          "made of faith"
+        ],
+        [
+          "ayam",
+          "this"
+        ],
+        [
+          "puruṣaḥ",
+          "person"
+        ],
+        [
+          "yaḥ yac-chraddhaḥ",
+          "whatever faith one has"
+        ],
+        [
+          "saḥ eva saḥ",
+          "that very person is that"
+        ]
+      ]
+    }
+  }
+}
