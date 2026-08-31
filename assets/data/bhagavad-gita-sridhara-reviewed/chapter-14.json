@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "chapter": 14,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: Again I will declare to you the supreme knowledge, the highest among knowledges, knowing which all sages have gone from here to supreme perfection.",
+      "word_for_word": [
+        [
+          "param",
+          "supreme"
+        ],
+        [
+          "bhūyaḥ",
+          "again"
+        ],
+        [
+          "pravakṣyāmi",
+          "I will declare"
+        ],
+        [
+          "jñānānām",
+          "among knowledges"
+        ],
+        [
+          "jñānam uttamam",
+          "the highest knowledge"
+        ],
+        [
+          "yat jñātvā",
+          "knowing which"
+        ],
+        [
+          "munayaḥ",
+          "sages"
+        ],
+        [
+          "sarve",
+          "all"
+        ],
+        [
+          "parām siddhim",
+          "supreme perfection"
+        ],
+        [
+          "itaḥ gatāḥ",
+          "have gone from here"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "Taking refuge in this knowledge and attaining likeness to Me, they are not born even at creation, nor are they troubled at dissolution; they do not return again.",
+      "word_for_word": [
+        [
+          "idam jñānam",
+          "this knowledge"
+        ],
+        [
+          "upāśritya",
+          "taking refuge in"
+        ],
+        [
+          "mama sādharmyam",
+          "likeness to Me"
+        ],
+        [
+          "āgatāḥ",
+          "having attained"
+        ],
+        [
+          "sarge api",
+          "even at creation"
+        ],
+        [
+          "na upajāyante",
+          "are not born"
+        ],
+        [
+          "pralaye",
+          "at dissolution"
+        ],
+        [
+          "na vyathanti",
+          "are not troubled"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "The great Brahman, My Nature, is My womb; in it I place the seed, the conscious principle that causes the expansion of the universe. From that, O Bhārata, arises the birth of all beings. Śrīdhara explains that beings absorbed in Me with the residues of ignorance, desire, and action are joined at creation with their fields of experience.",
+      "word_for_word": [
+        [
+          "mama yoniḥ",
+          "My womb"
+        ],
+        [
+          "mahat brahma",
+          "the great Brahman, vast Nature"
+        ],
+        [
+          "tasmin",
+          "in it"
+        ],
+        [
+          "garbham",
+          "the seed, embryo"
+        ],
+        [
+          "dadhāmi",
+          "I place"
+        ],
+        [
+          "aham",
+          "I"
+        ],
+        [
+          "sambhavaḥ",
+          "birth, arising"
+        ],
+        [
+          "sarva-bhūtānām",
+          "of all beings"
+        ],
+        [
+          "tataḥ",
+          "from that"
+        ],
+        [
+          "bhavati",
+          "comes to be"
+        ],
+        [
+          "bhārata",
+          "O Bhārata"
+        ]
+      ]
+    }
+  }
+}
