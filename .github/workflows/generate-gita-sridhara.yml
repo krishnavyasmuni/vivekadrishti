@@ -8,20 +8,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 env:
   TOKENIZERS_PARALLELISM: 'false'
 
 jobs:
-  generate:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      matrix:
-        chapter: [18]
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -39,41 +34,11 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/vedicscriptures/bhagavad-gita.git /tmp/bhagavad-gita-source
 
-      - name: Generate chapter ${{ matrix.chapter }}
+      - name: Test BG 18.15 and 18.16
         run: |
-          python scripts/generate-gita-sridhara-data.py --source /tmp/bhagavad-gita-source --chapters ${{ matrix.chapter }}
-
-      - name: Upload chapter ${{ matrix.chapter }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: gita-sridhara-${{ matrix.chapter }}
-          path: assets/data/bhagavad-gita-sridhara/chapter-${{ matrix.chapter }}.json
-          if-no-files-found: error
-          retention-days: 1
-
-  commit:
-    needs: generate
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Download generated chapters
-        uses: actions/download-artifact@v4
-        with:
-          pattern: gita-sridhara-*
-          path: assets/data/bhagavad-gita-sridhara
-          merge-multiple: true
-
-      - name: Commit generated chapter data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/bhagavad-gita-sridhara
-          if git diff --cached --quiet; then
-            echo "No generated data changes"
-            exit 0
-          fi
-          git commit -m "Generate Sridhara English for Gita chapter 18 model test"
-          git push
+          python scripts/generate-gita-sridhara-data.py \
+            --source /tmp/bhagavad-gita-source \
+            --output /tmp/gita-sridhara-test \
+            --chapters 18 \
+            --verses 15 16
+          cat /tmp/gita-sridhara-test/chapter-18.json
