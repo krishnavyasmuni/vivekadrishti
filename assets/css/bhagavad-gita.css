@@ -1,42 +1,14 @@
-/* Bhagavad Gītā uses the same restrained Purāṇa reading system as Bhāgavatam and Bhaviṣya. */
-.gita-page .site-main{width:min(1120px,100%);max-width:none;margin:0 auto;padding:0;background:#2b261f}
-.gita-page .article-shell{width:100%;max-width:none;margin:0;padding:0;background:transparent}
-.gita-page .article-body{width:min(920px,100%);max-width:none;margin:0 auto;padding:0 0 70px;background:#f4f4f4;color:#3c362e;font-family:Merriweather,Georgia,serif}
-.gita-page .gita-content,.gita-page .gita-chapter-index{width:min(652px,calc(100% - 48px));margin:0 auto}
-.gita-hero{text-align:center;padding:62px 0 35px}
-.gita-hero .eyebrow{margin:0 0 8px;color:#a92727;font-family:Vollkorn,Georgia,serif;font-size:20px}
-.gita-hero h1{margin:0;color:#00787a;font-family:Vollkorn,Georgia,serif;font-size:clamp(38px,6vw,50px);font-weight:400;line-height:1.12}
-.gita-hero .subtitle{margin:14px 0 0;color:#a92727;font-size:18px}
-.gita-rule{width:56%;margin:24px auto 0;border-top:1px solid #dedbd6}
-.gita-intro{margin:0 0 26px;padding:16px 18px;border-left:2px solid rgba(0,120,122,.28);background:rgba(0,120,122,.035);font-size:15px;line-height:1.6}
-.gita-intro p{margin:0 0 9px}.gita-intro p:last-child{margin-bottom:0}
-.gita-chapter-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:0 0 22px}
-.gita-chapter-nav a,.gita-details summary{display:inline-block;padding:5px 13px;border:1px solid #9bc5c7;border-radius:999px;background:transparent;color:#2f7f82;cursor:pointer;font-family:Merriweather,Georgia,serif;font-size:13px;line-height:1.2;text-decoration:none}
-.gita-chapter-nav a:hover,.gita-details summary:hover{background:rgba(0,120,122,.06)}
-.gita-contents{margin:0 0 28px;padding:14px 17px;border:1px solid #dedbd6;background:rgba(255,255,255,.45)}
-.gita-contents h2{margin:0 0 8px;color:#2f7f82;font-family:Vollkorn,Georgia,serif;font-size:20px;font-weight:500}
-.gita-contents ol{columns:2;margin:0;padding-left:21px;font-size:13px;line-height:1.55}
-.gita-contents a{color:#16539b;text-decoration:none}.gita-contents a:hover{text-decoration:underline}
-.gita-verse{margin:0;padding:28px 0 31px;border-top:1px solid rgba(119,119,119,.16)}
-.gita-verse h2{margin:0 0 14px;color:#2f7f82;font-family:Vollkorn,Georgia,serif;font-size:25px;font-weight:500;line-height:1.1;text-align:center}
-.gita-verse h2 span{font-size:.78em}
-.gita-sanskrit{margin:0 auto 14px;color:#3c362e;font-size:21px;line-height:1.5;text-align:center}
-.gita-translation{margin:0 auto 14px;font-size:16px;line-height:1.5;text-align:center}
-.gita-translation strong{color:#a92727;font-family:Vollkorn,Georgia,serif;font-size:17px;font-weight:500}
-.gita-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:0 0 13px}
-.gita-details{display:inline-block;max-width:100%;text-align:left}.gita-details[open]{flex:1 1 100%}
-.gita-details summary{list-style:none}.gita-details summary::-webkit-details-marker{display:none}
-.gita-reveal{margin-top:8px;padding:10px 13px;border:1px solid #dedbd6;background:rgba(255,255,255,.56);font-size:13px;line-height:1.55;overflow-wrap:anywhere}
-.gita-reveal p{margin:0}.gita-reveal em{color:#514a41}
-.gita-commentary{display:block!important;margin:14px 0 0;padding:13px 16px 1px;border-left:2px solid rgba(169,39,39,.32);background:rgba(169,39,39,.035);font-size:15px;line-height:1.55}
-.gita-commentary h3{margin:0 0 6px;color:#a92727;font-family:Vollkorn,Georgia,serif;font-size:20px;font-weight:500}
-.gita-commentary p{margin:0 0 13px}.gita-no-source{color:#6e665c;font-style:italic}
-.gita-source-note{margin:35px 0 0;padding-top:18px;border-top:1px solid #dedbd6;color:#6e665c;font-size:12px;line-height:1.55}
-.gita-source-note strong{color:#2f7f82;font-family:Vollkorn,Georgia,serif;font-size:17px;font-weight:500}
-.gita-source-note a{color:#6731fb;text-decoration:none}.gita-source-note a:hover{text-decoration:underline}
-.gita-index-intro{margin:0 0 22px;font-size:15px;line-height:1.6}
-.gita-chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 26px}
-.gita-chapter-card{display:block;padding:8px 0;border-bottom:1px solid #dedbd6;color:#16539b;text-decoration:none}
-.gita-chapter-card:hover{text-decoration:underline}.gita-chapter-number{font-family:Vollkorn,Georgia,serif;font-size:18px}.gita-chapter-name{font-size:14px}
-.gita-chapter-sanskrit{display:block;color:#6e665c;font-size:12px}.gita-chapter-status{display:block;color:#2f7f82;font-size:11px;text-transform:uppercase}
-@media(max-width:680px){.gita-page .gita-content,.gita-page .gita-chapter-index{width:calc(100% - 28px)}.gita-chapter-grid{grid-template-columns:1fr}.gita-contents ol{columns:1}.gita-sanskrit{font-size:19px}.gita-translation{font-size:15px}}
+/* Screenshot-matched verse treatment. */
+.gita-verse{border-top:0;padding:30px 0 34px}
+.gita-verse h2{margin:0;color:#2f7f82;font-size:26px;font-weight:600;letter-spacing:.01em}
+.gita-verse h2 span{font-size:1em}
+.gita-verse-rule{width:56%;height:0;margin:13px auto 16px;border-top:1px solid #dedbd6}
+.gita-sanskrit{margin:0 auto 14px;font-size:21px;line-height:1.48}
+.gita-translation{margin:0 auto 14px;font-size:16px;line-height:1.45}
+.gita-controls{justify-content:flex-start;margin:0 0 12px}
+.gita-commentary{margin:14px 0 0;padding:0;border:0;background:transparent;font-size:16px;line-height:1.48;text-align:left}
+.gita-commentary h3{display:inline;margin:0;color:#2f7f82;font-size:17px;font-weight:700}
+.gita-commentary p{display:inline;margin:0}
+.gita-commentary p:before{content:" "}
+.gita-commentary .gita-no-source{color:#6e665c;font-style:italic}
+@media(max-width:680px){.gita-verse h2{font-size:24px}.gita-sanskrit{font-size:19px}.gita-commentary{font-size:15px}}
