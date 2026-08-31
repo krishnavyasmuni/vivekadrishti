@@ -60,7 +60,6 @@ def split_phrases(text: str, target_words: int = 5) -> list[str]:
         sentence = sentence.strip(" ।॥")
         if not sentence:
             continue
-        # First respect obvious prose/quotation boundaries.
         pieces = [p.strip() for p in re.split(r"[,;:—–]+", sentence) if p.strip()]
         for piece in pieces:
             words = piece.split()
@@ -87,9 +86,12 @@ class Translator:
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name, trust_remote_code=True).to(self.device).eval()
         self.processor = IndicProcessor(inference=True)
+        print(f"translation device: {self.device}", flush=True)
 
-    def batch(self, sentences: Iterable[str], batch_size: int = 12) -> list[str]:
+    def batch(self, sentences: Iterable[str], batch_size: int = 16) -> list[str]:
         items = [s.strip() for s in sentences if s and s.strip()]
+        if not items:
+            return []
         out_all: list[str] = []
         for start in range(0, len(items), batch_size):
             batch = items[start : start + batch_size]
@@ -102,17 +104,18 @@ class Translator:
                 return_tensors="pt",
             )
             encoded = {k: v.to(self.device) for k, v in encoded.items()}
-            with torch.no_grad():
+            with torch.inference_mode():
                 generated = self.model.generate(
                     **encoded,
-                    num_beams=5,
+                    num_beams=1,
+                    do_sample=False,
                     max_length=256,
-                    length_penalty=1.15,
                     no_repeat_ngram_size=3,
                 )
             decoded = self.tokenizer.batch_decode(generated, skip_special_tokens=True)
             decoded = self.processor.postprocess_batch(decoded, lang=TGT_LANG)
             out_all.extend(re.sub(r"\s+", " ", x).strip() for x in decoded)
+            print(f"translated {min(start + len(batch), len(items))}/{len(items)} units", flush=True)
         return out_all
 
 
@@ -136,10 +139,37 @@ def read_source(source: Path, chapter: int, verse: int) -> str:
 
 
 def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict:
-    verses: dict[str, dict] = {}
+    records: dict[int, dict] = {}
+    all_sentences: list[str] = []
+    all_phrases: list[str] = []
+
     for verse in range(1, COUNTS[chapter - 1] + 1):
         sanskrit = read_source(source, chapter, verse)
         if no_commentary(sanskrit):
+            records[verse] = {"no_commentary": True}
+            continue
+
+        sentence_units = split_sentences(sanskrit)
+        phrase_units = split_phrases(sanskrit)
+        records[verse] = {
+            "no_commentary": False,
+            "sentence_start": len(all_sentences),
+            "sentence_count": len(sentence_units),
+            "phrase_start": len(all_phrases),
+            "phrase_count": len(phrase_units),
+            "phrase_units": phrase_units,
+        }
+        all_sentences.extend(sentence_units)
+        all_phrases.extend(phrase_units)
+
+    print(f"chapter {chapter}: {len(all_sentences)} sentence units, {len(all_phrases)} phrase units", flush=True)
+    sentence_english = translator.batch(all_sentences, batch_size=16)
+    phrase_english = translator.batch(all_phrases, batch_size=24)
+
+    verses: dict[str, dict] = {}
+    for verse in range(1, COUNTS[chapter - 1] + 1):
+        record = records[verse]
+        if record["no_commentary"]:
             verses[str(verse)] = {
                 "translation": "No commentary.",
                 "word_for_word": [],
@@ -147,14 +177,15 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
             print(f"{chapter}.{verse}: no commentary", flush=True)
             continue
 
-        sentence_units = split_sentences(sanskrit)
-        english_units = translator.batch(sentence_units)
-        translation = smooth_join(english_units)
+        sentence_start = record["sentence_start"]
+        sentence_end = sentence_start + record["sentence_count"]
+        translation = smooth_join(sentence_english[sentence_start:sentence_end])
 
-        phrase_units = split_phrases(sanskrit)
-        phrase_english = translator.batch(phrase_units, batch_size=16)
+        phrase_start = record["phrase_start"]
+        phrase_end = phrase_start + record["phrase_count"]
+        phrase_glosses = phrase_english[phrase_start:phrase_end]
         pairs = []
-        for src, gloss in zip(phrase_units, phrase_english):
+        for src, gloss in zip(record["phrase_units"], phrase_glosses):
             gloss = re.sub(r"\s+", " ", gloss).strip().rstrip(".")
             if not gloss:
                 continue
@@ -164,7 +195,7 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
             "translation": translation,
             "word_for_word": pairs,
         }
-        print(f"{chapter}.{verse}: {len(sentence_units)} sentence units, {len(pairs)} phrase glosses", flush=True)
+        print(f"{chapter}.{verse}: {record['sentence_count']} sentence units, {len(pairs)} phrase glosses", flush=True)
 
     return {
         "_meta": {
