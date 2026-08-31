@@ -1911,6 +1911,94 @@
           "prepared, intent"
         ]
       ]
+    },
+    "46": {
+      "reviewed": true,
+      "translation": "If the armed sons of Dhṛtarāṣṭra were to kill me, unresisting and unarmed, in battle, that would be better for me.",
+      "word_for_word": [
+        [
+          "yadi",
+          "if"
+        ],
+        [
+          "mām apratīkāram",
+          "me, unresisting"
+        ],
+        [
+          "aśastram",
+          "unarmed"
+        ],
+        [
+          "śastra-pāṇayaḥ",
+          "those with weapons in their hands"
+        ],
+        [
+          "dhārtarāṣṭrāḥ",
+          "the sons of Dhṛtarāṣṭra"
+        ],
+        [
+          "raṇe",
+          "in battle"
+        ],
+        [
+          "hanyuḥ",
+          "should kill"
+        ],
+        [
+          "tat",
+          "that"
+        ],
+        [
+          "me",
+          "for me"
+        ],
+        [
+          "kṣemataram bhavet",
+          "would be better, more secure"
+        ]
+      ]
+    },
+    "47": {
+      "reviewed": true,
+      "translation": "Sañjaya said: Having spoken thus, Arjuna sat down on the seat of the chariot in the midst of battle, casting aside his bow and arrows, his mind distressed by sorrow.",
+      "word_for_word": [
+        [
+          "sañjaya uvāca",
+          "Sañjaya said"
+        ],
+        [
+          "evam uktvā",
+          "having spoken thus"
+        ],
+        [
+          "arjunaḥ",
+          "Arjuna"
+        ],
+        [
+          "saṅkhye",
+          "in battle"
+        ],
+        [
+          "rathopasthe",
+          "on the seat of the chariot"
+        ],
+        [
+          "upāviśat",
+          "sat down"
+        ],
+        [
+          "visṛjya",
+          "casting aside"
+        ],
+        [
+          "sa-śaram cāpam",
+          "the bow together with arrows"
+        ],
+        [
+          "śoka-saṃvigna-mānasaḥ",
+          "whose mind was distressed by sorrow"
+        ]
+      ]
     }
   }
 }
