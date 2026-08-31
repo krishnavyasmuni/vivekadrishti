@@ -281,6 +281,128 @@
           "objects of the senses"
         ]
       ]
+    },
+    "7": {
+      "reviewed": true,
+      "translation": "Desire, aversion, pleasure, pain, the bodily aggregate, consciousness, and steadfastness—this field, together with its modifications, has been described in brief. Śrīdhara notes that desire and the like are observable and therefore belong to the mind within the field, not to the Self.",
+      "word_for_word": [
+        [
+          "icchā",
+          "desire"
+        ],
+        [
+          "dveṣaḥ",
+          "aversion"
+        ],
+        [
+          "sukham",
+          "pleasure"
+        ],
+        [
+          "duḥkham",
+          "pain"
+        ],
+        [
+          "saṅghātaḥ",
+          "the bodily aggregate"
+        ],
+        [
+          "cetanā",
+          "consciousness, a mental function"
+        ],
+        [
+          "dhṛtiḥ",
+          "steadfastness"
+        ],
+        [
+          "etat",
+          "this"
+        ],
+        [
+          "kṣetram",
+          "field"
+        ],
+        [
+          "sa-vikāram",
+          "together with its modifications"
+        ],
+        [
+          "samāsena",
+          "in brief"
+        ],
+        [
+          "udāhṛtam",
+          "has been described"
+        ]
+      ]
+    },
+    "8": {
+      "reviewed": true,
+      "translation": "Humility, absence of pretence, nonviolence, forbearance, straightforwardness, service to the teacher, purity, steadfastness, and self-control.",
+      "word_for_word": [
+        [
+          "amānitvam",
+          "humility, absence of self-praise"
+        ],
+        [
+          "adambhitvam",
+          "absence of pretence"
+        ],
+        [
+          "ahiṃsā",
+          "nonviolence"
+        ],
+        [
+          "kṣāntiḥ",
+          "forbearance"
+        ],
+        [
+          "ārjavam",
+          "straightforwardness"
+        ],
+        [
+          "ācārya-upāsanam",
+          "service to the teacher"
+        ],
+        [
+          "śaucam",
+          "purity"
+        ],
+        [
+          "sthairyam",
+          "steadfastness"
+        ],
+        [
+          "ātma-vinigrahaḥ",
+          "self-control"
+        ]
+      ]
+    },
+    "9": {
+      "reviewed": true,
+      "translation": "Dispassion toward the objects of the senses, absence of ego, and repeatedly seeing the defect and suffering in birth, death, old age, and disease.",
+      "word_for_word": [
+        [
+          "indriya-artheṣu",
+          "toward the objects of the senses"
+        ],
+        [
+          "vairāgyam",
+          "dispassion"
+        ],
+        [
+          "anahaṅkāraḥ",
+          "absence of ego"
+        ],
+        [
+          "janma-mṛtyu-jarā-vyādhi",
+          "birth, death, old age, and disease"
+        ],
+        [
+          "duḥkha-doṣa-anudarśanam",
+          "seeing repeatedly the defect and suffering"
+        ]
+      ]
     }
   }
 }
