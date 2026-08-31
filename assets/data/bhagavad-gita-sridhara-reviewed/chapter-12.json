@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "chapter": 12,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "Arjuna said: Those devotees who, ever steadfast, worship You in this way, and those who worship the Imperishable, the Unmanifest—who among them are the best knowers of Yoga?",
+      "word_for_word": [
+        [
+          "evam",
+          "in this way"
+        ],
+        [
+          "satata-yuktāḥ",
+          "ever steadfast"
+        ],
+        [
+          "ye",
+          "who"
+        ],
+        [
+          "bhaktāḥ",
+          "devotees"
+        ],
+        [
+          "tvām",
+          "You"
+        ],
+        [
+          "paryupāsate",
+          "worship, attend upon"
+        ],
+        [
+          "ye ca api",
+          "and those who"
+        ],
+        [
+          "akṣaram",
+          "the Imperishable"
+        ],
+        [
+          "avyaktam",
+          "the Unmanifest"
+        ],
+        [
+          "teṣām",
+          "among them"
+        ],
+        [
+          "ke",
+          "who"
+        ],
+        [
+          "yoga-vittamāḥ",
+          "the best knowers of Yoga"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: Those who, placing their minds in Me, worship Me, ever steadfast, endowed with supreme faith, are considered by Me to be the most united with Yoga.",
+      "word_for_word": [
+        [
+          "mayi",
+          "in Me"
+        ],
+        [
+          "āveśya",
+          "placing"
+        ],
+        [
+          "manaḥ",
+          "the mind"
+        ],
+        [
+          "ye",
+          "who"
+        ],
+        [
+          "mām",
+          "Me"
+        ],
+        [
+          "nitya-yuktāḥ",
+          "ever steadfast"
+        ],
+        [
+          "upāsate",
+          "worship"
+        ],
+        [
+          "śraddhayā parayā upetāḥ",
+          "endowed with supreme faith"
+        ],
+        [
+          "te",
+          "they"
+        ],
+        [
+          "me",
+          "by Me"
+        ],
+        [
+          "yukta-tamāḥ",
+          "the most united with Yoga"
+        ],
+        [
+          "matāḥ",
+          "are considered"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "But those who worship the Imperishable, the Indefinable, the Unmanifest, the All-pervading, the Inconceivable, the Unchanging, and the Eternal.",
+      "word_for_word": [
+        [
+          "ye tu",
+          "but those who"
+        ],
+        [
+          "akṣaram",
+          "the Imperishable"
+        ],
+        [
+          "anirdeśyam",
+          "the Indefinable"
+        ],
+        [
+          "avyaktam",
+          "the Unmanifest"
+        ],
+        [
+          "paryupāsate",
+          "worship"
+        ],
+        [
+          "sarvatra-gam",
+          "all-pervading"
+        ],
+        [
+          "acintyam",
+          "inconceivable"
+        ],
+        [
+          "kūṭa-stham",
+          "unchanging, abiding as the fixed reality"
+        ],
+        [
+          "acalam",
+          "immovable"
+        ],
+        [
+          "dhruvam",
+          "eternal"
+        ]
+      ]
+    }
+  }
+}
