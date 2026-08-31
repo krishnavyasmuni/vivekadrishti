@@ -1,0 +1,148 @@
+{
+  "_meta": {
+    "chapter": 15,
+    "source": "vedicscriptures/bhagavad-gita",
+    "source_field": "srid.sc",
+    "method": "original literal English gloss from the Sanskrit commentary; Sanskrit order preserved; no machine-translation prose"
+  },
+  "verses": {
+    "1": {
+      "reviewed": true,
+      "translation": "The Blessed Lord said: They speak of the imperishable aśvattha tree as having its root above and its branches below, with the Vedas as its leaves; one who knows that tree knows the Veda. Śrīdhara identifies the upper root with the Supreme Person, the lower branches with Brahmā and other conditioned forms, and the leaves with the Vedas that sustain worldly life through prescribed action and its fruits.",
+      "word_for_word": [
+        [
+          "ūrdhva-mūlam",
+          "having the root above"
+        ],
+        [
+          "adhaḥ-śākham",
+          "having branches below"
+        ],
+        [
+          "aśvattham",
+          "the aśvattha tree"
+        ],
+        [
+          "avyayam",
+          "imperishable, continuous in flow"
+        ],
+        [
+          "chandāṃsi",
+          "the Vedas"
+        ],
+        [
+          "parṇāni",
+          "leaves"
+        ],
+        [
+          "yasya",
+          "of which"
+        ],
+        [
+          "vetti",
+          "knows"
+        ],
+        [
+          "saḥ",
+          "that one"
+        ],
+        [
+          "veda-vit",
+          "knower of the Veda"
+        ]
+      ]
+    },
+    "2": {
+      "reviewed": true,
+      "translation": "Its branches spread below and above, nourished by the guṇas, with the objects of the senses as their tender shoots; its roots spread downward and upward, bound to action in the human world. Śrīdhara explains the lower roots as the latent desires for particular experiences, which lead people into corresponding actions.",
+      "word_for_word": [
+        [
+          "adhaḥ ca ūrdhvam",
+          "below and above"
+        ],
+        [
+          "prasṛtāḥ",
+          "spread"
+        ],
+        [
+          "śākhāḥ",
+          "branches"
+        ],
+        [
+          "guṇa-pravṛddhāḥ",
+          "nourished by the guṇas"
+        ],
+        [
+          "viṣaya-pravālāḥ",
+          "with sense-objects as tender shoots"
+        ],
+        [
+          "mūlāni",
+          "roots"
+        ],
+        [
+          "anusantatāni",
+          "spread continuously"
+        ],
+        [
+          "karma-anubandhīni",
+          "bound to action"
+        ],
+        [
+          "manuṣya-loke",
+          "in the human world"
+        ]
+      ]
+    },
+    "3": {
+      "reviewed": true,
+      "translation": "Its form is not perceived here in this way, nor its end, beginning, or foundation. Having cut down this aśvattha, whose root is firmly grown, with the strong weapon of nonattachment—renouncing “I” and “mine” through clear discrimination—",
+      "word_for_word": [
+        [
+          "na rūpam",
+          "not the form"
+        ],
+        [
+          "asya",
+          "of it"
+        ],
+        [
+          "iha",
+          "here"
+        ],
+        [
+          "na antaḥ",
+          "not the end"
+        ],
+        [
+          "na ādiḥ",
+          "not the beginning"
+        ],
+        [
+          "na sampratiṣṭhā",
+          "not the foundation"
+        ],
+        [
+          "aśvattham enam",
+          "this aśvattha"
+        ],
+        [
+          "su-virūḍha-mūlam",
+          "whose root is firmly grown"
+        ],
+        [
+          "asaṅga-śastreṇa",
+          "with the weapon of nonattachment"
+        ],
+        [
+          "dṛḍhena",
+          "strong"
+        ],
+        [
+          "chittvā",
+          "having cut"
+        ]
+      ]
+    }
+  }
+}
