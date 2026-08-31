@@ -554,117 +554,137 @@
         ]
       ]
     },
-    "15": {
+    "13": {
       "reviewed": true,
-      "translation": "He states that these alone are the causes of all action, with the verse beginning ‘śarīra.’ Action being undertaken by the five already stated is subsumed within just three; thus it is said ‘by body, speech, and mind,’ because action is well known as threefold—bodily, verbal, and mental. Whatever action, righteous or unrighteous, a man performs by the body and the others, these five are the causes of all that action.",
+      "translation": "Learn from Me the five causes declared in the Sāṅkhya conclusion for the accomplishment of every action, O Mighty-Armed One. Śrīdhara explains that this knowledge is especially praised because it removes the conceit of individual doership.",
       "word_for_word": [
         [
-          "eteṣām",
-          "of these"
+          "pañca",
+          "five"
         ],
         [
-          "eva",
-          "alone; indeed"
+          "etāni",
+          "these"
         ],
         [
-          "sarva-karma-hetutvam",
-          "being the causes of all action"
+          "kāraṇāni",
+          "causes"
         ],
         [
-          "āha",
-          "he states"
+          "nibodha",
+          "learn, understand"
         ],
         [
-          "śarīra iti",
-          "with the verse beginning ‘śarīra’"
+          "me",
+          "from Me"
         ],
         [
-          "yathoktaiḥ",
-          "by those already stated"
+          "sāṅkhye",
+          "in Sāṅkhya"
         ],
         [
-          "pañcabhiḥ",
-          "by the five"
+          "kṛta-ante",
+          "in the settled conclusion"
         ],
         [
-          "prārabhyamāṇam",
-          "being undertaken"
+          "proktāni",
+          "declared"
         ],
         [
-          "karma",
-          "action"
+          "siddhaye",
+          "for the accomplishment"
         ],
         [
-          "triṣu eva",
-          "within these three alone"
+          "sarva-karmaṇām",
+          "of every action"
+        ]
+      ]
+    },
+    "14": {
+      "reviewed": true,
+      "translation": "The body as the seat, the doer, the various instruments, the diverse separate efforts, and the divine factor as the fifth—these are the causes here. Śrīdhara identifies the seat as the body, the doer as the ego formed by the conscious-insentient knot, the instruments as the senses, the efforts as the movements of the vital forces, and the divine factor as the presiding powers or inner ruler.",
+      "word_for_word": [
+        [
+          "adhiṣṭhānam",
+          "the seat, body"
         ],
         [
-          "antarbhāvya",
-          "including; subsuming"
+          "tathā",
+          "and likewise"
         ],
         [
-          "śarīra-vāṅ-manobhiḥ",
+          "kartā",
+          "the doer"
+        ],
+        [
+          "karaṇam pṛthak-vidham",
+          "the various instruments"
+        ],
+        [
+          "vividhāḥ pṛthak ceṣṭāḥ",
+          "diverse separate efforts"
+        ],
+        [
+          "daivam",
+          "the divine factor"
+        ],
+        [
+          "atra",
+          "here"
+        ],
+        [
+          "pañcamam",
+          "the fifth"
+        ]
+      ]
+    },
+    "15": {
+      "reviewed": true,
+      "translation": "Whatever action a person undertakes by body, speech, and mind, whether righteous or contrary, these five are its causes.",
+      "word_for_word": [
+        [
+          "śarīra-vāk-manobhiḥ",
           "by body, speech, and mind"
         ],
         [
-          "iti uktam",
-          "thus it is said"
-        ],
-        [
-          "śārīram",
-          "bodily"
-        ],
-        [
-          "vācikam",
-          "verbal"
-        ],
-        [
-          "mānasam",
-          "mental"
-        ],
-        [
-          "ca",
-          "and"
-        ],
-        [
-          "trividham karma",
-          "threefold action"
-        ],
-        [
-          "iti prasiddheḥ",
-          "because it is well known thus"
-        ],
-        [
-          "śarīrādibhiḥ",
-          "by the body and the others"
-        ],
-        [
-          "yat yat karma",
+          "yat karma",
           "whatever action"
         ],
         [
-          "dharmyam vā",
-          "whether righteous"
-        ],
-        [
-          "adharmyam vā",
-          "or unrighteous"
-        ],
-        [
-          "karoti",
-          "does; performs"
+          "ārabhate",
+          "undertakes"
         ],
         [
           "naraḥ",
-          "a man"
+          "a person"
         ],
         [
-          "tasya sarvasya karmaṇaḥ",
-          "of all that action"
+          "nyāyyam",
+          "righteous"
         ],
         [
-          "ete pañca hetavaḥ",
-          "these five are the causes"
+          "vā",
+          "or"
+        ],
+        [
+          "viparītam",
+          "contrary, unrighteous"
+        ],
+        [
+          "pañca",
+          "five"
+        ],
+        [
+          "ete",
+          "these"
+        ],
+        [
+          "tasya",
+          "of that person"
+        ],
+        [
+          "hetavaḥ",
+          "are the causes"
         ]
       ]
     },
