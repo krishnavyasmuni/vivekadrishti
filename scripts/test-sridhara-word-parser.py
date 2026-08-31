@@ -28,7 +28,10 @@ def clean_to_slp(text: str) -> list[str]:
 
 def tags_for(unit: str):
     obj = SanskritObject(unit, encoding=sanscript.SLP1)
-    raw = analyzer.getMorphologicalTags(obj, tmap=False) or []
+    try:
+        raw = analyzer.getMorphologicalTags(obj) or []
+    except Exception:
+        return []
     return [
         {
             'lemma': str(base).split('#', 1)[0],
