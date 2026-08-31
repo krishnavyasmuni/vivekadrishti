@@ -1391,6 +1391,98 @@
           "is not tainted"
         ]
       ]
+    },
+    "34": {
+      "reviewed": true,
+      "translation": "Just as one sun illumines this entire world, so the knower of the field illumines the entire field, O Bhārata.",
+      "word_for_word": [
+        [
+          "yathā",
+          "just as"
+        ],
+        [
+          "prakāśayati",
+          "illumines"
+        ],
+        [
+          "ekaḥ",
+          "one"
+        ],
+        [
+          "kṛtsnam",
+          "the entire"
+        ],
+        [
+          "lokam imam",
+          "this world"
+        ],
+        [
+          "raviḥ",
+          "the sun"
+        ],
+        [
+          "kṣetram",
+          "the field"
+        ],
+        [
+          "kṣetrī",
+          "the knower of the field"
+        ],
+        [
+          "tathā",
+          "so"
+        ],
+        [
+          "prakāśayati",
+          "illumines"
+        ],
+        [
+          "bhārata",
+          "O Bhārata"
+        ]
+      ]
+    },
+    "35": {
+      "reviewed": true,
+      "translation": "Those who know, through the eye of knowledge, this distinction between the field and the knower of the field, and the liberation of beings from Nature, reach the Supreme.",
+      "word_for_word": [
+        [
+          "kṣetra-kṣetra-jñayoḥ",
+          "of the field and the knower of the field"
+        ],
+        [
+          "evam",
+          "thus"
+        ],
+        [
+          "antaram",
+          "the distinction"
+        ],
+        [
+          "jñāna-cakṣuṣā",
+          "through the eye of knowledge"
+        ],
+        [
+          "bhūta-prakṛti-mokṣam",
+          "the liberation of beings from Nature"
+        ],
+        [
+          "ye viduḥ",
+          "who know"
+        ],
+        [
+          "yānti",
+          "reach"
+        ],
+        [
+          "te",
+          "they"
+        ],
+        [
+          "param",
+          "the Supreme"
+        ]
+      ]
     }
   }
 }
