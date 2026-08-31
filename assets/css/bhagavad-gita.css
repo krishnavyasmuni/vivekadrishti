@@ -27,8 +27,16 @@
 .gita-controls{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:7px;margin:0 0 12px}
 .gita-details{display:inline-block;max-width:100%;text-align:left}.gita-details[open]{flex:1 1 100%}
 .gita-details summary{list-style:none;user-select:none}.gita-details summary::-webkit-details-marker{display:none}.gita-details summary::marker{display:none}
-.gita-reveal{margin-top:8px;padding:10px 13px;border:1px solid var(--gita-line);background:rgba(255,255,255,.56);color:var(--gita-ink);font-size:13px;line-height:1.55;overflow-wrap:anywhere}
+.gita-reveal{margin-top:8px;padding:2px 0 4px;border:0;background:transparent;color:var(--gita-ink);font-size:13px;line-height:1.55;overflow-wrap:anywhere}
 .gita-reveal p{margin:0}.gita-reveal em{color:#514a41}
+.gita-dual-section{margin:0;padding:0}
+.gita-dual-section+.gita-dual-section{margin-top:12px;padding-top:10px;border-top:1px solid #dedbd6}
+.gita-dual-label{margin:0 0 5px;font-family:Vollkorn,Georgia,serif;font-size:15px;font-weight:700;line-height:1.25}
+.gita-dual-gita .gita-dual-label{color:#2f7f82}
+.gita-dual-sridhara .gita-dual-label{color:var(--gita-red)}
+.gita-wfw-list{margin:0!important;color:var(--gita-ink);font-size:13px;line-height:1.58}
+.gita-wfw-list strong{font-weight:700}
+.gita-dual-empty{margin:0!important;color:#6e665c;font-style:italic}
 .gita-commentary{display:block!important;margin:14px 0 0;padding:0;border:0;background:transparent;color:var(--gita-ink);font-size:16px;line-height:1.55;text-align:left}
 .gita-commentary h3{display:inline;margin:0;color:#2f7f82;font-family:Vollkorn,Georgia,serif;font-size:17px;font-weight:700;line-height:1.25}
 .gita-commentary p{display:inline;margin:0}.gita-commentary p:before{content:" "}
