@@ -1,0 +1,338 @@
+{
+  "verses": {
+    "15": {
+      "sanskrit": "एतेषामेव सर्वकर्महेतुत्वमाह -- शरीरेति। यथोक्तैः पञ्चभिः प्रारभ्यमाणं कर्म त्रिष्वेवान्तर्भाव्यशरीरवाङ्मनोभिरित्युक्तं शारीरं वाचिकं मानसं च त्रिविधं कर्मेति प्रसिद्धेः। शरीरादिभिर्यद्यत्कर्म धर्म्य वाऽधर्म्यं वा करोति नरस्तस्य सर्वस्य कर्मण एते पञ्च हेतवः।",
+      "analysis": [
+        {
+          "surface_slp1": "etezAm",
+          "lemma_slp1": "etad"
+        },
+        {
+          "surface_slp1": "eva",
+          "lemma_slp1": "eva"
+        },
+        {
+          "surface_slp1": "sarvakarma",
+          "lemma_slp1": "sarvakarman"
+        },
+        {
+          "surface_slp1": "hetutvam",
+          "lemma_slp1": "hetutva"
+        },
+        {
+          "surface_slp1": "Aha",
+          "lemma_slp1": "ah"
+        },
+        {
+          "surface_slp1": "SarIrA",
+          "lemma_slp1": "SarIra"
+        },
+        {
+          "surface_slp1": "Iti",
+          "lemma_slp1": "Iti"
+        },
+        {
+          "surface_slp1": "yaToktEH",
+          "lemma_slp1": "yaToktEH"
+        },
+        {
+          "surface_slp1": "paYcaBiH",
+          "lemma_slp1": "paYcaBiH"
+        },
+        {
+          "surface_slp1": "prAs",
+          "lemma_slp1": "prA"
+        },
+        {
+          "surface_slp1": "raByamARam",
+          "lemma_slp1": "raByamARa"
+        },
+        {
+          "surface_slp1": "karma",
+          "lemma_slp1": "karman"
+        },
+        {
+          "surface_slp1": "trizu",
+          "lemma_slp1": "tri"
+        },
+        {
+          "surface_slp1": "evA",
+          "lemma_slp1": "eva"
+        },
+        {
+          "surface_slp1": "antar",
+          "lemma_slp1": "antar"
+        },
+        {
+          "surface_slp1": "BAvi",
+          "lemma_slp1": "BU"
+        },
+        {
+          "surface_slp1": "aSarIra",
+          "lemma_slp1": "aSarIra"
+        },
+        {
+          "surface_slp1": "vANmanoBis",
+          "lemma_slp1": "vANmanas"
+        },
+        {
+          "surface_slp1": "ityuktam",
+          "lemma_slp1": "ityukta"
+        },
+        {
+          "surface_slp1": "SArIram",
+          "lemma_slp1": "SArIra"
+        },
+        {
+          "surface_slp1": "vAcikam",
+          "lemma_slp1": "vAcika"
+        },
+        {
+          "surface_slp1": "mAnasam",
+          "lemma_slp1": "mAnasa"
+        },
+        {
+          "surface_slp1": "ca",
+          "lemma_slp1": "ca"
+        },
+        {
+          "surface_slp1": "triviDam",
+          "lemma_slp1": "triviDa"
+        },
+        {
+          "surface_slp1": "karmA",
+          "lemma_slp1": "karman"
+        },
+        {
+          "surface_slp1": "Iti",
+          "lemma_slp1": "Iti"
+        },
+        {
+          "surface_slp1": "prasidDeH",
+          "lemma_slp1": "prasidDeH"
+        },
+        {
+          "surface_slp1": "SarIs",
+          "lemma_slp1": "SarI"
+        },
+        {
+          "surface_slp1": "AdiBis",
+          "lemma_slp1": "Adi"
+        },
+        {
+          "surface_slp1": "yadI",
+          "lemma_slp1": "yad"
+        },
+        {
+          "surface_slp1": "at",
+          "lemma_slp1": "ad"
+        },
+        {
+          "surface_slp1": "karma",
+          "lemma_slp1": "karman"
+        },
+        {
+          "surface_slp1": "Darmya",
+          "lemma_slp1": "Darmya"
+        },
+        {
+          "surface_slp1": "vAs",
+          "lemma_slp1": "U"
+        },
+        {
+          "surface_slp1": "Darmyam",
+          "lemma_slp1": "Darmya"
+        },
+        {
+          "surface_slp1": "vA",
+          "lemma_slp1": "vA"
+        },
+        {
+          "surface_slp1": "karoti",
+          "lemma_slp1": "kf"
+        },
+        {
+          "surface_slp1": "naras",
+          "lemma_slp1": "nara"
+        },
+        {
+          "surface_slp1": "tasya",
+          "lemma_slp1": "tad"
+        },
+        {
+          "surface_slp1": "sarvasya",
+          "lemma_slp1": "sarva"
+        },
+        {
+          "surface_slp1": "karma",
+          "lemma_slp1": "karman"
+        },
+        {
+          "surface_slp1": "Ra",
+          "lemma_slp1": "Ra"
+        },
+        {
+          "surface_slp1": "ete",
+          "lemma_slp1": "etad"
+        },
+        {
+          "surface_slp1": "paYca",
+          "lemma_slp1": "paYcan"
+        },
+        {
+          "surface_slp1": "hetavaH",
+          "lemma_slp1": "hetavaH"
+        }
+      ]
+    },
+    "16": {
+      "sanskrit": "ततः किमत आह -- तत्रेति। तत्र सर्वस्मिन्कर्मणि एते पञ्च हेतव इत्येवं सति केवलं निरुपाधिकमसङ्गमात्मानं तु यः कर्तारं पश्यति शास्त्राचार्योपदेशत्यागेनासंस्कृतबुद्धित्वाद्दुर्मतिरसौ सम्यङ्न पश्यति।",
+      "analysis": [
+        {
+          "surface_slp1": "tataH",
+          "lemma_slp1": "tataH"
+        },
+        {
+          "surface_slp1": "kim",
+          "lemma_slp1": "kim"
+        },
+        {
+          "surface_slp1": "ata",
+          "lemma_slp1": "at"
+        },
+        {
+          "surface_slp1": "Aha",
+          "lemma_slp1": "ah"
+        },
+        {
+          "surface_slp1": "tatra",
+          "lemma_slp1": "tatra"
+        },
+        {
+          "surface_slp1": "iti",
+          "lemma_slp1": "iti"
+        },
+        {
+          "surface_slp1": "tatra",
+          "lemma_slp1": "tatra"
+        },
+        {
+          "surface_slp1": "sarvasmin",
+          "lemma_slp1": "sarva"
+        },
+        {
+          "surface_slp1": "karmaRi",
+          "lemma_slp1": "karman"
+        },
+        {
+          "surface_slp1": "ete",
+          "lemma_slp1": "etad"
+        },
+        {
+          "surface_slp1": "paYca",
+          "lemma_slp1": "paYcan"
+        },
+        {
+          "surface_slp1": "he",
+          "lemma_slp1": "as"
+        },
+        {
+          "surface_slp1": "tava",
+          "lemma_slp1": "yuzmad"
+        },
+        {
+          "surface_slp1": "itye",
+          "lemma_slp1": "itya"
+        },
+        {
+          "surface_slp1": "vam",
+          "lemma_slp1": "U"
+        },
+        {
+          "surface_slp1": "sati",
+          "lemma_slp1": "sat"
+        },
+        {
+          "surface_slp1": "kevalam",
+          "lemma_slp1": "kevala"
+        },
+        {
+          "surface_slp1": "nirupADikam",
+          "lemma_slp1": "nirupADika"
+        },
+        {
+          "surface_slp1": "asaNgam",
+          "lemma_slp1": "asaNga"
+        },
+        {
+          "surface_slp1": "AtmAnam",
+          "lemma_slp1": "Atman"
+        },
+        {
+          "surface_slp1": "tu",
+          "lemma_slp1": "tu"
+        },
+        {
+          "surface_slp1": "yaH",
+          "lemma_slp1": "yaH"
+        },
+        {
+          "surface_slp1": "kartAram",
+          "lemma_slp1": "kartf"
+        },
+        {
+          "surface_slp1": "paSyati",
+          "lemma_slp1": "paS"
+        },
+        {
+          "surface_slp1": "SAstrA",
+          "lemma_slp1": "SAstf"
+        },
+        {
+          "surface_slp1": "cAryas",
+          "lemma_slp1": "cArya"
+        },
+        {
+          "surface_slp1": "apadeSa",
+          "lemma_slp1": "apadeSa"
+        },
+        {
+          "surface_slp1": "tyAgena",
+          "lemma_slp1": "tyAga"
+        },
+        {
+          "surface_slp1": "asaMskfta",
+          "lemma_slp1": "asaMskfta"
+        },
+        {
+          "surface_slp1": "budDi",
+          "lemma_slp1": "budDi"
+        },
+        {
+          "surface_slp1": "tvAt",
+          "lemma_slp1": "tva"
+        },
+        {
+          "surface_slp1": "durmatis",
+          "lemma_slp1": "durmati"
+        },
+        {
+          "surface_slp1": "asO",
+          "lemma_slp1": "asi"
+        },
+        {
+          "surface_slp1": "samyaN",
+          "lemma_slp1": "samyac"
+        },
+        {
+          "surface_slp1": "na",
+          "lemma_slp1": "na"
+        },
+        {
+          "surface_slp1": "paSyati",
+          "lemma_slp1": "paS"
+        }
+      ]
+    }
+  }
+}
