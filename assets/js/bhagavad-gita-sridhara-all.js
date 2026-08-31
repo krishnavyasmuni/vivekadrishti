@@ -58,6 +58,15 @@
 
   let chapterData = null;
 
+  const isFallback = (text) => /source repository supplies Śrīdhara Svāmī’s commentary in Sanskrit; no English translation field is supplied there\.?/i.test(String(text || '').trim());
+
+  const hideFallbacks = () => {
+    root.querySelectorAll('.gita-commentary').forEach((section) => {
+      const paragraph = section.querySelector('p');
+      if (paragraph && isFallback(paragraph.textContent)) section.hidden = true;
+    });
+  };
+
   const enhanceVerse = (article) => {
     if (!chapterData || !article || article.dataset.sridharaToolsAll === '1') return;
     const match = article.id && article.id.match(new RegExp('^gita-' + chapter + '-(\\d+)$'));
@@ -96,14 +105,22 @@
       englishNode.classList.remove('gita-no-source');
     }
 
+    const commentarySection = englishNode.closest('.gita-commentary');
+    if (commentarySection) commentarySection.hidden = false;
     article.dataset.sridharaToolsAll = '1';
   };
 
   const enhanceAll = () => root.querySelectorAll('.gita-verse').forEach(enhanceVerse);
-  const observer = new MutationObserver(enhanceAll);
-  observer.observe(root, {childList:true, subtree:true});
+  const refresh = () => {
+    hideFallbacks();
+    enhanceAll();
+  };
 
-  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara/chapter-' + chapter + '.json?v=20260831-all')
+  const observer = new MutationObserver(refresh);
+  observer.observe(root, {childList:true, subtree:true});
+  refresh();
+
+  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara/chapter-' + chapter + '.json?v=20260831-all2')
     .then((response) => {
       if (!response.ok) throw new Error('Śrīdhara chapter data not generated yet');
       return response.json();
@@ -113,6 +130,7 @@
       enhanceAll();
     })
     .catch((error) => {
+      hideFallbacks();
       console.warn('Śrīdhara English data unavailable for chapter ' + chapter + ':', error);
     });
 })();
