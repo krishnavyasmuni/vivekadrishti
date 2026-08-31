@@ -9,7 +9,7 @@
   const verseUrl = (n) => 'https://raw.githubusercontent.com/vedicscriptures/bhagavad-gita/main/slok/bhagavadgita_chapter_' + chapter + '_slok_' + n + '.json';
   const makeVerse = (d, meanings) => {
     const n = d.verse;
-    const rootText = String(d.slok || '').replace(/\|/g, '').replace(/\\n/g, '\n').replace(/\|\|[^|]+\|\|/g, '');
+    const rootText = String(d.slok || '').replace(/\|\|[^|]+\|\|/g, '').replace(/\|/g, '').replace(/\\n/g, '\n').replace(/\s+\d+-\d+\s*$/, '');
     const rootLines = rootText.split('\n').map((x) => x.trim()).filter(Boolean).join('<br>');
     const english = d.gambir && d.gambir.et ? lines(d.gambir.et) : 'English translation unavailable in the source record.';
     const key = chapter + '.' + n;
