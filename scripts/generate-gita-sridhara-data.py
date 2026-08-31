@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Generate literal English data for Śrīdhara Svāmī's Bhagavad Gītā commentary.
+"""Generate candidate English data for Śrīdhara Svāmī's Bhagavad Gītā commentary.
 
 The Sanskrit source is the open vedicscriptures/bhagavad-gita dataset already used
-by the site. English is generated from that Sanskrit with the MIT-licensed
-krpraveen/indictrans2-sanskrit-en-finetuned checkpoint. The output is static JSON
-consumed by the site; no translation service is called by visitors.
+by the site. Candidate English is generated from that Sanskrit with AI4Bharat's
+official MIT-licensed IndicTrans2 Indic-to-English model. Generated files remain
+unreviewed and the live site refuses to display them until they are explicitly
+reviewed and marked as such.
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ from indic_transliteration.sanscript import transliterate
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 COUNTS = [47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 34, 27, 20, 24, 28, 78]
-MODEL_NAME = "krpraveen/indictrans2-sanskrit-en-finetuned"
+MODEL_NAME = "ai4bharat/indictrans2-indic-en-dist-200M"
 SRC_LANG = "san_Deva"
 TGT_LANG = "eng_Latn"
 
@@ -203,7 +204,8 @@ def generate_chapter(translator: Translator, source: Path, chapter: int) -> dict
             "source": "vedicscriptures/bhagavad-gita",
             "source_field": "srid.sc",
             "translation_model": MODEL_NAME,
-            "method": "original machine-assisted literal rendering from public-domain Sanskrit; not copied from a modern published translation",
+            "reviewed": False,
+            "method": "candidate machine-assisted literal rendering from public-domain Sanskrit; blocked from live display until reviewed",
         },
         "verses": verses,
     }
