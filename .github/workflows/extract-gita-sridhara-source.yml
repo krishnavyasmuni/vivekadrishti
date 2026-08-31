@@ -1,0 +1,42 @@
+name: Extract Gita Sridhara Sanskrit Source
+
+on:
+  push:
+    paths:
+      - 'scripts/extract-gita-sridhara-source.py'
+      - '.github/workflows/extract-gita-sridhara-source.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch Bhagavad Gita Sanskrit source
+        run: git clone --depth 1 https://github.com/vedicscriptures/bhagavad-gita.git /tmp/bhagavad-gita-source
+
+      - name: Extract Sridhara Sanskrit
+        run: python scripts/extract-gita-sridhara-source.py --source /tmp/bhagavad-gita-source
+
+      - name: Commit source snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/bhagavad-gita-sridhara-source
+          if git diff --cached --quiet; then
+            echo "No source changes"
+            exit 0
+          fi
+          git commit -m "Extract Sridhara Sanskrit source snapshot"
+          git push
