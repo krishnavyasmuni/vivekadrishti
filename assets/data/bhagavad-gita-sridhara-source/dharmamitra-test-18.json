@@ -1,6 +1,6 @@
 {
   "endpoint": "https://dharmamitra.org/api/tagging/",
-  "mode": "unsandhied-lemma-morphosyntax",
+  "mode": "segmentation-lemma-morphosyntax",
   "verses": {
     "15": {
       "chunks": [
