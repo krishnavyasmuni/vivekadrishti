@@ -1,0 +1,14 @@
+{
+  "endpoint": "https://dharmamitra.org/api/tagging/",
+  "mode": "unsandhied-lemma-morphosyntax",
+  "verses": {
+    "15": {
+      "input": "eteṣāmeva sarvakarmahetutvamāha -- śarīreti| yathoktaiḥ pañcabhiḥ prārabhyamāṇaṃ karma triṣvevāntarbhāvyaśarīravāṅmanobhirityuktaṃ śārīraṃ vācikaṃ mānasaṃ ca trividhaṃ karmeti prasiddheḥ| śarīrādibhiryadyatkarma dharmya vā'dharmyaṃ vā karoti narastasya sarvasya karmaṇa ete pañca hetavaḥ|",
+      "raw": "_____________________________________________________________ca______iti________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+    },
+    "16": {
+      "input": "tataḥ kimata āha -- tatreti| tatra sarvasminkarmaṇi ete pañca hetava ityevaṃ sati kevalaṃ nirupādhikamasaṅgamātmānaṃ tu yaḥ kartāraṃ paśyati śāstrācāryopadeśatyāgenāsaṃskṛtabuddhitvāddurmatirasau samyaṅna paśyati|",
+      "raw": "tatas_kim_atas_āha_-- tatra_iti_tatra_sarvasmin_karmaṇi_ete_pañca_hetavaḥ_iti_evam_sati_kevalam_nirupādhikam_asaṅgam_ātmānam_tu_yaḥ_kartāram_paśyati_śāstra_ācārya_upadeśa_tyāgena_asaṃskṛta_buddhi_tvāt_durmatiḥ_asau_samyak_na_paśyati_"
+    }
+  }
+}
