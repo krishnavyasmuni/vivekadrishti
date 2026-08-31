@@ -16,6 +16,15 @@
   const slug=location.pathname.split('/').filter(Boolean).pop()||'';
   const meta=MAP[slug];
   if(!meta){document.getElementById('route-status').innerHTML='Unknown Upaniṣad route. <a href="/vivekadrishti/articles/scripture/">Return to Scripture Index</a>.';return;}
+  document.body.classList.add('mahapurana-static-page','mahapurana-unified-page');
+  document.querySelectorAll('.site-header,.site-footer').forEach(node=>node.remove());
+  if(!document.querySelector('body > .purana-page-nav')){
+    const nav=document.createElement('nav');
+    nav.className='purana-page-nav';
+    nav.setAttribute('aria-label','Scripture navigation');
+    nav.innerHTML='<a class="purana-back-button" href="/vivekadrishti/articles/scripture/">← Back to Scripture Index</a><a class="purana-home-link" href="/vivekadrishti/">Home</a>';
+    document.body.insertBefore(nav,document.body.firstElementChild);
+  }
   const [name,group,veda]=meta;
   document.title=`${name} Upaniṣad — Viveka Dṛṣṭi`;
   const button=document.createElement('button');
@@ -25,9 +34,11 @@
   const observer=new MutationObserver(()=>{
     const reader=document.querySelector('.upanishad-mahapurana-reader');if(!reader)return;
     reader.classList.add('upanishad-static-reader');
-    const close=reader.querySelector('.kena-article-close');if(close){const back=document.createElement('a');back.className='upanishad-static-back';back.href='/vivekadrishti/articles/scripture/';back.textContent='← Scripture Index';close.replaceWith(back);}
+    const close=reader.querySelector('.kena-article-close');if(close)close.remove();
     document.querySelector('.upanishad-loading')?.remove();
+    if(!document.querySelector('body > .purana-return-nav')){const nav=document.createElement('nav');nav.className='purana-return-nav';nav.setAttribute('aria-label','Return to Scripture Index');nav.innerHTML='<a href="/vivekadrishti/articles/scripture/">← Back to Scripture Index</a>';document.body.appendChild(nav);}
     observer.disconnect();
   });
   observer.observe(document.body,{childList:true,subtree:true});
 })();
+

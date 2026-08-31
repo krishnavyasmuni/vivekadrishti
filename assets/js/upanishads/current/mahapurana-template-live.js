@@ -10,10 +10,6 @@
   const D = window.SCRIPTURE_DETAIL_DATA || {};
   const R = window.SCRIPTURE_PRINCIPAL_RICH || {};
   const U = window.SCRIPTURE_UPANISHAD_UNITS || {};
-  const PRINCIPAL_CRITICAL_TEXTS = new Set([
-    'Īśāvāsya','Kena','Kaṭha','Praśna','Muṇḍaka','Māṇḍūkya','Taittirīya','Aitareya','Chāndogya','Bṛhadāraṇyaka'
-  ]);
-
   const PRINCIPAL_NAMES = {
     'Īśāvāsya':'Isha','Kena':'Kena','Kaṭha':'Katha','Praśna':'Prashna','Muṇḍaka':'Mundaka',
     'Māṇḍūkya':'Mandukya','Taittirīya':'Taittiriya','Aitareya':'Aitareya',
@@ -112,6 +108,14 @@
   const txt = v => typeof v === 'string' ? v :
     (v?.text || v?.claim || v?.summary || v?.full || v?.short || v?.description ||
      v?.note || v?.title || v?.t || v?.d || '');
+  const textOf = value => Array.isArray(value) ? value.map(textOf).join(' ') : String(txt(value) || '');
+  const hasDocumentedCriticalEdition = values => {
+    const source = textOf(values).replace(/\s+/g,' ').trim();
+    if (!source || /\bcritical edition is needed\b/i.test(source)) return false;
+    if (!/\b(?:critical edition|critical text)\b/i.test(source)) return false;
+    return /\b(?:Olivelle|Schrader)\b[^.]{0,260}\b(?:critical edition|critical text|critically reconstructed)\b|\b(?:critical edition|critical text|critically reconstructed)\b[^.]{0,260}\b(?:Olivelle|Schrader)\b/i.test(source);
+  };
+
   const norm = v => englishize(String(v || '')).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   const uniq = values => {
     const seen = new Set();
@@ -218,7 +222,7 @@
       {title:'Contents',body:contents},
       {title:'Theology, influence and practice',body:synthesis}
     ];
-    if(PRINCIPAL_CRITICAL_TEXTS.has(name)&&critical.paragraphs.length)sections.push({title:'Critical edition and textual criticism',body:critical});
+    if(critical.paragraphs.length&&hasDocumentedCriticalEdition(s.critical))sections.push({title:'Critical edition and textual criticism',body:critical});
     sections.push({title:'Further reading',body:further});
     const renderBody=part=>{
       let html=arr(part.paragraphs).map(paragraph).join('');
@@ -287,3 +291,4 @@
   document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&reader)close();},true);
   window.UPANISHAD_LIVE_TEMPLATE='unified-text-only-v1';
 })();
+

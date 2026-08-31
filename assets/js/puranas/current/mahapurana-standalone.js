@@ -35,11 +35,6 @@
 
   document.body.classList.add('mahapurana-unified-page');
 
-  const TRUE_CRITICAL_EDITIONS = new Set([
-    'Vāmana Purāṇa','Kūrma Purāṇa','Varāha Purāṇa','Bhāgavata Purāṇa',
-    'Viṣṇu Purāṇa','Mārkaṇḍeya Purāṇa','Skanda Purāṇa'
-  ]);
-
   const englishize = value => String(value || '')
     .replace(/[ŚśṢṣ]/g, c => c === c.toUpperCase() ? 'Sh' : 'sh')
     .replace(/[ṚṛṜṝ]/g, c => c === c.toUpperCase() ? 'Ri' : 'ri')
@@ -57,6 +52,19 @@
   const plain = x => typeof x === 'string' ? x :
     (x?.claim || x?.text || x?.full || x?.short || x?.summary || x?.description ||
      x?.note || x?.title || x?.citation || x?.name || '');
+
+  const hasDocumentedCriticalEdition = e => {
+    const source = arr(e.articleSections)
+      .filter(s => /critical|edition|textual/i.test(String(s?.title || '')))
+      .map(s => JSON.stringify(s))
+      .join(' ');
+    return [
+      /M\.\s*M\.\s*Pathak[\s\S]{0,220}\bcritical (?:edition|text)\b/i,
+      /Anand Swarup Gupta[\s\S]{0,520}\bcritical (?:edition|text)\b/i,
+      /Wadekar[\s\S]{0,260}\bcritical (?:edition|text)\b|\bcritical (?:edition|text)\b[\s\S]{0,260}Wadekar/i,
+      /Groningen Skandapurana project[\s\S]{0,320}\bcritical (?:volume|edition|text|project)\b/i
+    ].some(pattern => pattern.test(source));
+  };
 
   const norm = s => englishize(String(s || '')).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 
@@ -330,7 +338,7 @@
       {key:'contents',title:'Contents',body:contents},
       {key:'synthesis',title:'Theology, influence and practice',body:synthesis}
     ];
-    if (TRUE_CRITICAL_EDITIONS.has(name)) {
+    if (hasDocumentedCriticalEdition(e)) {
       sections.push({key:'critical',title:name === 'Skanda Purāṇa' ? 'Critical edition of the early Skandapurana' : 'Critical edition',body:critical});
     }
     sections.push({key:'further',title:'Further reading',body:further});
@@ -584,3 +592,4 @@
 
   run();
 })();
+
