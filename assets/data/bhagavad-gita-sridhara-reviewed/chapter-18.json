@@ -1795,6 +1795,136 @@
           "is declared"
         ]
       ]
+    },
+    "40": {
+      "reviewed": true,
+      "translation": "There is no being on earth or again among the gods in heaven that is free from these three guṇas born of Nature.",
+      "word_for_word": [
+        [
+          "na tat asti",
+          "there is not that"
+        ],
+        [
+          "pṛthivyām",
+          "on earth"
+        ],
+        [
+          "divi",
+          "in heaven"
+        ],
+        [
+          "deveṣu",
+          "among the gods"
+        ],
+        [
+          "sattvam",
+          "being"
+        ],
+        [
+          "prakṛti-jaiḥ",
+          "born from Nature"
+        ],
+        [
+          "muktam",
+          "free"
+        ],
+        [
+          "ebhiḥ tribhiḥ guṇaiḥ",
+          "from these three guṇas"
+        ]
+      ]
+    },
+    "41": {
+      "reviewed": true,
+      "translation": "The duties of brāhmaṇas, kṣatriyas, vaiśyas, and śūdras are divided according to the guṇas born from their nature. Śrīdhara explains these dispositions through the relative predominance of sattva, rajas, and tamas, understood as arising from inherited tendencies.",
+      "word_for_word": [
+        [
+          "brāhmaṇa",
+          "of brāhmaṇas"
+        ],
+        [
+          "kṣatriya",
+          "of kṣatriyas"
+        ],
+        [
+          "viśām",
+          "of vaiśyas"
+        ],
+        [
+          "śūdrāṇām",
+          "of śūdras"
+        ],
+        [
+          "karmaṇi",
+          "duties"
+        ],
+        [
+          "pravibhaktāni",
+          "divided"
+        ],
+        [
+          "svabhāva-prabhavaiḥ",
+          "born from nature"
+        ],
+        [
+          "guṇaiḥ",
+          "by the guṇas"
+        ],
+        [
+          "parantapa",
+          "O scorcher of foes"
+        ]
+      ]
+    },
+    "42": {
+      "reviewed": true,
+      "translation": "Serenity, self-restraint, austerity, purity, forgiveness, straightforwardness, knowledge, realization, and faith are the duties born of nature for a brāhmaṇa. Śrīdhara distinguishes scriptural knowledge from realization through direct experience and faith from certainty that a hereafter exists.",
+      "word_for_word": [
+        [
+          "śamaḥ",
+          "serenity, withdrawal of mind"
+        ],
+        [
+          "damaḥ",
+          "self-restraint of the outer senses"
+        ],
+        [
+          "tapaḥ",
+          "austerity"
+        ],
+        [
+          "śaucam",
+          "purity"
+        ],
+        [
+          "kṣāntiḥ",
+          "forgiveness"
+        ],
+        [
+          "ārjavam",
+          "straightforwardness"
+        ],
+        [
+          "jñānam",
+          "scriptural knowledge"
+        ],
+        [
+          "vijñānam",
+          "realization through experience"
+        ],
+        [
+          "āstikyam",
+          "faith, conviction in a hereafter"
+        ],
+        [
+          "brahma-karma",
+          "the duty of a brāhmaṇa"
+        ],
+        [
+          "svabhāva-jam",
+          "born from nature"
+        ]
+      ]
     }
   }
 }
