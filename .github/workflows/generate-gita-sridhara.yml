@@ -32,7 +32,8 @@ jobs:
       - name: Install Sanskrit translation tools
         run: |
           python -m pip install --upgrade pip
-          pip install torch transformers==4.49.0 IndicTransToolkit==1.1.1 sentencepiece sacremoses indic-transliteration
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install transformers==4.49.0 sentencepiece indic-transliteration
 
       - name: Fetch Bhagavad Gita Sanskrit source
         run: |
