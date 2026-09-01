@@ -44,7 +44,7 @@
     if (nav.querySelector('a[href="/vivekadrishti/bhagavad-gita/"], a[href="/vivekadrishti/pages/bhagavad-gita/"]')) return;
     const link = document.createElement('a');
     link.href = '/vivekadrishti/pages/bhagavad-gita/';
-    link.textContent = 'Bhagavad Gītā';
+    link.textContent = 'Bhagavad Gītā — Śrīdhara Bhāṣya';
     link.dataset.bhagavadGitaNav = 'true';
     nav.appendChild(link);
   });
