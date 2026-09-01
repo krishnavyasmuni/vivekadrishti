@@ -136,10 +136,25 @@
   const literalPartsByChapter = {
     1: ['a','b'],
     2: ['a','b','c','d','e','f','g'],
+    3: ['a','b','c'],
+    4: ['a','b','c'],
+    5: ['a','b'],
+    6: ['a','b','c','d'],
+    7: ['a','b'],
+    8: ['a','b'],
+    9: ['a','b'],
+    10: ['a','b'],
+    11: ['a','b','c'],
+    12: ['a'],
+    13: ['a','b'],
+    14: ['a','b'],
+    15: ['a'],
+    16: ['a','b'],
+    17: ['a','b'],
     18: ['a','b','c','d','e1','e2a','e2b2','e2c','e3a','e3b']
   };
   const literalParts = literalPartsByChapter[chapter];
-  const cacheKey = '20260901-literal7';
+  const cacheKey = '20260901-literal-final';
   const dataPromise = literalParts
     ? Promise.all(literalParts.map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '-literal-' + part + '.json?v=' + cacheKey))).then(mergeParts)
     : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=' + cacheKey);
