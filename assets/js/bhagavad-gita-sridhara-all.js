@@ -6,15 +6,8 @@
   if (!Number.isInteger(chapter) || chapter < 2 || chapter > 18) return;
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
-  const independent = {
-    'अ':'a','आ':'ā','इ':'i','ई':'ī','उ':'u','ऊ':'ū','ऋ':'ṛ','ॠ':'ṝ','ऌ':'ḷ','ॡ':'ḹ','ए':'e','ऐ':'ai','ओ':'o','औ':'au','ॐ':'oṃ'
-  };
-  const consonants = {
-    'क':'k','ख':'kh','ग':'g','घ':'gh','ङ':'ṅ','च':'c','छ':'ch','ज':'j','झ':'jh','ञ':'ñ',
-    'ट':'ṭ','ठ':'ṭh','ड':'ḍ','ढ':'ḍh','ण':'ṇ','त':'t','थ':'th','द':'d','ध':'dh','न':'n',
-    'प':'p','फ':'ph','ब':'b','भ':'bh','म':'m','य':'y','र':'r','ल':'l','व':'v','श':'ś','ष':'ṣ','स':'s','ह':'h','ळ':'ḷ'
-  };
+  const independent = {'अ':'a','आ':'ā','इ':'i','ई':'ī','उ':'u','ऊ':'ū','ऋ':'ṛ','ॠ':'ṝ','ऌ':'ḷ','ॡ':'ḹ','ए':'e','ऐ':'ai','ओ':'o','औ':'au','ॐ':'oṃ'};
+  const consonants = {'क':'k','ख':'kh','ग':'g','घ':'gh','ङ':'ṅ','च':'c','छ':'ch','ज':'j','झ':'jh','ञ':'ñ','ट':'ṭ','ठ':'ṭh','ड':'ḍ','ढ':'ḍh','ण':'ṇ','त':'t','थ':'th','द':'d','ध':'dh','न':'n','प':'p','फ':'ph','ब':'b','भ':'bh','म':'m','य':'y','र':'r','ल':'l','व':'v','श':'ś','ष':'ṣ','स':'s','ह':'h','ळ':'ḷ'};
   const matras = {'ा':'ā','ि':'i','ी':'ī','ु':'u','ू':'ū','ृ':'ṛ','ॄ':'ṝ','ॢ':'ḷ','ॣ':'ḹ','े':'e','ै':'ai','ो':'o','ौ':'au'};
   const marks = {'ं':'ṃ','ः':'ḥ','ँ':'m̐','ऽ':'’','।':' |','॥':' ||','०':'0','१':'1','२':'2','३':'3','४':'4','५':'5','६':'6','७':'7','८':'8','९':'9'};
 
@@ -39,9 +32,7 @@
     return out.replace(/\s+([|])/g, ' $1').replace(/\s{2,}/g, ' ').trim();
   };
 
-  const cleanSrid = (text) => String(text || '')
-    .replace(/^\s*[।॥]+\s*\d+(?:\.\d+)?\s*[।॥]*\s*/, '')
-    .trim();
+  const cleanSrid = (text) => String(text || '').replace(/^\s*[।॥]+\s*\d+(?:\.\d+)?\s*[।॥]*\s*/, '').trim();
 
   const renderPairs = (pairs) => {
     if (!Array.isArray(pairs) || !pairs.length) return '<p class="gita-dual-empty">No commentary.</p>';
@@ -57,7 +48,6 @@
     '<div class="gita-dual-section gita-dual-sridhara"><div class="gita-dual-label">Śrīdhara</div>' + sridHtml + '</div>';
 
   let chapterData = null;
-
   const isFallback = (text) => /source repository supplies Śrīdhara Svāmī’s commentary in Sanskrit; no English translation field is supplied there\.?/i.test(String(text || '').trim());
 
   const hideFallbacks = () => {
@@ -71,14 +61,12 @@
     if (!chapterData || !article || article.dataset.sridharaToolsAll === '1') return;
     const match = article.id && article.id.match(new RegExp('^gita-' + chapter + '-(\\d+)$'));
     if (!match) return;
-
     const verse = Number(match[1]);
     const verseData = chapterData.verses && chapterData.verses[String(verse)];
     if (!verseData || verseData.reviewed !== true) return;
 
     const details = article.querySelectorAll('.gita-details');
     if (details.length < 3) return;
-
     const wfwReveal = details[0].querySelector('.gita-reveal');
     const transReveal = details[1].querySelector('.gita-reveal');
     const sridTextNode = details[2].querySelector('.gita-reveal p');
@@ -89,10 +77,7 @@
     const gitaTrans = transReveal.innerHTML;
     const sridRaw = cleanSrid(sridTextNode.textContent);
     const noCommentary = verseData.no_commentary === true || /^no commentary\.?$/i.test(sridRaw);
-
-    const sridTrans = noCommentary
-      ? '<p class="gita-dual-empty">No commentary.</p>'
-      : '<p><em>' + esc(devaToIast(sridRaw)) + '</em></p>';
+    const sridTrans = noCommentary ? '<p class="gita-dual-empty">No commentary.</p>' : '<p><em>' + esc(devaToIast(sridRaw)) + '</em></p>';
 
     wfwReveal.innerHTML = dualBlock(gitaWfw, renderPairs(noCommentary ? [] : verseData.word_for_word));
     transReveal.innerHTML = dualBlock(gitaTrans, sridTrans);
@@ -111,11 +96,7 @@
   };
 
   const enhanceAll = () => root.querySelectorAll('.gita-verse').forEach(enhanceVerse);
-  const refresh = () => {
-    hideFallbacks();
-    enhanceAll();
-  };
-
+  const refresh = () => { hideFallbacks(); enhanceAll(); };
   const observer = new MutationObserver(refresh);
   observer.observe(root, {childList:true, subtree:true});
   refresh();
@@ -125,22 +106,33 @@
     return response.json();
   });
 
-  const dataPromise = chapter === 18
-    ? Promise.all(['a','b','c','d'].map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-18-literal-' + part + '.json?v=20260901-literal4')))
-        .then((parts) => ({
-          _meta: {chapter: 18, reviewed: true, method: 'complete direct literal rendering'},
-          verses: Object.assign({}, ...parts.map((part) => part.verses || {}))
-        }))
-    : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260901-literal4');
-
-  dataPromise
-    .then((data) => {
-      chapterData = data;
-      enhanceAll();
-    })
-    .catch((error) => {
-      chapterData = null;
-      hideFallbacks();
-      console.warn('Reviewed Śrīdhara English unavailable for chapter ' + chapter + ':', error);
+  const mergeParts = (parts) => {
+    const verses = {};
+    parts.forEach((part) => {
+      Object.entries(part.verses || {}).forEach(([key, value]) => {
+        if (!verses[key]) {
+          verses[key] = {...value, word_for_word: [...(value.word_for_word || [])]};
+          return;
+        }
+        if (value.translation) verses[key].translation = [verses[key].translation, value.translation].filter(Boolean).join(' ');
+        verses[key].word_for_word = [...(verses[key].word_for_word || []), ...(value.word_for_word || [])];
+        verses[key].reviewed = verses[key].reviewed === true && value.reviewed === true;
+      });
     });
+    return {_meta:{chapter:18,reviewed:true,method:'complete direct literal rendering'},verses};
+  };
+
+  const literal18Parts = ['a','b','c','d','e1','e2a','e2b2','e2c','e3a','e3b'];
+  const dataPromise = chapter === 18
+    ? Promise.all(literal18Parts.map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-18-literal-' + part + '.json?v=20260901-literal5'))).then(mergeParts)
+    : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260901-literal5');
+
+  dataPromise.then((data) => {
+    chapterData = data;
+    enhanceAll();
+  }).catch((error) => {
+    chapterData = null;
+    hideFallbacks();
+    console.warn('Reviewed Śrīdhara English unavailable for chapter ' + chapter + ':', error);
+  });
 })();
