@@ -3,7 +3,7 @@
   if (!root) return;
 
   const chapter = Number(root.dataset.gitaChapter);
-  if (!Number.isInteger(chapter) || chapter < 2 || chapter > 18) return;
+  if (!Number.isInteger(chapter) || chapter < 1 || chapter > 18) return;
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const independent = {'अ':'a','आ':'ā','इ':'i','ई':'ī','उ':'u','ऊ':'ū','ऋ':'ṛ','ॠ':'ṝ','ऌ':'ḷ','ॡ':'ḹ','ए':'e','ऐ':'ai','ओ':'o','औ':'au','ॐ':'oṃ'};
@@ -42,6 +42,13 @@
       return '<strong>' + esc(term) + '</strong> — ' + esc(gloss);
     }).join('; ') + '.</p>';
   };
+
+  const joinedGloss = (pairs) => (Array.isArray(pairs) ? pairs : [])
+    .map((pair) => Array.isArray(pair) ? String(pair[1] || '').trim() : '')
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 
   const dualBlock = (gitaHtml, sridHtml) =>
     '<div class="gita-dual-section gita-dual-gita"><div class="gita-dual-label">Bhagavad Gītā</div>' + gitaHtml + '</div>' +
@@ -85,9 +92,12 @@
     if (noCommentary) {
       englishNode.textContent = 'No commentary.';
       englishNode.classList.add('gita-no-source');
-    } else if (verseData.translation) {
-      englishNode.textContent = verseData.translation;
-      englishNode.classList.remove('gita-no-source');
+    } else {
+      const literalTranslation = String(verseData.translation || '').trim() || joinedGloss(verseData.word_for_word);
+      if (literalTranslation) {
+        englishNode.textContent = literalTranslation;
+        englishNode.classList.remove('gita-no-source');
+      }
     }
 
     const commentarySection = englishNode.closest('.gita-commentary');
@@ -117,15 +127,21 @@
         if (value.translation) verses[key].translation = [verses[key].translation, value.translation].filter(Boolean).join(' ');
         verses[key].word_for_word = [...(verses[key].word_for_word || []), ...(value.word_for_word || [])];
         verses[key].reviewed = verses[key].reviewed === true && value.reviewed === true;
+        verses[key].no_commentary = verses[key].no_commentary === true && value.no_commentary === true;
       });
     });
-    return {_meta:{chapter:18,reviewed:true,method:'complete direct literal rendering'},verses};
+    return {_meta:{chapter,reviewed:true,method:'complete direct literal rendering'},verses};
   };
 
-  const literal18Parts = ['a','b','c','d','e1','e2a','e2b2','e2c','e3a','e3b'];
-  const dataPromise = chapter === 18
-    ? Promise.all(literal18Parts.map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-18-literal-' + part + '.json?v=20260901-literal5'))).then(mergeParts)
-    : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260901-literal5');
+  const literalPartsByChapter = {
+    1: ['a','b'],
+    18: ['a','b','c','d','e1','e2a','e2b2','e2c','e3a','e3b']
+  };
+  const literalParts = literalPartsByChapter[chapter];
+  const cacheKey = '20260901-literal6';
+  const dataPromise = literalParts
+    ? Promise.all(literalParts.map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '-literal-' + part + '.json?v=' + cacheKey))).then(mergeParts)
+    : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=' + cacheKey);
 
   dataPromise.then((data) => {
     chapterData = data;
