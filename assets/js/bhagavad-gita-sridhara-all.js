@@ -135,10 +135,11 @@
 
   const literalPartsByChapter = {
     1: ['a','b'],
+    2: ['a','b','c','d','e','f','g'],
     18: ['a','b','c','d','e1','e2a','e2b2','e2c','e3a','e3b']
   };
   const literalParts = literalPartsByChapter[chapter];
-  const cacheKey = '20260901-literal6';
+  const cacheKey = '20260901-literal7';
   const dataPromise = literalParts
     ? Promise.all(literalParts.map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '-literal-' + part + '.json?v=' + cacheKey))).then(mergeParts)
     : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=' + cacheKey);
