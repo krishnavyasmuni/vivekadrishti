@@ -120,11 +120,20 @@
   observer.observe(root, {childList:true, subtree:true});
   refresh();
 
-  fetch('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260831-literal3')
-    .then((response) => {
-      if (!response.ok) throw new Error('No reviewed Śrīdhara literal data for this chapter yet');
-      return response.json();
-    })
+  const loadJson = (url) => fetch(url).then((response) => {
+    if (!response.ok) throw new Error('No reviewed Śrīdhara literal data for this chapter yet');
+    return response.json();
+  });
+
+  const dataPromise = chapter === 18
+    ? Promise.all(['a','b','c','d'].map((part) => loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-18-literal-' + part + '.json?v=20260901-literal4')))
+        .then((parts) => ({
+          _meta: {chapter: 18, reviewed: true, method: 'complete direct literal rendering'},
+          verses: Object.assign({}, ...parts.map((part) => part.verses || {}))
+        }))
+    : loadJson('/vivekadrishti/assets/data/bhagavad-gita-sridhara-reviewed/chapter-' + chapter + '.json?v=20260901-literal4');
+
+  dataPromise
     .then((data) => {
       chapterData = data;
       enhanceAll();
