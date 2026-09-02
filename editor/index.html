@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Write, preview, edit and publish Viveka Dṛṣṭi articles in the Varṇa document style.">
+  <meta name="color-scheme" content="light">
+  <meta name="site-prefix" content="/vivekadrishti">
+  <title>Article Editor — Viveka Dṛṣṭi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Vollkorn:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/site.css?v=topnav-20260901-header-hidden">
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/hindupedia-site.css?build=20260826-2145" data-hindupedia-site>
+  <link rel="stylesheet" href="/vivekadrishti/assets/css/article-editor.css?v=1">
+</head>
+<body class="editor-page">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/vivekadrishti/">Viveka Dṛṣṭi</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="/vivekadrishti/">Home</a>
+        <a href="/vivekadrishti/introduction-to-hinduism/">Introduction to Hinduism</a>
+        <a href="/vivekadrishti/indology/">Indology</a>
+        <a href="/vivekadrishti/purana-library/">Purāṇa Library</a>
+        <a href="/vivekadrishti/pages/bhagavad-gita/">Bhagavad Gītā</a>
+        <a href="/vivekadrishti/editor/" aria-current="page">Article editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main editor-main">
+    <div class="editor-shell">
+      <div class="editor-heading-row">
+        <div>
+          <p class="editor-eyebrow">Viveka Dṛṣṭi · writing desk</p>
+          <h1>Article editor</h1>
+          <p class="editor-lede">Type an article once, see the Varṇa document style immediately, and publish it to the homepage under its category.</p>
+        </div>
+        <a class="editor-back-link" href="/vivekadrishti/">← Return to the site</a>
+      </div>
+
+      <div class="editor-notice">
+        <strong>How publishing works.</strong>
+        Your article is saved as a source file and a finished HTML page in the GitHub repository. The homepage reads the catalogue automatically and creates a category panel for every category you use.
+      </div>
+
+      <div class="editor-grid">
+        <form id="article-form" class="editor-form">
+          <div class="editor-form-heading">
+            <div>
+              <p class="editor-eyebrow">Article information</p>
+              <h2 id="form-mode-title">New article</h2>
+            </div>
+            <button id="clear-form" class="editor-button editor-button-quiet" type="button">Start fresh</button>
+          </div>
+
+          <fieldset>
+            <legend>Publication details</legend>
+            <label class="editor-field">
+              <span>Title <b aria-hidden="true">*</b></span>
+              <input id="article-title" name="title" type="text" required maxlength="180" placeholder="e.g. The Meaning of Dharma in the Gītā">
+            </label>
+
+            <div class="editor-two-up">
+              <label class="editor-field">
+                <span>Category <b aria-hidden="true">*</b></span>
+                <input id="article-category" name="category" list="category-options" type="text" required maxlength="80" placeholder="e.g. Indology">
+                <datalist id="category-options"></datalist>
+              </label>
+              <label class="editor-field">
+                <span>Publication date</span>
+                <input id="article-date" name="date" type="date">
+              </label>
+            </div>
+
+            <label class="editor-field">
+              <span>URL slug</span>
+              <input id="article-slug" name="slug" type="text" maxlength="80" pattern="[a-z0-9]+(?:-[a-z0-9]+)*" placeholder="the-meaning-of-dharma">
+              <small>Use lowercase letters, numbers and hyphens. It is generated from the title and locked when editing.</small>
+            </label>
+
+            <label class="editor-field">
+              <span>Short introduction</span>
+              <textarea id="article-summary" name="summary" rows="3" maxlength="280" placeholder="A brief description shown under the article in its homepage category."></textarea>
+            </label>
+
+            <label class="editor-field">
+              <span>Cover image URL <em>(optional)</em></span>
+              <input id="article-hero-image" name="heroImage" type="url" placeholder="https://...">
+              <small>Use a stable image URL. The editor will reject unsafe image schemes.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Article text</legend>
+            <label class="editor-field">
+              <span>Write your article <b aria-hidden="true">*</b></span>
+              <textarea id="article-body" name="body" rows="26" required spellcheck="true" placeholder="Begin with an introduction.
+
+## A section heading
+
+Write your paragraphs here.
+
+:::sanskrit
+Paste Sanskrit here.
+:::
+
+:::translation
+Add an English translation here.
+:::
+
+:::source
+— Bhagavad Gītā 18.41
+:::
+
+:::quote
+Add a quotation here.
+:::
+
+Use ### for a smaller subsection. The Contents list is created automatically."></textarea>
+            </label>
+
+            <div class="format-guide">
+              <p><strong>Small formatting guide</strong></p>
+              <div class="format-guide-grid">
+                <code>## Main heading</code>
+                <code>### Subheading</code>
+                <code>**bold** and *italic*</code>
+                <code>- list item</code>
+                <code>:::sanskrit … :::</code>
+                <code>:::translation … :::</code>
+                <code>:::source … :::</code>
+                <code>:::quote … :::</code>
+              </div>
+              <p class="editor-help">Raw HTML is not needed. The editor escapes typed HTML and builds the page safely.</p>
+            </div>
+          </fieldset>
+
+          <div class="editor-actions">
+            <button id="preview-button" class="editor-button editor-button-secondary" type="button">Refresh preview</button>
+            <button id="save-draft" class="editor-button editor-button-quiet" type="button">Save draft locally</button>
+            <button id="publish-button" class="editor-button editor-button-primary" type="submit">Publish to GitHub</button>
+          </div>
+          <p id="editor-status" class="editor-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <section class="preview-panel" aria-labelledby="preview-heading">
+          <div class="preview-panel-heading">
+            <div>
+              <p class="editor-eyebrow">Rendered page</p>
+              <h2 id="preview-heading">Live preview</h2>
+            </div>
+            <span id="preview-label" class="preview-label">Unsaved</span>
+          </div>
+          <iframe id="preview-frame" title="Live Varṇa-style article preview"></iframe>
+        </section>
+      </div>
+
+      <section class="manager-panel" aria-labelledby="manager-heading">
+        <div class="manager-heading-row">
+          <div>
+            <p class="editor-eyebrow">Catalogue</p>
+            <h2 id="manager-heading">Articles made with this editor</h2>
+          </div>
+          <button id="refresh-articles" class="editor-button editor-button-quiet" type="button">Refresh list</button>
+        </div>
+        <div id="published-list" class="published-list">
+          <p class="editor-muted">Loading published editor articles…</p>
+        </div>
+      </section>
+
+      <section class="access-panel" aria-labelledby="access-heading">
+        <div>
+          <p class="editor-eyebrow">Publishing access</p>
+          <h2 id="access-heading">GitHub access key</h2>
+          <p class="editor-muted">Paste a fine-grained GitHub token with Contents read/write permission for this repository. It is kept only in this browser session and is never written into an article or draft.</p>
+        </div>
+        <label class="editor-field editor-token-field">
+          <span>GitHub token</span>
+          <input id="github-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+        </label>
+        <div class="token-actions">
+          <button id="clear-token" class="editor-button editor-button-quiet" type="button">Clear key</button>
+          <span id="token-status" class="editor-muted">No key stored</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>Viveka Dṛṣṭi · Article editor</p></footer>
+  <script src="/vivekadrishti/assets/js/site.js?build=20260826-2145"></script>
+  <script src="/vivekadrishti/assets/js/article-editor.js?v=1"></script>
+</body>
+</html>
