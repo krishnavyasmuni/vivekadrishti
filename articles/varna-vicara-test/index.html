@@ -1,76 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Varṇa-vicāra</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&amp;family=Vollkorn:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Varṇa-vicāra — a study of varṇa, jāti, pramāṇa and scriptural evidence.">
+<title>Varṇa-vicāra — Viveka Dṛṣṭi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Vollkorn:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  html{scroll-behavior:smooth} body{margin:0;background:#2b261f;color:#3c362e;font-family:Merriweather,serif}
-  .empyrean-final-varna{position:relative;z-index:10;width:100%;margin:0;padding:0 0 76px;background:#2b261f;font-family:Merriweather,serif!important}
-  .paper{width:920px;max-width:100%;margin:0 auto;padding:64px 0 105px;background:#f4f4f4}
-  .titlewrap,.content{width:652px;max-width:calc(100% - 48px);margin-left:auto;margin-right:auto}
-  .titlewrap{margin-bottom:72px;text-align:center}
-  h1{margin:0;padding:0;font-size:50px;line-height:1.125;text-align:center;color:#00787a;font-family:Vollkorn,Georgia,serif;font-weight:400}
-  h2{margin:72px 0 0;padding:0;font-size:34px;line-height:1.125;text-align:center;color:#00787a;font-family:Vollkorn,Georgia,serif;font-weight:400}
-  h3{margin:62px 0 0;padding:0;font-size:30px;line-height:1.2;text-align:center;color:#00787a;font-family:Vollkorn,Georgia,serif;font-weight:400}
-  .num{color:#3c362e;font-family:Merriweather,serif;font-size:20px;line-height:1.5}.headtext{color:#00787a;font-family:Merriweather,serif;font-size:20px;line-height:1.5}
-  .divider{width:326px;max-width:50%;height:2px;margin:30px auto 48px;border:0;background:rgba(119,119,119,.1)}
-  .title-divider{width:326px;max-width:50%;height:2px;margin:30px auto 0;background:rgba(119,119,119,.1)}
-  .content{padding:0;font-size:20px;font-weight:400;line-height:1.5}
-  p{margin:0 0 30px;padding:0;font-size:20px;line-height:1.5;text-align:left}
-  em{font-size:20px;line-height:1.5}
-  a{color:#6731fb;text-decoration:none}
-  ol,ul{font-size:20px;line-height:1.5} .toc{margin:0 0 72px;padding-left:1.5em}.toc li{margin:0 0 8px;padding-left:4px}.toc ol{margin:6px 0 12px;padding-left:1.55em}
-  details.sanskrit-reveal{margin:0}
-  details.sanskrit-reveal summary{display:inline-block;margin:0;padding:3px 8px;border:1px solid rgba(0,120,122,.38);border-radius:999px;color:#00787a;background:transparent;font-family:Merriweather,serif;font-size:20px;font-weight:400;line-height:1.5;cursor:pointer;letter-spacing:normal}
-  details.sanskrit-reveal p[lang="sa-Deva"]{margin:14px 0 10px 24px;color:#b04a24;font-family:"Noto Serif Devanagari","Nirmala UI",Mangal,serif;font-size:22px;line-height:1.75}
-  .scripture-translation{margin:0 0 9px 24px;color:#a92727}.scripture-source{margin:0 0 30px 24px;color:#a92727}.scripture-source em{color:#6731fb}
-  .remark{margin:4px 0 34px;padding:0;background:transparent;border:0}.remark-title{display:inline;margin:0;padding:0 .12em;color:#3c362e;background:linear-gradient(transparent 38%,#f1dfa0 38%,#f1dfa0 88%,transparent 88%);font:inherit;font-weight:700}
-  .objection{margin:8px 0 34px;padding:0}.objection p{margin:0 0 18px;padding:0;background:transparent;border:0}.objection strong{color:#3c362e;font-weight:700;padding:0 .12em}.objection p.objection-text strong{background:linear-gradient(transparent 38%,#ead7cc 38%,#ead7cc 88%,transparent 88%)}.objection p.reply-text strong{background:linear-gradient(transparent 38%,#d9e8df 38%,#d9e8df 88%,transparent 88%)}
-  mark.key{background:linear-gradient(transparent 35%,#f3e39e 35%,#f3e39e 90%,transparent 90%);color:inherit;padding:0 .05em} strong.key{font-weight:700;color:#2f2a25} em.key{font-style:italic;color:#4a4239} u.key{text-decoration-thickness:1.5px;text-underline-offset:3px;text-decoration-color:#8c7765}
-  .small-note{font-size:20px}
-  @media(max-width:700px){.paper{padding-top:42px}.titlewrap,.content{max-width:calc(100% - 34px)}h1{font-size:40px}h2{font-size:30px}h3{font-size:27px}.content,p,ol,ul,details.sanskrit-reveal summary{font-size:18px}.num,.headtext{font-size:18px}details.sanskrit-reveal p[lang="sa-Deva"]{font-size:20px;margin-left:12px}.scripture-translation,.scripture-source{margin-left:12px}}
+:root{--ink:#332f2a;--muted:#746d64;--teal:#00787a;--teal-dark:#006567;--paper:#f7f6f3;--edge:#d7d2ca;--purple:#6731fb;--sanskrit:#a84c2d;--translation:#8f3b35;--outer:#2b261f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--outer);color:var(--ink);font-family:Merriweather,Georgia,serif;font-size:18px;line-height:1.68}
+a{color:var(--teal-dark);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
+.sitebar{height:56px;background:#f7f6f3;border-bottom:1px solid #d9d4cb;display:flex;align-items:center;padding:0 24px}
+.sitebar a{font-family:Vollkorn,Georgia,serif;font-size:21px;color:var(--teal)}
+.page{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;padding:42px 42px 100px}
+.article-head{max-width:900px;margin:0 auto 34px;padding-bottom:22px;border-bottom:1px solid var(--edge)}
+.kicker{margin:0 0 5px;color:var(--muted);font-size:13px;letter-spacing:.09em;text-transform:uppercase}
+h1{margin:0;color:var(--teal);font-family:Vollkorn,Georgia,serif;font-size:48px;line-height:1.08;font-weight:400}
+.subtitle{margin:10px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+.reader-grid{display:grid;grid-template-columns:220px minmax(0,720px);gap:44px;justify-content:center;align-items:start}
+.side-toc{position:sticky;top:24px;padding:2px 18px 18px 0;border-right:1px solid var(--edge);max-height:calc(100vh - 48px);overflow:auto}
+.side-toc-title{margin:0 0 12px;color:var(--ink);font-family:Vollkorn,Georgia,serif;font-size:21px;font-weight:500}
+.side-toc-list,.side-toc-list ol{list-style:none;margin:0;padding:0}
+.side-toc-list>li{margin:0 0 10px}.side-toc-list ol{margin:5px 0 0 12px;padding-left:11px;border-left:1px solid #dedad2}.side-toc-list li li{margin:5px 0}
+.side-toc-list a{display:block;color:#5f5952;font-size:13.5px;line-height:1.42}.side-toc-list>li>a{color:#3f3a35;font-weight:700}
+.article{min-width:0}.mobile-toc{display:none}.article p{margin:0 0 24px}
+.article h2{margin:54px 0 24px;padding:0 0 8px;border-bottom:1px solid #cfcac1;color:var(--teal);font-family:Vollkorn,Georgia,serif;font-size:31px;line-height:1.18;font-weight:400;text-align:left}
+.article h3{margin:40px 0 20px;padding:0;color:#3b3732;font-family:Vollkorn,Georgia,serif;font-size:24px;line-height:1.28;font-weight:500;text-align:left}
+.num{display:inline-block;margin-right:.35em;color:#91897f;font-family:Merriweather,Georgia,serif;font-size:.55em;font-weight:400;vertical-align:.16em}.headtext{color:inherit;font-family:inherit;font-size:inherit;font-weight:inherit}
+.article strong{font-weight:700;color:#2c2925}.article em{font-style:italic}
+details.sanskrit-reveal{margin:6px 0 10px}details.sanskrit-reveal summary{display:inline-block;margin:0;padding:2px 8px;border:1px solid rgba(0,120,122,.36);border-radius:999px;color:var(--teal);background:transparent;font-family:Merriweather,Georgia,serif;font-size:14px;line-height:1.55;cursor:pointer;user-select:none}details.sanskrit-reveal summary:hover{background:#edf4f2}
+details.sanskrit-reveal p[lang="sa-Deva"]{margin:12px 0 9px;padding:12px 16px;border-left:2px solid #c9a48f;background:#f1ede7;color:var(--sanskrit);font-family:"Noto Serif Devanagari","Nirmala UI",Mangal,serif;font-size:20px;line-height:1.75}
+.scripture-translation{margin:0 0 8px!important;padding-left:16px;border-left:2px solid #d7d0c7;color:var(--translation);font-size:17px;line-height:1.62}.scripture-source{margin:0 0 25px!important;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.5}.scripture-source em{color:var(--purple)}
+.remark{margin:28px 0 30px;padding:0 0 0 18px;border-left:2px solid #bdb7ae}.remark-title{display:block;margin:0 0 7px;color:var(--teal-dark);font-weight:700;font-size:15px}.remark p{margin-bottom:0;color:#46413b}
+.objection{margin:30px 0 34px;padding:0 0 0 18px;border-left:2px solid #d1ccc4}.objection p{margin:0 0 14px;color:#46413b}.objection p:last-child{margin-bottom:0}.objection strong{color:var(--teal-dark)}
+.reference-line{margin:18px 0 8px!important;font-size:16px;color:#3a3530}.article hr{display:none}
+@media(max-width:900px){.page{padding:34px 24px 80px}.reader-grid{display:block;max-width:720px;margin:0 auto}.side-toc{display:none}.article-head{max-width:720px}.mobile-toc{display:block;margin:0 0 34px;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);padding:10px 0}.mobile-toc summary{cursor:pointer;color:var(--teal-dark);font-weight:700;font-size:15px}.mobile-toc .side-toc-list{margin-top:12px;columns:2;column-gap:30px}.mobile-toc .side-toc-list li{break-inside:avoid}}
+@media(max-width:620px){body{font-size:17px}.sitebar{height:50px;padding:0 16px}.sitebar a{font-size:19px}.page{padding:28px 18px 60px}h1{font-size:39px}.article h2{font-size:28px;margin-top:46px}.article h3{font-size:22px;margin-top:34px}details.sanskrit-reveal p[lang="sa-Deva"]{font-size:19px;padding:10px 12px}.scripture-translation{font-size:16.5px;padding-left:12px}.mobile-toc .side-toc-list{columns:1}}
 </style>
 </head>
 <body>
-<div class="empyrean-final-varna"><div class="paper"><div class="titlewrap"><h1>Varṇa-vicāra</h1><div class="title-divider"></div></div><div class="content">
-<h2 style="margin-top:0">Contents</h2><div class="divider"></div>
-<ol class="toc"><li><a href="#preface">Preface</a><ol><li><a href="#introduction">Introduction</a></li><li><a href="#remark-1">Remark 1 — Ācārya consensus and pramāṇa</a></li><li><a href="#remark-2">Remark 2 — Paramparā and circularity</a></li></ol></li><li><a href="#purvapaksha">Pūrvapakṣa</a><ol><li><a href="#jati-position">Jāti as prerequisite of varṇa</a></li><li><a href="#remark-3">Remark 3 — Birth-based privileges</a></li></ol></li><li><a href="#rejection">Rejection of Jāti</a><ol><li><a href="#vishvamitra">Mlecchas and Śūdras becoming Brāhmaṇa</a></li><li><a href="#jati-distinctions">Rejection of jāti-distinctions in every sense</a></li></ol></li></ol>
-<h2 id="preface"><span class="num">1.</span> <span class="headtext">Preface</span></h2><hr class="divider"/>
-<h3 id="introduction"><span class="num">1.1</span> <span class="headtext">Introduction</span></h3><hr class="divider"/>
-<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">सरस्वति नमस्तुभ्यं वरदे कामरूपिणि ।<br/>विद्यारम्भं करिष्यामि सिद्धिर्भवतु मे सदा ॥</p></details>
+<header class="sitebar"><a href="/vivekadrishti/">Viveka Dṛṣṭi</a></header>
+<main class="page">
+<header class="article-head">
+<p class="kicker">Hinduism · Varṇa</p>
+<h1>Varṇa-vicāra</h1>
+<p class="subtitle">A scriptural investigation of varṇa, jāti, pramāṇa, and the grounds on which claims about varṇa are established.</p>
+</header>
+<div class="reader-grid">
+<aside class="side-toc" aria-label="Contents"><h2 class="side-toc-title">Contents</h2><ol class="side-toc-list"><li><a href="#preface">Preface</a><ol><li><a href="#introduction">Introduction</a></li><li><a href="#remark-1">Ācārya consensus and pramāṇa</a></li><li><a href="#remark-2">Paramparā and circularity</a></li></ol></li><li><a href="#purvapaksha">Pūrvapakṣa</a><ol><li><a href="#jati-position">Jāti as prerequisite of varṇa</a></li><li><a href="#remark-3">Birth-based privileges</a></li></ol></li><li><a href="#rejection">Rejection of Jāti</a><ol><li><a href="#vishvamitra">Mlecchas and Śūdras becoming Brāhmaṇa</a></li><li><a href="#jati-distinctions">Rejection of jāti-distinctions</a></li></ol></li></ol></aside>
+<article class="article">
+<details class="mobile-toc"><summary>Contents</summary><ol class="side-toc-list"><li><a href="#preface">Preface</a><ol><li><a href="#introduction">Introduction</a></li><li><a href="#remark-1">Ācārya consensus and pramāṇa</a></li><li><a href="#remark-2">Paramparā and circularity</a></li></ol></li><li><a href="#purvapaksha">Pūrvapakṣa</a><ol><li><a href="#jati-position">Jāti as prerequisite of varṇa</a></li><li><a href="#remark-3">Birth-based privileges</a></li></ol></li><li><a href="#rejection">Rejection of Jāti</a><ol><li><a href="#vishvamitra">Mlecchas and Śūdras becoming Brāhmaṇa</a></li><li><a href="#jati-distinctions">Rejection of jāti-distinctions</a></li></ol></li></ol></details>
+<h2 id="preface"><span class="num">1.</span><span class="headtext">Preface</span></h2>
+<h3 id="introduction"><span class="num">1.1</span><span class="headtext">Introduction</span></h3>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">सरस्वति नमस्तुभ्यं वरदे कामरूपिणि ।<br>विद्यारम्भं करिष्यामि सिद्धिर्भवतु मे सदा ॥</p></details>
 <p class="scripture-translation">O Goddess Saraswati, I bow to you. You are the giver of boons and the fulfiller of wishes. As I begin my studies, please bless me so that I may attain success always.</p>
-<p>Before we embark onto the topic of <strong class="key">Varna</strong> in <em class="key">Sanatana-Dharma</em> we must begin with an investigation into how something may be proven at all within Hinduism as a whole. The scope of this project does not exclude evidence pertaining to data external to Hinduism nor to dogmatically assert internal claims. The preceding sentence will be explained in further detail as the document goes on but was iterated as such to provide a basic pre-print of our method. Let us now investigate some <strong class="key">pramanas</strong> which we shall reflect upon to conclude how investigation on <strong class="key">Varna</strong> or <strong class="key">Varṇa</strong>-vicāra.</p>
-<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः । न स सिद्धिमवाप्नोति न सुखं न परां गतिम् ॥<br/>तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ । ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥</p></details>
+<p>Before we embark onto the topic of <strong>Varna</strong> in <em>Sanatana-Dharma</em> we must begin with an investigation into how something may be proven at all within Hinduism as a whole. The scope of this project does not exclude evidence pertaining to data external to Hinduism nor to dogmatically assert internal claims. The preceding sentence will be explained in further detail as the document goes on but was iterated as such to provide a basic pre-print of our method. Let us now investigate some <strong>pramanas</strong> which we shall reflect upon to conclude how investigation on <strong>Varna</strong> or <strong>Varṇa-vicāra</strong>.</p>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः । न स सिद्धिमवाप्नोति न सुखं न परां गतिम् ॥<br>तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ । ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥</p></details>
 <p class="scripture-translation">The supreme lord said: “He who, discarding scriptural procedure, proceeds as per his own wishes, he does not attain success, neither happiness, nor the highest goal. Therefore, the scripture is your basis in the determination of what is to be done and what is not to be done. Having known the scriptural injunction, it befits you to perform actions in this world.”</p>
-<p class="scripture-source">—<em>Bhagavad Gītā 16.23–24</em></p>
-<p><em class="key">Mīmāmsā</em> sūtras, which are the maxims for Scriptural interpretation, state in their very second aphorism:</p>
+<p class="scripture-source">— <em>Bhagavad Gītā 16.23–24</em></p>
+<p><em>Mīmāṃsā</em> sūtras, which are the maxims for Scriptural interpretation, state in their very second aphorism:</p>
 <details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">चोदनालक्षणोऽर्थो धर्मः ॥ १.१.२ ॥</p></details>
-<p class="scripture-translation">“That which is enjoined by the statement of scripture is dharma.”</p><p class="scripture-source">—<em>Mīmāṃsā Sūtra 1.1.2</em></p>
-<p>Yājñavalkya Śikṣā:</p><details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">युक्तियुक्तं वचो ग्राह्यं न ग्राह्यं गुरुगौरवात् ॥</p></details><p class="scripture-translation">One should accept a guru’s statement when it is reasonable or established by scripture; one should not accept it merely because it was spoken by a guru.</p>
-<div class="remark" id="remark-1"><div class="remark-title">Remark 1</div><p>Thus, with the support of <strong class="key">pramāṇas</strong> as well as sound reasoning one may conclude that the consensus amongst <strong class="key">ācāryas</strong> is no proof of a scriptural stance. The statements, conduct and conclusions of all ācāryas are to be subjected to <mark class="key">logic and reasoning</mark> and <mark class="key">śāstra</mark>.</p></div>
-<div class="objection"><p class="objection-text"><strong>Objection:</strong> But ācāryas dedicate many years to studying the Śāstras, and follow a strict paramparā. Hence the consensus of the paramparās is to be taken with confidence.</p><p class="reply-text"><strong>Reply:</strong> This is not so for many issues. If consensus of currently existing paramparās is itself taken as proof, we reject this because many gurus have gone against earlier consensus to establish their sampradāya.</p></div>
-<div class="remark" id="remark-2"><div class="remark-title">Remark 2</div><p>The notion that one needs a paramparā to interpret scripture may fall into a circular chain of reasoning: <mark class="key">Śāstra validates a paramparā → Paramparā determines how to interpret śāstra → That interpretation validates the paramparā.</mark></p></div>
-<h2 id="purvapaksha"><span class="num">2.</span> <span class="headtext">Pūrvapakṣa</span></h2><hr class="divider"/>
-<h3 id="jati-position"><span class="num">2.1</span> <span class="headtext">Jāti as prerequisite of varṇa</span></h3><hr class="divider"/>
-<p>It is said that <strong class="key">Varna</strong> is directly correlated and predicated upon by <strong class="key">Jati</strong>. One born as a brahmin-yoni belongs to the Brahmin jati and Brahmin varna and likewise for the other varnas. Birth/jati determines initial varna status and eligibility whereas samskaras and vedic karmas complete and actualise the status required for certain adhikaras.</p>
-<div class="remark" id="remark-3"><div class="remark-title">Remark 3</div><p>However being born as a Brahmin will provide certain benefits no matter how indulged in sin you are.</p></div>
-<h2 id="rejection"><span class="num">3.</span> <span class="headtext">Rejection of Jāti</span></h2><hr class="divider"/>
-<p>In order to refute the <em class="key">Pūrvapakṣa</em> position we must make use of the maxim:</p><div class="remark"><p>One should accept a guru’s statement when it is <mark class="key">reasonable or established by scripture</mark>; one should <mark class="key">not accept it merely because it was spoken by a guru</mark>.</p></div>
-<p>Let us begin with Scriptural <strong class="key">Pramāṇas</strong> against <mark class="key">Jāti as a universal prerequisite of Varṇa</mark>.</p>
-<h3 id="vishvamitra"><span class="num">3.1</span> <span class="headtext">Mlecchas and Śūdras becoming Brāhmaṇa like Viśvāmitra</span></h3><hr class="divider"/>
-<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">विश्वामित्रस्तु राजेन्द्र ब्राह्मणत्वजिगीषया । तपश्चचार विपुलं सन्तापाय दिवौकसाम् ॥ ५६ ॥<br/>ब्राह्मणत्वं न लेभेऽसौ लेभे विघ्नाननेकशः । ततस्तु नियमात्तेषां तिथीनां प्रवरा तिथिः ॥ ५७ ॥<br/>उपोषिता बहुविधा ज्ञात्वा ब्रह्मप्रियां तिथिम् । ततो ददौ ब्रह्मा विश्वामित्राय धीमते । इहैव तेन देहेन ब्राह्मणत्वं सुदुर्लभम् ॥ ५८ ॥<br/>तिथीनां प्रवरा ह्येषा तिथीनामुत्तमा तिथिः । क्षत्रियो वैश्यशूद्रौ वा ब्राह्मणत्वमवाप्नुयुः ॥ ५९ ॥</p></details>
-<p class="scripture-translation">‘Thereupon Brahmā granted the wise Viśvāmitra the exceedingly difficult attainment of brāhmaṇa status here in this very body.’</p><p class="scripture-translation">The source says that through it a kṣatriya, vaiśya, or śūdra may attain brāhmaṇa status.</p><p class="scripture-source">—<em>Bhaviṣya Purāṇa 1.16.56–59</em></p>
-<div class="remark"><div class="remark-title">Remark 4</div><p><strong class="key">Viśvāmitra</strong> was not born a Brahmin or Brahmin-jāti. The purāṇa states that <strong class="key">Mlecchas</strong> and <strong class="key">Śūdras</strong> can also perform the fast to attain brahmin-hood. We should understand it in the <mark class="key">same sense as Viśvāmitra</mark>.</p></div>
-<h3 id="jati-distinctions"><span class="num">3.2</span> <span class="headtext">Rejection of Jāti-distinctions in every sense</span></h3><hr class="divider"/>
-<p>We shall now examine statements from the Bhaviṣya Purāṇa, Brahma Parva which explicitly state that <u class="key">in every sense and every regard</u> there exists <mark class="key">no such distinction of Jātis</mark> based on birth or family/lineage.</p>
-<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">गोवर्गमध्यं च गतो यथाश्वो निर्धार्यते ज्ञैः सुविचक्षणत्वात् । मनुष्यभावादविशिष्यमाणस्तद्वद्द्विजः शूद्रगणान्न भिन्नः ॥ २० ॥<br/>मनुष्यजातेर् न परो विशेषो यः कल्प्यते सर्वनरानुयायी । संस्कारयुक्ता हि क्रियाविशिष्टा द्विजन्मनां शूद्रविवेकहेतुः ॥ २१ ॥</p></details>
-<p class="scripture-translation">‘There is no further distinction beyond the human species that accompanies every person. Consecratory rites and distinctive actions are what provide the basis for differentiating the twice-born from śūdras.’</p><p class="scripture-source">—<em>Bhaviṣya Purāṇa 1.40.20–22</em></p>
-<div class="remark"><div class="remark-title">Remark 5</div><p>The individual soul within a human has no <strong class="key">varṇa</strong>. There is <mark class="key">no perceptual difference</mark> between any two humans as all are human by nature. The text states the only way to distinguish is through <mark class="key">saṃskāra-yuktā kriyā-viśiṣṭā</mark> — distinguished action joined with rites.</p></div>
+<p class="scripture-translation">“That which is enjoined by the statement of scripture is dharma.”</p><p class="scripture-source">— <em>Mīmāṃsā Sūtra 1.1.2</em></p>
+<p>Yājñavalkya Śikṣā:</p>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">युक्तियुक्तं वचो ग्राह्यं न ग्राह्यं गुरुगौरवात् ॥</p></details>
+<p class="scripture-translation">One should accept a guru’s statement when it is reasonable or established by scripture; one should not accept it merely because it was spoken by a guru.</p>
+<div class="remark" id="remark-1"><div class="remark-title">Remark 1 · Ācārya consensus and pramāṇa</div><p>Thus, with the support of <strong>pramāṇas</strong> as well as sound reasoning one may conclude that the consensus amongst <strong>ācāryas</strong> is no proof of a scriptural stance. The statements, conduct and conclusions of all ācāryas are to be subjected to logic and reasoning and <strong>śāstra</strong>.</p></div>
+<div class="objection"><p><strong>Objection.</strong> But ācāryas dedicate many years to studying the Śāstras, and follow a strict paramparā. Hence the consensus of the paramparās is to be taken with confidence.</p><p><strong>Reply.</strong> This is not so for many issues. If consensus of currently existing paramparās is itself taken as proof, we reject this because many gurus have gone against earlier consensus to establish their sampradāya.</p></div>
+<div class="remark" id="remark-2"><div class="remark-title">Remark 2 · Paramparā and circularity</div><p>The notion that one needs a paramparā to interpret scripture may fall into a circular chain of reasoning: Śāstra validates a paramparā → Paramparā determines how to interpret śāstra → that interpretation validates the paramparā.</p></div>
+<h2 id="purvapaksha"><span class="num">2.</span><span class="headtext">Pūrvapakṣa</span></h2>
+<h3 id="jati-position"><span class="num">2.1</span><span class="headtext">Jāti as prerequisite of varṇa</span></h3>
+<p>It is said that <strong>Varna</strong> is directly correlated and in fact predicated upon by <strong>Jati</strong>. One born as a brahmin-yoni belongs to the Brahmin jati and Brahmin varna and likewise for the other varnas. However one simply is not a Brahmin entirely by jati alone but also by the Vedic karmas pertaining to initiation, vedic study etc. In short birth/jati determines initial varna status and eligibility whereas samskaras and vedic karmas complete and actualise the status required for certain adhikaras.</p>
+<p class="reference-line"><strong>Manusmṛti 10.4–5</strong></p>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">ब्राह्मणः क्षत्रियो वैश्यस्त्रयो वर्णा द्विजातयः । चतुर्थ एकजातिस्तु शूद्रो नास्ति तु पञ्चमः ॥ ४ ॥</p></details>
+<p class="scripture-translation">The brāhmaṇa, kṣatriya, and vaiśya are the three twice-born varṇas; the fourth, the śūdra, is once-born, and there is no fifth.</p>
+<p class="reference-line"><strong>Padma Purāṇa 7.47.129</strong></p>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">जन्मना ब्राह्मणो ज्ञेयः संस्कारैर्द्विज उच्यते ॥ १२९ ॥</p></details>
+<p class="scripture-translation">By birth he is known as a brāhmaṇa, and through the initiatory rites he is called a dvija, or twice-born.</p>
+<div class="remark" id="remark-3"><div class="remark-title">Remark 3 · Birth-based privileges in the pūrvapakṣa</div><p>However being born as a Brahmin will provide certain benefits no matter how indulged in sin you are.</p></div>
+<h2 id="rejection"><span class="num">3.</span><span class="headtext">Rejection of Jāti</span></h2>
+<p>In order to refute the <em>Pūrvapakṣa</em> position we must make use of the maxim: one should accept a guru’s statement when it is reasonable or established by scripture; one should not accept it merely because it was spoken by a guru.</p>
+<p>Let us begin with Scriptural <strong>Pramāṇas</strong> against Jāti as a universal prerequisite of Varṇa.</p>
+<h3 id="vishvamitra"><span class="num">3.1</span><span class="headtext">Mlecchas and Śūdras becoming Brāhmaṇa like Viśvāmitra</span></h3>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">विश्वामित्रस्तु राजेन्द्र ब्राह्मणत्वजिगीषया । तपश्चचार विपुलं सन्तापाय दिवौकसाम् ॥ ५६ ॥<br>ब्राह्मणत्वं न लेभेऽसौ लेभे विघ्नाननेकशः ॥ ५७ ॥<br>ततो ददौ ब्रह्मा विश्वामित्राय धीमते । इहैव तेन देहेन ब्राह्मणत्वं सुदुर्लभम् ॥ ५८ ॥<br>क्षत्रियो वैश्यशूद्रौ वा ब्राह्मणत्वमवाप्नुयुः ॥ ५९ ॥</p></details>
+<p class="scripture-translation">‘Thereupon Brahmā granted the wise Viśvāmitra the exceedingly difficult attainment of brāhmaṇa status here in this very body.’</p>
+<p class="scripture-translation">The source says that through it a kṣatriya, vaiśya, or śūdra may attain brāhmaṇa status.</p>
+<p class="scripture-source">— <em>Bhaviṣya Purāṇa 1.16.56–59</em></p>
+<div class="remark"><div class="remark-title">Remark 4</div><p><strong>Viśvāmitra</strong> was not born a Brahmin or Brahmin-jāti. The purāṇa states that Mlecchas and Śūdras can also perform the fast to attain brahmin-hood. We should understand it in the same sense as Viśvāmitra.</p></div>
+<h3 id="jati-distinctions"><span class="num">3.2</span><span class="headtext">Rejection of Jāti-distinctions in every sense</span></h3>
+<p>We shall now examine statements from the Bhaviṣya Purāṇa, Brahma Parva which explicitly state that in every sense and every regard there exists no such distinction of Jātis based on birth or family/lineage.</p>
+<p class="reference-line"><strong>Bhaviṣya Purāṇa 1.40.20–22</strong></p>
+<details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">गोवर्गमध्यं च गतो यथाश्वो निर्धार्यते ज्ञैः सुविचक्षणत्वात् । मनुष्यभावादविशिष्यमाणस्तद्वद्द्विजः शूद्रगणान्न भिन्नः ॥ २० ॥<br>मनुष्यजातेर् न परो विशेषो यः कल्प्यते सर्वनरानुयायी । संस्कारयुक्ता हि क्रियाविशिष्टा द्विजन्मनां शूद्रविवेकहेतुः ॥ २१ ॥</p></details>
+<p class="scripture-translation">‘There is no further distinction beyond the human species that accompanies every person. Consecratory rites and distinctive actions are what provide the basis for differentiating the twice-born from śūdras.’</p>
+<div class="remark"><div class="remark-title">Remark 5</div><p>The individual soul within a human has no varṇa. There is no perceptual difference between any two humans as all are human by nature. The text states the only way to distinguish is through <em>saṃskāra-yuktā kriyā-viśiṣṭā</em> — distinguished action joined with rites.</p></div>
+<p class="reference-line"><strong>Bhaviṣya Purāṇa 1.40.34</strong></p>
 <details class="sanskrit-reveal"><summary>Show Sanskrit</summary><p lang="sa-Deva">तस्मान्न गोश्ववत्कश्चिज्जातिभेदोऽस्ति देहिनाम् । कार्यशक्तिनिमित्तस्तु सङ्केतः कृत्रिमो भवेत् ॥ ३४ ॥</p></details>
-<p class="scripture-translation">‘Therefore embodied beings possess no birth-class distinction like that between a cow and a horse. The convention is an artificial one based upon aptitude for particular work.’</p><p class="scripture-source">—<em>Bhaviṣya Purāṇa 1.40.34</em></p>
-</div></div></div>
-</body></html>
+<p class="scripture-translation">‘Therefore embodied beings possess no birth-class distinction like that between a cow and a horse. The convention is an artificial one based upon aptitude for particular work.’</p>
+<p class="scripture-source">— <em>Bhaviṣya Purāṇa 1.40.34</em></p>
+</article>
+</div>
+</main>
+</body>
+</html>
