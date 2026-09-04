@@ -1,0 +1,221 @@
+:root{
+  --legacy-paper:#f4f4f4;
+  --legacy-ink:#3c362e;
+  --legacy-purple:#6731fb;
+  --legacy-red:#a92727;
+  --legacy-dark:#2b261f;
+  --legacy-line:rgba(119,119,119,.14)
+}
+
+body.legacy-viveka-style{
+  background:var(--legacy-dark)!important;
+  color:var(--legacy-ink)!important;
+  font-family:Merriweather,Georgia,serif!important
+}
+
+body.legacy-viveka-style .site-main{
+  width:min(920px,100%)!important;
+  margin:0 auto!important;
+  background:var(--legacy-paper)!important
+}
+
+body.legacy-viveka-style .article-shell,
+body.legacy-viveka-style .article-body{
+  font-family:Merriweather,Georgia,serif!important;
+  color:var(--legacy-ink)!important
+}
+
+body.legacy-viveka-style .article-body a,
+body.legacy-viveka-style .hp-home a{
+  color:var(--legacy-purple)!important;
+  font-family:Merriweather,Georgia,serif!important
+}
+
+/* Keep the two long-form articles in their original Viveka Dṛṣṭi typography. */
+body.legacy-viveka-style .empyrean-final-article,
+body.legacy-viveka-style .empyrean-final-article p,
+body.legacy-viveka-style .empyrean-final-article li,
+body.legacy-viveka-style .empyrean-final-article ol,
+body.legacy-viveka-style .empyrean-final-article ul,
+body.legacy-viveka-style .empyrean-final-article blockquote,
+body.legacy-viveka-style .empyrean-final-article details{
+  font-family:Merriweather,Georgia,serif!important;
+  color:var(--legacy-ink)
+}
+
+body.legacy-viveka-style .empyrean-final-article h1,
+body.legacy-viveka-style .empyrean-final-article h2,
+body.legacy-viveka-style .empyrean-final-article h3,
+body.legacy-viveka-style .empyrean-final-article h4,
+body.legacy-viveka-style .empyrean-final-article h1 span,
+body.legacy-viveka-style .empyrean-final-article h2 span,
+body.legacy-viveka-style .empyrean-final-article h3 span,
+body.legacy-viveka-style .empyrean-final-article h4 span{
+  color:var(--legacy-purple)!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-weight:400!important
+}
+
+body.legacy-viveka-style .empyrean-final-article h1{
+  font-size:clamp(38px,6vw,50px)!important;
+  line-height:1.125!important;
+  text-align:center!important
+}
+
+body.legacy-viveka-style .empyrean-final-article h2{
+  line-height:1.125!important
+}
+
+body.legacy-viveka-style .empyrean-final-article h3{
+  line-height:1.2!important
+}
+
+body.legacy-viveka-style .empyrean-final-article details summary,
+body.legacy-viveka-style .empyrean-final-article .sanskrit-reveal summary{
+  color:var(--legacy-purple)!important;
+  border-color:rgba(103,49,251,.38)!important;
+  background:transparent!important;
+  font-family:Merriweather,Georgia,serif!important
+}
+
+body.legacy-viveka-style .empyrean-final-article blockquote,
+body.legacy-viveka-style .empyrean-final-article .wp-block-quote{
+  border-left-color:#6d5685!important;
+  background:#eee9f1!important
+}
+
+/* Indology: retain the expanded directory, but present it in the older article style. */
+body.legacy-viveka-style .hp-home{
+  width:min(652px,calc(100% - 48px))!important;
+  margin:0 auto!important;
+  padding:64px 0 105px!important;
+  color:var(--legacy-ink)!important;
+  background:transparent!important;
+  font-family:Merriweather,Georgia,serif!important
+}
+
+body.legacy-viveka-style .hp-home>h1{
+  margin:0 0 24px!important;
+  padding:0!important;
+  color:var(--legacy-purple)!important;
+  background:transparent!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:clamp(38px,6vw,50px)!important;
+  font-weight:400!important;
+  line-height:1.125!important;
+  text-align:center!important
+}
+
+body.legacy-viveka-style .hp-home>h1::after{
+  content:"";
+  display:block;
+  width:326px;
+  max-width:50%;
+  height:2px;
+  margin:30px auto 0;
+  background:var(--legacy-line)
+}
+
+body.legacy-viveka-style .hp-home-intro{
+  margin:0 auto 58px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  color:var(--legacy-ink)!important;
+  font-family:Merriweather,Georgia,serif!important;
+  font-size:20px!important;
+  line-height:1.5!important;
+  text-align:center!important
+}
+
+body.legacy-viveka-style .hp-home-intro p{
+  margin:0!important
+}
+
+body.legacy-viveka-style .hp-directory,
+body.legacy-viveka-style .hp-column{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important
+}
+
+body.legacy-viveka-style .hp-panel{
+  margin:0 0 54px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:transparent!important
+}
+
+body.legacy-viveka-style .hp-section-title{
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  color:var(--legacy-purple)!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:30px!important;
+  font-weight:400!important;
+  line-height:1.2!important;
+  text-align:center!important
+}
+
+body.legacy-viveka-style .hp-section-title::after{
+  content:"";
+  display:block;
+  width:260px;
+  max-width:42%;
+  height:2px;
+  margin:22px auto 28px;
+  background:var(--legacy-line)
+}
+
+body.legacy-viveka-style .hp-link-list{
+  margin:0!important;
+  padding-left:1.5em!important;
+  color:var(--legacy-ink)!important;
+  font-family:Merriweather,Georgia,serif!important;
+  font-size:20px!important;
+  line-height:1.5!important
+}
+
+body.legacy-viveka-style .hp-link-list li{
+  margin:0 0 10px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important
+}
+
+body.legacy-viveka-style .hp-link-list a{
+  color:var(--legacy-purple)!important;
+  font-size:20px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+  text-decoration:none!important
+}
+
+body.legacy-viveka-style .hp-link-list a:hover{
+  text-decoration:underline!important
+}
+
+@media(max-width:780px){
+  body.legacy-viveka-style .hp-home{
+    width:min(652px,calc(100% - 36px))!important;
+    padding:44px 0 78px!important
+  }
+
+  body.legacy-viveka-style .hp-home-intro,
+  body.legacy-viveka-style .hp-link-list{
+    font-size:18px!important
+  }
+
+  body.legacy-viveka-style .hp-link-list a{
+    font-size:18px!important
+  }
+
+  body.legacy-viveka-style .hp-section-title{
+    font-size:28px!important
+  }
+}
