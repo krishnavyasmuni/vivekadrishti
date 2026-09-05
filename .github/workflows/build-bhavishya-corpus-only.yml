@@ -19,16 +19,23 @@ jobs:
           git checkout main
       - name: Install transliteration dependency
         run: python -m pip install --disable-pip-version-check indic-transliteration
-      - name: Restore Pratisarga 3.2 chapter 21
+      - name: Restore missing source chapters
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           from indic_transliteration import sanscript
-          iast = Path('tools/pratisarga2_021_iast.txt').read_text(encoding='utf-8').strip()
-          dev = sanscript.transliterate(iast, sanscript.IAST, sanscript.DEVANAGARI)
-          p = Path('_bhavishya_source/DharmicData/Purana/Bhavishya Purana/3.2. Pratisarga Parva/21.json')
-          p.write_text(json.dumps([{'text': dev}], ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          patches = [
+              ('tools/pratisarga2_021_iast.txt', '3.2. Pratisarga Parva/21.json'),
+              ('tools/pratisarga4_012_iast.txt', '3.4. Pratisarga Parva/12.json'),
+          ]
+          root = Path('_bhavishya_source/DharmicData/Purana/Bhavishya Purana')
+          for src, rel in patches:
+              iast = Path(src).read_text(encoding='utf-8').strip()
+              dev = sanscript.transliterate(iast, sanscript.IAST, sanscript.DEVANAGARI)
+              p = root / rel
+              p.parent.mkdir(parents=True, exist_ok=True)
+              p.write_text(json.dumps([{'text': dev}], ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
       - name: Build corpus
         run: python tools/build_bhavishya_corpus.py
