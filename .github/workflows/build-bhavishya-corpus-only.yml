@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - chatgpt-bhavishya-stylo-corpus
+  pull_request:
   workflow_dispatch:
 jobs:
   build:
