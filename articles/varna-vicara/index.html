@@ -1,27 +1,348 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Varṇa-vicāra — a scriptural investigation of varṇa and jāti.">
 <title>Varṇa-vicāra — Viveka Dṛṣṭi</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Vollkorn:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#302d29;--muted:#716b63;--teal:#00787a;--paper:#fbfaf7;--edge:#d8d3ca;--purple:#6731fb;--sanskrit:#9d4b31;--translation:#4e5964;--outer:#2b261f}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--outer);color:var(--ink);font-family:Merriweather,Georgia,serif;font-size:17.5px;line-height:1.76}
-a{color:#006b6d;text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
-.sitebar{height:56px;background:var(--paper);border-bottom:1px solid #ded9d0;display:flex;align-items:center;padding:0 24px}.sitebar a{font-family:Vollkorn,Georgia,serif;font-size:21px;color:var(--teal)}
-.page{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;padding:48px 42px 110px}
-.article-head{max-width:940px;margin:0 auto 38px;padding-bottom:20px;border-bottom:1px solid var(--edge)}
-h1{margin:0;color:var(--teal);font-family:Vollkorn,Georgia,serif;font-size:50px;line-height:1.08;font-weight:400}
-.reader-grid{display:grid;grid-template-columns:225px minmax(0,735px);gap:48px;justify-content:center;align-items:start}.side-toc{position:sticky;top:24px;padding:2px 18px 18px 0;border-right:1px solid var(--edge);max-height:calc(100vh - 48px);overflow:auto}
-.side-toc-title{margin:0 0 12px;font-family:Vollkorn,Georgia,serif;font-size:21px;font-weight:500}.toc,.toc ol{list-style:none;margin:0;padding:0}.toc>li{margin:0 0 10px}.toc ol{margin:5px 0 0 12px;padding-left:11px;border-left:1px solid #dfdbd3}.toc li li{margin:5px 0}.toc a{display:block;color:#625d56;font-size:13.5px;line-height:1.42}.toc>li>a{color:#3d3934;font-weight:700}
-.article{min-width:0}.article p{margin:0 0 21px}.article h2{margin:58px 0 25px;padding:0 0 8px;border-bottom:1px solid #cbc6bd;color:var(--teal);font-family:Vollkorn,Georgia,serif;font-size:31px;line-height:1.18;font-weight:400}.article h2:first-child{margin-top:0}.article h3{margin:42px 0 18px;color:#36322e;font-family:Vollkorn,Georgia,serif;font-size:24px;line-height:1.28;font-weight:500}
-.reference{margin:27px 0 7px!important;color:#48433e;font-size:14.5px;font-weight:700}.translation{margin:0 0 24px!important;color:var(--translation);font-size:16.2px;line-height:1.68;font-style:italic}.emphasis{font-weight:700;color:#45403a}
-details.sanskrit-reveal{margin:7px 0 10px}details.sanskrit-reveal summary{display:inline-block;padding:2px 8px;border:1px solid rgba(0,120,122,.30);border-radius:999px;color:var(--teal);font-size:13.5px;line-height:1.55;cursor:pointer;user-select:none}details.sanskrit-reveal summary:hover{background:#f0f5f3}details.sanskrit-reveal [lang="sa-Deva"]{margin:12px 0 10px;padding:0 0 0 14px;border-left:1px solid #cdbfb4;color:var(--sanskrit);font-family:"Noto Serif Devanagari","Nirmala UI",Mangal,serif;font-size:19px;line-height:1.82}
-.remark-section{margin:36px 0 42px;padding:0}.remark-label{margin:0 0 13px;color:#2f2d29;font-family:Vollkorn,Georgia,serif;font-size:19px;font-weight:500}.remark-section p{margin-bottom:19px}.alpha-list,.argument-list{margin:6px 0 23px 28px;padding:0}.alpha-list li,.argument-list li{margin:0 0 9px;padding-left:4px}.debate{margin:22px 0!important;padding:0;color:#3e3a35}.debate strong{font-variant:small-caps;letter-spacing:.02em;color:#2f2d29}.argument-chain{margin:22px 0 24px!important;padding:0 0 0 18px;border-left:1px solid #bdb7ae;font-weight:700;font-size:15px;line-height:1.62}.maxim{margin:25px 18px 0;padding:0 0 0 20px;border-left:1px solid #bdb7ae;font-style:italic;color:#393530}
+:root{
+  --ink:#312e2a;
+  --muted:#716b63;
+  --teal:#087b7d;
+  --teal-soft:#d7e9e7;
+  --paper:#fbfaf7;
+  --paper-deep:#f5f1ea;
+  --edge:#ddd7ce;
+  --edge-strong:#c9c1b6;
+  --sanskrit:#955039;
+  --translation:#505b66;
+  --outer:#eee9e1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--outer);
+  color:var(--ink);
+  font-family:Merriweather,Georgia,serif;
+  font-size:17.25px;
+  line-height:1.78;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:#076f71;text-decoration:none;text-decoration-thickness:1px}
+a:hover{text-decoration:underline;text-underline-offset:4px}
+.sitebar{
+  height:58px;
+  background:rgba(251,250,247,.97);
+  border-bottom:1px solid var(--edge);
+  display:flex;
+  align-items:center;
+  padding:0 28px;
+}
+.sitebar a{
+  font-family:Vollkorn,Georgia,serif;
+  font-size:20px;
+  font-weight:500;
+  letter-spacing:.015em;
+  color:var(--teal);
+}
+.page{
+  max-width:1190px;
+  min-height:100vh;
+  margin:0 auto;
+  padding:52px 48px 116px;
+  background:var(--paper);
+  box-shadow:0 0 0 1px rgba(84,70,55,.035),0 18px 55px rgba(74,61,47,.06);
+}
+.article-head{
+  max-width:960px;
+  margin:0 auto 40px;
+  padding:0 0 22px;
+  border-bottom:1px solid var(--edge);
+}
+.article-head::after{
+  content:"";
+  display:block;
+  width:54px;
+  height:2px;
+  margin-top:17px;
+  background:var(--teal);
+  opacity:.68;
+}
+h1{
+  margin:0;
+  color:var(--teal);
+  font-family:Vollkorn,Georgia,serif;
+  font-size:50px;
+  line-height:1.05;
+  font-weight:500;
+  letter-spacing:-.018em;
+}
+.reader-grid{
+  display:grid;
+  grid-template-columns:236px minmax(0,728px);
+  gap:54px;
+  justify-content:center;
+  align-items:start;
+}
+.side-toc{
+  position:sticky;
+  top:28px;
+  max-height:calc(100vh - 56px);
+  overflow:auto;
+  padding:7px 26px 24px 0;
+  border-right:1px solid var(--edge-strong);
+  scrollbar-width:thin;
+  scrollbar-color:#d0c9bf transparent;
+}
+.side-toc-title{
+  margin:0 0 21px;
+  font-family:Vollkorn,Georgia,serif;
+  font-size:24px;
+  line-height:1.1;
+  font-weight:600;
+  letter-spacing:-.01em;
+  color:#37332f;
+}
+.toc,.toc ol{list-style:none;margin:0;padding:0}
+.toc>li{margin:0 0 19px}
+.toc ol{
+  margin:9px 0 0 14px;
+  padding-left:15px;
+  border-left:1px solid #ded7cd;
+}
+.toc li li{margin:0 0 8px}
+.toc a{
+  display:block;
+  color:#686159;
+  font-size:13.4px;
+  line-height:1.5;
+  transition:color .16s ease,transform .16s ease;
+}
+.toc>li>a{
+  color:#3c3833;
+  font-size:14.1px;
+  line-height:1.42;
+  font-weight:700;
+}
+.toc a:hover{
+  color:var(--teal);
+  text-decoration:none;
+  transform:translateX(2px);
+}
+.toc a.is-active{
+  color:var(--teal);
+  font-weight:700;
+}
+.article{min-width:0}
+.article p{margin:0 0 22px}
+.article h2,.article h3{scroll-margin-top:32px}
+.article h2{
+  position:relative;
+  margin:62px 0 27px;
+  padding:0 0 11px;
+  border-bottom:1px solid var(--edge-strong);
+  color:var(--teal);
+  font-family:Vollkorn,Georgia,serif;
+  font-size:31px;
+  line-height:1.18;
+  font-weight:500;
+  letter-spacing:-.012em;
+}
+.article h2::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:42px;
+  height:2px;
+  background:var(--teal);
+  opacity:.62;
+}
+.article h2:first-child{margin-top:0}
+.article h3{
+  margin:43px 0 18px;
+  color:#38342f;
+  font-family:Vollkorn,Georgia,serif;
+  font-size:24px;
+  line-height:1.28;
+  font-weight:600;
+  letter-spacing:-.008em;
+}
+.reference{
+  margin:29px 0 8px!important;
+  color:#46413c;
+  font-size:14.2px;
+  line-height:1.5;
+  font-weight:700;
+  letter-spacing:.006em;
+}
+.translation{
+  margin:0 0 26px!important;
+  padding-left:1px;
+  color:var(--translation);
+  font-size:16px;
+  line-height:1.72;
+  font-style:italic;
+}
+.emphasis{font-weight:700;color:#45403a}
+details.sanskrit-reveal{margin:8px 0 11px}
+details.sanskrit-reveal summary{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:3px 10px 4px;
+  border:1px solid #b8d7d5;
+  border-radius:999px;
+  color:var(--teal);
+  background:#fcfdfc;
+  font-size:13px;
+  line-height:1.55;
+  cursor:pointer;
+  user-select:none;
+  transition:background .15s ease,border-color .15s ease;
+}
+details.sanskrit-reveal summary::-webkit-details-marker{display:none}
+details.sanskrit-reveal summary::before{content:"+";font-family:Georgia,serif;font-size:14px;line-height:1;color:#579a9a}
+details.sanskrit-reveal[open] summary::before{content:"−"}
+details.sanskrit-reveal summary:hover{background:#f1f7f5;border-color:#94c4c1}
+details.sanskrit-reveal [lang="sa-Deva"]{
+  margin:14px 0 12px;
+  padding:2px 0 2px 17px;
+  border-left:2px solid #d4c1b5;
+  color:var(--sanskrit);
+  font-family:"Noto Serif Devanagari","Nirmala UI",Mangal,serif;
+  font-size:19px;
+  line-height:1.86;
+}
+.remark-section{
+  margin:38px 0 44px;
+  padding:1px 0 1px 19px;
+  border-left:2px solid #e3ded6;
+}
+.remark-label{
+  margin:0 0 13px;
+  color:#33302c;
+  font-family:Vollkorn,Georgia,serif;
+  font-size:19px;
+  font-weight:600;
+}
+.remark-section p{margin-bottom:19px}
+.alpha-list,.argument-list{margin:7px 0 24px 29px;padding:0}
+.alpha-list li,.argument-list li{margin:0 0 10px;padding-left:5px}
+.debate{margin:23px 0!important;padding:0;color:#3f3b36}
+.debate strong{font-variant:small-caps;letter-spacing:.025em;color:#2f2d29}
+.argument-chain{
+  margin:24px 0 26px!important;
+  padding:4px 0 4px 19px;
+  border-left:2px solid #c8c0b6;
+  color:#393530;
+  font-weight:700;
+  font-size:15px;
+  line-height:1.65;
+}
+.maxim{
+  margin:27px 18px 0;
+  padding:2px 0 2px 21px;
+  border-left:2px solid #c8c0b6;
+  color:#393530;
+  font-style:italic;
+}
 .mobile-toc{display:none}
-@media(max-width:900px){.page{padding:34px 24px 80px}.reader-grid{display:block;max-width:735px;margin:0 auto}.side-toc{display:none}.article-head{max-width:735px}.mobile-toc{display:block;margin:0 0 34px;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);padding:10px 0}.mobile-toc summary{cursor:pointer;color:#006b6d;font-weight:700;font-size:15px}.mobile-toc .toc{margin-top:12px;columns:2;column-gap:30px}.mobile-toc .toc li{break-inside:avoid}}
-@media(max-width:620px){body{font-size:16.8px}.sitebar{height:50px;padding:0 16px}.page{padding:28px 18px 60px}h1{font-size:40px}.article h2{font-size:28px;margin-top:46px}.article h3{font-size:22px;margin-top:34px}details.sanskrit-reveal [lang="sa-Deva"]{font-size:18px;padding-left:11px}.translation{font-size:15.7px}.mobile-toc .toc{columns:1}.remark-label{font-size:18px}}
-</style></head><body>
-<header class="sitebar"><a href="/vivekadrishti/">Viveka Dṛṣṭi</a></header><main class="page"><header class="article-head"><h1>Varṇa-vicāra</h1></header>
-<div class="reader-grid"><aside class="side-toc"><h2 class="side-toc-title">Contents</h2><ol class="toc"><li><a href="#preface">Preface</a><ol><li><a href="#introduction">Introduction</a></li><li><a href="#remark-1">Remark 1</a></li><li><a href="#remark-2">Remark 2</a></li></ol></li><li><a href="#purvapaksha">Pūrvapakṣa</a><ol><li><a href="#purvapaksha-position">Position and pramāṇas</a></li><li><a href="#remark-3">Remark 3</a></li></ol></li><li><a href="#rejection">Rejection of Jāti</a><ol><li><a href="#rejection-universal">Universal prerequisite</a></li><li><a href="#vishvamitra">Viśvāmitra, Mlecchas and Śūdras</a></li><li><a href="#jati-distinctions">Rejection of jāti-distinctions</a></li></ol></li></ol></aside>
-<article class="article"><details class="mobile-toc"><summary>Contents</summary><ol class="toc"><li><a href="#preface">Preface</a></li><li><a href="#purvapaksha">Pūrvapakṣa</a></li><li><a href="#rejection">Rejection of Jāti</a></li></ol></details><div id="source-content"><p>Loading document…</p></div><script>(async()=>{const root=document.getElementById('source-content');const parts=['preface.html','purvapaksha.html','rejection.html'];const html=[];for(const part of parts){const r=await fetch(part+'?v=paper1');if(!r.ok)throw new Error(part);html.push(await r.text())}root.innerHTML=html.join('');})().catch(()=>{document.getElementById('source-content').innerHTML='<p>Could not load document sections. Refresh the page.</p>'});</script></article></div></main></body></html>
+@media(max-width:900px){
+  .page{padding:36px 26px 84px;box-shadow:none}
+  .reader-grid{display:block;max-width:728px;margin:0 auto}
+  .side-toc{display:none}
+  .article-head{max-width:728px}
+  .mobile-toc{
+    display:block;
+    margin:0 0 38px;
+    padding:11px 0 13px;
+    border-top:1px solid var(--edge);
+    border-bottom:1px solid var(--edge);
+  }
+  .mobile-toc summary{
+    cursor:pointer;
+    color:var(--teal);
+    font-family:Vollkorn,Georgia,serif;
+    font-weight:600;
+    font-size:16px;
+  }
+  .mobile-toc .toc{margin-top:14px;columns:2;column-gap:30px}
+  .mobile-toc .toc li{break-inside:avoid}
+}
+@media(max-width:620px){
+  body{font-size:16.65px;background:var(--paper)}
+  .sitebar{height:51px;padding:0 17px}
+  .sitebar a{font-size:18px}
+  .page{padding:29px 19px 62px}
+  .article-head{margin-bottom:31px;padding-bottom:18px}
+  h1{font-size:40px}
+  .article h2{font-size:28px;margin-top:48px}
+  .article h3{font-size:22px;margin-top:36px}
+  details.sanskrit-reveal [lang="sa-Deva"]{font-size:18px;padding-left:12px}
+  .translation{font-size:15.6px}
+  .mobile-toc .toc{columns:1}
+  .remark-label{font-size:18px}
+  .remark-section{padding-left:14px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.toc a{transition:none}}
+</style>
+</head>
+<body>
+<header class="sitebar"><a href="/vivekadrishti/">Viveka Dṛṣṭi</a></header>
+<main class="page">
+  <header class="article-head"><h1>Varṇa-vicāra</h1></header>
+  <div class="reader-grid">
+    <aside class="side-toc" aria-label="Table of contents">
+      <h2 class="side-toc-title">Contents</h2>
+      <ol class="toc">
+        <li><a href="#preface">Preface</a><ol><li><a href="#introduction">Introduction</a></li><li><a href="#remark-1">Remark 1</a></li><li><a href="#remark-2">Remark 2</a></li></ol></li>
+        <li><a href="#purvapaksha">Pūrvapakṣa</a><ol><li><a href="#purvapaksha-position">Position and pramāṇas</a></li><li><a href="#remark-3">Remark 3</a></li></ol></li>
+        <li><a href="#rejection">Rejection of Jāti</a><ol><li><a href="#rejection-universal">Universal prerequisite</a></li><li><a href="#vishvamitra">Viśvāmitra, Mlecchas and Śūdras</a></li><li><a href="#jati-distinctions">Rejection of jāti-distinctions</a></li></ol></li>
+      </ol>
+    </aside>
+    <article class="article">
+      <details class="mobile-toc"><summary>Contents</summary><ol class="toc"><li><a href="#preface">Preface</a></li><li><a href="#purvapaksha">Pūrvapakṣa</a></li><li><a href="#rejection">Rejection of Jāti</a></li></ol></details>
+      <div id="source-content"><p>Loading document…</p></div>
+      <script>
+      (async()=>{
+        const root=document.getElementById('source-content');
+        const parts=['preface.html','purvapaksha.html','rejection.html'];
+        const html=[];
+        for(const part of parts){
+          const r=await fetch(part+'?v=paper2');
+          if(!r.ok)throw new Error(part);
+          html.push(await r.text());
+        }
+        root.innerHTML=html.join('');
+
+        const links=[...document.querySelectorAll('.side-toc a[href^="#"]')];
+        const sections=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+        if('IntersectionObserver' in window && sections.length){
+          const linkById=new Map(links.map(link=>[link.getAttribute('href').slice(1),link]));
+          const setActive=(id)=>{
+            links.forEach(link=>link.classList.remove('is-active'));
+            const active=linkById.get(id);
+            if(active)active.classList.add('is-active');
+          };
+          const observer=new IntersectionObserver((entries)=>{
+            const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+            if(visible[0])setActive(visible[0].target.id);
+          },{rootMargin:'-15% 0px -72% 0px',threshold:[0,1]});
+          sections.forEach(section=>observer.observe(section));
+        }
+      })().catch(()=>{
+        document.getElementById('source-content').innerHTML='<p>Could not load document sections. Refresh the page.</p>';
+      });
+      </script>
+    </article>
+  </div>
+</main>
+</body>
+</html>
