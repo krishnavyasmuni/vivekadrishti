@@ -7,20 +7,22 @@
 <title>Varṇa-vicāra — Viveka Dṛṣṭi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Noto+Serif+Devanagari:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#312e2a;
-  --muted:#716b63;
-  --teal:#087b7d;
-  --teal-soft:#d7e9e7;
-  --paper:#fbfaf7;
-  --paper-deep:#f5f1ea;
-  --edge:#ddd7ce;
-  --edge-strong:#c9c1b6;
-  --sanskrit:#955039;
-  --translation:#505b66;
-  --outer:#eee9e1;
+  --ink:#302d29;
+  --ink-soft:#514c45;
+  --muted:#777067;
+  --teal:#0a7475;
+  --teal-dim:#6e9f9d;
+  --paper:#fdfbf7;
+  --paper-soft:#f7f3ec;
+  --outer:#ede8df;
+  --rule:#ddd6cb;
+  --rule-dark:#c8bfb3;
+  --sanskrit:#8d4d37;
+  --translation:#4f5a63;
+  --progress:0%;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -28,269 +30,366 @@ body{
   margin:0;
   background:var(--outer);
   color:var(--ink);
-  font-family:Merriweather,Georgia,serif;
-  font-size:17.25px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:17px;
   line-height:1.78;
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing:antialiased;
 }
-a{color:#076f71;text-decoration:none;text-decoration-thickness:1px}
-a:hover{text-decoration:underline;text-underline-offset:4px}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+
+/* Quiet site chrome */
 .sitebar{
-  height:58px;
-  background:rgba(251,250,247,.97);
-  border-bottom:1px solid var(--edge);
+  height:54px;
   display:flex;
   align-items:center;
-  padding:0 28px;
+  max-width:1220px;
+  margin:0 auto;
+  padding:0 46px;
+  background:var(--paper);
+  border-left:1px solid rgba(74,62,49,.07);
+  border-right:1px solid rgba(74,62,49,.07);
+  border-bottom:1px solid var(--rule);
 }
 .sitebar a{
-  font-family:Vollkorn,Georgia,serif;
-  font-size:20px;
-  font-weight:500;
-  letter-spacing:.015em;
   color:var(--teal);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:17px;
+  font-weight:500;
+  letter-spacing:.035em;
 }
+
 .page{
-  max-width:1190px;
+  max-width:1220px;
   min-height:100vh;
   margin:0 auto;
-  padding:52px 48px 116px;
+  padding:54px 46px 120px;
   background:var(--paper);
-  box-shadow:0 0 0 1px rgba(84,70,55,.035),0 18px 55px rgba(74,61,47,.06);
+  border-left:1px solid rgba(74,62,49,.07);
+  border-right:1px solid rgba(74,62,49,.07);
 }
+
+/* The title is aligned with the text column, not floating over the TOC. */
 .article-head{
-  max-width:960px;
-  margin:0 auto 40px;
-  padding:0 0 22px;
-  border-bottom:1px solid var(--edge);
+  display:grid;
+  grid-template-columns:238px minmax(0,720px);
+  gap:58px;
+  justify-content:center;
+  margin:0 auto 43px;
 }
-.article-head::after{
+.article-head h1{
+  grid-column:2;
+  margin:0;
+  padding:0 0 25px;
+  border-bottom:1px solid var(--rule-dark);
+  color:var(--ink);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:54px;
+  line-height:.98;
+  font-weight:500;
+  letter-spacing:-.032em;
+}
+.article-head h1::after{
   content:"";
   display:block;
-  width:54px;
+  width:44px;
   height:2px;
-  margin-top:17px;
+  margin-top:20px;
   background:var(--teal);
-  opacity:.68;
 }
-h1{
-  margin:0;
-  color:var(--teal);
-  font-family:Vollkorn,Georgia,serif;
-  font-size:50px;
-  line-height:1.05;
-  font-weight:500;
-  letter-spacing:-.018em;
-}
+
 .reader-grid{
   display:grid;
-  grid-template-columns:236px minmax(0,728px);
-  gap:54px;
+  grid-template-columns:238px minmax(0,720px);
+  gap:58px;
   justify-content:center;
   align-items:start;
 }
+
+/* Sidebar: intentionally architectural, but still very quiet. */
 .side-toc{
   position:sticky;
   top:28px;
   max-height:calc(100vh - 56px);
   overflow:auto;
-  padding:7px 26px 24px 0;
-  border-right:1px solid var(--edge-strong);
-  scrollbar-width:thin;
-  scrollbar-color:#d0c9bf transparent;
+  padding:3px 27px 28px 0;
+  border-right:1px solid var(--rule-dark);
+  scrollbar-width:none;
 }
-.side-toc-title{
-  margin:0 0 21px;
-  font-family:Vollkorn,Georgia,serif;
-  font-size:24px;
-  line-height:1.1;
-  font-weight:600;
-  letter-spacing:-.01em;
-  color:#37332f;
-}
-.toc,.toc ol{list-style:none;margin:0;padding:0}
-.toc>li{margin:0 0 19px}
-.toc ol{
-  margin:9px 0 0 14px;
-  padding-left:15px;
-  border-left:1px solid #ded7cd;
-}
-.toc li li{margin:0 0 8px}
-.toc a{
-  display:block;
-  color:#686159;
-  font-size:13.4px;
-  line-height:1.5;
-  transition:color .16s ease,transform .16s ease;
-}
-.toc>li>a{
-  color:#3c3833;
-  font-size:14.1px;
-  line-height:1.42;
-  font-weight:700;
-}
-.toc a:hover{
-  color:var(--teal);
-  text-decoration:none;
-  transform:translateX(2px);
-}
-.toc a.is-active{
-  color:var(--teal);
-  font-weight:700;
-}
-.article{min-width:0}
-.article p{margin:0 0 22px}
-.article h2,.article h3{scroll-margin-top:32px}
-.article h2{
-  position:relative;
-  margin:62px 0 27px;
-  padding:0 0 11px;
-  border-bottom:1px solid var(--edge-strong);
-  color:var(--teal);
-  font-family:Vollkorn,Georgia,serif;
-  font-size:31px;
-  line-height:1.18;
-  font-weight:500;
-  letter-spacing:-.012em;
-}
-.article h2::after{
+.side-toc::-webkit-scrollbar{display:none}
+.side-toc::after{
   content:"";
   position:absolute;
-  left:0;
-  bottom:-1px;
-  width:42px;
-  height:2px;
+  top:0;
+  right:-1px;
+  width:2px;
+  height:var(--progress);
+  max-height:100%;
   background:var(--teal);
-  opacity:.62;
+  opacity:.72;
+}
+.side-toc-title{
+  margin:0 0 24px;
+  color:var(--ink);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:28px;
+  line-height:1;
+  font-weight:500;
+  letter-spacing:-.02em;
+}
+.toc,.toc ol{list-style:none;margin:0;padding:0}
+.toc>li{position:relative;margin:0 0 22px}
+.toc>li:last-child{margin-bottom:0}
+.toc ol{
+  margin:10px 0 0 4px;
+  padding:0 0 0 14px;
+  border-left:1px solid var(--rule);
+}
+.toc li li{margin:0 0 8px}
+.toc li li:last-child{margin-bottom:0}
+.toc a{
+  display:block;
+  color:#6c655d;
+  font-size:13.25px;
+  line-height:1.48;
+  transition:color .16s ease,opacity .16s ease;
+}
+.toc>li>a{
+  color:#3d3934;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:14.25px;
+  line-height:1.42;
+  font-weight:600;
+}
+.toc a:hover{color:var(--teal);text-decoration:none}
+.toc a.is-active{color:var(--teal);font-weight:600}
+.toc a.is-active::before{
+  content:"";
+  position:absolute;
+  right:-28px;
+  width:5px;
+  height:5px;
+  margin-top:.55em;
+  border-radius:50%;
+  background:var(--teal);
+}
+.toc ol a.is-active::before{right:-28px}
+
+.article{min-width:0}
+.article p{margin:0 0 22px}
+.article h2,.article h3,.remark-section{scroll-margin-top:34px}
+
+/* Section typography: less “web heading”, more printed essay. */
+.article h2{
+  margin:76px 0 29px;
+  padding:18px 0 0;
+  border-top:1px solid var(--rule-dark);
+  color:var(--ink);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:36px;
+  line-height:1.12;
+  font-weight:500;
+  letter-spacing:-.025em;
 }
 .article h2:first-child{margin-top:0}
-.article h3{
-  margin:43px 0 18px;
-  color:#38342f;
-  font-family:Vollkorn,Georgia,serif;
-  font-size:24px;
-  line-height:1.28;
-  font-weight:600;
-  letter-spacing:-.008em;
+.article h2::before{
+  content:"";
+  display:block;
+  width:36px;
+  height:2px;
+  margin:-19px 0 17px;
+  background:var(--teal);
 }
+.article h3{
+  margin:48px 0 20px;
+  color:#39352f;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:26px;
+  line-height:1.24;
+  font-weight:500;
+  letter-spacing:-.018em;
+}
+
+/* Source / quotation rhythm */
 .reference{
-  margin:29px 0 8px!important;
-  color:#46413c;
-  font-size:14.2px;
-  line-height:1.5;
-  font-weight:700;
-  letter-spacing:.006em;
+  margin:31px 0 8px!important;
+  color:#4b4640;
+  font-size:13.2px;
+  line-height:1.48;
+  font-weight:600;
+  letter-spacing:.028em;
 }
 .translation{
-  margin:0 0 26px!important;
-  padding-left:1px;
+  position:relative;
+  margin:3px 0 29px!important;
+  padding:2px 0 2px 20px;
+  border-left:1px solid #c9d2cf;
   color:var(--translation);
-  font-size:16px;
-  line-height:1.72;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:16.25px;
+  line-height:1.74;
   font-style:italic;
 }
-.emphasis{font-weight:700;color:#45403a}
+.translation::before{
+  content:"";
+  position:absolute;
+  left:-1px;
+  top:0;
+  width:1px;
+  height:30px;
+  background:var(--teal);
+}
+.emphasis{font-weight:600;color:#443f39}
+
+/* Sanskrit reveals stay visible but stop looking like UI buttons from an app. */
 details.sanskrit-reveal{margin:8px 0 11px}
 details.sanskrit-reveal summary{
   display:inline-flex;
   align-items:center;
-  gap:6px;
-  padding:3px 10px 4px;
-  border:1px solid #b8d7d5;
-  border-radius:999px;
+  gap:7px;
+  padding:2px 1px 3px;
+  border:0;
+  border-bottom:1px solid #a9c5c2;
+  border-radius:0;
   color:var(--teal);
-  background:#fcfdfc;
-  font-size:13px;
-  line-height:1.55;
+  background:transparent;
+  font-size:12.8px;
+  line-height:1.5;
   cursor:pointer;
   user-select:none;
-  transition:background .15s ease,border-color .15s ease;
+  letter-spacing:.015em;
 }
 details.sanskrit-reveal summary::-webkit-details-marker{display:none}
-details.sanskrit-reveal summary::before{content:"+";font-family:Georgia,serif;font-size:14px;line-height:1;color:#579a9a}
-details.sanskrit-reveal[open] summary::before{content:"−"}
-details.sanskrit-reveal summary:hover{background:#f1f7f5;border-color:#94c4c1}
+details.sanskrit-reveal summary::after{
+  content:"＋";
+  color:var(--teal-dim);
+  font-size:11px;
+  transform:translateY(-.5px);
+}
+details.sanskrit-reveal[open] summary::after{content:"−"}
+details.sanskrit-reveal summary:hover{border-bottom-color:var(--teal)}
 details.sanskrit-reveal [lang="sa-Deva"]{
-  margin:14px 0 12px;
-  padding:2px 0 2px 17px;
-  border-left:2px solid #d4c1b5;
+  margin:16px 0 13px;
+  padding:8px 0 7px 20px;
+  border-left:2px solid #cdb9ab;
   color:var(--sanskrit);
   font-family:"Noto Serif Devanagari","Nirmala UI",Mangal,serif;
-  font-size:19px;
-  line-height:1.86;
+  font-size:19.2px;
+  line-height:1.9;
 }
+
+/* Remarks are editorial notes, not cards. */
 .remark-section{
-  margin:38px 0 44px;
-  padding:1px 0 1px 19px;
-  border-left:2px solid #e3ded6;
+  margin:48px -20px 51px;
+  padding:25px 20px 7px;
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  background:linear-gradient(90deg,rgba(239,233,223,.42),rgba(253,251,247,0) 72%);
 }
 .remark-label{
-  margin:0 0 13px;
-  color:#33302c;
-  font-family:Vollkorn,Georgia,serif;
-  font-size:19px;
-  font-weight:600;
+  margin:0 0 18px;
+  color:var(--teal);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:20px;
+  line-height:1.2;
+  font-weight:500;
+  letter-spacing:-.01em;
 }
 .remark-section p{margin-bottom:19px}
-.alpha-list,.argument-list{margin:7px 0 24px 29px;padding:0}
-.alpha-list li,.argument-list li{margin:0 0 10px;padding-left:5px}
-.debate{margin:23px 0!important;padding:0;color:#3f3b36}
-.debate strong{font-variant:small-caps;letter-spacing:.025em;color:#2f2d29}
+.alpha-list,.argument-list{margin:7px 0 25px 29px;padding:0}
+.alpha-list li,.argument-list li{margin:0 0 9px;padding-left:5px}
+.debate{margin:23px 0!important;color:#403b35}
+.debate strong{
+  color:#2f2b27;
+  font-size:.82em;
+  font-variant:small-caps;
+  letter-spacing:.065em;
+}
 .argument-chain{
-  margin:24px 0 26px!important;
-  padding:4px 0 4px 19px;
-  border-left:2px solid #c8c0b6;
-  color:#393530;
-  font-weight:700;
-  font-size:15px;
+  margin:26px 0 28px!important;
+  padding:15px 18px;
+  border-top:1px solid #d5cec3;
+  border-bottom:1px solid #d5cec3;
+  color:#39342f;
+  font-size:14.7px;
   line-height:1.65;
+  font-weight:600;
+  text-align:center;
 }
 .maxim{
-  margin:27px 18px 0;
-  padding:2px 0 2px 21px;
-  border-left:2px solid #c8c0b6;
-  color:#393530;
+  position:relative;
+  margin:29px 8px 8px;
+  padding:4px 0 4px 26px;
+  border-left:2px solid #bcaea2;
+  color:#39342f;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:18px;
+  line-height:1.65;
   font-style:italic;
 }
+.maxim::before{
+  content:"“";
+  position:absolute;
+  left:9px;
+  top:-5px;
+  color:#b7a89b;
+  font-size:31px;
+  font-style:normal;
+}
 .mobile-toc{display:none}
-@media(max-width:900px){
-  .page{padding:36px 26px 84px;box-shadow:none}
-  .reader-grid{display:block;max-width:728px;margin:0 auto}
+
+@media(max-width:930px){
+  body{background:var(--paper)}
+  .sitebar{max-width:none;padding:0 26px;border-left:0;border-right:0}
+  .page{max-width:none;padding:38px 26px 86px;border:0}
+  .article-head{display:block;max-width:720px;margin:0 auto 35px}
+  .article-head h1{font-size:49px}
+  .reader-grid{display:block;max-width:720px;margin:0 auto}
   .side-toc{display:none}
-  .article-head{max-width:728px}
   .mobile-toc{
     display:block;
-    margin:0 0 38px;
-    padding:11px 0 13px;
-    border-top:1px solid var(--edge);
-    border-bottom:1px solid var(--edge);
+    margin:0 0 40px;
+    padding:12px 0 14px;
+    border-top:1px solid var(--rule-dark);
+    border-bottom:1px solid var(--rule);
   }
   .mobile-toc summary{
+    list-style:none;
     cursor:pointer;
-    color:var(--teal);
-    font-family:Vollkorn,Georgia,serif;
-    font-weight:600;
-    font-size:16px;
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:18px;
+    font-weight:500;
   }
-  .mobile-toc .toc{margin-top:14px;columns:2;column-gap:30px}
+  .mobile-toc summary::-webkit-details-marker{display:none}
+  .mobile-toc summary::after{content:"＋";float:right;color:var(--teal);font-size:13px;margin-top:3px}
+  .mobile-toc[open] summary::after{content:"−"}
+  .mobile-toc .toc{margin-top:16px;columns:2;column-gap:32px}
   .mobile-toc .toc li{break-inside:avoid}
+  .mobile-toc .toc>li{margin-bottom:10px}
+  .mobile-toc .toc>li>a{font-size:14px}
 }
+
 @media(max-width:620px){
-  body{font-size:16.65px;background:var(--paper)}
-  .sitebar{height:51px;padding:0 17px}
-  .sitebar a{font-size:18px}
-  .page{padding:29px 19px 62px}
-  .article-head{margin-bottom:31px;padding-bottom:18px}
-  h1{font-size:40px}
-  .article h2{font-size:28px;margin-top:48px}
-  .article h3{font-size:22px;margin-top:36px}
-  details.sanskrit-reveal [lang="sa-Deva"]{font-size:18px;padding-left:12px}
-  .translation{font-size:15.6px}
+  body{font-size:16.4px;line-height:1.75}
+  .sitebar{height:50px;padding:0 18px}
+  .sitebar a{font-size:16px}
+  .page{padding:30px 19px 65px}
+  .article-head{margin-bottom:30px}
+  .article-head h1{font-size:42px;padding-bottom:20px}
+  .article-head h1::after{margin-top:16px}
+  .article h2{font-size:31px;margin-top:60px;padding-top:16px}
+  .article h2::before{margin-top:-17px;margin-bottom:14px}
+  .article h3{font-size:24px;margin-top:40px}
+  .translation{font-size:15.75px;padding-left:16px}
+  details.sanskrit-reveal [lang="sa-Deva"]{font-size:18.2px;padding-left:14px}
+  .remark-section{margin:41px -8px 44px;padding:21px 8px 5px}
+  .remark-label{font-size:19px}
+  .argument-chain{text-align:left;padding:13px 0}
   .mobile-toc .toc{columns:1}
-  .remark-label{font-size:18px}
-  .remark-section{padding-left:14px}
 }
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.toc a{transition:none}}
 </style>
 </head>
@@ -316,27 +415,39 @@ details.sanskrit-reveal [lang="sa-Deva"]{
         const parts=['preface.html','purvapaksha.html','rejection.html'];
         const html=[];
         for(const part of parts){
-          const r=await fetch(part+'?v=paper2');
+          const r=await fetch(part+'?v=paper3');
           if(!r.ok)throw new Error(part);
           html.push(await r.text());
         }
         root.innerHTML=html.join('');
 
+        const side=document.querySelector('.side-toc');
         const links=[...document.querySelectorAll('.side-toc a[href^="#"]')];
         const sections=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+        const linkById=new Map(links.map(link=>[link.getAttribute('href').slice(1),link]));
+
+        const setActive=(id)=>{
+          links.forEach(link=>link.classList.remove('is-active'));
+          const active=linkById.get(id);
+          if(active)active.classList.add('is-active');
+        };
+
         if('IntersectionObserver' in window && sections.length){
-          const linkById=new Map(links.map(link=>[link.getAttribute('href').slice(1),link]));
-          const setActive=(id)=>{
-            links.forEach(link=>link.classList.remove('is-active'));
-            const active=linkById.get(id);
-            if(active)active.classList.add('is-active');
-          };
           const observer=new IntersectionObserver((entries)=>{
             const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
             if(visible[0])setActive(visible[0].target.id);
-          },{rootMargin:'-15% 0px -72% 0px',threshold:[0,1]});
+          },{rootMargin:'-12% 0px -76% 0px',threshold:[0,1]});
           sections.forEach(section=>observer.observe(section));
         }
+
+        const updateProgress=()=>{
+          const doc=document.documentElement;
+          const max=doc.scrollHeight-doc.clientHeight;
+          const pct=max>0?Math.min(100,Math.max(0,(doc.scrollTop/max)*100)):0;
+          document.documentElement.style.setProperty('--progress',pct+'%');
+        };
+        updateProgress();
+        addEventListener('scroll',updateProgress,{passive:true});
       })().catch(()=>{
         document.getElementById('source-content').innerHTML='<p>Could not load document sections. Refresh the page.</p>';
       });
