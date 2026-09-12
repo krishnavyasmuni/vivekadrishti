@@ -283,17 +283,42 @@ details.sanskrit-reveal [lang="sa-Deva"]{
   .mobile-toc .toc li{break-inside:avoid}
 }
 @media(max-width:620px){
-  body{font-size:17.2px;line-height:1.64}
-  .sitebar{height:50px;padding:0 18px}
-  .sitebar a{font-size:18px}
-  .page{padding:32px 18px 66px}
-  h1{font-size:42px}
-  .article h2{font-size:30px;margin-top:58px}
-  .article h3{font-size:25px;margin-top:46px}
-  .translation{font-size:16.8px;padding-left:14px}
-  details.sanskrit-reveal [lang="sa-Deva"]{font-size:18px;padding-left:12px}
-  .remark-section{margin:42px 0 46px;padding-top:24px}
-  .mobile-toc .toc{columns:1}
+  body{font-size:16.45px;line-height:1.72;background:var(--paper)}
+  .sitebar{height:48px;padding:0 18px}
+  .sitebar a{font-size:16.5px;color:#4a443f}
+  .page{padding:25px 18px 64px}
+
+  .article-head{margin:0 0 34px;text-align:left}
+  h1{font-size:36px;line-height:1.14;color:#2f2a26}
+  .article-head::after{width:60px;max-width:none;height:1px;margin:16px 0 0;background:#a9a19a}
+
+  .mobile-toc{margin:0 0 34px;padding:11px 0 12px;border-color:#d3cec8}
+  .mobile-toc summary{font-family:Merriweather,Georgia,serif;font-size:15.5px;font-weight:700;color:#4a443f}
+  .mobile-toc .toc{margin-top:13px;columns:1}
+  .mobile-toc .toc>li{margin-bottom:10px}
+  .mobile-toc .toc>li>a{font-size:14px;color:#4c4742}
+
+  .article p{margin-bottom:25px}
+  .article h2{margin-top:52px;font-size:28px;line-height:1.18;text-align:left;color:#35312d}
+  .article h2::after{width:100%;max-width:none;height:1px;margin:13px 0 28px;background:#d2cdc7}
+  .article h3{margin-top:40px;font-size:23px;line-height:1.28;text-align:left;color:#403a35}
+  .article h3::after{width:48px;max-width:none;height:1px;margin:12px 0 24px;background:#aaa29b}
+
+  .reference{margin:28px 0 7px!important;color:#6a5141;font-size:13.5px;line-height:1.45;letter-spacing:0}
+  .translation{margin-bottom:25px!important;padding-left:13px;border-left-color:#c8c1bb;color:#47423e;font-size:16.1px;line-height:1.7}
+
+  details.sanskrit-reveal{margin:7px 0 12px}
+  details.sanskrit-reveal summary{padding:3px 9px 4px;font-size:12.5px}
+  details.sanskrit-reveal [lang="sa-Deva"]{font-size:18px;line-height:1.78;padding-left:12px}
+
+  .remark-section{margin:38px 0 42px;padding:21px 0 2px;border-color:#d3cec8}
+  .remark-label{margin-bottom:18px;color:#3e3934;font-size:21px;line-height:1.25}
+  .remark-section p{margin-bottom:21px}
+  .alpha-list,.argument-list{margin:5px 0 23px 23px}
+  .debate{margin:22px 0!important}
+  .debate strong{font-variant:normal;letter-spacing:0;text-transform:none;font-weight:700;color:#35312d}
+  .argument-chain{margin:23px 0 25px!important;padding-left:14px;border-left-width:2px;font-size:15.4px;line-height:1.68;font-weight:700;color:#45403b}
+  .maxim{margin:25px 0 3px;padding-left:14px;border-left-color:#c8c1bb;color:#47423e}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -320,7 +345,7 @@ details.sanskrit-reveal [lang="sa-Deva"]{
         const parts=['preface.html','purvapaksha.html','rejection.html'];
         const html=[];
         for(const part of parts){
-          const r=await fetch(part+'?v=paper6');
+          const r=await fetch(part+'?v=paper7');
           if(!r.ok)throw new Error(part);
           html.push(await r.text());
         }
