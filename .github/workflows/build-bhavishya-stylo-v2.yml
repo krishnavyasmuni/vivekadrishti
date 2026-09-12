@@ -1,0 +1,23 @@
+name: Build Bhavishya Stylo Corpus V2
+on:
+  push:
+    branches:
+      - chatgpt-bhavishya-stylo-corpus
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch source repository
+        run: git clone --depth 1 https://github.com/jayeshmepani/HinduScriptures.git _bhavishya_source
+      - name: Install transliteration dependency
+        run: python -m pip install --disable-pip-version-check indic-transliteration
+      - name: Build corpus
+        run: python tools/build_bhavishya_corpus.py
+      - name: Upload corpus ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bhavishya_Purana_Stylo_Corpus
+          path: Bhavishya_Purana_Stylo_Corpus.zip
+          if-no-files-found: error
