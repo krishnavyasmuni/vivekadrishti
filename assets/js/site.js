@@ -1,9 +1,8 @@
 (() => {
   const path = location.pathname;
 
-  // Keep the new Hindupedia-style treatment on navigation/directory pages only.
-  // Real articles and scripture chapters should retain their original Viveka Dṛṣṭi
-  // typography, colours and article-specific CSS.
+  // Keep the encyclopedia treatment on directory pages only. Actual articles
+  // now share the Varṇa-vicāra reader shell, typography and contents rail.
   const articleDirectoryPaths = [
     /^\/vivekadrishti\/articles\/?$/,
     /^\/vivekadrishti\/articles\/scripture\/?$/,
@@ -13,10 +12,9 @@
   const isArticleDirectory = articleDirectoryPaths.some((pattern) => pattern.test(path));
   const isActualArticle = document.body.classList.contains('post-page') ||
     (/^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory);
+  const useVicaraReader = /^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory;
 
   if (isActualArticle) {
-    // Some pages may have received the encyclopedia stylesheet before this script
-    // runs. Remove it so the original site.css / article CSS wins again.
     document.querySelectorAll('link[href*="/assets/css/hindupedia-site.css"]').forEach((link) => link.remove());
   } else if (!document.querySelector('link[data-hindupedia-site]')) {
     const theme = document.createElement('link');
@@ -24,6 +22,24 @@
     theme.href = '/vivekadrishti/assets/css/hindupedia-site.css?build=20260826-2145';
     theme.dataset.hindupediaSite = 'true';
     document.head.appendChild(theme);
+  }
+
+  if (useVicaraReader) {
+    document.body.classList.add('vicara-reader-page');
+    if (!document.querySelector('link[data-article-reader]')) {
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = '/vivekadrishti/assets/css/article-reader.css?v=20260913-1';
+      css.dataset.articleReader = 'true';
+      document.head.appendChild(css);
+    }
+    if (!document.querySelector('script[data-article-reader]')) {
+      const reader = document.createElement('script');
+      reader.src = '/vivekadrishti/assets/js/article-reader.js?v=20260913-1';
+      reader.async = false;
+      reader.dataset.articleReader = 'true';
+      document.body.appendChild(reader);
+    }
   }
 
   const sectionPaths = new Map([
@@ -105,11 +121,6 @@
   if (isCanto2) {
     document.body.classList.add('canto-2-verse-layout');
 
-    // Some of the hand-built Chapter 2 sections predate the shared renderer and
-    // stored the English translation as an unclassed div immediately after the
-    // Devanagari. Mark it before the renderer runs so it is moved and styled in
-    // exactly the same position as every other verse instead of falling below
-    // Śrīdhara's commentary as a giant duplicate block.
     document.querySelectorAll('section[aria-labelledby^="sb-2-"]').forEach((section) => {
       if (section.querySelector(':scope > .sb-translation, :scope > .sb-translation-content')) return;
       const devanagari = section.querySelector(':scope > [lang="sa-Deva"], :scope > .sb-devanagari, :scope > .sb-dev');
