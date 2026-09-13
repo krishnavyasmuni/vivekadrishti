@@ -249,6 +249,23 @@ details.sanskrit-reveal [lang="sa-Deva"]{
   line-height:1.2;
   font-weight:400;
 }
+.remark-section>summary.remark-label{
+  margin:0;
+  padding:0 0 24px;
+  cursor:pointer;
+  list-style:none;
+  user-select:none;
+}
+.remark-section>summary.remark-label::-webkit-details-marker{display:none}
+.remark-section>summary.remark-label::after{
+  content:"+";
+  float:right;
+  color:#8c837b;
+  font-family:Merriweather,Georgia,serif;
+  font-size:18px;
+  line-height:1;
+}
+.remark-section[open]>summary.remark-label::after{content:"−"}
 .remark-section p{margin-bottom:24px}
 .alpha-list,.argument-list{margin:8px 0 28px 30px;padding:0}
 .alpha-list li,.argument-list li{margin:0 0 10px;padding-left:4px}
@@ -331,6 +348,7 @@ details.sanskrit-reveal [lang="sa-Deva"]{
 
   .remark-section{margin:42px 0 46px;padding:24px 0 2px}
   .remark-label{margin-bottom:18px;font-size:22px}
+  .remark-section>summary.remark-label{padding-bottom:20px}
   .remark-section p{margin-bottom:22px}
   .alpha-list,.argument-list{margin:6px 0 24px 24px}
   .debate{margin:23px 0!important}
@@ -365,11 +383,47 @@ details.sanskrit-reveal [lang="sa-Deva"]{
         const parts=['preface.html','purvapaksha.html','rejection.html'];
         const html=[];
         for(const part of parts){
-          const r=await fetch(part+'?v=paper10');
+          const r=await fetch(part+'?v=paper11');
           if(!r.ok)throw new Error(part);
           html.push(await r.text());
         }
         root.innerHTML=html.join('');
+
+        [...root.querySelectorAll('h4.remark-label')].forEach(label=>{
+          const details=document.createElement('details');
+          details.className='remark-section';
+          if(label.id)details.id=label.id;
+          const summary=document.createElement('summary');
+          summary.className='remark-label';
+          const name=label.textContent.trim().replace(/\.$/,'');
+          summary.textContent='Show '+name;
+          const nodes=[];
+          let node=label.nextSibling;
+          while(node){
+            if(node.nodeType===1 && /^(H2|H3|H4)$/.test(node.tagName))break;
+            nodes.push(node);
+            node=node.nextSibling;
+          }
+          label.replaceWith(details);
+          details.appendChild(summary);
+          nodes.forEach(n=>details.appendChild(n));
+        });
+
+        root.querySelectorAll('details.remark-section').forEach(details=>{
+          const summary=details.querySelector(':scope > summary.remark-label');
+          if(!summary)return;
+          const base=summary.textContent.replace(/^(Show|Hide)\s+/,'');
+          const sync=()=>{summary.firstChild.textContent=(details.open?'Hide ':'Show ')+base;};
+          details.addEventListener('toggle',sync);
+          sync();
+        });
+
+        document.querySelectorAll('.toc a[href^="#remark-"]').forEach(link=>{
+          link.addEventListener('click',()=>{
+            const target=document.querySelector(link.getAttribute('href'));
+            if(target?.matches('details.remark-section'))target.open=true;
+          });
+        });
 
         const links=[...document.querySelectorAll('.side-toc a[href^="#"]')];
         const sections=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
