@@ -266,6 +266,7 @@ details.sanskrit-reveal [lang="sa-Deva"]{
   line-height:1;
 }
 .remark-section[open]>summary.remark-label::after{content:"−"}
+details.remark-section:not([open]) > :not(summary){display:none!important}
 .remark-section p{margin-bottom:24px}
 .alpha-list,.argument-list{margin:8px 0 28px 30px;padding:0}
 .alpha-list li,.argument-list li{margin:0 0 10px;padding-left:4px}
@@ -383,7 +384,7 @@ details.sanskrit-reveal [lang="sa-Deva"]{
         const parts=['preface.html','purvapaksha.html','rejection.html'];
         const html=[];
         for(const part of parts){
-          const r=await fetch(part+'?v=paper11');
+          const r=await fetch(part+'?v=paper12',{cache:'no-store'});
           if(!r.ok)throw new Error(part);
           html.push(await r.text());
         }
@@ -413,7 +414,9 @@ details.sanskrit-reveal [lang="sa-Deva"]{
           const summary=details.querySelector(':scope > summary.remark-label');
           if(!summary)return;
           const base=summary.textContent.replace(/^(Show|Hide)\s+/,'');
-          const sync=()=>{summary.firstChild.textContent=(details.open?'Hide ':'Show ')+base;};
+          details.removeAttribute('open');
+          details.open=false;
+          const sync=()=>{summary.textContent=(details.open?'Hide ':'Show ')+base;};
           details.addEventListener('toggle',sync);
           sync();
         });
