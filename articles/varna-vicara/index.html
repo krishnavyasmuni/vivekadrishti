@@ -15,14 +15,13 @@
   --ink:#3c362e;
   --teal:#00787a;
   --purple:#6731fb;
-  --quote:#4b444f;
-  --quote-bg:#eeebef;
-  --quote-rule:#92859c;
+  --quote:#65516f;
+  --quote-rule:#8c739a;
   --rule:rgba(119,119,119,.12);
   --side-rule:#d4d0ca;
   --orange:#a95b27;
   --orange-soft:#d8ad8b;
-  --sanskrit:#704130;
+  --sanskrit:#7f432f;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -181,24 +180,23 @@ h1{
 }
 
 .reference{
-  margin:38px 0 9px!important;
-  color:#625951;
-  font-size:14.5px;
+  margin:34px 0 10px!important;
+  color:#006f71;
+  font-size:16px;
   line-height:1.45;
   font-weight:700;
-  letter-spacing:.005em;
 }
 .translation,
 details.sanskrit-reveal + p:not(.reference),
 .maxim,
 .article p:has(> em:only-child){
-  margin:0 0 32px!important;
-  padding:17px 20px 18px 22px;
-  border-left:3px solid var(--quote-rule);
-  background:var(--quote-bg);
+  margin:0 0 30px!important;
+  padding:1px 0 1px 17px;
+  border-left:2px solid var(--quote-rule);
+  background:transparent;
   color:var(--quote);
-  font-size:18px;
-  line-height:1.67;
+  font-size:18.5px;
+  line-height:1.62;
   font-style:normal;
 }
 .translation em,
@@ -207,10 +205,10 @@ details.sanskrit-reveal + p:not(.reference) em,
 .article p:has(> em:only-child) em{font-style:italic}
 .translation strong,
 details.sanskrit-reveal + p:not(.reference) strong,
-.maxim strong{color:#3f3744}
+.maxim strong{color:#51405a}
 .emphasis{font-weight:700;color:var(--ink)}
 
-details.sanskrit-reveal{margin:8px 0 14px}
+details.sanskrit-reveal{margin:8px 0 15px}
 details.sanskrit-reveal summary{
   display:inline-block;
   padding:4px 11px 5px;
@@ -226,10 +224,10 @@ details.sanskrit-reveal summary{
 }
 details.sanskrit-reveal summary:hover{background:#eee8e2}
 details.sanskrit-reveal [lang="sa-Deva"]{
-  margin:16px 0 15px;
-  padding:14px 17px 15px;
-  border-left:3px solid #b1846c;
-  background:#f0ebe7;
+  margin:16px 0 16px;
+  padding-left:17px;
+  border-left:2px solid #c5a48f;
+  background:transparent;
   color:var(--sanskrit);
   font-family:"Noto Serif Devanagari","Nirmala UI",Mangal,serif;
   font-size:20px;
@@ -316,26 +314,20 @@ details.sanskrit-reveal [lang="sa-Deva"]{
   .article h3{margin-top:48px;font-size:25px;line-height:1.25}
   .article h3::after{width:160px;max-width:52%;margin:21px auto 31px}
 
-  .reference{margin:30px 0 8px!important;font-size:13.5px;line-height:1.45}
+  .reference{margin:29px 0 8px!important;font-size:14px;line-height:1.45}
   .translation,
   details.sanskrit-reveal + p:not(.reference),
   .maxim,
   .article p:has(> em:only-child){
     margin-bottom:27px!important;
-    padding:14px 14px 15px 16px;
+    padding:0 0 0 13px;
     border-left-width:2px;
-    font-size:16.45px;
-    line-height:1.7;
+    font-size:16.8px;
+    line-height:1.68;
   }
   details.sanskrit-reveal{margin:7px 0 13px}
   details.sanskrit-reveal summary{padding:3px 9px 4px;font-size:12.5px}
-  details.sanskrit-reveal [lang="sa-Deva"]{
-    margin:13px 0 13px;
-    padding:12px 13px 13px;
-    border-left-width:2px;
-    font-size:18px;
-    line-height:1.78;
-  }
+  details.sanskrit-reveal [lang="sa-Deva"]{font-size:18px;line-height:1.78;padding-left:12px}
 
   .remark-section{margin:42px 0 46px;padding:24px 0 2px}
   .remark-label{margin-bottom:18px;font-size:22px}
@@ -373,7 +365,7 @@ details.sanskrit-reveal [lang="sa-Deva"]{
         const parts=['preface.html','purvapaksha.html','rejection.html'];
         const html=[];
         for(const part of parts){
-          const r=await fetch(part+'?v=paper9');
+          const r=await fetch(part+'?v=paper10');
           if(!r.ok)throw new Error(part);
           html.push(await r.text());
         }
