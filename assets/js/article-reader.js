@@ -29,7 +29,6 @@
 
   const normalizeTocClone = (list) => {
     const clone = list.cloneNode(true);
-    clone.classList.add('vicara-toc');
     clone.removeAttribute('style');
     clone.querySelectorAll('*').forEach((node) => {
       node.removeAttribute('style');
@@ -126,7 +125,6 @@
 
     const list = document.createElement('ol');
     list.className = 'vicara-toc';
-    let currentParent = list;
     let lastTop = null;
     headings.forEach((heading) => {
       const li = document.createElement('li');
@@ -137,7 +135,6 @@
       if (heading.tagName === 'H2') {
         list.appendChild(li);
         lastTop = li;
-        currentParent = list;
       } else if (lastTop) {
         let sub = lastTop.querySelector(':scope > ol');
         if (!sub) {
@@ -145,9 +142,8 @@
           lastTop.appendChild(sub);
         }
         sub.appendChild(li);
-        currentParent = sub;
       } else {
-        currentParent.appendChild(li);
+        list.appendChild(li);
       }
     });
     return list;
@@ -157,10 +153,7 @@
   const bindActive = (aside) => {
     if (activeObserver) activeObserver.disconnect();
     const links = [...aside.querySelectorAll('a[href^="#"]')];
-    const targets = links.map((link) => {
-      const id = link.getAttribute('href').slice(1);
-      return document.getElementById(id);
-    }).filter(Boolean);
+    const targets = links.map((link) => document.getElementById(link.getAttribute('href').slice(1))).filter(Boolean);
     if (!links.length || !targets.length || !('IntersectionObserver' in window)) return;
     const map = new Map(links.map((link) => [link.getAttribute('href').slice(1), link]));
     const setActive = (id) => {
@@ -179,8 +172,7 @@
       if (link.dataset.vicaraBound === 'true') return;
       link.dataset.vicaraBound = 'true';
       link.addEventListener('click', () => {
-        const id = link.getAttribute('href').slice(1);
-        const target = document.getElementById(id);
+        const target = document.getElementById(link.getAttribute('href').slice(1));
         if (!target) return;
         const remark = target.matches('details.remark-section') ? target : target.closest('details.remark-section');
         if (remark) remark.open = true;
@@ -192,7 +184,7 @@
   const build = () => {
     wrapRemarks();
     const manual = findManualContents();
-    let toc = manual?.list ? normalizeTocClone(manual.list) : generateToc();
+    const toc = manual?.list ? normalizeTocClone(manual.list) : generateToc();
     if (!toc || !toc.querySelector('a[href^="#"]')) return false;
     hideManualContents(manual);
 
@@ -204,7 +196,7 @@
       aside.setAttribute('aria-label','Table of contents');
       articleBody.insertBefore(aside, articleBody.firstChild);
     }
-    aside.innerHTML = '';
+    aside.replaceChildren();
     const title = document.createElement('h2');
     title.className = 'vicara-side-title';
     title.textContent = 'Contents';
@@ -237,19 +229,20 @@
   markPlainSanskritButtons();
   build();
 
-  // Gītā chapters and a few generated articles populate their contents after site.js runs.
-  // Rebuild once the real article DOM appears, then stop observing once a usable TOC exists.
+  const observeOptions = {childList:true, subtree:true};
   let timer = null;
-  const observer = new MutationObserver(() => {
+  const observer = new MutationObserver((mutations) => {
+    if (mutations.every((mutation) => mutation.target.closest?.('.vicara-side-toc,.vicara-mobile-toc'))) return;
     clearTimeout(timer);
     timer = setTimeout(() => {
+      observer.disconnect();
       markPlainSanskritButtons();
       const ready = build();
-      if (ready && articleBody.querySelector('.gita-contents ol, .gita-contents ul')) observer.disconnect();
+      const waitingForGita = !!articleBody.querySelector('[data-gita-chapter]') && !articleBody.querySelector('.gita-contents ol, .gita-contents ul');
+      if (!ready || waitingForGita) observer.observe(articleBody, observeOptions);
     }, 60);
   });
-  observer.observe(articleBody, {childList:true, subtree:true});
+  observer.observe(articleBody, observeOptions);
 
-  // Do not leave the observer alive forever on fully static pages.
   if (built && !articleBody.querySelector('[data-gita-chapter]')) setTimeout(() => observer.disconnect(), 500);
 })();
