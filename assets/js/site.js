@@ -13,6 +13,8 @@
   const isActualArticle = document.body.classList.contains('post-page') ||
     (/^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory);
   const useVicaraReader = /^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory;
+  const isCitationReader = /\/articles\/compilation-of-peer-reviewed-citations-against-aryan-migration-theory\/?$/.test(path);
+  const isScriptureReader = /\/articles\/(?:bhagavad-gita-chapter-\d+|srimad-bhagavatam-(?:second|tenth)-canto-sridhara-svami-rebuild|mimamsa-sutras-sabara-bhasya-chapter-1)\/?$/.test(path);
 
   if (isActualArticle) {
     document.querySelectorAll('link[href*="/assets/css/hindupedia-site.css"]').forEach((link) => link.remove());
@@ -26,12 +28,22 @@
 
   if (useVicaraReader) {
     document.body.classList.add('vicara-reader-page');
+    if (isCitationReader) document.body.classList.add('citation-reader-page');
+    if (isScriptureReader) document.body.classList.add('scripture-reader-page');
+
     if (!document.querySelector('link[data-article-reader]')) {
       const css = document.createElement('link');
       css.rel = 'stylesheet';
       css.href = '/vivekadrishti/assets/css/article-reader.css?v=20260913-1';
       css.dataset.articleReader = 'true';
       document.head.appendChild(css);
+    }
+    if (!document.querySelector('link[data-article-polish]')) {
+      const polish = document.createElement('link');
+      polish.rel = 'stylesheet';
+      polish.href = '/vivekadrishti/assets/css/article-polish.css?v=20260913-2';
+      polish.dataset.articlePolish = 'true';
+      document.head.appendChild(polish);
     }
     if (!document.querySelector('script[data-article-reader]')) {
       const reader = document.createElement('script');
