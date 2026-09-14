@@ -14,6 +14,7 @@
     (/^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory);
   const useVicaraReader = /^\/vivekadrishti\/articles\//.test(path) && !isArticleDirectory;
   const isCitationReader = /\/articles\/compilation-of-peer-reviewed-citations-against-aryan-migration-theory\/?$/.test(path);
+  const isMeatReader = /\/articles\/meat-eating-in-hinduism-through-the-lens-of-shastra\/?$/.test(path);
   const isScriptureReader = /\/articles\/(?:bhagavad-gita-chapter-\d+|srimad-bhagavatam-(?:second|tenth)-canto-sridhara-svami-rebuild|mimamsa-sutras-sabara-bhasya-chapter-1)\/?$/.test(path);
 
   if (isActualArticle) {
@@ -29,6 +30,7 @@
   if (useVicaraReader) {
     document.body.classList.add('vicara-reader-page');
     if (isCitationReader) document.body.classList.add('citation-reader-page');
+    if (isMeatReader) document.body.classList.add('meat-reader-page');
     if (isScriptureReader) document.body.classList.add('scripture-reader-page');
 
     if (!document.querySelector('link[data-article-reader]')) {
@@ -44,6 +46,13 @@
       polish.href = '/vivekadrishti/assets/css/article-polish.css?v=20260913-2';
       polish.dataset.articlePolish = 'true';
       document.head.appendChild(polish);
+    }
+    if (isMeatReader && !document.querySelector('link[data-meat-reader-fix]')) {
+      const meat = document.createElement('link');
+      meat.rel = 'stylesheet';
+      meat.href = '/vivekadrishti/assets/css/meat-reader-fix.css?v=20260914-1';
+      meat.dataset.meatReaderFix = 'true';
+      document.head.appendChild(meat);
     }
     if (!document.querySelector('script[data-article-reader]')) {
       const reader = document.createElement('script');

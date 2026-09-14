@@ -1,0 +1,93 @@
+/* The meat treatise predates the shared Varṇa-vicāra reader and carries a full-page inline frame. Reset only that legacy frame so the article uses the common reader cleanly on desktop and phone. */
+body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat{
+  position:static!important;
+  z-index:auto!important;
+  left:auto!important;
+  width:652px!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  color:var(--vr-ink)!important;
+  font-family:Merriweather,Georgia,serif!important;
+}
+body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat>div{
+  width:100%!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+}
+body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat>div>div{
+  width:652px!important;
+  max-width:100%!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat>div>div:first-child{
+  margin:0 0 72px!important;
+  text-align:center!important;
+}
+body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat h1:first-of-type{
+  margin:0!important;
+  padding:0!important;
+  color:var(--vr-teal)!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:50px!important;
+  font-style:normal!important;
+  font-weight:400!important;
+  line-height:1.125!important;
+  letter-spacing:normal!important;
+  text-align:center!important;
+}
+body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat h1:first-of-type+div[aria-hidden="true"]{
+  width:326px!important;
+  max-width:50%!important;
+  height:2px!important;
+  margin:30px auto 0!important;
+  background:var(--vr-rule)!important;
+}
+/* Keep the source's lower-level subsection labels useful without making them giant mobile headings. */
+body.vicara-reader-page.meat-reader-page .article-body h4{
+  margin:44px 0 18px!important;
+  color:var(--vr-teal)!important;
+  font-family:Vollkorn,Georgia,serif!important;
+  font-size:24px!important;
+  font-weight:400!important;
+  line-height:1.25!important;
+  text-align:left!important;
+}
+body.vicara-reader-page.meat-reader-page .article-body table{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  overflow-x:auto!important;
+  -webkit-overflow-scrolling:touch;
+}
+@media(max-width:900px){
+  body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat,
+  body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat>div,
+  body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat>div>div{
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat>div>div:first-child{
+    margin-bottom:46px!important;
+  }
+  body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat h1:first-of-type{
+    font-size:40px!important;
+    line-height:1.1!important;
+  }
+}
+@media(max-width:620px){
+  body.vicara-reader-page.meat-reader-page .article-body .empyrean-final-meat h1:first-of-type{
+    font-size:35px!important;
+    line-height:1.12!important;
+  }
+  body.vicara-reader-page.meat-reader-page .article-body h4{
+    margin-top:36px!important;
+    font-size:21px!important;
+  }
+}
