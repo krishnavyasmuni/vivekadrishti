@@ -61,6 +61,13 @@
       reader.dataset.articleReader = 'true';
       document.body.appendChild(reader);
     }
+    if (!document.querySelector('script[data-source-document-images]')) {
+      const sourceImages = document.createElement('script');
+      sourceImages.src = '/vivekadrishti/assets/js/source-document-images.js?v=20260914-1';
+      sourceImages.async = false;
+      sourceImages.dataset.sourceDocumentImages = 'true';
+      document.body.appendChild(sourceImages);
+    }
   }
 
   const sectionPaths = new Map([
