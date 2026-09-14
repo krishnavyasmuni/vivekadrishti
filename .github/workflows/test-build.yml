@@ -1,0 +1,9 @@
+name: Test Corpus Runner
+on:
+  push:
+    branches: [chatgpt-bhavishya-stylo-corpus]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo runner-ok
